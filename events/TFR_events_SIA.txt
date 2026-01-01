@@ -1,4 +1,5 @@
-﻿add_namespace = thailand_politics.1
+﻿
+add_namespace = thailand_politics
 
 country_event = {
     id = thailand_politics.1
