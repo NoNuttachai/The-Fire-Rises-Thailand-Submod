@@ -1423,6 +1423,20 @@ characters={
 		country_leader = {
 			ideology = progressivism
 		}
+		id = -1
+	}
+	SIA_pita_char = {
+		name = "Pita Limjaroenrat"
+        desc = "POLITICS_PITA_DESC"
+            portraits={
+			    civilian = {
+				    large = "gfx/leaders/SIA/SIA_pita.png"
+			    }
+		    }
+		country_leader = {
+			ideology = progressivism
+		}
+		id = -1
 	}
 	SIA_thaksin_shinawatra_char = {
 		portraits={

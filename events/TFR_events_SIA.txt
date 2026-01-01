@@ -33,17 +33,8 @@ country_event = {
 		custom_effect_tooltip = SIA_ban_future_tt
 
         hidden_effect = {
-            create_country_leader = {
-                name = "Pita Limjaroenrat"
-                desc = "POLITICS_PITA_DESC"
-                portraits={
-			        civilian = {
-				        large = "gfx/leaders/SIA/SIA_pita.png"
-			        }
-		        }
-                expire = "2070.1.1"
-                ideology = progressivism
-            }
+            retire_character = SIA_thanathorn_juangroongruangkit_char
+			promote_character = SIA_pita_char
         }
     }
 }
