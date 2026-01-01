@@ -1,0 +1,40 @@
+ideas = {
+
+	country = {
+		SIA_an_army_with_a_country_1 = {
+			picture = SIA_an_army_with_a_country
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = -0.1
+				mobilization_speed = 0.1
+				battalion_upkeep_factor = 0.025
+				military_development_monthly = 0.01
+			}
+		}
+		SIA_lack_of_the_political_legitimacy = {
+			picture = SIA_low_legitimacy
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.025
+				authoritarian_democrat_drift = -0.01
+                nationalist_drift = -0.01
+                conservative_drift = 0.01
+				stability_factor = -0.025
+			}
+		}
+	}
+}

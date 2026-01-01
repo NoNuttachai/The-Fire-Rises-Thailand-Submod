@@ -1,21 +1,21 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_SIA_an_army_with_a_country_banner"
-		textureFile = "gfx/interface/ideas/SIA/SIA_an_army_with_a_country_banner.png"
+		name = "GFX_SIA_army_with_nation_cat"
+		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_army_with_nation_cat.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_prayut_coa_cat"
+		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_prayut_coa_cat.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_an_army_with_a_country"
-		textureFile = "gfx/interface/ideas/SIA/SIA_an_army_with_a_country_idea.png"
+		textureFile = "gfx/interface/ideas/SIA/SIA_an_army_with_a_country.png"
 	}
 	spriteType = {
-		name = "GFX_SIA_lack_of_the_political_legitimacy_banner"
-		textureFile = "gfx/interface/ideas/SIA/SIA_lack_of_the_political_legitimacy_banner.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_lack_of_the_political_legitimacy"
-		textureFile = "gfx/interface/ideas/SIA/SIA_lack_of_the_political_legitimacy_idea.png"
+		name = "GFX_idea_SIA_low_legitimacy"
+		textureFile = "gfx/interface/ideas/SIA/SIA_low_legitimacy.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_the_constitution_of_thailand_banner"
