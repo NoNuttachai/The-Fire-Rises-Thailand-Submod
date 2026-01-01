@@ -1,0 +1,418 @@
+focus_tree = {
+	id = thailand_focus_tfx
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = SIA
+		}
+	}
+
+	focus = {
+		id = SIA_happy_new_year
+		icon = GFX_TFX_goal_SIA_HappyNewYear2020
+		x = 15
+		y = 0
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_declare_state_of_emergency
+		icon = GFX_TFX_goal_SIA_State_of_Emergency
+		prerequisite = { focus = SIA_happy_new_year }
+		x = 0
+		y = 1
+		relative_position_id = SIA_happy_new_year
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_establish_ccsa
+		icon = GFX_TFX_goal_SIA_CCSA
+		prerequisite = { focus = SIA_declare_state_of_emergency }
+		x = -5
+		y = 1
+		relative_position_id = SIA_declare_state_of_emergency
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_control_medical_supply_product
+		icon = GFX_TFX_goal_SIA_Product
+		prerequisite = { focus = SIA_establish_ccsa }
+		x = -2
+		y = 1
+		relative_position_id = SIA_establish_ccsa
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_encourage_mask_mandate
+		icon = GFX_TFX_goal_SIA_Mask_Mandate
+		prerequisite = { focus = SIA_establish_ccsa }
+		x = 0
+		y = 1
+		relative_position_id = SIA_establish_ccsa
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_restrict_public_gathering
+		icon = GFX_TFX_goal_SIA_Public_Gathering
+		prerequisite = { focus = SIA_establish_ccsa }
+		x = 2
+		y = 1
+		relative_position_id = SIA_establish_ccsa
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_issue_tracking_application
+		icon = GFX_TFX_goal_SIA_Application
+		prerequisite = { focus = SIA_control_medical_supply_product }
+		prerequisite = { focus = SIA_encourage_mask_mandate }
+		x = 1
+		y = 1
+		relative_position_id = SIA_control_medical_supply_product
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_kickstart_vaccination_process
+		icon = GFX_TFX_goal_SIA_Vaccination
+		prerequisite = { focus = SIA_encourage_mask_mandate }
+		prerequisite = { focus = SIA_restrict_public_gathering }
+		x = 1
+		y = 1
+		relative_position_id = SIA_encourage_mask_mandate
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_deal_with_the_movement
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_declare_state_of_emergency }
+		x = 0
+		y = 1
+		relative_position_id = SIA_declare_state_of_emergency
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_utilized_court_system
+		icon = GFX_TFX_goal_SIA_Court_System
+		prerequisite = { focus = SIA_deal_with_the_movement }
+		prerequisite = { focus = SIA_establish_ccsa focus = SIA_oil_pricing_problem }
+		x = 0
+		y = 1
+		relative_position_id = SIA_deal_with_the_movement
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_crush_the_movement
+		icon = GFX_TFX_goal_SIA_Crush_The_Movement
+		prerequisite = { focus = SIA_utilized_court_system }
+		mutually_exclusive = { focus = SIA_calm_the_people }
+		x = -1
+		y = 1
+		relative_position_id = SIA_utilized_court_system
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_calm_the_people
+		icon = GFX_TFX_goal_SIA_Calm_the_People
+		prerequisite = { focus = SIA_utilized_court_system }
+		mutually_exclusive = { focus = SIA_crush_the_movement }
+		x = 1
+		y = 1
+		relative_position_id = SIA_utilized_court_system
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_oil_pricing_problem
+		icon = GFX_TFX_goal_SIA_Oil_Crisis
+		prerequisite = { focus = SIA_declare_state_of_emergency }
+		x = 5
+		y = 1
+		relative_position_id = SIA_declare_state_of_emergency
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_reduce_infrastructure_usage
+		icon = GFX_TFX_goal_SIA_Reduce
+		prerequisite = { focus = SIA_oil_pricing_problem }
+		x = -2
+		y = 1
+		relative_position_id = SIA_oil_pricing_problem
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_look_for_foreign_deal
+		icon = GFX_TFX_goal_SIA_Foreign_Oil_Deal
+		prerequisite = { focus = SIA_oil_pricing_problem }
+		x = 0
+		y = 1
+		relative_position_id = SIA_oil_pricing_problem
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_subsidize_government_buisness
+		icon = GFX_TFX_goal_SIA_Subsidize_Government_Business
+		prerequisite = { focus = SIA_oil_pricing_problem }
+		x = 2
+		y = 1
+		relative_position_id = SIA_oil_pricing_problem
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_reopen_thai_tourism
+		icon = GFX_TFX_goal_SIA_ReOpenTourism
+		prerequisite = { focus = SIA_reduce_infrastructure_usage }
+		prerequisite = { focus = SIA_look_for_foreign_deal }
+		x = 1
+		y = 1
+		relative_position_id = SIA_reduce_infrastructure_usage
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_digitialized_thai_economy
+		icon = GFX_TFX_goal_SIA_Digitalized
+		prerequisite = { focus = SIA_subsidize_government_buisness }
+		prerequisite = { focus = SIA_look_for_foreign_deal }
+		x = 1
+		y = 1
+		relative_position_id = SIA_look_for_foreign_deal
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_extinguish_the_flames
+		icon = GFX_TFX_goal_SIA_Extinguish_the_Flames
+		prerequisite = { focus = SIA_crush_the_movement focus = SIA_calm_the_people }
+		prerequisite = { focus = SIA_issue_tracking_application }
+		prerequisite = { focus = SIA_kickstart_vaccination_process }
+		prerequisite = { focus = SIA_reopen_thai_tourism }
+		prerequisite = { focus = SIA_digitialized_thai_economy }
+		x = 1
+		y = 1
+		relative_position_id = SIA_crush_the_movement
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	}
