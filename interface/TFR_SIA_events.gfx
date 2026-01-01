@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_report_event_constitutional_court"
+		textureFile = "gfx/interface/event_pictures/GFX_report_event_constitutional_court.png"
+		legacy_lazy_load = no
+	}
+}
