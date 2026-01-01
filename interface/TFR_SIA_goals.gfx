@@ -1,0 +1,78 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Application"
+        texturefile = "gfx/interface/goals/SIA/SIA_Application.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Calm_the_People"
+        texturefile = "gfx/interface/goals/SIA/SIA_Calm_the_People.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_CCSA"
+        texturefile = "gfx/interface/goals/SIA/SIA_CCSA.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Court_System"
+        texturefile = "gfx/interface/goals/SIA/SIA_Court_System.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Crush_The_Movement"
+        texturefile = "gfx/interface/goals/SIA/SIA_Crush_The_Movement.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Deal_with_the_Moment"
+        texturefile = "gfx/interface/goals/SIA/SIA_Deal_with_the_Moment.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Digitalized"
+        texturefile = "gfx/interface/goals/SIA/SIA_Digitalized.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Extinguish_the_Flames"
+        texturefile = "gfx/interface/goals/SIA/SIA_Extinguish_the_Flames.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Foreign_Oil_Deal"
+        texturefile = "gfx/interface/goals/SIA/SIA_Foreign_Oil_Deal.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_HappyNewYear2020"
+        texturefile = "gfx/interface/goals/SIA/SIA_HappyNewYear2020.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Mask_Mandate"
+        texturefile = "gfx/interface/goals/SIA/SIA_Mask_Mandate.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Oil_Crisis"
+        texturefile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Product"
+        texturefile = "gfx/interface/goals/SIA/SIA_Product.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Public_Gathering"
+        texturefile = "gfx/interface/goals/SIA/SIA_Public_Gathering.png"
+    }
+	    SpriteType = {
+        name = "GFX_TFX_goal_SIA_Reduce"
+        texturefile = "gfx/interface/goals/SIA/SIA_Reduce.png"
+    }
+	   SpriteType = {
+        name = "GFX_TFX_goal_SIA_ReOpenTourism"
+        texturefile = "gfx/interface/goals/SIA/SIA_ReOpenTourism.png"
+    }
+	   SpriteType = {
+        name = "GFX_TFX_goal_SIA_State_of_Emergency"
+        texturefile = "gfx/interface/goals/SIA/SIA_State_of_Emergency.png"
+    }
+	   SpriteType = {
+        name = "GFX_TFX_goal_SIA_Subsidize_Government_Business"
+        texturefile = "gfx/interface/goals/SIA/SIA_Subsidize_Government_Business.png"
+    }
+	   SpriteType = {
+        name = "GFX_TFX_goal_SIA_Vaccination"
+        texturefile = "gfx/interface/goals/SIA/SIA_Vaccination.png"
+    }
+}
