@@ -27,8 +27,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/SIA_the_constitution_of_thailand_idea.png"
 	}
 	
-	
-	
+	# Events
+	spriteType = {
+		name = "GFX_report_event_constitutional_court"
+		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
+		legacy_lazy_load = no
+	}
 	# Advisors
 	spriteType = {
 		name = "GFX_idea_SIA_anupong_paochinda"
