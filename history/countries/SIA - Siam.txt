@@ -61,7 +61,7 @@
 		ETH_chinese_investments
 		SIA_an_army_with_a_country_1
 		SIA_lack_of_the_political_legitimacy
-		SIA_the_constitution_of_thailand_1
+		SIA_constitution_60
 		SIA_anupong_paochinda
 	}
 	
