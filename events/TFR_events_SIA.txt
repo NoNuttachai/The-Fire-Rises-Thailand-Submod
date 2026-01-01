@@ -6,6 +6,8 @@ country_event = {
     title = thailand_politics.1.t
     desc = thailand_politics.1.d
     picture = GFX_report_event_constitutional_court
+	
+	fire_only_once = yes
 
     trigger = {
         tag = SIA
