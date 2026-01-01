@@ -18,13 +18,13 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/SIA_low_legitimacy.png"
 	}
 	spriteType = {
-		name = "GFX_SIA_the_constitution_of_thailand_banner"
-		textureFile = "gfx/interface/ideas/SIA/SIA_the_constitution_of_thailand_banner.png"
+		name = "GFX_SIA_the_constitution_of_thailand_cat"
+		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_the_constitution_of_thailand_cat.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_the_constitution_of_thailand"
-		textureFile = "gfx/interface/ideas/SIA/SIA_the_constitution_of_thailand_idea.png"
+		name = "GFX_idea_SIA_constitution_2017"
+		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
 	
 	# Events
