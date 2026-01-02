@@ -34,7 +34,6 @@ country_event = {
 
         hidden_effect = {
             retire_character = SIA_thanathorn_juangroongruangkit_char
-			promote_character = SIA_pita_char
         }
     }
 }

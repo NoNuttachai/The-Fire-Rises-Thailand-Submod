@@ -32,7 +32,6 @@
 	recruit_character = SIA_apirat_kongsompong_char
 	recruit_character = SIA_santi_sakuntanak_char
 	recruit_character = SIA_thanathorn_juangroongruangkit_char
-	promote_character = SIA_thanathorn_juangroongruangkit_char
 	recruit_character = SIA_pita_char
 	recruit_character = SIA_thaksin_shinawatra_char
 	recruit_character = SIA_yingluck_shinawatra_char
