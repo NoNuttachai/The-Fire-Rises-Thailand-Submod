@@ -37,3 +37,23 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = thailand_politics.2
+    title = thailand_politics.2.t
+    desc = thailand_politics.2.d
+    picture = GFX_report_event_the_somboon_story
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = SIA
+        date > 2020.1.1
+    }
+    
+    option = {
+        name = thailand_politics.2.a 
+        
+        add_stability = -0.02
+    }
+}

@@ -33,6 +33,11 @@ spriteTypes = {
 		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_report_event_the_somboon_story"
+		textureFile = "gfx/event_pictures/report_event_the_somboon_story.png"
+		legacy_lazy_load = no
+	}
 	# Advisors
 	spriteType = {
 		name = "GFX_idea_SIA_anupong_paochinda"
