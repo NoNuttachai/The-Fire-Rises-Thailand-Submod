@@ -1,27 +1,19 @@
-
-state={
-	id=1486
-	name="STATE_1486"
-	resources={
-		rubber = 10
-		steel = 1
-	}
-
-	history={
+state = {
+	id = 1486
+	name = "STATE_1486"
+	manpower = 1200000
+	state_category = rural
+	history = {
 		owner = SIA
+		victory_points = {
+			12615 1
+		}
 		buildings = {
 			infrastructure = 2
-			dockyard = 1
 		}
-		victory_points = { 12131 5 }
 		add_core_of = SIA
-
 	}
-
-	provinces={
-		1279 4297 12131
+	provinces = {
+		12615 12624 12644 12658
 	}
-	manpower=2056900
-	buildings_max_level_factor=1.000
-	state_category = suburb
 }
