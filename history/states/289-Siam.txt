@@ -15,7 +15,6 @@ state = {
 		add_core_of = SIA
 		victory_points = { 1427 30 }
 		victory_points = { 10221 10 }
-		victory_points = { 7587 1 }
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 4
