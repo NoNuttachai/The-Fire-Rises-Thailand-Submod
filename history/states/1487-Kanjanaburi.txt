@@ -1,0 +1,23 @@
+state = {
+	id = 1487
+	name = "STATE_1487"
+	manpower = 893200
+	state_category = large_city
+	
+	resources = {
+		rubber = 42
+	}
+	
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		victory_points = { 7587 1 }
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	
+	provinces = {
+		4319 4348 7587 10193
+	}
+}

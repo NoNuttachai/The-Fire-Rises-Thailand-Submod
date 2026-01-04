@@ -1,0 +1,32 @@
+state = {
+	id = 289
+	name = "STATE_289"
+	manpower = 23529200
+	state_category = large_city
+	
+	resources = {
+		rubber = 200
+		oil = 26
+		steel = 19
+	}
+	
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		victory_points = { 1427 30 }
+		victory_points = { 10221 10 }
+		victory_points = { 7587 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
+			dockyard = 1
+			air_base = 3
+			1427 = { naval_base = 3 }
+		}
+	}
+	
+	provinces = {
+		1427 7338 7367 7408 10221 10250 
+	}
+}

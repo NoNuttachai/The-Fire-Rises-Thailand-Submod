@@ -1,0 +1,23 @@
+state = {
+	id = 1389
+	name = "STATE_1489"
+	manpower = 1
+	state_category = large_city
+	
+	resources = {
+	}
+	
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		victory_points = { 4433 20 }
+		victory_points = { 10293 1 }
+		victory_points = { 7292 1 }
+		buildings = {
+		}
+	}
+	
+	provinces = {
+		1244 4433 7225 7292 10293 12224 
+	}
+}
