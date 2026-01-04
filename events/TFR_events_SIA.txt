@@ -1,5 +1,5 @@
-﻿
 add_namespace = thailand_politics
+add_namespace = thailand_nonpolitical
 
 country_event = {
     id = thailand_politics.1
@@ -14,6 +14,10 @@ country_event = {
         date > 2020.2.20
     }
     
+    mean_time_to_happen = {
+        days = 1
+    }
+
     option = {
         name = thailand_politics.1.a 
         
@@ -51,9 +55,39 @@ country_event = {
         date > 2020.1.1
     }
     
+    mean_time_to_happen = {
+        days = 1
+    }
+
     option = {
         name = thailand_politics.2.a 
         
         add_stability = -0.02
+    }
+}
+
+country_event = {
+    id = thailand_nonpolitical.1
+    title = thailand_nonpolitical.1.t
+    desc = thailand_nonpolitical.1.d
+    picture = GFX_report_event_korat_massacre
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = SIA
+        date > 2020.2.7
+    }
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = thailand_nonpolitical.1.a 
+        
+        add_manpower = -7
+        add_experience_army = -25
+        add_stability = -0.05
     }
 }
