@@ -1,0 +1,4 @@
+set_balance_of_power = {
+	id = THA_prayut_opposition_bop
+	value = 0.0
+}

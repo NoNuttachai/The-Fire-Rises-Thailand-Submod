@@ -1,11 +1,8 @@
-version="1.0"
-dependencies = {
-    "The Fire Rises"   
-    "The Fire Rises Music Addon"	
-}			
-supported_version="1.17.*"
+name="New Revolution Project"
 tags={
+	"Alternative History"
 	"National Focuses"
-	"Gameplay"
+	"Technologies"
 }
-name="TFR Siam Submod"
+supported_version="1.17.*"
+path="mod/new_revolution_project"

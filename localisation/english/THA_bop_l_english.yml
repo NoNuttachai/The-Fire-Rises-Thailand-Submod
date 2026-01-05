@@ -1,0 +1,12 @@
+l_english:
+ THA_prayut_opposition_bop_name:0 "Prayut's Governance vs. Public Opposition"
+ THA_prayut_opposition_range:0 "State of Public Unrest"
+ THA_bop_opposition_suppressed:0 "Opposition Suppressed"
+ THA_bop_strong_authority:0 "Strong Government Authority"
+ THA_bop_mild_opposition:0 "Mild Public Opposition"
+ THA_bop_moderate_opposition:0 "Moderate Public Opposition"
+ THA_bop_severe_opposition:0 "Severe Public Opposition"
+ THA_prayut_government_side:0 "Prayut's Government"
+ THA_public_opposition_side:0 "Public Opposition"
+ 
+ THA_prayut_opposition_bop_desc:0 "The political climate in Thailand is increasingly polarized. While Prime Minister Prayut Chan-o-cha maintains a firm grip on the levers of state power, the streets whisper of discontent. If the balance tips too far toward the opposition, the stability of the administration—and the nation—may collapse into chaos."
