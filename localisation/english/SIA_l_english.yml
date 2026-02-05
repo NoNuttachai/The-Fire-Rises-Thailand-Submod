@@ -22,3 +22,8 @@ l_english:
  thailand_nonpolitical.1.a: "Such horror occurring in our country?"
  ###Tooltip###
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
+
+ ###Startup Menu###
+ SIA_country_summary: "§YCountry Summary§!:\nThailand is a Land of Smiles, a country with rich culture, stunning tourist destinations, and vibrant street food culture that is world-renowned, but there are serious problems hidden beneath that glamorous facade.\nThe Thai economy began showing clear signs of deterioration and entering a crisis at various points, with the most significant crisis occurring during the 1997 Asian financial crisis, better known as the 'Tom Yum Kung crisis'. Social inequality and political instability has also been a huge problem from the latest military coup in 2014 by General Prayut Chan-o-cha who still rules the country to this day, nonetheless the Thai people still long for a better future amidst the pressure from both internal and external problems.\n\nThe new decade will be a challenge for all Thai people, will they break the cycle and progress to a new bright future? Only time will tell..."
+ SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§q - United Thai Nation Party§!\n§i - Bhumjaithai Party§!\n§x  - Pheu Thai Party§!\n§u - Move Forward / People's Party§!"
+ SIA_country_other: "§YTips and Tricks:§!\n - I don't know?\n - §GJust don't have a skill issue, I guess?§!"
