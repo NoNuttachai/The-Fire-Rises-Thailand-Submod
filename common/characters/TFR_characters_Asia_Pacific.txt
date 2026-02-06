@@ -1408,7 +1408,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = ultra_conservatism
+			ideology = SIA_stratocratic_conservatism
 		}
 		country_leader = {
 			ideology = military_junta
