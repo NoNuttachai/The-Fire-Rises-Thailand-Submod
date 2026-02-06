@@ -1,4 +1,21 @@
 l_english:
+ ###Parties###
+ SIA_cpt: "§RCPT§!"
+ SIA_cpt_long: "§RCommunist Party of Thailand§!"
+ SIA_swt: "§RSWT§!"
+ SIA_swt_long: "§RSocialist Workers Thailand§!"
+ SIA_ffp: "FFP"
+ SIA_ffp_long: "Future Forward Party"
+ SIA_ptp: "PTP"
+ SIA_ptp_long: "Pheu Thai Party"
+ SIA_bjt: "BJT"
+ SIA_bjt_long: "Bhumjaithai Party"
+ SIA_dp: "DP"
+ SIA_dp_long: "Democrat Party"
+ SIA_rtaf: "RTAF"
+ SIA_rtaf_long: "Royal Thai Armed Forces"
+ SIA_okkp: "OKKP"
+ SIA_okkp_desc: "Ongkon Kep Khaya Phaendin"
 
  ###Focus tree###
  

@@ -355,9 +355,15 @@
 			}
 			localization_key = "GFX_NCM_BG"
 		}
+		text = { 
+			trigger = {
+				tag = SIA
+			}
+			localization_key = "GFX_thailand_bg"
+		}
 		text = {
 			trigger = {
-				NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER tag = NCM }
+				NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER tag = NCM tag = SIA }
 				NOT = { tag = USB has_completed_focus = USB_rebirth }
 			}
 			localization_key = "GFX_World_Map_BG"

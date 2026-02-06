@@ -230,11 +230,51 @@
 		id = thailand.18
 		days = 1
 	}
-	
+
+	set_party_name = {
+		ideology = totalitarian_socialist
+		long_name = SIA_cpt_long
+		name = SIA_cpt
+	}
+	set_party_name = {
+		ideology = communist
+		long_name = SIA_swt_long
+		name = SIA_swt
+	}
+	set_party_name = {
+		ideology = social_democrat
+		long_name = SIA_ffp_long
+		name = SIA_ffp
+	}
+	set_party_name = {
+		ideology = social_liberal
+		long_name = SIA_ptp_long
+		name = SIA_ptp
+	}
+	set_party_name = {
+		ideology = market_liberal
+		long_name = SIA_bjt_long
+		name = SIA_bjt
+	}
+	set_party_name = {
+		ideology = conservative
+		long_name = SIA_dp_long
+		name = SIA_dp
+	}
 	set_party_name = {
 		ideology = authoritarian_democrat
 		long_name = SIA_palang_pracharath_party_long
 		name = SIA_palang_pracharath_party
+	}
+	set_party_name = {
+		ideology = nationalist
+		long_name = SIA_rtaf_long
+		name = SIA_rtaf
+	}
+	set_party_name = {
+		ideology = fascist
+		long_name = SIA_okkp_long
+		name = SIA_okkp
 	}
 	
 	set_politics = {
