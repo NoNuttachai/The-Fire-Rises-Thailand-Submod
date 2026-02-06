@@ -16,6 +16,9 @@ l_english:
  SIA_rtaf_long: "Royal Thai Armed Forces"
  SIA_okkp: "OKKP"
  SIA_okkp_desc: "Ongkon Kep Khaya Phaendin"
+ 
+ SIA_stratocratic_conservatism: "Stratocratic Conservatism"
+ SIA_stratocratic_conservatism_desc: "\n\n\n\n£GFX_SIA_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
 
  ###Focus tree###
  
