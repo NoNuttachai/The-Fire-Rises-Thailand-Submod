@@ -69,7 +69,7 @@
 		}
 		SpriteType = {
 			name = "GFX_thailand_bg"
-			texturefile = "gfx/interface/thailand_bg.dds"		
+			texturefile = "gfx/interface/thailand_bg.png"		
 			alwaystransparent = yes			
 		}
 		SpriteType = {

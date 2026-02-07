@@ -1,8 +1,8 @@
 spriteTypes = {
 	#Economy
 	spriteType = {
-		name = "GFX_SIA_stratocratic_conservatism"
-		texturefile = "gfx/texticons/banners/ideology/SIA_stratocratic_conservatism.png"
+		name = "GFX_stratocratic_conservatism"
+		texturefile = "gfx/texticons/banners/ideology/stratocratic_conservatism.png"
 		legacy_lazy_load = no
 	}
 }	

@@ -1005,7 +1005,7 @@ ideologies = {
 					124
 				}
 			}
-			SIA_stratocratic_conservatism = {
+			stratocratic_conservatism = {
 				can_be_randomly_selected = no
 			}
 		}
