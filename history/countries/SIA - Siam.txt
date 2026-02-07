@@ -264,7 +264,7 @@
 	set_party_name = {
 		ideology = authoritarian_democrat
 		long_name = SIA_palang_pracharath_party_long
-		name = SIA_palang_pracharath_party
+		name = SIA_palang_pracharath_party_alt
 	}
 	set_party_name = {
 		ideology = nationalist
