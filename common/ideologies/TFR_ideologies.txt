@@ -1005,9 +1005,6 @@ ideologies = {
 					124
 				}
 			}
-			stratocratic_conservatism = {
-				can_be_randomly_selected = no
-			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRACY_1"
