@@ -1011,24 +1011,31 @@ characters={
 			}
 		}
 		country_leader = {
+			desc = SIA_rama_x_char_desc
 			ideology = reformist_socialism
 		}
 		country_leader = {
+			desc = SIA_rama_x_char_desc
 			ideology = progressivism
 		}
 		country_leader = {
+			desc = SIA_rama_x_char_desc
 			ideology = centrist
 		}
 		country_leader = {
+			desc = SIA_rama_x_char_desc
 			ideology = classical_liberalism
 		}
 		country_leader = {
+			desc = SIA_rama_x_char_desc
 			ideology = right_populism
 		}
 		country_leader = {
-			ideology = stratocratic_conservatism
+			desc = SIA_rama_x_char_desc
+			ideology = hybrid_regime
 		}
 		country_leader = {
+			desc = SIA_rama_x_char_desc
 			ideology = absolute_monarchist
 		}
 		field_marshal={
@@ -1066,7 +1073,7 @@ characters={
 			ideology = right_populism
 		}
 		country_leader = {
-			ideology = stratocratic_conservatism
+			ideology = hybrid_regime
 		}
 		country_leader = {
 			ideology = absolute_monarchist
@@ -1094,7 +1101,7 @@ characters={
 			ideology = right_populism
 		}
 		country_leader = {
-			ideology = stratocratic_conservatism
+			ideology = hybrid_regime
 		}
 		country_leader = {
 			ideology = absolute_monarchist
@@ -1122,7 +1129,7 @@ characters={
 			ideology = right_populism
 		}
 		country_leader = {
-			ideology = stratocratic_conservatism
+			ideology = hybrid_regime
 		}
 		country_leader = {
 			ideology = absolute_monarchist
@@ -1132,12 +1139,34 @@ characters={
 		portraits={
 			civilian = {
 				large = GFX_portrait_SIA_prayut_chan-o-cha
+				small = GFX_SIA_prayut_chan_o_cha
 			}
 		}
+		advisor={
+			slot = head_minister
+			idea_token = SIA_prayut_chan-o-cha_advisor
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = SIA_prayut_chan-o-cha_char
+					}
+				}
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
 		country_leader = {
-			ideology = stratocratic_conservatism
+			desc = SIA_prayut_chan-o-cha_char_desc
+			ideology = hybrid_regime
 		}
 		country_leader = {
+			desc = SIA_prayut_chan-o-cha_char_desc
 			ideology = military_junta
 		}
 		corps_commander={
@@ -1153,6 +1182,116 @@ characters={
 			}
 		}
 	}
+	SIA_don_pramudwinai_char = {
+		name = SIA_don_pramudwinai_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_don_pramudwinai
+			}
+		}
+		advisor={
+			slot = foreign_minister
+			idea_token = SIA_don_pramudwinai_advisor
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_uttama_saowanayon_char = {
+		name = SIA_uttama_saowanayon_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_uttama_saowanayon
+			}
+		}
+		advisor={
+			slot = economic_minister
+			idea_token = SIA_uttama_saowanayon_advisor
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_anupong_paochinda_char = {
+		name = SIA_anupong_paochinda_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_uttama_saowanayon
+			}
+		}
+		advisor={
+			slot = interior_minister
+			idea_token = SIA_anupong_paochinda_advisor
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_thewan_liptapanlop_char = {
+		name = SIA_thewan_liptapanlop_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_thewan_liptapanlop
+			}
+		}
+		advisor={
+			slot = intelligence_minister
+			idea_token = SIA_thewan_liptapanlop_advisor
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_prawit_wongsuwanchar_char = {
+		name = SIA_prawit_wongsuwan_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_prawit_wongsuwan
+			}
+		}
+		advisor={
+			slot = theorist_minister
+			idea_token = SIA_prawit_wongsuwan_advisor
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
 	SIA_apirat_kongsompong_char = {
 		portraits={
 			civilian = {
@@ -1160,7 +1299,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = stratocratic_conservatism
+			ideology = hybrid_regime
 		}
 		country_leader = {
 			ideology = military_junta
@@ -1408,7 +1547,7 @@ characters={
 			}
 		}
 		country_leader = {
-			ideology = stratocratic_conservatism
+			ideology = hybrid_regime
 		}
 		country_leader = {
 			ideology = military_junta

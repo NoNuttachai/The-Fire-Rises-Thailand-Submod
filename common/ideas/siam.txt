@@ -52,4 +52,79 @@ ideas = {
 			}
 		}
 	}
+	head_minister = {
+		SIA_prayut_chan-o-cha_advisor = {
+			name = SIA_prayut_chan-o-cha_char
+			picture = SIA_prayut_chan_o_cha
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				hog_political_protege
+			}
+		}
+	}
+	foreign_minister = {
+		SIA_don_pramudwinai_advisor = {
+			name = SIA_don_pramudwinai_char
+			picture = SIA_don_pramudwinai
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				for_ideological_crusader
+			}
+		}
+	}
+	economic_minister = {
+		SIA_uttama_saowanayon_advisor = {
+			name = SIA_uttama_saowanayon_char
+			picture = SIA_uttama_saowanayon
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				eco_keynesian_economy
+			}
+		}
+	}
+	interior_minister = {
+		SIA_anupong_paochinda_advisor = {
+			name = SIA_anupong_paochinda_char
+			picture = SIA_anupong_paochinda
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				sec_silent_lawyer
+			}
+		}
+	}
+	intelligence_minister = {
+		SIA_thewan_liptapanlop_advisor = {
+			name = SIA_thewan_liptapanlop_char
+			picture = SIA_thewan_liptapanlop
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				int_balanced_cryptographer
+			}
+		}
+	}
+	theorist_minister = {
+		SIA_prawit_wongsuwan_advisor = {
+			name = SIA_prawit_wongsuwan_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				mobile_warfare_expert
+			}
+		}
+	}
 }

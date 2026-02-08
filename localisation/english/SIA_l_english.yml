@@ -4,8 +4,9 @@
  SIA_cpt_long: "§RCommunist Party of Thailand§!"
  SIA_swt: "§RSWT§!"
  SIA_swt_long: "§RSocialist Workers Thailand§!"
- SIA_ffp: "FFP"
+ SIA_ls: "§RLibertarian Socialist§!"
  SIA_ffp_long: "Future Forward Party"
+ SIA_ffp: "FFP"
  SIA_ptp: "PTP"
  SIA_ptp_long: "Pheu Thai Party"
  SIA_bjt: "BJT"
@@ -18,8 +19,17 @@
  SIA_okkp: "OKKP"
  SIA_okkp_long: "Ongkon Kep Khaya Phaendin"
  
- stratocratic_conservatism: "Stratocratic Conservatism"
- stratocratic_conservatism_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
+ SIA_hybrid_regime: "Stratocratic Conservatism"
+ SIA_hybrid_regime_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
+
+ ###Characters###
+ SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared the heir to the throne in 1972.\n\nHe received his secondary education at The King's School in Sydney before enrolling at the Royal Military College, Duntroon (RMC). There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeings and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. He also partook in royal duties both at home and abroad.\n\nIn recent years, his military role has become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent part in royal ceremonies and public appearances, such as the charity event 'Bike for Dad.' and 'Bike for Mom.' He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
+ SIA_prayut_chan-o-cha_char_desc: "General Prayut Chan-o-cha, often known by his nickname 'Uncle Tu' or 'Big Tu', was born to an army colonel father and a school teacher mother. From a young age, he was enrolled at the Armed Forces Preparatory School and later became a cadet at the Chulachomklao Royal Military Academy.\n\nPrayut steadily climbed the ranks of the armed forces, rising from a major in the 21st Infantry Regiment, known as the `Queen`s Guards`, to a military general and Commander-in-Chief of the Royal Thai Armed Forces in 2010.\n\nAmid the turbulent political climate of 2014, marked by deep polarization and prolonged unrest, the Thai armed forces once more staged a coup d`état on 22nd May 2014 against the civilian government, placing the country under the National Council for Peace and Order (NCPO), with Prayut Chan-o-cha at its head.\n\nAlthough the NCPO was officially dissolved on 10 July 2019 following the 2019 general election, Prayut continued to serve as prime minister. With support from the Palang Pracharath Party, which nominated him as its prime ministerial candidate, he was subsequently elected by members of Parliament to lead his second cabinet, despite significant opposition and criticism from his opponents."
+ SIA_don_pramudwinai_char: "Don Pramudwinai"
+ SIA_uttama_saowanayon_char: "Uttama Saowanayon"
+ SIA_anupong_paochinda_char: "Anupong Paochina"
+ SIA_thewan_liptapanlop_char: "Thewan Liptapanlop"
+ SIA_prawit_wongsuwan_char: "Prawit Wongsuwan"
 
  ###Startup Menu###
  SIA_country_summary: "§YCountry Summary§!:\nThailand, the “Land of Smiles,” is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country’s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
@@ -27,8 +37,8 @@
  SIA_country_other: "§YTips and Tricks:§!\n “...Though we Thais love peace, we will fight without fear, for none shall ever trample our freedom. We'll sacrifice every drop of our blood with every might. Glory and victory to the nation of Thailand, §RC§!h§Bai§!y§Ro!§!” \n§g - Final Stanza of the National Anthem of Thailand, Luang Saranupraphan§!"
 
  ###Focus tree###
-SIA_more_years_with_uncle_tuu: "More Years with Uncle Tuu"
-#SIA_more_years_with_uncle_tuu_desc
+ SIA_more_years_with_uncle_tuu: "More Years with Uncle Tuu"
+ #SIA_more_years_with_uncle_tuu_desc
  
  ###Idea###
  SIA_lack_of_the_political_legitimacy: "Lack of the Political Legitimacy"

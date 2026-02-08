@@ -1847,12 +1847,6 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = hybrid_regime
-		}
-		localization_key = hybrid_regime
-	}	
-	text = {
-		trigger = {
 			has_country_leader_ideology = populist_putinism
 		}
 		localization_key = populist_putinism
@@ -2046,10 +2040,17 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = stratocratic_conservatism
+			tag = SIA
+			has_country_leader_ideology = hybrid_regime
 		}
-		localization_key = stratocratic_conservatism
+		localization_key = SIA_hybrid_regime
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = hybrid_regime
+		}
+		localization_key = hybrid_regime
+	}	
 }
 
 	#Despotist
