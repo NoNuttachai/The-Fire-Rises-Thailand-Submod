@@ -2043,7 +2043,7 @@ defined_text = {
 			tag = SIA
 			has_country_leader_ideology = hybrid_regime
 		}
-		localization_key = SIA_hybrid_regime
+		localization_key = hybrid_regime_SIA
 	}
 	text = {
 		trigger = {
