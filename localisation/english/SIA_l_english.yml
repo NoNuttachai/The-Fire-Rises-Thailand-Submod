@@ -16,10 +16,15 @@
  SIA_rtaf: "RTAF"
  SIA_rtaf_long: "Royal Thai Armed Forces"
  SIA_okkp: "OKKP"
- SIA_okkp_desc: "Ongkon Kep Khaya Phaendin"
+ SIA_okkp_long: "Ongkon Kep Khaya Phaendin"
  
  stratocratic_conservatism: "Stratocratic Conservatism"
  stratocratic_conservatism_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
+
+ ###Startup Menu###
+ SIA_country_summary: "§YCountry Summary§!:\nThailand, the “Land of Smiles,” is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country’s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
+ SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§g - United Thai Nation Party§!\n§B - Bhumjaithai Party§!\n§R - Pheu Thai Party§!\n§O - Move Forward / People's Party§!"
+ SIA_country_other: "§YTips and Tricks:§!\n “...Though we Thais love peace, we will fight without fear, for none shall ever trample our freedom. We'll sacrifice every drop of our blood with every might. Glory and victory to the nation of Thailand, §RC§!h§Bai§!y§Ro!§!” \n§g - Final Stanza of the National Anthem of Thailand, Luang Saranupraphan§!"
 
  ###Focus tree###
 SIA_more_years_with_uncle_tuu: "More Years with Uncle Tuu"
@@ -44,8 +49,3 @@ SIA_more_years_with_uncle_tuu: "More Years with Uncle Tuu"
  thailand_nonpolitical.1.a: "Such horror occurring in our country?"
  ###Tooltip###
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
-
- ###Startup Menu###
- SIA_country_summary: "§YCountry Summary§!:\nThailand is a Land of Smiles, a country with rich culture, stunning tourist destinations, and vibrant street food culture that is world-renowned, but there are serious problems hidden beneath that glamorous facade.\nThe Thai economy began showing clear signs of deterioration and entering a crisis at various points, with the most significant crisis occurring during the 1997 Asian financial crisis, better known as the 'Tom Yum Kung crisis'. Social inequality and political instability has also been a huge problem from the latest military coup in 2014 by General Prayut Chan-o-cha who still rules the country to this day, nonetheless the Thai people still long for a better future amidst the pressure from both internal and external problems.\n\nThe new decade will be a challenge for all Thai people, will they break the cycle and progress to a new bright future? Only time will tell..."
- SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§q - United Thai Nation Party§!\n§i - Bhumjaithai Party§!\n§x  - Pheu Thai Party§!\n§u - Move Forward / People's Party§!"
- SIA_country_other: "§YTips and Tricks:§!\n - I don't know?\n - §GJust don't have a skill issue, I guess?§!"
