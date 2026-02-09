@@ -91,4 +91,14 @@ spriteTypes = {
 		name = "GFX_idea_SIA_uttama_saowanayon"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_uttama_saowanayon.png"
 	}
+
+	# Laws
+	spriteType = {
+		name = "GFX_idea_SIA_lottery_conscription"
+		textureFile = "gfx/interface/ideas/SIA/SIA_lottery_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_low_income_only_welfare"
+		textureFile = "gfx/interface/ideas/SIA/SIA_low_income_only_welfare.dds"
+	}
 }
