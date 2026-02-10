@@ -213,7 +213,8 @@
 	}
 
 	add_ideas = {
-		low_conscription
+		SIA_lottery_conscription
+		SIA_low_income_only_welfare
 		medium_poverty
 		ASEAN_member
 	}

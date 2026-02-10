@@ -128,4 +128,47 @@ ideas = {
 			}
 		}
 	}
+	# Unique laws
+	mobilization_laws = {
+		SIA_lottery_conscription = {
+			cost = 100
+			removal_cost = -1
+			picture = idea_SIA_lottery_conscription
+			level = 5
+			allowed = {
+				tag = SIA
+			}
+			allowed_to_remove = { always = no }
+			modifier = {
+				conscription = 0.0325
+				training_time_factor = 0.15
+				industrial_capacity_factory = -0.05
+			}
+			ai_will_do = {
+				base = 1
+			}
+			cancel_if_invalid = no
+		}		
+	}
+	welfare_laws = {
+		SIA_low_income_only_welfare = {
+			cost = 100
+			removal_cost = -1
+			picture = idea_SIA_low_income_only_welfare
+			level = 5
+			allowed = {
+				tag = SIA
+			}
+			modifier = {
+				personal_expense = 0.25
+				production_speed_infrastructure_factor = -0.05
+				society_development_monthly = -0.0025
+				poverty_development_monthly = -0.0025
+			}
+			ai_will_do = {
+				base = 1
+			}
+			cancel_if_invalid = no
+		}		
+	}
 }
