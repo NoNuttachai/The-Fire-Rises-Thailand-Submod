@@ -159,6 +159,7 @@ ideas = {
 			allowed = {
 				tag = SIA
 			}
+			allowed_to_remove = { always = no }
 			modifier = {
 				personal_expense = 0.25
 				production_speed_infrastructure_factor = -0.05
