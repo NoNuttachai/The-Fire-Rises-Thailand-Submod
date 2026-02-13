@@ -215,6 +215,7 @@
 	add_ideas = {
 		SIA_lottery_conscription
 		SIA_low_income_only_welfare
+		general_exemptions
 		medium_poverty
 		ASEAN_member
 	}
@@ -284,8 +285,8 @@
 	}
 	set_party_name = {
 		ideology = fascist
-		long_name = SIA_okkp_long
-		name = SIA_okkp
+		long_name = SIA_rubbish_collect_long
+		name = SIA_rubbish_collect
 	}
 	set_party_name = {
 		ideology = national_socialist
