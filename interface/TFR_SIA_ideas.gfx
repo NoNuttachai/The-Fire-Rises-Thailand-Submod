@@ -91,6 +91,10 @@ spriteTypes = {
 		name = "GFX_idea_SIA_uttama_saowanayon"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_uttama_saowanayon.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_prawit_wongsuwa"
+		textureFile = "gfx/interface/ideas/SIA/advisors/IA_prawit_wongsuwa.png"
+	}
 
 	# Laws
 	spriteType = {
@@ -100,5 +104,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SIA_low_income_only_welfare"
 		textureFile = "gfx/interface/ideas/SIA/SIA_low_income_only_welfare.dds"
+	}
+
+	# Agencies
+	spriteType = {
+		name = "GFX_intelligence_agency_NOR_old_norse"
+		textureFile = "gfx/interface/operatives/agencies/SIA_national_intelligence_agency.dds"
+		noOfFrames = 2
 	}
 }
