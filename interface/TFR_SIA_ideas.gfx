@@ -108,7 +108,7 @@ spriteTypes = {
 
 	# Agencies
 	spriteType = {
-		name = "GFX_intelligence_agency_NOR_old_norse"
+		name = "GFX_intelligence_agency_SIA_national_intelligence_agency"
 		textureFile = "gfx/interface/operatives/agencies/SIA_national_intelligence_agency.dds"
 		noOfFrames = 2
 	}
