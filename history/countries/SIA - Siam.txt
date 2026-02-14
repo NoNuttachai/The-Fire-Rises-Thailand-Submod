@@ -42,7 +42,6 @@
 	recruit_character = SIA_anarchist_council_char
 	recruit_character = SIA_wichai_chutham_char
 	recruit_character = SIA_peoples_coaltion_char
-	recruit_character = SIA_bak
 	recruit_character = SIA_airbull_suttiwan_char
 	recruit_character = SIA_chalermpol_srisawat_char
 	recruit_character = SIA_chaichan_changmongkol_char

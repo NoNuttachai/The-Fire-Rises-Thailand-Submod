@@ -1680,22 +1680,6 @@ characters={
 			ideology = supervised_democracy
 		}
 	}
-	SIA_bak={
-		portraits={
-			army={
-				large="gfx/leaders/SIA/Bak.dds"
-			}
-		}
-		corps_commander={
-			traits={ trickster career_officer }
-			skill=2
-			attack_skill=5
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
-	}
 	ETI_peoples_coaltion_char = {
 		portraits={
 			civilian = {
