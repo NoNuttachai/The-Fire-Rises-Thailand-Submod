@@ -1038,18 +1038,6 @@ characters={
 			desc = SIA_rama_x_char_desc
 			ideology = absolute_monarchist
 		}
-		field_marshal={
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			traits={
-				commander_in_chief
-				media_personality
-				trait_reckless
-			}
-		}
 	}
 	SIA_dipangkorn_rasmijoti_char = {
 		portraits={
