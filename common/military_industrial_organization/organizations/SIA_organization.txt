@@ -1,0 +1,39 @@
+#Naval MIOs
+SIA_bangkok_dock_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_Bangkok_Dock_Company
+	allowed = {
+		tag = SIA 
+	}
+    equipment_type = {  
+        screen_ship
+        convoy_1
+    }
+    initial_trait = {
+        name = NOR_mio_initial_trait_convoy_and_escort_fleet #copy from Norway
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.05
+        }
+
+        production_bonus = {
+            production_capacity_factor = 0.07
+        }
+    }
+}
+#Tanks MIOs
+SIA_chaiseri_organisation = {
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_Chaiseri
+	allowed = {
+		tag = SIA 
+	}
+}
+
+SIA_thairungi_organisation = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_thairungi
+	allowed = {
+		tag = SIA 
+	}
+}

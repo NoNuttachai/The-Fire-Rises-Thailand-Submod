@@ -112,4 +112,18 @@ spriteTypes = {
 		textureFile = "gfx/interface/operatives/agencies/SIA_national_intelligence_agency.dds"
 		noOfFrames = 2
 	}
+
+	# MIO's
+	spriteType = {
+		name = "GFX_idea_Chaiseri"
+		texturefile = "gfx/interface/mios/MIO_Chaiseri.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Bangkok_Dock_Company"
+		texturefile = "gfx/interface/mios/MIO_Bangkok_Dock_Company.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_thairung"
+		texturefile = "gfx/interface/mios/MIO_thairung.dds"
+	}
 }
