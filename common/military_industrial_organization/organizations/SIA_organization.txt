@@ -32,7 +32,7 @@ SIA_chaiseri_organisation = {
 
 SIA_thairungi_organisation = {
 	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_thairungi
+	icon = GFX_idea_thairung
 	allowed = {
 		tag = SIA 
 	}
