@@ -1,8 +1,14 @@
 ideas = {
-
+	# !!! It’s important to include this piece of code to create space between the name and the modifiers. !!!
+	# traits = {
+	# 	    ZZZ_blank_idea_trait
+	# 	}	
 	country = {
 		SIA_an_army_with_a_country_1 = {
 			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
 			allowed_civil_war = {
 				always = yes
 			}
@@ -20,6 +26,9 @@ ideas = {
 		}
 		SIA_lack_of_the_political_legitimacy = {
 			picture = SIA_low_legitimacy
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
 			allowed_civil_war = {
 				always = yes
 			}
@@ -38,6 +47,9 @@ ideas = {
 		}
 		SIA_constitution_60 = {
 			picture = SIA_constitution_2017
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
 			allowed_civil_war = {
 				always = yes
 			}
