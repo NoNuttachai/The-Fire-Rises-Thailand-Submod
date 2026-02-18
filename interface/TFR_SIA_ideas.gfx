@@ -126,4 +126,24 @@ spriteTypes = {
 		name = "GFX_idea_thairung"
 		texturefile = "gfx/interface/mios/MIO_thairung.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_ordnance_department"
+		texturefile = "gfx/interface/mios/MIO_ordnance_department.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_israel_elbit_systems"
+		texturefile = "gfx/interface/mios/MIO_israel_elbit_systems.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_narc_arms_industry"
+		texturefile = "gfx/interface/mios/MIO_narc_arms_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_narc_arms_industry"
+		texturefile = "gfx/interface/mios/MIO_narc_arms_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sweden_saab_organization"
+		texturefile = "gfx/interface/mios/MIO_sweden_saab_organization.dds"
+	}
 }

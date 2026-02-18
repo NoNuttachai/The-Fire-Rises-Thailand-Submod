@@ -68,6 +68,10 @@
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
 
 #MIO's
-SIA_bangkok_dock_organization: "Bangkok Dock Company"
+SIA_bangkok_dock_company: "Bangkok Dock Company"
 SIA_chaiseri_organisation: "Chaiseri"
-SIA_thairungi_organisation: "Thai Rung Union Car"
+SIA_thairung_organisation: "Thai Rung Union Car"
+SIA_thai_army_ordnance_department: "RTA Ordnance Department"
+SIA_israel_elbit_systems: "Elbit Systems"
+SIA_narc_arms_industry: "NARAC Arms Industry"
+SIA_sweden_saab_organization: "Saab AB"

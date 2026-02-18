@@ -1,5 +1,5 @@
 #Naval MIOs
-SIA_bangkok_dock_organization = {
+SIA_bangkok_dock_company = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_Bangkok_Dock_Company
 	allowed = {
@@ -21,6 +21,20 @@ SIA_bangkok_dock_organization = {
         }
     }
 }
+#Air MIOs
+SIA_sweden_saab_organization = {
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_sweden_saab_organization
+	allowed = {	
+		tag = SIA 
+	}
+	NOT = {
+    	SIA = { has_war_with = SWE } 
+		SWE = { has_war = yes 
+				has_ideology = totalitarian_socialist has_ideology = communist has_ideology = libertarian_socialist has_ideology = fascist has_ideology = national_socialist
+			}
+	}	
+}
 #Tanks MIOs
 SIA_chaiseri_organisation = {
 	include = generic_tank_refurbishment_plant_organization
@@ -29,10 +43,39 @@ SIA_chaiseri_organisation = {
 		tag = SIA 
 	}
 }
-
-SIA_thairungi_organisation = {
+#Material Equipment
+SIA_thairung_organisation = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_thairung
+	allowed = {
+		tag = SIA 
+	}
+}
+SIA_thai_army_ordnance_department = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_SIA_ordnance_department
+	allowed = {
+		tag = SIA 
+	}
+}
+#JEW JEW JEW JEW JEW - Alex Jones
+SIA_israel_elbit_systems = {
+	include = generic_artillery_organization
+	icon = GFX_idea_SIA_israel_elbit_systems
+	allowed = {	
+		tag = SIA
+	}
+	available = {
+		country_exists = ISR
+		NOT = {
+    		SIA = { has_war_with = ISR } 
+			ISR = { has_war = yes }
+		}
+	}
+}
+SIA_narc_arms_industry = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_SIA_narc_arms_industry
 	allowed = {
 		tag = SIA 
 	}
