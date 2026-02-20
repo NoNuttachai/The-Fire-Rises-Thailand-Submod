@@ -26,7 +26,57 @@ spriteTypes = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
-
+	# Texticons
+	spriteType = {
+		name = "GFX_orange_party_1"
+		texturefile = "gfx/texticons/SIA_FFP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_phua_thai"
+		texturefile = "gfx/texticons/SIA_PTP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bhumjaithai"
+		texturefile = "gfx/texticons/SIA_BJT_weed.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_palang_pracharath"
+		texturefile = "gfx/texticons/SIA_PPRP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_democrat"
+		texturefile = "gfx/texticons/SIA_DP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_prachachat"
+		texturefile = "gfx/texticons/SIA_PCP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_thai_liberal_party"
+		texturefile = "gfx/texticons/SIA_TLP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_prachachat"
+		texturefile = "gfx/texticons/SIA_PCP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_chartthaipattana"
+		texturefile = "gfx/texticons/SIA_CTPP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_royal_thai_armed_forces"
+		texturefile = "gfx/texticons/SIA_RTARF.png"
+		legacy_lazy_load = no
+	}
 	# Ministers
 	spriteType = {
 		name = "GFX_SIA_prayut_chan_o_cha"
