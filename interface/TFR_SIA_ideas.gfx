@@ -72,7 +72,7 @@ spriteTypes = {
 		texturefile = "gfx/texticons/SIA_CTPP.png"
 		legacy_lazy_load = no
 	}
-	spriteType = { #different party to the one above, way smaller, don't get confused
+	spriteType = { #different party to the one above, way smaller in size, don't get confused
 		name = "GFX_chartpattana"
 		texturefile = "gfx/texticons/SIA_CP.png"
 		legacy_lazy_load = no
