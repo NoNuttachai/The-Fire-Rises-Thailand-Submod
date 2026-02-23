@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = SIA_moew_years_with_prayut
 		icon = GFX_TFX_goal_SIA_HappyNewYear2020
-		x = 11
+		x = 20
 		y = 0
 		cost = 5
 		
@@ -31,7 +31,7 @@ focus_tree = {
 		icon = SIA_moew_years_with_prayut
 		prerequisite = { focus = SIA_moew_years_with_prayut }
 		relative_position_id = SIA_moew_years_with_prayut
-		x = -8
+		x = -9
 		y = 2
 		cost = 5
 		
@@ -50,7 +50,7 @@ focus_tree = {
 		icon = GFX_TFX_goal_SIA_CCSA
 		prerequisite = { focus = SIA_first_case_outside_china }
 		relative_position_id = SIA_first_case_outside_china
-		x = 0
+		x = -1
 		y = 1
 		cost = 5
 		
@@ -67,8 +67,8 @@ focus_tree = {
 	focus = {
 		id = SIA_declare_state_of_emergency
 		icon = GFX_TFX_goal_SIA_State_of_Emergency
-		prerequisite = { focus = SIA_first_case_outside_china }
-		x = 2
+		prerequisite = { focus = SIA_first_case_outside_china focus = SIA_clamp_down_the_three_holves}
+		x = 1
 		y = 1
 		relative_position_id = SIA_first_case_outside_china
 		
@@ -129,9 +129,8 @@ focus_tree = {
 	focus = {
 		id = SIA_restrict_public_gathering
 		icon = GFX_TFX_goal_SIA_Public_Gathering
-		prerequisite = { focus = SIA_establish_ccsa }
+		prerequisite = { focus = SIA_establish_ccsa focus = SIA_enforced_lockdowns }
 		prerequisite = { focus = SIA_declare_state_of_emergency }
-		mutually_exclusive = { focus = SIA_expose_vaccine_monopoly }
 		x = 1
 		y = 1
 		relative_position_id = SIA_establish_ccsa
@@ -152,10 +151,10 @@ focus_tree = {
 	focus = {
 		id = SIA_issue_tracking_application
 		icon = GFX_TFX_goal_SIA_Application
-		prerequisite = { focus = SIA_encourage_mask_mandate }
-		x = 1
+		prerequisite = { focus = SIA_establish_ccsa }
+		x = -3
 		y = 1
-		relative_position_id = SIA_encourage_mask_mandate
+		relative_position_id = SIA_establish_ccsa
 		
 		cost = 5
 		
@@ -173,30 +172,8 @@ focus_tree = {
 		id = SIA_kickstart_vaccination_process
 		icon = GFX_TFX_goal_SIA_Vaccination
 		prerequisite = { focus = SIA_restrict_public_gathering focus = SIA_expose_vaccine_monopoly }
-		x = 3
-		y = 1
-		relative_position_id = SIA_encourage_mask_mandate
-		
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_the_new_normal
-		icon = GFX_TFX_goal_SIA_Vaccination
-		prerequisite = { focus = SIA_control_medical_supply_product }
-		prerequisite = { focus = SIA_issue_tracking_application }
-		prerequisite = { focus = SIA_kickstart_vaccination_process }
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = SIA_encourage_mask_mandate
 		
 		cost = 5
@@ -233,17 +210,16 @@ focus_tree = {
 			
 		}
 	}
-	# Central Branch
 	focus = {
-		id = SIA_call_to_bavaria
+		id = SIA_REDEM
 		icon = ggg
-		prerequisite = { focus = SIA_dissolution_of_future_forward }
-		relative_position_id = SIA_moew_years_with_prayut
-		x = 0
-		y = 3
+		prerequisite = { focus = SIA_organized_the_youth }
+		relative_position_id = SIA_begun_students_activism
+		x = 2
+		y = 2
 
 		
-		cost = 2
+		cost = 6
 		
 		ai_will_do = {
 			factor = 10
@@ -256,12 +232,386 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_national_dialogue_under_the_throne
+		id = SIA_demand_monarchy_reform
 		icon = ggg
-		prerequisite = { focus = SIA_call_to_bavaria focus = SIA_amplify_protest_movements }
-		mutually_exclusive = { focus = SIA_military_legacy_2014 }
-		relative_position_id = SIA_moew_years_with_prayut
+		prerequisite = { focus = SIA_REDEM focus = SIA_khana_ratsadon_reborn }
+		mutually_exclusive = { focus = SIA_one_demand_remove_prayut }
+		relative_position_id = SIA_REDEM
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_alligned_with_phua_thai_red_shirts
+		icon = ggg
+		prerequisite = { focus = SIA_one_demand_remove_prayut  }
+		relative_position_id = SIA_one_demand_remove_prayut
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_alligned_with_phua_thai_red_shirts
+		icon = ggg
+		prerequisite = { focus = SIA_one_demand_remove_prayut  }
+		relative_position_id = SIA_one_demand_remove_prayut
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_one_demand_remove_prayut
+		icon = ggg
+		prerequisite = { focus = SIA_REDEM focus = SIA_khana_ratsadon_reborn }
+		mutually_exclusive = { focus = SIA_demand_monarchy_reform }
+		relative_position_id = SIA_REDEM
+		x = -5
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_organized_mass_demonstrations
+		icon = ggg
+		prerequisite = { focus = SIA_demand_monarchy_reform focus = SIA_one_demand_remove_prayut }
+		relative_position_id = SIA_demand_monarchy_reform
+		x = -3
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_a_thai_poletariant_stuggle
+		icon = ggg
+		prerequisite = { focus = SIA_demand_monarchy_reform }
+		mutually_exclusive = { focus = SIA_distance_from_the_radical_left }
+		relative_position_id = SIA_demand_monarchy_reform
 		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_distance_from_the_radical_left
+		icon = ggg
+		prerequisite = { focus = SIA_demand_monarchy_reform }
+		relative_position_id = SIA_demand_monarchy_reform
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_distance_from_the_radical_left
+		icon = ggg
+		prerequisite = { focus = SIA_demand_monarchy_reform }
+		mutually_exclusive = { focus = SIA_a_thai_poletariant_stuggle }
+		relative_position_id = SIA_demand_monarchy_reform
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_milk_tea_alliance
+		icon = ggg
+		prerequisite = { focus = SIA_distance_from_the_radical_left }
+		relative_position_id = SIA_distance_from_the_radical_left
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_milk_tea_alliance
+		icon = ggg
+		prerequisite = { focus = SIA_distance_from_the_radical_left }
+		relative_position_id = SIA_distance_from_the_radical_left
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_milk_tea_alliance
+		icon = ggg
+		prerequisite = { focus = SIA_distance_from_the_radical_left }
+		relative_position_id = SIA_distance_from_the_radical_left
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_urge_peaceful_protesting
+		icon = ggg
+		prerequisite = { focus = SIA_distance_from_the_radical_left }
+		mutually_exclusive = { focus = SIA_riot_against_the_fascist_fedualist_state }
+		relative_position_id = SIA_distance_from_the_radical_left
+		x = 0
+		y = 2
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_fight_against_the_arrests
+		icon = ggg
+		prerequisite = { focus = SIA_distance_from_the_radical_left focus = SIA_a_thai_poletariant_stuggle }
+		relative_position_id = SIA_distance_from_the_radical_left
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_kuey_salims
+		icon = ggg
+		prerequisite = { focus = SIA_a_thai_poletariant_stuggle focus = SIA_distance_from_the_radical_left }
+		relative_position_id = SIA_a_thai_poletariant_stuggle
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_riot_against_the_fascist_fedualist_state
+		icon = ggg
+		prerequisite = { focus = SIA_kuey_salims focus = SIA}
+		mutually_exclusive = { focus = SIA_urge_peaceful_protesting }
+		relative_position_id = SIA_kuey_salims
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_occupied_the_universities
+		icon = ggg
+		prerequisite = { focus = SIA_kuey_salims }
+		relative_position_id = SIA_kuey_salims
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_militiant_marxist_tendency
+		icon = ggg
+		prerequisite = { focus = SIA_riot_against_the_fascist_fedualist_state focus = SIA_occupied_the_universities }
+		relative_position_id = SIA_riot_against_the_fascist_fedualist_state
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_khana_ratsadon_reborn
+		icon = ggg
+		prerequisite = { focus = SIA_call_to_bavaria focus = SIA_organized_the_youth }
+		relative_position_id = SIA_moew_years_with_prayut
+		x = -3
 		y = 4
 
 		
@@ -277,15 +627,210 @@ focus_tree = {
 			
 		}
 	}
-	
 	focus = {
-		id = SIA_military_legacy_2014
+		id = SIA_khana_ratsadon_reborn
 		icon = ggg
-		prerequisite = { focus = SIA_call_to_bavaria focus = SIA_pursue_inconvenient_politicians }
-		mutually_exclusive = { focus = SIA_national_dialogue_under_the_throne }
+		prerequisite = { focus = SIA_call_to_bavaria focus = SIA_organized_the_youth }
 		relative_position_id = SIA_moew_years_with_prayut
-		x = 1
+		x = -3
 		y = 4
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_khana_ratsadon_reborn
+		icon = ggg
+		prerequisite = { focus = SIA_call_to_bavaria focus = SIA_organized_the_youth }
+		relative_position_id = SIA_begun_students_activism
+		x = 0
+		y = 2
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_improve_uncle_tuu_image
+		icon = ggg
+		prerequisite = { focus = SIA_utilized_pro-governmental_media }
+		relative_position_id = SIA_utilized_pro-governmental_media
+		x = 1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_exposed_their_extremist_views
+		icon = ggg
+		prerequisite = { focus = SIA_utilized_pro-governmental_media }
+		relative_position_id = SIA_utilized_pro-governmental_media
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_appeal_to_conservatives
+		icon = ggg
+		prerequisite = { focus = SIA_exposed_their_extremist_views }
+		relative_position_id = SIA_exposed_their_extremist_views
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_mobilized_the_cyber_police
+		icon = ggg
+		prerequisite = { focus = SIA_utilized_pro-governmental_media }
+		relative_position_id = SIA_utilized_pro-governmental_media
+		x = 0
+		y = 2
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_in_defense_of_his_majesty
+		icon = ggg
+		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
+		relative_position_id = SIA_mobilize_the_bureaucracy
+		x = 3
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+ 	focus = {
+		id = SIA_organized_counter_protestors
+		icon = ggg
+		prerequisite = { focus = SIA_in_defense_of_his_majesty }
+		relative_position_id = SIA_in_defense_of_his_majesty
+		x = 0
+		y = 2
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_utilized_the_law
+		icon = ggg
+		prerequisite = { focus = SIA_in_defense_of_his_majesty }
+		relative_position_id = SIA_in_defense_of_his_majesty
+		x = -1
+		y = 1
+
+		
+		cost = 6
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_arrest_the_radical_leftists
+		icon = ggg
+		prerequisite = { focus = SIA_utilized_the_law focus = SIA_deploy_the_riot_police}
+		relative_position_id = SIA_utilized_the_law
+		x = -1
+		y = 1
 
 		
 		cost = 6
@@ -308,7 +853,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_dissolution_of_future_forward }
 		mutually_exclusive = { focus = SIA_clamp_down_the_three_holves }
 		relative_position_id = SIA_dissolution_of_future_forward
-		x = -2
+		x = 5
 		y = 1
 
 		
@@ -325,11 +870,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_weaponized_social_media
+		id = SIA_exposed_prayut_corruption
 		icon = ggg
 		prerequisite = { focus = SIA_begun_students_activism }
 		relative_position_id = SIA_begun_students_activism
-		x = -2
+		x = -1
 		y = 1
 		cost = 5
 		
@@ -344,32 +889,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_expose_vaccine_monopoly
+		id = SIA_secured_support_from_NGOs
 		icon = ggg
-		prerequisite = { focus = SIA_weaponized_social_media focus = SIA_declare_state_of_emergency }
-		mutually_exclusive = { focus = SIA_expose_vaccine_monopoly }
+		prerequisite = { focus = SIA_exposed_prayut_corruption }
+		prerequisite = { focus = SIA_organized_the_youth }
 		relative_position_id = SIA_begun_students_activism
-		x = -3
-		y = 2
-		cost = 7
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_the_three_demands
-		icon = ggg
-		prerequisite = { focus = SIA_weaponized_social_media }
-		prerequisite = { focus = SIA_amplify_protest_movements }
-		relative_position_id = SIA_begun_students_activism
-		x = -1
+		x = -2
 		y = 2
 		cost = 6
 		
@@ -384,35 +909,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_amplify_protest_movements
+		id = SIA_organized_the_youth
 		icon = ggg
 		prerequisite = { focus = SIA_begun_students_activism }
 		relative_position_id = SIA_begun_students_activism
-		x = 0
+		x = 1
 		y = 1
-		cost = 4
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_fueling_the_fire
-		icon = ggg
-		prerequisite = { focus = SIA_the_three_demands }
-		prerequisite = { focus = SIA_national_dialogue_under_the_throne focus = SIA_military_legacy_2014 }
-		mutually_exclusive = { focus = SIA_national_unity_2020 }
-		relative_position_id = SIA_dissolution_of_future_forward
-		x = -2
-		y = 4
-
-		
 		cost = 4
 		
 		ai_will_do = {
@@ -432,7 +934,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_dissolution_of_future_forward }
 		mutually_exclusive = { focus = SIA_begun_students_activism }
 		relative_position_id = SIA_dissolution_of_future_forward
-		x = 2
+		x = -5
 		y = 1
 
 		
@@ -449,12 +951,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_pursue_inconvenient_politicians
+		id = SIA_enforced_lockdowns
 		icon = ggg
 		prerequisite = { focus = SIA_clamp_down_the_three_holves }
-		relative_position_id = SIA_dissolution_of_future_forward
-		x = 2
-		y = 2
+		relative_position_id = SIA_clamp_down_the_three_holves
+		x = -1
+		y = 1
 
 		
 		cost = 4
@@ -470,12 +972,56 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_model_of_stability
+		id = SIA_utilized_pro-governmental_media
 		icon = ggg
-		prerequisite = { focus = SIA_clamp_down_the_three_holves }
-		relative_position_id = SIA_dissolution_of_future_forward
-		x = 4
-		y = 2
+		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
+		relative_position_id = SIA_mobilize_the_bureaucracy
+		x = -1
+		y = 1
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_deploy_the_riot_police
+		icon = ggg
+		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
+		relative_position_id = SIA_mobilize_the_bureaucracy
+		x = 1
+		y = 1
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SIA_clamp_down_on_foreign_NGOs
+		icon = ggg
+		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
+		relative_position_id = SIA_mobilize_the_bureaucracy
+		x = -3
+		y = 1
 
 		
 		cost = 5
@@ -491,34 +1037,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_emulate_regional_neighbors
+		id = SIA_mobilize_the_bureaucracy
 		icon = ggg
-		prerequisite = { focus = SIA_model_of_stability }
-		relative_position_id = SIA_dissolution_of_future_forward
-		x = 5
-		y = 3
-
-		
-		cost = 7
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_article_112_law
-		icon = ggg
-		prerequisite = { focus = SIA_model_of_stability }
-		prerequisite = { focus = SIA_pursue_inconvenient_politicians }
-		relative_position_id = SIA_dissolution_of_future_forward
-		x = 3
-		y = 3
+		prerequisite = { focus = SIA_clamp_down_the_three_holves }
+		relative_position_id = SIA_clamp_down_the_three_holves
+		x = 1
+		y = 1
 
 		
 		cost = 6
@@ -534,36 +1058,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_national_unity_2020
+		id = SIA_increase_the_debt_celling
 		icon = ggg
-		prerequisite = { focus = SIA_article_112_law }
-		prerequisite = { focus = SIA_national_dialogue_under_the_throne focus = SIA_military_legacy_2014 }
-		mutually_exclusive = { focus = SIA_fueling_the_fire }
-		relative_position_id = SIA_dissolution_of_future_forward
-		x = 2
-		y = 4
-
-		
-		cost = 4
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-#Oil Crisis	
-	focus = {
-		id = SIA_oil_crisis_hit_thailand
-		icon = ggg
-		prerequisite = { focus = SIA_moew_years_with_prayut }
-		relative_position_id = SIA_moew_years_with_prayut
-		x = 8
-		y = 2
+		prerequisite = { focus = SIA_first_case_outside_china }
+		relative_position_id = SIA_first_case_outside_china
+		x = -5
+		y = 1
 
 		
 		cost = 5
@@ -578,16 +1078,37 @@ focus_tree = {
 			
 		}
 	}
-# End
 	focus = {
-		id = SIA_muea_fai_mot_dap
+		id = SIA_promote_digital_payment
 		icon = ggg
-		relative_position_id = SIA_moew_years_with_prayut
-		prerequisite = { focus = SIA_the_new_normal }
-		prerequisite = { focus = SIA_fueling_the_fire focus = SIA_national_unity_2020 }
-		x = 0
-		y = 7
-		cost = 2
+		prerequisite = { focus = SIA_increase_the_debt_celling }
+		relative_position_id = SIA_increase_the_debt_celling
+		x = -1
+		y = 1
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_half_payment_policy
+		icon = ggg
+		prerequisite = { focus = SIA_promote_digital_payment focus = SIA_issue_tracking_application}
+		relative_position_id = SIA_promote_digital_payment
+		x = 1
+		y = 1
+
+		
+		cost = 5
 		
 		ai_will_do = {
 			factor = 10
