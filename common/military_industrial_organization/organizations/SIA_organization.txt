@@ -35,6 +35,13 @@ SIA_sweden_saab_organization = {
 			}
 	}	
 }
+SIA_defencetechnologyinstitute_organisation = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_defencetechnologyinstitute
+	allowed = {
+		tag = SIA 
+	}
+}
 #Tanks MIOs
 SIA_chaiseri_organisation = {
 	include = generic_tank_refurbishment_plant_organization

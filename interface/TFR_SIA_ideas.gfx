@@ -28,7 +28,7 @@ spriteTypes = {
 	}
 	# Texticons
 	spriteType = {
-		name = "GFX_orange_party_1"
+		name = "GFX_orange_party_1" #Future Forward Party
 		texturefile = "gfx/texticons/SIA_FFP.png"
 		legacy_lazy_load = no
 	}
@@ -200,5 +200,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_sweden_saab_organization"
 		texturefile = "gfx/interface/mios/MIO_sweden_saab_organization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_defencetechnologyinstitute"
+		texturefile = "gfx/interface/mios/MIO_defencetechnologyinstitute.dds"
 	}
 }
