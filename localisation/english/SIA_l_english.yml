@@ -35,10 +35,16 @@
  SIA_rama_x_char_desc: "General Prayut Chan-o-cha, commonly known as "Big Tu", was born into a military family, a background that led him into a career in the armed forces. He became well known within the 21st Infantry Regiment of the King's Guard as the "Queen's Tiger", a reputation that contributed to his rise to Commander-in-Chief of the Royal Thai Army in 2010, a position he had long aspired to attain.\n\nDuring the political turmoil of 2014, marked by deep divisions and prolonged unrest, Prayut led the military under the National Council for Peace and Order (NCPO) in a coup on 22 May 2014, aiming to end the political crisis. This action resulted in his appointment as Prime Minister.\n\nAs Prime Minister, Prayut oversaw the drafting of a new constitution focused on national unity and anti-corruption, earning it the nickname "the anti-corruption constitution", though several provisions—such as allowing a non-MP to become Prime Minister and empowering the Senate—were controversial.\n\nAfter the 2019 general election, Prayut returned to office with the support of the Palang Pracharath Party, promoting policies to assist low-income citizens, reduce living costs, and address agricultural issues. Despite continued criticism from younger and left-wing groups over the constitution and his rule, he retained strong support from conservative groups as a stabilizing leader."
  SIA_prayut_chan-o-cha_char_desc: "General Prayut Chan-o-cha, commonly known as `Big Tu,` was born into a military family, a background that led him into a career in the armed forces. He became well known within the 21st Infantry Regiment of the King's Guard as the `Queen's Tiger,` a reputation that contributed to his rise to Commander-in-Chief of the Royal Thai Army in 2010, a position he had long aspired to attain.\n\nDuring the political turmoil of 2014, marked by deep divisions and prolonged unrest, Prayut led the military under the National Council for Peace and Order (NCPO) in a coup on 22 May 2014, aiming to end the political crisis. This action resulted in his appointment as Prime Minister.\n\nAs Prime Minister, Prayut oversaw the drafting of a new constitution focused on national unity and anti-corruption, earning it the nickname `the anti-corruption constitution,` though several provisions—such as allowing a non-MP to become Prime Minister and empowering the Senate—were controversial.\n\nAfter the 2019 general election, Prayut returned to office with the support of the Palang Pracharath Party, promoting policies to assist low-income citizens, reduce living costs, and address agricultural issues. Despite continued criticism from younger and left-wing groups over the constitution and his rule, he retained strong support from conservative groups as a stabilizing leader."
  SIA_don_pramudwinai_char: "Don Pramudwinai"
- SIA_uttama_saowanayon_char: "Uttama Saowanayon"
+ SIA_uttama_saowanayon_char: "Uttama Saowanayon [£SIA_uttama_saowanayon_advisor_desc]"
  SIA_anupong_paochinda_char: "Anupong Paochina"
- SIA_thewan_liptapanlop_char: "Thewan Liptapanlop"
+ SIA_thewan_liptapanlop_char: "Thewan Liptapanlop "
  SIA_prawit_wongsuwan_char: "Prawit Wongsuwan"
+ SIA_prayut_chan-o-cha_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservatism"
+ SIA_don_pramudwinai_advisor_desc: "Independent"
+ SIA_uttama_saowanayon_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservatism"
+ SIA_anupong_paochinda_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservatism"
+ SIA_thewan_liptapanlop_advisor_desc: "[£GFX_chartpattana] Chart Pattana Party\nNeoliberalism"
+ SIA_prawit_wongsuwan_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservatism"
 
  ###Startup Menu###
  SIA_country_summary: "§YCountry Summary§!:\nThailand, the “Land of Smiles,” is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country`s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
@@ -91,3 +97,105 @@ SIA_israel_elbit_systems: "Elbit Systems"
 SIA_narc_arms_industry: "NARAC Arms Industry"
 SIA_sweden_saab_organization: "Saab AB"
 SIA_defencetechnologyinstitute_organisation: "Defense Technology Institute"
+
+###Parliament GUI###
+ SIA_parliament_title: "§YHouse of Representatives of Thailand§!"
+ SIA_parliament_house_desc: "The §YHouse of Representatives of Thailand§! has been in existence since the 1932 Revolution for legislative proposes. However, the modern day House of Representatives of Thailand is lower house of the National Assembly of Thailand, with representatives directly elected by the citizens through both the constituency and party-list systems."
+ SIA_parliament_total_seats_header: "§Y--- Parliamentary Breakdown ---§!"
+ SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
+ SIA_parliament_speaker_desc: "Speaker of the House of Representatives presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process."
+
+ SIA_parliament_gov_support_loc: "Total §GGovernment§! support: §G[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
+ SIA_parliament_opp_support_loc: "Total §ROpposition§! support: §R[?SIA_opp_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
+
+ SIA_parliament_speaker_name_loc: "Current Speaker: §YChuan Leekpai§!"
+ SIA_parliament_speaker_party_loc: "Speaker Political Party: £GFX_democrat §YDemocrat Party§!"
+
+ # Party full name lines (for single-column layout)
+ SIA_parliament_pprp_full: "£GFX_palang_pracharath §GPalang Pracharath Party - Government Coalition Leader§!"
+ SIA_parliament_dp_full: "£GFX_democrat §GDemocrat Party§!"
+ SIA_parliament_bjt_full: "£GFX_bhumjaithai §GBhumjaithai Party§!"
+ SIA_parliament_ctpp_full: "£GFX_chartthaipattana §GChart Thai Pattana Party§!"
+ SIA_parliament_ptp_full: "£GFX_phua_thai §YPheu Thai Party - Opposition Leader§!"
+ SIA_parliament_ffp_full: "£GFX_orange_party_1 §YFuture Forward Party§!"
+ SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§!"
+ SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§!"
+
+ # Party support lines
+ SIA_parliament_pprp_line_loc: "Support for £GFX_palang_pracharath §YPPRP§!: [?ROOT.party_popularity@authoritarian_democrat|Y%1]"
+ SIA_parliament_pprp_seats_loc: "§Y[?SIA_pprp_seats_var|0]§! Seats"
+ SIA_parliament_pprp_tt: "§YPalang Pracharath Party§!\nSeats: §Y[?SIA_pprp_seats_var|0]§!\n§GGovernment Coalition Leader§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_PPRP"
+
+ SIA_parliament_ptp_line_loc: "Support for £GFX_phua_thai §YPTP§!: [?ROOT.party_popularity@social_democrat|Y%1]"
+ SIA_parliament_ptp_seats_loc: "§Y[?SIA_ptp_seats_var|0]§! Seats"
+ SIA_parliament_ptp_tt: "§YPheu Thai Party§!\nSeats: §Y[?SIA_ptp_seats_var|0]§!\n§ROpposition Leader§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_PTP"
+
+ SIA_parliament_ffp_line_loc: "Support for £GFX_orange_party_1 §YFFP§!: [?ROOT.party_popularity@social_liberal|Y%1]"
+ SIA_parliament_ffp_seats_loc: "§Y[?SIA_ffp_seats_var|0]§! Seats"
+ SIA_parliament_ffp_tt: "§YFuture Forward Party§!\nSeats: §Y[?SIA_ffp_seats_var|0]§!\n§ROpposition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_FFP"
+
+ SIA_parliament_dp_line_loc: "Support for £GFX_democrat §YDP§!: [?ROOT.party_popularity@market_liberal|Y%1]"
+ SIA_parliament_dp_seats_loc: "§Y[?SIA_dp_seats_var|0]§! Seats"
+ SIA_parliament_dp_tt: "§YDemocrat Party§!\nSeats: §Y[?SIA_dp_seats_var|0]§!\n§GGovernment Coalition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_DP"
+
+ SIA_parliament_bjt_line_loc: "Support for £GFX_bhumjaithai §YBJT§!: [?ROOT.party_popularity@conservative|Y%1]"
+ SIA_parliament_bjt_seats_loc: "§Y[?SIA_bjt_seats_var|0]§! Seats"
+ SIA_parliament_bjt_tt: "§YBhumjaithai Party§!\nSeats: §Y[?SIA_bjt_seats_var|0]§!\n§GGovernment Coalition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_BJT"
+
+ SIA_parliament_tlp_line_loc: "Support for £GFX_thai_liberal_party §YTLP§!: N/A"
+ SIA_parliament_tlp_seats_loc: "§Y[?SIA_tlp_seats_var|0]§! Seats"
+ SIA_parliament_tlp_tt: "§YThai Liberal Party§!\nSeats: §Y[?SIA_tlp_seats_var|0]§!\n§ROpposition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_TLP"
+
+ SIA_parliament_ctpp_line_loc: "Support for £GFX_chartthaipattana §YCTPP§!: N/A"
+ SIA_parliament_ctpp_seats_loc: "§Y[?SIA_ctpp_seats_var|0]§! Seats"
+ SIA_parliament_ctpp_tt: "£GFX_SIA_intro_CTPP\n\n§YChart Thai Pattana Party§!\nSeats: §Y[?SIA_ctpp_seats_var|0]§!\n§GGovernment Coalition§!\n\nTODO: Party description placeholder.\n\n§TClick to view party details§!"
+
+ SIA_parliament_pcc_line_loc: "Support for £GFX_prachachat §YPCC§!: N/A"
+ SIA_parliament_pcc_seats_loc: "§Y[?SIA_pcc_seats_var|0]§! Seats"
+ SIA_parliament_pcc_tt: "£GFX_SIA_intro_PCC\n\n§YPrachachat Party§!\nSeats: §Y[?SIA_pcc_seats_var|0]§!\n§ROpposition§!\n\nTODO: Party description placeholder.\n\n§TClick to view party details§!"
+
+ # Party Detail Panels
+ SIA_parliament_detail_pprp_name: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)"
+ SIA_parliament_detail_pprp_leader: "Party Leader: §YGeneral Prawit Wongsuwan§!"
+ SIA_parliament_detail_pprp_desc: "§YPalang Pracharath Party§! is a Thai political party founded in 2018 to support the continuation of General Prayut Chan-o-cha`s government following the planned 2019 elections. Widely regarded as the political arm of the military establishment, the party drew its core support from conservative voters, the military, and business elites.\n\nThe party`s core platform focuses on §Ynational stability, economic development under strong leadership, and continuity§! of the policies enacted under the NCPO. Despite criticism for its close ties to the junta, Palang Pracharath emerged as the largest party in the 2019 election by popular vote, forming a coalition government that returned Prayut to the premiership."
+
+ SIA_parliament_detail_ptp_name: "£GFX_phua_thai §YPheu Thai Party§! (Phak Pheu Thai)"
+ SIA_parliament_detail_ptp_leader: "Party Leader: §YSompong Amornvivat§!"
+ SIA_parliament_detail_ptp_desc: "§YPheu Thai Party§! is a Thai political party founded in 2008 following the dissolution of the People Power Party, with the aim of continuing the political ideology and mass support base of the Thai Rak Thai Party.\n\nThe party`s core platform focuses on §Yreducing social inequality, stimulating economic growth, and improving the quality of life§! for the general public. Pheu Thai has played a major role in Thai politics, having formed governments on several occasions, and has been led by prominent political figures such as §YThaksin Shinawatra§! and §YYingluck Shinawatra§!, making it one of the most influential political parties in contemporary Thailand."
+
+ SIA_parliament_detail_ffp_name: "£GFX_orange_party_1 §YFuture Forward Party§! (Phak Anakhot Mai)"
+ SIA_parliament_detail_ffp_leader: "Party Leader: §YThanathorn Juangroongruangkit§!"
+ SIA_parliament_detail_ffp_desc: "§YFuture Forward Party§! is a Thai political party founded in 2018 by billionaire auto-parts heir Thanathorn Juangroongruangkit. The party quickly gained massive support among younger Thais and progressives, campaigning on §Ydemocratic reform, anti-military intervention in politics, decentralization, and economic modernization§!.\n\nIn the 2019 election, the FFP won 53 seats, making it the third-largest party. However, the party faced constant legal challenges and was ultimately dissolved by the Constitutional Court in February 2020, with its executives banned from politics for 10 years."
+
+ SIA_parliament_detail_dp_name: "£GFX_democrat §YDemocrat Party§! (Phak Prachathipat)"
+ SIA_parliament_detail_dp_leader: "Party Leader: §YJurin Laksanawisit§!"
+ SIA_parliament_detail_dp_desc: "§YDemocrat Party§! is Thailand`s oldest political party, founded in 1946. Traditionally representing the urban middle class, professionals, and southern Thai voters, the party has long positioned itself as a champion of §Yconstitutionalism, rule of law, and liberal democratic values§!.\n\nDespite its historical prominence, the party`s influence has waned in recent elections. In 2019, it joined the Palang Pracharath-led government coalition, a controversial decision that cost it support among its progressive base."
+
+ SIA_parliament_detail_bjt_name: "£GFX_bhumjaithai §YBhumjaithai Party§! (Phak Phumchai Thai)"
+ SIA_parliament_detail_bjt_leader: "Party Leader: §YAnutin Charnvirakul§!"
+ SIA_parliament_detail_bjt_desc: "§YBhumjaithai Party§! is a Thai political party founded in 2008. Under the leadership of Anutin Charnvirakul, the party has carved out a niche focusing on §Ypragmatic populism, rural development, and public health reform§!.\n\nNotably, Bhumjaithai became the first party in Thailand to champion the legalization of cannabis for medical and economic purposes. The party joined the government coalition after the 2019 election, securing key cabinet positions including the Ministry of Public Health."
+
+ SIA_parliament_detail_tlp_name: "£GFX_thai_liberal_party §YThai Liberal Party§! (Phak Seri Ruam Thai)"
+ SIA_parliament_detail_tlp_leader: "Party Leader: §YSereepisuth Temeeyaves§!"
+ SIA_parliament_detail_tlp_desc: "§YThai Liberal Party§! is a minor Thai political party led by former national police chief Sereepisuth Temeeyaves. The party positions itself as a §Yliberal, reformist party§! advocating for police reform, anti-corruption measures, and civil liberties.\n\nIn the 2019 election, the party won 10 seats and aligned with the opposition bloc."
+
+ SIA_parliament_detail_ctpp_name: "£GFX_chartthaipattana §YChart Thai Pattana Party§! (Phak Chart Thai Pattana)"
+ SIA_parliament_detail_ctpp_leader: "Party Leader: §YKanchana Silpa-archa§!"
+ SIA_parliament_detail_ctpp_desc: "§YChart Thai Pattana Party§! is a Thai political party that emerged from the dissolution of the original Chart Thai Party. Led by the Silpa-archa political family, the party maintains a §Yconservative, business-oriented platform§! with strong support in central Thailand.\n\nThe party joined the government coalition after the 2019 election, contributing 10 seats to the ruling majority."
+
+ SIA_parliament_detail_pcc_name: "£GFX_prachachat §YPrachachat Party§! (Phak Prachachat)"
+ SIA_parliament_detail_pcc_leader: "Party Leader: §YWan Muhamad Noor Matha§!"
+ SIA_parliament_detail_pcc_desc: "§YPrachachat Party§! is a Thai political party founded in 2018, primarily representing the §YMuslim-majority provinces in southern Thailand§!. Led by veteran politician Wan Muhamad Noor Matha, the party focuses on issues affecting the Deep South, including §Ypeace and reconciliation, cultural rights, decentralization, and economic development§! in the border provinces.\n\nIn the 2019 election, the party won 7 seats, all from southern constituencies, and aligned with the opposition."
+
+ # Decision Localization
+ SIA_parliament_category: "Parliament of Thailand"
+ SIA_open_parliament_gui: "View House of Representatives"
+ SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
+
+ # Parliament GUI - new layout keys
+ SIA_parliament_speaker_label: "§YSpeaker§!"
+ SIA_parliament_gov_header: "§GGovernment Coalition§!"
+ SIA_parliament_opp_header: "§ROpposition§!"
+ SIA_parliament_minor_gov_line_loc: "§WMinor Governmental Coalition Parties\n[?SIA_minor_gov_seats_var|0] Seats§!"
+ SIA_parliament_minor_opp_line_loc: "§WMinor Oppositional Parties\n[?SIA_minor_opp_seats_var|0] Seats§!"
+ SIA_seat_tt: "§YParliament Seat§!"

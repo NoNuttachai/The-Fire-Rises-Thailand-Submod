@@ -1,0 +1,24 @@
+SIA_parliament_init_variables = {
+	# Party seat counts (2019 election results)
+	set_variable = { SIA_pprp_seats_var = 119 }
+	set_variable = { SIA_ptp_seats_var = 135 }
+	set_variable = { SIA_ffp_seats_var = 53 }
+	set_variable = { SIA_dp_seats_var = 53 }
+	set_variable = { SIA_bjt_seats_var = 52 }
+	set_variable = { SIA_tlp_seats_var = 10 }
+	set_variable = { SIA_ctpp_seats_var = 10 }
+	set_variable = { SIA_pcc_seats_var = 7 }
+	# Minor parties
+	set_variable = { SIA_minor_gov_seats_var = 26 }
+	set_variable = { SIA_minor_opp_seats_var = 12 }
+
+	# Totals
+	# Government Coalition: PPRP(119) + DP(53) + BJT(52) + CTPP(10) + Minor(26) = 260
+	set_variable = { SIA_gov_seats_var = 260 }
+	# Opposition: PTP(135) + FFP(76) + TLP(10) + PCC(7) + Minor(12) = 240
+	set_variable = { SIA_opp_seats_var = 240 }
+	set_variable = { SIA_total_seats_var = 500 }
+
+	# Default: no party detail panel selected
+	set_variable = { SIA_parliament_selected_party = 0 }
+}

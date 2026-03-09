@@ -24,6 +24,9 @@
 	set_variable = { PDO_Influence = 0.30 }
 	set_variable = { Sovereign_Influence = 0.20 }
 
+	# Parliament variables
+	SIA_parliament_init_variables = yes
+
 	recruit_character = SIA_rama_x_char
 	recruit_character = SIA_dipangkorn_rasmijoti_char
 	recruit_character = SIA_vacharaesorn_vivacharawongse_char

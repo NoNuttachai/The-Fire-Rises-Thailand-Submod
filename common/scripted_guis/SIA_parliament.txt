@@ -1,0 +1,132 @@
+scripted_gui = {
+	SIA_parliament_gui = {
+		context_type = decision_category
+		window_name = "SIA_parliament_gui_window"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			original_tag = SIA
+		}
+
+		triggers = {
+			# Seat bar segment visibility (only show if seats > 0)
+			SIA_seat_gov_visible = {
+				check_variable = { SIA_parliament_gov_seats > 0 }
+			}
+			SIA_seat_opp_visible = {
+				check_variable = { SIA_parliament_opp_seats > 0 }
+			}
+			SIA_seat_vacant_visible = {
+				check_variable = { SIA_parliament_vacant_seats > 0 }
+			}
+
+			# Party detail panel visibility
+			SIA_detail_pprp_visible = {
+				check_variable = { SIA_parliament_selected_party = 1 }
+			}
+			SIA_detail_ptp_visible = {
+				check_variable = { SIA_parliament_selected_party = 2 }
+			}
+			SIA_detail_ffp_visible = {
+				check_variable = { SIA_parliament_selected_party = 3 }
+			}
+			SIA_detail_dp_visible = {
+				check_variable = { SIA_parliament_selected_party = 4 }
+			}
+			SIA_detail_bjt_visible = {
+				check_variable = { SIA_parliament_selected_party = 5 }
+			}
+			SIA_detail_tlp_visible = {
+				check_variable = { SIA_parliament_selected_party = 6 }
+			}
+			SIA_detail_ctpp_visible = {
+				check_variable = { SIA_parliament_selected_party = 7 }
+			}
+			SIA_detail_pcc_visible = {
+				check_variable = { SIA_parliament_selected_party = 8 }
+			}
+
+			SIA_parliament_detail_panel_visible = {
+				NOT = { check_variable = { SIA_parliament_selected_party = 0 } }
+			}
+		}
+
+		effects = {
+			SIA_party_pprp_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 1 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 1 }
+				}
+			}
+			SIA_party_ptp_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 2 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 2 }
+				}
+			}
+			SIA_party_ffp_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 3 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 3 }
+				}
+			}
+			SIA_party_dp_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 4 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 4 }
+				}
+			}
+			SIA_party_bjt_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 5 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 5 }
+				}
+			}
+			SIA_party_tlp_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 6 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 6 }
+				}
+			}
+			SIA_party_ctpp_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 7 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 7 }
+				}
+			}
+			SIA_party_pcc_button_click = {
+				if = {
+					limit = { check_variable = { SIA_parliament_selected_party = 8 } }
+					set_variable = { SIA_parliament_selected_party = 0 }
+				}
+				else = {
+					set_variable = { SIA_parliament_selected_party = 8 }
+				}
+			}
+		}
+	}
+}

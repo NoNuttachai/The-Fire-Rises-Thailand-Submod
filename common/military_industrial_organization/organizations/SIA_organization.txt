@@ -3,9 +3,9 @@ SIA_bangkok_dock_company = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_Bangkok_Dock_Company
 	allowed = {
-		tag = SIA 
+		tag = SIA
 	}
-    equipment_type = {  
+    equipment_type = {
         screen_ship
         convoy_1
     }
@@ -25,21 +25,31 @@ SIA_bangkok_dock_company = {
 SIA_sweden_saab_organization = {
 	include = generic_multi_role_aircraft_organization
 	icon = GFX_idea_sweden_saab_organization
-	allowed = {	
-		tag = SIA 
+	allowed = {
+		tag = SIA
 	}
-	NOT = {
-    	SIA = { has_war_with = SWE } 
-		SWE = { has_war = yes 
-				has_ideology = totalitarian_socialist has_ideology = communist has_ideology = libertarian_socialist has_ideology = fascist has_ideology = national_socialist
+	available = {
+		country_exists = SWE
+		NOT = {
+			SIA = { has_war_with = SWE }
+		}
+		SWE = {
+			has_war = no
+			NOT = {
+				has_government = totalitarian_socialist
+				has_government = communist
+				has_government = libertarian_socialist
+				has_government = fascist
+				has_government = national_socialist
 			}
-	}	
+		}
+	}
 }
 SIA_defencetechnologyinstitute_organisation = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_defencetechnologyinstitute
 	allowed = {
-		tag = SIA 
+		tag = SIA
 	}
 }
 #Tanks MIOs
@@ -47,7 +57,7 @@ SIA_chaiseri_organisation = {
 	include = generic_tank_refurbishment_plant_organization
 	icon = GFX_idea_Chaiseri
 	allowed = {
-		tag = SIA 
+		tag = SIA
 	}
 }
 #Material Equipment
@@ -55,27 +65,27 @@ SIA_thairung_organisation = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_thairung
 	allowed = {
-		tag = SIA 
+		tag = SIA
 	}
 }
 SIA_thai_army_ordnance_department = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_SIA_ordnance_department
 	allowed = {
-		tag = SIA 
+		tag = SIA
 	}
 }
 #JEW JEW JEW JEW JEW - Alex Jones
 SIA_israel_elbit_systems = {
 	include = generic_artillery_organization
 	icon = GFX_idea_SIA_israel_elbit_systems
-	allowed = {	
+	allowed = {
 		tag = SIA
 	}
 	available = {
 		country_exists = ISR
 		NOT = {
-    		SIA = { has_war_with = ISR } 
+    		SIA = { has_war_with = ISR }
 			ISR = { has_war = yes }
 		}
 	}
@@ -84,6 +94,6 @@ SIA_narc_arms_industry = {
 	include = generic_support_equipment_organization
 	icon = GFX_idea_SIA_narc_arms_industry
 	allowed = {
-		tag = SIA 
+		tag = SIA
 	}
 }

@@ -203,6 +203,22 @@ leader_traits = {
 	FRA_ide_lib_soc = {
 		random = no
 	}
+	FRA_ide_independent = {
+		random = no
+	}
+	#SIA
+	SIA_ide_pprp = {
+		random = no
+	}
+	SIA_ide_stratcon = {
+		random = no
+	}
+	SIA_ide_independent = {
+		random = no
+	}
+	SIA_ide_neoliberal = {
+		random = no
+	}
 	#FAF
 	FAF_ide_fasc = {
 		random = no
