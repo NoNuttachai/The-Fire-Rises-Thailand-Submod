@@ -76,7 +76,7 @@ ideas = {
 				head_minister_trigger = yes
 			}
 			traits = {
-				SIA_ide_pprp
+				SIA_ide_stratcon
 				hog_political_protege
 			}
 		}

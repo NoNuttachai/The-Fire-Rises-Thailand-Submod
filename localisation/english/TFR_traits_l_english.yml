@@ -58,9 +58,9 @@
  FRA_ide_independent: "§RIndependent§!"
  #SIA
  SIA_ide_pprp: "£GFX_palang_pracharath §RPPRP§!"
- SIA_ide_stratcon: "£GFX_palang_pracharath §RStratocat Conservative§!"
- SIA_ide_independent: "§RIndependent§!"
- SIA_ide_neoliberal: "§RNeoliberal§!"
+ SIA_ide_stratcon: "£GFX_palang_pracharath §PStratocrat Conservative§!"
+ SIA_ide_independent: "£GFX_FRA_centrist_texticon §LIndependent§!"
+ SIA_ide_neoliberal: "£GFX_chartpattana §BNeo§!§Rliberal§!"
  #FAF
  FAF_ide_fasc: "£GFX_FAF_fascist_texticon §.Fascist§!"
  FAF_ide_monarchist: "£GFX_FAF_monarchist_texticon §IMonarchist§!"
