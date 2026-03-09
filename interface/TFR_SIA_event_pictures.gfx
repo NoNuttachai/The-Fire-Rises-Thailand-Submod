@@ -1,6 +1,25 @@
 spriteTypes = {
+		# Events
+	spriteType = {
+		name = "GFX_report_event_constitutional_court"
+		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_report_event_the_somboon_story"
+		textureFile = "gfx/event_pictures/report_event_the_somboon_story.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_report_event_budget_bill_passed"
+		texturefile = "gfx/event_pictures/report_event_budget_bill_passed.png"
+	}
 	spriteType = {
 		name = "GFX_report_event_korat_massacre"
 		texturefile = "gfx/event_pictures/GFX_report_event_korat_massacre.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_three_fingers"
+		texturefile = "gfx/event_pictures/report_event_three_fingers.png"
 	}
 }

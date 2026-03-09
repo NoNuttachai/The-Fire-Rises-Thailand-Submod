@@ -26,10 +26,20 @@ spriteTypes = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
-	# Texticons
+	# Texticons - Political Parties and Organizations
 	spriteType = {
 		name = "GFX_orange_party_1" #Future Forward Party
 		texturefile = "gfx/texticons/SIA_FFP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_orange_party_2" #Move Forward Party
+		texturefile = "gfx/texticons/SIA_MFP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_progressive_movement" #Piyabutr Organization
+		texturefile = "gfx/texticons/SIA_PM.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -82,6 +92,12 @@ spriteTypes = {
 		texturefile = "gfx/texticons/SIA_RTARF.png"
 		legacy_lazy_load = no
 	}
+	#Texticons - Misc
+	spriteType = {
+		name = "GFX_hunger_games_logo"
+		texturefile = "gfx/texticons/hunger_games_logo.png"
+		legacy_lazy_load = no
+	}
 	# Ministers
 	spriteType = {
 		name = "GFX_SIA_prayut_chan_o_cha"
@@ -114,17 +130,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-	# Events
-	spriteType = {
-		name = "GFX_report_event_constitutional_court"
-		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_report_event_the_somboon_story"
-		textureFile = "gfx/event_pictures/report_event_the_somboon_story.png"
-		legacy_lazy_load = no
-	}
 	# Advisors
 	spriteType = {
 		name = "GFX_idea_SIA_anupong_paochinda"

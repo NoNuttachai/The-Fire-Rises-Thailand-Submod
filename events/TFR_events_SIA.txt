@@ -34,13 +34,13 @@ country_event = {
         
         set_party_name = {
             ideology = social_democrat
-            long_name = "Move Forward Party"
-            name = "Move Forward"
+            long_name = SIA_mfp_long
+            name = SIA_mfp
         }
         set_party_name = {
             ideology = libertarian_socialist
-            long_name = "Progressive Movement"
-            name = "PM"
+            long_name = SIA_progressive_movement_long
+            name = SIA_progressive_movement
         }
 		
 		custom_effect_tooltip = SIA_ban_future_tt
@@ -74,6 +74,48 @@ country_event = {
         add_stability = -0.02
     }
 }
+
+country_event = {
+    id = thailand_politics.3
+    title = thailand_politics.3.t
+    desc = thailand_politics.3.d
+    picture = GFX_report_event_budget_bill_passed
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = SIA
+        date > 2020.1.11
+    }
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = thailand_politics.3.a 
+        add_stability = 0.02
+    }
+}
+
+country_event = {
+    id = thailand_politics.4
+    title = thailand_politics.4.t
+    desc = thailand_politics.4.d
+    picture = GFX_report_event_three_fingers
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = SIA
+    }
+
+    option = {
+        name = thailand_politics.4.a 
+        add_stability = -0.02
+    }
+}
+
 
 country_event = {
     id = thailand_nonpolitical.1

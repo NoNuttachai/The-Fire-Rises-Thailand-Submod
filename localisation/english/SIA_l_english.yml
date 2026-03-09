@@ -23,6 +23,11 @@
  SIA_thai_people_are_aryans: "-"
  SIA_thai_people_are_aryans_from_the_depth_of_agatha: "-"
 
+ SIA_mfp: "£GFX_orange_party_2 MFP"
+ SIA_mfp_long: "£GFX_orange_party_2 Move Forward Party"
+ SIA_progressive_movement: "£GFX_progressive_movement PM"
+ SIA_progressive_movement_long: "£GFX_progressive_movement Progressive Movement"
+
  hybrid_regime_SIA: "Stratocratic Conservatism"
  SIA_hybrid_regime_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
 
@@ -59,9 +64,18 @@
  thailand_politics.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thailand_politics.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
  thailand_politics.1.a: "It's over"
+
  thailand_politics.2.t: "A New Year, With Nothing New"
  thailand_politics.2.d: "Somboon was sitting in his apartment, well, his mother's rented apartment, to be exact, at the start of a new year. \n\nHe had just been denied a job application on the grounds of 'inexperience' and 'not matching skill needs.', even though his classmate, who coincidentally had family ties to the company, was accepted without a problem.\n\nAs he scrolled through television channels, the prime minister`s speech aired on the screen. While the speech played, his mind wandered. Why isn`t our economy growing? What happened to freedom of speech? Was the restoration of 'democracy' even democratic??\n\nWhen the broadcast ended, a single question lingered in his mind:"
  thailand_politics.2.a: "How long will this §Rlast§!?"
+
+ thailand_politics.3.t: "Budget Bill Passed"
+ thailand_politics.3.d: "The Budget Bill (B.E. 2563/2020), introduced by the government in October last year, outlines total expenditures of 3.2 trillion baht, an increase of 200 billion baht from the previous fiscal year, and projects a deficit of 469 billion baht. After four days of debate between government and opposition MPs, the bill passed with 253 votes in favor, while 196 opposition MPs abstained."
+ thailand_politics.3.a: "Looking Good"
+
+ thailand_politics.4.t: "Three Fingers"
+ thailand_politics.4.d: "Sometimes reality imitates fiction rather than the other way around. \n\n£GFX_hunger_games_logo The Hunger Games, a dystopian novel by Suzanne Collins that became a globally successful film franchise, features the iconic three-finger salute as a symbol of resistance against the authoritarian state of Panem. In the story, the salute is first shown when citizens of District 12 raise the gesture to honor the protagonist, Katniss Everdeen, after she volunteers in place of her sister.\n\n\n\n\n\n\n\n\n\nAlthough the series is American, the salute took on real political meaning in Thailand after the 2014 coup by the NCPO. Protesters adopted it as a sign of defiance and were arrested for doing so. Now, as anti-government demonstrations resurfaced, the gesture re-emerged leading some to nickname the new protest movement "Three Fingers", while opponents derisively called them "Three Hooves." "
+ thailand_politics.4.a: "May the odds be ever in your favor"
  thailand_nonpolitical.1.t: "Soldier Goes Rogue, Unleashes Massacre in Korat"
  thailand_nonpolitical.1.d: "A horrific massacre just occurred in Koran, Nakhon Ratchasima when a Thai Army sergeant, angered by a property dispute with his commanding officer, shot and killed him, raided the army camp armory, and begun rampaged through the streets in a Humvee, shooting random bystanders and two police officers who tried to stop him.\n\nHe later entered the Terminal 21 Korat shopping mall, where he shot at civilians indiscriminately. Part of the attack was livestreamed on Facebook Live by him, showing no signs of remorse.\n\nPolice and soldiers stormed the mall and ordered him to surrender, but he continued to opened fire, killing more civilians and law enforcement personnel. He remained inside for several hours, during which authorities lay seize to the mall and brought in his mother in an attempt to persuade him to surrender.\n\nAfter nearly 18 hours, Elite Thai police and army commandos eventually killed the attacker, ending the rampage. The attack left 29 people dead and 57 others wounded, making it the deadliest mass shooting by a single individual in Thai history."
  thailand_nonpolitical.1.a: "Such horror occurring in our country?"
