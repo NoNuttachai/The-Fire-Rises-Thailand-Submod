@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SIA_parliament_donut"
+		textureFile = "gfx/interface/SIA/parliament/sia_parliament_donut.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SIA_speaker_portrait"
+		textureFile = "gfx/interface/SIA/parliament/sia_speaker_portrait.dds"
+		legacy_lazy_load = no
+	}
+
+	# =============================================
+	# SEAT BAR — 3-color horizontal segments
+	# Each is a 1px-wide colored block; scaled by
+	# variable to represent seat count proportion.
+	# Gov  = blue-red (PPRP / gov coalition leader)
+	# Opp  = red      (PTP / opposition leader)
+	# Vacant = gray   (no color / transparent)
+	# =============================================
+	spriteType = {
+		name = "GFX_SIA_seat_gov"
+		textureFile = "gfx/interface/SIA/parliament/seat_bar_gov.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_seat_opp"
+		textureFile = "gfx/interface/SIA/parliament/seat_bar_opp.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_seat_vacant"
+		textureFile = "gfx/interface/SIA/parliament/seat_bar_vacant.png"
+		legacy_lazy_load = no
+	}
+
+}

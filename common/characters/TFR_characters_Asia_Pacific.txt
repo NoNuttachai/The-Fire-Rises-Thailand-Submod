@@ -1133,6 +1133,8 @@ characters={
 		advisor={
 			slot = head_minister
 			idea_token = SIA_prayut_chan-o-cha_advisor
+			ideology = liberalism
+			desc = SIA_prayut_chan-o-cha_advisor_desc
 			cost = 0
 			allowed  = {
 				original_tag = SIA
@@ -1146,7 +1148,7 @@ characters={
 				}
 			}
 			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
+				#GER_plenipotentiary_of_the_four_year_plan
 			}
 		}		
 		country_leader = {
@@ -1180,6 +1182,7 @@ characters={
 		advisor={
 			slot = foreign_minister
 			idea_token = SIA_don_pramudwinai_advisor
+			desc = SIA_don_pramudwinai_advisor_desc
 			cost = 0
 			allowed  = {
 				original_tag = SIA
@@ -1202,6 +1205,7 @@ characters={
 		advisor={
 			slot = economic_minister
 			idea_token = SIA_uttama_saowanayon_advisor
+			desc = SIA_uttama_saowanayon_advisor_desc
 			cost = 0
 			allowed  = {
 				original_tag = SIA
@@ -1218,12 +1222,13 @@ characters={
 		name = SIA_anupong_paochinda_char
 		portraits={
 			civilian = {
-				small = GFX_SIA_uttama_saowanayon
+				small = GFX_SIA_anupong_paochinda
 			}
 		}
 		advisor={
 			slot = interior_minister
 			idea_token = SIA_anupong_paochinda_advisor
+			desc = SIA_anupong_paochinda_advisor_desc
 			cost = 0
 			allowed  = {
 				original_tag = SIA
@@ -1246,6 +1251,7 @@ characters={
 		advisor={
 			slot = intelligence_minister
 			idea_token = SIA_thewan_liptapanlop_advisor
+			desc = SIA_thewan_liptapanlop_advisor_desc
 			cost = 0
 			allowed  = {
 				original_tag = SIA
@@ -1258,7 +1264,7 @@ characters={
 			}
 		}		
 	}
-	SIA_prawit_wongsuwanchar_char = {
+	SIA_prawit_wongsuwan_char = {
 		name = SIA_prawit_wongsuwan_char
 		portraits={
 			civilian = {
@@ -1268,6 +1274,7 @@ characters={
 		advisor={
 			slot = theorist_minister
 			idea_token = SIA_prawit_wongsuwan_advisor
+			desc = SIA_prawit_wongsuwan_advisor_desc
 			cost = 0
 			allowed  = {
 				original_tag = SIA

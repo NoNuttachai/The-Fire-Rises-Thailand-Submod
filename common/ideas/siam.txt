@@ -76,6 +76,7 @@ ideas = {
 				head_minister_trigger = yes
 			}
 			traits = {
+				SIA_ide_pprp
 				hog_political_protege
 			}
 		}
@@ -88,6 +89,7 @@ ideas = {
 				original_tag = SIA
 			}
 			traits = {
+				SIA_ide_independent
 				for_ideological_crusader
 			}
 		}
@@ -100,6 +102,7 @@ ideas = {
 				original_tag = SIA
 			}
 			traits = {
+				SIA_ide_stratcon
 				eco_keynesian_economy
 			}
 		}
@@ -112,6 +115,7 @@ ideas = {
 				original_tag = SIA
 			}
 			traits = {
+				SIA_ide_stratcon
 				sec_silent_lawyer
 			}
 		}
@@ -124,6 +128,7 @@ ideas = {
 				original_tag = SIA
 			}
 			traits = {
+				SIA_ide_neoliberal
 				int_balanced_cryptographer
 			}
 		}
@@ -136,6 +141,7 @@ ideas = {
 				original_tag = SIA
 			}
 			traits = {
+				SIA_ide_stratcon
 				mobile_warfare_expert
 			}
 		}
