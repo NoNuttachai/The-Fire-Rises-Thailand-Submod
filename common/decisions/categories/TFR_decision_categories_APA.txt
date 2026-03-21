@@ -20,6 +20,16 @@ SIA_parliament_category = {
 		original_tag = SIA
 	}
 }
+SIA_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	priority = 90
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		original_tag = SIA
+	}
+}
 APA_revolution_progress_category = {
 	icon = APA_american_workers_congress
 	visible_when_empty = yes

@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_bop_SIA_loss_side"
+		textureFile = "gfx/interface/bop/bop_SIA_loss_side.dds"
+	}
+	spriteType = {
+		name = "GFX_bop_SIA_popular_winwin_side"
+		textureFile = "gfx/interface/bop/bop_SIA_popular_winwin_side.dds"
+	}
+}
