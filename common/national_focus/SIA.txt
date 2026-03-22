@@ -11,7 +11,7 @@ focus_tree = {
     focus = {
 		id = SIA_cobra_gold
 		icon = GFX_TFX_goal_SIA_HappyNewYear2020
-		x = 35
+		x = 50
 		y = 1
 		cost = 5
 		
@@ -596,6 +596,241 @@ focus_tree = {
 		
 		completion_reward = {
 			
+	
+		}
+	}
+
+	# Oil Crisis
+	focus = {
+		id = SIA_manage_our_oil_reserves
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		x = 35
+		y = 0
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_ASEAN_patrol_cooperation
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_manage_our_oil_reserves }
+		x = -2
+		y = 1
+		relative_position_id = SIA_manage_our_oil_reserves
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_oil_deal_with_russia
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_manage_our_oil_reserves }
+		x = 0
+		y = 1
+		relative_position_id = SIA_manage_our_oil_reserves
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_thai_gulf_oil_extraction
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_manage_our_oil_reserves }
+		x = 2
+		y = 1
+		relative_position_id = SIA_manage_our_oil_reserves
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_reestablish_relations_with_the_saudis
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_oil_deal_with_russia }
+		x = -1
+		y = 1
+		relative_position_id = SIA_oil_deal_with_russia
+		mutually_exclusive = { focus = SIA_iranian_oil_deal }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_iranian_oil_deal
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_oil_deal_with_russia }
+		x = 1
+		y = 1
+		relative_position_id = SIA_oil_deal_with_russia
+		mutually_exclusive = { focus = SIA_reestablish_relations_with_the_saudis }
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_alaska_oil_extraction
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_reestablish_relations_with_the_saudis }
+		x = -1
+		y = 1
+		relative_position_id = SIA_reestablish_relations_with_the_saudis
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_ignore_american_embargos_on_venezuela
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_iranian_oil_deal }
+		x = 1
+		y = 1
+		relative_position_id = SIA_iranian_oil_deal
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_african_oil_deal
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_reestablish_relations_with_the_saudis }
+		prerequisite = { focus = SIA_iranian_oil_deal }
+		x = 1
+		y = 1
+		relative_position_id = SIA_reestablish_relations_with_the_saudis
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_subsidized_evs
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_african_oil_deal }
+		x = -1
+		y = 1
+		relative_position_id = SIA_african_oil_deal
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
+		}
+	}
+	focus = {
+		id = SIA_fund_biofuel
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_african_oil_deal }
+		x = 1
+		y = 1
+		relative_position_id = SIA_african_oil_deal
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+	
 		}
 	}
 }
