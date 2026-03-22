@@ -98,6 +98,20 @@ SIA_narc_arms_industry: "NARAC Arms Industry"
 SIA_sweden_saab_organization: "Saab AB"
 SIA_defencetechnologyinstitute_organisation: "Defense Technology Institute"
 
+#Balance of Power
+SIA_power_balance: "Political Standing of Prayut"
+SIA_popular_winwin_side: "Prayut Side"
+SIA_loss_side: "Opposition Side"
+SIA_balance_range: "Status Quo"
+SIA_loss_low_control_range: "Mild Opposition"
+SIA_loss_medium_control_range: "Growing Opposition"
+SIA_loss_high_control_range: "Mass Opposition"
+SIA_loss_total_control_range: "Non-Existent Support"
+SIA_popular_winwin_low_control_range: "Opposition Marginalized"
+SIA_popular_winwin_medium_control_range: "Opposition Sidelined"
+SIA_popular_winwin_high_control_range: "Opposition Crushed"
+SIA_popular_winwin_total_control_range: "Political Domination"
+
 ###Parliament GUI###
  SIA_parliament_title: "§YHouse of Representatives of Thailand§!"
  SIA_parliament_house_desc: "The §YHouse of Representatives of Thailand§! has been in existence since the 1932 Revolution for legislative proposes. However, the modern day House of Representatives of Thailand is lower house of the National Assembly of Thailand, with representatives directly elected by the citizens through both the constituency and party-list systems."
