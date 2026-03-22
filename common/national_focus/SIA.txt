@@ -557,6 +557,7 @@ focus_tree = {
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		prerequisite = { focus = SIA_fight_the_arrests }
 		prerequisite = { focus = SIA_expand_protestor_base }
+		mutually_exclusive = { focus = SIA_maintain_peaceful_protests }
 		relative_position_id = SIA_fight_the_arrests
 		x = -3
 		y = 1
@@ -579,6 +580,7 @@ focus_tree = {
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		prerequisite = { focus = SIA_fight_the_arrests }
 		prerequisite = { focus = SIA_expand_protestor_base }
+		mutually_exclusive = { focus = SIA_make_them_face_our_wrath }
 		relative_position_id = SIA_expand_protestor_base
 		x = 3
 		y = 1
