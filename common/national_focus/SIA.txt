@@ -48,7 +48,7 @@ focus_tree = {
 		id = SIA_first_case_outside_china
 		icon = GFX_TFX_goal_SIA_HappyNewYear2020
 		relative_position_id = SIA_moew_years_with_prayut
-		x = 8
+		x = 6
 		y = 1
 		cost = 5
 		
@@ -173,7 +173,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_moew_years_with_prayut }
 		mutually_exclusive = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_moew_years_with_prayut
-		x = 5
+		x = 3
 		y = 1
 
 		
@@ -323,7 +323,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_moew_years_with_prayut }
 		mutually_exclusive = { focus = SIA_clamp_down_the_three_holves }
 		relative_position_id = SIA_moew_years_with_prayut
-		x = -5
+		x = -3
 		y = 1
 
 		
@@ -580,7 +580,7 @@ focus_tree = {
 	focus = {
 		id = SIA_manage_our_oil_reserves
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		x = 35
+		x = 34
 		y = 0
 
 		cost = 5
