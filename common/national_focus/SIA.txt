@@ -28,7 +28,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_moew_years_with_prayut
-		icon = GFX_TFX_goal_SIA_HappyNewYear2020
+		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
 		x = 20
 		y = 0
 		cost = 5
