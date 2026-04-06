@@ -27,22 +27,20 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SIA_moew_years_with_prayut
-		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
-		x = 20
-		y = 0
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
+	    id = SIA_moew_years_with_prayut
+	    icon = GFX_focus_SIA_more_years_with_prayut
+	    x = 20
+	    y = 0
+	    cost = 5
+	    available_if_capitulated = yes
+	    ai_will_do = {
+         factor = 10
+	    }
+	    completion_reward = {
+	        log = "[GetDateText]: [Root.GetName]: Focus SIA_moew_years_with_prayut completed"
+	    }
 	}
+
 #COVID-19
 	focus = {
 		id = SIA_first_case_outside_china
@@ -173,7 +171,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_moew_years_with_prayut }
 		mutually_exclusive = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_moew_years_with_prayut
-		x = 3
+		x = 25
 		y = 1
 
 		
@@ -318,27 +316,22 @@ focus_tree = {
 	}
 	# Right Pro-Protests Branch
 	focus = {
-		id = SIA_raise_our_three_fingers
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_moew_years_with_prayut }
-		mutually_exclusive = { focus = SIA_clamp_down_the_three_holves }
-		relative_position_id = SIA_moew_years_with_prayut
-		x = -3
-		y = 1
-
-		
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
+	    id = SIA_raise_our_three_fingers
+	    icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+	    x = 16
+	    y = 1
+	    cost = 5
+	    available_if_capitulated = yes
+	    prerequisite = { focus = SIA_moew_years_with_prayut }
+	    mutually_exclusive = { focus = SIA_clamp_down_the_three_holves }
+	    ai_will_do = {
+         factor = 10
+	    }
+	    completion_reward = {
+	        log = "[GetDateText]: [Root.GetName]: Focus SIA_raise_our_three_fingers completed"
+	    }
 	}
+
 	focus = {
 		id = SIA_social_media_campaigning
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
