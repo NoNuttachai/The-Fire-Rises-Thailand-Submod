@@ -76,7 +76,7 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SIA/SIA_Vaccination.png"
     }
 	   SpriteType = {
-        name = "GFX_TFX_goal_SIA_More_Years_with_Prayut"
-        texturefile = "gfx/interface/goals/SIA/SIA_More_Years_with_Prayut.png"
+        name = "GFX_TFX_goal_SIA_Another_Year_with_Prayut"
+        texturefile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
     }
 }

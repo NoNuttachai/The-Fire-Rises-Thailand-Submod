@@ -8,28 +8,10 @@ focus_tree = {
 		}
 	}
 
-    focus = {
-		id = SIA_cobra_gold
-		icon = GFX_TFX_goal_SIA_HappyNewYear2020
-		x = 50
-		y = 1
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-
 	focus = {
-		id = SIA_moew_years_with_prayut
-		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
-		x = 20
+		id = SIA_another_year_with_prayut
+		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		x = 5
 		y = 0
 		cost = 5
 		
@@ -45,29 +27,11 @@ focus_tree = {
 	}
 #COVID-19
 	focus = {
-		id = SIA_first_case_outside_china
-		icon = GFX_TFX_goal_SIA_HappyNewYear2020
-		relative_position_id = SIA_moew_years_with_prayut
-		x = 6
-		y = 1
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = SIA_establish_ccsa
 		icon = GFX_TFX_goal_SIA_CCSA
-		prerequisite = { focus = SIA_first_case_outside_china }
-		relative_position_id = SIA_first_case_outside_china
-		x = 0
+		prerequisite = { focus = SIA_clamp_down_the_three_holves }
+		relative_position_id = SIA_clamp_down_the_three_holves
+		x = 1
 		y = 1
 		cost = 5
 		
@@ -85,7 +49,7 @@ focus_tree = {
 		id = SIA_declare_state_of_emergency
 		icon = GFX_TFX_goal_SIA_State_of_Emergency
 		prerequisite = { focus = SIA_establish_ccsa }
-		prerequisite = { focus = SIA_information_operation }
+		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
 		x = -1
 		y = 1
 		relative_position_id = SIA_establish_ccsa
@@ -124,11 +88,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_import_vaccines
+		id = SIA_grant_oil_subsidies
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		prerequisite = { focus = SIA_increase_the_debt_ceiling }
-		relative_position_id = SIA_increase_the_debt_ceiling
-		x = 1
+		relative_position_id = SIA_half_payment_policy
+		x = -1
 		y = 1
 
 		
@@ -149,7 +113,7 @@ focus_tree = {
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		prerequisite = { focus = SIA_increase_the_debt_ceiling }
 		relative_position_id = SIA_increase_the_debt_ceiling
-		x = -1
+		x = 1
 		y = 1
 
 		
@@ -170,10 +134,10 @@ focus_tree = {
 	focus = {
 		id = SIA_clamp_down_the_three_holves
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_moew_years_with_prayut }
+		prerequisite = { focus = SIA_another_year_with_prayut }
 		mutually_exclusive = { focus = SIA_raise_our_three_fingers }
-		relative_position_id = SIA_moew_years_with_prayut
-		x = 3
+		relative_position_id = SIA_another_year_with_prayut
+		x = 5
 		y = 1
 
 		
@@ -192,8 +156,8 @@ focus_tree = {
 	focus = {
 		id = SIA_information_operation
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_clamp_down_the_three_holves }
-		relative_position_id = SIA_clamp_down_the_three_holves
+		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
+		relative_position_id = SIA_mobilize_the_bureaucracy
 		x = -1
 		y = 1
 
@@ -211,33 +175,11 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_secured_support_from_the_right
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_information_operation }
-		relative_position_id = SIA_information_operation
-		x = 0
-		y = 2
-
-		
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
 		id = SIA_deploy_the_riot_police
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_information_operation }
-		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
-		relative_position_id = SIA_information_operation
-		x = 1
+		prerequisite = { focus = SIA_declare_state_of_emergency }
+		relative_position_id = SIA_declare_state_of_emergency
+		x = -1
 		y = 1
 
 		
@@ -258,7 +200,7 @@ focus_tree = {
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		prerequisite = { focus = SIA_clamp_down_the_three_holves }
 		relative_position_id = SIA_clamp_down_the_three_holves
-		x = 1
+		x = -1
 		y = 1
 
 		
@@ -277,10 +219,10 @@ focus_tree = {
 	focus = {
 		id = SIA_organized_counter_protests
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_mobilize_the_bureaucracy }
-		relative_position_id = SIA_mobilize_the_bureaucracy
-		x = 0
-		y = 2
+		prerequisite = { focus = SIA_declare_state_of_emergency }
+		relative_position_id = SIA_declare_state_of_emergency
+		x = 1
+		y = 1
 
 		
 		cost = 5
@@ -316,14 +258,35 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = SIA_secured_support_from_the_right
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_information_operation }
+		relative_position_id = SIA_utilized_the_media_on_our_side
+		x = 1
+		y = 1
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
 	# Right Pro-Protests Branch
 	focus = {
 		id = SIA_raise_our_three_fingers
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_moew_years_with_prayut }
+		prerequisite = { focus = SIA_another_year_with_prayut }
 		mutually_exclusive = { focus = SIA_clamp_down_the_three_holves }
-		relative_position_id = SIA_moew_years_with_prayut
-		x = -3
+		relative_position_id = SIA_another_year_with_prayut
+		x = -5
 		y = 1
 
 		
@@ -382,10 +345,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_outcry_over_rising_prices
+		id = SIA_organized_strikes
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_raise_our_three_fingers }
-		relative_position_id = SIA_raise_our_three_fingers
+		prerequisite = { focus = SIA_organized_mass_demonstrations }
+		relative_position_id = SIA_organized_mass_demonstrations
 		x = -3
 		y = 1
 
@@ -403,11 +366,55 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_demand_monarchy_reforms
+		id = SIA_organized_strikes
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_outcry_over_rising_prices }
-		relative_position_id = SIA_outcry_over_rising_prices
+		prerequisite = { focus = SIA_the_union_make_us_strong }
+		relative_position_id = SIA_the_union_make_us_strong
 		x = -1
+		y = 1
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_organized_mass_demonstrations
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_khana_ratsadon_reborn }
+		prerequisite = { focus = SIA_the_union_make_us_strong }
+		prerequisite = { focus = SIA_a_leftist_united_front }
+		relative_position_id = SIA_khana_ratsadon_reborn
+		x = -1
+		y = 1
+
+		
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_NGO_support
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_a_leftist_united_front }
+		relative_position_id = SIA_a_leftist_united_front
+		x = 1
 		y = 1
 
 		
@@ -426,9 +433,9 @@ focus_tree = {
 	focus = {
 		id = SIA_the_union_make_us_strong
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_outcry_over_rising_prices }
-		relative_position_id = SIA_outcry_over_rising_prices
-		x = 1
+		prerequisite = { focus = SIA_social_media_campaigning }
+		relative_position_id = SIA_social_media_campaigning
+		x = -1
 		y = 1
 
 		
@@ -490,29 +497,7 @@ focus_tree = {
 	focus = {
 		id = SIA_fight_the_arrests
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_demand_monarchy_reforms }
-		relative_position_id = SIA_demand_monarchy_reforms
-		x = -1
-		y = 1
-
-		
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_expand_protestor_base
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		prerequisite = { focus = SIA_khana_ratsadon_reborn }
-		prerequisite = { focus = SIA_a_leftist_united_front }
 		relative_position_id = SIA_khana_ratsadon_reborn
 		x = 1
 		y = 1
@@ -533,10 +518,13 @@ focus_tree = {
 	focus = {
 		id = SIA_make_them_face_our_wrath
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_the_union_make_us_strong }
+		prerequisite = { focus = SIA_organized_strikes }
+		prerequisite = { focus = SIA_organized_mass_demonstrations }
+		prerequisite = { focus = SIA_fight_the_arrests }
+		prerequisite = { focus = SIA_NGO_support }
 		mutually_exclusive = { focus = SIA_maintain_peaceful_protests }
-		relative_position_id = SIA_the_union_make_us_strong
-		x = -1
+		relative_position_id = SIA_fight_the_arrests
+		x = -3
 		y = 1
 
 		
@@ -555,9 +543,9 @@ focus_tree = {
 	focus = {
 		id = SIA_maintain_peaceful_protests
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_the_union_make_us_strong }
+		prerequisite = { focus = SIA_expand_protestor_base }
 		mutually_exclusive = { focus = SIA_make_them_face_our_wrath }
-		relative_position_id = SIA_the_union_make_us_strong
+		relative_position_id = SIA_fight_the_arrests
 		x = 1
 		y = 1
 
@@ -578,73 +566,12 @@ focus_tree = {
 
 	# Oil Crisis
 	focus = {
-		id = SIA_manage_our_oil_reserves
+		id = SIA_oil_crisis_hits_thailand
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		x = 34
-		y = 0
-
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-	
-		}
-	}
-	focus = {
-		id = SIA_ASEAN_patrol_cooperation
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_manage_our_oil_reserves }
-		x = -2
+		prerequisite = { focus = SIA_raise_our_three_fingers focus = SIA_clamp_down_the_three_holves }
+		x = 5
 		y = 1
-		relative_position_id = SIA_manage_our_oil_reserves
-
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-	
-		}
-	}
-	focus = {
-		id = SIA_oil_deal_with_russia
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_manage_our_oil_reserves }
-		x = 0
-		y = 1
-		relative_position_id = SIA_manage_our_oil_reserves
-
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-	
-		}
-	}
-	focus = {
-		id = SIA_thai_gulf_oil_extraction
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_manage_our_oil_reserves }
-		x = 2
-		y = 1
-		relative_position_id = SIA_manage_our_oil_reserves
+		relative_position_id = SIA_raise_our_three_fingers
 
 		cost = 5
 		
@@ -662,11 +589,11 @@ focus_tree = {
 	focus = {
 		id = SIA_reestablish_relations_with_the_saudis
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_oil_deal_with_russia }
-		x = -1
+		prerequisite = { focus = SIA_oil_crisis_hits_thailand }
+		mutually_exclusive = { focus = SIA_arabian_republic_thai_brigades }
+		x = 1
 		y = 1
-		relative_position_id = SIA_oil_deal_with_russia
-		mutually_exclusive = { focus = SIA_iranian_oil_deal }
+		relative_position_id = SIA_oil_crisis_hits_thailand
 
 		cost = 5
 		
@@ -682,34 +609,13 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_iranian_oil_deal
+		id = SIA_arabian_republic_thai_brigades
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_oil_deal_with_russia }
-		x = 1
-		y = 1
-		relative_position_id = SIA_oil_deal_with_russia
+		prerequisite = { focus = SIA_oil_crisis_hits_thailand }
 		mutually_exclusive = { focus = SIA_reestablish_relations_with_the_saudis }
-
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-	
-		}
-	}
-	focus = {
-		id = SIA_alaska_oil_extraction
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_reestablish_relations_with_the_saudis }
 		x = -1
 		y = 1
-		relative_position_id = SIA_reestablish_relations_with_the_saudis
+		relative_position_id = SIA_oil_crisis_hits_thailand
 
 		cost = 5
 		
@@ -725,13 +631,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_ignore_american_embargos_on_venezuela
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_iranian_oil_deal }
-		x = 1
-		y = 1
-		relative_position_id = SIA_iranian_oil_deal
-
+		id = SIA_prayut_deposed
+		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
+		x = 0
+		y = 7
 		cost = 5
 		
 		ai_will_do = {
@@ -742,18 +645,13 @@ focus_tree = {
 		
 		completion_reward = {
 			
-	
 		}
 	}
 	focus = {
-		id = SIA_african_oil_deal
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_reestablish_relations_with_the_saudis }
-		prerequisite = { focus = SIA_iranian_oil_deal }
-		x = 1
-		y = 1
-		relative_position_id = SIA_reestablish_relations_with_the_saudis
-
+		id = SIA_more_years_with_prayut
+		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
+		x = 10
+		y = 7
 		cost = 5
 		
 		ai_will_do = {
@@ -764,49 +662,6 @@ focus_tree = {
 		
 		completion_reward = {
 			
-	
-		}
-	}
-	focus = {
-		id = SIA_subsidized_evs
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_african_oil_deal }
-		x = -1
-		y = 1
-		relative_position_id = SIA_african_oil_deal
-
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-	
-		}
-	}
-	focus = {
-		id = SIA_fund_biofuel
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
-		prerequisite = { focus = SIA_african_oil_deal }
-		x = 1
-		y = 1
-		relative_position_id = SIA_african_oil_deal
-
-		cost = 5
-		
-		ai_will_do = {
-			factor = 10
-		}
-		
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-	
 		}
 	}
 }
