@@ -9,7 +9,7 @@ APA_balance_of_power_category = {
 	}
 }
 SIA_parliament_category = {
-	icon = generic_communism
+	icon = GFX_decision_cat_SIA_parliament
 	priority = 12
 	visible_when_empty = yes
 	scripted_gui = SIA_parliament_gui
@@ -19,6 +19,15 @@ SIA_parliament_category = {
 	visible = {
 		original_tag = SIA
 	}
+}
+SIA_oil_crisis_cat = {
+	icon = generic_crisis
+	picture = GFX_decision_cat_PRC_oil_crisis_picture
+	priority = 6
+	allowed = {
+		original_tag = SIA
+	}
+	visible_when_empty = yes
 }
 SIA_balance_of_power_category = {
 	icon = GFX_decision_category_power_struggle
