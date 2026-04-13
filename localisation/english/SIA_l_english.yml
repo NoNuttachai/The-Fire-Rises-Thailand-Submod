@@ -138,6 +138,7 @@ SIA_popular_winwin_total_control_range: "Political Domination"
  SIA_parliament_ffp_full: "£GFX_orange_party_1 §YFuture Forward Party§!"
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§!"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§!"
+ SIA_parliament_pprp_combined: "£GFX_palang_pracharath §GPalang Pracharath Party§! - §Y[?SIA_pprp_seats_var|0]§! Seats"	SIA_parliament_dp_combined: "£GFX_democrat §GDemocrat Party§! - §Y[?SIA_dp_seats_var|0]§! Seats"	SIA_parliament_bjt_combined: "£GFX_bhumjaithai §GBhumjaithai Party§! - §Y[?SIA_bjt_seats_var|0]§! Seats"	SIA_parliament_ctpp_combined: "£GFX_chartthaipattana §GChart Thai Pattana Party§! - §Y[?SIA_ctpp_seats_var|0]§! Seats"	SIA_parliament_ptp_combined: "£GFX_phua_thai §YPheu Thai Party§! - §Y[?SIA_ptp_seats_var|0]§! Seats"	SIA_parliament_ffp_combined: "£GFX_orange_party_1 §YFuture Forward Party§! - §Y[?SIA_ffp_seats_var|0]§! Seats"	SIA_parliament_tlp_combined: "£GFX_thai_liberal_party §YThai Liberal Party§! - §Y[?SIA_tlp_seats_var|0]§! Seats"	SIA_parliament_pcc_combined: "£GFX_prachachat §YPrachachat Party§! - §Y[?SIA_pcc_seats_var|0]§! Seats"
 
  # Party support lines
  SIA_parliament_pprp_line_loc: "Support for £GFX_palang_pracharath §YPPRP§!: [?ROOT.party_popularity@authoritarian_democrat|Y%1]"
@@ -207,6 +208,7 @@ SIA_popular_winwin_total_control_range: "Political Domination"
 
  # Decision Localization
  SIA_parliament_category: "Parliament of Thailand"
+SIA_parliament_category_desc: ""
  SIA_open_parliament_gui: "View House of Representatives"
  SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
 
@@ -217,3 +219,8 @@ SIA_popular_winwin_total_control_range: "Political Domination"
  SIA_parliament_minor_gov_line_loc: "§WMinor Governmental Coalition Parties\n[?SIA_minor_gov_seats_var|0] Seats§!"
  SIA_parliament_minor_opp_line_loc: "§WMinor Oppositional Parties\n[?SIA_minor_opp_seats_var|0] Seats§!"
  SIA_seat_tt: "§YParliament Seat§!"
+ SIA_parliament_vacant_seats_text: "Vacant: §Y[?SIA_vacant_seats_var|0]§!/500 Seats"
+ SIA_oil_crisis_cat: "Oil Crisis"
+ SIA_oil_crisis_cat_desc: "Thailand's oil reserves are dwindling as global supply disruptions threaten to cripple the economy. Immediate action is needed to secure new sources before the situation spirals out of control."
+ SIA_oil_in_reserves_mission: "Oil in Reserves"
+ SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
