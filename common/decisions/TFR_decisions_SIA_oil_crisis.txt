@@ -1,0 +1,33 @@
+SIA_oil_crisis_cat = {
+	SIA_oil_in_reserves_mission = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			hidden_trigger = {
+			NOT = {
+					has_country_flag = SIA_oil_crisis_ongoing
+				}
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = SIA_oil_crisis_ongoing
+			}
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 200
+		timeout_effect = {
+			clr_country_flag = SIA_oil_crisis_ongoing
+		}
+		complete_effect = {
+		}
+	}
+}

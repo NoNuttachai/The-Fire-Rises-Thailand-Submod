@@ -6,7 +6,13 @@ guiTypes = {
 	containerWindowType = {
 		name = "SIA_parliament_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 470 height = 820 }
+		size = { width = 470 height = 780 }
+
+		iconType = {
+			name = "parliament_bg"
+			spriteType = "GFX_SIA_parliament_bg"
+			position = { x = 0 y = 0 }
+		}
 
 		# =============================================
 		# TOP: Description Text
@@ -14,12 +20,11 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "parliament_desc"
 			position = { x = 5 y = 5 }
-			font = "hoi_18"
+			font = "VCR02_12"
 			maxwidth = 460
-			maxHeight = 80
+			maxHeight = 100
 			text = SIA_parliament_house_desc
 			format = left
-			scrollbartype = standardtext_slider
 		}
 
 		# =============================================
@@ -28,68 +33,15 @@ guiTypes = {
 		iconType = {
 			name = "speaker_portrait"
 			quadTextureSprite = "GFX_SIA_speaker_portrait"
-			position = { x = 5 y = 88 }
+			position = { x = 50 y = 130 }
+			scale = 0.8
 		}
 
 		iconType = {
 			name = "parliament_donut"
 			quadTextureSprite = "GFX_SIA_parliament_donut"
-			position = { x = 170 y = 88 }
-		}
-
-		# =============================================
-		# SEAT BAR — 3-color strip (gov / opp / vacant)
-		# =============================================
-		containerWindowType = {
-			name = "SIA_seat_bar_container"
-			position = { x = 5 y = 273 }
-			size = { width = 460 height = 28 }
-			clipping = yes
-
-			iconType = {
-				name = "seat_bar_gov"
-				spriteType = "GFX_SIA_seat_gov"
-				position = { x = 0 y = 0 }
-				scale = "[Divide(SIA_parliament_gov_seats,1.0)]"
-			}
-			iconType = {
-				name = "seat_bar_opp"
-				spriteType = "GFX_SIA_seat_opp"
-				position = { x = 0 y = 0 }
-				scale = "[Divide(SIA_parliament_opp_seats,1.0)]"
-			}
-			iconType = {
-				name = "seat_bar_vacant"
-				spriteType = "GFX_SIA_seat_vacant"
-				position = { x = 0 y = 0 }
-				scale = "[Divide(SIA_parliament_vacant_seats,1.0)]"
-			}
-		}
-
-		# Seat bar labels
-		instantTextBoxType = {
-			name = "seat_bar_gov_label"
-			position = { x = 5 y = 303 }
-			font = "hoi_18"
-			maxwidth = 150
-			text = "[SIA_parliament_gov_seats_label]"
-			format = left
-		}
-		instantTextBoxType = {
-			name = "seat_bar_opp_label"
-			position = { x = 160 y = 303 }
-			font = "hoi_18"
-			maxwidth = 150
-			text = "[SIA_parliament_opp_seats_label]"
-			format = center
-		}
-		instantTextBoxType = {
-			name = "seat_bar_vacant_label"
-			position = { x = 315 y = 303 }
-			font = "hoi_18"
-			maxwidth = 150
-			text = "[SIA_parliament_vacant_seats_label]"
-			format = right
+			position = { x = 190 y = 130 }
+			scale = 0.75
 		}
 
 		# =============================================
@@ -97,130 +49,94 @@ guiTypes = {
 		# =============================================
 		instantTextBoxType = {
 			name = "gov_seats_total"
-			position = { x = 5 y = 325 }
-			font = "hoi_18b"
+			position = { x = 5 y = 310 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = "[SIA_parliament_gov_support_text]"
 			format = center
 		}
 
 		# =============================================
-		# GOVERNMENT PARTIES (single column, full width)
+		# GOVERNMENT PARTIES
 		# =============================================
 
 		# PPRP - Government Coalition Leader
-		buttonType = {
-			name = "SIA_party_pprp_button"
-			position = { x = 0 y = 336 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_pprp_tt
-		}
 		instantTextBoxType = {
 			name = "pprp_name"
-			position = { x = 5 y = 338 }
-			font = "hoi_18"
+			position = { x = 5 y = 331 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_pprp_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "pprp_seats_text"
-			position = { x = 5 y = 357 }
-			font = "hoi_18"
+			name = "pprp_seats"
+			position = { x = 5 y = 347 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_pprp_seats_line]"
+			text = "[SIA_parliament_pprp_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# DP
-		buttonType = {
-			name = "SIA_party_dp_button"
-			position = { x = 0 y = 379 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_dp_tt
-		}
 		instantTextBoxType = {
 			name = "dp_name"
-			position = { x = 5 y = 381 }
-			font = "hoi_18"
+			position = { x = 5 y = 367 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_dp_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "dp_seats_text"
-			position = { x = 5 y = 400 }
-			font = "hoi_18"
+			name = "dp_seats"
+			position = { x = 5 y = 383 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_dp_seats_line]"
+			text = "[SIA_parliament_dp_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# BJT
-		buttonType = {
-			name = "SIA_party_bjt_button"
-			position = { x = 0 y = 422 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_bjt_tt
-		}
 		instantTextBoxType = {
 			name = "bjt_name"
-			position = { x = 5 y = 424 }
-			font = "hoi_18"
+			position = { x = 5 y = 403 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_bjt_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "bjt_seats_text"
-			position = { x = 5 y = 443 }
-			font = "hoi_18"
+			name = "bjt_seats"
+			position = { x = 5 y = 419 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_bjt_seats_line]"
+			text = "[SIA_parliament_bjt_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# CTPP
-		buttonType = {
-			name = "SIA_party_ctpp_button"
-			position = { x = 0 y = 465 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_ctpp_tt
-		}
 		instantTextBoxType = {
 			name = "ctpp_name"
-			position = { x = 5 y = 467 }
-			font = "hoi_18"
+			position = { x = 5 y = 439 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_ctpp_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "ctpp_seats_text"
-			position = { x = 5 y = 486 }
-			font = "hoi_18"
+			name = "ctpp_seats"
+			position = { x = 5 y = 455 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_ctpp_seats_line]"
+			text = "[SIA_parliament_ctpp_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# Minor Gov Coalition
 		instantTextBoxType = {
 			name = "minor_gov_name"
-			position = { x = 5 y = 511 }
-			font = "hoi_18"
+			position = { x = 5 y = 476 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = "[SIA_parliament_minor_gov_line]"
 			format = left
@@ -231,403 +147,107 @@ guiTypes = {
 		# =============================================
 		instantTextBoxType = {
 			name = "opp_seats_total"
-			position = { x = 5 y = 553 }
-			font = "hoi_18b"
+			position = { x = 5 y = 510 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = "[SIA_parliament_opp_support_text]"
 			format = center
 		}
 
 		# =============================================
-		# OPPOSITION PARTIES (single column)
+		# OPPOSITION PARTIES
 		# =============================================
 
 		# PTP - Opposition Leader
-		buttonType = {
-			name = "SIA_party_ptp_button"
-			position = { x = 0 y = 578 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_ptp_tt
-		}
 		instantTextBoxType = {
 			name = "ptp_name"
-			position = { x = 5 y = 580 }
-			font = "hoi_18"
+			position = { x = 5 y = 531 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_ptp_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "ptp_seats_text"
-			position = { x = 5 y = 599 }
-			font = "hoi_18"
+			name = "ptp_seats"
+			position = { x = 5 y = 547 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_ptp_seats_line]"
+			text = "[SIA_parliament_ptp_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# FFP
-		buttonType = {
-			name = "SIA_party_ffp_button"
-			position = { x = 0 y = 621 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_ffp_tt
-		}
 		instantTextBoxType = {
 			name = "ffp_name"
-			position = { x = 5 y = 623 }
-			font = "hoi_18"
+			position = { x = 5 y = 567 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_ffp_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "ffp_seats_text"
-			position = { x = 5 y = 642 }
-			font = "hoi_18"
+			name = "ffp_seats"
+			position = { x = 5 y = 583 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_ffp_seats_line]"
+			text = "[SIA_parliament_ffp_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# TLP
-		buttonType = {
-			name = "SIA_party_tlp_button"
-			position = { x = 0 y = 664 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_tlp_tt
-		}
 		instantTextBoxType = {
 			name = "tlp_name"
-			position = { x = 5 y = 666 }
-			font = "hoi_18"
+			position = { x = 5 y = 603 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_tlp_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "tlp_seats_text"
-			position = { x = 5 y = 685 }
-			font = "hoi_18"
+			name = "tlp_seats"
+			position = { x = 5 y = 619 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_tlp_seats_line]"
+			text = "[SIA_parliament_tlp_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# PCC
-		buttonType = {
-			name = "SIA_party_pcc_button"
-			position = { x = 0 y = 707 }
-			spriteType = "GFX_tiled_window_small_small"
-			size = { x = 470 y = 40 }
-			pdx_tooltip = SIA_parliament_pcc_tt
-		}
 		instantTextBoxType = {
 			name = "pcc_name"
-			position = { x = 5 y = 709 }
-			font = "hoi_18"
+			position = { x = 5 y = 639 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_pcc_full
 			format = left
-			alwaystransparent = yes
 		}
 		instantTextBoxType = {
-			name = "pcc_seats_text"
-			position = { x = 5 y = 728 }
-			font = "hoi_18"
+			name = "pcc_seats"
+			position = { x = 5 y = 655 }
+			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_pcc_seats_line]"
+			text = "[SIA_parliament_pcc_seats_loc]"
 			format = left
-			alwaystransparent = yes
 		}
 
 		# Minor Opp
 		instantTextBoxType = {
 			name = "minor_opp_name"
-			position = { x = 5 y = 753 }
-			font = "hoi_18"
+			position = { x = 5 y = 676 }
+			font = "VCR02_14"
 			maxwidth = 460
 			text = "[SIA_parliament_minor_opp_line]"
 			format = left
 		}
 
-		# =============================================
-		# PARTY DETAIL PANEL (bottom, shown on click)
-		# =============================================
-		containerWindowType = {
-			name = "SIA_parliament_detail_panel"
-			position = { x = 0 y = 780 }
-			size = { width = 470 height = 110 }
-
-			background = {
-				name = "detail_bg"
-				quadTextureSprite = "GFX_tiled_window_thin_border"
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_pprp"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "pprp_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_pprp_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "pprp_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_pprp_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "pprp_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_pprp_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_ptp"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "ptp_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_ptp_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ptp_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_ptp_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ptp_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_ptp_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_ffp"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "ffp_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_ffp_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ffp_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_ffp_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ffp_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_ffp_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_dp"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "dp_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_dp_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "dp_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_dp_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "dp_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_dp_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_bjt"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "bjt_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_bjt_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "bjt_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_bjt_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "bjt_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_bjt_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_tlp"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "tlp_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_tlp_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "tlp_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_tlp_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "tlp_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_tlp_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_ctpp"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "ctpp_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_ctpp_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ctpp_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_ctpp_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ctpp_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_ctpp_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
-
-			containerWindowType = {
-				name = "SIA_detail_pcc"
-				position = { x = 8 y = 5 }
-				size = { width = 454 height = 100 }
-				instantTextBoxType = {
-					name = "pcc_detail_name"
-					position = { x = 0 y = 0 }
-					font = "hoi_20b"
-					maxwidth = 454
-					text = SIA_parliament_detail_pcc_name
-					format = left
-				}
-				instantTextBoxType = {
-					name = "pcc_detail_leader"
-					position = { x = 0 y = 24 }
-					font = "hoi_18"
-					maxwidth = 454
-					text = SIA_parliament_detail_pcc_leader
-					format = left
-				}
-				instantTextBoxType = {
-					name = "pcc_detail_desc"
-					position = { x = 0 y = 44 }
-					font = "hoi_18"
-					maxwidth = 454
-					maxHeight = 56
-					text = SIA_parliament_detail_pcc_desc
-					format = left
-					scrollbartype = standardtext_slider
-				}
-			}
+		# Vacant Seats
+		instantTextBoxType = {
+			name = "vacant_seats_total"
+			position = { x = 5 y = 716 }
+			font = "VCR02_14"
+			maxwidth = 460
+			text = "[SIA_parliament_vacant_seats_text]"
+			format = center
 		}
 	}
 }

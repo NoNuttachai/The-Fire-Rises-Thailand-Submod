@@ -1,5 +1,24 @@
 spriteTypes = {
 
+	# Decision category icon
+	spriteType = {
+		name = "GFX_decision_cat_SIA_parliament"
+		textureFile = "gfx/interface/SIA/parliament/SIA_parliament_cat_icon.dds"
+	}
+
+	# Parliament GUI background
+	spriteType = {
+		name = "GFX_SIA_parliament_bg"
+		textureFile = "gfx/interface/SIA/parliament/sia_parliament_bg.dds"
+		legacy_lazy_load = no
+	}
+
+	# Decision category background
+	spriteType = {
+		name = "GFX_decision_cat_picture_SIA_parliament"
+		texturefile = "gfx/interface/decisions/SIA_parliament_chamber.dds"
+	}
+
 	spriteType = {
 		name = "GFX_SIA_parliament_donut"
 		textureFile = "gfx/interface/SIA/parliament/sia_parliament_donut.dds"
