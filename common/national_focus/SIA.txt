@@ -50,7 +50,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_social_media_campaigning
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_social_media_campaigning
 		prerequisite = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_raise_our_three_fingers
 		x = -1
@@ -71,7 +71,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_begun_students_activism
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_begin_student_activism
 		prerequisite = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_raise_our_three_fingers
 		x = 1
@@ -135,7 +135,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_a_leftist_united_front
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_a_leftist_united_front
 		prerequisite = { focus = SIA_begun_students_activism }
 		relative_position_id = SIA_begun_students_activism
 		x = 1
@@ -270,6 +270,10 @@ focus_tree = {
 		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
 		mutually_exclusive = { focus = SIA_make_them_face_our_wrath }
 		relative_position_id = SIA_fight_the_arrests
+		prerequisite = { focus = SIA_organized_strikes }
+		prerequisite = { focus = SIA_organized_mass_demonstrations }
+		prerequisite = { focus = SIA_fight_the_arrests }
+		prerequisite = { focus = SIA_NGO_support }
 		x = 1
 		y = 1
 
@@ -504,7 +508,7 @@ focus_tree = {
 		# Oil Crisis
 	focus = {
 		id = SIA_grant_oil_subsidies
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_Oil_Crisis
 		prerequisite = { focus = SIA_increase_the_debt_ceiling }
 		relative_position_id = SIA_half_payment_policy
 		x = -1
