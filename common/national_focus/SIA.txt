@@ -614,12 +614,32 @@ focus_tree = {
 	
 		}
 	}
+	focus = {
+		id = SIA_expand_commitment_to_UNMISS
+		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		prerequisite = { focus = SIA_arabian_republic_thai_brigades focus = SIA_reestablish_relations_with_the_saudis }
+		x = -1
+		y = 1
+		relative_position_id = SIA_reestablish_relations_with_the_saudis
+
+		cost = 5
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
 	
+		}
+	}
 	focus = {
 		id = SIA_prayut_deposed
 		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
 		x = 0
-		y = 7
+		y = 6
 		cost = 5
 		
 		ai_will_do = {
@@ -636,7 +656,7 @@ focus_tree = {
 		id = SIA_more_years_with_prayut
 		icon = GFX_TFX_goal_SIA_More_Years_with_Prayut
 		x = 10
-		y = 7
+		y = 6
 		cost = 5
 		
 		ai_will_do = {
