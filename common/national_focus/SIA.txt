@@ -360,7 +360,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_deploy_the_riot_police
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
 		prerequisite = { focus = SIA_declare_state_of_emergency }
 		relative_position_id = SIA_declare_state_of_emergency
 		x = -1
@@ -572,7 +572,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_reestablish_relations_with_the_saudis
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_reestablish_relations_with_the_saudis
 		prerequisite = { focus = SIA_oil_crisis_hits_thailand }
 		mutually_exclusive = { focus = SIA_arabian_republic_thai_brigades }
 		x = 1
@@ -594,7 +594,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_arabian_republic_thai_brigades
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_arabian_republic_thai_brigades
 		prerequisite = { focus = SIA_oil_crisis_hits_thailand }
 		mutually_exclusive = { focus = SIA_reestablish_relations_with_the_saudis }
 		x = -1

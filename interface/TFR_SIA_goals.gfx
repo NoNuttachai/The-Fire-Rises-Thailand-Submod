@@ -85,16 +85,28 @@ spriteTypes = {
         name = "GFX_TFX_goal_SIA_Another_Year_with_Prayut"
         texturefile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
     }
-	 SpriteType = {
+	SpriteType = {
         name = "GFX_TFX_goal_SIA_a_leftist_united_front"
         texturefile = "gfx/interface/goals/SIA/SIA_a_leftist_united_front.png"
     }
-	 SpriteType = {
+	SpriteType = {
         name = "GFX_TFX_goal_SIA_begin_student_activism"
         texturefile = "gfx/interface/goals/SIA/SIA_begin_student_activism.png"
     }
-	 SpriteType = {
+	SpriteType = {
         name = "GFX_TFX_goal_SIA_social_media_campaigning"
         texturefile = "gfx/interface/goals/SIA/SIA_social_media_campaigning.png"
+    }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_deploy_the_riot_police"
+        texturefile = "gfx/interface/goals/SIA/SIA_deploy_the_riot_police.png"
+    }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_reestablish_relations_with_the_saudis"
+        texturefile = "gfx/interface/goals/SIA/SIA_reestablish_relations_with_the_saudis.png"
+    }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_arabian_republic_thai_brigades"
+        texturefile = "gfx/interface/goals/SIA/SIA_arabian_republic_thai_brigades.png"
     }
 }
