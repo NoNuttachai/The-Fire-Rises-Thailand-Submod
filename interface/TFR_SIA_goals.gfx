@@ -109,4 +109,16 @@ spriteTypes = {
         name = "GFX_TFX_goal_SIA_arabian_republic_thai_brigades"
         texturefile = "gfx/interface/goals/SIA/SIA_arabian_republic_thai_brigades.png"
     }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_make_them_face_our_wrath"
+        texturefile = "gfx/interface/goals/SIA/SIA_make_them_face_our_wrath.png"
+    }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_utilized_the_media_on_our_side"
+        texturefile = "gfx/interface/goals/SIA/SIA_utilized_the_media_on_our_side.png"
+    }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_grant_oil_subsidies"
+        texturefile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
+    }
 }

@@ -242,7 +242,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_make_them_face_our_wrath
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_make_them_face_our_wrath
 		prerequisite = { focus = SIA_organized_strikes }
 		prerequisite = { focus = SIA_organized_mass_demonstrations }
 		prerequisite = { focus = SIA_fight_the_arrests }
@@ -381,7 +381,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_utilized_the_media_on_our_side
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_utilized_the_media_on_our_side
 		prerequisite = { focus = SIA_information_operation }
 		relative_position_id = SIA_information_operation
 		x = -1
@@ -508,7 +508,7 @@ focus_tree = {
 		# Oil Crisis
 	focus = {
 		id = SIA_grant_oil_subsidies
-		icon = GFX_TFX_goal_SIA_Oil_Crisis
+		icon = GFX_TFX_goal_SIA_grant_oil_subsidies
 		prerequisite = { focus = SIA_increase_the_debt_ceiling }
 		relative_position_id = SIA_half_payment_policy
 		x = -1
