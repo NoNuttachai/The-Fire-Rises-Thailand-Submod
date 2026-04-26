@@ -113,7 +113,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_khana_ratsadon_reborn
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_khana_ratsadon_reborn
 		prerequisite = { focus = SIA_social_media_campaigning }
 		prerequisite = { focus = SIA_begun_students_activism }
 		relative_position_id = SIA_social_media_campaigning

@@ -121,4 +121,8 @@ spriteTypes = {
         name = "GFX_TFX_goal_SIA_grant_oil_subsidies"
         texturefile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
     }
+	SpriteType = {
+        name = "GFX_TFX_goal_SIA_khana_ratsadon_reborn"
+        texturefile = "gfx/interface/goals/SIA/SIA_khana_ratsadon_reborn.png"
+    }
 }
