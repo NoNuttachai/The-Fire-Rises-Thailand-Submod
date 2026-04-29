@@ -267,7 +267,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_maintain_peaceful_protests
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_maintain_peaceful_protests
 		mutually_exclusive = { focus = SIA_make_them_face_our_wrath }
 		relative_position_id = SIA_fight_the_arrests
 		prerequisite = { focus = SIA_organized_strikes }
