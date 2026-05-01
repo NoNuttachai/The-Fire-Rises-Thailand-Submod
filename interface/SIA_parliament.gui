@@ -36,13 +36,31 @@ guiTypes = {
 			position = { x = 50 y = 130 }
 			scale = 0.8
 		}
-
+		
 		iconType = {
-			name = "parliament_donut"
-			quadTextureSprite = "GFX_SIA_parliament_donut"
-			position = { x = 190 y = 130 }
-			scale = 0.75
+			name = "parliament_donut_outline"
+			quadTextureSprite = "GFX_SIA_parliament_donut_outline"
+			position = { x = 190 y = 145 }
 		}
+		iconType = {
+			name = "parliament_donut_gov"
+			quadTextureSprite = "GFX_SIA_parliament_donut_green"
+			position = { x = 190 y = 120 }
+		}
+		iconType = {
+			name = "parliament_donut_opposition"
+			quadTextureSprite = "GFX_SIA_parliament_donut_red"
+			position = { x = 190 y = 120 }
+		}
+		iconType = {
+			name = "parliament_donut_vacant"
+			quadTextureSprite = "GFX_SIA_parliament_donut_gray"
+			position = { x = 190 y = 120 }
+		}
+		
+		
+		
+		
 
 		# =============================================
 		# Total Government Seats (centered)
@@ -67,6 +85,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_pprp_full
+			pdx_tooltip = SIA_parliament_detail_pprp_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -86,6 +105,7 @@ guiTypes = {
 			maxwidth = 460
 			text = SIA_parliament_dp_full
 			format = left
+			pdx_tooltip = SIA_parliament_detail_dp_desc
 		}
 		instantTextBoxType = {
 			name = "dp_seats"
@@ -103,6 +123,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_bjt_full
+			pdx_tooltip = SIA_parliament_detail_bjt_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -121,6 +142,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_ctpp_full
+			pdx_tooltip = SIA_parliament_detail_ctpp_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -165,6 +187,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_ptp_full
+			pdx_tooltip = SIA_parliament_detail_ptp_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -183,6 +206,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_ffp_full
+			pdx_tooltip = SIA_parliament_detail_ffp_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -201,6 +225,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_tlp_full
+			pdx_tooltip = SIA_parliament_detail_tlp_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -219,6 +244,7 @@ guiTypes = {
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_parliament_pcc_full
+			pdx_tooltip = SIA_parliament_detail_pcc_desc
 			format = left
 		}
 		instantTextBoxType = {
@@ -246,7 +272,7 @@ guiTypes = {
 			position = { x = 5 y = 716 }
 			font = "VCR02_14"
 			maxwidth = 460
-			text = "[SIA_parliament_vacant_seats_text]"
+			text = SIA_parliament_vacant_seats_text
 			format = center
 		}
 	}

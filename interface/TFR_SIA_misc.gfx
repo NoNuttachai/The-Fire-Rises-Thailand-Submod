@@ -9,4 +9,10 @@ spriteTypes = {
 		name = "GFX_ideology_SIA_hybrid_regime"
 		texturefile = "gfx/interface/ideologies/hybrid_regime_SIA.dds"
 	}	
+	
+	#Decision Pictures
+	spriteType = {
+        name = "GFX_decision_cat_SIA_oil_crisis_picture"
+        texturefile = "gfx/interface/decisions/SIA_oil_crisis.png"
+    }
 }	

@@ -200,7 +200,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_fight_the_arrests
-		icon = GFX_TFX_goal_SIA_Deal_with_the_Moment
+		icon = GFX_TFX_goal_SIA_fight_the_arrests
 		prerequisite = { focus = SIA_khana_ratsadon_reborn }
 		relative_position_id = SIA_khana_ratsadon_reborn
 		x = 1

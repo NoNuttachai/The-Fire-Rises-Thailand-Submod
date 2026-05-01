@@ -128,5 +128,16 @@ scripted_gui = {
 				}
 			}
 		}
+		properties = {
+			parliament_donut_gov = {
+				frame = SIA_gov_seats_frame
+			}
+			parliament_donut_vacant = {
+				frame = SIA_vacant_seats_frame
+			}
+			parliament_donut_opposition = {
+				frame = SIA_opp_seats_frame
+			}
+		}
 	}
 }

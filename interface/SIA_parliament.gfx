@@ -19,10 +19,36 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/SIA_parliament_chamber.dds"
 	}
 
+	progressbartype = {
+		name = "GFX_SIA_parliament_donut_green"
+		texturefile1 = "gfx/interface/SIA/parliament/sia_parliament_donut_green.dds"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 258 y = 300 }
+		steps = 1000 
+		horizontal = no
+		effectfile = "gfx/FX/progress_radial.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_donut_gray"
+		texturefile1 = "gfx/interface/SIA/parliament/sia_parliament_donut_gray.dds"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 258 y = 300 }
+		steps = 1000 
+		horizontal = no
+		effectfile = "gfx/FX/progress_radial.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_donut_red"
+		texturefile1 = "gfx/interface/SIA/parliament/sia_parliament_donut_red.dds"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 258 y = 300 }
+		steps = 1000 
+		horizontal = no
+		effectfile = "gfx/FX/progress_radial.shader"
+	}
 	spriteType = {
-		name = "GFX_SIA_parliament_donut"
-		textureFile = "gfx/interface/SIA/parliament/sia_parliament_donut.dds"
-		legacy_lazy_load = no
+		name = "GFX_SIA_parliament_donut_outline"
+		texturefile = "gfx/interface/SIA/parliament/sia_parliament_donut_outline.dds"
 	}
 
 	spriteType = {
