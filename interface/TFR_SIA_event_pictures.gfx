@@ -1,5 +1,5 @@
 spriteTypes = {
-		# Events
+	# Events
 	spriteType = {
 		name = "GFX_report_event_constitutional_court"
 		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
@@ -16,10 +16,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_event_korat_massacre"
-		texturefile = "gfx/event_pictures/GFX_report_event_korat_massacre.png"
+		texturefile = "gfx/event_pictures/report_event_korat_massacre.png"
 	}
 	spriteType = {
 		name = "GFX_report_event_three_fingers"
 		texturefile = "gfx/event_pictures/report_event_three_fingers.png"
+	}
+	spriteType = {
+		name = "GFX_report_event_new_orange_party"
+		texturefile = "gfx/event_pictures/report_event_new_orange_party.png"
 	}
 }
