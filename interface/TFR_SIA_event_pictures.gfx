@@ -3,12 +3,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_constitutional_court"
 		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
-		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_report_event_the_somboon_story"
 		textureFile = "gfx/event_pictures/report_event_the_somboon_story.png"
-		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_report_event_budget_bill_passed"
@@ -25,5 +23,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_new_orange_party"
 		texturefile = "gfx/event_pictures/report_event_new_orange_party.png"
+	}
+	spriteType = {
+		name = "GFX_report_no_more_gooning"
+		texturefile = "gfx/event_pictures/NEVER_GOON.png"
 	}
 }

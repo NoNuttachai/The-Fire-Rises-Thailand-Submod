@@ -197,6 +197,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/hunger_games_logo.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_redacted"
+		texturefile = "gfx/texticons/REDACTED.png"
+		legacy_lazy_load = no
+	}
 	# Ministers
 	spriteType = {
 		name = "GFX_SIA_prayut_chan_o_cha"

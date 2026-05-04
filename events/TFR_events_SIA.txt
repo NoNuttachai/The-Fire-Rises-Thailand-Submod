@@ -128,7 +128,7 @@ country_event = {
 
     option = {
         name = thailand_politics.5.a
-        country_event = thailand_politics.6 
+        country_event = thailand_politics.6
         set_party_name = {
             ideology = social_democrat
             long_name = SIA_mfp_long
@@ -140,9 +140,10 @@ country_event = {
             name = SIA_progressive_movement
         }
 }
+}
 
 country_event = {
-    id = thailand_nonpolitical.1
+    id = thailand_nonpolitical.1 #Korat Massacre
     title = thailand_nonpolitical.1.t
     desc = thailand_nonpolitical.1.d
     picture = GFX_report_event_korat_massacre
@@ -164,5 +165,27 @@ country_event = {
         add_manpower = -7
         add_experience_army = -25
         add_stability = -0.05
+    }
+}
+
+country_event = {
+    id = thailand_nonpolitical.3 #PornHub Ban
+    title = thailand_nonpolitical.3.t
+    desc = thailand_nonpolitical.3.d
+    picture = GFX_report_no_more_gooning
+	
+	fire_only_once = yes
+
+    trigger = {
+        tag = SIA
+        date > 2020.11.3
+    }
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
+        name = thailand_nonpolitical.3.a
     }
 }
