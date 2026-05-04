@@ -52,6 +52,10 @@ scripted_gui = {
 			SIA_parliament_detail_panel_visible = {
 				NOT = { check_variable = { SIA_parliament_selected_party = 0 } }
 			}
+			
+			parliament_donut_vacant_visible = {
+				check_variable = { SIA_vacant_seats_var > 0 }
+			}
 		}
 
 		effects = {

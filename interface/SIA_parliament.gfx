@@ -20,8 +20,8 @@ spriteTypes = {
 	}
 
 	progressbartype = {
-		name = "GFX_SIA_parliament_donut_green"
-		texturefile1 = "gfx/interface/SIA/parliament/sia_parliament_donut_green.dds"
+		name = "GFX_SIA_parliament_donut_blue"
+		texturefile1 = "gfx/interface/SIA/parliament/sia_parliament_donut_blue.dds"
 		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
 		size = { x = 258 y = 300 }
 		steps = 1000 
@@ -80,5 +80,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/SIA/parliament/seat_bar_vacant.png"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_SIA_government_icon"
+		textureFile = "gfx/interface/SIA/parliament/SIA_government_icon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_opposition_icon"
+		textureFile = "gfx/interface/SIA/parliament/SIA_opposition_icon.dds"
+		legacy_lazy_load = no
+	}
 }
