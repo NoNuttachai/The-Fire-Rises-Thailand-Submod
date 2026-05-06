@@ -220,7 +220,7 @@ SIA_popular_winwin_total_control_range: "Political Domination"
  SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
  SIA_parliament_speaker_desc: "Speaker of the House of Representatives presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process."
 
- SIA_parliament_gov_support_loc: "Total §GGovernment§! support: §G[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
+ SIA_parliament_gov_support_loc: "Total §PGovernment§! support: §G[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
  SIA_parliament_opp_support_loc: "Total §ROpposition§! support: §R[?SIA_opp_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
 
  SIA_parliament_speaker_name_loc: "Current Speaker: §YChuan Leekpai§!"
