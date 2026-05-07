@@ -7,16 +7,7 @@ country_event = {
     desc = thailand_politics.1.d
     picture = GFX_report_event_constitutional_court
 	
-	fire_only_once = yes
-
-    trigger = {
-        tag = SIA
-        date > 2020.2.20
-    }
-    
-    mean_time_to_happen = {
-        days = 1
-    }
+	is_triggered_only = yes
 
     option = {
         name = thailand_politics.1.a 
@@ -33,8 +24,8 @@ country_event = {
         }
 
         country_event = {
-				id = thailand_politics.5
-				days = 1
+			id = thailand_politics.5
+			days = 1
 		}
 		
 		custom_effect_tooltip = SIA_ban_future_tt
@@ -51,16 +42,7 @@ country_event = {
     desc = thailand_politics.2.d
     picture = GFX_report_event_the_somboon_story
 	
-	fire_only_once = yes
-
-    trigger = {
-        tag = SIA
-        date > 2020.1.1
-    }
-    
-    mean_time_to_happen = {
-        days = 1
-    }
+	is_triggered_only = yes
 
     option = {
         name = thailand_politics.2.a 
@@ -70,6 +52,7 @@ country_event = {
             right_side = SIA_popular_winwin_side 
         }
         add_stability = -0.02
+		complete_national_focus = SIA_another_year_with_prayut
     }
 }
 
@@ -79,16 +62,7 @@ country_event = {
     desc = thailand_politics.3.d
     picture = GFX_report_event_budget_bill_passed
 	
-	fire_only_once = yes
-
-    trigger = {
-        tag = SIA
-        date > 2020.1.11
-    }
-    
-    mean_time_to_happen = {
-        days = 1
-    }
+	is_triggered_only = yes
 
     option = {
         name = thailand_politics.3.a 
@@ -102,7 +76,7 @@ country_event = {
     desc = thailand_politics.4.d
     picture = GFX_report_event_three_fingers
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 
     trigger = {
         tag = SIA
@@ -120,11 +94,7 @@ country_event = {
     desc = thailand_politics.5.d
     picture = GFX_report_event_new_orange_party
 	
-	fire_only_once = yes
-
-    trigger = {
-        tag = SIA
-    }
+	is_triggered_only = yes
 
     option = {
         name = thailand_politics.5.a
@@ -139,7 +109,7 @@ country_event = {
             long_name = SIA_progressive_movement_long
             name = SIA_progressive_movement
         }
-}
+	}
 }
 
 country_event = {
@@ -148,7 +118,7 @@ country_event = {
     desc = thailand_nonpolitical.1.d
     picture = GFX_report_event_korat_massacre
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 
     trigger = {
         tag = SIA
@@ -174,7 +144,7 @@ country_event = {
     desc = thailand_nonpolitical.3.d
     picture = GFX_report_no_more_gooning
 	
-	fire_only_once = yes
+	is_triggered_only = yes
 
     trigger = {
         tag = SIA

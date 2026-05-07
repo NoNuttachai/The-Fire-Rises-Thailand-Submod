@@ -1,0 +1,20 @@
+on_actions = {
+	# Initialize SIA parliament seat array on game start
+	on_startup = {
+		effect = {
+			SIA = {
+				SIA_parliament_init_variables = yes
+				
+				
+				country_event = thailand_politics.2
+				country_event = { id = thailand_politics.3 days = 10 }
+				country_event = { id = thailand_politics.1 days = 49 }
+				
+				country_event = { id = thailand_nonpolitical.1 days = 36 }
+				country_event = { id = thailand_nonpolitical.3 days = 306 }
+				
+				
+			}
+		}
+	}
+}
