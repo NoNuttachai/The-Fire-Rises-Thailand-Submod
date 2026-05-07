@@ -35,6 +35,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_SIA_speaker_portrait"
 			position = { x = 50 y = 130 }
 			scale = 0.8
+			pdx_tooltip = SIA_parliament_speaker_desc
 		}
 		
 		iconType = {
