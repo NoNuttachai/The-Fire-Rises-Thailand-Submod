@@ -242,35 +242,35 @@ SIA_popular_winwin_total_control_range: "Political Domination"
  # Party support lines
  SIA_parliament_pprp_line_loc: "Support for £GFX_palang_pracharath §YPPRP§!: [?ROOT.party_popularity@authoritarian_democrat|Y%1]"
  SIA_parliament_pprp_seats_loc: "§Y[?SIA_pprp_seats_var|0]§! Seats"
- SIA_parliament_pprp_tt: "§YPalang Pracharath Party§!\nSeats: §Y[?SIA_pprp_seats_var|0]§!\n§GGovernment Coalition Leader§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_PPRP"
+ SIA_parliament_pprp_tt: "§YPalang Pracharath Party§!\nSeats: §Y[?SIA_pprp_seats_var|0]§!\n§GGovernment Coalition Leader§!\n\n\n\n£GFX_SIA_intro_PPRP"
 
  SIA_parliament_ptp_line_loc: "Support for £GFX_phua_thai §YPTP§!: [?ROOT.party_popularity@social_democrat|Y%1]"
  SIA_parliament_ptp_seats_loc: "§Y[?SIA_ptp_seats_var|0]§! Seats"
- SIA_parliament_ptp_tt: "§YPheu Thai Party§!\nSeats: §Y[?SIA_ptp_seats_var|0]§!\n§ROpposition Leader§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_PTP"
+ SIA_parliament_ptp_tt: "§YPheu Thai Party§!\nSeats: §Y[?SIA_ptp_seats_var|0]§!\n§ROpposition Leader§!\n\n\n\n£GFX_SIA_intro_PTP"
 
  SIA_parliament_ffp_line_loc: "Support for £GFX_orange_party_1 §YFFP§!: [?ROOT.party_popularity@social_liberal|Y%1]"
  SIA_parliament_ffp_seats_loc: "§Y[?SIA_ffp_seats_var|0]§! Seats"
- SIA_parliament_ffp_tt: "§YFuture Forward Party§!\nSeats: §Y[?SIA_ffp_seats_var|0]§!\n§ROpposition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_FFP"
+ SIA_parliament_ffp_tt: "§YFuture Forward Party§!\nSeats: §Y[?SIA_ffp_seats_var|0]§!\n§ROpposition§!\n\n\n\n£GFX_SIA_intro_FFP"
 
  SIA_parliament_dp_line_loc: "Support for £GFX_democrat §YDP§!: [?ROOT.party_popularity@market_liberal|Y%1]"
  SIA_parliament_dp_seats_loc: "§Y[?SIA_dp_seats_var|0]§! Seats"
- SIA_parliament_dp_tt: "§YDemocrat Party§!\nSeats: §Y[?SIA_dp_seats_var|0]§!\n§GGovernment Coalition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_DP"
+ SIA_parliament_dp_tt: "§YDemocrat Party§!\nSeats: §Y[?SIA_dp_seats_var|0]§!\n§GGovernment Coalition§!\n\n\n\n£GFX_SIA_intro_DP"
 
  SIA_parliament_bjt_line_loc: "Support for £GFX_bhumjaithai §YBJT§!: [?ROOT.party_popularity@conservative|Y%1]"
  SIA_parliament_bjt_seats_loc: "§Y[?SIA_bjt_seats_var|0]§! Seats"
- SIA_parliament_bjt_tt: "§YBhumjaithai Party§!\nSeats: §Y[?SIA_bjt_seats_var|0]§!\n§GGovernment Coalition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_BJT"
+ SIA_parliament_bjt_tt: "§YBhumjaithai Party§!\nSeats: §Y[?SIA_bjt_seats_var|0]§!\n§GGovernment Coalition§!\n\n\n\n£GFX_SIA_intro_BJT"
 
  SIA_parliament_tlp_line_loc: "Support for £GFX_thai_liberal_party §YTLP§!: N/A"
  SIA_parliament_tlp_seats_loc: "§Y[?SIA_tlp_seats_var|0]§! Seats"
- SIA_parliament_tlp_tt: "§YThai Liberal Party§!\nSeats: §Y[?SIA_tlp_seats_var|0]§!\n§ROpposition§!\n\n§TClick to view party details§!\n\n£GFX_SIA_intro_TLP"
+ SIA_parliament_tlp_tt: "§YThai Liberal Party§!\nSeats: §Y[?SIA_tlp_seats_var|0]§!\n§ROpposition§!\n\n\n\n£GFX_SIA_intro_TLP"
 
  SIA_parliament_ctpp_line_loc: "Support for £GFX_chartthaipattana §YCTPP§!: N/A"
  SIA_parliament_ctpp_seats_loc: "§Y[?SIA_ctpp_seats_var|0]§! Seats"
- SIA_parliament_ctpp_tt: "£GFX_SIA_intro_CTPP\n\n§YChart Thai Pattana Party§!\nSeats: §Y[?SIA_ctpp_seats_var|0]§!\n§GGovernment Coalition§!\n\nTODO: Party description placeholder.\n\n§TClick to view party details§!"
+ SIA_parliament_ctpp_tt: "£GFX_SIA_intro_CTPP\n\n§YChart Thai Pattana Party§!\nSeats: §Y[?SIA_ctpp_seats_var|0]§!\n§GGovernment Coalition§!\n\nTODO: Party description placeholder.\n\n"
 
  SIA_parliament_pcc_line_loc: "Support for £GFX_prachachat §YPCC§!: N/A"
  SIA_parliament_pcc_seats_loc: "§Y[?SIA_pcc_seats_var|0]§! Seats"
- SIA_parliament_pcc_tt: "£GFX_SIA_intro_PCC\n\n§YPrachachat Party§!\nSeats: §Y[?SIA_pcc_seats_var|0]§!\n§ROpposition§!\n\nTODO: Party description placeholder.\n\n§TClick to view party details§!"
+ SIA_parliament_pcc_tt: "£GFX_SIA_intro_PCC\n\n§YPrachachat Party§!\nSeats: §Y[?SIA_pcc_seats_var|0]§!\n§ROpposition§!\n\nTODO: Party description placeholder.\n\n"
 
  # Party Detail Panels
  SIA_parliament_detail_pprp_desc: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP\n\n\n\n\n\n\n\nParty Leader: §YGeneral Prawit Wongsuwan§!\n\n§YPalang Pracharath Party§! is a Thai political party founded in 2018 to support the continuation of General Prayut Chan-o-cha`s government following the planned 2019 elections. Widely regarded as the political arm of the military establishment, the party drew its core support from conservative voters, the military, and business elites.\n\nThe party`s core platform focuses on §Ynational stability, economic development under strong leadership, and continuity§! of the policies enacted under the NCPO. Despite criticism for its close ties to the junta, Palang Pracharath emerged as the largest party in the 2019 election by popular vote, forming a coalition government that returned Prayut to the premiership."
