@@ -186,13 +186,11 @@
  thailand_politics.10.t: "COVID-19 case involving an Egyptian soldier in Rayong"
  thailand_politics.10.d: "An Egyptian soldier, along with 30 others, including the aircraft crew, traveled from Egypt on a military diplomatic mission to China, with stops in Pakistan and the United Arab Emirates before arriving at U-Tapao Airport in Rayong. The group stayed at a hotel in Rayong and later visited a nearby shopping mall. The Egyptian military crew members who entered Thailand tested positive for COVID-19 and did not comply with prevention measures. The soldier was subsequently confirmed to have tested positive for COVID-19.\n\nThe incident prompted authorities to deploy an investigation team to Rayong Province to trace the soldier’s movements. It also sparked public criticism of Prayut Chan-o-cha government, especially on social media, for allowing potentially infected foreign visitors to enter the country without adequate screening, as well as criticism of the Egyptian government after a video resurfaced showing the Egyptian soldier refusing to comply with COVID-19 testing by Thai authorities.\n\nThe Ambassador of the Arab Republic of Egypt to Thailand expressed regret for the incident and pledged that such an event would not happen again."
  thailand_politics.10.a: "What Egyptian soldier would be so brash as to act this way?"
- thailand_politics_10_texticon: "--------------------------------------------------------\n\n\n\n\n£GFX_Egyptian_Soldier_Video\n\n\n\n\n\n--------------------------------------------------------"
+ thailand_politics_10_texticon: ".\n\n\n\n\n£GFX_egyptian_soldier_video\n\n\n\n\n\n"
  
  thai_events.1.t: "First Covid-19 Infection Case in Thailand"
  thai_events.1.d: "TNN 16 CHANNEL REPORT\n\nToday, Deputy Prime Minister and Minister of Health Anutin Charnvirakul held a press conference with a World Health Organization Representative, confirming the first COVID-19 case in Thailand and the first infection case reported outside of China. The patient, who was a tourist from China, has been hospitalized and so far recovered. Other family members close to the patient have so far not been infected.\n\nPrime Minister Prayut Chan-o-cha has been notified of the first infection case of COVID-19. The Government has confidence that the Health Agencies can detect and contain the COVID-19 situation in Thailand."
  thai_events.1.a: "Prepare for the Worse..."
- 
- 
  
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
