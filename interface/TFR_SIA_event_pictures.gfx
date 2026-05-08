@@ -32,4 +32,16 @@ spriteTypes = {
 		name = "GFX_report_Oil_Crisis_in_Thailand"
 		texturefile = "gfx/event_pictures/report_event_Oil_Crisis_in_Thailand.png"
 	}
+	spriteType = {
+		name = "GFX_report_Thai_Air_Bankruptcy_Event"
+		texturefile = "gfx/event_pictures/report_event_Thai_Air_Bankruptcy_Event.png"
+	}
+	spriteType = {
+		name = "GFX_report_First_Covid_19"
+		texturefile = "gfx/event_pictures/report_event_SIA_First_Covid_19.png"
+	}
+	spriteType = {
+		name = "GFX_report_Egypt_Soldier_COVID_19"
+		texturefile = "gfx/event_pictures/report_event_Egypt_Soldier_COVID_19.png"
+	}
 }

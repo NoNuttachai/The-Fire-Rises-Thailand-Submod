@@ -66,6 +66,10 @@ ideas = {
 		}
 		SIA_oil_crisis = {
 			picture = SIA_constitution_2017
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			
 			allowed_civil_war = {
 				always = yes
 			}
@@ -77,6 +81,92 @@ ideas = {
 			modifier = {
 				stability_factor = -0.02
                 consumer_goods_factor = 0.10
+			}
+		}
+		SIA_covid_idea_1 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+				expense_growth_factor = 0.02
+			}
+		}
+		SIA_covid_idea_2 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.1
+				expense_growth_factor = 0.05
+			}
+		}
+		
+		SIA_covid_idea_3 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.15
+				society_development_monthly = -0.02
+				expense_growth_factor = 0.1
+			}
+			
+		}
+		
+		SIA_covid_idea_4 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}	
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.2
+				society_development_monthly = -0.05
+				expense_growth_factor = 0.12
+			}
+		}
+		SIA_covid_idea_5 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.5
+				stability_factor = -0.20
+				society_development_monthly = -0.08
+				expense_growth_factor = 0.15
 			}
 		}
 	}

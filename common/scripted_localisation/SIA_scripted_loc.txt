@@ -1,0 +1,33 @@
+defined_text = {
+	name = SIA_covid_status
+	text = {
+		trigger = {
+			has_idea = SIA_covid_idea_1
+		}
+		localization_key = mild_covid
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_covid_idea_2
+		}
+		localization_key = moderate_covid
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_covid_idea_3
+		}
+		localization_key = serious_covid
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_covid_idea_4
+		}
+		localization_key = crippling_covid
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_covid_idea_5
+		}
+		localization_key = catastrophic_covid
+	}
+}

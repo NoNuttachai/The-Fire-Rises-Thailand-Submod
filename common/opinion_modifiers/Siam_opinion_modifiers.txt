@@ -1,0 +1,3 @@
+opinion_modifiers = {
+	decreased_relations = { value = -20 }
+}

@@ -1,0 +1,93 @@
+SIA_increase_coronavirus = {
+	if = {
+		limit = {
+			has_idea = SIA_covid_idea_1
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_1
+			add_idea = SIA_covid_idea_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_2
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_2
+			add_idea = SIA_covid_idea_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_3
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_3
+			add_idea = SIA_covid_idea_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_4
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_4
+			add_idea = SIA_covid_idea_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_5
+		}
+		add_stability = -0.05
+	}
+	else = {
+		add_ideas = SIA_covid_idea_1
+	}
+}
+
+SIA_decrease_covid = {
+	if = {
+		limit = {
+			has_idea = SIA_covid_idea_1
+		}
+		remove_ideas = SIA_covid_idea_1
+		clr_country_flag = SIA_coronavirus_ongoing
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_2
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_2
+			add_idea = SIA_covid_idea_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_3
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_3
+			add_idea = SIA_covid_idea_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_4
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_4
+			add_idea = SIA_covid_idea_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_covid_idea_5
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_5
+			add_idea = SIA_covid_idea_4
+		}
+	}
+}

@@ -10,8 +10,12 @@ on_actions = {
 				country_event = { id = thailand_politics.3 days = 10 }
 				country_event = { id = thailand_politics.1 days = 49 }
 				country_event = { id = thailand_politics.6 days = 69 random_days = 9 }
+				country_event = { id = thailand_politics.10 days = 192 }
+				
+				country_event = { id = thai_events.1 days = 12 }
 				
 				country_event = { id = thailand_nonpolitical.1 days = 36 }
+				country_event = { id = thailand_nonpolitical.2 days = 138 }
 				country_event = { id = thailand_nonpolitical.3 days = 306 }
 				
 				

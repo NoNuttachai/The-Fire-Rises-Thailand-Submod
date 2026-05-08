@@ -198,6 +198,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Egyptian_Soldier_Video"
+		texturefile = "gfx/texticons/Egyptian_Soldier_Video.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_redacted"
 		texturefile = "gfx/texticons/REDACTED.png"
 		legacy_lazy_load = no

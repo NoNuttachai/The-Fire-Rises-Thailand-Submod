@@ -1,0 +1,64 @@
+SIA_coronavirus_category = {
+	SIA_the_pandemic_worsens_mission = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_coronavirus_ongoing
+		}
+		available = {
+			has_country_flag = SIA_dealt_with_coronavirus
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 85
+		timeout_effect = {
+			SIA_increase_coronavirus = yes
+			activate_mission = SIA_the_pandemic_worsens_mission
+		}
+		complete_effect = {
+			hidden_effect = {
+				remove_opinion_modifier = {
+					target = EGY
+					modifier = decreased_relations
+				}
+				activate_mission = SIA_the_pandemic_lessens_mission
+			}
+		}
+	}
+	SIA_the_pandemic_lessens_mission = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_coronavirus_ongoing
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = SIA_coronavirus_ongoing
+				}
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			SIA_decrease_covid = yes
+			activate_mission = SIA_the_pandemic_lessens_mission
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = 45
+			}
+		}
+	}
+}

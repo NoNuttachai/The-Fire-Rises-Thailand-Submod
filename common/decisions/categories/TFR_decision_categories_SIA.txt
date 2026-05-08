@@ -29,3 +29,15 @@ SIA_balance_of_power_category = {
 		original_tag = SIA
 	}
 }
+SIA_coronavirus_category = {
+	icon = GFX_decision_PRC_covid_19_cat
+
+	priority = 6
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_coronavirus_ongoing
+	}
+	visible_when_empty = yes
+}
