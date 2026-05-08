@@ -64,6 +64,21 @@ ideas = {
 				society_development_monthly = -0.01
 			}
 		}
+		SIA_oil_crisis = {
+			picture = SIA_constitution_2017
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.02
+                consumer_goods_factor = 0.10
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

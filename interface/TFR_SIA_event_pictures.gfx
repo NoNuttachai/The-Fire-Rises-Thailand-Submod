@@ -28,4 +28,8 @@ spriteTypes = {
 		name = "GFX_report_no_more_gooning"
 		texturefile = "gfx/event_pictures/NEVER_GOON.png"
 	}
+	spriteType = {
+		name = "GFX_report_Oil_Crisis_in_Thailand"
+		texturefile = "gfx/event_pictures/report_event_Oil_Crisis_in_Thailand.png"
+	}
 }
