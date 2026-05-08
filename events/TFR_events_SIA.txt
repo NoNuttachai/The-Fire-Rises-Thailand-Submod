@@ -98,7 +98,6 @@ country_event = {
 
     option = {
         name = thailand_politics.5.a
-        country_event = thailand_politics.6
         set_party_name = {
             ideology = social_democrat
             long_name = SIA_mfp_long
@@ -111,6 +110,19 @@ country_event = {
         }
 	}
 }
+country_event = {
+    id = thailand_politics.6
+    title = thailand_politics.6.t
+    desc = thailand_politics.6.d
+    picture = GFX_report_Oil_Crisis_in_Thailand
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.6.a
+		add_ideas = SIA_oil_crisis
+	}
+}
 
 country_event = {
     id = thailand_nonpolitical.1 #Korat Massacre
@@ -119,15 +131,6 @@ country_event = {
     picture = GFX_report_event_korat_massacre
 	
 	is_triggered_only = yes
-
-    trigger = {
-        tag = SIA
-        date > 2020.2.7
-    }
-    
-    mean_time_to_happen = {
-        days = 1
-    }
 
     option = {
         name = thailand_nonpolitical.1.a 
@@ -145,15 +148,6 @@ country_event = {
     picture = GFX_report_no_more_gooning
 	
 	is_triggered_only = yes
-
-    trigger = {
-        tag = SIA
-        date > 2020.11.3
-    }
-    
-    mean_time_to_happen = {
-        days = 1
-    }
 
     option = {
         name = thailand_nonpolitical.3.a

@@ -565,7 +565,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+		available = {
+			has_idea = SIA_oil_crisis
+		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
