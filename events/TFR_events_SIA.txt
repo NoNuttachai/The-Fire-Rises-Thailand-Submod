@@ -109,6 +109,10 @@ country_event = {
             long_name = SIA_progressive_movement_long
             name = SIA_progressive_movement
         }
+		 country_event = {
+			id = thailand_politics.7
+			days = 4
+		}
 	}
 }
 country_event = {
@@ -122,6 +126,23 @@ country_event = {
     option = {
         name = thailand_politics.6.a
 		add_ideas = SIA_oil_crisis
+	}
+}
+country_event = {
+    id = thailand_politics.7
+    title = thailand_politics.7.t
+    desc = thailand_politics.7.d
+    picture = GFX_report_prayut_VS_Three_Fingers
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.7.a
+		complete_national_focus = SIA_raise_our_three_fingers
+	}
+	option = {
+        name = thailand_politics.7.b
+		complete_national_focus = SIA_clamp_down_the_three_holves
 	}
 }
 

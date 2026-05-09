@@ -44,4 +44,8 @@ spriteTypes = {
 		name = "GFX_report_Egypt_Soldier_COVID_19"
 		texturefile = "gfx/event_pictures/report_event_Egypt_Soldier_COVID_19.png"
 	}
+	spriteType = {
+		name = "GFX_report_prayut_VS_Three_Fingers"
+		texturefile = "gfx/event_pictures/report_event_prayut_VS_Three_Fingers.png"
+	}
 }
