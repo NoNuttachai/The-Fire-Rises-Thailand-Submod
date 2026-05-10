@@ -11,6 +11,7 @@ on_actions = {
 				country_event = { id = thailand_politics.1 days = 49 }
 				country_event = { id = thailand_politics.6 days = 69 random_days = 9 }
 				country_event = { id = thailand_politics.10 days = 192 }
+				country_event = { id = thailand_politics.8 days = 154 }
 				
 				country_event = { id = thai_events.1 days = 12 }
 				

@@ -66,9 +66,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			always = no
-		}
+		
 		available_if_capitulated = yes
 		
 		completion_reward = {
@@ -315,7 +313,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+		available = {
+			always = no
+		}
 		available_if_capitulated = yes
 		
 		completion_reward = {

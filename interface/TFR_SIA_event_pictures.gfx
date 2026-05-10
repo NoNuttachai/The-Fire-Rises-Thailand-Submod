@@ -48,4 +48,8 @@ spriteTypes = {
 		name = "GFX_report_prayut_VS_Three_Fingers"
 		texturefile = "gfx/event_pictures/report_event_prayut_VS_Three_Fingers.png"
 	}
+	spriteType = {
+		name = "GFX_report_saveWanchalerm"
+		texturefile = "gfx/event_pictures/report_event_saveWanchalerm.png"
+	}
 }

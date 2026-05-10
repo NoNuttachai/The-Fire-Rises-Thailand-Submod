@@ -145,6 +145,36 @@ country_event = {
 		complete_national_focus = SIA_clamp_down_the_three_holves
 	}
 }
+country_event = {
+    id = thailand_politics.8
+    title = thailand_politics.8.t
+    desc = thailand_politics.8.d
+    picture = GFX_report_saveWanchalerm
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.8.a
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+		
+	}
+	option = {
+        name = thailand_politics.8.b
+		trigger = {
+			has_completed_focus = SIA_clamp_down_the_three_holves
+		}
+		
+	}
+	after = {
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.1
+			tooltip_side = SIA_loss_side
+		}
+	}
+}
 
 country_event = {
     id = thailand_politics.10 #egyptian soldier
