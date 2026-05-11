@@ -58,6 +58,8 @@
 	recruit_character = SIA_tummanun_withi_char
 	recruit_character = SIA_luechai_ruddit_char
 	recruit_character = SIA_chatchai_sriworakan_char
+	recruit_character = SIA_predee_daocha_char
+	recruit_character = SIA_anucha_nakasai_char
 
 	add_ideas = {
 		ETH_chinese_investments
@@ -238,6 +240,14 @@
 	country_event = {
 		id = thailand.18
 		days = 1
+	}
+	country_event = {
+		id = thailand_politics.9
+		days = 55
+	}
+	country_event = {
+		id = thailand_politics.11
+		days = 218
 	}
 
 	set_party_name = {
