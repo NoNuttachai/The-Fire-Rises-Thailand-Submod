@@ -241,14 +241,6 @@
 		id = thailand.18
 		days = 1
 	}
-	country_event = {
-		id = thailand_politics.9
-		days = 55
-	}
-	country_event = {
-		id = thailand_politics.11
-		days = 218
-	}
 
 	set_party_name = {
 		ideology = totalitarian_socialist
