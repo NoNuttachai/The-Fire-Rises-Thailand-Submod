@@ -59,18 +59,6 @@ guiTypes = {
 			position = { x = 190 y = 120 }
 		}
 		
-		iconType = {
-			name = "SIA_gov_icon"
-			quadTextureSprite = "GFX_SIA_government_icon"
-			position = { x = 390 y = 450 }
-		}
-		
-		iconType = {
-			name = "SIA_opp_icon"
-			quadTextureSprite = "GFX_SIA_opposition_icon"
-			position = { x = 390 y = 665 }
-		}
-		
 		
 
 		# =============================================
