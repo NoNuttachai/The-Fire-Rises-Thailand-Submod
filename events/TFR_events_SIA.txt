@@ -177,6 +177,19 @@ country_event = {
 }
 
 country_event = {
+    id = thailand_politics.9 # Cobra Gold 2020
+    title = thailand_politics.9.t
+    desc = thailand_politics.9.d
+    picture = GFX_report_Cobra_Gold_2020
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.9.a
+	}
+}
+
+country_event = {
     id = thailand_politics.10 #egyptian soldier
     title = thailand_politics.10.t
     desc = thailand_politics.10.d
@@ -200,6 +213,25 @@ country_event = {
 			target = EGY
 			modifier = decreased_relations
 		}
+	}
+}
+
+country_event = {
+    id = thailand_politics.11 # Palang Pracharat Fallout
+    title = thailand_politics.11.t
+    desc = thailand_politics.11.d
+    picture = GFX_report_Palang_Pracharat_Fallout_and_Cabinet_Reshuffle
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.11.a
+        remove_ideas = SIA_uttama_saowanayon_advisor
+        remove_ideas = SIA_thewan_liptapanlop_advisor
+        
+        add_ideas = SIA_predee_daocha_advisor
+        add_ideas = SIA_anucha_nakasai_advisor
+        add_stability = -0.01
 	}
 }
 
