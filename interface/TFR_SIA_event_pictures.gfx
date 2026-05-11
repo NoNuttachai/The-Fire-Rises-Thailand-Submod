@@ -52,4 +52,12 @@ spriteTypes = {
 		name = "GFX_report_saveWanchalerm"
 		texturefile = "gfx/event_pictures/report_event_saveWanchalerm.png"
 	}
+	spriteType = {
+		name = "GFX_report_Cobra_Gold_2020"
+		texturefile = "gfx/event_pictures/Cobra_Gold_2020.png"
+	}
+	spriteType = {
+		name = "GFX_report_Palang_Pracharat_Fallout_and_Cabinet_Reshuffle"
+		texturefile = "gfx/event_pictures/Palang_Pracharat_Fallout_and_Cabinet_Reshuffle.png"
+	}
 }

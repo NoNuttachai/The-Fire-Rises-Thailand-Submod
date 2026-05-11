@@ -238,6 +238,17 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_prawit_wongsuwan.png"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_SIA_predee_daocha"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_predee_daocha.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_anucha_nakasai"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_anucha_nakasai.png"
+		legacy_lazy_load = no
+	}
 	
 	# Advisors
 	spriteType = {
