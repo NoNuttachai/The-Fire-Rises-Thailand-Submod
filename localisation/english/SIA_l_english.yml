@@ -137,6 +137,12 @@
  SIA_thewan_liptapanlop_advisor_desc: "[£GFX_chartpattana] Chart Pattana Party\nNeoliberal"
  SIA_prawit_wongsuwan_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
 
+ SIA_predee_daocha_char: "Predee Daocha [£SIA_predee_daocha_advisor_desc]"
+ SIA_predee_daocha_advisor_desc: "Independent"
+
+ SIA_anucha_nakasai_char: "Anucha Nakasai [£SIA_anucha_nakasai_char_advisor_desc]"
+ SIA_anucha_nakasai_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
+
  ###Startup Menu###
  SIA_country_summary: "§YCountry Summary§!:\nThailand, the “Land of Smiles,” is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country`s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
  SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§g - United Thai Nation Party§!\n§B - Bhumjaithai Party§!\n§R - Pheu Thai Party§!\n§O - Move Forward / People's Party§!"
@@ -192,11 +198,19 @@
  thailand_politics.8.d: "Wanchalearm Satsaksit, a Thai political activist and exile and a vocal critic of Prayut Chan-o-cha and his government, was abducted and subsequently disappeared. At the time, the 37 year old had been living in exile in Phnom Penh, Cambodia since 2014.\n\nAccording to witnesses, a group of armed men forcibly seized Wanchalearm and pushed him into a black SUV. He was heard shouting for help in Khmer as bystanders began to approach, but the abductors warned them to stay back before fleeing the scene.\n\nWanchalearm was affiliated with the United Front for Democracy Against Dictatorship (UDD), also known as the Red Shirts. The group was originally formed in 2006 in opposition to the coup that removed then prime minister Thaksin Shinawatra from power.\n\nFollowing the May 22, 2014 coup, when the military seized power, Wanchalearm was among those ordered to report to the National Council for Peace and Order (NCPO) on June 8, 2014, but he did not appear. As a result, an arrest warrant was issued for failing to comply with the NCPO order. He was subsequently charged with failing to respond to a summons by the military junta, and in 2015, he was accused of lese majeste.\n\nWanchalearm fled to Laos to avoid arrest and later moved from Laos to Cambodia. He have stated that he chose not to seek asylum in a democratic nation in Europe, the United States, or Japan because he opted to run an agricultural business there.\n\nMany consider the incident to be a case of enforced disappearance, possibly involving Thai or Cambodian authorities. Amnesty International has called for an independent and transparent investigation into his disappearance. Other human rights groups have echoed these concerns."
  thailand_politics.8.a: "#saveWanchalerm"
  thailand_politics.8.b: "I wonder who did that…"
+
+ thailand_politics.9.t: "Cobra Gold 2020"
+ thailand_politics.9.d: "The 39th Cobra Gold exercise marked another installment of the long-running joint military drills co-hosted by Thailand and the United States since 1982.\n\nThis iteration maintained a balanced focus on both security operations and humanitarian cooperation. Core activities included command post exercises, humanitarian civic assistance projects, disaster relief training, and live-fire field exercises designed to strengthen coordination among participating forces.\n\nCobra Gold is rooted in the enduring U.S.-Thai partnership, reflecting decades of close diplomatic and military collaboration. It also serves as a platform highlighting the region's growing commitment to peace, stability, and security.\n\nThe live-fire tactical exercise brought together soldiers from 29 participating countries, all of whom were required to strictly follow COVID-19 prevention measures. Seven countries participated in the main drills: Indonesia, Japan, Malaysia, Singapore, South Korea, Thailand, and the United States. Training activities included high-altitude parachute infiltration, sniping, air interdiction, preparatory and supporting artillery fire, engineer route clearance, fire-and-maneuver operations, air assault, close air support, air mobility operations, aeromedical evacuation, and objective seizure."
+ thailand_politics.9.a: "Three Cheers for the Red, White, and Blue!"
  
  thailand_politics.10.t: "COVID-19 case involving an Egyptian soldier in Rayong"
  thailand_politics.10.d: "An Egyptian soldier, along with 30 others, including the aircraft crew, traveled from Egypt on a military diplomatic mission to China, with stops in Pakistan and the United Arab Emirates before arriving at U-Tapao Airport in Rayong. The group stayed at a hotel in Rayong and later visited a nearby shopping mall. The Egyptian military crew members who entered Thailand tested positive for COVID-19 and did not comply with prevention measures. The soldier was subsequently confirmed to have tested positive for COVID-19.\n\nThe incident prompted authorities to deploy an investigation team to Rayong Province to trace the soldier's movements. It also sparked public criticism of Prayut Chan-o-cha government, especially on social media, for allowing potentially infected foreign visitors to enter the country without adequate screening, as well as criticism of the Egyptian government after a video resurfaced showing the Egyptian soldier refusing to comply with COVID-19 testing by Thai authorities.\n\nThe Ambassador of the Arab Republic of Egypt to Thailand expressed regret for the incident and pledged that such an event would not happen again."
  thailand_politics.10.a: "What Egyptian soldier would be so brash as to act this way?"
  thailand_politics_10_texticon: ".\n\n\n\n\n£GFX_egyptian_soldier_video\n\n\n\n\n\n"
+
+ thailand_politics.11.t: "Palang Pracharat Fallout and Cabinet Reshuffle"
+ thailand_politics.11.d: "Nain characters of the Palang Pracharat Party most notably the 'Four Coaches,' which included Party Leader and Minister of Finance Uttama Savanayana, Party General Secretary and Minister of Energy Sontirat Sontijirawong, Deputy Party Leader and Minister of Higher Education Suvit Maesincee, and Party Executive Committee Member Kobsak Pootrakool all announced at a press conference at Centara Grand at Central Plaza Ladprao, Bangkok, their intention to resign from the Palang Pracharat Party.\n\nMany media speculations pointed out that since the formal formation of the government in 2019, the party was faced with a series of scandals and criticism regarding the party's handling of their own background checks for MPs, and also the consolidation of the military faction within the Palang Pracharat Party. This turned out to be true as the party members met and elected General Prawit Wongsuwon as their own party leader.\n\nIn the meantime, the 'Four Coaches' group all announced their resignation from the cabinet. The Prime Minister announced the replacements, which included many people from other factions within the Palang Pracharat Party."
+ thailand_politics.11.a: "Well... that's an entire year wasted."
  
  thai_events.1.t: "First Covid-19 Infection Case in Thailand"
  thai_events.1.d: "TNN 16 CHANNEL REPORT\n\nToday, Deputy Prime Minister and Minister of Health Anutin Charnvirakul held a press conference with a World Health Organization Representative, confirming the first COVID-19 case in Thailand and the first infection case reported outside of China. The patient, who was a tourist from China, has been hospitalized and so far recovered. Other family members close to the patient have so far not been infected.\n\nPrime Minister Prayut Chan-o-cha has been notified of the first infection case of COVID-19. The Government has confidence that the Health Agencies can detect and contain the COVID-19 situation in Thailand."
@@ -222,28 +236,28 @@
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
 
 #MIO's
-SIA_bangkok_dock_company: "Bangkok Dock Company"
-SIA_chaiseri_organisation: "Chaiseri"
-SIA_thairung_organisation: "Thai Rung Union Car"
-SIA_thai_army_ordnance_department: "RTA Ordnance Department"
-SIA_israel_elbit_systems: "Elbit Systems"
-SIA_narc_arms_industry: "NARAC Arms Industry"
-SIA_sweden_saab_organization: "Saab AB"
-SIA_defencetechnologyinstitute_organisation: "Defense Technology Institute"
+ SIA_bangkok_dock_company: "Bangkok Dock Company"
+ SIA_chaiseri_organisation: "Chaiseri"
+ SIA_thairung_organisation: "Thai Rung Union Car"
+ SIA_thai_army_ordnance_department: "RTA Ordnance Department"
+ SIA_israel_elbit_systems: "Elbit Systems"
+ SIA_narc_arms_industry: "NARAC Arms Industry"
+ SIA_sweden_saab_organization: "Saab AB"
+ SIA_defencetechnologyinstitute_organisation: "Defense Technology Institute"
 
 #Balance of Power
-SIA_power_balance: "Political Standing of Prayut"
-SIA_popular_winwin_side: "Prayut Side"
-SIA_loss_side: "Opposition Side"
-SIA_balance_range: "Status Quo"
-SIA_loss_low_control_range: "Mild Opposition"
-SIA_loss_medium_control_range: "Growing Opposition"
-SIA_loss_high_control_range: "Mass Opposition"
-SIA_loss_total_control_range: "Non-Existent Support"
-SIA_popular_winwin_low_control_range: "Opposition Marginalized"
-SIA_popular_winwin_medium_control_range: "Opposition Sidelined"
-SIA_popular_winwin_high_control_range: "Opposition Crushed"
-SIA_popular_winwin_total_control_range: "Political Domination"
+ SIA_power_balance: "Political Standing of Prayut"
+ SIA_popular_winwin_side: "Prayut Side"
+ SIA_loss_side: "Opposition Side"
+ SIA_balance_range: "Status Quo"
+ SIA_loss_low_control_range: "Mild Opposition"
+ SIA_loss_medium_control_range: "Growing Opposition"
+ SIA_loss_high_control_range: "Mass Opposition"
+ SIA_loss_total_control_range: "Non-Existent Support"
+ SIA_popular_winwin_low_control_range: "Opposition Marginalized"
+ SIA_popular_winwin_medium_control_range: "Opposition Sidelined"
+ SIA_popular_winwin_high_control_range: "Opposition Crushed"
+ SIA_popular_winwin_total_control_range: "Political Domination"
 
 ###Parliament GUI###
  SIA_parliament_title: "§YHouse of Representatives of Thailand§!"
@@ -269,7 +283,14 @@ SIA_popular_winwin_total_control_range: "Political Domination"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§!\n§Y[?SIA_pcc_seats_var|0]§! Seats"
  
  
- SIA_parliament_pprp_combined: "£GFX_palang_pracharath §GPalang Pracharath Party§! - §Y[?SIA_pprp_seats_var|0]§! Seats"	SIA_parliament_dp_combined: "£GFX_democrat §GDemocrat Party§! - §Y[?SIA_dp_seats_var|0]§! Seats"	SIA_parliament_bjt_combined: "£GFX_bhumjaithai §GBhumjaithai Party§! - §Y[?SIA_bjt_seats_var|0]§! Seats"	SIA_parliament_ctpp_combined: "£GFX_chartthaipattana §GChart Thai Pattana Party§! - §Y[?SIA_ctpp_seats_var|0]§! Seats"	SIA_parliament_ptp_combined: "£GFX_phua_thai §YPheu Thai Party§! - §Y[?SIA_ptp_seats_var|0]§! Seats"	SIA_parliament_ffp_combined: "£GFX_orange_party_1 §YFuture Forward Party§! - §Y[?SIA_ffp_seats_var|0]§! Seats"	SIA_parliament_tlp_combined: "£GFX_thai_liberal_party §YThai Liberal Party§! - §Y[?SIA_tlp_seats_var|0]§! Seats"	SIA_parliament_pcc_combined: "£GFX_prachachat §YPrachachat Party§! - §Y[?SIA_pcc_seats_var|0]§! Seats"
+ SIA_parliament_pprp_combined: "£GFX_palang_pracharath §GPalang Pracharath Party§! - §Y[?SIA_pprp_seats_var|0]§! Seats"
+ SIA_parliament_dp_combined: "£GFX_democrat §GDemocrat Party§! - §Y[?SIA_dp_seats_var|0]§! Seats"
+ SIA_parliament_bjt_combined: "£GFX_bhumjaithai §GBhumjaithai Party§! - §Y[?SIA_bjt_seats_var|0]§! Seats"
+ SIA_parliament_ctpp_combined: "£GFX_chartthaipattana §GChart Thai Pattana Party§! - §Y[?SIA_ctpp_seats_var|0]§! Seats"
+ SIA_parliament_ptp_combined: "£GFX_phua_thai §YPheu Thai Party§! - §Y[?SIA_ptp_seats_var|0]§! Seats"
+ SIA_parliament_ffp_combined: "£GFX_orange_party_1 §YFuture Forward Party§! - §Y[?SIA_ffp_seats_var|0]§! Seats"
+ SIA_parliament_tlp_combined: "£GFX_thai_liberal_party §YThai Liberal Party§! - §Y[?SIA_tlp_seats_var|0]§! Seats"
+ SIA_parliament_pcc_combined: "£GFX_prachachat §YPrachachat Party§! - §Y[?SIA_pcc_seats_var|0]§! Seats"
 
  # Party support lines
  SIA_parliament_pprp_line_loc: "Support for £GFX_palang_pracharath §YPPRP§!: [?ROOT.party_popularity@authoritarian_democrat|Y%1]"
