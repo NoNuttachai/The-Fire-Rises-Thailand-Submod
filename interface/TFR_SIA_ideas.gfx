@@ -295,12 +295,12 @@ spriteTypes = {
 
 	# MIO's
 	spriteType = {
-		name = "GFX_idea_Chaiseri"
-		texturefile = "gfx/interface/mios/MIO_Chaiseri.dds"
+		name = "GFX_idea_chaiseri"
+		texturefile = "gfx/interface/mios/MIO_chaiseri.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_Bangkok_Dock_Company"
-		texturefile = "gfx/interface/mios/MIO_Bangkok_Dock_Company.dds"
+		name = "GFX_idea_bangkok_dock_company"
+		texturefile = "gfx/interface/mios/MIO_bangkok_dock_company.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_thairung"
@@ -309,10 +309,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SIA_ordnance_department"
 		texturefile = "gfx/interface/mios/MIO_ordnance_department.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_SIA_israel_elbit_systems"
-		texturefile = "gfx/interface/mios/MIO_israel_elbit_systems.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_narc_arms_industry"
@@ -329,5 +325,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_defencetechnologyinstitute"
 		texturefile = "gfx/interface/mios/MIO_defencetechnologyinstitute.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_marsun"
+		texturefile = "gfx/interface/mios/MIO_marsun.dds"
 	}
 }
