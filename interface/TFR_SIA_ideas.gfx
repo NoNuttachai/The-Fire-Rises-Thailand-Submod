@@ -95,6 +95,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_intro_PPRP1" #Palang Pracharath Party — General Prawit Wongsuwon
+		texturefile = "gfx/texticons/SIA_PPRP1_intro.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_intro_DP" #Democrat Party — Jurin Laksanawisit
 		texturefile = "gfx/texticons/SIA_DP_intro.png"
 		legacy_lazy_load = no

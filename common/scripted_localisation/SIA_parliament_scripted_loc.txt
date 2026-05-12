@@ -32,6 +32,24 @@ defined_text = {
 		localization_key = SIA_parliament_pprp_line_loc
 	}
 }
+# PPRP
+defined_text = {
+	name = PPRPPartyStatus
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			NOT = { has_country_flag = pp_fallout }
+		}
+		localization_key = SIA_parliament_detail_pprp_header1
+	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			has_country_flag = pp_fallout
+		}
+		localization_key = SIA_parliament_detail_pprp_header2
+	}
+}
 defined_text = {
 	name = SIA_parliament_pprp_seats_line
 	text = {

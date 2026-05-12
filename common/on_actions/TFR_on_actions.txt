@@ -4,7 +4,9 @@ on_actions = {
 		effect = {
 			SIA = {
 				SIA_parliament_init_variables = yes
-				
+				mio:SIA_marsun_organisation = {
+					add_mio_size = 1
+				}
 				
 				country_event = thailand_politics.2
 				country_event = { id = thailand_politics.3 days = 10 }

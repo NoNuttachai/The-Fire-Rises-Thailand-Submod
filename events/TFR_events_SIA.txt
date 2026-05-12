@@ -232,6 +232,7 @@ country_event = {
         add_ideas = SIA_predee_daocha_advisor
         add_ideas = SIA_anucha_nakasai_advisor
         add_stability = -0.01
+		set_country_flag = pp_fallout
 	}
 }
 
