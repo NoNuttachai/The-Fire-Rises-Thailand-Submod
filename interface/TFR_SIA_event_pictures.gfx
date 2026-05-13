@@ -45,8 +45,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_Egypt_Soldier_COVID_19.png"
 	}
 	spriteType = {
-		name = "GFX_report_prayut_VS_Three_Fingers"
-		texturefile = "gfx/event_pictures/report_event_prayut_VS_Three_Fingers.png"
+		name = "GFX_report_prayut_vs_three_fingers"
+		texturefile = "gfx/event_pictures/report_event_prayut_vs_three_fingers.png"
 	}
 	spriteType = {
 		name = "GFX_report_saveWanchalerm"
@@ -54,10 +54,14 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_Cobra_Gold_2020"
-		texturefile = "gfx/event_pictures/Cobra_Gold_2020.png"
+		texturefile = "gfx/event_pictures/report_Cobra_Gold_2020.png"
 	}
 	spriteType = {
-		name = "GFX_report_Palang_Pracharat_Fallout_and_Cabinet_Reshuffle"
-		texturefile = "gfx/event_pictures/Palang_Pracharat_Fallout_and_Cabinet_Reshuffle.png"
+		name = "GFX_report_palang_pracharat_fallout_and_cabinet_reshuffle"
+		texturefile = "gfx/event_pictures/report_event_palang_pracharat_fallout_and_cabinet_reshuffle.png"
+	}
+	spriteType = {
+		name = "GFX_report_kill_all_capitalists_ahhh_movement"
+		texturefile = "gfx/event_pictures/report_event_kill_all_capitalists_ahhh_movement.png"
 	}
 }

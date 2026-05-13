@@ -1,4 +1,5 @@
 spriteTypes = {
+	#NatSpirit Texticon Banners
 	spriteType = {
 		name = "GFX_SIA_army_with_nation_cat"
 		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_army_with_nation_cat.png"
@@ -22,9 +23,25 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_the_constitution_of_thailand_cat.png"
 		legacy_lazy_load = no
 	}
+	#Misc Texticon Banners
+	spriteType = {
+		name = "GFX_egyptian_soldier_video"
+		texturefile = "gfx/texticons/banners/egyptian_soldier_video.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_PPRP1_banner"
+		texturefile = "gfx/texticons/banners/SIA_PPRP1_banner.png"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
+	}
+	#Event Header
+	spriteType = {
+		name = "GFX_free_youth_header"
+		textureFile = "gfx/texticons/thai_communist_youth_league_fb_post.png"
 	}
 	# Texticons — small inline party logos (used as £GFX_name in localisation) - Political Parties and Organizations
 	spriteType = {
@@ -203,8 +220,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_egyptian_soldier_video"
-		texturefile = "gfx/texticons/banners/Egyptian_Soldier_Video.png"
+		name = "GFX_facebook_logo"
+		texturefile = "gfx/texticons/facebook_logo_texticon.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
