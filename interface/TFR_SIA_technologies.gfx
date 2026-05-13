@@ -1,0 +1,117 @@
+spriteTypes = {
+	## Infantry Weapon ##
+	SpriteType = {
+		name = "GFX_SIA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/Standard Issue Rifle/2000_M16A1.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_infantry_weapons2_medium"
+		texturefile = "gfx/interface/technologies/Standard Issue Rifle/2006_M16A2.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_infantry_weapons3_medium"
+		texturefile = "gfx/interface/technologies/Standard Issue Rifle/2018_IWITavor21.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_infantry_weapons4_medium"
+		texturefile = "gfx/interface/technologies/Standard Issue Rifle/2024_ColtM5.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_infantry_weapons5_medium"
+		texturefile = "gfx/interface/technologies/Standard Issue Rifle/2030_NARAC556.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_infantry_weapons6_medium"
+		texturefile = "gfx/interface/technologies/Standard Issue Rifle/2036_MOD2030.png"
+	}
+	## MECHANIZED ##
+	SpriteType = {
+		name = "GFX_SIA_mechanised_infantry1_medium"
+		texturefile = "gfx/interface/technologies/IFV/2000_M113A3.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/IFV/2012_BTR-3E1.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/IFV/2021_VN-1.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_mechanised_infantry4_medium"
+		texturefile = "gfx/interface/technologies/IFV/2027_VN-1T.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_mechanised_infantry5_medium"
+		texturefile = "gfx/interface/technologies/IFV/2030_VN17.png"
+	}
+	
+	## LIGHT MECHANIZED ##
+	SpriteType = {
+		name = "GFX_SIA_light_mechanized_infantry1_medium"
+		texturefile = "gfx/interface/technologies/APC/2000_M113A3.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_light_mechanized_infantry2_medium"
+		texturefile = "gfx/interface/technologies/APC/2012_Type 85.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_light_mechanized_infantry3_medium"
+		texturefile = "gfx/interface/technologies/APC/2021_M1126 Stryker.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_light_mechanized_infantry4_medium"
+		texturefile = "gfx/interface/technologies/APC/2027_First Win II.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_light_mechanized_infantry5_medium"
+		texturefile = "gfx/interface/technologies/APC/2030_First Win III.png"
+	}
+	## Motorized ##
+	SpriteType = {
+		name = "GFX_SIA_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/Motorized/2000_UNIMOG.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_motorised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/Motorized/2024_Hino_500.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_motorised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/Motorized/2030_Mitsubishi_Fuso.png"
+	}
+	
+	## MAIN BATTLE TANKS ##
+	#SpriteType = {
+	#	name = "GFX_SIA_main_battle_tank1_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/1980_Stingray.png"
+	#}
+	##WITH NO STEP BACK DLC
+	#SpriteType = {
+	#	name = "GFX_SIA_basic_medium_tank_chassis_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/1980_Stingray.png"
+	#}
+	#SpriteType = {
+	#	name = "GFX_SIA_improved_medium_tank_chassis_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2020_T84 Oplot-T.png"
+	#}
+	#SpriteType = {
+	#	name = "GFX_SIA_advanced_medium_tank_chassis_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2028_VT-4.png"
+	#}
+	#SpriteType = {
+	#	name = "GFX_SIA_main_battle_tank_chassis_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2030_VT-4F.png"
+	#}
+	### LIGHT TANKS ##
+	#SpriteType = {
+	#	name = "GFX_SIA_light_tank1_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Reconnaissance Tank/2000.png"
+	#}
+	
+	#WITH NO STEP BACK DLC
+	#SpriteType = {
+	#	name = "GFX_SIA_gwtank_chassis_medium"
+	#	texturefile = "gfx/interface/technologies/Tank/Reconnaissance Tank/2000.png"
+	#}
+}
