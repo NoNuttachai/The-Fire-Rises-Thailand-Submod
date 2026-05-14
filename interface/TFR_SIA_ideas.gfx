@@ -42,6 +42,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_free_youth_header"
 		textureFile = "gfx/texticons/thai_communist_youth_league_fb_post.png"
+		legacy_lazy_load = no
 	}
 	# Texticons — small inline party logos (used as £GFX_name in localisation) - Political Parties and Organizations
 	spriteType = {

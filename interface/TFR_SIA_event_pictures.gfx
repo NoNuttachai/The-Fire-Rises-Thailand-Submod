@@ -64,4 +64,8 @@ spriteTypes = {
 		name = "GFX_report_kill_all_capitalists_ahhh_movement"
 		texturefile = "gfx/event_pictures/report_event_kill_all_capitalists_ahhh_movement.png"
 	}
+	spriteType = {
+		name = "GFX_report_three_demands"
+		texturefile = "gfx/event_pictures/report_event_three_demands.png"
+	}
 }

@@ -237,6 +237,28 @@ country_event = {
 }
 
 country_event = {
+    id = thailand_politics.24 # Three Demands fb post
+    title = thailand_politics.24.t
+    desc = thailand_politics.24.d
+    picture = GFX_report_three_demands
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.24.a
+        add_popularity = {
+            ideology = communist
+            popularity = 0.01
+        }
+        add_popularity = {
+            ideology = totalitarian_socialist
+            popularity = 0.005
+        }
+        add_stability = -0.02
+	}
+}
+
+country_event = {
     id = thailand_politics.25 # FreeYOUTH Commie Larp
     title = thailand_politics.25.t
     desc = thailand_politics.25.d
