@@ -1,0 +1,27 @@
+state = {
+	id = 1504
+	name = "STATE_1504"
+	manpower = 15490243
+	state_category = large_suburb
+	
+	resources = {
+		steel = 1
+	}
+	
+	history = {
+		owner = CAM
+		add_core_of = CAM
+		victory_points = { 4639 10 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 4
+			arms_factory = 2
+			dockyard = 1
+			air_base = 2
+		}
+	}
+	
+	provinces = {
+		10289 7376 10317 12260 4330 7319 4639 1324 12475
+	}   
+}

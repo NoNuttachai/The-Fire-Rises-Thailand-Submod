@@ -1,0 +1,23 @@
+state={
+	id=1497
+	name="STATE_1497"
+	provinces={
+		7601 12264
+	}
+	resources = {
+		tungsten=5
+		rubber = 60
+	}
+	history = {
+		owner = SIA
+		add_core_of = SIA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 2
+		}
+	}
+	state_category = suburb
+	manpower=21500250
+	buildings_max_level_factor=1.000
+}

@@ -1,4 +1,4 @@
-	capital = 289
+	capital = 1493
 	
 	oob = "SIA_2020"
 	
