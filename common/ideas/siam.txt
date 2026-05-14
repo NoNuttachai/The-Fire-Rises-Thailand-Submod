@@ -211,6 +211,17 @@ ideas = {
 				eco_keynesian_economy
 			}
 		}
+		SIA_predee_daocha_advisor = {
+			name = SIA_predee_daocha_char
+			picture = SIA_predee_daocha
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				SIA_ide_stratcon
+				eco_keynesian_economy
+			}
+		}
 	}
 	interior_minister = {
 		SIA_anupong_paochinda_advisor = {
@@ -229,6 +240,17 @@ ideas = {
 		SIA_thewan_liptapanlop_advisor = {
 			name = SIA_thewan_liptapanlop_char
 			picture = SIA_thewan_liptapanlop
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				SIA_ide_neoliberal
+				int_balanced_cryptographer
+			}
+		}
+		SIA_anucha_nakasai_advisor = {
+			name = SIA_anucha_nakasai_char
+			picture = SIA_anucha_nakasai
 			allowed = {
 				original_tag = SIA
 			}
