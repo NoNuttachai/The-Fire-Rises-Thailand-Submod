@@ -19,6 +19,6 @@ state={
 		victory_points = { 12417 5 }
 	}
 	state_category = suburb
-	manpower=21500250
+	manpower=1878146
 	buildings_max_level_factor=1.000
 }

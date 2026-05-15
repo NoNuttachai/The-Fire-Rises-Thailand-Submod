@@ -1,8 +1,8 @@
 state = {
 	id = 1505
 	name = "STATE_1505"
-	manpower = 15490243
-	state_category = large_suburb
+	manpower = 850134
+	state_category = village
 	
 	resources = {
 		steel = 1

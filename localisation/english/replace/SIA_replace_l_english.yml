@@ -1,7 +1,7 @@
 ﻿l_english:
  #Base Mod States
- STATE_289: "Pharkh Klang"
- STATE_286: "Battambang"
+ STATE_289: "Pharkh Klang" #289-Siam.txt
+ STATE_286: "Battambang" #286-Indochina.txt
  STATE_724: "Pak Tai"
  STATE_890: "Lanna"
  STATE_891: "Isan"

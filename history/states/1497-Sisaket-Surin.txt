@@ -18,6 +18,6 @@ state={
 		}
 	}
 	state_category = suburb
-	manpower=21500250
+	manpower=2869690
 	buildings_max_level_factor=1.000
 }

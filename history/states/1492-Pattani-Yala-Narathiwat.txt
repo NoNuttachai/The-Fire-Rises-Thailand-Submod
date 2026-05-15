@@ -22,7 +22,7 @@ state={
 	provinces={
 		1279 4297
 	}
-	manpower=9041700
+	manpower=2069454
 	buildings_max_level_factor=1.000
 	state_category = suburb
 }
