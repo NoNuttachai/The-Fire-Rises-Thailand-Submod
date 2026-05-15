@@ -1,8 +1,8 @@
 ﻿l_english:
- #States
+ STATE_891: "Isan"
  STATE_1492: "Pattani-Yala-Narathiwat"
  STATE_1493: "Krungthep Parimonthon"
- STATE_1494: "Chonburi-Rayong-Chachoengsao-Prachin Buri"
+ STATE_1494: "Chonburi"
  STATE_1495: "Phakh Tawan-tok"
  STATE_1496: "Southern Ubon Ratchathani"
  STATE_1497: "Sisaket-Surin"
@@ -14,6 +14,8 @@
  STATE_1503: "Sihanoukville"
  STATE_1504: "Mekong Lowlands"
  STATE_1505: "Eastern Cambodia"
+ STATE_289: "Pharkt Klang"
+ STATE_286: "Cambodia"
   #Technology
  SIA_infantry_equipment_1: "M16A1"
  SIA_infantry_equipment_1_short: "M16A1"
