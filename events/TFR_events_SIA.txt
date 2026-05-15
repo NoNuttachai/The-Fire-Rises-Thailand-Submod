@@ -219,7 +219,7 @@ country_event = {
     id = thailand_politics.11 # Palang Pracharat Fallout
     title = thailand_politics.11.t
     desc = thailand_politics.11.d
-    picture = GFX_report_Palang_Pracharat_Fallout_and_Cabinet_Reshuffle
+    picture = GFX_report_palang_pracharat_fallout_and_cabinet_reshuffle
 	
 	is_triggered_only = yes
 	

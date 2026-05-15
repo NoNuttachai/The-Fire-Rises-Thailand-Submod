@@ -109,57 +109,57 @@ spriteTypes = {
 	# Texticons — intro style (leader portrait + party logo, used in event/idea descriptions)
 	spriteType = {
 		name = "GFX_SIA_intro_PPRP" #Palang Pracharath Party — Uttama Saowanayon
-		texturefile = "gfx/texticons/SIA_PPRP_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PPRP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_PPRP1" #Palang Pracharath Party — General Prawit Wongsuwon
-		texturefile = "gfx/texticons/SIA_PPRP1_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PPRP1_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_DP" #Democrat Party — Jurin Laksanawisit
-		texturefile = "gfx/texticons/SIA_DP_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_DP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_PTP" #Pheu Thai Party — Sompong Amornvivat
-		texturefile = "gfx/texticons/SIA_PTP_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PTP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_PTP1" #Pheu Thai Party — Chonlanan Srikaew (white bg)
-		texturefile = "gfx/texticons/SIA_PTP1_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PTP1_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_PTP2" #Pheu Thai Party — Chadchart Sittipunt (red bg)
-		texturefile = "gfx/texticons/SIA_PTP2_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PTP2_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_FFP" #Future Forward Party — Thanathorn Juangroongruangkit
-		texturefile = "gfx/texticons/SIA_FFP_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_FFP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_BJT" #Bhumjaithai Party — Anutin Charnvirakul
-		texturefile = "gfx/texticons/SIA_BJT_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_BJT_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_CTPP" #Chart Thai Pattana Party — Kanchana Silpa-archa
-		texturefile = "gfx/texticons/SIA_CTPP_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_CTPP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_TLP" #Thai Liberal Party — Sereepisuth Temeeyaves
-		texturefile = "gfx/texticons/SIA_TLP_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_TLP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_intro_PCC" #Prachachart Party — Wan Muhammad Noor Matha
-		texturefile = "gfx/texticons/SIA_PCC_intro.png"
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PCC_intro.png"
 		legacy_lazy_load = no
 	}
 
