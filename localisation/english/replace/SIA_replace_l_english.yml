@@ -1,9 +1,11 @@
 ﻿l_english:
+ #Base Mod States
  STATE_289: "Pharkh Klang"
  STATE_286: "Battambang"
- STATE_890: "Lanna"
  STATE_724: "Pak Tai"
+ STATE_890: "Lanna"
  STATE_891: "Isan"
+ #New Submod States
  STATE_1492: "Pattani-Yala-Narathiwat"
  STATE_1493: "Krungthep Parimonthon"
  STATE_1494: "Chonburi"
