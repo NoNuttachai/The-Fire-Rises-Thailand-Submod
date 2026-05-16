@@ -7,7 +7,15 @@ on_actions = {
 				mio:SIA_marsun_organisation = {
 					add_mio_size = 1
 				}
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
 				
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
 				country_event = thailand_politics.2
 				country_event = { id = thailand_politics.3 days = 10 }
 				country_event = { id = thailand_politics.1 days = 49 }
@@ -22,8 +30,7 @@ on_actions = {
 				country_event = { id = thailand_nonpolitical.1 days = 36 }
 				country_event = { id = thailand_nonpolitical.2 days = 138 }
 				country_event = { id = thailand_nonpolitical.3 days = 306 }
-				
-				
+				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
 			}
 		}
 	}

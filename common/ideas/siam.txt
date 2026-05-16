@@ -43,6 +43,7 @@ ideas = {
 				social_liberal_drift = 0.01
 				social_democrat_drift = 0.01
 				stability_factor = -0.025
+				disabled_ideas = 1
 			}
 		}
 		SIA_constitution_60 = {

@@ -5,9 +5,9 @@ state = {
 	state_category = conurbation
 	
 	resources = {
-		rubber = 242
-		oil = 26
-		steel = 19
+		rubber = 72
+		oil = 12
+		steel = 7
 	}
 	
 	history = {
@@ -19,7 +19,7 @@ state = {
 			industrial_complex = 5
 			arms_factory = 2
 			dockyard = 3
-			air_base = 4
+			air_base = 2
 			7408 = { naval_base = 3 }
 		}
 	}

@@ -386,4 +386,7 @@ SIA_parliament_category_desc: ""
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
+ #State Modifiers
+ SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Maha Nakhon§!"
+ SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n£GFX_idea_SIA_Aswin_Kwanmuang_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
  

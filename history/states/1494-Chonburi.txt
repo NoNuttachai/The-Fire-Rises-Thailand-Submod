@@ -5,27 +5,25 @@ state = {
 	state_category = large_city
 	
 	resources = {
-		rubber = 242
-		oil = 26
-		steel = 19
+		rubber = 50
+		oil = 5
+		steel = 5
 	}
 	
 	history = {
 		owner = SIA
 		add_core_of = SIA
 		victory_points = { 4433 20 }
-		victory_points = { 10293 1 }
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 4
+			industrial_complex = 3
 			arms_factory = 2
 			dockyard = 1
-			air_base = 3
 			4433 = { naval_base = 5 }
 		}
 	}
 	
 	provinces = {
-		4433 7225 10293 12224 
+		4433 7225 12224 
 	}
 }

@@ -44,6 +44,15 @@ spriteTypes = {
 		textureFile = "gfx/texticons/thai_communist_youth_league_fb_post.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_bma"
+		textureFile = "gfx/interface/ideas/SIA/BMA.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Aswin_Kwanmuang_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Aswin_Kwanmuang_portrait.png"
+		legacy_lazy_load = no
+	}
 	# Texticons — small inline party logos (used as £GFX_name in localisation) - Political Parties and Organizations
 	spriteType = {
 		name = "GFX_orange_party_1" #Future Forward Party
@@ -261,17 +270,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_prawit_wongsuwan.png"
 		legacy_lazy_load = no
 	}
-
-	spriteType = {
-		name = "GFX_SIA_predee_daocha"
-		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_predee_daocha.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_SIA_anucha_nakasai"
-		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_anucha_nakasai.png"
-		legacy_lazy_load = no
-	}
+	
 	
 	# Advisors
 	spriteType = {
@@ -297,6 +296,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SIA_prawit_wongsuwan"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_prawit_wongsuwan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_predee_daocha"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_predee_daocha.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_anucha_nakasai"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_anucha_nakasai.png"
+		legacy_lazy_load = no
 	}
 
 	# Laws

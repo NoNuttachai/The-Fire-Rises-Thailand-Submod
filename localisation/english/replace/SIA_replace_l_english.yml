@@ -7,11 +7,11 @@
  STATE_891: "Isan"
  #New Submod States
  STATE_1492: "Pattani-Yala-Narathiwat"
- STATE_1493: "Krungthep Parimonthon"
+ STATE_1493: "Bangkok"
  STATE_1494: "Chonburi"
  STATE_1495: "Pharkh Tawan-tok"
  STATE_1496: "Ubon Ratchathani"
- STATE_1497: "Sisaket-Surin"
+ STATE_1497: "Sisaket"
  STATE_1498: "Chanthaburi"
  STATE_1499: "Trat"
  STATE_1500: "Preah Vihear"
@@ -20,7 +20,11 @@
  STATE_1503: "Sihanoukville"
  STATE_1504: "Mekong Lowlands"
  STATE_1505: "Eastern Cambodia"
-
+ STATE_1506: "Surin"
+ STATE_1507: "Sa Kaeo"
+ #Victory Points
+ VICTORY_POINTS_7601: "Sisaket"
+ VICTORY_POINTS_12264: "Surin"
   #Technology
  SIA_infantry_equipment_1: "M16A1"
  SIA_infantry_equipment_1_short: "M16A1"

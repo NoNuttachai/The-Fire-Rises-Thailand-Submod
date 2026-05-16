@@ -1,0 +1,19 @@
+SIA_bangkok_metropolitan_administration_state_modifier = {
+	icon = "GFX_idea_SIA_bma"
+	enable = { 
+		SIA = {
+			controls_state = 126
+		}
+	}
+	remove_trigger = {
+		SIA = {
+			THIS = {
+				is_controlled_by_ROOT_or_ally = no
+			}
+		}
+	}
+	state_production_speed_buildings_factor = 0.1
+	local_building_slots = 3
+	local_factories = 0.25
+	local_supplies = 0.1
+}

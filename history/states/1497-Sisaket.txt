@@ -2,11 +2,9 @@ state={
 	id=1497
 	name="STATE_1497"
 	provinces={
-		7601 12264
+		7601
 	}
 	resources = {
-		tungsten=5
-		rubber = 60
 	}
 	history = {
 		owner = SIA
@@ -14,10 +12,10 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
-			air_base = 2
 		}
+		victory_points = { 7601 5 }
 	}
 	state_category = suburb
-	manpower=2869690
+	manpower=1472859
 	buildings_max_level_factor=1.000
 }

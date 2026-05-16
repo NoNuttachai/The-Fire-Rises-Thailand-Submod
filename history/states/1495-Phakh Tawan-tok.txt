@@ -5,9 +5,9 @@ state = {
 	state_category = suburb
 	
 	resources = {
-		rubber = 242
-		oil = 26
-		steel = 19
+		rubber = 68
+		oil = 3
+		steel = 1
 	}
 	
 	history = {

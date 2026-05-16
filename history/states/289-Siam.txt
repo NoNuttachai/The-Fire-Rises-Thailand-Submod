@@ -5,9 +5,9 @@ state = {
 	state_category = city
 	
 	resources = {
-		rubber = 242
-		oil = 26
-		steel = 19
+		rubber = 52
+		oil = 6
+		steel = 6
 	}
 	
 	history = {
@@ -26,6 +26,6 @@ state = {
 	}
 	
 	provinces = {
-		 4582 7338 7367 7544 7572 10221 10250 10398 10411 12173 
+		  7338 7367 7544 7572 10221 10250 10398 10411 12173 
 	}
 }
