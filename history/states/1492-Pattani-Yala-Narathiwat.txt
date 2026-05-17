@@ -14,13 +14,14 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 3
+			12131 = { naval_base = 1 }
 		}
 		add_core_of = SIA
-
+		victory_points = { 12131 5 }
 	}
 
 	provinces={
-		1279 4297
+		1279 4297 12131
 	}
 	manpower=2069454
 	buildings_max_level_factor=1.000
