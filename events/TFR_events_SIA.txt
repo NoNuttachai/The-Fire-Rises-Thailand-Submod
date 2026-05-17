@@ -131,7 +131,7 @@ country_event = {
     id = thailand_politics.7
     title = thailand_politics.7.t
     desc = thailand_politics.7.d
-    picture = GFX_report_prayut_VS_Three_Fingers
+    picture = GFX_report_prayut_vs_three_fingers
 	
 	is_triggered_only = yes
 	

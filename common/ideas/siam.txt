@@ -3,6 +3,32 @@ ideas = {
 	# traits = {
 	#     ZZZ_blank_idea_trait
 	# }	
+	hidden_ideas = { #This is to stop 2Trillion GDP Thailand
+		SIA_gdp_fix_new = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.98
+				personal_value_factor = -0.98
+				income_growth_factor = 0.65
+				expense_growth_factor = -0.65
+			}
+		}
+		CAM_gdp_fix_new = { #lore accurate Cambodia economy be like
+			allowed = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = -0.99
+				personal_value_factor = -0.99
+				personal_expense_factor = -0.99
+				military_factory_upkeep_factor = -0.90
+				income_growth_factor = -0.80
+				expense_growth_factor = -0.99
+			}
+		}
+	}
 	country = {
 		SIA_an_army_with_a_country_1 = {
 			picture = SIA_an_army_with_a_country

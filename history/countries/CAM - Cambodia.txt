@@ -113,7 +113,8 @@
 	}
 
 	add_ideas = {
-		CAM_gdp_fix
+		#CAM_gdp_fix
+		CAM_gdp_fix_new
 		ETH_chinese_investments
 		ASEAN_member
 		lower_poverty

@@ -62,6 +62,7 @@
 	recruit_character = SIA_anucha_nakasai_char
 
 	add_ideas = {
+		SIA_gdp_fix_new
 		ETH_chinese_investments
 		SIA_an_army_with_a_country_1
 		SIA_lack_of_the_political_legitimacy
