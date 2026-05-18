@@ -270,8 +270,8 @@
 	}
 	set_party_name = {
 		ideology = market_liberal
-		long_name = SIA_bjt_long
-		name = SIA_bjt
+		long_name = SIA_tlp_long
+		name = SIA_tlp
 	}
 	set_party_name = {
 		ideology = conservative
