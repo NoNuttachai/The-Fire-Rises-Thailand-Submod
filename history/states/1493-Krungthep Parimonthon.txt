@@ -20,6 +20,7 @@ state = {
 			arms_factory = 2
 			dockyard = 3
 			air_base = 2
+			office_park = 3
 			7408 = { naval_base = 3 }
 		}
 	}
