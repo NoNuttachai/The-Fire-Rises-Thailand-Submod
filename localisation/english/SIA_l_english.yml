@@ -388,3 +388,7 @@ SIA_parliament_category_desc: ""
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Maha Nakhon§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n£GFX_idea_SIA_Aswin_Kwanmuang_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
  
+# Super Events
+ thai_cambodian_war_super_event: "Thai-Cambodian War"
+ thai_cambodian_war_super_event_text: "\"This is my land. I have been here since time immemorial. Whoever wants to take it will be in for a fight.\"\n- Boonsin Padklang"
+ thai_cambodian_war_super_event_button: "Sacrifice Every Drop of Blood"
