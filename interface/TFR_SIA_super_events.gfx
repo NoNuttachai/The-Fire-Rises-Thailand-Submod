@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_super_thai_cambodian_war"
+		texturefile = "gfx/super_events/super_thai_cambodian_war.png"
+		legacy_lazy_load = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}
