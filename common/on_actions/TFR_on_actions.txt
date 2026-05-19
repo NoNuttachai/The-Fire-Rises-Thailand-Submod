@@ -33,4 +33,26 @@ on_actions = {
 			}
 		}
 	}
+
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							tag = SIA
+							FROM = { original_tag = CAM }
+						}
+						AND = {
+							tag = CAM
+							FROM = { original_tag = SIA }
+						}
+					}
+				}
+				set_country_flag = thai_cambodian_war_super
+				scoped_sound_effect = TFR_se_thai_cambodian_war
+				scoped_play_song = "one_minute_of_silence"
+			}
+		}
+	}
 }
