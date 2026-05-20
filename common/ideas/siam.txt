@@ -9,8 +9,8 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				business_value_factor = -0.98
-				personal_value_factor = -0.98
+				business_value_factor = -1.02
+				personal_value_factor = -1.04
 				income_growth_factor = 0.65
 				expense_growth_factor = -0.65
 			}
