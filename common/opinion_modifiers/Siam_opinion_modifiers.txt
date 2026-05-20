@@ -1,3 +1,4 @@
 opinion_modifiers = {
 	decreased_relations = { value = -20 }
+	SIA_joint_training = { value = 20 months = 24 }
 }
