@@ -185,6 +185,13 @@ country_event = {
 	
     option = {
         name = thailand_politics.9.a
+        add_opinion_modifier = {
+            target = USA
+            modifier = SIA_joint_training
+        }
+        army_experience = 25
+        navy_experience = 10
+        air_experience = 10
 	}
 }
 
