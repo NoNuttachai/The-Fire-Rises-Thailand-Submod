@@ -17,6 +17,7 @@ state={
 			industrial_complex = 2
 			air_base = 2
 			office_park = 1
+			power_plant = 1
 		}
 		victory_points = { 1488 15 }
 		victory_points = { 1990 5 }
