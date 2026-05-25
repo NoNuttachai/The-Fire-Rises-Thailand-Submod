@@ -397,7 +397,7 @@ SIA_parliament_category_desc: ""
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
  #State Modifiers
- SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Maha Nakhon§!"
+ SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n£GFX_idea_SIA_Aswin_Kwanmuang_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
  
 # Super Events
