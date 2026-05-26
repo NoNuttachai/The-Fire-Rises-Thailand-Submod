@@ -61,4 +61,20 @@ SIA_coronavirus_category = {
 			}
 		}
 	}
+	SIA_enforce_vaccination = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_coronavirus_ongoing
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = SIA_dealt_with_coronavirus
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
 }

@@ -30,6 +30,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_ministry_of_energy_oil_protests"
+		texturefile = "gfx/texticons/banners/texticon_ministry_of_energy_oil_protests.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_mlg_illuminati_case"
+		texturefile = "gfx/texticons/banners/texticon_mlg_illuminati_case.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_PPRP1_banner"
 		texturefile = "gfx/texticons/banners/SIA_PPRP1_banner.png"
 		legacy_lazy_load = no

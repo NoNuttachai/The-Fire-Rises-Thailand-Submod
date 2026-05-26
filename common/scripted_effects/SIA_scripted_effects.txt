@@ -7,6 +7,11 @@ SIA_increase_coronavirus = {
 			remove_idea = SIA_covid_idea_1
 			add_idea = SIA_covid_idea_2
 		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+			tooltip_side = SIA_loss_side
+		}
 	}
 	else_if = {
 		limit = {
@@ -15,6 +20,11 @@ SIA_increase_coronavirus = {
 		swap_ideas = {
 			remove_idea = SIA_covid_idea_2
 			add_idea = SIA_covid_idea_3
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+			tooltip_side = SIA_loss_side
 		}
 	}
 	else_if = {
@@ -25,6 +35,11 @@ SIA_increase_coronavirus = {
 			remove_idea = SIA_covid_idea_3
 			add_idea = SIA_covid_idea_4
 		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+			tooltip_side = SIA_loss_side
+		}
 	}
 	else_if = {
 		limit = {
@@ -34,12 +49,22 @@ SIA_increase_coronavirus = {
 			remove_idea = SIA_covid_idea_4
 			add_idea = SIA_covid_idea_5
 		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.10
+			tooltip_side = SIA_loss_side
+		}
 	}
 	else_if = {
 		limit = {
 			has_idea = SIA_covid_idea_5
 		}
 		add_stability = -0.05
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+			tooltip_side = SIA_loss_side
+		}
 	}
 	else = {
 		add_ideas = SIA_covid_idea_1
@@ -53,6 +78,11 @@ SIA_decrease_covid = {
 		}
 		remove_ideas = SIA_covid_idea_1
 		clr_country_flag = SIA_coronavirus_ongoing
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.15
+			tooltip_side = SIA_loss_side
+		}
 	}
 	else_if = {
 		limit = {

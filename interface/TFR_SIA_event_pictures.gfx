@@ -68,4 +68,16 @@ spriteTypes = {
 		name = "GFX_report_three_demands"
 		texturefile = "gfx/event_pictures/report_event_three_demands.png"
 	}
+	spriteType = {
+		name = "GFX_report_ministry_of_energy_oil_protests"
+		texturefile = "gfx/event_pictures/report_event_ministry_of_energy_oil_protests.png"
+	}
+	spriteType = {
+		name = "GFX_report_illuminati_case"
+		texturefile = "gfx/event_pictures/report_event_illuminati_case.png"
+	}
+	spriteType = {
+		name = "GFX_report_hamtaro_protests"
+		texturefile = "gfx/event_pictures/report_event_hamtaro_protests.png"
+	}
 }
