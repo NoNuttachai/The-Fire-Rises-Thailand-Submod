@@ -1013,30 +1013,51 @@ characters={
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = reformist_socialism
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = progressivism
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = centrist
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = classical_liberalism
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = right_populism
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = hybrid_regime
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
 			ideology = absolute_monarchist
+			traits = {
+				SIA_Vajiralongkorn
+			}
 		}
 	}
 	SIA_dipangkorn_rasmijoti_char = {

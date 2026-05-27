@@ -308,6 +308,33 @@ country_event = {
 		
 	}
 }
+country_event = {
+    id = thailand_politics.15 # Harry Potter Mob
+    title = thailand_politics.15.t
+    desc = thailand_politics.15.d
+    picture = GFX_report_harry_potter_mob
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.15.a
+		custom_effect_tooltip = thailand_politics_15_texticon
+
+	}
+}
+country_event = {
+    id = thailand_politics.16 # Demonstrations in Front of the PTT Headquarters
+    title = thailand_politics.16.t
+    desc = thailand_politics.16.d
+    picture = GFX_report_protests_in_front_of_ptt_hq
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thailand_politics.16.a
+		custom_effect_tooltip = thailand_politics_16_texticon
+	}
+}
 
 country_event = {
     id = thailand_politics.24 # Three Demands fb post
@@ -443,6 +470,23 @@ country_event = {
 
     option = {
         name = thailand_nonpolitical.3.a
+    }
+}
+country_event = {
+    id = thailand_nonpolitical.4 #Songkran 2020 Suspended Over Pandemic Concerns
+    title = thailand_nonpolitical.4.t
+    desc = thailand_nonpolitical.4.d
+    picture = GFX_report_First_Covid_19
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thailand_nonpolitical.4.a
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 1
+		}
+		add_debt = yes
     }
 }
 news_event = {

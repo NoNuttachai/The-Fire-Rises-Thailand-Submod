@@ -40,6 +40,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_harry_potter_mob"
+		texturefile = "gfx/texticons/banners/texticon_harry_potter_mob.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_protests_in_front_of_ptt_hq"
+		texturefile = "gfx/texticons/banners/texticon_protests_in_front_of_ptt_hq.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_PPRP1_banner"
 		texturefile = "gfx/texticons/banners/SIA_PPRP1_banner.png"
 		legacy_lazy_load = no

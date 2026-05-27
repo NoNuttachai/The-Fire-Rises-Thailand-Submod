@@ -1,0 +1,8 @@
+leader_traits = {
+	SIA_Vajiralongkorn = {
+		random = no
+		
+		stability_factor = 0.1
+		
+	}
+}

@@ -80,4 +80,12 @@ spriteTypes = {
 		name = "GFX_report_hamtaro_protests"
 		texturefile = "gfx/event_pictures/report_event_hamtaro_protests.png"
 	}
+	spriteType = {
+		name = "GFX_report_harry_potter_mob"
+		texturefile = "gfx/event_pictures/report_event_harry_potter_mob.png"
+	}
+	spriteType = {
+		name = "GFX_report_protests_in_front_of_ptt_hq"
+		texturefile = "gfx/event_pictures/report_event_protests_in_front_of_ptt_hq.png"
+	}
 }
