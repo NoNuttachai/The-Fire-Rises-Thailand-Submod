@@ -14,25 +14,24 @@ on_actions = {
 				add_to_coalition = yes
 				
 				#Events
-				country_event = thailand_politics.2
-				country_event = { id = thailand_politics.3 days = 10 }
-				country_event = { id = thailand_politics.1 days = 49 }
-				country_event = { id = thailand_politics.6 days = 69 random_days = 9 }
-				country_event = { id = thailand_politics.10 days = 192 }
-				country_event = { id = thailand_politics.8 days = 154 }
-				country_event = { id = thailand_politics.9 days = 55 }
-				country_event = { id = thailand_politics.11 days = 218 }
-				country_event = { id = thailand_politics.12 days = 20 }
-				country_event = { id = thailand_politics.15 days = 214 }
-				country_event = { id = thailand_politics.26 days = 296 }
-				country_event = { id = thailand_politics.27 days = 298 }
+				country_event = { id = thai_events.1 days = 49 } #Constitutional Court's Verdict on the Future Foward Party
+				country_event = thai_events.2 #A New Year, With Nothing New
+				country_event = { id = thai_events.3 days = 10 } #Budget Bill Passed
+				country_event = { id = thai_events.6 days = 69 random_days = 9 } #Oil Crisis Hits Thailand
+				country_event = { id = thai_events.8 days = 154 } #Abduction and Disappearance of Wanchalearm Satsaksit
+				country_event = { id = thai_events.9 days = 55 } #Cobra Gold 2020
+				country_event = { id = thai_events.10 days = 192 } #COVID-19 case involving an Egyptian soldier in Rayong
+				country_event = { id = thai_events.11 days = 218 } #Palang Pracharat Fallout and Cabinet Reshuffle
+				country_event = { id = thai_events.12 days = 20 } #The Constitutional Court drops "illuminati Case" against FFP
+				country_event = { id = thai_events.15 days = 214 } #Harry Potter Mob
+				country_event = { id = thai_events.17 days = 12 } #First Covid-19 Infection Case in Thailand
+				country_event = { id = thai_events.18 days = 36 } #Soldier Goes Rogue, Unleashes Massacre in Korat
+				country_event = { id = thai_events.19 days = 138 } #Thai Airways Face Crisis
+				country_event = { id = thai_events.20 days = 306 } #The Banning of Pornhub
+				country_event = { id = thai_events.21 days = 102 } #Songkran 2020 Suspended Over Pandemic Concerns
+				country_event = { id = thai_events.26 days = 296 } #Free YOUTH's post
+				country_event = { id = thai_events.27 days = 298 } #March to the German Embassy: 26th October Mob
 				
-				country_event = { id = thai_events.1 days = 12 }
-				
-				country_event = { id = thailand_nonpolitical.1 days = 36 }
-				country_event = { id = thailand_nonpolitical.2 days = 138 }
-				country_event = { id = thailand_nonpolitical.3 days = 306 }
-				country_event = { id = thailand_nonpolitical.4 days = 102 }
 				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
 				
 			}

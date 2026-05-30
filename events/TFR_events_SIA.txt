@@ -1,18 +1,16 @@
-add_namespace = thailand_politics
 add_namespace = thai_events
-add_namespace = thailand_nonpolitical
 add_namespace = thai_newsevents
 
 country_event = {
-    id = thailand_politics.1
-    title = thailand_politics.1.t
-    desc = thailand_politics.1.d
+    id = thai_events.1
+    title = thai_events.1.t
+    desc = thai_events.1.d
     picture = GFX_report_event_constitutional_court
 	
 	is_triggered_only = yes
 
     option = {
-        name = thailand_politics.1.a 
+        name = thai_events.1.a 
         
         add_stability = -0.02
         
@@ -26,7 +24,7 @@ country_event = {
         }
 
         country_event = {
-			id = thailand_politics.5
+			id = thai_events.5
 			days = 1
 		}
 		
@@ -39,15 +37,15 @@ country_event = {
 }
 
 country_event = {
-    id = thailand_politics.2
-    title = thailand_politics.2.t
-    desc = thailand_politics.2.d
+    id = thai_events.2
+    title = thai_events.2.t
+    desc = thai_events.2.d
     picture = GFX_report_event_the_somboon_story
 	
 	is_triggered_only = yes
 
     option = {
-        name = thailand_politics.2.a 
+        name = thai_events.2.a 
         set_power_balance = {
             id = SIA_power_balance 
             left_side = SIA_loss_side 
@@ -59,23 +57,23 @@ country_event = {
 }
 
 country_event = {
-    id = thailand_politics.3
-    title = thailand_politics.3.t
-    desc = thailand_politics.3.d
+    id = thai_events.3
+    title = thai_events.3.t
+    desc = thai_events.3.d
     picture = GFX_report_event_budget_bill_passed
 	
 	is_triggered_only = yes
 
     option = {
-        name = thailand_politics.3.a 
+        name = thai_events.3.a 
         add_stability = 0.02
     }
 }
 
 country_event = {
-    id = thailand_politics.4
-    title = thailand_politics.4.t
-    desc = thailand_politics.4.d
+    id = thai_events.4
+    title = thai_events.4.t
+    desc = thai_events.4.d
     picture = GFX_report_event_three_fingers
 	
 	is_triggered_only = yes
@@ -85,20 +83,20 @@ country_event = {
     }
 
     option = {
-        name = thailand_politics.4.a 
+        name = thai_events.4.a 
     }
 }
 
 country_event = {
-    id = thailand_politics.5
-    title = thailand_politics.5.t
-    desc = thailand_politics.5.d
+    id = thai_events.5
+    title = thai_events.5.t
+    desc = thai_events.5.d
     picture = GFX_report_event_new_orange_party
 	
 	is_triggered_only = yes
 
     option = {
-        name = thailand_politics.5.a
+        name = thai_events.5.a
         set_party_name = {
             ideology = social_democrat
             long_name = SIA_mfp_long
@@ -110,58 +108,58 @@ country_event = {
             name = SIA_progressive_movement
         }
 		 country_event = {
-			id = thailand_politics.7
+			id = thai_events.7
 			days = 4
 		}
 	}
 }
 country_event = {
-    id = thailand_politics.6
-    title = thailand_politics.6.t
-    desc = thailand_politics.6.d
+    id = thai_events.6
+    title = thai_events.6.t
+    desc = thai_events.6.d
     picture = GFX_report_Oil_Crisis_in_Thailand
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.6.a
+        name = thai_events.6.a
 		add_ideas = SIA_oil_crisis
 	}
 }
 country_event = {
-    id = thailand_politics.7
-    title = thailand_politics.7.t
-    desc = thailand_politics.7.d
+    id = thai_events.7
+    title = thai_events.7.t
+    desc = thai_events.7.d
     picture = GFX_report_prayut_vs_three_fingers
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.7.a
+        name = thai_events.7.a
 		complete_national_focus = SIA_raise_our_three_fingers
 	}
 	option = {
-        name = thailand_politics.7.b
+        name = thai_events.7.b
 		complete_national_focus = SIA_clamp_down_the_three_holves
 	}
 }
 country_event = {
-    id = thailand_politics.8
-    title = thailand_politics.8.t
-    desc = thailand_politics.8.d
+    id = thai_events.8
+    title = thai_events.8.t
+    desc = thai_events.8.d
     picture = GFX_report_saveWanchalerm
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.8.a
+        name = thai_events.8.a
 		trigger = {
 			has_completed_focus = SIA_raise_our_three_fingers
 		}
 		
 	}
 	option = {
-        name = thailand_politics.8.b
+        name = thai_events.8.b
 		trigger = {
 			has_completed_focus = SIA_clamp_down_the_three_holves
 		}
@@ -177,15 +175,15 @@ country_event = {
 }
 
 country_event = {
-    id = thailand_politics.9 # Cobra Gold 2020
-    title = thailand_politics.9.t
-    desc = thailand_politics.9.d
+    id = thai_events.9 # Cobra Gold 2020
+    title = thai_events.9.t
+    desc = thai_events.9.d
     picture = GFX_report_Cobra_Gold_2020
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.9.a
+        name = thai_events.9.a
         add_opinion_modifier = {
             target = USA
             modifier = SIA_joint_training
@@ -197,16 +195,16 @@ country_event = {
 }
 
 country_event = {
-    id = thailand_politics.10 #egyptian soldier
-    title = thailand_politics.10.t
-    desc = thailand_politics.10.d
+    id = thai_events.10 #egyptian soldier
+    title = thai_events.10.t
+    desc = thai_events.10.d
     picture = GFX_report_Egypt_Soldier_COVID_19
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.10.a
-		custom_effect_tooltip = thailand_politics_10_texticon
+        name = thai_events.10.a
+		custom_effect_tooltip = thai_events_10_texticon
 		add_days_mission_timeout = {
 			mission = SIA_the_pandemic_worsens_mission
 			days = -30
@@ -224,16 +222,16 @@ country_event = {
 }
 
 country_event = {
-    id = thailand_politics.11 # Palang Pracharat Fallout
-    title = thailand_politics.11.t
-    desc = thailand_politics.11.d
+    id = thai_events.11 # Palang Pracharat Fallout
+    title = thai_events.11.t
+    desc = thai_events.11.d
     picture = GFX_report_palang_pracharat_fallout_and_cabinet_reshuffle
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.11.a
-        custom_effect_tooltip = thailand_politics_11_texticon
+        name = thai_events.11.a
+        custom_effect_tooltip = thai_events_11_texticon
         remove_ideas = SIA_uttama_saowanayon_advisor
         remove_ideas = SIA_thewan_liptapanlop_advisor
         
@@ -244,16 +242,16 @@ country_event = {
 	}
 }
 country_event = {
-    id = thailand_politics.12 # The Constitutional Court drops "illuminati Case" against the Future Forward Party
-    title = thailand_politics.12.t
-    desc = thailand_politics.12.d
+    id = thai_events.12 # The Constitutional Court drops "illuminati Case" against the Future Forward Party
+    title = thai_events.12.t
+    desc = thai_events.12.d
     picture = GFX_report_illuminati_case
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.12.a
-		custom_effect_tooltip = thailand_politics_12_texticon
+        name = thai_events.12.a
+		custom_effect_tooltip = thai_events_12_texticon
 		add_stability = 0.04
 		add_popularity = {
             ideology = social_democrat
@@ -266,16 +264,16 @@ country_event = {
 	}
 }
 country_event = {
-    id = thailand_politics.13 # Min of Energy oil protests
-    title = thailand_politics.13.t
-    desc = thailand_politics.13.d
+    id = thai_events.13 # Min of Energy oil protests
+    title = thai_events.13.t
+    desc = thai_events.13.d
     picture = GFX_report_ministry_of_energy_oil_protests
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.13.a
-		custom_effect_tooltip = thailand_politics_13_texticon
+        name = thai_events.13.a
+		custom_effect_tooltip = thai_events_13_texticon
 		add_popularity = {
             ideology = social_democrat
             popularity = 0.005
@@ -296,56 +294,133 @@ country_event = {
 	}
 }
 country_event = {
-    id = thailand_politics.14 # Hamtaro
-    title = thailand_politics.14.t
-    desc = thailand_politics.14.d
+    id = thai_events.14 # Hamtaro
+    title = thai_events.14.t
+    desc = thai_events.14.d
     picture = GFX_report_hamtaro_protests
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.14.a
+        name = thai_events.14.a
 		
 	}
 }
 country_event = {
-    id = thailand_politics.15 # Harry Potter Mob
-    title = thailand_politics.15.t
-    desc = thailand_politics.15.d
+    id = thai_events.15 # Harry Potter Mob
+    title = thai_events.15.t
+    desc = thai_events.15.d
     picture = GFX_report_harry_potter_mob
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.15.a
-		custom_effect_tooltip = thailand_politics_15_texticon
+        name = thai_events.15.a
+		custom_effect_tooltip = thai_events_15_texticon
 
 	}
 }
 country_event = {
-    id = thailand_politics.16 # Demonstrations in Front of the PTT Headquarters
-    title = thailand_politics.16.t
-    desc = thailand_politics.16.d
+    id = thai_events.16 # Demonstrations in Front of the PTT Headquarters
+    title = thai_events.16.t
+    desc = thai_events.16.d
     picture = GFX_report_protests_in_front_of_ptt_hq
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.16.a
-		custom_effect_tooltip = thailand_politics_16_texticon
+        name = thai_events.16.a
+		custom_effect_tooltip = thai_events_16_texticon
+	}
+}
+country_event = {
+    id = thai_events.17 #Covid first case
+    title = thai_events.17.t
+    desc = thai_events.17.d
+    picture = GFX_report_First_Covid_19
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.17.a
+		set_country_flag = SIA_coronavirus_ongoing
+		add_ideas = SIA_covid_idea_1
+		activate_mission = SIA_the_pandemic_worsens_mission
 	}
 }
 
 country_event = {
-    id = thailand_politics.24 # Three Demands fb post
-    title = thailand_politics.24.t
-    desc = thailand_politics.24.d
+    id = thai_events.18 #Korat Massacre
+    title = thai_events.18.t
+    desc = thai_events.18.d
+    picture = GFX_report_event_korat_massacre
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_events.18.a 
+        
+        add_manpower = -7
+        army_experience = -25
+        add_stability = -0.05
+    }
+}
+
+country_event = {
+    id = thai_events.19 #Thai Airways Face Crisis
+    title = thai_events.19.t
+    desc = thai_events.19.d
+    picture = GFX_report_Thai_Air_Bankruptcy_Event
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_events.19.a 
+        
+       air_experience = -15
+    }
+}
+
+country_event = {
+    id = thai_events.20 #PornHub Ban
+    title = thai_events.20.t
+    desc = thai_events.20.d
+    picture = GFX_report_no_more_gooning
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_events.20.a
+    }
+}
+country_event = {
+    id = thai_events.21 #Songkran 2020 Suspended Over Pandemic Concerns
+    title = thai_events.21.t
+    desc = thai_events.21.d
+    picture = GFX_report_First_Covid_19
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_events.21.a
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 1
+		}
+		add_debt = yes
+    }
+}
+
+country_event = {
+    id = thai_events.24 # Three Demands fb post
+    title = thai_events.24.t
+    desc = thai_events.24.d
     picture = GFX_report_three_demands
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.24.a
+        name = thai_events.24.a
         add_popularity = {
             ideology = communist
             popularity = 0.01
@@ -359,15 +434,15 @@ country_event = {
 }
 
 country_event = {
-    id = thailand_politics.25 # FreeYOUTH Commie Larp
-    title = thailand_politics.25.t
-    desc = thailand_politics.25.d
+    id = thai_events.25 # FreeYOUTH Commie Larp
+    title = thai_events.25.t
+    desc = thai_events.25.d
     picture = GFX_report_kill_all_capitalists_ahhh_movement
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.25.a
+        name = thai_events.25.a
         set_party_name = {
             ideology = communist
             long_name = SIA_rt_movement_long
@@ -385,110 +460,34 @@ country_event = {
 	}
 }
 country_event = {
-    id = thailand_politics.26 # FreeYOUTH post
-    title = thailand_politics.26.t
-    desc = thailand_politics.26.d
+    id = thai_events.26 # FreeYOUTH post
+    title = thai_events.26.t
+    desc = thai_events.26.d
     picture = GFX_report_kill_all_capitalists_ahhh_movement
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.26.a
+        name = thai_events.26.a
        
        
 	}
 }
 country_event = {
-    id = thailand_politics.27 # March to the German Embassy
-    title = thailand_politics.27.t
-    desc = thailand_politics.27.d
+    id = thai_events.27 # March to the German Embassy
+    title = thai_events.27.t
+    desc = thai_events.27.d
     picture = GFX_report_kill_all_capitalists_ahhh_movement
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thailand_politics.27.a
+        name = thai_events.27.a
        
        
 	}
 }
-country_event = {
-    id = thai_events.1 #Covid first case
-    title = thai_events.1.t
-    desc = thai_events.1.d
-    picture = GFX_report_First_Covid_19
-	
-	is_triggered_only = yes
-	
-    option = {
-        name = thai_events.1.a
-		set_country_flag = SIA_coronavirus_ongoing
-		add_ideas = SIA_covid_idea_1
-		activate_mission = SIA_the_pandemic_worsens_mission
-	}
-}
 
-country_event = {
-    id = thailand_nonpolitical.1 #Korat Massacre
-    title = thailand_nonpolitical.1.t
-    desc = thailand_nonpolitical.1.d
-    picture = GFX_report_event_korat_massacre
-	
-	is_triggered_only = yes
-
-    option = {
-        name = thailand_nonpolitical.1.a 
-        
-        add_manpower = -7
-        army_experience = -25
-        add_stability = -0.05
-    }
-}
-
-country_event = {
-    id = thailand_nonpolitical.2 #Thai Airways Face Crisis
-    title = thailand_nonpolitical.2.t
-    desc = thailand_nonpolitical.2.d
-    picture = GFX_report_Thai_Air_Bankruptcy_Event
-	
-	is_triggered_only = yes
-
-    option = {
-        name = thailand_nonpolitical.2.a 
-        
-       air_experience = -15
-    }
-}
-
-country_event = {
-    id = thailand_nonpolitical.3 #PornHub Ban
-    title = thailand_nonpolitical.3.t
-    desc = thailand_nonpolitical.3.d
-    picture = GFX_report_no_more_gooning
-	
-	is_triggered_only = yes
-
-    option = {
-        name = thailand_nonpolitical.3.a
-    }
-}
-country_event = {
-    id = thailand_nonpolitical.4 #Songkran 2020 Suspended Over Pandemic Concerns
-    title = thailand_nonpolitical.4.t
-    desc = thailand_nonpolitical.4.d
-    picture = GFX_report_First_Covid_19
-	
-	is_triggered_only = yes
-
-    option = {
-        name = thailand_nonpolitical.4.a
-		set_temp_variable = {
-			var = debt_var_temp
-			value = 1
-		}
-		add_debt = yes
-    }
-}
 news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t
