@@ -55,6 +55,31 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_aswin_bma_election"
+		texturefile = "gfx/texticons/banners/texticon_aswin_bma_election.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_chadchart_bma_election"
+		texturefile = "gfx/texticons/banners/texticon_chadchart_bma_election.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_Sita_bma_election"
+		texturefile = "gfx/texticons/banners/texticon_Sita_bma_election.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_suchatchavee_bma_election"
+		texturefile = "gfx/texticons/banners/texticon_suchatchavee_bma_election.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_wiroj_bma_election"
+		texturefile = "gfx/texticons/banners/texticon_wiroj_bma_election.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
@@ -69,8 +94,33 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/BMA.png"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_Aswin_Kwanmuang_portrait"
-		textureFile = "gfx/interface/ideas/SIA/SIA_Aswin_Kwanmuang_portrait.png"
+		name = "GFX_idea_SIA_Aswin_Kwanmuang1_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Aswin_Kwanmuang1_portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Aswin_Kwanmuang2_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Aswin_Kwanmuang2_portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Chadchart_Sittipunt_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Chadchart_Sittipunt_portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Sita_Divari_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Sita_Divari_portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Suchatvee_Suwansawat_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Suchatvee_Suwansawat_portrait.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Wiroj_Lakkhanaadisorn_portrait"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Wiroj_Lakkhanaadisorn_portrait.png"
 		legacy_lazy_load = no
 	}
 	# Texticons — small inline party logos (used as £GFX_name in localisation) - Political Parties and Organizations

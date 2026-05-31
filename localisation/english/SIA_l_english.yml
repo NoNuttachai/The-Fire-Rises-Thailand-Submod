@@ -261,6 +261,25 @@
  thai_events.21.d: "Songkran is a national festival of Thailand and a major cultural celebration that marks the beginning of the traditional solar year, characterized by people throwing water at each other amidst much fun and laughter. However, the government announced that the annual nationwide Songkran celebrations for the year 2020 would be cancelled and moved to a compensatory holiday period in July. This marked the first time in Thailand that many Songkran activities had been cancelled, as fears over the spread of the COVID-19 pandemic continued to escalate across Southeast Asia.\n\nThe public was requested to refrain from water splashing, all types of Songkran celebrations, consuming alcohol, traveling back to their hometowns, participating in large gatherings or traveling to areas at high risk of disease transmission, performing the traditional water-pouring ceremony to bless elders, and to maintain social distancing during all activities.\n\nPrime Minister General Prayut Chan-o-cha declared emergency measures following a sharp increase in confirmed infections linked to crowded entertainment districts and international tourism. Authorities warned that the traditional water festival, known for massive street gatherings, religious ceremonies, and cross-country travel, could become a "super-spreader event" capable of overwhelming the nation's healthcare system.\nCitizens expressed mixed reactions online. While some supported the government's efforts to contain the virus, others feared the loss of cultural identity and the economic devastation caused by prolonged restrictions."
  thai_events.21.a: "Safety is needed above all"
  
+ thai_events.22.t: "2022 Bangkok Gubernatorial Election"
+ thai_events.22.desc: "Bangkok, as a special administrative region under the Bangkok Metropolitan Administration (BMA), has its own elected governor and city council, which is elected through a democratic vote. \n\nCurrently, an election is being conducted to elect a governor. This election takes place nine years after the previous election in 2013, as no election was held during the period of military rule following the 2014 coup d'état when local government elections were suspended. NCPO leader General Prayut Chan-o-cha issued an order under Section 44 of the interim constitution allowing Sukhumbhand Paribatra to remain in office as Governor of Bangkok. However, he was later removed from office amid allegations of corruption related to the procurement of Bangkok's illuminated decorative arches.\n\nFollowing his removal, Aswin Kwanmuang, who was serving as Deputy Governor at the time, was appointed Governor of Bangkok. He is the current governor of Bangkok.\n\nThis election featured many candidates, but the five major front-runners were former Transport Minister Chadchart Sittipunt, civil engineering professor and former president of King Mongkut's Institute of Technology Ladkrabang Suchatvee Suwansawat, Move Forward Party spokesperson Wiroj Lakkhanaadisorn, former Royal Thai Air Force officer and Chairman of the Airports of Thailand Board of Directors Sita Divari, and the incumbent governor Aswin Kwanmuang. As the people of Bangkok went to the polls, they ultimately chose to elect......"
+ 
+ thai_events.22.a: "Chadchart Sittipunt (Independent)"
+ thai_events_22_texticon_a: ".\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_SIA_chadchart_bma_election\n\n\n\n\n\n\n\n\n\n\n\n\n\n."
+ 
+ thai_events.22.b: "Suchatvee Suwansawat (£GFX_democrat Democrat)"
+ thai_events_22_texticon_b: ".\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_SIA_suchatchavee_bma_election\n\n\n\n\n\n\n\n\n\n\n\n\n\n."
+ 
+ thai_events.22.c: "Wiroj Lakkhanaadisorn (£GFX_orange_party_2 Move Forward)"
+ thai_events_22_texticon_c: ".\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_SIA_wiroj_bma_election\n\n\n\n\n\n\n\n\n\n\n\n\n\n."
+ 
+ thai_events.22.d: "Sita Divari (Thai Sang Thai)"
+ thai_events_22_texticon_d: ".\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_SIA_Sita_bma_election\n\n\n\n\n\n\n\n\n\n\n\n\n\n."
+ 
+ thai_events.22.e: "Aswin Kwanmuang (Rak Krung Thep) "
+ thai_events_22_texticon_e: ".\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_SIA_aswin_bma_election\n\n\n\n\n\n\n\n\n\n\n\n\n\n."
+ 
+ 
  thai_events.24.t: "£GFX_facebook_logo  Free YOUTH's post"
  thai_events.24.d: "£GFX_free_youth_header \n\nWe have 3 demands! \n\n1. "Parliament must be dissolved." - The government, under Prayut Chan-o-cha, have failed to manage the economy, particularly through its mismanagement of oil prices following the crisis in Saudi Arabia and the COVID-19 pandemic, which led to widespread unemployment and loss of income. It failed to provide comprehensive and equitable relief, neglecting to address the economic hardships faced by the people. Furthermore, it allowed VIP guests infected with the virus to enter the country without quarantine, posing a significant risk of a second major outbreak. We demand that the Prime Minister dissolve Parliament and step down to pave the way for capable individuals to solve political and economic problems.\n\n2. "Stop threatening the citizens" - Following the 2019 election, many hoped Thailand would become more democratic, with freedom of expression and assembly protected from harassment. In reality, however, physical and psychological intimidation has continued much as it did under the NCPO. National security has been used as a pretext to silence those demanding democracy and justice. We therefore demand an end to all forms of harassment and the fabrication of charges against citizens. \n\n3. "New constitution" - The current constitution, drafted by Prayut Chan-o-cha and his cronies, was designed for him and soldier-turned-politicians in power to preserve authoritarian rule under disguised as democracy. Thailand's transition to genuine democracy therefore requires the drafting of a new constitution free from interference by unelected individuals. "
  thai_events.24.a: "Down with dictatorship! Long live democracy!"
@@ -430,8 +449,13 @@ SIA_parliament_category_desc: ""
  decreased_relations: "Decreased Relations"
  #State Modifiers
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
- SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n£GFX_idea_SIA_Aswin_Kwanmuang_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
- 
+ SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n[SIAGetBangkokMayor]"
+ SIA_bangkok_mayor0: "£GFX_idea_SIA_Aswin_Kwanmuang1_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
+ SIA_bangkok_mayor1: "£GFX_idea_SIA_Aswin_Kwanmuang2_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gRak Krung Thep§!"
+ SIA_bangkok_mayor2: "£GFX_idea_SIA_Chadchart_Sittipunt_portrait\n\n\n\n\n\n\n\n§W       Chadchart Sittipunt§!\n\n\n§YRuling Party:§! §gIndependent§!"
+ SIA_bangkok_mayor3: "£GFX_idea_SIA_Suchatvee_Suwansawat_portrait\n\n\n\n\n\n\n\n§W  Suchatvee Suwansawat§!\n\n\n§YRuling Party:§! §g£GFX_democrat Democrat§!"
+ SIA_bangkok_mayor4: "£GFX_idea_SIA_Wiroj_Lakkhanaadisorn_portrait\n\n\n\n\n\n\n\n§W  Wiroj Lakkhanaadisorn§!\n\n\n§YRuling Party:§! §g£GFX_orange_party_2 Move Forward§!"
+ SIA_bangkok_mayor5: "£GFX_idea_SIA_Sita_Divari_portrait\n\n\n\n\n\n\n\n§W              Sita Divari§!\n\n\n§YRuling Party:§! §gThai Sang Thai§!"
 # Super Events
  thai_cambodian_war_super_event: "Thai-Cambodian War"
  thai_cambodian_war_super_event_text: "\"This is my land. I have been here since time immemorial. Whoever wants to take it will be in for a fight.\"\n- Boonsin Padklang"

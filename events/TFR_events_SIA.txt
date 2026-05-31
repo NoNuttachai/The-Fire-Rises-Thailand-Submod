@@ -410,6 +410,44 @@ country_event = {
 		add_debt = yes
     }
 }
+country_event = {
+    id = thai_events.22 #2022 Bangkok Mayoral Elections
+    title = thai_events.22.t
+    desc = thai_events.22.desc
+	
+	is_triggered_only = yes
+
+    option = { #Chadchart Sittipunt (Independent)
+        name = thai_events.22.a
+		custom_effect_tooltip = thai_events_22_texticon_a
+		set_variable = { bangkok_mayor = 2}
+		
+    }
+	option = { #Suchatvee Suwansawat (Democrat)
+        name = thai_events.22.b
+		custom_effect_tooltip = thai_events_22_texticon_b
+		set_variable = { bangkok_mayor = 3}
+		
+    }
+	option = { # Wiroj Lakkhanaadisorn (Move Forward)
+        name = thai_events.22.c
+		custom_effect_tooltip = thai_events_22_texticon_c
+		set_variable = { bangkok_mayor = 4}
+		
+    }
+	option = { #Sita Divari (Thai Sang Thai)
+        name = thai_events.22.d
+		custom_effect_tooltip = thai_events_22_texticon_d
+		set_variable = { bangkok_mayor = 5}
+		
+    }
+	option = { #Aswin Kwanmuang (Rak Krung Thep) 
+        name = thai_events.22.e
+		custom_effect_tooltip = thai_events_22_texticon_e
+		set_variable = { bangkok_mayor = 1}
+		
+    }
+}
 
 country_event = {
     id = thai_events.24 # Three Demands fb post

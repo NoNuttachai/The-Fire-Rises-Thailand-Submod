@@ -31,3 +31,9 @@ defined_text = {
 		localization_key = catastrophic_covid
 	}
 }
+defined_text = {
+	name = SIAGetBangkokMayor
+	text = {
+		localization_key = "SIA_bangkok_mayor[?bangkok_mayor]"
+	}
+}
