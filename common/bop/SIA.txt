@@ -2,7 +2,7 @@ SIA_power_balance = {
 	initial_value = 0.35
 	left_side = SIA_loss_side	
 	right_side = SIA_popular_winwin_side	
-	decision_category = SIA_balance_of_power_category
+	decision_category = SIA_bop_prayut
 
 	### Neutral status
 	range = {

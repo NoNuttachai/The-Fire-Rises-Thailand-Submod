@@ -52,7 +52,6 @@ country_event = {
             right_side = SIA_popular_winwin_side 
         }
         add_stability = -0.02
-		complete_national_focus = SIA_another_year_with_prayut
     }
 }
 

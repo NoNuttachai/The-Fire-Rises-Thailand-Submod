@@ -10,6 +10,17 @@ SIA_parliament_category = {
 		original_tag = SIA
 	}
 }
+SIA_bop_prayut = {
+	icon = GFX_decision_cat_SIA_parliament
+	priority = 12
+
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		original_tag = SIA
+	}
+}
 SIA_oil_crisis_cat = {
 	icon = generic_crisis
 	picture = GFX_decision_cat_SIA_oil_crisis_picture

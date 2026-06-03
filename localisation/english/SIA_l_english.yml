@@ -35,95 +35,81 @@
  SIA_hybrid_regime_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
  
  ###National Focuses###
- SIA_another_year_with_prayut: "Another Year with Prayut"
- SIA_another_year_with_prayut_desc: "It has been nearly six years since Prayut Chan-o-cha assumed power as prime minister following a military coup in 2014. His rule has been marked by both strong criticism and support. The question now is: how long will he remain in office?"
-
- SIA_raise_our_three_fingers: "Raise our Three Fingers"
- SIA_raise_our_three_fingers_desc: "TBA"
-
- SIA_social_media_campaigning: "Social Media Campaigning"
- SIA_social_media_campaigning_desc: "TBA"
-
- SIA_begun_students_activism: "Begin Student Activism"
- SIA_begun_students_activism_desc: "TBA"
-
- SIA_the_union_make_us_strong: "The Union Makes Us Strong"
- SIA_the_union_make_us_strong_desc: "TBA"
-
- SIA_khana_ratsadon_reborn: "Khana Ratsadon Reborn"
- SIA_khana_ratsadon_reborn_desc: "TBA"
-
- SIA_a_leftist_united_front: "A Leftist United Front"
- SIA_a_leftist_united_front_desc: "TBA"
-
- SIA_organized_strikes: "Organize Strikes"
- SIA_organized_strikes_desc: "TBA"
-
- SIA_organized_mass_demonstrations: "Organize Mass Demonstrations"
- SIA_organized_mass_demonstrations_desc: "TBA"
-
- SIA_fight_the_arrests: "Fight the Arrests"
- SIA_fight_the_arrests_desc: "TBA"
-
- SIA_NGO_support: "NGO Support"
- SIA_NGO_support_desc: "TBA"
-
- SIA_make_them_face_our_wrath: "Make Them Face our Wrath"
- SIA_make_them_face_our_wrath_desc: "TBA"
-
- SIA_maintain_peaceful_protests: "Maintain Peaceful Protests"
- SIA_maintain_peaceful_protests_desc: "TBA"
-
- SIA_clamp_down_the_three_holves: "Clamp Down the Three Holves"
- SIA_clamp_down_the_three_holves_desc: "TBA"
-
- SIA_mobilize_the_bureaucracy: "Mobilize the Bureaucracy"
- SIA_mobilize_the_bureaucracy_desc: "TBA"
-
- SIA_information_operation: "Information Operation"
- SIA_information_operation_desc: "TBA"
-
- SIA_deploy_the_riot_police: "Deploy the Riot Police"
- SIA_deploy_the_riot_police_desc: "TBA"
-
- SIA_utilized_the_media_on_our_side: "Utilize the Media on Our Side"
- SIA_utilized_the_media_on_our_side_desc: "TBA"
-
- SIA_organized_counter_protests: "Organize Counter-Protests"
- SIA_organized_counter_protests_desc: "TBA"
-
- SIA_secured_support_from_the_right: "Secure Support from the Right"
- SIA_secured_support_from_the_right_desc: "TBA"
-
- SIA_establish_ccsa: "Establish CCSA"
- SIA_establish_ccsa_desc: "TBA"
-
- SIA_declare_state_of_emergency: "Declare State of Emergency"
- SIA_declare_state_of_emergency_desc: "TBA"
-
- SIA_increase_the_debt_ceiling: "Increase the Debt Ceiling"
- SIA_increase_the_debt_ceiling_desc: "TBA"
-
- SIA_grant_oil_subsidies: "Grant Oil Subsidies"
- SIA_grant_oil_subsidies_desc: "TBA"
-
- SIA_half_payment_policy: "Half-Payment Policy"
- SIA_half_payment_policy_desc: "TBA"
-
- SIA_oil_crisis_hits_thailand: "Oil Crisis Hits Thailand"
- SIA_oil_crisis_hits_thailand_desc: "TBA"
-
- SIA_reestablish_relations_with_the_saudis: "Re-establish Relations with the Saudis"
- SIA_reestablish_relations_with_the_saudis_desc: "TBA"
+ SIA_future_forward_on_trial: "Future Forward on Trial"
+ SIA_future_forward_on_trial_desc: ""
  
- SIA_arabian_republic_thai_brigades: "Arabian Republic Thai Brigades"
- SIA_arabian_republic_thai_brigades_desc: "TBA"
-
- SIA_prayut_deposed: "Prayut Deposed"
- SIA_prayut_deposed_desc: "TBA"
-
- SIA_more_years_with_prayut: "More Years with Prayut"
- SIA_more_years_with_prayut_desc: "TBA"
+ SIA_raise_our_three_fingers: "Raise our Three Fingers"
+ SIA_raise_our_three_fingers_desc: ""
+ 
+ SIA_begin_student_activism: "Begin Student Activism"
+ SIA_begin_student_activism_desc: ""
+ 
+ SIA_social_media_campaigning: "Social Media Campaigning"
+ SIA_social_media_campaigning_desc: ""
+ 
+ SIA_approach_foreign_media_and_advocacy_groups: "Approach Foreign Media and Advocacy Groups"
+ SIA_approach_foreign_media_and_advocacy_groups_desc: ""
+ 
+ SIA_call_for_monarchy_reforms: "Call for Monarchy Reforms"
+ SIA_call_for_monarchy_reforms_desc: ""
+ 
+ SIA_petrol_demonstrations: "Petrol Demonstrations"
+ SIA_petrol_demonstrations_desc: ""
+ 
+ SIA_fight_the_arrests: "Fight the Arrests"
+ SIA_fight_the_arrests_desc: ""
+ 
+ SIA_ally_with_workers_union: "Ally with Workers Union"
+ SIA_ally_with_workers_union_desc: ""
+ 
+ SIA_ladyboys_against_dictatorship: "Ladyboys Against Dictatorship"
+ SIA_ladyboys_against_dictatorship_desc: ""
+ 
+ SIA_a_leftist_united_front: "A Leftist United Front"
+ SIA_a_leftist_united_front_desc: ""
+ 
+ SIA_khana_ratsadon_reborn: "Khana Ratsadon Reborn"
+ SIA_khana_ratsadon_reborn_desc: ""
+ 
+ SIA_long_march_through_the_institutions: "Long March Through the Institutions"
+ SIA_long_march_through_the_institutions_desc: ""
+ 
+ SIA_side_with_uncle_tuu: "Side with Uncle Tuu"
+ SIA_side_with_uncle_tuu_desc: ""
+ 
+ SIA_organize_counter_protests: "Organize Counter Protests"
+ SIA_organize_counter_protests_desc: ""
+ 
+ SIA_information_operations: "Information Operations"
+ SIA_information_operations_desc: ""
+ 
+ SIA_utilized_the_media: "Utilize the Media"
+ SIA_utilized_the_media_desc: ""
+ 
+ SIA_persecute_the_agitators: "Persecute the Agitators"
+ SIA_persecute_the_agitators_desc: ""
+ 
+ SIA_deal_with_the_oil_crisis: "Deal with the Oil Crisis"
+ SIA_deal_with_the_oil_crisis_desc: ""
+ 
+ SIA_half_payment_policy: "Half Payment Policy"
+ SIA_half_payment_policy_desc: ""
+ 
+ SIA_declare_state_of_emergency: "Declare State of Emergency"
+ SIA_declare_state_of_emergency_desc: ""
+ 
+ SIA_oil_subsidies_scheme: "Oil Subsidies Scheme"
+ SIA_oil_subsidies_scheme_desc: ""
+ 
+ SIA_secured_support_from_conservatives: "Secured Support from Conservatives"
+ SIA_secured_support_from_conservatives_desc: ""
+ 
+ SIA_establish_ccsa: "Establish CCSA"
+ SIA_establish_ccsa_desc: ""
+ 
+ SIA_deploy_the_riot_police: "Deploy the Riot Police"
+ SIA_deploy_the_riot_police_desc: ""
+ 
 
  ###Characters###
  SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
@@ -421,11 +407,11 @@
 
  # Decision Localization
  SIA_parliament_category: "Parliament of Thailand"
-SIA_parliament_category_desc: ""
+ SIA_parliament_category_desc: ""
  SIA_open_parliament_gui: "View House of Representatives"
  SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
  SIA_coronavirus_category: "COVID-19 Outbreak"
- SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]"
+ SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]\n\nForeign Vaccines Secured: 0/2"
  SIA_the_pandemic_worsens_mission: "The Pandemic Worsens"
  SIA_the_pandemic_lessens_mission: "The Pandemic Lessens"
  SIA_covid_idea_1: "Mild Coronavirus Cases"
@@ -433,6 +419,9 @@ SIA_parliament_category_desc: ""
  SIA_covid_idea_3: "Serious Coronavirus Cases"
  SIA_covid_idea_4: "Crippling Coronavirus Cases"
  SIA_covid_idea_5: "Catastrophic Coronavirus Cases"
+ 
+ SIA_found_top_news: "Launch Top News"
+ SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
