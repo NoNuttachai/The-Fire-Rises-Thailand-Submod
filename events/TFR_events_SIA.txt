@@ -25,7 +25,6 @@ country_event = {
 
         country_event = {
 			id = thai_events.5
-			days = 1
 		}
 		
 		custom_effect_tooltip = SIA_ban_future_tt
@@ -108,7 +107,6 @@ country_event = {
         }
 		 country_event = {
 			id = thai_events.7
-			days = 4
 		}
 	}
 }
@@ -360,7 +358,6 @@ country_event = {
         name = thai_events.18.a 
         
         add_manpower = -7
-        army_experience = -25
         add_stability = -0.05
     }
 }
