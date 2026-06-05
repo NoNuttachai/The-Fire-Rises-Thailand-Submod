@@ -77,6 +77,26 @@ SIA_oil_crisis_cat = {
 			}
 		}
 	}
+	SIA_african_oil_deal = {
+		icon = GFX_decision_generic_oil
+		available = { has_country_flag = SIA_oil_crisis_ongoing }
+		visible = { has_country_flag = SIA_oil_diplomacy }
+		targets = {
+			SAF
+		}
+		ai_will_do = { factor = 1 }
+		cost = 20
+		days_remove = 20
+		modifier = {
+			consumer_goods_factor = 0.10
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 15
+			}
+		}
+	}
 	SIA_increase_american_oil_imports = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }

@@ -559,6 +559,7 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = SIA_oil_diplomacy
 			unlock_decision_tooltip = SIA_russian_oil_deal
+			unlock_decision_tooltip = SIA_african_oil_deal
 			unlock_decision_tooltip = SIA_activate_the_asean_petroleum_security_agreement
 			unlock_decision_tooltip = SIA_increase_american_oil_imports
 			unlock_decision_tooltip = SIA_oil_cooperation_with_singapore

@@ -506,6 +506,9 @@
  SIA_russian_oil_deal: "Russian Oil Deal"
  SIA_russian_oil_deal_desc: "Thailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
  
+ SIA_african_oil_deal: "African Oil Deal"
+ SIA_african_oil_deal_desc: ""
+ 
  SIA_increase_american_oil_imports: "Increase American Oil Imports"
  SIA_increase_american_oil_imports_desc: "Thailand currently imports a limited volume of oil from the United States due to the higher shipping costs associated with long-distance transpacific logistics and the fact that domestic refineries are traditionally calibrated for Middle Eastern crude. However, given the situation in the Middle East and the need to diversify our energy sources, we should consider significantly increasing oil imports from the United States as a strategic measure."
  
