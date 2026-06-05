@@ -116,8 +116,8 @@
  SIA_declare_state_of_emergency: "Declare State of Emergency"
  SIA_declare_state_of_emergency_desc: ""
  
- SIA_oil_subsidies: "Oil Subsidies"
- SIA_oil_subsidies_desc: ""
+ SIA_thailand_petrol_diplomacy: "Thailand's Petrol Diplomacy"
+ SIA_thailand_petrol_diplomacy_desc: ""
  
  SIA_secured_support_from_conservatives: "Secured Support from Conservatives"
  SIA_secured_support_from_conservatives_desc: ""
@@ -468,10 +468,58 @@
  SIA_parliament_minor_opp_line_loc: "§LMinor Oppositional Parties\n§Y[?SIA_minor_opp_seats_var|0]§! §WSeats§!"
  SIA_seat_tt: "§YParliament Seat§!"
  SIA_parliament_vacant_seats_text: "§gVacant: [?SIA_vacant_seats_var|0]§!/500 Seats"
+ 
  SIA_oil_crisis_cat: "Oil Crisis"
  SIA_oil_crisis_cat_desc: "The Ministry of Energy has stated that the government still possesses oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and careful management will be required to ensure long-term energy security. Currently, supplies are dwindling as global supply disruptions threaten to cripple the economy, and immediate action before the situation spirals out of control."
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y250 days§! of §YOil in Reserves§!\n"
+ 
+ SIA_activate_the_asean_petroleum_security_agreement: "Activate the ASEAN Petroleum Security Agreement"
+ SIA_activate_the_asean_petroleum_security_agreement_desc: "Thailand, as a major member of ASEAN, remains heavily dependent on imported energy, unlike Malaysia and Indonesia, which possess significant petroleum reserves and have historically been net exporters of oil and gas. With the ongoing global oil crisis. Thailand should engage fellow ASEAN members to activate emergency fuel-sharing mechanisms under the ASEAN Petroleum Security Agreement (APSA). This would help secure regional crude oil and petroleum supplies to offset potential shortages and strengthen regional energy security."
+ 
+ SIA_russian_oil_deal: "Russian Oil Deal"
+ SIA_russian_oil_deal_desc: "Thailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
+ 
+ SIA_increase_american_oil_imports: "Increase American Oil Imports"
+ SIA_increase_american_oil_imports_desc: "Thailand currently imports a limited volume of oil from the United States due to the higher shipping costs associated with long-distance transpacific logistics and the fact that domestic refineries are traditionally calibrated for Middle Eastern crude. However, given the situation in the Middle East and the need to diversify our energy sources, we should consider significantly increasing oil imports from the United States as a strategic measure."
+ 
+ SIA_enact_oil_rationing_measures: "Enact Oil Rationing Measures"
+ SIA_enact_oil_rationing_measures_desc: ""
+ 
+ SIA_expand_fuel_storage_facilities: "Expand Fuel Storage Facilities"
+ SIA_expand_fuel_storage_facilities_desc: ""
+ 
+ SIA_increase_domestic_refining_capacity: "Increase Domestic Refining Capacity"
+ SIA_increase_domestic_refining_capacity_desc: ""
+ 
+ SIA_synthetic_gas_initiative: "Synthetic Gas Initiative"
+ SIA_synthetic_gas_initiative_desc: ""
+ 
+ SIA_subsidize_solar_energy: "Subsidize Solar Energy"
+ SIA_subsidize_solar_energy_desc: "To reduce dependence on imported fossil fuels and strengthen energy security, the government will establish a national Solar Energy Transition Fund, providing low-interest loans, grants, and tax incentives for households, businesses, and farms to install solar panels. The fund will also support the development of utility-scale solar farms to expand renewable electricity generation nationwide."
+ 
+ SIA_oil_cooperation_with_singapore: "Oil Cooperation with Singapore"
+ SIA_oil_cooperation_with_singapore_desc: "Thailand could strengthen energy cooperation with Singapore to secure reliable supplies of refined petroleum products. The partnership would expand fuel imports, improve stockpiling, and enhance coordination on energy logistics, leveraging Singapore's role as Asia's leading oil trading and refining hub."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
  #State Modifiers

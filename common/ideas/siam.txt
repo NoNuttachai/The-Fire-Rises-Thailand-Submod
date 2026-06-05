@@ -238,8 +238,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.2
-                consumer_goods_factor = 0.35
+				stability_factor = -0.4
+                consumer_goods_factor = 0.5
 			}
 		}
 		SIA_covid_idea_1 = {

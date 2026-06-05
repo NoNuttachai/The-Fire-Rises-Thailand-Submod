@@ -40,7 +40,16 @@ on_actions = {
 			}
 		}
 	}
-
+	on_daily_SIA = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = SIA_oil_crisis_ongoing
+				}
+				set_variable = { oil_reserves_days = days_mission_timeout@SIA_oil_in_reserves_mission }
+			}
+		}
+	}
 	on_declare_war = {
 		effect = {
 			if = {

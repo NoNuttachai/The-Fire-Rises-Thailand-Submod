@@ -122,6 +122,7 @@ country_event = {
 			add_ideas = SIA_oil_crisis
 			activate_mission = SIA_oil_in_reserves_mission
 			set_country_flag = SIA_oil_crisis_ongoing
+			set_variable = { oil_reserves_days = days_mission_timeout@SIA_oil_in_reserves_mission }
 		}
 	}
     option = {

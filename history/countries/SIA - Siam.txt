@@ -131,9 +131,11 @@
 		
 		## Engineering ##
 		electronic_mechanical_engineering = 1
+		power_plants = 1
 		
 		## Industry ##
 		basic_machine_tools = 1
+		fuel_silos = 1
 		
 		## Doctrines ##
 		base_strike = 1

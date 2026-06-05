@@ -155,7 +155,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 20
+			}
 		}
 	}
 	focus = {
@@ -524,11 +527,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 20
+			}
+			unlock_decision_tooltip = SIA_enact_oil_rationing_measures
+			unlock_decision_tooltip = SIA_expand_fuel_storage_facilities
+			unlock_decision_tooltip = SIA_increase_domestic_refining_capacity
+			unlock_decision_tooltip = SIA_synthetic_gas_initiative
+			unlock_decision_tooltip = SIA_subsidize_solar_energy
 		}
 	}
 	focus = {
-		id = SIA_oil_subsidies
+		id = SIA_thailand_petrol_diplomacy
 		icon = GFX_TFX_goal_SIA_grant_oil_subsidies
 		x = 1
 		y = 1
@@ -540,12 +551,15 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			has_country_flag = SIA_oil_crisis_ongoing
 		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_russian_oil_deal
+			unlock_decision_tooltip = SIA_activate_the_asean_petroleum_security_agreement
+			unlock_decision_tooltip = SIA_increase_american_oil_imports
+			unlock_decision_tooltip = SIA_oil_cooperation_with_singapore
 		}
 	}
 	focus = {
@@ -575,14 +589,14 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 5
-		prerequisite = { focus = SIA_oil_subsidies }
-		relative_position_id = SIA_oil_subsidies
+		prerequisite = { focus = SIA_thailand_petrol_diplomacy }
+		relative_position_id = SIA_thailand_petrol_diplomacy
 		
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
-			
+		
 		}
 		available_if_capitulated = yes
 		
