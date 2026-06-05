@@ -1,0 +1,773 @@
+characters={
+	SIA_rama_x_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_rama_x
+			}
+			army = {
+				large = "gfx/leaders/SIA/SIA_rama_x.png"
+			}
+		}
+		country_leader = {
+			ideology = totalism
+			desc = SIA_rama_x_char_desc
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			ideology = trotskyism
+			desc = SIA_rama_x_char_desc
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = reformist_socialism
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = progressivism
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = centrist
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = classical_liberalism
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = right_populism
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = hybrid_regime
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			desc = SIA_rama_x_char_desc
+			ideology = absolute_monarchist
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			ideology = classical_fascism
+			desc = SIA_rama_x_char_desc
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+		country_leader = {
+			ideology = neonazism
+			desc = SIA_rama_x_char_desc
+			traits = {
+				SIA_Vajiralongkorn
+			}
+		}
+	}
+	SIA_dipangkorn_rasmijoti_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_dipangkorn_rasmijoti
+			}
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+	}
+	SIA_vacharaesorn_vivacharawongse_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_vacharaesorn_vivacharawongse
+			}
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+	}
+	SIA_maha_chakri_sirindhorn_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_maha_chakri_sirindhorn
+			}
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+	}
+	SIA_prayut_chan-o-cha_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_prayut_chan-o-cha
+				small = GFX_SIA_prayut_chan_o_cha
+			}
+		}
+		advisor={
+			slot = head_minister
+			idea_token = SIA_prayut_chan-o-cha_advisor
+			ideology = liberalism
+			desc = SIA_prayut_chan-o-cha_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = SIA_prayut_chan-o-cha_char
+					}
+				}
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan
+			}
+		}		
+		country_leader = {
+			desc = SIA_prayut_chan-o-cha_char_desc
+			ideology = hybrid_regime
+		}
+		country_leader = {
+			desc = SIA_prayut_chan-o-cha_char_desc
+			ideology = military_junta
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				old_guard
+				politically_connected
+				organizer
+			}
+		}
+	}
+	SIA_don_pramudwinai_char = {
+		name = SIA_don_pramudwinai_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_don_pramudwinai
+			}
+		}
+		advisor={
+			slot = foreign_minister
+			idea_token = SIA_don_pramudwinai_advisor
+			desc = SIA_don_pramudwinai_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_uttama_saowanayon_char = {
+		name = SIA_uttama_saowanayon_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_uttama_saowanayon
+			}
+		}
+		advisor={
+			slot = economic_minister
+			idea_token = SIA_uttama_saowanayon_advisor
+			desc = SIA_uttama_saowanayon_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_anupong_paochinda_char = {
+		name = SIA_anupong_paochinda_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_anupong_paochinda
+			}
+		}
+		advisor={
+			slot = interior_minister
+			idea_token = SIA_anupong_paochinda_advisor
+			desc = SIA_anupong_paochinda_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_thewan_liptapanlop_char = {
+		name = SIA_thewan_liptapanlop_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_thewan_liptapanlop
+			}
+		}
+		advisor={
+			slot = intelligence_minister
+			idea_token = SIA_thewan_liptapanlop_advisor
+			desc = SIA_thewan_liptapanlop_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_prawit_wongsuwan_char = {
+		name = SIA_prawit_wongsuwan_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_prawit_wongsuwan
+			}
+		}
+		advisor={
+			slot = theorist_minister
+			idea_token = SIA_prawit_wongsuwan_advisor
+			desc = SIA_prawit_wongsuwan_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+
+	SIA_predee_daocha_char = {
+		name = SIA_predee_daocha_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_predee_daocha
+			}
+		}
+		advisor={
+			slot = economic_minister
+			idea_token = SIA_predee_daocha_advisor
+			desc = SIA_predee_daocha_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+	SIA_anucha_nakasai_char = {
+		name = SIA_anucha_nakasai_char
+		portraits={
+			civilian = {
+				small = GFX_SIA_anucha_nakasai
+			}
+		}
+		advisor={
+			slot = intelligence_minister
+			idea_token = SIA_anucha_nakasai_advisor
+			desc = SIA_anucha_nakasai_advisor_desc
+			cost = 0
+			allowed  = {
+				original_tag = SIA
+			}
+			available = {
+				always = yes
+			}
+			traits  = {
+				#GER_plenipotentiary_of_the_four_year_plan 
+			}
+		}		
+	}
+
+	SIA_apirat_kongsompong_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_apirat_kongsompong
+			}
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			traits={
+				old_guard
+				infantry_leader
+				guerilla_fighter
+				career_officer
+			}
+		}
+	}
+	SIA_airbull_suttiwan_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_airbull_suttiwan.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			traits={
+				air_force_connections
+			}
+		}
+	}
+	SIA_chalermpol_srisawat_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_chalermpol_srisawat.png"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				organisational_leader
+				trait_cautious
+				cavalry_officer
+			}
+		}
+	}
+	SIA_chaichan_changmongkol_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_chaichan_changmongkol.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				organizer
+			}
+		}
+	}
+	SIA_kukiat_srinaka_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_kukiat_srinaka.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				politically_connected
+				career_officer
+			}
+		}
+	}
+	SIA_maanat_wongwat_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_maanat_wongwat.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			traits={
+				air_force_connections
+				organizer
+			}
+		}
+	}
+	SIA_narongpan_jitkaewthae_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+			}
+		}
+	}
+	SIA_natthaphon_narkphanit_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_natthaphon_narkphanit.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				career_officer
+				politically_connected
+				old_guard
+			}
+		}
+	}
+	SIA_pornpipat_benyasri_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_pornpipat_benyasri.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				old_guard
+			}
+		}
+	}
+	SIA_punpakdee_pattanakul_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_punpakdee_pattanakul.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+				air_force_connections
+			}
+		}
+	}
+	SIA_worakiat_rattananon_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_worakiat_rattananon.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			traits={
+			}
+		}
+	}
+	SIA_tummanun_withi_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_tummanun_withi.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			traits={
+			}
+		}
+	}
+	SIA_luechai_ruddit_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_luechai_ruddit.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			traits={
+			}
+		}
+	}
+	SIA_chatchai_sriworakan_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_chatchai_sriworakan.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_santi_sakuntanak_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_santi_sakuntanak
+			}
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	SIA_thanathorn_juangroongruangkit_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_thanathorn_juangroongruangkit
+			}
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		id = -1
+	}
+	SIA_pita_char = {
+		name = "Pita Limjaroenrat"
+        desc = "POLITICS_PITA_DESC"
+            portraits={
+			    civilian = {
+				    large = "gfx/leaders/SIA/SIA_pita.png"
+			    }
+		    }
+		country_leader = {
+			ideology = progressivism
+		}
+		id = -1
+	}
+	SIA_thaksin_shinawatra_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_thaksin_shinawatra
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	SIA_yingluck_shinawatra_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_yingluck_shinawatra
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	SIA_jurin_lakasanawisit_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_jurin_lakasanawisit
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+	}
+	SIA_sereepisuth_temeeyaves_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_sereepisuth_temeeyaves
+			}
+		}
+		country_leader = {
+			ideology = centrist
+		}
+	}
+	SIA_arnon_nanpa_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_arnon_nanpa
+			}
+		}
+		country_leader = {
+			ideology = liberal_socialism
+		}
+	}
+	SIA_panusaya_sithijirawattanakul_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_panusaya_sithijirawattanakul
+			}
+		}
+		country_leader = {
+			ideology = liberal_socialism
+		}
+	}
+	SIA_jatupat_boonpattararaksa_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_jatupat_boonpattararaksa
+			}
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+	}
+	SIA_anarchist_council_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_anarchist_council
+			}
+		}
+		country_leader = {
+			ideology = left_anarchist
+		}
+	}
+	SIA_wichai_chutham_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_wichai_chutham
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = totalism
+		}
+	}
+	SIA_peoples_coaltion_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_peoples_coaltion
+			}
+		}
+		country_leader = {
+			ideology = supervised_democracy
+		}
+	}
+}

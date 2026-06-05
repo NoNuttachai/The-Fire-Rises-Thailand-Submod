@@ -23,9 +23,12 @@ SIA_oil_crisis_cat = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 200
+		days_mission_timeout = 100
 		timeout_effect = {
-			clr_country_flag = SIA_oil_crisis_ongoing
+			swap_ideas = {
+				remove_idea = SIA_oil_crisis
+				add_idea = SIA_oil_crisis_1
+			}
 		}
 		complete_effect = {
 		}

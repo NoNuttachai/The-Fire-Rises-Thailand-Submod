@@ -50,6 +50,75 @@ ideas = {
 				military_development_monthly = 0.01
 			}
 		}
+		SIA_lack_of_the_political_legitimacy_highest = {
+			name = SIA_lack_of_the_political_legitimacy
+			picture = SIA_low_legitimacy
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.25
+				authoritarian_democrat_drift = -0.04
+				social_liberal_drift = 0.03
+				social_democrat_drift = 0.03
+				stability_factor = -0.25
+				disabled_ideas = 1
+			}
+		}
+		SIA_lack_of_the_political_legitimacy_higher = {
+			name = SIA_lack_of_the_political_legitimacy
+			picture = SIA_low_legitimacy
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.1
+				authoritarian_democrat_drift = -0.03
+				social_liberal_drift = 0.02
+				social_democrat_drift = 0.02
+				stability_factor = -0.1
+				disabled_ideas = 1
+			}
+		}
+		SIA_lack_of_the_political_legitimacy_high = {
+			name = SIA_lack_of_the_political_legitimacy
+			picture = SIA_low_legitimacy
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.05
+				authoritarian_democrat_drift = -0.02
+				social_liberal_drift = 0.01
+				social_democrat_drift = 0.01
+				stability_factor = -0.05
+				disabled_ideas = 1
+			}
+		}
 		SIA_lack_of_the_political_legitimacy = {
 			picture = SIA_low_legitimacy
 			traits = {
@@ -69,6 +138,49 @@ ideas = {
 				social_liberal_drift = 0.01
 				social_democrat_drift = 0.01
 				stability_factor = -0.025
+				disabled_ideas = 1
+			}
+		}
+		SIA_lack_of_the_political_legitimacy_low = {
+			name = SIA_lack_of_the_political_legitimacy
+			picture = SIA_low_legitimacy
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.015
+				social_liberal_drift = 0.01
+				social_democrat_drift = 0.01
+				stability_factor = -0.015
+				disabled_ideas = 1
+			}
+		}
+		SIA_lack_of_the_political_legitimacy_lower = {
+			name = SIA_lack_of_the_political_legitimacy
+			picture = SIA_low_legitimacy
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				income_growth_factor = -0.005
+				social_democrat_drift = 0.01
+				stability_factor = -0.005
 				disabled_ideas = 1
 			}
 		}
@@ -106,8 +218,28 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.02
+				stability_factor = -0.05
                 consumer_goods_factor = 0.10
+			}
+		}
+		SIA_oil_crisis_1 = {
+			name = SIA_oil_crisis
+			picture = SIA_constitution_2017
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+                consumer_goods_factor = 0.35
 			}
 		}
 		SIA_covid_idea_1 = {

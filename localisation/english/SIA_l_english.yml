@@ -44,8 +44,8 @@
  SIA_begin_student_activism: "Begin Student Activism"
  SIA_begin_student_activism_desc: ""
  
- SIA_social_media_campaigning: "Social Media Campaigning"
- SIA_social_media_campaigning_desc: ""
+ SIA_social_media_activism: "Social Media Activism"
+ SIA_social_media_activism_desc: ""
  
  SIA_approach_foreign_media_and_advocacy_groups: "Approach Foreign Media and Advocacy Groups"
  SIA_approach_foreign_media_and_advocacy_groups_desc: ""
@@ -53,11 +53,14 @@
  SIA_call_for_monarchy_reforms: "Call for Monarchy Reforms"
  SIA_call_for_monarchy_reforms_desc: ""
  
+ SIA_expand_protestor_base: "Expand Protestor Base"
+ SIA_expand_protestor_base_desc: ""
+ 
  SIA_petrol_demonstrations: "Petrol Demonstrations"
  SIA_petrol_demonstrations_desc: ""
  
- SIA_fight_the_arrests: "Fight the Arrests"
- SIA_fight_the_arrests_desc: ""
+ SIA_move_forward_with_the_protestors: "Move Forward with the Protestors"
+ SIA_move_forward_with_the_protestors_desc: ""
  
  SIA_ally_with_workers_union: "Ally with Workers Union"
  SIA_ally_with_workers_union_desc: ""
@@ -73,6 +76,21 @@
  
  SIA_long_march_through_the_institutions: "Long March Through the Institutions"
  SIA_long_march_through_the_institutions_desc: ""
+ 
+ SIA_thalu_fa: "Thalu Fa"
+ SIA_thalu_fa_desc: ""
+ 
+ SIA_thalu_gaz: "Thalu Gaz"
+ SIA_thalu_gaz_desc: ""
+ 
+ SIA_fight_the_arrests: "Fight the Arrests"
+ SIA_fight_the_arrests_desc: ""
+ 
+ SIA_the_people_wrath: "The People's Wrath"
+ SIA_the_people_wrath_desc: ""
+ 
+ SIA_denouced_the_extremists: "Denounce the Extremists"
+ SIA_denouced_the_extremists_desc: ""
  
  SIA_side_with_uncle_tuu: "Side with Uncle Tuu"
  SIA_side_with_uncle_tuu_desc: ""
@@ -98,8 +116,8 @@
  SIA_declare_state_of_emergency: "Declare State of Emergency"
  SIA_declare_state_of_emergency_desc: ""
  
- SIA_oil_subsidies_scheme: "Oil Subsidies Scheme"
- SIA_oil_subsidies_scheme_desc: ""
+ SIA_oil_subsidies: "Oil Subsidies"
+ SIA_oil_subsidies_desc: ""
  
  SIA_secured_support_from_conservatives: "Secured Support from Conservatives"
  SIA_secured_support_from_conservatives_desc: ""
@@ -110,6 +128,21 @@
  SIA_deploy_the_riot_police: "Deploy the Riot Police"
  SIA_deploy_the_riot_police_desc: ""
  
+ SIA_phuket_sandbox: "Phuket Sandbox"
+ SIA_phuket_sandbox_desc: ""
+ 
+ SIA_covid_vaccine_drive: "Covid Vaccine Drive"
+ SIA_covid_vaccine_drive_desc: ""
+ 
+ SIA_further_crackdowns: "Further Crackdowns"
+ SIA_further_crackdowns_desc: ""
+ 
+ SIA_smother_the_flames: "Smother the Flames"
+ SIA_smother_the_flames_desc: ""
+ 
+ SIA_deploy_the_army: "Deploy the Army"
+ SIA_deploy_the_army_desc: ""
+
 
  ###Characters###
  SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
@@ -296,6 +329,8 @@
     
  ###Tooltip###
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
+ 
+ SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §Rongoing§!"
 
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
@@ -322,12 +357,13 @@
 
 ###Parliament GUI###
  SIA_parliament_title: "§YHouse of Representatives of Thailand§!"
- SIA_parliament_house_desc: "The §YHouse of Representatives of Thailand§! has been in existence since the 1932 Revolution for legislative proposes. However, the modern day House of Representatives of Thailand is lower house of the National Assembly of Thailand, with representatives directly elected by the citizens through both the constituency and party-list systems."
+ SIA_parliament_house_desc: "The House of Representatives of Thailand\n§YSapha Phuthaen Ratsadon§!\n--------------\n\n\n\n\n£GFX_SIA_Sappaya_Sapasathan\n\n\n\n\n\n\n§YThe House of Representatives of Thailand§! has existed since the 1932 Revolution as the country's legislative chamber, although its existence has not been continuous due to Thailand's history of military coups.\n\nServing as the lower house of §Ythe National Assembly of Thailand§!, the House is composed of 500 seats directly elected by citizens through a dual electoral system consisting of constituency-based elections and party-list proportional representation.\n\nSince August 2019, the meeting place of §Ythe National Assembly of Thailand§! has been §YSappaya-Sapasathan§!, the largest parliamentary complex in the world, located on the eastern bank of the Chao Phraya River in Bangkok.\n--------------\n§GHover over a party's name to view information about the party.§!"
+ 
  SIA_parliament_total_seats_header: "§Y--- Parliamentary Breakdown ---§!"
  SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
  SIA_parliament_speaker_desc: "§YSpeaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\nCurrent Speaker: Chuan Leekpai\n\nSpeaker Political Party: £GFX_democrat §CDemocrat Party§!"
 
- SIA_parliament_gov_support_loc: "Total §PGovernment§! support: §G[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
+ SIA_parliament_gov_support_loc: "Total §PGovernment§! support: §P[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
  SIA_parliament_opp_support_loc: "Total §ROpposition§! support: §R[?SIA_opp_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
 
  SIA_parliament_speaker_name_loc: "Current Speaker: §YChuan Leekpai§!"
@@ -410,6 +446,8 @@
  SIA_parliament_category_desc: ""
  SIA_open_parliament_gui: "View House of Representatives"
  SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
+ SIA_first_no_confidence_vote: "First Motion of No Confidence"
+
  SIA_coronavirus_category: "COVID-19 Outbreak"
  SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]\n\nForeign Vaccines Secured: 0/2"
  SIA_the_pandemic_worsens_mission: "The Pandemic Worsens"

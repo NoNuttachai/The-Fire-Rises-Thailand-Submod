@@ -1,3 +1,26 @@
 SIA_parliament_category = {
-
+	SIA_first_no_confidence_vote = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 58
+		timeout_effect = {
+			
+		}
+		complete_effect = {
+		}
+	}
 }

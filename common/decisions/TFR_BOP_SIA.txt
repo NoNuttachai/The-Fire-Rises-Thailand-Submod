@@ -1,5 +1,31 @@
 
 SIA_bop_prayut = {
+	SIA_bop_debug_decrease = {
+		available = { is_debug = yes is_ai = no }
+		visible = { is_debug = yes is_ai = no }
+
+		ai_will_do = { factor = 0 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.15
+			}
+		}
+	}
+	SIA_bop_debug_increase = {
+		available = { is_debug = yes is_ai = no }
+		visible = { is_debug = yes is_ai = no }
+
+		ai_will_do = { factor = 0 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.15
+			}
+		}
+	}
 	SIA_found_top_news = {
 		available = { has_completed_focus = SIA_utilized_the_media }
 		visible = { has_completed_focus = SIA_utilized_the_media }

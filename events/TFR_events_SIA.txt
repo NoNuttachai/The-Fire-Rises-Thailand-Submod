@@ -117,10 +117,19 @@ country_event = {
     picture = GFX_report_Oil_Crisis_in_Thailand
 	
 	is_triggered_only = yes
-	
+	immediate = {
+		hidden_effect = {
+			add_ideas = SIA_oil_crisis
+			activate_mission = SIA_oil_in_reserves_mission
+			set_country_flag = SIA_oil_crisis_ongoing
+		}
+	}
     option = {
         name = thai_events.6.a
-		add_ideas = SIA_oil_crisis
+		effect_tooltip = {
+			add_ideas = SIA_oil_crisis
+			activate_mission = SIA_oil_in_reserves_mission
+		}
 	}
 }
 country_event = {
@@ -137,7 +146,7 @@ country_event = {
 	}
 	option = {
         name = thai_events.7.b
-		complete_national_focus = SIA_clamp_down_the_three_holves
+		complete_national_focus = SIA_side_with_uncle_tuu
 	}
 }
 country_event = {
@@ -153,14 +162,16 @@ country_event = {
 		trigger = {
 			has_completed_focus = SIA_raise_our_three_fingers
 		}
-		
+		hidden_effect = {
+			upgrade_intelligence_agency = upgrade_termination
+		}
 	}
 	option = {
         name = thai_events.8.b
 		trigger = {
-			has_completed_focus = SIA_clamp_down_the_three_holves
+			has_completed_focus = SIA_side_with_uncle_tuu
 		}
-		
+		upgrade_intelligence_agency = upgrade_termination
 	}
 	after = {
 		add_power_balance_value = {

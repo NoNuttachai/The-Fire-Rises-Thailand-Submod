@@ -216,7 +216,13 @@
 			submarine_mine_laying = 1
 		}
 	}
-
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		create_intelligence_agency = yes
+	}
+	
 	add_ideas = {
 		SIA_lottery_conscription
 		SIA_low_income_only_welfare
