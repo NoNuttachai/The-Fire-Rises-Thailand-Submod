@@ -26,6 +26,529 @@ SIA_bop_prayut = {
 			}
 		}
 	}
+	#Protestors Side - The Government is doing something!
+	SIA_government_action_1 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_2
+		}
+	}
+	SIA_government_action_2 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_3
+		}
+	}
+	SIA_government_action_3 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_7
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 20
+			}
+			set_country_flag = SIA_deal_with_the_oil_crisis
+			unlock_decision_tooltip = SIA_enact_oil_rationing_measures
+			unlock_decision_tooltip = SIA_expand_fuel_storage_facilities
+			unlock_decision_tooltip = SIA_increase_domestic_refining_capacity
+			unlock_decision_tooltip = SIA_synthetic_gas_initiative
+			unlock_decision_tooltip = SIA_subsidize_solar_energy
+		}
+	}
+	SIA_government_action_4 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_5
+		}
+	}
+	SIA_government_action_5 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_6
+		}
+	}
+	SIA_government_action_6 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_8
+		}
+	}
+	SIA_government_action_7 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_4
+			set_country_flag = SIA_oil_diplomacy
+			unlock_decision_tooltip = SIA_russian_oil_deal
+			unlock_decision_tooltip = SIA_activate_the_asean_petroleum_security_agreement
+			unlock_decision_tooltip = SIA_increase_american_oil_imports
+			unlock_decision_tooltip = SIA_oil_cooperation_with_singapore
+		}
+	}
+	SIA_government_action_8 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_10
+		}
+	}
+	SIA_government_action_9 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_11
+		}
+	}
+	SIA_government_action_10 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_government_action_9
+		}
+	}
+	SIA_government_action_11 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			
+		}
+	}
+	#Government Side - The Protestors are acting!
+	SIA_protestor_action_1 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_2
+		}
+	}
+	SIA_protestor_action_2 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_3
+		}
+	}
+	SIA_protestor_action_3 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_4
+		}
+	}
+	SIA_protestor_action_4 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_6
+		}
+	}
+	SIA_protestor_action_5 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_8
+		}
+	}
+	SIA_protestor_action_6 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_7
+		}
+	}
+	SIA_protestor_action_7 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_5
+		}
+	}
+	SIA_protestor_action_8 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_9
+		}
+	}
+	SIA_protestor_action_9 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_10
+		}
+	}
+	SIA_protestor_action_10 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = SIA_protestor_action_11
+		}
+	}
+	SIA_protestor_action_11 = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			always = no
+		}
+		
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 35
+		timeout_effect = {
+			activate_mission = 
+		}
+	}
 	SIA_found_top_news = {
 		available = { has_completed_focus = SIA_utilized_the_media }
 		visible = { has_completed_focus = SIA_utilized_the_media }

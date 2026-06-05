@@ -144,10 +144,16 @@ country_event = {
     option = {
         name = thai_events.7.a
 		complete_national_focus = SIA_raise_our_three_fingers
+		hidden_effect = {
+			activate_mission = SIA_government_action_1
+		}
 	}
 	option = {
         name = thai_events.7.b
 		complete_national_focus = SIA_side_with_uncle_tuu
+		hidden_effect = {
+			activate_mission = SIA_protestor_action_1
+		}
 	}
 }
 country_event = {
@@ -533,7 +539,6 @@ country_event = {
        
 	}
 }
-
 news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t

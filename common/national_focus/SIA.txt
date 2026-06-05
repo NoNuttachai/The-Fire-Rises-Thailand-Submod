@@ -531,6 +531,7 @@ focus_tree = {
 				mission = SIA_oil_in_reserves_mission
 				days = 20
 			}
+			set_country_flag = SIA_deal_with_the_oil_crisis
 			unlock_decision_tooltip = SIA_enact_oil_rationing_measures
 			unlock_decision_tooltip = SIA_expand_fuel_storage_facilities
 			unlock_decision_tooltip = SIA_increase_domestic_refining_capacity
@@ -556,6 +557,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			set_country_flag = SIA_oil_diplomacy
 			unlock_decision_tooltip = SIA_russian_oil_deal
 			unlock_decision_tooltip = SIA_activate_the_asean_petroleum_security_agreement
 			unlock_decision_tooltip = SIA_increase_american_oil_imports

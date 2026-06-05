@@ -330,7 +330,7 @@
  ###Tooltip###
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
  
- SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §Rongoing§!"
+ SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §ROngoing§!"
 
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
@@ -460,6 +460,31 @@
  
  SIA_found_top_news: "Launch Top News"
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
+
+ SIA_government_action_1: "§YGovernment§!: Establish CCSA"
+ SIA_government_action_2: "§YGovernment§!: Declare State of Emergency"
+ SIA_government_action_3: "§YGovernment§!: Deal With the Oil Crisis"
+ SIA_government_action_4: "§YGovernment§!: Information Operations"
+ SIA_government_action_5: "§YGovernment§!: Utilize the Media"
+ SIA_government_action_6: "§YGovernment§!: Secured Support from Conservatives"
+ SIA_government_action_7: "§YGovernment§!: Thailand's Petrol Diplomacy"
+ SIA_government_action_8: "§YGovernment§!: Persecute the Agitators"
+ SIA_government_action_9: "§YGovernment§!: Organize Counter Protests"
+ SIA_government_action_10: "§YGovernment§!: Half Payment Policy"
+ SIA_government_action_11: "§YGovernment§!: Deploy the Riot Police"
+
+ SIA_protestor_action_1: "§RProtestors§!: Begin Student Activism"
+ SIA_protestor_action_2: "§RProtestors§!: Petrol Demonstrations"
+ SIA_protestor_action_3: "§RProtestors§!: Approach Foreign Media and Advocacy Groups"
+ SIA_protestor_action_4: "§RProtestors§!: A Leftist United Front"
+ SIA_protestor_action_5: "§RProtestors§!: Social Media Activism"
+ SIA_protestor_action_6: "§RProtestors§!: Ally with Workers Union"
+ SIA_protestor_action_7: "§RProtestors§!: Move Forward with the Protestors"
+ SIA_protestor_action_8: "§RProtestors§!: Expand Protestor Base"
+ SIA_protestor_action_9: "§RProtestors§!: Khana Ratsadon Reborn"
+ SIA_protestor_action_10: "§RProtestors§!: Ladyboys Against Dictatoship"
+ SIA_protestor_action_11: "§RProtestors§!: Long March Through the Institutions"
+
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
