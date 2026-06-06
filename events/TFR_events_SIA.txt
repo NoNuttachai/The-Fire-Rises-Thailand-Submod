@@ -65,6 +65,11 @@ country_event = {
     option = {
         name = thai_events.3.a 
         add_stability = 0.02
+		set_temp_variable = {
+			var = income_var_temp
+			value = 105.984
+		}
+		add_income = yes
     }
 }
 

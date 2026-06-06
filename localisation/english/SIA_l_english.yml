@@ -447,6 +447,7 @@
  SIA_open_parliament_gui: "View House of Representatives"
  SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
  SIA_first_no_confidence_vote: "First Motion of No Confidence"
+ SIA_2020_budget_bill_vote: "2020 Budget Bill"
 
  SIA_coronavirus_category: "COVID-19 Outbreak"
  SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]\n\nForeign Vaccines Secured: 0/2"

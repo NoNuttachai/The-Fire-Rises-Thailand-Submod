@@ -376,6 +376,7 @@ ideas = {
 			allowed = {
 				original_tag = SIA
 			}
+			cost = 0
 			traits = {
 				SIA_ide_stratcon
 				eco_keynesian_economy
@@ -413,6 +414,7 @@ ideas = {
 			allowed = {
 				original_tag = SIA
 			}
+			cost = 0
 			traits = {
 				SIA_ide_neoliberal
 				int_balanced_cryptographer
