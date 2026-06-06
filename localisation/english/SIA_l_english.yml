@@ -39,13 +39,13 @@
  SIA_future_forward_on_trial_desc: ""
  
  SIA_raise_our_three_fingers: "Raise our Three Fingers"
- SIA_raise_our_three_fingers_desc: ""
+ SIA_raise_our_three_fingers_desc: "The government's decision to dissolve §Othe Future Forward Party§! opened the eyes of an entire generation of young Thais to the reality of authoritarian rule and a political system stacked against them. Unlike previous generations, they are not willing to accept things simply because "that is the way they have always been." These young people are standing up to challenge the status quo and demand real change. They will §Omove forward§! with the §Opeople§! in the pursuit of democracy. Our voices cannot be ignored, and our three fingers will be raised!."
  
  SIA_begin_student_activism: "Begin Student Activism"
  SIA_begin_student_activism_desc: ""
  
  SIA_social_media_activism: "Social Media Activism"
- SIA_social_media_activism_desc: ""
+ SIA_social_media_activism_desc: "Everyday people have harnessed the power of their phones and social media to educate, organize, and rally one another. Instead of relying on news networks controlled by the rich and powerful, we are using these tools to spread the truth, mobilize our communities, and build real nationwide solidarity faster and more passionately than ever before."
  
  SIA_approach_foreign_media_and_advocacy_groups: "Approach Foreign Media and Advocacy Groups"
  SIA_approach_foreign_media_and_advocacy_groups_desc: ""
@@ -57,16 +57,16 @@
  SIA_expand_protestor_base_desc: ""
  
  SIA_petrol_demonstrations: "Petrol Demonstrations"
- SIA_petrol_demonstrations_desc: ""
+ SIA_petrol_demonstrations_desc: "Everyday people are being squeezed dry by a wealthy few who control the oil industry, while families and workers bear the crushing burden of rising living costs. We will organize protests over skyrocketing fuel prices, as they are not just about the cost of gas, they are a natural human reaction to economic hardship and a system that prioritizes corporate profits and capitalist interests over the well-being of ordinary people."
  
  SIA_move_forward_with_the_protestors: "Move Forward with the Protestors"
  SIA_move_forward_with_the_protestors_desc: ""
  
  SIA_ally_with_workers_union: "Ally with Workers Union"
- SIA_ally_with_workers_union_desc: ""
+ SIA_ally_with_workers_union_desc: "They have taken untold millions that they never toiled to earn,\nBut without our brain and muscle not a single wheel can turn.\nWe can break their haughty power, gain our freedom when we learn\nThat the union makes us strong.\n\nSolidarity Forever (song)\n- Ralph Chaplin"
  
  SIA_ladyboys_against_dictatorship: "Ladyboys Against Dictatorship"
- SIA_ladyboys_against_dictatorship_desc: ""
+ SIA_ladyboys_against_dictatorship_desc: "The fight for LGBTQIA+ rights is inseparable from the struggle against the ruling dictatorship. While those in power claim that Thailand is already an accepting nation, they continue to exploit rigid social norms to keep people divided and distracted from systemic inequality. As long as the junta remains in power, LGBTQIA+ rights will remain out of reach."
  
  SIA_a_leftist_united_front: "A Leftist United Front"
  SIA_a_leftist_united_front_desc: ""
@@ -75,7 +75,7 @@
  SIA_khana_ratsadon_reborn_desc: ""
  
  SIA_long_march_through_the_institutions: "Long March Through the Institutions"
- SIA_long_march_through_the_institutions_desc: ""
+ SIA_long_march_through_the_institutions_desc: "Most working-class Thai people, especially older generation Salim boomers, have been so thoroughly indoctrinated by feudalistic dogma since birth that they are often unreceptive or hostile to the ideological views of our movement for revolution and social change, frequently siding with the ruling dictatorship class.\n\nTo truly accomplish social change in Thailand, we, whose membership consists largely of Gen Z, must undertake a "long march through the institutions" a generational shift beginning in the heart of our universities and schools. Students and professors committed to the cause must spearhead efforts to build influence within educational and civic institutions. By playing the long game, we can challenge the Feudalists and Fascists and build the foundations of a more democratic and progressive society, as others have done successfully throughout history."
  
  SIA_thalu_fa: "Thalu Fa"
  SIA_thalu_fa_desc: ""
@@ -93,13 +93,13 @@
  SIA_denouced_the_extremists_desc: ""
  
  SIA_side_with_uncle_tuu: "Side with Uncle Tuu"
- SIA_side_with_uncle_tuu_desc: ""
+ SIA_side_with_uncle_tuu_desc: "We will fulfill our promise, give us just a little more time,\nAnd the beautiful land will return.\nWe will act with integrity, just have trust and faith in us.\nThe land will soon be well, returning happiness to you, the people.\n\nReturning Happiness to Thailand (song)\n - Prayut Chan-o-cha"
  
  SIA_organize_counter_protests: "Organize Counter Protests"
  SIA_organize_counter_protests_desc: ""
  
  SIA_information_operations: "Information Operations"
- SIA_information_operations_desc: ""
+ SIA_information_operations_desc: "Information Operations, often referred to by the initials "IO," are activities conducted by state agencies or organizations to influence public opinion and shape individual perceptions. As a form of psychological operations (psyops), IO can take many forms, including the dissemination of propaganda and coordinated messaging campaigns across both traditional and social media platforms."
  
  SIA_utilized_the_media: "Utilize the Media"
  SIA_utilized_the_media_desc: ""
@@ -208,7 +208,7 @@
  thai_events.5.a: "It still not over for the orange party"
  
  thai_events.6.t: "Oil Crisis Hits Thailand"
- thai_events.6.d: "Political instability in Saudi Arabia has led to a sharp rise in global oil prices, creating a ripple effect across the economy. Although Saudi Arabia accounted for only around 18–20% of Thailand's oil imports, petrol prices within the country have skyrocketed.\n\nThe Ministry of Energy has already invited oil refineries and oil traders to discuss the situation. The ministry reiterated that Thailand's domestic oil reserves are sufficient to meet demand for approximately 100 days and stated that it is also seeking alternative oil sources from other countries and taking measures to mitigate the impact on local consumers.\n\nPrime Minister Prayut Chan-o-cha told the press that his government is closely monitoring the situation in Saudi Arabia and has already taken preemptive measures to mitigate the impact of such developments.\n\nFears of rising oil prices have led to long lines of commuters filling up their vehicles, with many gas stations running out of fuel and being forced to turn customers away. Public dissatisfaction with the government has also increased significantly, compounded by the recent dissolution of the Future Forward Party and the ongoing COVID-19 pandemic."
+ thai_events.6.d: "Political instability in Saudi Arabia has led to a sharp rise in global oil prices, creating a ripple effect across the economy. Although Saudi Arabia accounted for only around 18-20% of Thailand's oil imports, petrol prices within the country have skyrocketed.\n\nThe Ministry of Energy has already invited oil refineries and oil traders to discuss the situation. The ministry reiterated that Thailand's domestic oil reserves are sufficient to meet demand for approximately 100 days and stated that it is also seeking alternative oil sources from other countries and taking measures to mitigate the impact on local consumers.\n\nPrime Minister Prayut Chan-o-cha told the press that his government is closely monitoring the situation in Saudi Arabia and has already taken preemptive measures to mitigate the impact of such developments.\n\nFears of rising oil prices have led to long lines of commuters filling up their vehicles, with many gas stations running out of fuel and being forced to turn customers away. Public dissatisfaction with the government has also increased significantly, compounded by the recent dissolution of the Future Forward Party and the ongoing COVID-19 pandemic."
  thai_events.6.a: "This is worrying"
  
  thai_events.7.t: "A House Divided"
@@ -357,7 +357,7 @@
 
 ###Parliament GUI###
  SIA_parliament_title: "§YHouse of Representatives of Thailand§!"
- SIA_parliament_house_desc: "The House of Representatives of Thailand\n§YSapha Phuthaen Ratsadon§!\n--------------\n\n\n\n\n£GFX_SIA_Sappaya_Sapasathan\n\n\n\n\n\n\n§YThe House of Representatives of Thailand§! has existed since the 1932 Revolution as the country's legislative chamber, although its existence has not been continuous due to Thailand's history of military coups.\n\nServing as the lower house of §Ythe National Assembly of Thailand§!, the House is composed of 500 seats directly elected by citizens through a dual electoral system consisting of constituency-based elections and party-list proportional representation.\n\nSince August 2019, the meeting place of §Ythe National Assembly of Thailand§! has been §YSappaya-Sapasathan§!, the largest parliamentary complex in the world, located on the eastern bank of the Chao Phraya River in Bangkok.\n--------------\n§GHover over a party's name to view information about the party.§!"
+ SIA_parliament_house_desc: "The House of Representatives of Thailand\n§YSapha Phuthaen Ratsadon§!\n--------------\n\n\n\n\n£GFX_SIA_Sappaya_Sapasathan\n\n\n\n\n\n\n§YThe House of Representatives of Thailand (Sapha Phuthaen Ratsadon)§! has existed since the 1932 Revolution as the country's legislative chamber, although its existence has not been continuous due to Thailand's history of military coups.\n\nServing as the lower house of §Ythe National Assembly of Thailand§!, the House is composed of 500 seats directly elected by citizens through a dual electoral system consisting of constituency-based elections and party-list proportional representation.\n\nSince August 2019, the meeting place of §Ythe National Assembly of Thailand§! has been §YSappaya-Sapasathan§!, the largest parliamentary complex in the world, located on the eastern bank of the Chao Phraya River in Bangkok.\n--------------\n§GHover over a party's name to view information about the party.§!"
  
  SIA_parliament_total_seats_header: "§Y--- Parliamentary Breakdown ---§!"
  SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
@@ -494,8 +494,8 @@
  SIA_seat_tt: "§YParliament Seat§!"
  SIA_parliament_vacant_seats_text: "§gVacant: [?SIA_vacant_seats_var|0]§!/500 Seats"
  
- SIA_oil_crisis_cat: "Oil Crisis"
- SIA_oil_crisis_cat_desc: "The Ministry of Energy has stated that the government still possesses oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and careful management will be required to ensure long-term energy security. Currently, supplies are dwindling as global supply disruptions threaten to cripple the economy, and immediate action before the situation spirals out of control."
+ SIA_oil_crisis_cat: "The Oil Crisis"
+ SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
  SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y250 days§! of §YOil in Reserves§!\n"
