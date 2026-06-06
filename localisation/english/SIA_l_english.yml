@@ -533,7 +533,7 @@
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y250 days§! of §YOil in Reserves§!\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y350 days§! of §YOil in Reserves§!\n"
  
  SIA_empty_oil_reserves_causes_damage_mission: "Empty Oil Reserves Cause Damage"
  SIA_empty_oil_reserves_causes_damage_mission_tt: "§gOil in Reserves is currently present§!."
