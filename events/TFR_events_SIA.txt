@@ -367,12 +367,20 @@ country_event = {
     picture = GFX_report_First_Covid_19
 	
 	is_triggered_only = yes
-	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = SIA_coronavirus_ongoing
+			add_ideas = SIA_covid_idea_1
+			activate_mission = SIA_the_pandemic_worsens_mission
+		}
+	}
     option = {
         name = thai_events.17.a
-		set_country_flag = SIA_coronavirus_ongoing
-		add_ideas = SIA_covid_idea_1
-		activate_mission = SIA_the_pandemic_worsens_mission
+		effect_tooltip = {
+			set_country_flag = SIA_coronavirus_ongoing
+			add_ideas = SIA_covid_idea_1
+			activate_mission = SIA_the_pandemic_worsens_mission
+		}
 	}
 }
 

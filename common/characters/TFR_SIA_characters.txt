@@ -342,21 +342,7 @@ characters={
 				small = GFX_SIA_predee_daocha
 			}
 		}
-		advisor={
-			slot = economic_minister
-			idea_token = SIA_predee_daocha_advisor
-			desc = SIA_predee_daocha_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
+		
 	}
 	SIA_anucha_nakasai_char = {
 		name = SIA_anucha_nakasai_char
@@ -365,21 +351,6 @@ characters={
 				small = GFX_SIA_anucha_nakasai
 			}
 		}
-		advisor={
-			slot = intelligence_minister
-			idea_token = SIA_anucha_nakasai_advisor
-			desc = SIA_anucha_nakasai_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
 	}
 
 	SIA_apirat_kongsompong_char = {
