@@ -111,7 +111,7 @@
  SIA_deal_with_the_oil_crisis_desc: ""
  
  SIA_half_payment_policy: "Half Payment Policy"
- SIA_half_payment_policy_desc: ""
+ SIA_half_payment_policy_desc: "To support economic recovery, the government will introduce the Khon La Khrueng (Half-Half) program, an economic stimulus measure designed to boost consumer spending and support small businesses. Under this scheme, the government will cover 50% of eligible purchases made at participating local shops, street vendors, and small enterprises through a mobile digital wallet."
  
  SIA_declare_state_of_emergency: "Declare State of Emergency"
  SIA_declare_state_of_emergency_desc: ""
@@ -315,7 +315,19 @@
  thai_events.27.d: "At 17:00, protesters and organizers began gathering in front of the Samyan Mitrtown shopping mall, then marched along Rama IV Road before turning right onto South Sathorn Road toward the German Embassy.\n\nPolice set up metal barricades and deployed three lines of riot police to block the entrance in front of the embassy building, keeping several companies of officers on standby to secure the perimeter.\n\nThe protesters goal is to submit a letter to the German Ambassador to Thailand, Georg Schmidt, to be forwarded to the German government. The letter requested an investigation into the exercise of royal power by the Thai monarch within German territory. A representative of the protesters also read a statement in three languages: Thai, English, and German.\n\nIn the wake of the demonstration, Prime Minister Prayut Chan-o-cha announced that the government would enforce "all laws" against the demonstrators, and authorities intensified legal actions. Ultimately, 13 key protesters involved in the rally were jointly indicted on charges under both Section 112 (lèse-majesté) and Section 116 (sedition) of the Criminal Code."
  thai_events.27.a: "Einigkeit und Recht und Freiheit!"
 
+ thai_events.28.t: "Hushed Whispers of the Assembly"
+ thai_events.28.d: "Prayut, you're about to get evicted if you dont raise your bop"
+ thai_events.28.a: "..."
+ thai_events_28_tt: "The §Rfate§! of §YPrayut§! will be decided once the §Yday of voting§! arrives."
  
+ thai_events.29.t: "Another Round of Arguments"
+ thai_events.29.d: "One more motion of no confidence for you."
+ thai_events.29.a: "This is getting absurd now."
+ thai_events_29_tt: "This will be §Ythe last hurdle§! for Prayut before the §ROpposition finally loses steam§!."
+ 
+ thai_events.30.t: "Oil Crisis Fades"
+ thai_events.30.d: ""
+ thai_events.30.a: "Back to the gas stations!"
  
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
@@ -447,7 +459,14 @@
  SIA_open_parliament_gui: "View House of Representatives"
  SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
  SIA_first_no_confidence_vote: "First Motion of No Confidence"
+ SIA_second_no_confidence_vote: "Second Motion of No Confidence"
+ SIA_third_no_confidence_vote: "Third Motion of No Confidence"
  SIA_2020_budget_bill_vote: "2020 Budget Bill"
+ SIA_emergency_loan_bill_covid: "§RCOVID§!: Emergency Loan Bill"
+ SIA_emergency_loan_bill_covid_desc: "With the current global situation affecting Thailand, the government has promulgated the 1 Trillion Baht Borrowing Decree, officially known as the Emergency Decree Authorising the Ministry of Finance to Raise Loans to Solve Problems, Remedy, and Restore the Economy and Society Affected by the Coronavirus Disease Pandemic.\n\nIf approved by Parliament, it would authorize borrowing of up to 1 trillion baht, making it the largest borrowing measure in Thailand's history to date and far exceeding the scale of previous emergency funding programs."
+ SIA_emergency_loan_bill_oil_crisis: "§YOil Crisis§!: Emergency Loan Bill"
+ SIA_emergency_loan_bill_oil_crisis_desc: "Under normal circumstances, the Oil Fuel Fund Act of 2019 strictly regulates how the government may intervene in fuel markets. To prevent the state from accumulating excessive liabilities, the law caps the fund's borrowing authority at 40 billion baht.\n\nHowever, during a major global crisis such as the situation in Saudi Arabia, 40 billion baht is merely a drop in the bucket and is insufficient to stabilize domestic fuel prices for any meaningful period of time. To address this extraordinary situation, the government has proposed an emergency decree authorizing the Ministry of Finance to guarantee up to 150 billion baht in commercial loans for the Oil Fuel Fund, significantly expanding its financial capacity to cushion the impact of soaring energy costs and ensure continued support for consumers and businesses facing rising fuel prices."
+
 
  SIA_coronavirus_category: "COVID-19 Outbreak"
  SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]\n\nForeign Vaccines Secured: 0/2"
@@ -461,6 +480,21 @@
  
  SIA_found_top_news: "Launch Top News"
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
+
+ SIA_utilize_pegasus_against_key_agitators: "Utilize Pegasus Spyware Against Key Agitators"
+ SIA_utilize_pegasus_against_key_agitators_desc: "Pegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor “those who pose a threat” to “national security” with Thailand being one of them."
+ 
+ SIA_cyber_warfare_with_the_three_hooves: "Cyber Warfare With The Three Hooves"
+ SIA_cyber_warfare_with_the_three_hooves_desc: "Our agents will use sock puppet accounts on social media sites such as Twitter and Facebook to attack the opposition, revealing and disseminating negative information about the government opponents."
+ 
+ SIA_jay_juk_khlong_sam: "Jay Juk Khlong Sam"
+ SIA_jay_juk_khlong_sam_desc: "Our agents will create a Twitter account named 'Jay Juk Khlong Sam' (Sister Juk of Canal Sam), featuring a profile picture of Charlotte Linlin from the anime One Piece (chosen simply because one of our agents likes the show). This account will be used to post content opposing the three-finger protesters."
+ 
+ SIA_botted_engagement_on_the_rco_facebook_page: "Botted Engagement on the RCO Facebook Page"
+ SIA_botted_engagement_on_the_rco_facebook_page_desc: "Our agents will use bots to drive engagement on the Facebook page of the royalist Rubbish Collection Organization."
+ 
+
+
 
  SIA_government_action_1: "§YGovernment§!: Establish CCSA"
  SIA_government_action_2: "§YGovernment§!: Declare State of Emergency"
@@ -500,6 +534,10 @@
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
  SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y250 days§! of §YOil in Reserves§!\n"
+ 
+ SIA_empty_oil_reserves_causes_damage_mission: "Empty Oil Reserves Cause Damage"
+ SIA_empty_oil_reserves_causes_damage_mission_tt: "§gOil in Reserves is currently present§!."
+ SIA_empty_oil_reserves_causes_damage_mission_tt2: "§g§YThe Oil Crisis§! will go back to the first level.§!"
  
  SIA_activate_the_asean_petroleum_security_agreement: "Activate the ASEAN Petroleum Security Agreement"
  SIA_activate_the_asean_petroleum_security_agreement_desc: "Thailand, as a major member of ASEAN, remains heavily dependent on imported energy, unlike Malaysia and Indonesia, which possess significant petroleum reserves and have historically been net exporters of oil and gas. With the ongoing global oil crisis. Thailand should engage fellow ASEAN members to activate emergency fuel-sharing mechanisms under the ASEAN Petroleum Security Agreement (APSA). This would help secure regional crude oil and petroleum supplies to offset potential shortages and strengthen regional energy security."
@@ -567,3 +605,8 @@
  
  #Leader Traits
  SIA_Vajiralongkorn: "Vajiralongkorn"
+ 
+ 
+ #Decision cost tooltip for this mod that uses
+ dx_more_than_25B_and_15pp: "£dx  §H25B§! £pol_power  §H15§!"
+ dx_more_than_25B_and_15pp_blocked: "£dx  §R25B§! £pol_power  §R15§!"

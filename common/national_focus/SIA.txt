@@ -443,7 +443,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = 25
+			}
 		}
 	}
 	focus = {
@@ -506,7 +509,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_found_top_news
 		}
 	}
 	focus = {
@@ -604,7 +607,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1.437
+			}
+			add_debt = yes
+			add_timed_idea = {
+				idea = SIA_half_payment_policy
+				days = 160
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.15
+			}
 		}
 	}
 	focus = {
@@ -647,7 +662,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_political_power = 50
+			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
+			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
+			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
+			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
 		}
 	}
 	focus = {
