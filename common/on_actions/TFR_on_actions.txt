@@ -16,7 +16,6 @@ on_actions = {
 				#Events
 				country_event = { id = thai_events.1 days = 49 } #Constitutional Court's Verdict on the Future Foward Party
 				country_event = { id = thai_events.2 days = 1 } #A New Year, With Nothing New
-				country_event = { id = thai_events.3 days = 10 } #Budget Bill Passed
 				country_event = { id = thai_events.6 days = 69 random_days = 9 } #Oil Crisis Hits Thailand
 				country_event = { id = thai_events.8 days = 154 } #Abduction and Disappearance of Wanchalearm Satsaksit
 				country_event = { id = thai_events.9 days = 55 } #Cobra Gold 2020
@@ -36,7 +35,7 @@ on_actions = {
 				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
 				set_variable = { bangkok_mayor = 0 }
 				activate_mission = SIA_first_no_confidence_vote
-				
+				activate_mission = SIA_2020_budget_bill_vote
 			}
 		}
 	}
