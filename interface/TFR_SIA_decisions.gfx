@@ -1,0 +1,19 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_SIA_ASEAN_Petrol_Agreement"
+		textureFile = "gfx/interface/decisions/SIA_ASEAN_Petrol_Agreement.png"
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_Expand_Fuel_Storage"
+		textureFile = "gfx/interface/decisions/SIA_Expand_Fuel_Storage.png"
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_solar_farm_decision_icon"
+		textureFile = "gfx/interface/decisions/SIA_solar_farm_decision_icon.png"
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_Enact_Oil_Rationing"
+		textureFile = "gfx/interface/decisions/SIA_Enact_Oil_Rationing.png"
+	}
+	
+}
