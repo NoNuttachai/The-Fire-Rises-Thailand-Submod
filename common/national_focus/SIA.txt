@@ -159,6 +159,8 @@ focus_tree = {
 				mission = SIA_oil_in_reserves_mission
 				days = 20
 			}
+			unlock_decision_tooltip = SIA_demonstrate_infront_of_the_ministry_of_energy
+			unlock_decision_tooltip = SIA_demonstrate_infront_of_the_ptt_headquarters
 		}
 	}
 	focus = {

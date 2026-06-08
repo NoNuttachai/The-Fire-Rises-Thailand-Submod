@@ -493,8 +493,12 @@
  SIA_botted_engagement_on_the_rco_facebook_page: "Botted Engagement on the RCO Facebook Page"
  SIA_botted_engagement_on_the_rco_facebook_page_desc: "Our agents will use bots to drive engagement on the Facebook page of the royalist Rubbish Collection Organization."
  
-
-
+ SIA_demonstrate_infront_of_the_ministry_of_energy: "Demonstrate Infront of the Ministry of Energy"
+ SIA_demonstrate_infront_of_the_ministry_of_energy_desc: "We will organize a demonstration against the Ministry of Energy in cooperation with workers' unions and student activist groups in front of the Ministry of Energy headquarters in Bangkok, demanding immediate action to address the worsening fuel crisis."
+ 
+ SIA_demonstrate_infront_of_the_ptt_headquarters: "Demonstrate Infront of the PTT Headquarters"
+ SIA_demonstrate_infront_of_the_ptt_headquarters_desc: "We will organize a demonstration against PTT Public Company Limited, urging the company to prioritize the public interest over corporate profits during this period of economic hardship."
+ 
 
  SIA_government_action_1: "§YGovernment§!: Establish CCSA"
  SIA_government_action_2: "§YGovernment§!: Declare State of Emergency"
