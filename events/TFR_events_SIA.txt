@@ -164,7 +164,12 @@ country_event = {
 		complete_national_focus = SIA_side_with_uncle_tuu
 		hidden_effect = {
 			activate_mission = SIA_protestor_action_1
+			activate_mission = SIA_the_protests_intensify
 		}
+	}
+	after = {
+		set_country_flag = SIA_anti_government_protests
+		add_ideas = SIA_active_protests_1
 	}
 }
 country_event = {
@@ -620,11 +625,50 @@ country_event = {
 		}
 	}
 }
+country_event = {
+    id = thai_events.31 # Pattani Peace
+    title = thai_events.31.t
+    desc = thai_events.31.d
+	picture = GFX_report_Thai_Peacetalks_22_Jan_2020
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.31.a
+		1492 = {
+			add_core_of = SIA
+		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+    id = thai_events.32 # Saudi Civil War Causes Pattani Ceasefire Collapse
+    title = thai_events.32.t
+    desc = thai_events.32.d
+	picture = GFX_report_Thai_Peacetalks_22_Jan_2020
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SIA
+		has_global_flag = SAU_saudi_civil_war_global
+	}
+	
+    option = {
+        name = thai_events.32.a
+		1492 = {
+			remove_core_of = SIA
+			add_dynamic_modifier = { modifier = SIA_southern_fire_state_modifier }
+			hidden_effect = {
+				start_resistance = yes
+				set_resistance = 15
+			}
+		}
+	}
+}
 news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t
     desc = thai_newsevents.1.d
-    picture = GFX_Riyadh_Protests
+    picture = GFX_global_event_2020_Thai_Protests_Global_Event
 	
 	is_triggered_only = yes
 

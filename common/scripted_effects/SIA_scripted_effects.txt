@@ -156,6 +156,32 @@ SIA_increase_oil_crisis = {
 		add_stability = -0.05
 	}
 }
+SIA_increase_protests = {
+	if = {
+		limit = {
+			has_idea = SIA_active_protests_1
+		}
+		swap_ideas = {
+			remove_idea = SIA_active_protests_1
+			add_idea = SIA_active_protests_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_active_protests_2
+		}
+		swap_ideas = {
+			remove_idea = SIA_active_protests_2
+			add_idea = SIA_active_protests_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_oil_crisis_3
+		}
+		add_stability = -0.05
+	}
+}
 SIA_oil_crisis_restore_back_to_first_level = {
 	hidden_effect = {
 		remove_ideas = {

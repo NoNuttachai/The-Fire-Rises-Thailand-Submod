@@ -10,7 +10,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_future_forward_on_trial
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 7
 		y = 0
 		cost = 7
@@ -32,7 +32,7 @@ focus_tree = {
 	# Left Side - Protests
 	focus = {
 		id = SIA_raise_our_three_fingers
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -5
 		y = 1
 		cost = 5
@@ -44,17 +44,22 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
+			is_completed_by_event = yes
 		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			custom_effect_tooltip = SIA_raise_our_three_fingers_tt
 			country_event = thai_events.4
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	focus = {
 		id = SIA_begin_student_activism
-		icon = GFX_TFX_goal_SIA_begin_student_activism
+		icon = GFX_goal_SIA_begin_student_activism
 		x = -2
 		y = 1
 		cost = 5
@@ -75,7 +80,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_approach_foreign_media_and_advocacy_groups
-		icon = GFX_TFX_goal_SIA_approach_foreign_media_and_advocacy_groups
+		icon = GFX_goal_SIA_approach_foreign_media_and_advocacy_groups
 		x = -1
 		y = 1
 		cost = 5
@@ -96,7 +101,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_a_leftist_united_front
-		icon = GFX_TFX_goal_SIA_a_leftist_united_front
+		icon = GFX_goal_SIA_a_leftist_united_front
 		x = 2
 		y = 1
 		cost = 5
@@ -118,7 +123,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_expand_protestor_base
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 2
 		cost = 5
@@ -139,7 +144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_petrol_demonstrations
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 2
 		y = 1
 		cost = 5
@@ -165,7 +170,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_ally_with_workers_union
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 1
 		cost = 5
@@ -186,7 +191,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_move_forward_with_the_protestors
-		icon = GFX_TFX_goal_SIA_move_forward_with_the_protestors
+		icon = GFX_goal_SIA_move_forward_with_the_protestors
 		x = -2
 		y = 1
 		cost = 5
@@ -208,7 +213,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_ladyboys_against_dictatorship
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
 		y = 2
 		cost = 5
@@ -229,7 +234,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_khana_ratsadon_reborn
-		icon = GFX_TFX_goal_SIA_khana_ratsadon_reborn
+		icon = GFX_goal_SIA_khana_ratsadon_reborn
 		x = 1
 		y = 1
 		cost = 5
@@ -251,7 +256,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_social_media_activism
-		icon = GFX_TFX_goal_SIA_social_media_campaigning
+		icon = GFX_goal_SIA_social_media_campaigning
 		x = 2
 		y = 1
 		cost = 5
@@ -272,7 +277,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_long_march_through_the_institutions
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 0
 		y = 1
 		cost = 5
@@ -295,7 +300,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_thalu_fa
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -2
 		y = 1
 		cost = 5
@@ -317,7 +322,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_thalu_gaz
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 0
 		y = 1
 		cost = 5
@@ -339,7 +344,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_fight_the_arrests
-		icon = GFX_TFX_goal_SIA_fight_the_arrests
+		icon = GFX_goal_SIA_fight_the_arrests
 		x = 2
 		y = 1
 		cost = 5
@@ -361,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_the_people_wrath
-		icon = GFX_TFX_goal_SIA_make_them_face_our_wrath
+		icon = GFX_goal_SIA_make_them_face_our_wrath
 		x = 1
 		y = 1
 		cost = 5
@@ -384,7 +389,7 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_denouced_the_extremists
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
 		y = 1
 		cost = 5
@@ -407,7 +412,7 @@ focus_tree = {
 	# Right Side - Prayut
 	focus = {
 		id = SIA_side_with_uncle_tuu
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 5
 		y = 1
 		cost = 5
@@ -419,17 +424,21 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			always = no
+			is_completed_by_event = yes
 		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = SIA_side_with_uncle_tuu_tt
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	focus = {
 		id = SIA_establish_ccsa
-		icon = GFX_TFX_goal_SIA_CCSA
+		icon = GFX_goal_SIA_CCSA
 		x = -2
 		y = 1
 		cost = 5
@@ -449,11 +458,12 @@ focus_tree = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 25
 			}
+			activate_mission = SIA_securing_vaccine_supply
 		}
 	}
 	focus = {
 		id = SIA_declare_state_of_emergency
-		icon = GFX_TFX_goal_SIA_State_of_Emergency
+		icon = GFX_goal_SIA_State_of_Emergency
 		x = -1
 		y = 1
 		cost = 5
@@ -474,7 +484,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_persecute_the_agitators
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 2
 		cost = 5
@@ -495,7 +505,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_utilized_the_media
-		icon = GFX_TFX_goal_SIA_utilized_the_media_on_our_side
+		icon = GFX_goal_SIA_utilized_the_media_on_our_side
 		x = 2
 		y = 1
 		cost = 5
@@ -516,7 +526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_deal_with_the_oil_crisis
-		icon = GFX_TFX_goal_SIA_Oil_Crisis
+		icon = GFX_goal_SIA_Oil_Crisis
 		x = 2
 		y = 1
 		cost = 5
@@ -546,7 +556,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_thailand_petrol_diplomacy
-		icon = GFX_TFX_goal_SIA_grant_oil_subsidies
+		icon = GFX_goal_SIA_grant_oil_subsidies
 		x = 1
 		y = 1
 		cost = 5
@@ -572,7 +582,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_secured_support_from_conservatives
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 1
 		cost = 5
@@ -593,7 +603,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_half_payment_policy
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
 		y = 2
 		cost = 5
@@ -626,7 +636,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_organize_counter_protests
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 1
 		cost = 5
@@ -648,7 +658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_information_operations
-		icon = GFX_TFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 2
 		y = 1
 		cost = 5
@@ -673,7 +683,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_deploy_the_riot_police
-		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = 0
 		y = 1
 		cost = 5
@@ -695,7 +705,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_phuket_sandbox
-		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = -2
 		y = 1
 		cost = 5
@@ -716,7 +726,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_covid_vaccine_drive
-		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = 2
 		y = 1
 		cost = 5
@@ -737,7 +747,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_further_crackdowns
-		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = 0
 		y = 1
 		cost = 5
@@ -758,7 +768,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_smother_the_flames
-		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = -1
 		y = 1
 		cost = 5
@@ -780,7 +790,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_deploy_the_army
-		icon = GFX_TFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = 1
 		y = 1
 		cost = 5

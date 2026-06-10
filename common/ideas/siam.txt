@@ -385,6 +385,48 @@ ideas = {
 				expense_growth_factor = 0.15
 			}
 		}
+		SIA_active_protests_1 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		SIA_active_protests_2 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		SIA_active_protests_3 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
 		SIA_half_payment_policy = {
 			picture = generic_covid
 			traits = {

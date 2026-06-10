@@ -88,4 +88,13 @@ spriteTypes = {
 		name = "GFX_report_protests_in_front_of_ptt_hq"
 		texturefile = "gfx/event_pictures/report_event_protests_in_front_of_ptt_hq.png"
 	}
+	spriteType = {
+		name = "GFX_report_Thai_Peacetalks_22_Jan_2020"
+		texturefile = "gfx/event_pictures/report_Thai_Peacetalks_22_Jan_2020.png"
+	}
+	#World News
+	spriteType = {
+		name = "GFX_global_event_2020_Thai_Protests_Global_Event"
+		texturefile = "gfx/event_pictures/global_event_2020_Thai_Protests_Global_Event.png"
+	}
 }

@@ -1,6 +1,6 @@
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_Another_Year_with_Prayut_shine"
+		name = "GFX_goal_SIA_Another_Year_with_Prayut_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -31,7 +31,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_a_leftist_united_front_shine"
+		name = "GFX_goal_SIA_a_leftist_united_front_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_a_leftist_united_front.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -62,7 +62,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_begin_student_activism_shine"
+		name = "GFX_goal_SIA_begin_student_activism_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_begin_student_activism.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -93,7 +93,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_social_media_campaigning_shine"
+		name = "GFX_goal_SIA_social_media_campaigning_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_social_media_campaigning.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -124,7 +124,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_deploy_the_riot_police_shine"
+		name = "GFX_goal_SIA_deploy_the_riot_police_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_deploy_the_riot_police.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -155,7 +155,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_reestablish_relations_with_the_saudis_shine"
+		name = "GFX_goal_SIA_reestablish_relations_with_the_saudis_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_reestablish_relations_with_the_saudis.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -186,7 +186,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_arabian_republic_thai_brigades_shine"
+		name = "GFX_goal_SIA_arabian_republic_thai_brigades_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_arabian_republic_thai_brigades.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -217,7 +217,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_make_them_face_our_wrath_shine"
+		name = "GFX_goal_SIA_make_them_face_our_wrath_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_make_them_face_our_wrath.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -248,7 +248,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_utilized_the_media_on_our_side_shine"
+		name = "GFX_goal_SIA_utilized_the_media_on_our_side_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_utilized_the_media_on_our_side.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -279,7 +279,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_grant_oil_subsidies_shine"
+		name = "GFX_goal_SIA_grant_oil_subsidies_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -310,7 +310,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_khana_ratsadon_reborn_shine"
+		name = "GFX_goal_SIA_khana_ratsadon_reborn_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_khana_ratsadon_reborn.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -341,7 +341,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_maintain_peaceful_protests_shine"
+		name = "GFX_goal_SIA_maintain_peaceful_protests_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_maintain_peaceful_protests.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -372,7 +372,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_TFX_goal_SIA_fight_the_arrests_shine"
+		name = "GFX_goal_SIA_fight_the_arrests_shine"
 		texturefile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -390,6 +390,37 @@ spriteTypes = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_CCSA_shine"
+		texturefile = "gfx/interface/goals/SIA/SIA_CCSA.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/SIA_CCSA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/SIA_CCSA.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

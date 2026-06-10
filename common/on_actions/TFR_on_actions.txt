@@ -33,6 +33,7 @@ on_actions = {
 				country_event = { id = thai_events.27 days = 298 } #March to the German Embassy: 26th October Mob
 				country_event = { id = thai_events.28 days = 240 } #Warning that a 2nd motion of no confidence is coming
 				country_event = { id = thai_events.30 days = 600 } #Kill Oil Crisis Automatically if the player still has it for some reason
+				country_event = { id = thai_events.31 days = 19 } #Pattani Peace
 				
 				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
 				set_variable = { bangkok_mayor = 0 }

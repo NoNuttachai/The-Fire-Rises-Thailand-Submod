@@ -40,6 +40,7 @@
  
  SIA_raise_our_three_fingers: "Raise our Three Fingers"
  SIA_raise_our_three_fingers_desc: "The government's decision to dissolve §Othe Future Forward Party§! opened the eyes of an entire generation of young Thais to the reality of authoritarian rule and a political system stacked against them. Unlike previous generations, they are not willing to accept things simply because "that is the way they have always been." These young people are standing up to challenge the status quo and demand real change. They will §Omove forward§! with the §Opeople§! in the pursuit of democracy. Our voices cannot be ignored, and our three fingers will be raised!."
+ SIA_raise_our_three_fingers_tt: "Side with the §YGovernmental Opposition§! to §Roust§! §BPrayut Chan-o-cha§! from power."
  
  SIA_begin_student_activism: "Begin Student Activism"
  SIA_begin_student_activism_desc: ""
@@ -94,6 +95,7 @@
  
  SIA_side_with_uncle_tuu: "Side with Uncle Tuu"
  SIA_side_with_uncle_tuu_desc: "We will fulfill our promise, give us just a little more time,\nAnd the beautiful land will return.\nWe will act with integrity, just have trust and faith in us.\nThe land will soon be well, returning happiness to you, the people.\n\nReturning Happiness to Thailand (song)\n - Prayut Chan-o-cha"
+ SIA_side_with_uncle_tuu_tt: "Side with §YPrayut§! and restore §Rlaw and order§! back to §LThailand§!."
  
  SIA_organize_counter_protests: "Organize Counter Protests"
  SIA_organize_counter_protests_desc: ""
@@ -186,6 +188,11 @@
  SIA_lottery_conscription_desc: ""…what makes Thailand's system of conscription interesting is the fact that it operates based on a lottery system with each recruitment center every April having a set quota of bodies that it must enlist in the service dictating how big the lottery is set to be…\n\n…you are to draw your card and face the large crowd of other lads and their mortified mothers, if the card you draw is black, lucky you!, you get to waddle home and continue on with your life unmolested, §Rif your card is red however….§!"\n- Count Dankula (Mark Meechan)"
  SIA_low_income_only_welfare: "Low-Income Only Welfare"
  SIA_low_income_only_welfare_desc: ""Today, nobody wants to be called poor. I don't look at them that way either, But We have to expand their income with many projects that can't make them out of the poverty but will make them happy." - Prayut Chan-O-Cha"
+ 
+ SIA_active_protests_1: "Minor Anti-Governmental Demonstrations"
+ SIA_active_protests_2: "Mass Protests"
+ SIA_active_protests_3: "Mass Riots"
+ 
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -329,6 +336,14 @@
  thai_events.30.d: ""
  thai_events.30.a: "Back to the gas stations!"
  
+ thai_events.31.t: "Pattani Peace Talks Conclude"
+ thai_events.31.d: "Today, the Thai government and the Barisan Revolusi Nasional (BRN), the largest insurgent group operating in Thailand's southern border provinces, held their first direct peace talks in Kuala Lumpur, Malaysia. The negotiations marked a significant breakthrough in efforts to resolve the insurgency that has affected Pattani, Yala, Narathiwat, and parts of Songkhla since 2004.\n\nThe talks took place on the same day that Prime Minister and Minister of Defence General Prayut Chan-o-cha visited Narathiwat Province. Facilitated by Malaysia, the meeting brought together the Thai Peace Dialogue Panel, led by General Wanlop Rugsanaoh, and a BRN delegation headed by Anas Abdulrahman. Both sides described the discussions as constructive and agreed on a framework for future negotiations aimed at reducing violence and advancing a peaceful resolution to the conflict.\n\nThe opening of direct talks was widely regarded as a major step forward in the southern peace process, though officials acknowledged that significant challenges remained before a lasting settlement could be achieved."
+ thai_events.31.a: "Let toast to peace! Oh... alcohol is haram."
+ 
+ thai_events.32.t: "Pattani Falls into Chaos"
+ thai_events.32.d: "Something something saudi civil war caused this btw"
+ thai_events.32.a: "Peace was never meant to be."
+ 
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
  #thailand_nonpolitical.1.a: ""
@@ -469,14 +484,24 @@
 
 
  SIA_coronavirus_category: "COVID-19 Outbreak"
- SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]\n\nForeign Vaccines Secured: 0/2"
+ SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]"
  SIA_the_pandemic_worsens_mission: "The Pandemic Worsens"
  SIA_the_pandemic_lessens_mission: "The Pandemic Lessens"
+ 
+ SIA_securing_vaccine_supply: "Securing Vaccine Supply"
+ SIA_securing_vaccine_supply_desc: ""
+ SIA_securing_vaccine_supply_tt: "We will start deploying vaccines, §GCovid will now stop spreading§!"
+ 
+ SIA_nationwide_vaccinations: "Nationwide Vaccination"
+ SIA_nationwide_vaccinations_desc: ""
+ 
+ 
  SIA_covid_idea_1: "Mild Coronavirus Cases"
  SIA_covid_idea_2: "Moderate Coronavirus Cases"
  SIA_covid_idea_3: "Serious Coronavirus Cases"
  SIA_covid_idea_4: "Crippling Coronavirus Cases"
  SIA_covid_idea_5: "Catastrophic Coronavirus Cases"
+ SIA_covid_free: "§LThailand§! will now be §GCovid free§!"
  
  SIA_found_top_news: "Launch Top News"
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
@@ -523,7 +548,13 @@
  SIA_protestor_action_9: "§RProtestors§!: Khana Ratsadon Reborn"
  SIA_protestor_action_10: "§RProtestors§!: Ladyboys Against Dictatoship"
  SIA_protestor_action_11: "§RProtestors§!: Long March Through the Institutions"
-
+ 
+ SIA_protests_category: "Anti Government Protests"
+ SIA_protests_category_desc: "Anti-government protests and demonstrations emerged following the Constitutional Court's decision to dissolve the Future Forward Party, sparking widespread outrage, particularly among younger Thais who viewed it as an attack on democratic representation. Combined with growing dissatisfaction with the government, the ruling catalyzed a new wave of political activism.\n\nDemonstrations soon erupted at high schools and universities across the country. Led primarily by students and young people, with support from some labor unions and opposition parties, the movement was highly decentralized and operated without a single leader, relying instead on social media to organize events, share information, and coordinate actions.\n\nCurrent §OIntensity§! of the Protests: \n§O[SIA_protest_status]§!\n\nCurrently we are supporting: [SIAGetSideSupported]"
+ SIA_the_protests_intensify: "The Protests Intensify"
+ 
+ SIA_supported_prayut: "The §GGovernment§!"
+ SIA_supported_opposition: "The §RProtestors§!"
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
@@ -594,6 +625,9 @@
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
  #State Modifiers
+ SIA_southern_fire_state_modifier: "Southern Fire"
+ SIA_southern_fire_state_modifier_desc: "Southern Fire Description"
+ 
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n[SIAGetBangkokMayor]"
  SIA_bangkok_mayor0: "£GFX_idea_SIA_Aswin_Kwanmuang1_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"

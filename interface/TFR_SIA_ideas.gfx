@@ -99,6 +99,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/BMA.png"
 	}
 	spriteType = {
+		name = "GFX_idea_SIA_SouthernFire"
+		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_SouthernFire.png"
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_Aswin_Kwanmuang1_portrait"
 		textureFile = "gfx/interface/ideas/SIA/SIA_Aswin_Kwanmuang1_portrait.png"
 		legacy_lazy_load = no
