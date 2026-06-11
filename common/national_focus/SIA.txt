@@ -529,7 +529,7 @@ focus_tree = {
 		completion_reward = {
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 20
+				days = 35
 			}
 			set_country_flag = SIA_deal_with_the_oil_crisis
 			unlock_decision_tooltip = SIA_enact_oil_rationing_measures
