@@ -167,6 +167,11 @@
  SIA_anucha_nakasai_char: "Anucha Nakasai [£SIA_anucha_nakasai_char_advisor_desc]"
  SIA_anucha_nakasai_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
 
+ SIA_adung_phan_iam_char: "Adung Phan-iam"
+ SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
+ SIA_jirapol_wongwit_char: "Jirapol Wongwit"
+ SIA_somprasong_nilsamai_char: "Somprasong Nilsamai"
+
  ###Startup Menu###
  SIA_country_summary: "§YCountry Summary§!:\nThailand, the "Land of Smiles," is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country`s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
  SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§g - United Thai Nation Party§!\n§B - Bhumjaithai Party§!\n§R - Pheu Thai Party§!\n§O - Move Forward / People's Party§!"
@@ -550,7 +555,7 @@
  SIA_protestor_action_11: "§RProtestors§!: Long March Through the Institutions"
  
  SIA_protests_category: "Anti Government Protests"
- SIA_protests_category_desc: "Anti-government protests and demonstrations emerged following the Constitutional Court's decision to dissolve the Future Forward Party, sparking widespread outrage, particularly among younger Thais who viewed it as an attack on democratic representation. Combined with growing dissatisfaction with the government, the ruling catalyzed a new wave of political activism.\n\nDemonstrations soon erupted at high schools and universities across the country. Led primarily by students and young people, with support from some labor unions and opposition parties, the movement was highly decentralized and operated without a single leader, relying instead on social media to organize events, share information, and coordinate actions.\n\nCurrent §OIntensity§! of the Protests: \n§O[SIA_protest_status]§!\n\nCurrently we are supporting: [SIAGetSideSupported]"
+ SIA_protests_category_desc: "\n\n\n\n\n£GFX_SIA_protest_banner\n\n\n\n\n\n\n\nThe Constitutional Court's dissolution of the Future Forward Party sparked widespread outrage, particularly among younger Thais who saw it as an attempt to suppress political opposition. Combined with growing dissatisfaction with the government, the ruling triggered a wave of political activism and demonstrations.\n\nLed primarily by students and young people, with support from some labor unions and opposition parties, the movement is highly decentralized, relying on social media to organize events, share information, and coordinate actions.\n\nCurrent §OIntensity§! of the Protests: \n§O[SIA_protest_status]§!\n\nCurrently we are supporting: [SIAGetSideSupported]"
  SIA_the_protests_intensify: "The Protests Intensify"
  
  SIA_supported_prayut: "The §GGovernment§!"

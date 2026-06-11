@@ -601,6 +601,70 @@ characters={
 			}
 		}
 	}
+	SIA_adung_phan_iam_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_adung_phan_iam.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_choengchai_chomchoengpaet_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_choengchai_chomchoengpaet.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_jirapol_wongwit_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_jirapol_wongwit.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_somprasong_nilsamai_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_somprasong_nilsamai.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
 	SIA_santi_sakuntanak_char = {
 		portraits={
 			civilian = {
