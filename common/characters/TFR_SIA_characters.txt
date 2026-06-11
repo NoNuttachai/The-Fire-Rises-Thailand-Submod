@@ -272,21 +272,14 @@ characters={
 				small = GFX_SIA_anupong_paochinda
 			}
 		}
-		advisor={
-			slot = interior_minister
-			idea_token = SIA_anupong_paochinda_advisor
-			desc = SIA_anupong_paochinda_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
+		advisor = {
+			slot = high_command
+			idea_token = SIA_anupong_paochinda_high_command
+			traits = { army_regrouping_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+			
 	}
 	SIA_thewan_liptapanlop_char = {
 		name = SIA_thewan_liptapanlop_char
@@ -359,6 +352,18 @@ characters={
 				large = GFX_portrait_SIA_apirat_kongsompong
 			}
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_apirat_kongsompong_army_chief
+			traits = { 
+				army_chief_offensive_2 
+			}
+			
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		country_leader = {
 			ideology = hybrid_regime
 		}
@@ -383,6 +388,20 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_airbull_suttiwan.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Airbull_Suttiwan.png"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_airbull_suttiwan_air_chief
+			ledger = navy
+
+			traits = {
+				air_chief_safety_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		corps_commander={
@@ -401,6 +420,13 @@ characters={
 			army = {
 				large = "gfx/leaders/SIA/SIA_chalermpol_srisawat.png"
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_chalermpol_srisawat_high_command
+			traits = { army_entrenchment_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
 		}
 		field_marshal={
 			skill=2
@@ -474,6 +500,18 @@ characters={
 				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
 			}
 		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_apirat_kongsompong_army_chief
+			traits = { 
+				army_chief_defensive_2 
+			}
+			
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		corps_commander={
 			skill=1
 			attack_skill=2
@@ -484,11 +522,58 @@ characters={
 			}
 		}
 	}
+	SIA_charoenchai_hinthao_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_charoenchai_hinthao_army_chief
+			traits = { 
+				army_chief_planning_2 
+			}
+			
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
+	SIA_phana_khlaeoplotthuk_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_phana_khlaeoplotthuk_army_chief
+			traits = { 
+				army_chief_organizational_2 
+			}
+			
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+	}
 	SIA_natthaphon_narkphanit_char = {
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_natthaphon_narkphanit.png"
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_natthaphon_narkphanit_high_command
+			traits = { army_regrouping_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
 		}
 		corps_commander={
 			skill=2
@@ -524,6 +609,20 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_punpakdee_pattanakul.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Punpakdee_Pattanakul.png"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_punpakdee_pattanakul_air_chief
+			ledger = navy
+
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		corps_commander={
@@ -573,6 +672,20 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_luechai_ruddit.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Luechai_Ruddit.png"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SIA_luechai_ruddit_navy_chief
+			ledger = navy
+
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		navy_leader={
@@ -582,6 +695,8 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=1
 			traits={
+				superior_tactician
+				ironside
 			}
 		}
 	}
@@ -589,6 +704,20 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_chatchai_sriworakan.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Chatchai_Sriworakan.png"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SIA_chatchai_sriworakan_navy_chief
+			ledger = navy
+
+			traits = {
+				navy_chief_commerce_raiding_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		navy_leader={
@@ -598,6 +727,7 @@ characters={
 			maneuvering_skill=1
 			coordination_skill=2
 			traits={
+				seawolf
 			}
 		}
 	}
@@ -605,7 +735,15 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_adung_phan_iam.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Adung_Phan_iam.png"
 			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_adung_phan_iam_high_command
+			traits = { navy_fleet_logistics_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
 		}
 		navy_leader={
 			skill=2
@@ -614,6 +752,8 @@ characters={
 			maneuvering_skill=1
 			coordination_skill=2
 			traits={
+				fleet_protector
+			    spotter
 			}
 		}
 	}
@@ -621,6 +761,7 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_choengchai_chomchoengpaet.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Choengchai_Chomchoengpaet.png"
 			}
 		}
 		navy_leader={
@@ -630,6 +771,7 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=2
 			traits={
+				fly_swatter
 			}
 		}
 	}
@@ -637,6 +779,20 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_jirapol_wongwit.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Jirapol_Wongwit.png"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SIA_jirapol_wongwit_navy_chief
+			ledger = navy
+
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		navy_leader={
@@ -646,6 +802,8 @@ characters={
 			maneuvering_skill=3
 			coordination_skill=2
 			traits={
+				superior_tactician
+				blockade_runner
 			}
 		}
 	}
@@ -653,6 +811,20 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_somprasong_nilsamai.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Somprasong_Nilsamai.png"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = SIA_somprasong_nilsamai_navy_chief
+			ledger = navy
+
+			traits = {
+				navy_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
 			}
 		}
 		navy_leader={
@@ -662,7 +834,105 @@ characters={
 			maneuvering_skill=2
 			coordination_skill=2
 			traits={
+				spotter
+				fly_swatter
 			}
+		}
+	}
+	SIA_manat_wongwat_char = {
+		portraits={
+			army = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Manat_Wongwat.png"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = TAH_air_chief1_air_chief
+			ledger = navy
+
+			traits = {
+				air_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_napadej_thupatemi_char = {
+		portraits={
+			army = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Napadej_Thupatemi.png"
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = SIA_napadej_thupatemi_air_chief
+			ledger = navy
+
+			traits = {
+				air_chief_all_weather_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_santi_lunphae_char = {
+		portraits={
+			army = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Santi_Lunphae.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_santi_lunphae_high_command
+			traits = { army_regrouping_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SIA_seksan_kantha_char = {
+		portraits={
+			army = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Seksan_Kantha.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_seksan_kantha_high_command
+			traits = { air_close_air_support_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SIA_alongkorn_wannarot_char = {
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Alongkorn_Wannarot.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_alongkorn_wannarot_high_command
+			traits = { air_tactical_bombing_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SIA_boonsin_padklang_char = {
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Alongkorn_Wannarot.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_boonsin_padklang_high_command
+			traits = { army_infantry_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
 		}
 	}
 	SIA_santi_sakuntanak_char = {
