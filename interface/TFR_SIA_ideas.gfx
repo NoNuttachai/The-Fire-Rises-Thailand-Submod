@@ -85,6 +85,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_protest_banner"
+		texturefile = "gfx/texticons/banners/SIA_protest_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
@@ -97,6 +102,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SIA_bma"
 		textureFile = "gfx/interface/ideas/SIA/BMA.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_SouthernFire"
+		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_SouthernFire.png"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_Aswin_Kwanmuang1_portrait"

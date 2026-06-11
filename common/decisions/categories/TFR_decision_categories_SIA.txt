@@ -56,3 +56,15 @@ SIA_coronavirus_category = {
 	}
 	visible_when_empty = yes
 }
+SIA_protests_category = {
+	icon = GFX_decision_cat_SIA_parliament
+
+	priority = 5
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_anti_government_protests
+	}
+	visible_when_empty = yes
+}

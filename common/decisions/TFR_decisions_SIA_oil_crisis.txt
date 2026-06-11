@@ -7,7 +7,7 @@ SIA_oil_crisis_cat = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				check_variable = { oil_reserves_days > 249 }
+				check_variable = { oil_reserves_days > 349 }
 				tooltip = SIA_oil_in_reserves_mission_tt
 			}
 		}
@@ -23,16 +23,14 @@ SIA_oil_crisis_cat = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 110
+		days_mission_timeout = SIA_oil_in_reserves_days_timeout
 		timeout_effect = {
-			swap_ideas = {
-				remove_idea = SIA_oil_crisis
-				add_idea = SIA_oil_crisis_1
-			}
+			SIA_increase_oil_crisis = yes
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = -0.25
 			}
+			set_variable = { SIA_oil_in_reserves_days_timeout = 0 }
 		}
 		complete_effect = {
 			clr_country_flag = SIA_oil_crisis_ongoing
@@ -43,14 +41,61 @@ SIA_oil_crisis_cat = {
 			}
 		}
 	}
+	SIA_empty_oil_reserves_causes_damage_mission = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { oil_reserves_days > 0 }
+				tooltip = SIA_empty_oil_reserves_causes_damage_mission_tt
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				has_country_flag = SIA_oil_crisis_ongoing
+			}
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			check_variable = { oil_reserves_days < 1 }
+			has_country_flag = SIA_oil_crisis_ongoing
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 20
+		timeout_effect = {
+			SIA_increase_oil_crisis = yes
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.1
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				SIA_oil_crisis_restore_back_to_first_level = yes
+			}
+			custom_effect_tooltip = SIA_empty_oil_reserves_causes_damage_mission_tt2
+		}
+	}
 	SIA_activate_the_asean_petroleum_security_agreement = {
-		icon = GFX_decision_generic_oil
+		icon = GFX_decision_SIA_ASEAN_Petrol_Agreement
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
 		visible = { has_country_flag = SIA_oil_diplomacy }
 		cost = 25
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 20
@@ -67,10 +112,19 @@ SIA_oil_crisis_cat = {
 		ai_will_do = { factor = 1 }
 		cost = 35
 		days_remove = 25
+		days_re_enable = 25
 		modifier = {
 			consumer_goods_factor = 0.10
 		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 30
@@ -87,10 +141,19 @@ SIA_oil_crisis_cat = {
 		ai_will_do = { factor = 1 }
 		cost = 20
 		days_remove = 20
+		days_re_enable = 25
 		modifier = {
 			consumer_goods_factor = 0.10
 		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 15
@@ -107,11 +170,20 @@ SIA_oil_crisis_cat = {
 		ai_will_do = { factor = 1 }
 		cost = 50
 		days_remove = 30
+		days_re_enable = 25
 		
 		modifier = {
 			consumer_goods_factor = 0.15
 		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 45
@@ -119,14 +191,33 @@ SIA_oil_crisis_cat = {
 		}
 	}
 	SIA_enact_oil_rationing_measures = {
-		icon = GFX_decision_generic_oil
+		icon = GFX_decision_SIA_Enact_Oil_Rationing
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
 		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
 
 		ai_will_do = { factor = 1 }
-		cost = 45
-		days_remove = 20
+		
+		custom_cost_trigger = {
+			has_command_power > 25
+			has_political_power > 10
+		}
+		custom_cost_text = 10pp_and_25cp_cost
+		days_remove = 30
+		days_re_enable = 50
+		
+		complete_effect = {
+			add_political_power = -10
+			add_command_power = -25
+		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_stability = -0.1
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
@@ -139,15 +230,39 @@ SIA_oil_crisis_cat = {
 		}
 	}
 	SIA_expand_fuel_storage_facilities = {
-		icon = GFX_decision_generic_oil
+		icon = GFX_decision_SIA_Expand_Fuel_Storage
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
 		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
 
 		ai_will_do = { factor = 1 }
-		cost = 30
-		days_remove = 25
+		days_remove = 35
+		days_re_enable = 15
 		
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_15B
+		
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -15
+			}
+			add_income = yes
+		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 20
@@ -167,9 +282,36 @@ SIA_oil_crisis_cat = {
 		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
 
 		ai_will_do = { factor = 1 }
-		cost = 50
-		days_remove = 25
+		
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+			has_political_power > 15
+		}
+		custom_cost_text = dx_more_than_25B_and_15pp
+		days_remove = 50
+		days_re_enable = 20
+		
+		complete_effect = {
+			add_political_power = -15
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
+		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 30
@@ -189,27 +331,54 @@ SIA_oil_crisis_cat = {
 		}
 	}
 	SIA_synthetic_gas_initiative = {
-		icon = GFX_decision_generic_oil
+		icon = GFX_decision_generic_research
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
 		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
 
 		ai_will_do = { factor = 1 }
-		cost = 75
-		days_remove = 25
+		
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+			has_political_power > 15
+		}
+		custom_cost_text = dx_more_than_25B_and_15pp
+		days_remove = 50
+		days_re_enable = 20
+		
+		complete_effect = {
+			add_political_power = -15
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
+		}
 		remove_effect = {
-			set_technology = {
-				synth_oil_experiments = 1
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = synth_oil_experiments
+					}
+				}
+				set_technology = {
+					synth_oil_experiments = 1
+				}
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 30
-			}
-			random_owned_state = {
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
 			}
 			random_owned_state = {
 				add_building_construction = {
@@ -221,30 +390,54 @@ SIA_oil_crisis_cat = {
 		}
 	}
 	SIA_subsidize_solar_energy = {
-		icon = GFX_decision_generic_oil
+		icon = GFX_decision_SIA_solar_farm_decision_icon
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
 		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
 
 		ai_will_do = { factor = 1 }
-		cost = 75
-		days_remove = 25
+		
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+			has_political_power > 15
+		}
+		custom_cost_text = dx_more_than_25B_and_15pp
+		days_remove = 50
+		days_re_enable = 20
+		
+		complete_effect = {
+			add_political_power = -15
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
+		}
 		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = energy_farms
+					}
+				}
+				set_technology = {
+					energy_farms = 1
+				}
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 30
-			}
-			random_owned_state = {
-				limit = {
-					AND = {
-						power_plant < 1
-						nuclear_reactor < 1
-					}
-				}
-				add_building_construction = {
-					type = energy_farm
-					level = 1
-					instant_build = yes
-				}
 			}
 			random_owned_state = {
 				limit = {
@@ -273,6 +466,14 @@ SIA_oil_crisis_cat = {
 		cost = 40
 		days_remove = 25
 		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 35

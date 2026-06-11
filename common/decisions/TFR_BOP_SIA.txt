@@ -564,4 +564,90 @@ SIA_bop_prayut = {
 			}
 		}
 	}
+	SIA_utilize_pegasus_against_key_agitators = {
+		available = { has_completed_focus = SIA_information_operations }
+		visible = { has_completed_focus = SIA_information_operations }
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.15
+			}
+		}
+	}
+	SIA_cyber_warfare_with_the_three_hooves = {
+		available = { has_completed_focus = SIA_information_operations }
+		visible = { has_completed_focus = SIA_information_operations }
+		cost = 25
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
+		}
+	}
+	SIA_jay_juk_khlong_sam = {
+		available = { has_completed_focus = SIA_information_operations }
+		visible = { has_completed_focus = SIA_information_operations }
+		fire_only_once = yes
+		cost = 40
+		days_remove = 35
+		ai_will_do = { factor = 1 }
+		
+		modifier = {
+			power_balance_weekly = 0.02
+		}
+		
+		complete_effect = {
+			add_stability = 0.05
+		}
+	}
+	SIA_botted_engagement_on_the_rco_facebook_page = {
+		available = { has_completed_focus = SIA_information_operations }
+		visible = { has_completed_focus = SIA_information_operations }
+		fire_only_once = yes
+		cost = 30
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.1
+			}
+		}
+	}
+	SIA_demonstrate_infront_of_the_ministry_of_energy = {
+		available = { has_completed_focus = SIA_petrol_demonstrations }
+		visible = { has_completed_focus = SIA_petrol_demonstrations }
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			country_event = thai_events.13
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
+		}
+	}
+	SIA_demonstrate_infront_of_the_ptt_headquarters = {
+		available = { has_completed_focus = SIA_petrol_demonstrations }
+		visible = { has_completed_focus = SIA_petrol_demonstrations }
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			country_event = thai_events.13
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
+		}
+	}
 }

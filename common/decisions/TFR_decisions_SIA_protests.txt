@@ -1,0 +1,67 @@
+SIA_protests_category = {
+	SIA_the_protests_intensify = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_anti_government_protests
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 80
+		timeout_effect = {
+			SIA_increase_protests = yes
+			activate_mission = SIA_the_protests_intensify
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_enforce_curfews = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 30
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_expand_police_activities = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 50
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+}

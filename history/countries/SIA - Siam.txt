@@ -60,6 +60,10 @@
 	recruit_character = SIA_chatchai_sriworakan_char
 	recruit_character = SIA_predee_daocha_char
 	recruit_character = SIA_anucha_nakasai_char
+	recruit_character = SIA_adung_phan_iam_char
+	recruit_character = SIA_choengchai_chomchoengpaet_char
+	recruit_character = SIA_jirapol_wongwit_char
+	recruit_character = SIA_somprasong_nilsamai_char
 
 	add_ideas = {
 		SIA_gdp_fix_new

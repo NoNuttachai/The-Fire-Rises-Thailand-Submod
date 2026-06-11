@@ -204,7 +204,7 @@ ideas = {
 			}
 		}
 		SIA_oil_crisis = {
-			picture = SIA_constitution_2017
+			picture = JAP_oil_crisis
 			traits = {
 			    ZZZ_blank_idea_trait
 			}
@@ -220,11 +220,16 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
                 consumer_goods_factor = 0.10
+				factory_energy_consumption = 0.05
+				production_factory_max_efficiency_factor = -0.05
+				business_value_factor = -0.05
+				poverty_development_monthly = -0.005
+				industrial_development_monthly = -0.005
 			}
 		}
 		SIA_oil_crisis_1 = {
 			name = SIA_oil_crisis
-			picture = SIA_constitution_2017
+			picture = JAP_oil_crisis
 			traits = {
 			    ZZZ_blank_idea_trait
 			}
@@ -238,8 +243,60 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				stability_factor = -0.4
-                consumer_goods_factor = 0.5
+				stability_factor = -0.1
+                consumer_goods_factor = 0.2
+				factory_energy_consumption = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				poverty_development_monthly = -0.01
+				industrial_development_monthly = -0.01
+			}
+		}
+		SIA_oil_crisis_2 = {
+			name = SIA_oil_crisis
+			picture = JAP_oil_crisis
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.25
+                consumer_goods_factor = 0.3
+				factory_energy_consumption = 0.2
+				production_factory_max_efficiency_factor = -0.2
+				poverty_development_monthly = -0.015
+				industrial_development_monthly = -0.015
+			}
+		}
+		SIA_oil_crisis_3 = {
+			name = SIA_oil_crisis
+			picture = JAP_oil_crisis
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.5
+                consumer_goods_factor = 0.45
+				factory_energy_consumption = 0.35
+				production_factory_max_efficiency_factor = -0.3
+				poverty_development_monthly = -0.02
+				industrial_development_monthly = -0.02
 			}
 		}
 		SIA_covid_idea_1 = {
@@ -326,6 +383,63 @@ ideas = {
 				stability_factor = -0.20
 				society_development_monthly = -0.08
 				expense_growth_factor = 0.15
+			}
+		}
+		SIA_active_protests_1 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		SIA_active_protests_2 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		SIA_active_protests_3 = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+		SIA_half_payment_policy = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.15
+				income_growth_factor = 0.1
 			}
 		}
 	}

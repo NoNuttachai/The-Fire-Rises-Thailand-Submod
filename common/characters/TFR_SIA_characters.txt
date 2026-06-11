@@ -342,21 +342,7 @@ characters={
 				small = GFX_SIA_predee_daocha
 			}
 		}
-		advisor={
-			slot = economic_minister
-			idea_token = SIA_predee_daocha_advisor
-			desc = SIA_predee_daocha_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
+		
 	}
 	SIA_anucha_nakasai_char = {
 		name = SIA_anucha_nakasai_char
@@ -365,21 +351,6 @@ characters={
 				small = GFX_SIA_anucha_nakasai
 			}
 		}
-		advisor={
-			slot = intelligence_minister
-			idea_token = SIA_anucha_nakasai_advisor
-			desc = SIA_anucha_nakasai_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
 	}
 
 	SIA_apirat_kongsompong_char = {
@@ -625,6 +596,70 @@ characters={
 			attack_skill=1
 			defense_skill=2
 			maneuvering_skill=1
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_adung_phan_iam_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_adung_phan_iam.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_choengchai_chomchoengpaet_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_choengchai_chomchoengpaet.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_jirapol_wongwit_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_jirapol_wongwit.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			traits={
+			}
+		}
+	}
+	SIA_somprasong_nilsamai_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_somprasong_nilsamai.png"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
 			coordination_skill=2
 			traits={
 			}

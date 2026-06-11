@@ -18,7 +18,7 @@ SIA_parliament_category = {
 		selectable_mission = no
 		days_mission_timeout = 58
 		timeout_effect = {
-			activate_mission = SIA_second_no_confidence_vote
+			
 		}
 		complete_effect = {
 		}
@@ -40,9 +40,12 @@ SIA_parliament_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 58
+		days_mission_timeout = 175
 		timeout_effect = {
-			activate_mission = SIA_third_no_confidence_vote
+			custom_effect_tooltip = thai_events_28_tt
+			hidden_effect = {
+				country_event = { id = thai_events.29 days = 60 }
+			}
 		}
 		complete_effect = {
 		}
@@ -64,9 +67,9 @@ SIA_parliament_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 58
+		days_mission_timeout = 135
 		timeout_effect = {
-			
+			custom_effect_tooltip = thai_events_29_tt
 		}
 		complete_effect = {
 		}
@@ -93,6 +96,58 @@ SIA_parliament_category = {
 			country_event = thai_events.3
 		}
 		complete_effect = {
+		}
+	}
+	SIA_emergency_loan_bill_covid = {
+		icon = generic_coronavirus
+		visible = { has_country_flag = SIA_coronavirus_ongoing }
+		cost = 20
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = -0.05
+			set_temp_variable = {
+				var = income_var_temp
+				value = 35
+			}
+			add_income = yes
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 35
+			}
+			add_debt = yes
+		}
+	}
+	SIA_emergency_loan_bill_oil_crisis = {
+		icon = GFX_decision_generic_oil
+		visible = { has_country_flag = SIA_oil_crisis_ongoing }
+		cost = 10
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = -0.01
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 15
+			}
+			set_temp_variable = {
+				var = income_var_temp
+				value = 5
+			}
+			add_income = yes
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 5
+			}
+			add_debt = yes
 		}
 	}
 }

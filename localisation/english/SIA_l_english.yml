@@ -40,6 +40,7 @@
  
  SIA_raise_our_three_fingers: "Raise our Three Fingers"
  SIA_raise_our_three_fingers_desc: "The government's decision to dissolve §Othe Future Forward Party§! opened the eyes of an entire generation of young Thais to the reality of authoritarian rule and a political system stacked against them. Unlike previous generations, they are not willing to accept things simply because "that is the way they have always been." These young people are standing up to challenge the status quo and demand real change. They will §Omove forward§! with the §Opeople§! in the pursuit of democracy. Our voices cannot be ignored, and our three fingers will be raised!."
+ SIA_raise_our_three_fingers_tt: "Side with the §YGovernmental Opposition§! to §Roust§! §BPrayut Chan-o-cha§! from power."
  
  SIA_begin_student_activism: "Begin Student Activism"
  SIA_begin_student_activism_desc: ""
@@ -94,6 +95,7 @@
  
  SIA_side_with_uncle_tuu: "Side with Uncle Tuu"
  SIA_side_with_uncle_tuu_desc: "We will fulfill our promise, give us just a little more time,\nAnd the beautiful land will return.\nWe will act with integrity, just have trust and faith in us.\nThe land will soon be well, returning happiness to you, the people.\n\nReturning Happiness to Thailand (song)\n - Prayut Chan-o-cha"
+ SIA_side_with_uncle_tuu_tt: "Side with §YPrayut§! and restore §Rlaw and order§! back to §LThailand§!."
  
  SIA_organize_counter_protests: "Organize Counter Protests"
  SIA_organize_counter_protests_desc: ""
@@ -111,7 +113,7 @@
  SIA_deal_with_the_oil_crisis_desc: ""
  
  SIA_half_payment_policy: "Half Payment Policy"
- SIA_half_payment_policy_desc: ""
+ SIA_half_payment_policy_desc: "To support economic recovery, the government will introduce the Khon La Khrueng (Half-Half) program, an economic stimulus measure designed to boost consumer spending and support small businesses. Under this scheme, the government will cover 50% of eligible purchases made at participating local shops, street vendors, and small enterprises through a mobile digital wallet."
  
  SIA_declare_state_of_emergency: "Declare State of Emergency"
  SIA_declare_state_of_emergency_desc: ""
@@ -165,6 +167,11 @@
  SIA_anucha_nakasai_char: "Anucha Nakasai [£SIA_anucha_nakasai_char_advisor_desc]"
  SIA_anucha_nakasai_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
 
+ SIA_adung_phan_iam_char: "Adung Phan-iam"
+ SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
+ SIA_jirapol_wongwit_char: "Jirapol Wongwit"
+ SIA_somprasong_nilsamai_char: "Somprasong Nilsamai"
+
  ###Startup Menu###
  SIA_country_summary: "§YCountry Summary§!:\nThailand, the "Land of Smiles," is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country`s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
  SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§g - United Thai Nation Party§!\n§B - Bhumjaithai Party§!\n§R - Pheu Thai Party§!\n§O - Move Forward / People's Party§!"
@@ -186,6 +193,11 @@
  SIA_lottery_conscription_desc: ""…what makes Thailand's system of conscription interesting is the fact that it operates based on a lottery system with each recruitment center every April having a set quota of bodies that it must enlist in the service dictating how big the lottery is set to be…\n\n…you are to draw your card and face the large crowd of other lads and their mortified mothers, if the card you draw is black, lucky you!, you get to waddle home and continue on with your life unmolested, §Rif your card is red however….§!"\n- Count Dankula (Mark Meechan)"
  SIA_low_income_only_welfare: "Low-Income Only Welfare"
  SIA_low_income_only_welfare_desc: ""Today, nobody wants to be called poor. I don't look at them that way either, But We have to expand their income with many projects that can't make them out of the poverty but will make them happy." - Prayut Chan-O-Cha"
+ 
+ SIA_active_protests_1: "Minor Anti-Governmental Demonstrations"
+ SIA_active_protests_2: "Mass Protests"
+ SIA_active_protests_3: "Mass Riots"
+ 
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -315,7 +327,27 @@
  thai_events.27.d: "At 17:00, protesters and organizers began gathering in front of the Samyan Mitrtown shopping mall, then marched along Rama IV Road before turning right onto South Sathorn Road toward the German Embassy.\n\nPolice set up metal barricades and deployed three lines of riot police to block the entrance in front of the embassy building, keeping several companies of officers on standby to secure the perimeter.\n\nThe protesters goal is to submit a letter to the German Ambassador to Thailand, Georg Schmidt, to be forwarded to the German government. The letter requested an investigation into the exercise of royal power by the Thai monarch within German territory. A representative of the protesters also read a statement in three languages: Thai, English, and German.\n\nIn the wake of the demonstration, Prime Minister Prayut Chan-o-cha announced that the government would enforce "all laws" against the demonstrators, and authorities intensified legal actions. Ultimately, 13 key protesters involved in the rally were jointly indicted on charges under both Section 112 (lèse-majesté) and Section 116 (sedition) of the Criminal Code."
  thai_events.27.a: "Einigkeit und Recht und Freiheit!"
 
+ thai_events.28.t: "Hushed Whispers of the Assembly"
+ thai_events.28.d: "Prayut, you're about to get evicted if you dont raise your bop"
+ thai_events.28.a: "..."
+ thai_events_28_tt: "The §Rfate§! of §YPrayut§! will be decided once the §Yday of voting§! arrives."
  
+ thai_events.29.t: "Another Round of Arguments"
+ thai_events.29.d: "One more motion of no confidence for you."
+ thai_events.29.a: "This is getting absurd now."
+ thai_events_29_tt: "This will be §Ythe last hurdle§! for Prayut before the §ROpposition finally loses steam§!."
+ 
+ thai_events.30.t: "Oil Crisis Fades"
+ thai_events.30.d: ""
+ thai_events.30.a: "Back to the gas stations!"
+ 
+ thai_events.31.t: "Pattani Peace Talks Conclude"
+ thai_events.31.d: "Today, the Thai government and the Barisan Revolusi Nasional (BRN), the largest insurgent group operating in Thailand's southern border provinces, held their first direct peace talks in Kuala Lumpur, Malaysia. The negotiations marked a significant breakthrough in efforts to resolve the insurgency that has affected Pattani, Yala, Narathiwat, and parts of Songkhla since 2004.\n\nThe talks took place on the same day that Prime Minister and Minister of Defence General Prayut Chan-o-cha visited Narathiwat Province. Facilitated by Malaysia, the meeting brought together the Thai Peace Dialogue Panel, led by General Wanlop Rugsanaoh, and a BRN delegation headed by Anas Abdulrahman. Both sides described the discussions as constructive and agreed on a framework for future negotiations aimed at reducing violence and advancing a peaceful resolution to the conflict.\n\nThe opening of direct talks was widely regarded as a major step forward in the southern peace process, though officials acknowledged that significant challenges remained before a lasting settlement could be achieved."
+ thai_events.31.a: "Let toast to peace! Oh... alcohol is haram."
+ 
+ thai_events.32.t: "Pattani Falls into Chaos"
+ thai_events.32.d: "Something something saudi civil war caused this btw"
+ thai_events.32.a: "Peace was never meant to be."
  
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
@@ -447,20 +479,56 @@
  SIA_open_parliament_gui: "View House of Representatives"
  SIA_open_parliament_gui_desc: "Open the House of Representatives interface to view parliamentary composition, party seats, and coalition status."
  SIA_first_no_confidence_vote: "First Motion of No Confidence"
+ SIA_second_no_confidence_vote: "Second Motion of No Confidence"
+ SIA_third_no_confidence_vote: "Third Motion of No Confidence"
  SIA_2020_budget_bill_vote: "2020 Budget Bill"
+ SIA_emergency_loan_bill_covid: "§RCOVID§!: Emergency Loan Bill"
+ SIA_emergency_loan_bill_covid_desc: "With the current global situation affecting Thailand, the government has promulgated the 1 Trillion Baht Borrowing Decree, officially known as the Emergency Decree Authorising the Ministry of Finance to Raise Loans to Solve Problems, Remedy, and Restore the Economy and Society Affected by the Coronavirus Disease Pandemic.\n\nIf approved by Parliament, it would authorize borrowing of up to 1 trillion baht, making it the largest borrowing measure in Thailand's history to date and far exceeding the scale of previous emergency funding programs."
+ SIA_emergency_loan_bill_oil_crisis: "§YOil Crisis§!: Emergency Loan Bill"
+ SIA_emergency_loan_bill_oil_crisis_desc: "Under normal circumstances, the Oil Fuel Fund Act of 2019 strictly regulates how the government may intervene in fuel markets. To prevent the state from accumulating excessive liabilities, the law caps the fund's borrowing authority at 40 billion baht.\n\nHowever, during a major global crisis such as the situation in Saudi Arabia, 40 billion baht is merely a drop in the bucket and is insufficient to stabilize domestic fuel prices for any meaningful period of time. To address this extraordinary situation, the government has proposed an emergency decree authorizing the Ministry of Finance to guarantee up to 150 billion baht in commercial loans for the Oil Fuel Fund, significantly expanding its financial capacity to cushion the impact of soaring energy costs and ensure continued support for consumers and businesses facing rising fuel prices."
+
 
  SIA_coronavirus_category: "COVID-19 Outbreak"
- SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]\n\nForeign Vaccines Secured: 0/2"
+ SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]"
  SIA_the_pandemic_worsens_mission: "The Pandemic Worsens"
  SIA_the_pandemic_lessens_mission: "The Pandemic Lessens"
+ 
+ SIA_securing_vaccine_supply: "Securing Vaccine Supply"
+ SIA_securing_vaccine_supply_desc: ""
+ SIA_securing_vaccine_supply_tt: "We will start deploying vaccines, §GCovid will now stop spreading§!"
+ 
+ SIA_nationwide_vaccinations: "Nationwide Vaccination"
+ SIA_nationwide_vaccinations_desc: ""
+ 
+ 
  SIA_covid_idea_1: "Mild Coronavirus Cases"
  SIA_covid_idea_2: "Moderate Coronavirus Cases"
  SIA_covid_idea_3: "Serious Coronavirus Cases"
  SIA_covid_idea_4: "Crippling Coronavirus Cases"
  SIA_covid_idea_5: "Catastrophic Coronavirus Cases"
+ SIA_covid_free: "§LThailand§! will now be §GCovid free§!"
  
  SIA_found_top_news: "Launch Top News"
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
+
+ SIA_utilize_pegasus_against_key_agitators: "Utilize Pegasus Spyware Against Key Agitators"
+ SIA_utilize_pegasus_against_key_agitators_desc: "Pegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor “those who pose a threat” to “national security” with Thailand being one of them."
+ 
+ SIA_cyber_warfare_with_the_three_hooves: "Cyber Warfare With The Three Hooves"
+ SIA_cyber_warfare_with_the_three_hooves_desc: "Our agents will use sock puppet accounts on social media sites such as Twitter and Facebook to attack the opposition, revealing and disseminating negative information about the government opponents."
+ 
+ SIA_jay_juk_khlong_sam: "Jay Juk Khlong Sam"
+ SIA_jay_juk_khlong_sam_desc: "Our agents will create a Twitter account named 'Jay Juk Khlong Sam' (Sister Juk of Canal Sam), featuring a profile picture of Charlotte Linlin from the anime One Piece (chosen simply because one of our agents likes the show). This account will be used to post content opposing the three-finger protesters."
+ 
+ SIA_botted_engagement_on_the_rco_facebook_page: "Botted Engagement on the RCO Facebook Page"
+ SIA_botted_engagement_on_the_rco_facebook_page_desc: "Our agents will use bots to drive engagement on the Facebook page of the royalist Rubbish Collection Organization."
+ 
+ SIA_demonstrate_infront_of_the_ministry_of_energy: "Demonstrate Infront of the Ministry of Energy"
+ SIA_demonstrate_infront_of_the_ministry_of_energy_desc: "We will organize a demonstration against the Ministry of Energy in cooperation with workers' unions and student activist groups in front of the Ministry of Energy headquarters in Bangkok, demanding immediate action to address the worsening fuel crisis."
+ 
+ SIA_demonstrate_infront_of_the_ptt_headquarters: "Demonstrate Infront of the PTT Headquarters"
+ SIA_demonstrate_infront_of_the_ptt_headquarters_desc: "We will organize a demonstration against PTT Public Company Limited, urging the company to prioritize the public interest over corporate profits during this period of economic hardship."
+ 
 
  SIA_government_action_1: "§YGovernment§!: Establish CCSA"
  SIA_government_action_2: "§YGovernment§!: Declare State of Emergency"
@@ -485,7 +553,13 @@
  SIA_protestor_action_9: "§RProtestors§!: Khana Ratsadon Reborn"
  SIA_protestor_action_10: "§RProtestors§!: Ladyboys Against Dictatoship"
  SIA_protestor_action_11: "§RProtestors§!: Long March Through the Institutions"
-
+ 
+ SIA_protests_category: "Anti Government Protests"
+ SIA_protests_category_desc: "\n\n\n\n\n£GFX_SIA_protest_banner\n\n\n\n\n\n\n\nThe Constitutional Court's dissolution of the Future Forward Party sparked widespread outrage, particularly among younger Thais who saw it as an attempt to suppress political opposition. Combined with growing dissatisfaction with the government, the ruling triggered a wave of political activism and demonstrations.\n\nLed primarily by students and young people, with support from some labor unions and opposition parties, the movement is highly decentralized, relying on social media to organize events, share information, and coordinate actions.\n\nCurrent §OIntensity§! of the Protests: \n§O[SIA_protest_status]§!\n\nCurrently we are supporting: [SIAGetSideSupported]"
+ SIA_the_protests_intensify: "The Protests Intensify"
+ 
+ SIA_supported_prayut: "The §GGovernment§!"
+ SIA_supported_opposition: "The §RProtestors§!"
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
@@ -499,7 +573,11 @@
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y250 days§! of §YOil in Reserves§!\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y350 days§! of §YOil in Reserves§!\n"
+ 
+ SIA_empty_oil_reserves_causes_damage_mission: "Depleted Oil Reserves Causing Shortages"
+ SIA_empty_oil_reserves_causes_damage_mission_tt: "§gOil in Reserves is currently present§!."
+ SIA_empty_oil_reserves_causes_damage_mission_tt2: "§g§YThe Oil Crisis§! will go back to the first level.§!"
  
  SIA_activate_the_asean_petroleum_security_agreement: "Activate the ASEAN Petroleum Security Agreement"
  SIA_activate_the_asean_petroleum_security_agreement_desc: "Thailand, as a major member of ASEAN, remains heavily dependent on imported energy, unlike Malaysia and Indonesia, which possess significant petroleum reserves and have historically been net exporters of oil and gas. With the ongoing global oil crisis. Thailand should engage fellow ASEAN members to activate emergency fuel-sharing mechanisms under the ASEAN Petroleum Security Agreement (APSA). This would help secure regional crude oil and petroleum supplies to offset potential shortages and strengthen regional energy security."
@@ -552,6 +630,9 @@
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
  #State Modifiers
+ SIA_southern_fire_state_modifier: "Southern Fire"
+ SIA_southern_fire_state_modifier_desc: "Southern Fire Description"
+ 
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n[SIAGetBangkokMayor]"
  SIA_bangkok_mayor0: "£GFX_idea_SIA_Aswin_Kwanmuang1_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
@@ -567,3 +648,8 @@
  
  #Leader Traits
  SIA_Vajiralongkorn: "Vajiralongkorn"
+ 
+ 
+ #Decision cost tooltip for this mod that uses
+ dx_more_than_25B_and_15pp: "£dx  §H25B§! £pol_power  §H15§!"
+ dx_more_than_25B_and_15pp_blocked: "£dx  §R25B§! £pol_power  §R15§!"

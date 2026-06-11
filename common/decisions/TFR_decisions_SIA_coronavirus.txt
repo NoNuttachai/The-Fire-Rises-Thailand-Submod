@@ -26,11 +26,10 @@ SIA_coronavirus_category = {
 					target = EGY
 					modifier = decreased_relations
 				}
-				activate_mission = SIA_the_pandemic_lessens_mission
 			}
 		}
 	}
-	SIA_the_pandemic_lessens_mission = {
+	SIA_securing_vaccine_supply = {
 		icon = generic_coronavirus
 		allowed = {
 			tag = SIA
@@ -48,26 +47,108 @@ SIA_coronavirus_category = {
 		activation = {
 			always = no
 		}
-		is_good = no
+		is_good = yes
 		selectable_mission = no
-		days_mission_timeout = 50
+		days_mission_timeout = 400
 		timeout_effect = {
-			SIA_decrease_covid = yes
-			activate_mission = SIA_the_pandemic_lessens_mission
-		}
-		complete_effect = {
+			custom_effect_tooltip = SIA_securing_vaccine_supply_tt
 			hidden_effect = {
-				add_political_power = 45
+				activate_mission = SIA_nationwide_vaccinations
+				remove_mission = SIA_the_pandemic_worsens_mission
 			}
 		}
 	}
-	SIA_secure_sinovac_vaccines = {
+	SIA_nationwide_vaccinations = {
 		icon = generic_coronavirus
 		allowed = {
 			tag = SIA
 		}
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = SIA_coronavirus_ongoing
+				}
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 250
+		timeout_effect = {
+			custom_effect_tooltip = SIA_covid_free
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.25
+			}
+			hidden_effect = {
+				remove_ideas = {
+					SIA_covid_idea_1
+					SIA_covid_idea_2
+					SIA_covid_idea_3
+					SIA_covid_idea_4
+					SIA_covid_idea_5
+				}
+				clr_country_flag = SIA_coronavirus_ongoing
+			}
+		}
+	}
+	SIA_handout_masks = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_coronavirus_ongoing
+			has_active_mission = SIA_the_pandemic_worsens_mission
+		}
+
+		days_remove = 45
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = 20
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_enforce_lockdowns = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_coronavirus_ongoing
+			has_active_mission = SIA_the_pandemic_worsens_mission
+		}
+
+		days_remove = 30
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = 40
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_import_vaccines_from_china = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_country_flag = SIA_coronavirus_ongoing
+			has_active_mission = SIA_securing_vaccine_supply
 		}
 		fire_only_once = yes
 		days_remove = 45
@@ -75,55 +156,57 @@ SIA_coronavirus_category = {
 			consumer_goods_factor = 0.1
 		}
 		remove_effect = {
-			set_country_flag = SIA_dealt_with_coronavirus
+			add_days_mission_timeout = {
+				mission = SIA_securing_vaccine_supply
+				days = -75
+			}
 		}
 		ai_will_do = {
 			base = 10
 		}
 	}
-	SIA_secure_astrazeneca_vaccines = {
+	SIA_import_vaccines_from_russia = {
 		icon = generic_coronavirus
 		allowed = {
 			tag = SIA
 		}
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
+			has_active_mission = SIA_securing_vaccine_supply
 		}
 		fire_only_once = yes
-		complete_effect = {
-			set_country_flag = SIA_dealt_with_coronavirus
+		days_remove = 45
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_securing_vaccine_supply
+				days = -50
+			}
 		}
 		ai_will_do = {
 			base = 10
 		}
 	}
-	SIA_secure_sputnik_vaccine = {
+	SIA_expand_vaccination_centers = {
 		icon = generic_coronavirus
 		allowed = {
 			tag = SIA
 		}
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
+			has_active_mission = SIA_nationwide_vaccinations
 		}
-		fire_only_once = yes
-		complete_effect = {
-			set_country_flag = SIA_dealt_with_coronavirus
+		days_remove = 45
+		modifier = {
+			consumer_goods_factor = 0.1
 		}
-		ai_will_do = {
-			base = 10
-		}
-	}
-	SIA_enforce_vaccination = {
-		icon = generic_coronavirus
-		allowed = {
-			tag = SIA
-		}
-		visible = {
-			has_country_flag = SIA_coronavirus_ongoing
-		}
-		fire_only_once = yes
-		complete_effect = {
-			set_country_flag = SIA_dealt_with_coronavirus
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_nationwide_vaccinations
+				days = -50
+			}
 		}
 		ai_will_do = {
 			base = 10

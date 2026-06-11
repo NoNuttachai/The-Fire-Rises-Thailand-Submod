@@ -32,8 +32,44 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SIA_protest_status
+	text = {
+		trigger = {
+			has_idea = SIA_active_protests_1
+		}
+		localization_key = SIA_active_protests_1
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_active_protests_2
+		}
+		localization_key = SIA_active_protests_2
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_active_protests_3
+		}
+		localization_key = SIA_active_protests_3
+	}
+}
+defined_text = {
 	name = SIAGetBangkokMayor
 	text = {
 		localization_key = "SIA_bangkok_mayor[?bangkok_mayor]"
+	}
+}
+defined_text = {
+	name = SIAGetSideSupported
+	text = {
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+		localization_key = SIA_supported_opposition
+	}
+	text = {
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+		localization_key = SIA_supported_prayut
 	}
 }

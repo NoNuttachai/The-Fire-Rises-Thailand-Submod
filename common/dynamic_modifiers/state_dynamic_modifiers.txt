@@ -17,3 +17,27 @@ SIA_bangkok_metropolitan_administration_state_modifier = {
 	local_factories = 0.25
 	local_supplies = 0.1
 }
+SIA_southern_fire_state_modifier = {
+	icon = "GFX_idea_SIA_SouthernFire"
+	enable = { 
+		SIA = {
+			controls_state = 1492
+			
+		}
+		1492 = {
+			NOT = {
+				is_core_of = SIA
+			}
+		}
+	}
+	remove_trigger = {
+		1492 = {
+			is_core_of = SIA
+		}
+	}
+	resistance_activity = 0.2
+	resistance_growth = 0.15
+	local_supplies = -0.15
+	local_resources = -0.2
+	local_building_slots_factor = -0.3
+}

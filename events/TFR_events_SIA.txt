@@ -125,6 +125,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_ideas = SIA_oil_crisis
+			set_variable = { SIA_oil_in_reserves_days_timeout = 110 }
 			activate_mission = SIA_oil_in_reserves_mission
 			set_country_flag = SIA_oil_crisis_ongoing
 			set_variable = { oil_reserves_days = days_mission_timeout@SIA_oil_in_reserves_mission }
@@ -136,6 +137,11 @@ country_event = {
 			add_ideas = SIA_oil_crisis
 			activate_mission = SIA_oil_in_reserves_mission
 		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.1
+		}
+		
 	}
 }
 country_event = {
@@ -158,7 +164,12 @@ country_event = {
 		complete_national_focus = SIA_side_with_uncle_tuu
 		hidden_effect = {
 			activate_mission = SIA_protestor_action_1
+			activate_mission = SIA_the_protests_intensify
 		}
+	}
+	after = {
+		set_country_flag = SIA_anti_government_protests
+		add_ideas = SIA_active_protests_1
 	}
 }
 country_event = {
@@ -208,6 +219,7 @@ country_event = {
             target = USA
             modifier = SIA_joint_training
         }
+		add_command_power = 15
         army_experience = 25
         navy_experience = 10
         air_experience = 10
@@ -360,12 +372,20 @@ country_event = {
     picture = GFX_report_First_Covid_19
 	
 	is_triggered_only = yes
-	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = SIA_coronavirus_ongoing
+			add_ideas = SIA_covid_idea_1
+			activate_mission = SIA_the_pandemic_worsens_mission
+		}
+	}
     option = {
         name = thai_events.17.a
-		set_country_flag = SIA_coronavirus_ongoing
-		add_ideas = SIA_covid_idea_1
-		activate_mission = SIA_the_pandemic_worsens_mission
+		effect_tooltip = {
+			set_country_flag = SIA_coronavirus_ongoing
+			add_ideas = SIA_covid_idea_1
+			activate_mission = SIA_the_pandemic_worsens_mission
+		}
 	}
 }
 
@@ -544,11 +564,111 @@ country_event = {
        
 	}
 }
+country_event = {
+    id = thai_events.28 # Warning that a 2nd motion of no confidence is coming
+    title = thai_events.28.t
+    desc = thai_events.28.d
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			activate_mission = SIA_second_no_confidence_vote
+		}
+	}
+    option = {
+        name = thai_events.28.a
+		effect_tooltip = {
+			activate_mission = SIA_second_no_confidence_vote
+		}
+       custom_effect_tooltip = thai_events_28_tt
+	}
+}
+country_event = {
+    id = thai_events.29 # Warning that a 3rd motion of no confidence is coming
+    title = thai_events.29.t
+    desc = thai_events.29.d
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			activate_mission = SIA_third_no_confidence_vote
+		}
+	}
+    option = {
+        name = thai_events.29.a
+		effect_tooltip = {
+			activate_mission = SIA_third_no_confidence_vote
+		}
+       custom_effect_tooltip = thai_events_29_tt
+	}
+}
+country_event = {
+    id = thai_events.30 # If oil crisis is still there and a lot of time has passed
+    title = thai_events.30.t
+    desc = thai_events.30.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = SIA
+		has_country_flag = SIA_oil_crisis_ongoing
+	}
+    option = {
+        name = thai_events.30.a
+		clr_country_flag = SIA_oil_crisis_ongoing
+		remove_ideas = {
+			SIA_oil_crisis
+			SIA_oil_crisis_1
+			SIA_oil_crisis_2
+			SIA_oil_crisis_3
+		}
+	}
+}
+country_event = {
+    id = thai_events.31 # Pattani Peace
+    title = thai_events.31.t
+    desc = thai_events.31.d
+	picture = GFX_report_Thai_Peacetalks_22_Jan_2020
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.31.a
+		1492 = {
+			add_core_of = SIA
+		}
+		add_stability = 0.05
+	}
+}
+country_event = {
+    id = thai_events.32 # Saudi Civil War Causes Pattani Ceasefire Collapse
+    title = thai_events.32.t
+    desc = thai_events.32.d
+	picture = GFX_report_Thai_Peacetalks_22_Jan_2020
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SIA
+		has_global_flag = SAU_saudi_civil_war_global
+	}
+	
+    option = {
+        name = thai_events.32.a
+		1492 = {
+			remove_core_of = SIA
+			add_dynamic_modifier = { modifier = SIA_southern_fire_state_modifier }
+			hidden_effect = {
+				start_resistance = yes
+				set_resistance = 15
+			}
+		}
+	}
+}
 news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t
     desc = thai_newsevents.1.d
-    picture = GFX_Riyadh_Protests
+    picture = GFX_global_event_2020_Thai_Protests_Global_Event
 	
 	is_triggered_only = yes
 
