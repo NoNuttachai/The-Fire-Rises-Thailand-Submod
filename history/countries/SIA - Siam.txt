@@ -64,7 +64,16 @@
 	recruit_character = SIA_choengchai_chomchoengpaet_char
 	recruit_character = SIA_jirapol_wongwit_char
 	recruit_character = SIA_somprasong_nilsamai_char
-
+	recruit_character = SIA_charoenchai_hinthao_char
+	recruit_character = SIA_phana_khlaeoplotthuk_char
+	recruit_character = SIA_manat_wongwat_char
+	recruit_character = SIA_napadej_thupatemi_char
+	recruit_character = SIA_santi_lunphae_char
+	recruit_character = SIA_seksan_kantha_char
+	recruit_character = SIA_alongkorn_wannarot_char
+	recruit_character = SIA_boonsin_padklang_char
+	recruit_character = SIA_anupong_paochinda_char
+	
 	add_ideas = {
 		SIA_gdp_fix_new
 		ETH_chinese_investments

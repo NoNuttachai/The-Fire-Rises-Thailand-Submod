@@ -305,7 +305,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_long_march_through_the_institutions }
-		prerequisite = { focus = SIA_riders_and_truckers_worker_struggle }
+		
 		relative_position_id = SIA_long_march_through_the_institutions
 		
 		ai_will_do = {
@@ -327,7 +327,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_long_march_through_the_institutions }
-		prerequisite = { focus = SIA_riders_and_truckers_worker_struggle }
+		
 		relative_position_id = SIA_long_march_through_the_institutions
 		
 		ai_will_do = {
@@ -349,7 +349,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_long_march_through_the_institutions }
-		prerequisite = { focus = SIA_riders_and_truckers_worker_struggle }
+		
 		relative_position_id = SIA_long_march_through_the_institutions
 		
 		ai_will_do = {
@@ -581,6 +581,31 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SIA_information_operations
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_side_with_uncle_tuu }
+		relative_position_id = SIA_establish_ccsa
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
+			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
+			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
+			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
+		}
+	}
+	focus = {
 		id = SIA_secured_support_from_conservatives
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
@@ -656,31 +681,7 @@ focus_tree = {
 			
 		}
 	}
-	focus = {
-		id = SIA_information_operations
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 2
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_side_with_uncle_tuu }
-		relative_position_id = SIA_establish_ccsa
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 50
-			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
-			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
-			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
-			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
-		}
-	}
+	
 	focus = {
 		id = SIA_deploy_the_riot_police
 		icon = GFX_goal_SIA_deploy_the_riot_police

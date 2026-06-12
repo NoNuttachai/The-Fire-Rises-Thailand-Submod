@@ -530,7 +530,7 @@ ideas = {
 			}
 			cost = 0
 			traits = {
-				SIA_ide_neoliberal
+				SIA_ide_stratcon
 				int_balanced_cryptographer
 			}
 		}
@@ -544,7 +544,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_stratcon
-				mobile_warfare_expert
+				military_theorist
 			}
 		}
 	}
