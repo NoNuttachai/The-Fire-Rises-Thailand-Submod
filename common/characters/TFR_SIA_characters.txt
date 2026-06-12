@@ -397,7 +397,7 @@ characters={
 			ledger = navy
 
 			traits = {
-				air_chief_safety_2
+				air_chief_all_weather_2
 			}
 			cost = 100
 			ai_will_do = {
@@ -871,7 +871,7 @@ characters={
 			ledger = navy
 
 			traits = {
-				air_chief_all_weather_2
+				air_chief_safety_2
 			}
 			cost = 100
 			ai_will_do = {

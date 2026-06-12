@@ -619,6 +619,10 @@ SIA_bop_prayut = {
 				id = SIA_power_balance
 				value = 0.1
 			}
+			 add_popularity = {
+				ideology = fascist
+				popularity = 0.01
+			}
 		}
 	}
 	SIA_demonstrate_infront_of_the_ministry_of_energy = {

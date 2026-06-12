@@ -150,22 +150,12 @@
  SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
  SIA_prayut_chan-o-cha_char_desc: "General Prayut Chan-o-cha, commonly known as `Big Tu,` was born into a military family, a background that led him into a career in the armed forces. He became well known within the 21st Infantry Regiment of the King's Guard as the `Queen's Tiger,` a reputation that contributed to his rise to Commander-in-Chief of the Royal Thai Army in 2010, a position he had long aspired to attain.\n\nDuring the political turmoil of 2014, marked by deep divisions and prolonged unrest, Prayut led the military under the National Council for Peace and Order (NCPO) in a coup on 22 May 2014, aiming to end the political crisis. This action resulted in his appointment as Prime Minister.\n\nAs Prime Minister, Prayut oversaw the drafting of a new constitution focused on national unity and anti-corruption, earning it the nickname `the anti-corruption constitution,` though several provisions—such as allowing a non-MP to become Prime Minister and empowering the Senate—were controversial.\n\nAfter the 2019 general election, Prayut returned to office with the support of the Palang Pracharath Party, promoting policies to assist low-income citizens, reduce living costs, and address agricultural issues. Despite continued criticism from younger and left-wing groups over the constitution and his rule, he retained strong support from conservative groups as a stabilizing leader."
  SIA_don_pramudwinai_char: "Don Pramudwinai"
- SIA_uttama_saowanayon_char: "Uttama Saowanayon [£SIA_uttama_saowanayon_advisor_desc]"
+ SIA_uttama_saowanayon_char: "Uttama Saowanayon"
  SIA_anupong_paochinda_char: "Anupong Paochina"
  SIA_thewan_liptapanlop_char: "Thewan Liptapanlop "
  SIA_prawit_wongsuwan_char: "Prawit Wongsuwan"
- SIA_prayut_chan-o-cha_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
- SIA_don_pramudwinai_advisor_desc: "Independent"
- SIA_uttama_saowanayon_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
- SIA_anupong_paochinda_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
- SIA_thewan_liptapanlop_advisor_desc: "[£GFX_chartpattana] Chart Pattana Party\nNeoliberal"
- SIA_prawit_wongsuwan_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
-
- SIA_predee_daocha_char: "Predee Daocha [£SIA_predee_daocha_advisor_desc]"
- SIA_predee_daocha_advisor_desc: "Independent"
-
- SIA_anucha_nakasai_char: "Anucha Nakasai [£SIA_anucha_nakasai_char_advisor_desc]"
- SIA_anucha_nakasai_advisor_desc: "[£GFX_palang_pracharath] Palang Pracharath Party\nStratocratic Conservative"
+ SIA_predee_daocha_char: "Predee Daocha"
+ SIA_anucha_nakasai_char: "Anucha Nakasai"
 
  SIA_adung_phan_iam_char: "Adung Phan-iam"
  SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
@@ -525,16 +515,16 @@
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
 
  SIA_utilize_pegasus_against_key_agitators: "Utilize Pegasus Spyware Against Key Agitators"
- SIA_utilize_pegasus_against_key_agitators_desc: "Pegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor “those who pose a threat” to “national security” with Thailand being one of them."
+ SIA_utilize_pegasus_against_key_agitators_desc: "\n\n\n\n£GFX_SIA_Pegasus_Spyware_Banner\n\n\n\n\n\nPegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor “those who pose a threat” to “national security” with Thailand being one of them."
  
  SIA_cyber_warfare_with_the_three_hooves: "Cyber Warfare With The Three Hooves"
  SIA_cyber_warfare_with_the_three_hooves_desc: "Our agents will use sock puppet accounts on social media sites such as Twitter and Facebook to attack the opposition, revealing and disseminating negative information about the government opponents."
  
  SIA_jay_juk_khlong_sam: "Jay Juk Khlong Sam"
- SIA_jay_juk_khlong_sam_desc: "Our agents will create a Twitter account named 'Jay Juk Khlong Sam' (Sister Juk of Canal Sam), featuring a profile picture of Charlotte Linlin from the anime One Piece (chosen simply because one of our agents likes the show). This account will be used to post content opposing the three-finger protesters."
+ SIA_jay_juk_khlong_sam_desc: "\n\n\n\n£GFX_SIA_Jae_Juk\n\n\n\n\n\nOur agents will create a Twitter account named 'Jay Juk Khlong Sam' (Sister Juk of Canal Sam), featuring a profile picture of Charlotte Linlin from the anime One Piece (chosen simply because one of our agents likes the show). This account will be used to post content opposing the three-finger protesters."
  
  SIA_botted_engagement_on_the_rco_facebook_page: "Botted Engagement on the RCO Facebook Page"
- SIA_botted_engagement_on_the_rco_facebook_page_desc: "Our agents will use bots to drive engagement on the Facebook page of the royalist Rubbish Collection Organization."
+ SIA_botted_engagement_on_the_rco_facebook_page_desc: "\n\n\n\n£GFX_SIA_RCO_Facebook\n\n\n\n\n\nOur agents will use bots to drive engagement on the Facebook page of the royalist Rubbish Collection Organization."
  
  SIA_demonstrate_infront_of_the_ministry_of_energy: "Demonstrate Infront of the Ministry of Energy"
  SIA_demonstrate_infront_of_the_ministry_of_energy_desc: "We will organize a demonstration against the Ministry of Energy in cooperation with workers' unions and student activist groups in front of the Ministry of Energy headquarters in Bangkok, demanding immediate action to address the worsening fuel crisis."
@@ -661,6 +651,11 @@
  
  #Leader Traits
  SIA_Vajiralongkorn: "Vajiralongkorn"
+ #SIA
+ SIA_ide_pprp: "£GFX_palang_pracharath §RPPRP§!"
+ SIA_ide_stratcon: "£GFX_palang_pracharath §PStrat. Conservative§!"
+ SIA_ide_independent: "£GFX_FRA_centrist_texticon §LIndependent§!"
+ SIA_ide_neoliberal: "£GFX_chartpattana §BNeo§!§Rliberal§!"
  
  
  #Decision cost tooltip for this mod that uses
