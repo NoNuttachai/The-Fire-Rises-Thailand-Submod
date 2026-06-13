@@ -240,10 +240,10 @@ SIA_check_motion_of_no_confidence = {
 			
 			random_list = {
 				100 = {
-					country_event = thai_events.34
+					country_event = thai_events.33
 				}
 				0 = {
-					country_event = thai_events.36
+					country_event = thai_events.35
 				}
 			}
 			
@@ -322,10 +322,10 @@ SIA_check_motion_of_no_confidence = {
 			
 			random_list = {
 				0 = {
-					country_event = thai_events.34
+					country_event = thai_events.33
 				}
 				100 = {
-					country_event = thai_events.36
+					country_event = thai_events.35
 				}
 			}
 			
@@ -398,10 +398,10 @@ SIA_check_motion_of_no_confidence = {
 			
 			random_list = {
 				25 = {
-					country_event = thai_events.34
+					country_event = thai_events.33
 				}
 				75 = {
-					country_event = thai_events.36
+					country_event = thai_events.35
 				}
 			}
 			
@@ -474,10 +474,10 @@ SIA_check_motion_of_no_confidence = {
 			
 			random_list = {
 				75 = {
-					country_event = thai_events.34
+					country_event = thai_events.33
 				}
 				25 = {
-					country_event = thai_events.36
+					country_event = thai_events.35
 				}
 			}
 			
@@ -550,10 +550,10 @@ SIA_check_motion_of_no_confidence = {
 			
 			random_list = {
 				50 = {
-					country_event = thai_events.34
+					country_event = thai_events.33
 				}
 				50 = {
-					country_event = thai_events.36
+					country_event = thai_events.35
 				}
 			}
 			

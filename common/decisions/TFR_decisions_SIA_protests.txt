@@ -58,7 +58,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			
+			has_completed_focus = SIA_deploy_the_army
 		}
 		
 		complete_effect = {
@@ -75,7 +75,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			
+			has_completed_focus = SIA_smother_the_flames
 		}
 		
 		complete_effect = {
@@ -136,6 +136,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
+			has_completed_focus = SIA_approach_foreign_media_and_advocacy_groups
 			check_variable = { SIA_bbc_protests = 0 }
 		}
 		cost = 20

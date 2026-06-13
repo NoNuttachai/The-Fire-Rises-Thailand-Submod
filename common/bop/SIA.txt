@@ -68,10 +68,10 @@ SIA_power_balance = {
 				effect_tooltip = {
 					random_list = {
 						50 = {
-							country_event = thai_events.34
+							country_event = thai_events.33
 						}
 						50 = {
-							country_event = thai_events.36
+							country_event = thai_events.35
 						}
 					}
 				}
@@ -164,10 +164,10 @@ SIA_power_balance = {
 					effect_tooltip = {
 						random_list = {
 							25 = {
-								country_event = thai_events.34
+								country_event = thai_events.33
 							}
 							75 = {
-								country_event = thai_events.36
+								country_event = thai_events.35
 							}
 						}
 					}
@@ -211,6 +211,7 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_higher
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
 						has_completed_focus = SIA_raise_our_three_fingers
@@ -255,10 +256,10 @@ SIA_power_balance = {
 					effect_tooltip = {
 						random_list = {
 							0 = {
-								country_event = thai_events.34
+								country_event = thai_events.33
 							}
 							100 = {
-								country_event = thai_events.36
+								country_event = thai_events.35
 							}
 						}
 					}
@@ -302,6 +303,7 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_highest
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
 						has_completed_focus = SIA_raise_our_three_fingers
@@ -346,10 +348,10 @@ SIA_power_balance = {
 					effect_tooltip = {
 						random_list = {
 							0 = {
-								country_event = thai_events.34
+								country_event = thai_events.33
 							}
 							100 = {
-								country_event = thai_events.36
+								country_event = thai_events.35
 							}
 						}
 					}
@@ -399,6 +401,7 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_low
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
 						has_completed_focus = SIA_raise_our_three_fingers
@@ -443,10 +446,10 @@ SIA_power_balance = {
 					effect_tooltip = {
 						random_list = {
 							75 = {
-								country_event = thai_events.34
+								country_event = thai_events.33
 							}
 							25 = {
-								country_event = thai_events.36
+								country_event = thai_events.35
 							}
 						}
 					}
@@ -490,6 +493,7 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_lower
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
 						has_completed_focus = SIA_raise_our_three_fingers
@@ -534,10 +538,10 @@ SIA_power_balance = {
 					effect_tooltip = {
 						random_list = {
 							100 = {
-								country_event = thai_events.34
+								country_event = thai_events.33
 							}
 							0 = {
-								country_event = thai_events.36
+								country_event = thai_events.35
 							}
 						}
 					}
@@ -584,6 +588,7 @@ SIA_power_balance = {
 				effect_tooltip = {
 					remove_ideas = SIA_lack_of_the_political_legitimacy_lower
 				}
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
 						has_completed_focus = SIA_raise_our_three_fingers
