@@ -148,7 +148,6 @@
 
  ###Characters###
  SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
- SIA_prayut_chan-o-cha_char_desc: "General Prayut Chan-o-cha, commonly known as `Big Tu,` was born into a military family, a background that led him into a career in the armed forces. He became well known within the 21st Infantry Regiment of the King's Guard as the `Queen's Tiger,` a reputation that contributed to his rise to Commander-in-Chief of the Royal Thai Army in 2010, a position he had long aspired to attain.\n\nDuring the political turmoil of 2014, marked by deep divisions and prolonged unrest, Prayut led the military under the National Council for Peace and Order (NCPO) in a coup on 22 May 2014, aiming to end the political crisis. This action resulted in his appointment as Prime Minister.\n\nAs Prime Minister, Prayut oversaw the drafting of a new constitution focused on national unity and anti-corruption, earning it the nickname `the anti-corruption constitution,` though several provisions—such as allowing a non-MP to become Prime Minister and empowering the Senate—were controversial.\n\nAfter the 2019 general election, Prayut returned to office with the support of the Palang Pracharath Party, promoting policies to assist low-income citizens, reduce living costs, and address agricultural issues. Despite continued criticism from younger and left-wing groups over the constitution and his rule, he retained strong support from conservative groups as a stabilizing leader."
  SIA_don_pramudwinai_char: "Don Pramudwinai"
  SIA_uttama_saowanayon_char: "Uttama Saowanayon"
  SIA_anupong_paochinda_char: "Anupong Paochina"
@@ -200,6 +199,7 @@
  SIA_active_protests_1: "Minor Anti-Governmental Demonstrations"
  SIA_active_protests_2: "Mass Protests"
  SIA_active_protests_3: "Mass Riots"
+ SIA_state_of_emergency: "State of Emergency"
  
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
@@ -352,6 +352,27 @@
  thai_events.32.d: "Something something saudi civil war caused this btw"
  thai_events.32.a: "Peace was never meant to be."
  
+ thai_events.33.t: "Prayut Survives 2nd Motion of No Confidence"
+ thai_events.33.d: "NO LOCCCCCCCCCCCCCCCCCCCCC"
+ thai_events.33.a: "It's in the title"
+ 
+ thai_events.34.t: "Prayut Survives 3rd Motion of No Confidence"
+ thai_events.34.d: "NO LOCCCCCCCCCCCCCCCCCCCCC"
+ thai_events.34.a: "It's in the title"
+ 
+ thai_events.35.t: "The Moment of Truth"
+ thai_events.35.d: "Prime Minister Prayut Chan-o-cha, accompanied by his Cabinet, arrived at the National Assembly expecting to survive the no-confidence motion tabled a week prior. However, when the Prime Minister met with government MPs before the vote, an unsettling atmosphere took hold. Something was clearly wrong.\n\nThamanat Prompow, the leader of a powerful faction within the Palang Pracharath Party, signaled his opposition toward General Prayut. This move confirmed the rumors circulating in the media for the past 24 hours that an internal rebellion was brewing and would likely strike on the night of the vote.\n\nAs the voting concluded, the Chamber fell silent in anticipation. Speaker Chuan Leekpai began to read the results:\n\n'With 475 members present: 248 Ayes, 224 Nays, and 3 abstentions. No blank votes. Therefore, the House of Representatives has passed a motion of no confidence against Prime Minister Prayut Chan-o-cha.'\n\nThe Chamber immediately descended into chaos, with government MPs frantically demanding a new round of voting. Amidst the shouting, Speaker Chuan continued reading the remaining results, revealing that other ministers survived the vote."
+ thai_events.35.a: "It's over"
+ 
+ thai_events.36.t: "The Moment of Truth"
+ thai_events.36.d: "Prime Minister Prayut Chan-o-cha, accompanied by his Cabinet, arrived at the National Assembly expecting to survive the no-confidence motion tabled a week prior. However, when the Prime Minister met with government MPs before the vote, an unsettling atmosphere took hold. Something was clearly wrong.\n\nThamanat Prompow, the leader of a powerful faction within the Palang Pracharath Party, signaled his opposition toward General Prayut. This move confirmed the rumors circulating in the media for the past 24 hours that an internal rebellion was brewing and would likely strike on the night of the vote.\n\nAs the voting concluded, the Chamber fell silent in anticipation. Speaker Chuan Leekpai began to read the results:\n\n'With 475 members present: 248 Ayes, 224 Nays, and 3 abstentions. No blank votes. Therefore, the House of Representatives has passed a motion of no confidence against Prime Minister Prayut Chan-o-cha.'\n\nThe Chamber immediately descended into chaos, with government MPs frantically demanding a new round of voting. Amidst the shouting, Speaker Chuan continued reading the remaining results, revealing that other ministers survived the vote."
+ thai_events.36.a: "It's over"
+ 
+ thai_events.37.t: "No Excuses, It's over"
+ thai_events.37.d: "In the aftermath of the no-confidence motion that toppled Prime Minister Prayut Chan-o-cha, all eyes turned to the upcoming joint session of the National Assembly to elect a new premier. The 12th Senate, appointed by the NCPO under Prayut's political mechanism, possessed the power to nominate an 'outsider' candidate; however, doing so would have defied the so-called 'democratic order.'\n\nUltimately, Caretaker Prime Minister Prawit Wongsuwan urged the Senate to relinquish its authority in the election-either by supporting a constitutional amendment or by voting in alignment with the House of Representatives' majority."
+ thai_events.37.a: "...The Constitutional Amendment"
+ thai_events.37.b: " ...Align with the House"
+ 
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
  #thailand_nonpolitical.1.a: ""
@@ -383,6 +404,7 @@
  SIA_popular_winwin_side: "Prayut Side"
  SIA_loss_side: "Opposition Side"
  SIA_balance_range: "Medium Approval"
+ SIA_motion_of_no_confidence_voted: "\n§YWhen the day of voting arrives for the Motion of No Confidence,§!"
  SIA_loss_low_control_range: "Low Approval"
  SIA_loss_medium_control_range: "Very Low Approval"
  SIA_loss_high_control_range: "Overwhelmingly Low Approval"
@@ -563,6 +585,39 @@
  
  SIA_supported_prayut: "The §GGovernment§!"
  SIA_supported_opposition: "The §RProtestors§!"
+ 
+ SIA_dismantle_the_protests: "Dismantle the Protests"
+ SIA_dismantle_the_protests_tt: "The §RRiots§! will be stopped §Rviolently§!, §YProtests§! will §Ggreatly decay§!"
+ 
+ SIA_calm_the_protests: "Calm the Protests"
+ SIA_calm_the_protests_tt: "The §RRiots§! will be stopped §Gdiplomatically§!, Protests will §Oslowly decay§!"
+ 
+ SIA_secure_support_from_ned: "Secure Support from NED"
+ SIA_secure_support_from_ned_desc: "\n\n\n\n\n£GFX_SIA_National_Endowment_for_Democracy\n\n\n\n\n\nThe National Endowment for Democracy (NED) is a quasi-autonomous, non-governmental organization established by the United States Congress in 1983. Its stated mission is to promote democracy worldwide by supporting democratic institutions and civil society organizations, including political associations.\n\nThe NED did not fund or organize Thailand's student-led protests, but it supported projects related to human rights and civic participationsuch as iLaw. Some conservative and right-wing commentators, such as Sondhi Limthongkul, have alleged that the NED indirectly interfered in Thailand's domestic affairs by funding organizations whose objectives aligned with those of the protest movement. Supporters of the NED reject these claims, arguing that it merely supported civil society initiatives rather than influencing Thai politics.\n\n"—and that government of the people, by the people, for the people, shall not perish from the earth."\n-Abraham Lincoln"
+ 
+ SIA_bbc_coverage_of_the_protestors: "BBC: Coverage of the Protestors"
+ SIA_bbc_coverage_of_the_protestors_desc: "The BBC did not formally campaign against the Thai government, but its reporting frequently highlighted allegations of repression, restrictions on civil liberties, and controversies surrounding the government's handling of the protests. As a result, many critics perceived its coverage as unfavorable to the government and sympathetic to the protest movement."
+ 
+ SIA_expand_bbc_thai_service: "Expand BBC Thai Service"
+ SIA_expand_bbc_thai_service_desc: "\n\n\n\n\n£GFX_SIA_BBC_Thai\n\n\n\n\n\nBBC Thai is the Thai-language news service of the British Broadcasting Corporation (BBC), operating under the BBC World Service. It publishes news, analysis, features, and articles covering Thailand, Southeast Asia, and international affairs for Thai-speaking audiences.\nLaunched in 2014 as part of the BBC's expansion of its digital-language services, BBC Thai primarily operates through its website and social media platforms rather than traditional television or radio broadcasting.\n\nThe service has been praised by supporters for reporting on issues that may receive limited coverage in some domestic media outlets. However, its reporting has also attracted criticism from some Thai conservative and royalist groups, who argue that its coverage of sensitive political and monarchy-related topics is biased."
+ 
+ SIA_bbc_criticism_against_the_thai_monarchy: "BBC: Criticism Against the Thai Monarchy"
+ SIA_bbc_criticism_against_the_thai_monarchy_desc: "Even before its coverage of the protesters demands regarding the monarchy, the BBC was already a controversial news organization in Thailand due to its reporting on sensitive issues involving the royal institution. Operating largely outside the constraints of domestic Thai censorship and under British jurisdiction, the network was able to report on topics that many native media outlets avoided or covered only cautiously. As a result, while Thai media often had to self-censor or only vaguely refer to the protesters' demands because of the strict enforcement of lèse-majesté laws (Article 112), the BBC reported on calls for royal reform more directly."
+ 
+ SIA_bbc_on_the_ground_with_jonathan_head: "BBC: On The Ground with Jonathan Head"
+ SIA_bbc_on_the_ground_with_jonathan_head_desc: "\n\n\n\n\n£GFX_SIA_BBC_On_the_Ground_with_Jonathan_Head\n\n\n\n\n\nJonathan Head is a veteran British journalist and the long-serving Southeast Asia Correspondent for BBC News. Based in Bangkok, Thailand, he is one of the most recognizable international reporters covering the region, with a career at the BBC spanning more than three decades.\n\nIn Thailand, he is often viewed negatively by right wingers due to allegations that his reporting insulted the monarchy. In 2008, Thai police investigated him under lèse-majesté laws, an offense that can carry a prison sentence of up to 15 years. However, the case did not result in a conviction, reportedly because prosecuting a foreign journalist from the United Kingdom could have caused a diplomatic incident with the British government."
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
@@ -576,7 +631,7 @@
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y350 days§! of §YOil in Reserves§!\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y350 days§! of §YOil in Reserves§! or §Lwe are past the 23rd of August, 2021§!\n"
  
  SIA_empty_oil_reserves_causes_damage_mission: "Depleted Oil Reserves Causing Shortages"
  SIA_empty_oil_reserves_causes_damage_mission_tt: "§gOil in Reserves is currently present§!."
@@ -606,6 +661,9 @@
  SIA_synthetic_gas_initiative: "Synthetic Gas Initiative"
  SIA_synthetic_gas_initiative_desc: ""
  
+ SIA_accelerate_biofuel_integration: "Accelerate Biofuel Integration"
+ SIA_accelerate_biofuel_integration_desc: "To reduce costly foreign crude oil imports, the government will fast-track the domestic production of alternative fuels. State-backed energy firms will launch the large-scale distribution of B20 diesel, a fuel blend containing 20% palm oil biodiesel. This fuel will be supplied to commercial transport trucks, buses, and industrial machinery to reduce reliance on imported Middle Eastern diesel feedstocks."
+ 
  SIA_subsidize_solar_energy: "Subsidize Solar Energy"
  SIA_subsidize_solar_energy_desc: "To reduce dependence on imported fossil fuels and strengthen energy security, the government will establish a national Solar Energy Transition Fund, providing low-interest loans, grants, and tax incentives for households, businesses, and farms to install solar panels. The fund will also support the development of utility-scale solar farms to expand renewable electricity generation nationwide."
  
@@ -632,6 +690,8 @@
  
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
+ SIA_bbc_thai_slander: "BBC Thai Slander"
+ SIA_ned_interference: "NED Interference"
  #State Modifiers
  SIA_southern_fire_state_modifier: "Southern Fire"
  SIA_southern_fire_state_modifier_desc: "Southern Fire Description"

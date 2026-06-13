@@ -87,6 +87,7 @@
 		SIA_anupong_paochinda_advisor
 		SIA_thewan_liptapanlop_advisor
 		SIA_prawit_wongsuwan_advisor
+		
 	}
 	
 	set_technology = {
@@ -242,7 +243,10 @@
 		SIA_lottery_conscription
 		SIA_low_income_only_welfare
 		general_exemptions
-		medium_poverty
+		high_poverty
+		medium_police
+		low_female_service
+		high_racial_integration
 		ASEAN_member
 	}
 	

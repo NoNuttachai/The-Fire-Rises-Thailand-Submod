@@ -46,6 +46,7 @@ SIA_parliament_category = {
 			hidden_effect = {
 				country_event = { id = thai_events.29 days = 60 }
 			}
+			SIA_check_motion_of_no_confidence = yes
 		}
 		complete_effect = {
 		}
@@ -70,6 +71,7 @@ SIA_parliament_category = {
 		days_mission_timeout = 135
 		timeout_effect = {
 			custom_effect_tooltip = thai_events_29_tt
+			SIA_check_motion_of_no_confidence = yes
 		}
 		complete_effect = {
 		}

@@ -105,6 +105,21 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_National_Endowment_for_Democracy"
+		texturefile = "gfx/texticons/banners/National_Endowment_for_Democracy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_BBC_Thai"
+		texturefile = "gfx/texticons/banners/BBC_Thai.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_BBC_On_the_Ground_with_Jonathan_Head"
+		texturefile = "gfx/texticons/banners/BBC_On_the_Ground_with_Jonathan_Head.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}

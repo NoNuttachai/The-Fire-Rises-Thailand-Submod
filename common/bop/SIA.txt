@@ -23,6 +23,75 @@ SIA_power_balance = {
 				}
 			}
 			add_ideas = SIA_lack_of_the_political_legitimacy
+			custom_effect_tooltip = SIA_motion_of_no_confidence_voted
+			if = {
+				limit = {
+					has_completed_focus = SIA_raise_our_three_fingers
+					NOT = {
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+				}
+				effect_tooltip = {
+					random_list = {
+						50 = {
+							country_event = thai_events.33
+						}
+						50 = {
+							country_event = thai_events.35
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SIA_raise_our_three_fingers
+					has_country_flag = SIA_3rd_motion_of_confidence_active
+				}
+				effect_tooltip = {
+					random_list = {
+						50 = {
+							country_event = thai_events.34
+						}
+						50 = {
+							country_event = thai_events.36
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					NOT = {
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+				}
+				effect_tooltip = {
+					random_list = {
+						50 = {
+							country_event = thai_events.34
+						}
+						50 = {
+							country_event = thai_events.36
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_country_flag = SIA_3rd_motion_of_confidence_active
+				}
+				effect_tooltip = {
+					random_list = {
+						50 = {
+							country_event = thai_events.34
+						}
+						50 = {
+							country_event = thai_events.36
+						}
+					}
+				}
+			}
 		}
 		on_deactivate = {
 		}
@@ -50,6 +119,75 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_high
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
+				if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							25 = {
+								country_event = thai_events.33
+							}
+							75 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							25 = {
+								country_event = thai_events.34
+							}
+							75 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							25 = {
+								country_event = thai_events.34
+							}
+							75 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							25 = {
+								country_event = thai_events.34
+							}
+							75 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
 				
 			}
 			on_deactivate = {
@@ -73,6 +211,75 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_higher
+				if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.33
+							}
+							100 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.34
+							}
+							100 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.34
+							}
+							100 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.34
+							}
+							100 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+
 			}
 			on_deactivate = {
 			}
@@ -95,6 +302,75 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_highest
+				if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.33
+							}
+							100 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.34
+							}
+							100 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.34
+							}
+							100 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							0 = {
+								country_event = thai_events.34
+							}
+							100 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+
 			}
 			on_deactivate = {
 			}
@@ -123,6 +399,75 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_low
+				if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							75 = {
+								country_event = thai_events.33
+							}
+							25 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							75 = {
+								country_event = thai_events.34
+							}
+							25 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							75 = {
+								country_event = thai_events.34
+							}
+							25 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							75 = {
+								country_event = thai_events.34
+							}
+							25 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+
 			}
 			on_deactivate = {
 			}
@@ -145,6 +490,75 @@ SIA_power_balance = {
 					}
 				}
 				add_ideas = SIA_lack_of_the_political_legitimacy_lower
+				if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.33
+							}
+							0 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.34
+							}
+							0 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.34
+							}
+							0 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.34
+							}
+							0 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+
 			}
 			on_deactivate = {
 				
@@ -170,6 +584,75 @@ SIA_power_balance = {
 				effect_tooltip = {
 					remove_ideas = SIA_lack_of_the_political_legitimacy_lower
 				}
+				if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.33
+							}
+							0 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_raise_our_three_fingers
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.34
+							}
+							0 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						NOT = {
+							has_country_flag = SIA_3rd_motion_of_confidence_active
+						}
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.33
+							}
+							0 = {
+								country_event = thai_events.35
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_completed_focus = SIA_side_with_uncle_tuu
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+					effect_tooltip = {
+						random_list = {
+							100 = {
+								country_event = thai_events.34
+							}
+							0 = {
+								country_event = thai_events.36
+							}
+						}
+					}
+				}
+
 			}
 			on_deactivate = {
 			}

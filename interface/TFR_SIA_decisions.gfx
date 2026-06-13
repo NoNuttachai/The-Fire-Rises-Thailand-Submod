@@ -15,5 +15,17 @@ spriteTypes = {
 		name = "GFX_decision_SIA_Enact_Oil_Rationing"
 		textureFile = "gfx/interface/decisions/SIA_Enact_Oil_Rationing.png"
 	}
+	spriteType = {
+		name = "GFX_decision_SIA_BBC"
+		textureFile = "gfx/interface/decisions/SIA_BBC.png"
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_Biofuel_Integration"
+		textureFile = "gfx/interface/decisions/SIA_Biofuel_Integration.png"
+	}
+	spriteType = {
+		name = "GFX_decision_SIA_NED"
+		textureFile = "gfx/interface/decisions/SIA_NED.png"
+	}
 	
 }

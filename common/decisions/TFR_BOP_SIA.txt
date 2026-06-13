@@ -547,7 +547,7 @@ SIA_bop_prayut = {
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = 
+			
 		}
 	}
 	SIA_found_top_news = {
@@ -574,8 +574,13 @@ SIA_bop_prayut = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.15
+				value = 0.10
 			}
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 15
+			}
+			upgrade_intelligence_agency = upgrade_domestic_intelligence
 		}
 	}
 	SIA_cyber_warfare_with_the_three_hooves = {

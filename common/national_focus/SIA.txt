@@ -96,10 +96,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
-		}
-	}
-	focus = {
+			unlock_decision_tooltip = SIA_secure_support_from_ned
+			unlock_decision_tooltip = SIA_bbc_coverage_of_the_protestors
+		}                             
+	}                                 
+	focus = {                         
 		id = SIA_a_leftist_united_front
 		icon = GFX_goal_SIA_a_leftist_united_front
 		x = 2
@@ -295,7 +296,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_stability = -0.1
+			increase_academic = yes
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.1
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.025
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = 0.025
+			}
 		}
 	}
 	focus = {
@@ -479,7 +497,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_political_power = 75
+			add_stability = -0.05
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = 15
+			}
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 30
+			}
+			add_timed_idea = {
+				idea = SIA_state_of_emergency
+				days = 120
+			}
+			increase_police = yes
 		}
 	}
 	focus = {
@@ -500,7 +532,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_war_support = 0.05
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 15
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.05
+			}
+			add_society_development = yes
 		}
 	}
 	focus = {
@@ -678,7 +723,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_war_support = 0.025
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 20
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	
@@ -701,6 +754,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			add_political_power = -30
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.10
+			}
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.05
+			}
+			add_society_development = yes
 			
 		}
 	}
@@ -743,7 +806,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_stability = 0.05
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 2.500
+			}
+			add_debt = yes
+			add_days_mission_timeout = {
+				mission = SIA_nationwide_vaccinations
+				days = -150
+			}
 		}
 	}
 	focus = {
@@ -786,7 +858,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_calm_the_protests
 		}
 	}
 	focus = {
@@ -808,7 +880,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_dismantle_the_protests
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.15
+			}
+			add_society_development = yes
+			set_temp_variable = {
+				var = academic_development_var_temp
+				value = -0.075
+			}
+			add_academic_development = yes
 		}
 	}
 }

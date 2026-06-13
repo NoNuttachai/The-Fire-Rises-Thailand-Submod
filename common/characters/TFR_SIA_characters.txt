@@ -177,27 +177,7 @@ characters={
 				small = GFX_SIA_prayut_chan_o_cha
 			}
 		}
-		advisor={
-			slot = head_minister
-			idea_token = SIA_prayut_chan-o-cha_advisor
-			ideology = liberalism
-			desc = SIA_prayut_chan-o-cha_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				NOT = {
-					has_country_leader = {
-						ruling_only = yes
-						character = SIA_prayut_chan-o-cha_char
-					}
-				}
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan
-			}
-		}		
+		
 		country_leader = {
 			desc = SIA_prayut_chan-o-cha_char_desc
 			ideology = hybrid_regime

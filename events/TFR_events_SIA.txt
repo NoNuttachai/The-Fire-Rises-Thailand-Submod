@@ -141,7 +141,8 @@ country_event = {
 			id = SIA_power_balance
 			value = -0.1
 		}
-		
+		decrease_poverty = yes
+		decrease_society = yes
 	}
 }
 country_event = {
@@ -163,6 +164,7 @@ country_event = {
         name = thai_events.7.b
 		complete_national_focus = SIA_side_with_uncle_tuu
 		hidden_effect = {
+			set_variable = { SIA_protests_days = 80 }
 			activate_mission = SIA_protestor_action_1
 			activate_mission = SIA_the_protests_intensify
 		}
@@ -593,6 +595,7 @@ country_event = {
 		hidden_effect = {
 			activate_mission = SIA_third_no_confidence_vote
 		}
+		set_country_flag = SIA_3rd_motion_of_confidence_active
 	}
     option = {
         name = thai_events.29.a
@@ -662,6 +665,108 @@ country_event = {
 				set_resistance = 15
 			}
 		}
+	}
+}
+country_event = {
+    id = thai_events.33 # Prayut Survives 2nd Motion of No Confidence
+    title = thai_events.33.t
+    desc = thai_events.33.d
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_events.33.a
+		add_stability = 0.05
+		add_political_power = 25
+		add_days_mission_timeout = {
+			mission = SIA_the_protests_intensify
+			days = 20
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.05
+		}
+	}
+}
+country_event = {
+    id = thai_events.34 # Prayut Survives 3rd Motion of No Confidence
+    title = thai_events.34.t
+    desc = thai_events.34.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.34.a
+		add_stability = 0.05
+		add_political_power = 25
+		add_days_mission_timeout = {
+			mission = SIA_the_protests_intensify
+			days = 20
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.05
+		}
+	}
+}
+country_event = {
+    id = thai_events.35 # Prayut steps down after 2nd Motion of No Confidence
+    title = thai_events.35.t
+    desc = thai_events.35.d
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_events.35.a
+		add_stability = -0.05
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+		}
+		remove_ideas = SIA_prayut_chan-o-cha_advisor
+		add_ideas = SIA_prawit_wongsuwan_hog
+		remove_power_balance = {
+			id = SIA_power_balance
+		}
+		country_event = { id = thai_events.37 days = 15 }
+	}
+}
+country_event = {
+    id = thai_events.36 # Prayut steps down after 3rd Motion of No Confidence
+    title = thai_events.36.t
+    desc = thai_events.36.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.36.a
+		add_stability = -0.05
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+		}
+		remove_ideas = SIA_prayut_chan-o-cha_advisor
+		add_ideas = SIA_prawit_wongsuwan_hog
+		remove_power_balance = {
+			id = SIA_power_balance
+		}
+		country_event = { id = thai_events.37 days = 15 }
+	}
+}
+country_event = {
+    id = thai_events.37 # Follow up event after Prayut steps down
+    title = thai_events.37.t
+    desc = thai_events.37.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.37.a
+		
+	}
+	option = {
+        name = thai_events.37.b
+		
 	}
 }
 news_event = {

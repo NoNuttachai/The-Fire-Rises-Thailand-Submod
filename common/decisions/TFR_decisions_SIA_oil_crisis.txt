@@ -30,6 +30,7 @@ SIA_oil_crisis_cat = {
 				id = SIA_power_balance
 				value = -0.25
 			}
+			decrease_poverty = yes
 			set_variable = { SIA_oil_in_reserves_days_timeout = 0 }
 		}
 		complete_effect = {
@@ -39,6 +40,7 @@ SIA_oil_crisis_cat = {
 				id = SIA_power_balance
 				value = 0.15
 			}
+			increase_poverty = yes
 		}
 	}
 	SIA_empty_oil_reserves_causes_damage_mission = {
@@ -76,6 +78,7 @@ SIA_oil_crisis_cat = {
 		complete_effect = {
 			hidden_effect = {
 				SIA_oil_crisis_restore_back_to_first_level = yes
+				increase_poverty = yes
 			}
 			custom_effect_tooltip = SIA_empty_oil_reserves_causes_damage_mission_tt2
 		}
@@ -198,7 +201,7 @@ SIA_oil_crisis_cat = {
 		ai_will_do = { factor = 1 }
 		
 		custom_cost_trigger = {
-			has_command_power > 25
+			command_power > 25
 			has_political_power > 10
 		}
 		custom_cost_text = 10pp_and_25cp_cost
@@ -348,7 +351,7 @@ SIA_oil_crisis_cat = {
 		custom_cost_text = dx_more_than_25B_and_15pp
 		days_remove = 50
 		days_re_enable = 20
-		
+		fire_only_once = yes
 		complete_effect = {
 			add_political_power = -15
 			set_temp_variable = {
@@ -386,6 +389,59 @@ SIA_oil_crisis_cat = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			set_country_flag = SIA_synthetic_gas_initiative
+		}
+	}
+	SIA_accelerate_biofuel_integration = {
+		icon = GFX_decision_SIA_Biofuel_Integration
+		available = { has_country_flag = SIA_oil_crisis_ongoing }
+		visible = { has_country_flag = SIA_synthetic_gas_initiative }
+
+		ai_will_do = { factor = 1 }
+		
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+			has_political_power > 15
+		}
+		custom_cost_text = dx_more_than_25B_and_15pp
+		days_remove = 20
+		days_re_enable = 20
+		fire_only_once = yes
+		complete_effect = {
+			add_political_power = -15
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = oil_processing
+					}
+				}
+				set_technology = {
+					oil_processing = 1
+				}
+			}
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 20
 			}
 		}
 	}

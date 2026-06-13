@@ -17,10 +17,17 @@ SIA_protests_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 80
+		days_mission_timeout = SIA_protests_days
 		timeout_effect = {
 			SIA_increase_protests = yes
+			add_to_variable = { SIA_protests_days = 10 }
 			activate_mission = SIA_the_protests_intensify
+			effect_tooltip = {
+				add_days_mission_timeout = {
+					mission = SIA_the_protests_intensify
+					days = 10
+				}
+			}
 		}
 		complete_effect = {
 			
@@ -45,6 +52,40 @@ SIA_protests_category = {
 			base = 10
 		}
 	}
+	SIA_dismantle_the_protests = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			clr_country_flag = SIA_anti_government_protests
+			custom_effect_tooltip = SIA_dismantle_the_protests_tt
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_calm_the_protests = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			clr_country_flag = SIA_anti_government_protests
+			custom_effect_tooltip = SIA_calm_the_protests_tt
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
 	SIA_expand_police_activities = {
 		icon = generic_crisis
 		allowed = {
@@ -59,6 +100,138 @@ SIA_protests_category = {
 				mission = SIA_the_protests_intensify
 				days = 50
 			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_secure_support_from_ned = {
+		icon = GFX_decision_SIA_NED
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_approach_foreign_media_and_advocacy_groups
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -20
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = SIA_ned_interference
+			}
+			unlock_decision_tooltip = SIA_bbc_coverage_of_the_protestors
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_bbc_coverage_of_the_protestors = {
+		icon = GFX_decision_SIA_BBC
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			check_variable = { SIA_bbc_protests = 0 }
+		}
+		cost = 20
+		fire_only_once = yes
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -10
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = SIA_bbc_thai_slander
+			}
+			add_to_variable = { SIA_bbc_protests = 1 }
+			unlock_decision_tooltip = SIA_expand_bbc_thai_service
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_expand_bbc_thai_service = {
+		icon = GFX_decision_SIA_BBC
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			check_variable = { SIA_bbc_protests = 1 }
+		}
+		cost = 20
+		fire_only_once = yes
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -10
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = SIA_bbc_thai_slander
+			}
+			add_to_variable = { SIA_bbc_protests = 1 }
+			unlock_decision_tooltip = SIA_bbc_criticism_against_the_thai_monarchy
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_bbc_criticism_against_the_thai_monarchy = {
+		icon = GFX_decision_SIA_BBC
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			check_variable = { SIA_bbc_protests = 2 }
+		}
+		cost = 20
+		fire_only_once = yes
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -10
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = SIA_bbc_thai_slander
+			}
+			add_to_variable = { SIA_bbc_protests = 1 }
+			unlock_decision_tooltip = SIA_bbc_on_the_ground_with_jonathan_head
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_bbc_on_the_ground_with_jonathan_head = {
+		icon = GFX_decision_SIA_BBC
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			check_variable = { SIA_bbc_protests = 3 }
+		}
+		cost = 40
+		fire_only_once = yes
+		
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -20
+			}
+			add_opinion_modifier = {
+				target = ENG
+				modifier = SIA_bbc_thai_slander
+			}
+			clear_variable = SIA_bbc_protests
 		}
 		ai_will_do = {
 			base = 10

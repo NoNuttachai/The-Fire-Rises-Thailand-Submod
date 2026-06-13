@@ -9,7 +9,7 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				business_value_factor = -1.02
+				business_value_factor = -0.85
 				personal_value_factor = -1.04
 				income_growth_factor = 0.65
 				expense_growth_factor = -0.65
@@ -386,7 +386,7 @@ ideas = {
 			}
 		}
 		SIA_active_protests_1 = {
-			picture = generic_covid
+			picture = USA_mass_riots
 			traits = {
 				ZZZ_blank_idea_trait
 			}
@@ -397,10 +397,13 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.05
+				stability_weekly = -0.001
+				society_development_monthly = -0.003
+				consumer_goods_factor = 0.05
 			}
 		}
 		SIA_active_protests_2 = {
-			picture = generic_covid
+			picture = USA_mass_riots
 			traits = {
 				ZZZ_blank_idea_trait
 			}
@@ -411,10 +414,13 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.1
+				stability_weekly = -0.0025
+				society_development_monthly = -0.005
+				consumer_goods_factor = 0.1
 			}
 		}
 		SIA_active_protests_3 = {
-			picture = generic_covid
+			picture = USA_mass_riots
 			traits = {
 				ZZZ_blank_idea_trait
 			}
@@ -425,6 +431,9 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.15
+				stability_weekly = -0.005
+				society_development_monthly = -0.01
+				consumer_goods_factor = 0.15
 			}
 		}
 		SIA_half_payment_policy = {
@@ -442,6 +451,22 @@ ideas = {
 				income_growth_factor = 0.1
 			}
 		}
+		SIA_state_of_emergency = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.20
+				expense_growth_factor = 0.1
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {
@@ -456,6 +481,21 @@ ideas = {
 			traits = {
 				SIA_ide_stratcon
 				hog_political_protege
+				hog_old_general
+			}
+		}
+		SIA_prawit_wongsuwan_hog = {
+			name = SIA_prawit_wongsuwan_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				SIA_ide_stratcon
+				hog_old_general
 			}
 		}
 	}

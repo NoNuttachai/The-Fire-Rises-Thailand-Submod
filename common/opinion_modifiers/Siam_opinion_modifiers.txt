@@ -1,4 +1,6 @@
 opinion_modifiers = {
 	decreased_relations = { value = -20 }
 	SIA_joint_training = { value = 20 months = 24 }
+	SIA_bbc_thai_slander = { value = -10 }
+	SIA_ned_interference = { value = -15 months = 12 }
 }
