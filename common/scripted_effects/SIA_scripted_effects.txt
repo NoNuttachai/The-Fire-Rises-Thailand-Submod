@@ -165,6 +165,15 @@ SIA_increase_protests = {
 			remove_idea = SIA_active_protests_1
 			add_idea = SIA_active_protests_2
 		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = protests_newsevent_triggered
+				}
+			}
+			news_event = thai_newsevents.1
+			set_country_flag = protests_newsevent_triggered
+		}
 	}
 	else_if = {
 		limit = {
@@ -174,12 +183,40 @@ SIA_increase_protests = {
 			remove_idea = SIA_active_protests_2
 			add_idea = SIA_active_protests_3
 		}
+		
+		
 	}
 	else_if = {
 		limit = {
-			has_idea = SIA_oil_crisis_3
+			has_idea = SIA_active_protests_3
 		}
 		add_stability = -0.05
+	}
+}
+SIA_decrease_protests = {
+	if = {
+		limit = {
+			has_idea = SIA_active_protests_1
+		}
+		remove_ideas = SIA_active_protests_1
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_active_protests_2
+		}
+		swap_ideas = {
+			remove_idea = SIA_active_protests_2
+			add_idea = SIA_active_protests_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_active_protests_3
+		}
+		swap_ideas = {
+			remove_idea = SIA_active_protests_3
+			add_idea = SIA_active_protests_2
+		}
 	}
 }
 SIA_check_motion_of_no_confidence = {

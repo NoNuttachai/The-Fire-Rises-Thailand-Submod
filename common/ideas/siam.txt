@@ -379,8 +379,8 @@ ideas = {
 			}
 			
 			modifier = {
-				political_power_gain = -0.5
-				stability_factor = -0.20
+				political_power_gain = -0.6
+				stability_factor = -0.3
 				society_development_monthly = -0.08
 				expense_growth_factor = 0.15
 			}
@@ -447,7 +447,7 @@ ideas = {
 			}
 			
 			modifier = {
-				stability_factor = 0.15
+				stability_factor = 0.10
 				income_growth_factor = 0.1
 			}
 		}

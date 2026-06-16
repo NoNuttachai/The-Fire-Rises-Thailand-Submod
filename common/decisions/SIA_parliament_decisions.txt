@@ -18,7 +18,7 @@ SIA_parliament_category = {
 		selectable_mission = no
 		days_mission_timeout = 58
 		timeout_effect = {
-			
+			country_event = thai_events.40
 		}
 		complete_effect = {
 		}
@@ -123,7 +123,7 @@ SIA_parliament_category = {
 	SIA_emergency_loan_bill_oil_crisis = {
 		icon = GFX_decision_generic_oil
 		visible = { has_country_flag = SIA_oil_crisis_ongoing }
-		cost = 10
+		cost = 30
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		complete_effect = {

@@ -120,6 +120,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_Prayut_Putin"
+		texturefile = "gfx/texticons/banners/Prayut_Putin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_Prayut_Trump"
+		texturefile = "gfx/texticons/banners/Prayut_Trump.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
@@ -475,5 +485,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_marsun"
 		texturefile = "gfx/interface/mios/MIO_marsun.dds"
+	}
+	#HOGS FOR DIPLO SCREEN
+	spriteType = {
+		name = "GFX_hog_SIA_prawit_wongsuwan"
+		texturefile = "gfx/leaders/SIA/SIA_prawit_wongsuwan.png"
 	}
 }

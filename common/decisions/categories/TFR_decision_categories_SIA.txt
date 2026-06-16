@@ -21,6 +21,29 @@ SIA_bop_prayut = {
 		original_tag = SIA
 	}
 }
+
+SIA_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	priority = 90
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		original_tag = SIA
+	}
+}
+SIA_protests_category = {
+	icon = GFX_decision_cat_SIA_parliament
+
+	priority = 7
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_anti_government_protests
+	}
+	visible_when_empty = yes
+}
 SIA_oil_crisis_cat = {
 	icon = generic_crisis
 	picture = GFX_decision_cat_SIA_oil_crisis_picture
@@ -34,37 +57,15 @@ SIA_oil_crisis_cat = {
 	}
 	visible_when_empty = yes
 }
-SIA_balance_of_power_category = {
-	icon = GFX_decision_category_power_struggle
-	priority = 90
-	allowed = {
-		original_tag = SIA
-	}
-	visible = {
-		original_tag = SIA
-	}
-}
 SIA_coronavirus_category = {
 	icon = GFX_decision_PRC_covid_19_cat
-
-	priority = 6
-	allowed = {
-		original_tag = SIA
-	}
-	visible = {
-		has_country_flag = SIA_coronavirus_ongoing
-	}
-	visible_when_empty = yes
-}
-SIA_protests_category = {
-	icon = GFX_decision_cat_SIA_parliament
 
 	priority = 5
 	allowed = {
 		original_tag = SIA
 	}
 	visible = {
-		has_country_flag = SIA_anti_government_protests
+		has_country_flag = SIA_coronavirus_ongoing
 	}
 	visible_when_empty = yes
 }

@@ -1,6 +1,6 @@
 SIA_protests_category = {
 	SIA_the_protests_intensify = {
-		icon = generic_coronavirus
+		icon = GFX_decision_generic_protest_riot
 		allowed = {
 			tag = SIA
 		}
@@ -8,8 +8,8 @@ SIA_protests_category = {
 			has_country_flag = SIA_anti_government_protests
 		}
 		available = {
-			hidden_trigger = {
-				always = no
+			NOT = {
+				has_country_flag = SIA_anti_government_protests
 			}
 		}
 		activation = {
@@ -28,21 +28,95 @@ SIA_protests_category = {
 					days = 10
 				}
 			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 		complete_effect = {
-			
+			hidden_effect = {
+				remove_ideas = {
+					SIA_active_protests_1
+					SIA_active_protests_2
+					SIA_active_protests_3
+				}
+			}
+			country_event = thai_events.39
 		}
 	}
-	SIA_enforce_curfews = {
-		icon = generic_crisis
+	SIA_break_up_gatherings = {
+		icon = GFX_decision_generic_arrest
 		allowed = {
 			tag = SIA
 		}
 		visible = {
 			
 		}
-		
+		days_remove = 15
+		days_re_enable = 50
+		custom_cost_trigger = {
+			command_power > 9.9
+		}
+		custom_cost_text = 10cp_cost
 		complete_effect = {
+			add_command_power = -10
+			
+		}
+		modifier = {
+			command_power_gain_mult = -0.5
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 20
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_expand_police_presence = {
+		icon = GFX_decision_generic_police_action
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			
+		}
+		days_remove = 15
+		days_re_enable = 40
+		cost = 30
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 20
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_deploy_riot_police = {
+		icon = GFX_decision_generic_police_action
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_deploy_the_riot_police
+		}
+		days_remove = 15
+		days_re_enable = 30
+		custom_cost_trigger = {
+			has_political_power > 24.9
+			stability > 4.9
+		}
+		custom_cost_text = 5_stability_25_pp_cost
+		complete_effect = {
+			add_political_power = -25
+			add_stability = -0.05
+			
+		}
+		remove_effect = {
 			add_days_mission_timeout = {
 				mission = SIA_the_protests_intensify
 				days = 30
@@ -52,54 +126,128 @@ SIA_protests_category = {
 			base = 10
 		}
 	}
-	SIA_dismantle_the_protests = {
-		icon = generic_crisis
+	SIA_target_ringleaders = {
+		icon = GFX_decision_generic_political_rally
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_persecute_the_agitators
+		}
+		days_remove = 5
+		days_re_enable = 30
+		custom_cost_trigger = {
+			has_political_power > 24.9
+			command_power > 4.9
+		}
+		custom_cost_text = 5cp_25pp_cost
+		complete_effect = {
+			add_political_power = -25
+			add_command_power = -5
+			
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 25
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_decision_organize_counter_protests = {
+		icon = GFX_decision_generic_propaganda_campaigns
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_organize_counter_protests
+		}
+		
+		days_re_enable = 25
+		cost = 50
+		complete_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 15
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_perform_harsher_crackdowns = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_further_crackdowns
+		}
+		days_remove = 25
+		days_re_enable = 50
+		custom_cost_trigger = {
+			command_power > 19.9
+		}
+		custom_cost_text = 20cp_cost
+		
+		complete_effect = {
+			add_command_power = -20
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 40
+			}
+		}
+		modifier = {
+			command_power_gain_mult = -0.5
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_decision_deploy_the_army = {
+		icon = GFX_decision_generic_tank
 		allowed = {
 			tag = SIA
 		}
 		visible = {
 			has_completed_focus = SIA_deploy_the_army
 		}
-		
+		days_remove = 25
+		custom_cost_trigger = {
+			command_power > 39.9
+		}
+		custom_cost_text = 40cp_cost
 		complete_effect = {
+			add_command_power = -40
+			add_stability = -0.25
+			
+		}
+		modifier = {
+			command_power_gain_mult = -0.5
+		}
+		remove_effect = {
 			clr_country_flag = SIA_anti_government_protests
-			custom_effect_tooltip = SIA_dismantle_the_protests_tt
+			custom_effect_tooltip = SIA_decision_deploy_the_army_tt
 		}
 		ai_will_do = {
 			base = 10
 		}
 	}
-	SIA_calm_the_protests = {
-		icon = generic_crisis
+	SIA_disperse_the_protests = {
+		icon = GFX_decision_generic_peace
 		allowed = {
 			tag = SIA
 		}
 		visible = {
 			has_completed_focus = SIA_smother_the_flames
 		}
-		
-		complete_effect = {
+		days_remove = 100
+		cost = 100
+		remove_effect = {
 			clr_country_flag = SIA_anti_government_protests
-			custom_effect_tooltip = SIA_calm_the_protests_tt
-		}
-		ai_will_do = {
-			base = 10
-		}
-	}
-	SIA_expand_police_activities = {
-		icon = generic_crisis
-		allowed = {
-			tag = SIA
-		}
-		visible = {
-			
-		}
-		
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = SIA_the_protests_intensify
-				days = 50
-			}
+			custom_effect_tooltip = SIA_disperse_the_protests_tt
 		}
 		ai_will_do = {
 			base = 10
@@ -179,33 +327,6 @@ SIA_protests_category = {
 				modifier = SIA_bbc_thai_slander
 			}
 			add_to_variable = { SIA_bbc_protests = 1 }
-			unlock_decision_tooltip = SIA_bbc_criticism_against_the_thai_monarchy
-		}
-		ai_will_do = {
-			base = 10
-		}
-	}
-	SIA_bbc_criticism_against_the_thai_monarchy = {
-		icon = GFX_decision_SIA_BBC
-		allowed = {
-			tag = SIA
-		}
-		visible = {
-			check_variable = { SIA_bbc_protests = 2 }
-		}
-		cost = 20
-		fire_only_once = yes
-		
-		complete_effect = {
-			add_days_mission_timeout = {
-				mission = SIA_the_protests_intensify
-				days = -10
-			}
-			add_opinion_modifier = {
-				target = ENG
-				modifier = SIA_bbc_thai_slander
-			}
-			add_to_variable = { SIA_bbc_protests = 1 }
 			unlock_decision_tooltip = SIA_bbc_on_the_ground_with_jonathan_head
 		}
 		ai_will_do = {
@@ -218,7 +339,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			check_variable = { SIA_bbc_protests = 3 }
+			check_variable = { SIA_bbc_protests = 2 }
 		}
 		cost = 40
 		fire_only_once = yes

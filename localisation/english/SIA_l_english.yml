@@ -126,6 +126,7 @@
  
  SIA_establish_ccsa: "Establish CCSA"
  SIA_establish_ccsa_desc: ""
+ SIA_establish_ccsa_tt: "§GWe will start importing vaccines to eventually vaccinate our population§!"
  
  SIA_deploy_the_riot_police: "Deploy the Riot Police"
  SIA_deploy_the_riot_police_desc: ""
@@ -144,6 +145,7 @@
  
  SIA_deploy_the_army: "Deploy the Army"
  SIA_deploy_the_army_desc: ""
+ SIA_deploy_the_army_tt: "§RWith Riots all across the country, the situation has gotten out of hand§!"
 
 
  ###Characters###
@@ -170,8 +172,8 @@
  SIA_boonsin_padklang_char: "Boonsin Padklang"
  SIA_anupong_paochinda_char: "Anupong Paochinda"
  SIA_apirat_kongsompong_char: "Apirat Kongsompong"
- 
- 
+ SIA_Kittinant_Chinsamran_char: "Kittinant Chinsamran"
+ SIA_Preecha_Chan_o_cha_char: "Preecha Chan-o-cha"
  
 
  ###Startup Menu###
@@ -247,9 +249,9 @@
  thai_events_10_texticon: ".\n\n\n\n\n£GFX_egyptian_soldier_video\n\n\n\n\n\n"
 
  thai_events.11.t: "Palang Pracharat Fallout and Cabinet Reshuffle"
- thai_events.11.d: "Main characters of the Palang Pracharat Party most notably the 'Four Coaches,' which included Party Leader and Minister of Finance Uttama Savanayana, Party General Secretary and Minister of Energy Sontirat Sontijirawong, Deputy Party Leader and Minister of Higher Education Suvit Maesincee, and Party Executive Committee Member Kobsak Pootrakool all announced at a press conference at Centara Grand at Central Plaza Ladprao, Bangkok, their intention to resign from the Palang Pracharat Party.\n\nMany media speculations pointed out that since the formal formation of the government in 2019, the party was faced with a series of scandals and criticism regarding the party's handling of their own background checks for MPs, and also the consolidation of the military faction within the Palang Pracharat Party. This turned out to be true as the party members met and elected General Prawit Wongsuwon as their own party leader.\n\nIn the meantime, the 'Four Coaches' group all announced their resignation from the cabinet. The Prime Minister announced the replacements, which included many people from other factions within the Palang Pracharat Party."
+ thai_events.11.d: "Main characters of the Palang Pracharat Party most notably the 'Four Coaches,' which included Party Leader and Minister of Finance Uttama Savanayana, Party General Secretary and Minister of Energy Sontirat Sontijirawong, Deputy Party Leader and Minister of Higher Education Suvit Maesincee, and Party Executive Committee Member Kobsak Pootrakool all announced at a press conference at Centara Grand at Central Plaza Ladprao, Bangkok, their intention to resign from the Palang Pracharat Party.\n\nMany media speculations pointed out that since the formal formation of the government in 2019, the party was faced with a series of scandals and criticism regarding the party's handling of their own background checks for MPs, and also the consolidation of the military faction within the Palang Pracharat Party. This turned out to be true as the party members met and elected General Prawit Wongsuwan as their own party leader.\n\nIn the meantime, the 'Four Coaches' group all announced their resignation from the cabinet. The Prime Minister announced the replacements, which included many people from other factions within the Palang Pracharat Party."
  thai_events.11.a: "Well... that's an entire year wasted."
- thai_events_11_texticon: "§YGeneral Prawit Wongsuwon§! assumed leadership of £GFX_palang_pracharath §PPalang Pracharath Party§!\n\n\n\n\n£GFX_SIA_PPRP1_banner\n\n\n\n\n\n"
+ thai_events_11_texticon: "§YGeneral Prawit Wongsuwan§! assumed leadership of £GFX_palang_pracharath §PPalang Pracharath Party§!\n\n\n\n\n£GFX_SIA_PPRP1_banner\n\n\n\n\n\n"
  
  thai_events.12.t: "The Constitutional Court drops "Illuminati Case" against FFP"
  thai_events.12.d: "The Constitutional Court has delivered its ruling in what many reporters have dubbed the "Illuminati Case." The case centered on allegations that the Future Forward Party (FFP) held ideological tendencies aimed at undermining or overthrowing the democratic system with the monarchy as head of state. dismissing the case against the party, citing insufficient evidence regarding wrongdoing by the Future Forward Party or its executive committee.\n\nThe petition was filed directly with the Constitutional Court on May 15, 2019, by Nattaporn Toprayoon, a former advisor to the Chief Ombudsman. One allegation made by the petitioner was that the party's symbol when flipped resembled a triangle which is associated with the Illuminati, a Bavarian secret society founded in 1776 that promoted Enlightenment ideals of republicanism and secularism. The group was later banned by the Bavarian government, and although it became the subject of conspiracy theories about its secret global influence and efforts to establish a "New World Order," historians generally agree that it ceased to exist after its suppression in the late eighteenth century.\n\nAt the Future Forward Party headquarters, supporters cheered after the verdict was delivered. Future Forward secretary-general Piyabutr Saengkanokkul and party leader Thanathorn Juangroongruangkit later held a press conference, thanking supporters and insisting the case should never have been filed. Piyabutr stated that the FFP had no intention of undermining democracy with the monarchy as head of state, but instead sought to protect the constitutional monarchy, adding that military coups, not political parties, were responsible for weakening democracy with the monarchy as head of state.\n\nHowever, the party still faces another imminent case before the Constitutional Court, which alleges it violated laws governing political parties by accepting loans from its leader, auto-parts billionaire Thanathorn."
@@ -373,6 +375,18 @@
  thai_events.37.a: "...The Constitutional Amendment"
  thai_events.37.b: " ...Align with the House"
  
+ thai_events.38.t: "Thai Patriotic Singer Santi Lunphae Passes Away"
+ thai_events.38.d: "Lieutenant Commander Santi Lunphae, a legendary Thai tenor, actor, songwriter, and musician, has passed away at the age of 88. Renowned for his distinctive and powerful voice, he served with distinction in the Royal Thai Navy Band, where he taught vocal performance and arranged musical harmonies. He was widely admired for his contributions to Thai music, particularly in patriotic songs, classical works, and film soundtracks.\n\nThroughout his illustrious career, he left behind a vast and enduring musical legacy that resonated deeply with the Thai people. He is perhaps best remembered for his iconic renditions of royal compositions by King Rama IX, particularly "The Highest Dream" (Khwam Fan An Sood Sut), a performance he considered the greatest pride of his artistic journey.\n\nSanti's passion for music began at an early age. He once recalled teaching himself to sing at the age of five by imitating recordings of the famous Italian opera singer Enrico Caruso. He later joined the Royal Thai Navy Band, where he taught vocal performance and arranged musical harmonies before pursuing a full-time career as a singer and classical vocal instructor.\n\nBecause of his unique voice, he had the opportunity to sing with the Royal Thai Navy Orchestra before Her Majesty Queen Sirikit at the International Red Cross Royal Banquet. Later, he was invited to record royal compositions and patriotic songs, and he continued to serve the royal family by singing for them on a regular basis.\n\nHis artistic achievements earned widespread recognition, culminating in his designation as a National Artist in the Performing Arts. In his later years, he continued to teach classical singing and served as an advisor to the Dean of the College of Music at Mahidol University."
+ thai_events.38.a: "To gild the back of the Buddha statue....."
+ 
+ thai_events.39.t: "Prayut Vaporizes the Protests"
+ thai_events.39.d: ""
+ thai_events.39.a: "BOP increase"
+ 
+ thai_events.40.t: "Prayut survives 1st motion of no confidence"
+ thai_events.40.d: ""
+ thai_events.40.a: "BOP increase"
+ 
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
  #thailand_nonpolitical.1.a: ""
@@ -481,7 +495,7 @@
 
  # Party Detail Panels
  SIA_parliament_detail_pprp_header1: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP\n\n\n\n\n\n\n\n§YParty Leader:§! Uttama Savanayana"
- SIA_parliament_detail_pprp_header2: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP1\n\n\n\n\n\n\n\n§YParty Leader:§! General Prawit Wongsuwon"
+ SIA_parliament_detail_pprp_header2: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP1\n\n\n\n\n\n\n\n§YParty Leader:§! General Prawit Wongsuwan"
  SIA_parliament_detail_pprp_desc: "[PPRPPartyStatus]\n\n§YPalang Pracharath Party§! is a Thai political party founded in 2018 to support the continuation of General Prayut Chan-o-cha's tenure as prime minister following the planned 2019 elections. Widely regarded as the political arm of the military establishment, the party drew its core support from right wing voters, and supporters of the junta.\n\nThe party's core platform focuses on §Ynational stability, economic development under strong leadership, and continuity§! of the policies enacted under the NCPO. Despite criticism that the party served as a political vehicle for the junta, Palang Pracharath emerged as the largest party by popular vote in the 2019 election and formed a coalition government that enabled Prayut Chan-o-cha to continue his premiership.."
  
  SIA_parliament_detail_ptp_desc: "£GFX_phua_thai §YPheu Thai Party§! (Phak Pheu Thai)\n\n\n\n\n\n£GFX_SIA_intro_PTP\n\n\n\n\n\n\n\n§YParty Leader:§! Sompong Amornvivat\n\n§YPheu Thai Party§! was founded in 2007 and is considered the third incarnation of the Thai Rak Thai Party, a political party founded by former prime minister §YThaksin Shinawatra§! in 1998. Following the dissolution of its predecessor parties by court rulings, Pheu Thai emerged as the main political base of the Shinawatra family. The party is generally associated with §Ypopulist and liberal conservative policies§!, with strong support from rural voters in northern and northeastern Thailand. \n\nPheu Thai has remained one of the most influential political parties in contemporary Thailand and has won multiple general elections despite repeated political crises, military coups, and judicial interventions against parties linked to the Shinawatra family."
@@ -525,6 +539,34 @@
  SIA_nationwide_vaccinations: "Nationwide Vaccination"
  SIA_nationwide_vaccinations_desc: ""
  
+ SIA_mask_distribution: "Mask Distribution"
+ SIA_mask_distribution_desc: ""
+ 
+ SIA_enforce_lockdowns: "Enforce Lockdowns"
+ SIA_enforce_lockdowns_desc: ""
+ 
+ SIA_tighten_border_control: "Tighten Border Control"
+ SIA_tighten_border_control_desc: ""
+ 
+ SIA_expand_medical_services: "Expand Medical Services"
+ SIA_expand_medical_services_desc: ""
+ 
+ SIA_stricten_curfews: "Stricten Curfews"
+ SIA_stricten_curfews_desc: ""
+ 
+ SIA_conduct_nationwide_screenings: "Conduct Nationwide Screenings"
+ SIA_conduct_nationwide_screenings_desc: ""
+ 
+ SIA_import_sputnik_vaccines: "Import @SOVSputnik Vaccines"
+ SIA_import_sputnik_vaccines_desc: ""
+ 
+ SIA_import_sinovac_vaccines: "Import @PRCSinovac Vaccines"
+ SIA_import_sinovac_vaccines_desc: ""
+ 
+ SIA_astrazeneca_and_siam_bioscience: "@SWE@ENGAstraZeneca-Siam Bioscience Vaccine"
+ SIA_astrazeneca_and_siam_bioscience_desc: ""
+ SIA_astrazeneca_and_siam_bioscience_cost: "£pol_power §H25§! £civ_factory §H5§!"
+ SIA_astrazeneca_and_siam_bioscience_cost_blocked: "£pol_power §R25§! £civ_factory §R5§!"
  
  SIA_covid_idea_1: "Mild Coronavirus Cases"
  SIA_covid_idea_2: "Moderate Coronavirus Cases"
@@ -586,11 +628,29 @@
  SIA_supported_prayut: "The §GGovernment§!"
  SIA_supported_opposition: "The §RProtestors§!"
  
- SIA_dismantle_the_protests: "Dismantle the Protests"
- SIA_dismantle_the_protests_tt: "The §RRiots§! will be stopped §Rviolently§!, §YProtests§! will §Ggreatly decay§!"
+ SIA_break_up_gatherings: "Break Up Gatherings"
+ SIA_break_up_gatherings_desc: ""
  
- SIA_calm_the_protests: "Calm the Protests"
- SIA_calm_the_protests_tt: "The §RRiots§! will be stopped §Gdiplomatically§!, Protests will §Oslowly decay§!"
+ SIA_expand_police_presence: "Expand Police Presence"
+ SIA_expand_police_presence_desc: ""
+ 
+ SIA_deploy_riot_police: "Deploy Riot Police"
+ SIA_deploy_riot_police_desc: ""
+ 
+ SIA_target_ringleaders: "Target Ringleaders"
+ SIA_target_ringleaders_desc: ""
+ 
+ SIA_decision_organize_counter_protests: "Organize Counter Protests"
+ SIA_decision_organize_counter_protests_desc: ""
+ 
+ SIA_perform_harsher_crackdowns: "Perform Harsher Crackdowns"
+ SIA_perform_harsher_crackdowns_desc: ""
+
+ SIA_decision_deploy_the_army: "Dismantle the Protests"
+ SIA_decision_deploy_the_army_tt: "The §RRiots§! will be stopped §Rviolently§!, §YProtests§! will §Ggreatly decay§!"
+ 
+ SIA_disperse_the_protests: "Calm the Protests"
+ SIA_disperse_the_protests_tt: "The §RRiots§! will be stopped §Gdiplomatically§!, Protests will §Oslowly decay§!"
  
  SIA_secure_support_from_ned: "Secure Support from NED"
  SIA_secure_support_from_ned_desc: "\n\n\n\n\n£GFX_SIA_National_Endowment_for_Democracy\n\n\n\n\n\nThe National Endowment for Democracy (NED) is a quasi-autonomous, non-governmental organization established by the United States Congress in 1983. Its stated mission is to promote democracy worldwide by supporting democratic institutions and civil society organizations, including political associations.\n\nThe NED did not fund or organize Thailand's student-led protests, but it supported projects related to human rights and civic participationsuch as iLaw. Some conservative and right-wing commentators, such as Sondhi Limthongkul, have alleged that the NED indirectly interfered in Thailand's domestic affairs by funding organizations whose objectives aligned with those of the protest movement. Supporters of the NED reject these claims, arguing that it merely supported civil society initiatives rather than influencing Thai politics.\n\n"—and that government of the people, by the people, for the people, shall not perish from the earth."\n-Abraham Lincoln"
@@ -600,10 +660,7 @@
  
  SIA_expand_bbc_thai_service: "Expand BBC Thai Service"
  SIA_expand_bbc_thai_service_desc: "\n\n\n\n\n£GFX_SIA_BBC_Thai\n\n\n\n\n\nBBC Thai is the Thai-language news service of the British Broadcasting Corporation (BBC), operating under the BBC World Service. It publishes news, analysis, features, and articles covering Thailand, Southeast Asia, and international affairs for Thai-speaking audiences.\nLaunched in 2014 as part of the BBC's expansion of its digital-language services, BBC Thai primarily operates through its website and social media platforms rather than traditional television or radio broadcasting.\n\nThe service has been praised by supporters for reporting on issues that may receive limited coverage in some domestic media outlets. However, its reporting has also attracted criticism from some Thai conservative and royalist groups, who argue that its coverage of sensitive political and monarchy-related topics is biased."
- 
- SIA_bbc_criticism_against_the_thai_monarchy: "BBC: Criticism Against the Thai Monarchy"
- SIA_bbc_criticism_against_the_thai_monarchy_desc: "Even before its coverage of the protesters demands regarding the monarchy, the BBC was already a controversial news organization in Thailand due to its reporting on sensitive issues involving the royal institution. Operating largely outside the constraints of domestic Thai censorship and under British jurisdiction, the network was able to report on topics that many native media outlets avoided or covered only cautiously. As a result, while Thai media often had to self-censor or only vaguely refer to the protesters' demands because of the strict enforcement of lèse-majesté laws (Article 112), the BBC reported on calls for royal reform more directly."
- 
+
  SIA_bbc_on_the_ground_with_jonathan_head: "BBC: On The Ground with Jonathan Head"
  SIA_bbc_on_the_ground_with_jonathan_head_desc: "\n\n\n\n\n£GFX_SIA_BBC_On_the_Ground_with_Jonathan_Head\n\n\n\n\n\nJonathan Head is a veteran British journalist and the long-serving Southeast Asia Correspondent for BBC News. Based in Bangkok, Thailand, he is one of the most recognizable international reporters covering the region, with a career at the BBC spanning more than three decades.\n\nIn Thailand, he is often viewed negatively by right wingers due to allegations that his reporting insulted the monarchy. In 2008, Thai police investigated him under lèse-majesté laws, an offense that can carry a prison sentence of up to 15 years. However, the case did not result in a conviction, reportedly because prosecuting a foreign journalist from the United Kingdom could have caused a diplomatic incident with the British government."
  
@@ -641,13 +698,13 @@
  SIA_activate_the_asean_petroleum_security_agreement_desc: "Thailand, as a major member of ASEAN, remains heavily dependent on imported energy, unlike Malaysia and Indonesia, which possess significant petroleum reserves and have historically been net exporters of oil and gas. With the ongoing global oil crisis. Thailand should engage fellow ASEAN members to activate emergency fuel-sharing mechanisms under the ASEAN Petroleum Security Agreement (APSA). This would help secure regional crude oil and petroleum supplies to offset potential shortages and strengthen regional energy security."
  
  SIA_russian_oil_deal: "Russian Oil Deal"
- SIA_russian_oil_deal_desc: "Thailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
+ SIA_russian_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_Prayut_Putin\n\n\n\n\n\nThailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
  
  SIA_african_oil_deal: "African Oil Deal"
  SIA_african_oil_deal_desc: ""
  
  SIA_increase_american_oil_imports: "Increase American Oil Imports"
- SIA_increase_american_oil_imports_desc: "Thailand currently imports a limited volume of oil from the United States due to the higher shipping costs associated with long-distance transpacific logistics and the fact that domestic refineries are traditionally calibrated for Middle Eastern crude. However, given the situation in the Middle East and the need to diversify our energy sources, we should consider significantly increasing oil imports from the United States as a strategic measure."
+ SIA_increase_american_oil_imports_desc: "\n\n\n\n\n£GFX_SIA_Prayut_Trump\n\n\n\n\n\nThailand currently imports a limited volume of oil from the United States due to the higher shipping costs associated with long-distance transpacific logistics and the fact that domestic refineries are traditionally calibrated for Middle Eastern crude. However, given the situation in the Middle East and the need to diversify our energy sources, we should consider significantly increasing oil imports from the United States as a strategic measure."
  
  SIA_enact_oil_rationing_measures: "Enact Oil Rationing Measures"
  SIA_enact_oil_rationing_measures_desc: ""
@@ -692,6 +749,7 @@
  decreased_relations: "Decreased Relations"
  SIA_bbc_thai_slander: "BBC Thai Slander"
  SIA_ned_interference: "NED Interference"
+ SIA_astrazeneca_cooperation: "AstraZeneca Cooperation"
  #State Modifiers
  SIA_southern_fire_state_modifier: "Southern Fire"
  SIA_southern_fire_state_modifier_desc: "Southern Fire Description"

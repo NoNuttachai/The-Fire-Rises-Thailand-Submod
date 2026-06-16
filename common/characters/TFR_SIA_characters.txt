@@ -374,7 +374,6 @@ characters={
 		advisor = {
 			slot = air_chief
 			idea_token = SIA_airbull_suttiwan_air_chief
-			ledger = navy
 
 			traits = {
 				air_chief_all_weather_2
@@ -911,6 +910,39 @@ characters={
 			slot = high_command
 			idea_token = SIA_boonsin_padklang_high_command
 			traits = { army_infantry_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SIA_Kittinant_Chinsamran_char = {
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Kittinant_Chinsamran.png"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SIA_Kittinant_Chinsamran_army_chief
+			traits = { 
+				army_chief_morale_2 
+			}
+			
+			cost = 100
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	SIA_Preecha_Chan_o_cha_char = {
+		portraits={
+			civilian = {
+				small = "gfx/interface/ideas/SIA/advisors/SIA_Preecha_Chan-o-cha.png"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_Preecha_Chan_o_cha_high_command
+			traits = { army_entrenchment_2 }
 			cost = 100
 			ai_will_do = { factor = 1 }
 		}
