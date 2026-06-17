@@ -10,7 +10,18 @@ scripted_gui = {
 		visible = {
 			original_tag = SIA
 		}
-
+		dynamic_lists = {
+			government_parties_gridbox = {
+				array = SIA_government_party_array
+				entry_container = SIA_parliament_party_container
+				value = SIA_party_faction
+			}
+			Opposition_parties_gridbox = {
+				array = SIA_opposition_party_array
+				entry_container = SIA_parliament_party_container
+				value = SIA_party_faction
+			}
+		}
 		triggers = {
 			# Seat bar segment visibility (only show if seats > 0)
 			SIA_seat_gov_visible = {
@@ -23,36 +34,6 @@ scripted_gui = {
 				check_variable = { SIA_parliament_vacant_seats > 0 }
 			}
 
-			# Party detail panel visibility
-			SIA_detail_pprp_visible = {
-				check_variable = { SIA_parliament_selected_party = 1 }
-			}
-			SIA_detail_ptp_visible = {
-				check_variable = { SIA_parliament_selected_party = 2 }
-			}
-			SIA_detail_ffp_visible = {
-				check_variable = { SIA_parliament_selected_party = 3 }
-			}
-			SIA_detail_dp_visible = {
-				check_variable = { SIA_parliament_selected_party = 4 }
-			}
-			SIA_detail_bjt_visible = {
-				check_variable = { SIA_parliament_selected_party = 5 }
-			}
-			SIA_detail_tlp_visible = {
-				check_variable = { SIA_parliament_selected_party = 6 }
-			}
-			SIA_detail_ctpp_visible = {
-				check_variable = { SIA_parliament_selected_party = 7 }
-			}
-			SIA_detail_pcc_visible = {
-				check_variable = { SIA_parliament_selected_party = 8 }
-			}
-
-			SIA_parliament_detail_panel_visible = {
-				NOT = { check_variable = { SIA_parliament_selected_party = 0 } }
-			}
-			
 			parliament_donut_vacant_visible = {
 				check_variable = { SIA_vacant_seats_var > 0 }
 			}

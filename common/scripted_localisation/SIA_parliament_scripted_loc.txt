@@ -1,38 +1,183 @@
-### Parliament Seat Display Text ###
 
-# Government support line
+
+### PARTY DESC ###
+
 defined_text = {
-	name = SIA_parliament_gov_support_text
+	name = SIA_party_description
 	text = {
-		trigger = {
-			original_tag = SIA
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 1 }
 		}
-		localization_key = SIA_parliament_gov_support_loc
+		localization_key = SIA_parliament_detail_pprp_desc
 	}
-}
-
-# Opposition support line
-defined_text = {
-	name = SIA_parliament_opp_support_text
 	text = {
-		trigger = {
-			original_tag = SIA
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 2 }
 		}
-		localization_key = SIA_parliament_opp_support_loc
+		localization_key = SIA_parliament_detail_ptp_desc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 3 }
+			NOT = {
+				has_country_flag = ffp_dismantled
+			}
+		}
+		localization_key = SIA_parliament_detail_ffp_desc
+	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 3 }
+			has_country_flag = ffp_dismantled
+		}
+		localization_key = SIA_parliament_detail_mfp_desc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 4 }
+		}
+		localization_key = SIA_parliament_detail_dp_desc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 5 }
+		}
+		localization_key = SIA_parliament_detail_tlp_desc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 6 }
+		}
+		localization_key = SIA_parliament_detail_bjt_desc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 7 }
+		}
+		localization_key = SIA_parliament_detail_ctpp_desc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 8 }
+		}
+		localization_key = SIA_parliament_detail_pcc_desc
 	}
 }
 
 ### Party Lines ###
-
-# PPRP
 defined_text = {
-	name = SIA_parliament_pprp_line
+	name = SIA_party_line
+
 	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_pprp_line_loc
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 1 }
+		}
+		localization_key = SIA_parliament_pprp_full
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 2 }
+		}
+		localization_key = SIA_parliament_ptp_full
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 3 }
+			NOT = {
+				has_country_flag = ffp_dismantled
+			}
+		}
+		localization_key = SIA_parliament_ffp_full
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 3 }
+			has_country_flag = ffp_dismantled
+		}
+		localization_key = SIA_parliament_mfp_full
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 4 }
+		}
+		localization_key = SIA_parliament_dp_full
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 5 }
+		}
+		localization_key = SIA_parliament_tlp_full
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 6 }
+		}
+		localization_key = SIA_parliament_bjt_full
+	}
+
+	
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 7 }
+		}
+		localization_key = SIA_parliament_ctpp_full
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 8 }
+		}
+		localization_key = SIA_parliament_pcc_full
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 9 }
+		}
+		localization_key = SIA_parliament_minor_gov_line_loc
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 10 }
+		}
+		localization_key = SIA_parliament_minor_opp_line_loc
 	}
 }
-# PPRP
+
 defined_text = {
 	name = PPRPPartyStatus
 	text = {
@@ -49,144 +194,7 @@ defined_text = {
 		}
 		localization_key = SIA_parliament_detail_pprp_header2
 	}
-}
-defined_text = {
-	name = SIA_parliament_pprp_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_pprp_seats_loc
-	}
-}
 
-# PTP
-defined_text = {
-	name = SIA_parliament_ptp_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_ptp_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_ptp_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_ptp_seats_loc
-	}
-}
-
-# FFP
-defined_text = {
-	name = SIA_parliament_ffp_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_ffp_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_ffp_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_ffp_seats_loc
-	}
-}
-
-# DP
-defined_text = {
-	name = SIA_parliament_dp_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_dp_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_dp_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_dp_seats_loc
-	}
-}
-
-# BJT
-defined_text = {
-	name = SIA_parliament_bjt_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_bjt_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_bjt_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_bjt_seats_loc
-	}
-}
-
-# TLP
-defined_text = {
-	name = SIA_parliament_tlp_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_tlp_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_tlp_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_tlp_seats_loc
-	}
-}
-
-# CTPP
-defined_text = {
-	name = SIA_parliament_ctpp_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_ctpp_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_ctpp_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_ctpp_seats_loc
-	}
-}
-
-# PCC
-defined_text = {
-	name = SIA_parliament_pcc_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_pcc_line_loc
-	}
-}
-defined_text = {
-	name = SIA_parliament_pcc_seats_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_pcc_seats_loc
-	}
-}
-
-### Minor Parties ###
-
-defined_text = {
-	name = SIA_parliament_minor_gov_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_minor_gov_line_loc
-	}
-}
-
-defined_text = {
-	name = SIA_parliament_minor_opp_line
-	text = {
-		trigger = { original_tag = SIA }
-		localization_key = SIA_parliament_minor_opp_line_loc
-	}
-}
 
 ### Speaker Info ###
 defined_text = {

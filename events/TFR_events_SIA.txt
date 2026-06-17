@@ -22,13 +22,16 @@ country_event = {
             ideology = libertarian_socialist
             popularity = 0.01
         }
-
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.05
+		}
         country_event = {
 			id = thai_events.5
 		}
 		
 		custom_effect_tooltip = SIA_ban_future_tt
-
+		
         hidden_effect = {
             retire_character = SIA_thanathorn_juangroongruangkit_char
         }
@@ -97,9 +100,29 @@ country_event = {
     picture = GFX_report_event_new_orange_party
 	
 	is_triggered_only = yes
-
+	
     option = {
         name = thai_events.5.a
+		custom_effect_tooltip = SIA_ffp_seats_dead
+		hidden_effect = {
+			set_temp_variable = { target = 3 }
+			set_temp_variable = { seats = SIA_ffp_seats_var }
+			multiply_temp_variable = { seats = -1 }
+			SIA_change_parliament_seat = yes
+			set_temp_variable = { target = 3 }
+			set_temp_variable = { seats = 54 }
+			SIA_change_parliament_seat = yes
+		}
+		custom_effect_tooltip = SIA_mfp_seats_replacement
+		set_temp_variable = { target = 6 }
+		set_temp_variable = { seats = 10 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 7 }
+		set_temp_variable = { seats = 1 }
+		SIA_change_parliament_seat = yes
+		
+		set_country_flag = ffp_dismantled
+		
         set_party_name = {
             ideology = social_democrat
             long_name = SIA_mfp_long
@@ -817,6 +840,102 @@ country_event = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = 0.05
+		}
+	}
+}
+country_event = {
+    id = thai_events.41 # 8 January 2020  - Parliamentary Seat Change
+    title = thai_events.41.t
+    desc = thai_events.41.d
+	picture = GFX_report_Parliamentary_Seat_Change
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.41.a
+		set_temp_variable = { target = 3 }
+		set_temp_variable = { seats = -4 }
+		SIA_change_parliament_seat = yes
+		
+		set_temp_variable = { target = 1 }
+		set_temp_variable = { seats = 1 }
+		SIA_change_parliament_seat = yes
+		
+		set_temp_variable = { target = 6 }
+		set_temp_variable = { seats = 1 }
+		SIA_change_parliament_seat = yes
+		
+		set_temp_variable = { target = 9 }
+		set_temp_variable = { seats = 2 }
+		SIA_change_parliament_seat = yes
+		custom_effect_tooltip = thai_events_41_tt
+	}
+}
+country_event = {
+    id = thai_events.42 # 28 January 2020  - Parliamentary Seat Change
+    title = thai_events.42.t
+    desc = thai_events.42.d
+	picture = GFX_report_Parliamentary_Seat_Change
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.42.a
+		set_temp_variable = { target = 3 }
+		set_temp_variable = { seats = -7 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 5 }
+		set_temp_variable = { seats = -1 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 10 }
+		set_temp_variable = { seats = -4 }
+		SIA_change_parliament_seat = yes
+		
+		set_temp_variable = { target = 1 }
+		set_temp_variable = { seats = 1 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 4 }
+		set_temp_variable = { seats = 2 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 6 }
+		set_temp_variable = { seats = -3 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 9 }
+		set_temp_variable = { seats = 12 }
+		SIA_change_parliament_seat = yes
+		
+	}
+}
+country_event = {
+    id = thai_events.43 # 20 June 2020  - Parliamentary Seat Change
+    title = thai_events.43.t
+    desc = thai_events.43.d
+	picture = GFX_report_Parliamentary_Seat_Change
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.43.a
+		
+	}
+	option = {
+        name = thai_events.43.b
+		
+	}
+	after = {
+		set_temp_variable = { target = 1 }
+		set_temp_variable = { seats = 1 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 2 }
+		set_temp_variable = { seats = -1 }
+		SIA_change_parliament_seat = yes
+		add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = 0.005
+        }
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.01
 		}
 	}
 }

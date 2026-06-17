@@ -221,7 +221,7 @@
  thai_events.4.a: "Are you coming to the tree?"
 
  thai_events.5.t: "Formation of the Move Forward Party"
- thai_events.5.d: "Following the Constitutional Court's ruling to dissolve the Future Forward Party, its remaining members, led by Pita Limjaroenrat, announced the formation of a successor political party:\n\n£GFX_orange_party_2 The Future Forward Party. Speaking to the press, Pita pledged to carry on the progressive, left-wing, and anti-junta agenda of his predecessor party. 55 of Future Forward's 65 MPs declared their affiliation with the new party.\n\nConcurrently, Future Forward Party executives who were handed a ten-year ban from political office by the court's decision, led by party founder Thanathorn Juangroongruangkit and secretary-general Piyabutr Saengkanokkul, announced the establishment of a separate political group called:\n\n£GFX_progressive_movement The Progressive Movement. Which will operates as an extra parliamentary leftist think tank and grassroots advocacy organization."
+ thai_events.5.d: "Following the Constitutional Court's ruling to dissolve the Future Forward Party, its remaining members, led by Pita Limjaroenrat, announced the formation of a successor political party:\n\n£GFX_orange_party_2 The Future Forward Party. Speaking to the press, Pita pledged to carry on the progressive, left-wing, and anti-junta agenda of his predecessor party. 54 of Future Forward's 65 MPs declared their affiliation with the new party.\n\nConcurrently, Future Forward Party executives who were handed a ten-year ban from political office by the court's decision, led by party founder Thanathorn Juangroongruangkit and secretary-general Piyabutr Saengkanokkul, announced the establishment of a separate political group called:\n\n£GFX_progressive_movement The Progressive Movement. Which will operates as an extra parliamentary leftist think tank and grassroots advocacy organization."
  thai_events.5.a: "It still not over for the orange party"
  
  thai_events.6.t: "Oil Crisis Hits Thailand"
@@ -387,6 +387,20 @@
  thai_events.40.d: ""
  thai_events.40.a: "BOP increase"
  
+ thai_events.41.t: "Parliamentary Seat Change"
+ thai_events.41.d: "4 MPs who were expelled from the Future Forward Party have officially joined parties in the government coalition. The MPs are Kawinath Tutong, Bencha Saengchantra, Piya Chatthai, and Cherdchai Klaiklueng, all of whom had been expelled by the Future Forward Party on 16 December 2019 for repeatedly breaking party ranks and voting against the party's position in Parliament.\n\nUnder Thai election law, expelled MPs must officially register with a new political party within 30 days of their expulsion, or automatically lose their parliamentary seats. Lawmakers expelled by their party are permitted to retain their seats provided they join another political party within this legally prescribed period.\n\nTheir defection reduced Future Forward's parliamentary representation and highlighted internal divisions and "cobras" within the Future Forward Party. At the same time, the move strengthened the governing coalition led by Prime Minister Prayut Chan-o-cha."
+ thai_events.41.a: "Orange Cobras..."
+ thai_events_41_tt: ".\n\n\n\n\n£GFX_Snake_Eating_Orange\n\n\n\n\n\n.\n§g"Cobras" is a political term in Thailand used to describe MPs who vote or take political positions contrary to their party's stance in exchange for benefits from the opposing side. The term can also refer to MPs who choose not to follow the majority of their party members in joining a successor party after their original party has been dissolved.\n\nThe term "cobras" originates from a metaphor used by Samak Sundaravej, (25th Prime Minister of Thailand), who compared himself to a farmer who was bitten by a cobra after saving it being oblivious to its venom in Aesop's fable.§!"
+ 
+ thai_events.42.t: "Party-List Formula Adjustments"
+ thai_events.42.d: "The Election Commission of Thailand revised the allocation of party-list seats following a reinterpretation of the proportional representation formula established under the 2017 Constitution and the Organic Act on the Election of Members of the House of Representatives. This revised calculation enabled several small "micro-parties" to secure or retain party-list seats despite receiving far fewer votes than the standard quota of approximately 71,000 votes per MP.\n\nThe revision was strongly criticized by opposition parties, which argued that it disproportionately benefited pro-government micro-parties at the expense of larger opposition parties. The Future Forward Party was particularly affected, losing seven party-list seats as a result of the recalculation, alongside losing a constituency seat in Chiang Mai after a rerun election shifted local voting math. Overall, the changes increased the representation of parties supporting the government and strengthened the coalition led by Prime Minister Prayut Chan-o-cha."
+ thai_events.42.a: "What Is This Prayut Blud Doing On The Calculator?"
+ 
+ thai_events.43.t: "Parliamentary Seat Change"
+ thai_events.43.d: "A by-election was held in Constituency 4 of Lampang Province to fill a vacant seat in the House of Representatives following the death of Itthirat Chantharasurin, a Pheu Thai Party MP. The election was one of Thailand's first polls conducted under COVID-19 public health measures, with voters and election officials required to observe social distancing guidelines.\n\nThe by-election was won by Wattana Sitthiwang of the Palang Pracharath Party, who defeated the opposition-backed candidate, Somboon Klaphachon of the Thai Liberal Party. The result marked a significant breakthrough for Palang Pracharath in a constituency that had previously been considered an opposition stronghold."
+ thai_events.43.a: "One more MP on our side! YES!"
+ thai_events.43.b: "We are losing opposition MPs!"
+ 
  #thailand_nonpolitical.1.t: ""
  #thailand_nonpolitical.1.d: ""
  #thailand_nonpolitical.1.a: ""
@@ -447,53 +461,14 @@
  SIA_parliament_ctpp_full: "£GFX_chartthaipattana §sChart Thai Pattana Party§!\n§Y[?SIA_ctpp_seats_var|0]§! Seats"
  SIA_parliament_ptp_full: "£GFX_phua_thai §RPheu Thai Party - Opposition Leader§!\n§Y[?SIA_ptp_seats_var|0]§! Seats"
  SIA_parliament_ffp_full: "£GFX_orange_party_1 §OFuture Forward Party§!\n§Y[?SIA_ffp_seats_var|0]§! Seats"
+ SIA_parliament_mfp_full: "£GFX_orange_party_2 §OMove Forward Party§!\n§Y[?SIA_ffp_seats_var|0]§! Seats"
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§!\n§Y[?SIA_tlp_seats_var|0]§! Seats"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§!\n§Y[?SIA_pcc_seats_var|0]§! Seats"
- 
- 
- SIA_parliament_pprp_combined: "£GFX_palang_pracharath §GPalang Pracharath Party§! - §Y[?SIA_pprp_seats_var|0]§! Seats"
- SIA_parliament_dp_combined: "£GFX_democrat §GDemocrat Party§! - §Y[?SIA_dp_seats_var|0]§! Seats"
- SIA_parliament_bjt_combined: "£GFX_bhumjaithai §GBhumjaithai Party§! - §Y[?SIA_bjt_seats_var|0]§! Seats"
- SIA_parliament_ctpp_combined: "£GFX_chartthaipattana §GChart Thai Pattana Party§! - §Y[?SIA_ctpp_seats_var|0]§! Seats"
- SIA_parliament_ptp_combined: "£GFX_phua_thai §YPheu Thai Party§! - §Y[?SIA_ptp_seats_var|0]§! Seats"
- SIA_parliament_ffp_combined: "£GFX_orange_party_1 §YFuture Forward Party§! - §Y[?SIA_ffp_seats_var|0]§! Seats"
- SIA_parliament_tlp_combined: "£GFX_thai_liberal_party §YThai Liberal Party§! - §Y[?SIA_tlp_seats_var|0]§! Seats"
- SIA_parliament_pcc_combined: "£GFX_prachachat §YPrachachat Party§! - §Y[?SIA_pcc_seats_var|0]§! Seats"
 
  # Party support lines
- SIA_parliament_pprp_line_loc: "Support for £GFX_palang_pracharath §YPPRP§!: [?ROOT.party_popularity@authoritarian_democrat|Y%1]"
- SIA_parliament_pprp_seats_loc: "§Y[?SIA_pprp_seats_var|0]§! Seats"
- SIA_parliament_pprp_tt: "§YPalang Pracharath Party§!\nSeats: §Y[?SIA_pprp_seats_var|0]§!\n§GGovernment Coalition Leader§!\n\n\n\n£GFX_SIA_intro_PPRP"
-
- SIA_parliament_ptp_line_loc: "Support for £GFX_phua_thai §YPTP§!: [?ROOT.party_popularity@social_democrat|Y%1]"
- SIA_parliament_ptp_seats_loc: "§Y[?SIA_ptp_seats_var|0]§! Seats"
- SIA_parliament_ptp_tt: "§YPheu Thai Party§!\nSeats: §Y[?SIA_ptp_seats_var|0]§!\n§ROpposition Leader§!\n\n\n\n£GFX_SIA_intro_PTP"
-
- SIA_parliament_ffp_line_loc: "Support for £GFX_orange_party_1 §YFFP§!: [?ROOT.party_popularity@social_liberal|Y%1]"
- SIA_parliament_ffp_seats_loc: "§Y[?SIA_ffp_seats_var|0]§! Seats"
- SIA_parliament_ffp_tt: "§YFuture Forward Party§!\nSeats: §Y[?SIA_ffp_seats_var|0]§!\n§ROpposition§!\n\n\n\n£GFX_SIA_intro_FFP"
-
- SIA_parliament_dp_line_loc: "Support for £GFX_democrat §YDP§!: [?ROOT.party_popularity@market_liberal|Y%1]"
- SIA_parliament_dp_seats_loc: "§Y[?SIA_dp_seats_var|0]§! Seats"
- SIA_parliament_dp_tt: "§YDemocrat Party§!\nSeats: §Y[?SIA_dp_seats_var|0]§!\n§GGovernment Coalition§!\n\n\n\n£GFX_SIA_intro_DP"
-
- SIA_parliament_bjt_line_loc: "Support for £GFX_bhumjaithai §YBJT§!: [?ROOT.party_popularity@conservative|Y%1]"
- SIA_parliament_bjt_seats_loc: "§Y[?SIA_bjt_seats_var|0]§! Seats"
- SIA_parliament_bjt_tt: "§YBhumjaithai Party§!\nSeats: §Y[?SIA_bjt_seats_var|0]§!\n§GGovernment Coalition§!\n\n\n\n£GFX_SIA_intro_BJT"
-
- SIA_parliament_tlp_line_loc: "Support for £GFX_thai_liberal_party §YTLP§!: N/A"
- SIA_parliament_tlp_seats_loc: "§Y[?SIA_tlp_seats_var|0]§! Seats"
- SIA_parliament_tlp_tt: "§YThai Liberal Party§!\nSeats: §Y[?SIA_tlp_seats_var|0]§!\n§ROpposition§!\n\n\n\n£GFX_SIA_intro_TLP"
-
- SIA_parliament_ctpp_line_loc: "Support for £GFX_chartthaipattana §YCTPP§!: N/A"
- SIA_parliament_ctpp_seats_loc: "§Y[?SIA_ctpp_seats_var|0]§! Seats"
- SIA_parliament_ctpp_tt: "£GFX_SIA_intro_CTPP\n\n§YChart Thai Pattana Party§!\nSeats: §Y[?SIA_ctpp_seats_var|0]§!\n§GGovernment Coalition§!\n\nTODO: Party description placeholder.\n\n"
-
- SIA_parliament_pcc_line_loc: "Support for £GFX_prachachat §YPCC§!: N/A"
- SIA_parliament_pcc_seats_loc: "§Y[?SIA_pcc_seats_var|0]§! Seats"
- SIA_parliament_pcc_tt: "£GFX_SIA_intro_PCC\n\n§YPrachachat Party§!\nSeats: §Y[?SIA_pcc_seats_var|0]§!\n§ROpposition§!\n\nTODO: Party description placeholder.\n\n"
-
+ 
  # Party Detail Panels
+ SIA_parliament_desc: "[SIA_party_description]"
  SIA_parliament_detail_pprp_header1: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP\n\n\n\n\n\n\n\n§YParty Leader:§! Uttama Savanayana"
  SIA_parliament_detail_pprp_header2: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP1\n\n\n\n\n\n\n\n§YParty Leader:§! General Prawit Wongsuwan"
  SIA_parliament_detail_pprp_desc: "[PPRPPartyStatus]\n\n§YPalang Pracharath Party§! is a Thai political party founded in 2018 to support the continuation of General Prayut Chan-o-cha's tenure as prime minister following the planned 2019 elections. Widely regarded as the political arm of the military establishment, the party drew its core support from right wing voters, and supporters of the junta.\n\nThe party's core platform focuses on §Ynational stability, economic development under strong leadership, and continuity§! of the policies enacted under the NCPO. Despite criticism that the party served as a political vehicle for the junta, Palang Pracharath emerged as the largest party by popular vote in the 2019 election and formed a coalition government that enabled Prayut Chan-o-cha to continue his premiership.."
@@ -501,6 +476,7 @@
  SIA_parliament_detail_ptp_desc: "£GFX_phua_thai §YPheu Thai Party§! (Phak Pheu Thai)\n\n\n\n\n\n£GFX_SIA_intro_PTP\n\n\n\n\n\n\n\n§YParty Leader:§! Sompong Amornvivat\n\n§YPheu Thai Party§! was founded in 2007 and is considered the third incarnation of the Thai Rak Thai Party, a political party founded by former prime minister §YThaksin Shinawatra§! in 1998. Following the dissolution of its predecessor parties by court rulings, Pheu Thai emerged as the main political base of the Shinawatra family. The party is generally associated with §Ypopulist and liberal conservative policies§!, with strong support from rural voters in northern and northeastern Thailand. \n\nPheu Thai has remained one of the most influential political parties in contemporary Thailand and has won multiple general elections despite repeated political crises, military coups, and judicial interventions against parties linked to the Shinawatra family."
 
  SIA_parliament_detail_ffp_desc: "£GFX_orange_party_1 §YFuture Forward Party§! (Phak Anakhot Mai)\n\n\n\n\n\n£GFX_SIA_intro_FFP\n\n\n\n\n\n\n\n§YParty Leader:§! Thanathorn Juangroongruangkit\n\n§YFuture Forward Party§! is a left wing Thai political party founded by §YThanathorn Juangroongruangkit§!, vice president of Thai Summit Group, Thailand's largest auto parts manufacturer, and §YPiyabutr Saengkanokkul§!, a Marxist legal scholar. The party has strong support among liberals, progressives, and leftists especially Thai youth who have grown disillusioned with the right-wing establishment.\n\nThe party campaigns on §Ydemocratic reform, opposition to military intervention in politics, the development of a welfare state to reduce social inequality, progressive social values, and the abolition of lèse-majesté laws (Section 112).§!\n\n§RThe party is currently facing charges before the Constitutional Court over alleged violations of election laws, including accusations that it sought to undermine the monarchy and breached regulations concerning political donations. If found guilty, the party could face dissolution. Supporters of the party argue that the case is politically motivated and intended by the government to suppress the opposition.§!"
+ SIA_parliament_detail_mfp_desc: "£GFX_orange_party_2 §YMove Forward Party§! \n\n\n\n\n\n£GFX_SIA_intro_MFP\n\n\n\n\n\n\n\n§YParty Leader:§! Pita Limjaroenrat\n\nThe Move Forward Party (MFP) is the successor to the progressive Future Forward Party following its dissolution by the Constitutional Court in 2020. Originally founded in 2014 as the Ruam Pattana Chart Thai Party, it was renamed the Move Forward Party on 21 February 2020 and became the de facto continuation of Future Forward.\n\nFollowing Future Forward's dissolution, the group elected Pita as its party leader and Viroj Lakkhanaadisorn as its spokesperson, while also unveiling a new logo closely resembling that of Future Forward.\n\nThe party largely inherited Future Forward's ideology, advocating democratic reforms, opposition to military influence in politics, the expansion of the welfare state to reduce social inequality, progressive social policies, and reform of Thailand's lèse-majesté law (Section 112). The party quickly emerged as the primary opposition force representing the former Future Forward movement and its supporters."
 
  SIA_parliament_detail_dp_desc: "£GFX_democrat §YDemocrat Party§! (Phak Prachathipat)\n\n\n\n\n\n£GFX_SIA_intro_DP\n\n\n\n\n\n\n\n§YParty Leader:§! Jurin Laksanawisit\n\n§YThe Democrat Party§! is Thailand's oldest active political party, founded in 1946. §YIt has long positioned itself as a defender of conservatism, constitutional monarchism, and liberal democratic values.§! Historically, the party has drawn much of its electoral support from southern Thailand and Bangkok. Several of Thailand's prime ministers have emerged from the party, including §YKhuang Aphaiwong, Seni Pramoj, Chuan Leekpai,§! and §YAbhisit Vejjajiva.§! \n\nDespite its historical prominence, the party's influence has declined significantly in recent elections, especially in Bangkok, where its support base has rapidly eroded.\n\nIn the 2019 general election, the party won 53 seats in parliament and later joined the Palang Pracharath-led coalition government.\nThe decision proved controversial and cost the party support among many of its more liberal and anti-junta supporters."
 
@@ -511,7 +487,32 @@
  SIA_parliament_detail_ctpp_desc: "£GFX_chartthaipattana §YChart Thai Pattana Party§! (Phak Chart Thai Pattana)\n\n\n\n\n\n£GFX_SIA_intro_CTPP\n\n\n\n\n\n\n\n§YParty Leader:§! Kanchana Silpa-archa\n\n§YChart Thai Pattana Party§! is a Thai political party that emerged from the dissolution of the original Chart Thai Party. Led by the Silpa-archa political family, the party maintains a §Yconservative, business-oriented platform§! with strong support in central Thailand.\n\nThe party joined the government coalition after the 2019 election, contributing 10 seats to the ruling majority."
  
  SIA_parliament_detail_pcc_desc: "£GFX_prachachat §YPrachachat Party§! (Phak Prachachat)\n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Wan Muhamad Noor Matha\n\n§YPrachachat Party§! is a Thai political party founded in 2018, primarily representing the §YMuslim-majority provinces in southern Thailand§!. Led by veteran politician §YWan Muhamad Noor Matha§!, the party focuses on issues affecting the southern border provinces near Malaysia, including §Ypeace and reconciliation, Muslim cultural rights, decentralization, and economic development.§!.\n\nIn the 2019 election, the party won 7 seats, all from southern constituencies, and aligned with the opposition."
-
+ 
+ # Parliament GUI - new layout keys
+ SIA_parliament_speaker_label: "§YSpeaker§!"
+ SIA_parliament_gov_header: "§GGovernment Coalition§!"
+ SIA_parliament_opp_header: "§ROpposition§!"
+ SIA_parliament_minor_gov_line_loc: "§LMinor Governmental Coalition Parties\n§Y[?SIA_minor_gov_seats_var|0]§! §WSeats§!"
+ SIA_parliament_minor_opp_line_loc: "§LMinor Oppositional Parties\n§Y[?SIA_minor_opp_seats_var|0]§! §WSeats§!"
+ SIA_seat_tt: "§YParliament Seat§!"
+ SIA_parliament_vacant_seats_text: "§gVacant: [?SIA_vacant_seats_var|0]§!/500 Seats"
+ 
+ SIA_change_pprp_seats: "£GFX_palang_pracharath §PPalang Pracharath Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_ptp_seats: "£GFX_phua_thai §RPheu Thai Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_ffp_seats: "£GFX_orange_party_1 §OFuture Forward Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_mfp_seats: "£GFX_orange_party_2 §OMove Forward Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_dp_seats: "£GFX_democrat §CDemocrat Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_bjt_seats: "£GFX_bhumjaithai §1Bhumjaithai Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_tlp_seats: "£GFX_thai_liberal_party §YThai Liberal Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_ctpp_seats: "£GFX_chartthaipattana §sChart Thai Pattana Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_pcc_seats: "£GFX_prachachat §YPrachachat Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_minor_government_coalition_seats: "§LMinor Governmental Coalition Parties§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_minor_oppositional_parties_seats: "§LMinor Oppositional Parties§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_vacant_seats: "§gVacant§! §YSeat§! Change: [?seats|=+0]"
+ 
+ SIA_ffp_seats_dead: "£GFX_orange_party_1 §OFuture Forward Party§! §YSeat§! Change: §R-[?SIA_ffp_seats_var]§!"
+ SIA_mfp_seats_replacement: "£GFX_orange_party_2 §OMove Forward Party§! §YSeat§! Change: §G+54§!"
+ 
  # Decision Localization
  SIA_parliament_category: "Parliament of Thailand"
  SIA_parliament_category_desc: ""
@@ -675,14 +676,7 @@
  
  
  
- # Parliament GUI - new layout keys
- SIA_parliament_speaker_label: "§YSpeaker§!"
- SIA_parliament_gov_header: "§GGovernment Coalition§!"
- SIA_parliament_opp_header: "§ROpposition§!"
- SIA_parliament_minor_gov_line_loc: "§LMinor Governmental Coalition Parties\n§Y[?SIA_minor_gov_seats_var|0]§! §WSeats§!"
- SIA_parliament_minor_opp_line_loc: "§LMinor Oppositional Parties\n§Y[?SIA_minor_opp_seats_var|0]§! §WSeats§!"
- SIA_seat_tt: "§YParliament Seat§!"
- SIA_parliament_vacant_seats_text: "§gVacant: [?SIA_vacant_seats_var|0]§!/500 Seats"
+ 
  
  SIA_oil_crisis_cat: "The Oil Crisis"
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."

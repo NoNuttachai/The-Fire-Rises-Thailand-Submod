@@ -69,7 +69,7 @@ guiTypes = {
 				position = { x = 5 y = 310 }
 				font = "VCR02_14"
 				maxwidth = 460
-				text = "[SIA_parliament_gov_support_text]"
+				text = SIA_parliament_gov_support_loc
 				format = center
 			}
 			# =============================================
@@ -80,7 +80,7 @@ guiTypes = {
 				position = { x = 5 y = 540 }
 				font = "VCR02_14"
 				maxwidth = 460
-				text = "[SIA_parliament_opp_support_text]"
+				text = SIA_parliament_opp_support_loc
 				format = center
 			}
 			
@@ -90,180 +90,33 @@ guiTypes = {
 				# =============================================
 				# GOVERNMENT PARTIES
 				# =============================================
-
-				# PPRP - Government Coalition Leader
-				instantTextBoxType = {
-					name = "pprp_name"
-					position = { x = 5 y = 331 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_pprp_full
-					pdx_tooltip = SIA_parliament_detail_pprp_desc
-					format = left
+				gridBoxType = {
+					name = "government_parties_gridbox"
+					position = { x = -165 y = 0 }
+					size = {
+						width = 460 height = 45
+					}
+					slotsize = {
+						width = 100 height = 35
+					}
+					max_slots_horizontal = 1
+					add_horizontal = no
 				}
-				instantTextBoxType = {
-					name = "pprp_seats"
-					position = { x = 5 y = 347 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_pprp_seats_loc]"
-					format = left
-				}
-
-				# DP
-				instantTextBoxType = {
-					name = "dp_name"
-					position = { x = 5 y = 367 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_dp_full
-					format = left
-					pdx_tooltip = SIA_parliament_detail_dp_desc
-				}
-				instantTextBoxType = {
-					name = "dp_seats"
-					position = { x = 5 y = 383 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_dp_seats_loc]"
-					format = left
-				}
-
-				# BJT
-				instantTextBoxType = {
-					name = "bjt_name"
-					position = { x = 5 y = 403 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_bjt_full
-					pdx_tooltip = SIA_parliament_detail_bjt_desc
-					format = left
-				}
-				instantTextBoxType = {
-					name = "bjt_seats"
-					position = { x = 5 y = 419 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_bjt_seats_loc]"
-					format = left
-				}
-
-				# CTPP
-				instantTextBoxType = {
-					name = "ctpp_name"
-					position = { x = 5 y = 439 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_ctpp_full
-					pdx_tooltip = SIA_parliament_detail_ctpp_desc
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ctpp_seats"
-					position = { x = 5 y = 455 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_ctpp_seats_loc]"
-					format = left
-				}
-
-				# Minor Gov Coalition
-				instantTextBoxType = {
-					name = "minor_gov_name"
-					position = { x = 5 y = 476 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_minor_gov_line]"
-					format = left
-				}
+				
 				# =============================================
 				# OPPOSITION PARTIES
 				# =============================================
-
-				# PTP - Opposition Leader
-				instantTextBoxType = {
-					name = "ptp_name"
-					position = { x = 5 y = 561 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_ptp_full
-					pdx_tooltip = SIA_parliament_detail_ptp_desc
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ptp_seats"
-					position = { x = 5 y = 577 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_ptp_seats_loc]"
-					format = left
-				}
-
-				# FFP
-				instantTextBoxType = {
-					name = "ffp_name"
-					position = { x = 5 y = 597 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_ffp_full
-					pdx_tooltip = SIA_parliament_detail_ffp_desc
-					format = left
-				}
-				instantTextBoxType = {
-					name = "ffp_seats"
-					position = { x = 5 y = 613 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_ffp_seats_loc]"
-					format = left
-				}
-
-				# TLP
-				instantTextBoxType = {
-					name = "tlp_name"
-					position = { x = 5 y = 633 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_tlp_full
-					pdx_tooltip = SIA_parliament_detail_tlp_desc
-					format = left
-				}
-				instantTextBoxType = {
-					name = "tlp_seats"
-					position = { x = 5 y = 649 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_tlp_seats_loc]"
-					format = left
-				}
-
-				# PCC
-				instantTextBoxType = {
-					name = "pcc_name"
-					position = { x = 5 y = 669 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = SIA_parliament_pcc_full
-					pdx_tooltip = SIA_parliament_detail_pcc_desc
-					format = left
-				}
-				instantTextBoxType = {
-					name = "pcc_seats"
-					position = { x = 5 y = 685 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_pcc_seats_loc]"
-					format = left
-				}
-
-				# Minor Opp
-				instantTextBoxType = {
-					name = "minor_opp_name"
-					position = { x = 5 y = 706 }
-					font = "VCR02_14"
-					maxwidth = 460
-					text = "[SIA_parliament_minor_opp_line]"
-					format = left
+				gridBoxType = {
+					name = "Opposition_parties_gridbox"
+					position = { x = -165 y = 230 }
+					size = {
+						width = 460 height = 45
+					}
+					slotsize = {
+						width = 100 height = 35
+					}
+					max_slots_horizontal = 1
+					add_horizontal = no
 				}
 			}
 			# Vacant Seats
@@ -276,5 +129,26 @@ guiTypes = {
 				format = center
 			}
 		}
+	}
+	containerWindowType = {
+		name = "SIA_parliament_party_container"
+
+		position = {
+			x = 0 y = 0
+		}
+		size = {
+			width = 0
+			height = 0
+		}
+		instantTextBoxType = {
+			name = "party_name"
+			position = { x = 5 y = 331 }
+			font = "VCR02_14"
+			maxwidth = 460
+			text = [SIA_party_line]
+			pdx_tooltip = SIA_parliament_desc
+			format = left
+		}
+		
 	}
 }

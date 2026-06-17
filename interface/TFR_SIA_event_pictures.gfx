@@ -100,6 +100,10 @@ spriteTypes = {
 		name = "GFX_report_Santi_Lunphae_Passes_Away"
 		texturefile = "gfx/event_pictures/Santi_Lunphae_Passes_Away.png"
 	}
+	spriteType = {
+		name = "GFX_report_Parliamentary_Seat_Change"
+		texturefile = "gfx/event_pictures/Parliamentary_Seat_Change.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_Thai_Protests_Global_Event"

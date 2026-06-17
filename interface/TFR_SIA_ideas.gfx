@@ -130,6 +130,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Snake_Eating_Orange"
+		textureFile = "gfx/texticons/banners/Snake_Eating_Orange.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
@@ -139,6 +144,7 @@ spriteTypes = {
 		textureFile = "gfx/texticons/thai_communist_youth_league_fb_post.png"
 		legacy_lazy_load = no
 	}
+	
 	spriteType = {
 		name = "GFX_idea_SIA_bma"
 		textureFile = "gfx/interface/ideas/SIA/BMA.png"
@@ -273,6 +279,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_intro_FFP" #Future Forward Party — Thanathorn Juangroongruangkit
 		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_FFP_intro.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_intro_MFP" #Move Forward Party — Pita Limjaroenrat
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_MFP_intro.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
