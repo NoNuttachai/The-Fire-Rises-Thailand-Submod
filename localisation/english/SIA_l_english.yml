@@ -32,7 +32,7 @@
  SIA_rt_movement_long: "§RSocialist Workers Thailand / Restart Thailand Movement§!"
 
  hybrid_regime_SIA: "Stratocratic Conservatism"
- SIA_hybrid_regime_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§Yz Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
+ SIA_hybrid_regime_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
  
  ###National Focuses###
  SIA_future_forward_on_trial: "Future Forward on Trial"
@@ -385,11 +385,8 @@
  thai_events.40.d: ""
  thai_events.40.a: "BOP increase"
  
- thai_events.41.t: "Parliamentary Seat Change"
- thai_events.41.d: "4 MPs who were expelled from the Future Forward Party have officially joined parties in the government coalition. The MPs are Kawinath Tutong, Bencha Saengchantra, Piya Chatthai, and Cherdchai Klaiklueng, all of whom had been expelled by the Future Forward Party on 16 December 2019 for repeatedly breaking party ranks and voting against the party's position in Parliament.\n\nTheir defection reduced Future Forward's parliamentary representation and highlighted internal divisions and "cobras" within the Future Forward Party. At the same time, the move strengthened the governing coalition led by Prime Minister Prayut Chan-o-cha."
  thai_events.41.t: "Move Forward MP Defection"
  thai_events.41.d: "After Future Forward was dissolved in February 2020, 55 MPs led by Pita Limjaroenrat agreed to move together to the newly formed Move Forward Party. However, one MP chose a different path. When it came time to formally register with the new party, Julapan Nonsrichai broke ranks and joined the Chartthaipattana Party, making him the only member of the 55-MP bloc not to follow the group into Move Forward."
-
  thai_events.41.a: "Orange Cobras..."
  thai_events_41_tt: "§g"Cobras" is a political term in Thailand used to describe MPs who vote or take political positions contrary to their party's stance in exchange for benefits from the opposing side. The term can also refer to MPs who choose not to follow the majority of their party members in joining a successor party after their original party has been dissolved.\n\nThe term "cobras" originates from a metaphor used by Samak Sundaravej, (25th Prime Minister of Thailand), who compared himself to a farmer who was bitten by a cobra after saving it being oblivious to its venom in Aesop's fable.§!"
  

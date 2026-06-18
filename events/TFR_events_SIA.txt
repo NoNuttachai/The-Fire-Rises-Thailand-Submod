@@ -874,10 +874,6 @@ country_event = {
 			value = 0.01
 		}
 		custom_effect_tooltip = thai_events_41_tt
-		add_power_balance_value = {
-			id = SIA_power_balance
-			value = 0.01
-		}
 	}
 }
 country_event = {
