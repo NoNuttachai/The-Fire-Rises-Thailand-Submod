@@ -130,11 +130,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_Snake_Eating_Orange"
-		textureFile = "gfx/texticons/banners/Snake_Eating_Orange.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}

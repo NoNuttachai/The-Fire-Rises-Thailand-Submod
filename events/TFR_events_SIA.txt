@@ -110,15 +110,18 @@ country_event = {
 			multiply_temp_variable = { seats = -1 }
 			SIA_change_parliament_seat = yes
 			set_temp_variable = { target = 3 }
-			set_temp_variable = { seats = 54 }
+			set_temp_variable = { seats = 55 }
 			SIA_change_parliament_seat = yes
 		}
 		custom_effect_tooltip = SIA_mfp_seats_replacement
 		set_temp_variable = { target = 6 }
-		set_temp_variable = { seats = 10 }
+		set_temp_variable = { seats = 9 }
 		SIA_change_parliament_seat = yes
 		set_temp_variable = { target = 7 }
 		set_temp_variable = { seats = 1 }
+		SIA_change_parliament_seat = yes
+		set_temp_variable = { target = 11 }
+		set_temp_variable = { seats = 11 }
 		SIA_change_parliament_seat = yes
 		
 		set_country_flag = ffp_dismantled
@@ -850,40 +853,35 @@ country_event = {
 	}
 }
 country_event = {
-    id = thai_events.41 # 8 January 2020  - Parliamentary Seat Change
+    id = thai_events.41 # 8 March 2020  - Move Forward MP Defection
     title = thai_events.41.t
     desc = thai_events.41.d
-	picture = GFX_report_Parliamentary_Seat_Change
+	picture = GFX_report_Cobra_Eating_Orange
 	
 	is_triggered_only = yes
 	
     option = {
         name = thai_events.41.a
 		set_temp_variable = { target = 3 }
-		set_temp_variable = { seats = -4 }
+		set_temp_variable = { seats = -1 }
 		SIA_change_parliament_seat = yes
 		
-		set_temp_variable = { target = 1 }
+		set_temp_variable = { target = 7 }
 		set_temp_variable = { seats = 1 }
 		SIA_change_parliament_seat = yes
-		
-		set_temp_variable = { target = 6 }
-		set_temp_variable = { seats = 1 }
-		SIA_change_parliament_seat = yes
-		
-		set_temp_variable = { target = 9 }
-		set_temp_variable = { seats = 2 }
-		SIA_change_parliament_seat = yes
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.01
+		}
 		custom_effect_tooltip = thai_events_41_tt
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = 0.01
 		}
-
 	}
 }
 country_event = {
-    id = thai_events.42 # 28 January 2020  - Parliamentary Seat Change
+    id = thai_events.42 # 21 January 2020  - Parliamentary Seat Change
     title = thai_events.42.t
     desc = thai_events.42.d
 	picture = GFX_report_Parliamentary_Seat_Change
@@ -892,27 +890,11 @@ country_event = {
 	
     option = {
         name = thai_events.42.a
-		set_temp_variable = { target = 3 }
-		set_temp_variable = { seats = -7 }
-		SIA_change_parliament_seat = yes
-		set_temp_variable = { target = 5 }
+		set_temp_variable = { target = 4 }
 		set_temp_variable = { seats = -1 }
 		SIA_change_parliament_seat = yes
-		set_temp_variable = { target = 10 }
-		set_temp_variable = { seats = -4 }
-		SIA_change_parliament_seat = yes
-		
-		set_temp_variable = { target = 1 }
-		set_temp_variable = { seats = 1 }
-		SIA_change_parliament_seat = yes
-		set_temp_variable = { target = 4 }
-		set_temp_variable = { seats = 2 }
-		SIA_change_parliament_seat = yes
-		set_temp_variable = { target = 6 }
-		set_temp_variable = { seats = -3 }
-		SIA_change_parliament_seat = yes
 		set_temp_variable = { target = 9 }
-		set_temp_variable = { seats = 12 }
+		set_temp_variable = { seats = 1 }
 		SIA_change_parliament_seat = yes
 		add_power_balance_value = {
 			id = SIA_power_balance

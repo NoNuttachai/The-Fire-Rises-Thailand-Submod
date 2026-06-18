@@ -104,6 +104,10 @@ spriteTypes = {
 		name = "GFX_report_Parliamentary_Seat_Change"
 		texturefile = "gfx/event_pictures/Parliamentary_Seat_Change.png"
 	}
+	spriteType = {
+		name = "GFX_report_Cobra_Eating_Orange"
+		texturefile = "gfx/event_pictures/Cobra_Eating_Orange.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_Thai_Protests_Global_Event"

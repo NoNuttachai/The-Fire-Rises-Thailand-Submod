@@ -194,8 +194,250 @@ defined_text = {
 		}
 		localization_key = SIA_parliament_detail_pprp_header2
 	}
-
-
+}
+defined_text = {
+	name = SIA_check_coalition_leader
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 1 }
+			check_variable = { SIA_party_faction = 1 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 1 }
+			check_variable = { SIA_party_faction = 1 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 2 }
+			check_variable = { SIA_party_faction = 2 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 2 }
+			check_variable = { SIA_party_faction = 2 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 3 }
+			check_variable = { SIA_party_faction = 3 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 3 }
+			check_variable = { SIA_party_faction = 3 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 4 }
+			check_variable = { SIA_party_faction = 4 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 4 }
+			check_variable = { SIA_party_faction = 4 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 5 }
+			check_variable = { SIA_party_faction = 5 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 5 }
+			check_variable = { SIA_party_faction = 5 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 6 }
+			check_variable = { SIA_party_faction = 6 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 6 }
+			check_variable = { SIA_party_faction = 6 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 7 }
+			check_variable = { SIA_party_faction = 7 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 7 }
+			check_variable = { SIA_party_faction = 7 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 8 }
+			check_variable = { SIA_party_faction = 8 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 8 }
+			check_variable = { SIA_party_faction = 8 }
+		}
+		localization_key = SIA_opposition_leader
+	}
+}
+defined_text = {
+	name = SIA_get_government_leader
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 1 }
+		}
+		localization_key = SIA_parliament_pprp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 2 }
+		}
+		localization_key = SIA_parliament_ptp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 3 }
+			NOT = {
+				has_country_flag = ffp_dismantled
+			}
+		}
+		localization_key = SIA_parliament_ffp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 3 }
+			has_country_flag = ffp_dismantled
+		}
+		localization_key = SIA_parliament_mfp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 4 }
+		}
+		localization_key = SIA_parliament_dp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 5 }
+		}
+		localization_key = SIA_parliament_tlp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 6 }
+		}
+		localization_key = SIA_parliament_bjt_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 7 }
+		}
+		localization_key = SIA_parliament_ctpp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 8 }
+		}
+		localization_key = SIA_parliament_pcc_full
+	}
+}
+defined_text = {
+	name = SIA_get_opposition_leader
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 1 }
+		}
+		localization_key = SIA_parliament_pprp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 2 }
+		}
+		localization_key = SIA_parliament_ptp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 3 }
+		}
+		localization_key = SIA_parliament_ffp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 3 }
+			NOT = {
+				has_country_flag = ffp_dismantled
+			}
+		}
+		localization_key = SIA_parliament_ffp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 3 }
+			has_country_flag = ffp_dismantled
+		}
+		localization_key = SIA_parliament_mfp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 4 }
+		}
+		localization_key = SIA_parliament_dp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 5 }
+		}
+		localization_key = SIA_parliament_tlp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 6 }
+		}
+		localization_key = SIA_parliament_bjt_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 7 }
+		}
+		localization_key = SIA_parliament_ctpp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 8 }
+		}
+		localization_key = SIA_parliament_pcc_full
+	}
+}
 ### Speaker Info ###
 defined_text = {
 	name = SIA_parliament_speaker_name_text

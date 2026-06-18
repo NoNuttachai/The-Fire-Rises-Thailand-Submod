@@ -29,6 +29,8 @@ SIA_parliament_init_variables = {
 	set_variable = { party_6_alignment = 0 } 
 	set_variable = { party_7_alignment = 0 } 
 	set_variable = { party_8_alignment = 1 } 
+	set_variable = { SIA_government_leader = 1 }
+	set_variable = { SIA_opposition_leader = 2 }
 	
 	SIA_setup_parliament_layout = yes
 	SIA_calculate_parliament_frame = yes
@@ -37,84 +39,311 @@ SIA_setup_parliament_layout = {
 	clear_array = SIA_government_party_array
 	clear_array = SIA_opposition_party_array
 	
-	
+	custom_effect_tooltip = SIA_new_parliament_formed
 	# 0 - Government            1 - Opposition
+	custom_effect_tooltip = SIA_government_member
 	if = {
 		limit = {
 			check_variable = { party_1_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 1 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 1 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_pprp_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 1 } 
-	}
+	
 	if = {
 		limit = {
+			
 			check_variable = { party_2_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 2 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 2 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_ptp_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 2 } 
-	}
+	
 	if = {
 		limit = {
+			NOT = {
+				
+				has_country_flag = ffp_dismantled
+			}
 			check_variable = { party_3_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 3 } 
-	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 3 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 3 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_ffp_full
+		}
 	}
 	if = {
 		limit = {
+			
+			has_country_flag = ffp_dismantled
+			check_variable = { party_3_alignment = 0 }
+		}
+		add_to_array = { SIA_government_party_array = 3 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 3 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_mfp_full
+		}
+	}
+	
+	if = {
+		limit = {
+			
 			check_variable = { party_4_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 4 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 4 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_dp_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 4 } 
-	}
+	
 	if = {
 		limit = {
+			
 			check_variable = { party_5_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 5 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 5 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_tlp_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 5 } 
-	}
+	
 	if = {
 		limit = {
+			
 			check_variable = { party_6_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 6 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 6 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_bjt_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 6 } 
-	}
+	
 	if = {
 		limit = {
+			
 			check_variable = { party_7_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 7 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 7 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_ctpp_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 7 } 
-	}
+	
 	if = {
 		limit = {
+			
 			check_variable = { party_8_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 8 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_government_leader = 8 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_pcc_full
+		}
 	}
-	else = {
-		add_to_array = { SIA_opposition_party_array = 8 } 
-	}
+	
 
-	#Minor Governmental Factions, Always align with wither Government or Opposition
+	#Minor Governmental Factions, Always align with either Government or Opposition
 	add_to_array = { SIA_government_party_array = 9 } 
+	custom_effect_tooltip = SIA_parliament_minor_gov_line_loc
+	
+	custom_effect_tooltip = SIA_opposition_member
+	if = {
+		limit = {
+			
+			check_variable = { party_1_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 1 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 1 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_pprp_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_2_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 2 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 2 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_ptp_full
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				
+				has_country_flag = ffp_dismantled
+			}
+			check_variable = { party_3_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 3 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 3 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_ffp_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_3_alignment = 1 }
+			has_country_flag = ffp_dismantled
+		}
+		add_to_array = { SIA_opposition_party_array = 3 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 3 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_mfp_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_4_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 4 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 4 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_dp_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_5_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 5 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 5 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_tlp_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_6_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 6 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 6 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_bjt_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_7_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 7 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 7 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_ctpp_full
+		}
+	}
+	if = {
+		limit = {
+			
+			check_variable = { party_8_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 8 } 
+		if = {
+			limit = {
+				NOT = {
+					check_variable = { SIA_opposition_leader = 8 }
+				}
+			}
+			custom_effect_tooltip = SIA_parliament_pcc_full
+		}
+	}
+	
 	add_to_array = { SIA_opposition_party_array = 10 } 
+	custom_effect_tooltip = SIA_parliament_minor_opp_line_loc
+	SIA_calculate_total_seats = yes
+	
+	
+	
+	
+	
+	
+	
 }
 SIA_change_parliament_seat = {
 	if = {
@@ -206,6 +435,61 @@ SIA_change_parliament_seat = {
 		custom_effect_tooltip = SIA_change_vacant_seats
 	}
 	set_temp_variable = { seats = 0 }
+	clamp_variable = {
+		var = SIA_pprp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_ptp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_ffp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_dp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_tlp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_bjt_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_ctpp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_pcc_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_minor_gov_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_minor_opp_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_vacant_seats_var
+		min = 0
+		max = 500
+	}
 	SIA_calculate_total_seats = yes
 }
 SIA_calculate_total_seats = {

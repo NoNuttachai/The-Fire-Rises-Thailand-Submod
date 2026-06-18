@@ -75,13 +75,13 @@
 	recruit_character = SIA_anupong_paochinda_char
 	recruit_character = SIA_Kittinant_Chinsamran_char
 	recruit_character = SIA_Preecha_Chan_o_cha_char
-	activate_advisor = SIA_apirat_kongsompong_army_chief
 	
 	add_ideas = {
 		SIA_gdp_fix_new
 		ETH_chinese_investments
 		SIA_an_army_with_a_country_1
 		SIA_constitution_60
+		SIA_lack_of_the_political_legitimacy
 		# Ministers
 		SIA_prayut_chan-o-cha_advisor
 		SIA_don_pramudwinai_advisor

@@ -221,7 +221,7 @@
  thai_events.4.a: "Are you coming to the tree?"
 
  thai_events.5.t: "Formation of the Move Forward Party"
- thai_events.5.d: "Following the Constitutional Court's ruling to dissolve the Future Forward Party, its remaining members, led by Pita Limjaroenrat, announced the formation of a successor political party:\n\n£GFX_orange_party_2 The Future Forward Party. Speaking to the press, Pita pledged to carry on the progressive, left-wing, and anti-junta agenda of his predecessor party. 54 of Future Forward's 65 MPs declared their affiliation with the new party.\n\nConcurrently, Future Forward Party executives who were handed a ten-year ban from political office by the court's decision, led by party founder Thanathorn Juangroongruangkit and secretary-general Piyabutr Saengkanokkul, announced the establishment of a separate political group called:\n\n£GFX_progressive_movement The Progressive Movement. Which will operates as an extra parliamentary leftist think tank and grassroots advocacy organization."
+ thai_events.5.d: "Following the Constitutional Court's ruling to dissolve the Future Forward Party, its remaining members, led by Pita Limjaroenrat, announced the formation of a successor political party:\n\n£GFX_orange_party_2 The Move Forward Party. Speaking to the press, Pita pledged to carry on the progressive, left-wing, and anti-junta agenda of his predecessor party. Following the dissolution of the Future Forward Party, 11 of its seats became vacant after those MPs were banned from politics. Of the remaining 65 MPs, 55 pledged their affiliation to the new party. The other 10 MPs, many of whom were already de facto aligned against the party, chose to side with the government coalition: 9 joined Bhumjaithai and 1 joined Chartthaipattana.\n\nConcurrently, Future Forward Party executives who were handed a ten-year ban from political office by the court's decision, led by party founder Thanathorn Juangroongruangkit and secretary-general Piyabutr Saengkanokkul, announced the establishment of a separate political group called:\n\n£GFX_progressive_movement The Progressive Movement. Which will operates as an extra parliamentary leftist think tank and grassroots advocacy organization."
  thai_events.5.a: "It still not over for the orange party"
  
  thai_events.6.t: "Oil Crisis Hits Thailand"
@@ -387,12 +387,15 @@
  
  thai_events.41.t: "Parliamentary Seat Change"
  thai_events.41.d: "4 MPs who were expelled from the Future Forward Party have officially joined parties in the government coalition. The MPs are Kawinath Tutong, Bencha Saengchantra, Piya Chatthai, and Cherdchai Klaiklueng, all of whom had been expelled by the Future Forward Party on 16 December 2019 for repeatedly breaking party ranks and voting against the party's position in Parliament.\n\nTheir defection reduced Future Forward's parliamentary representation and highlighted internal divisions and "cobras" within the Future Forward Party. At the same time, the move strengthened the governing coalition led by Prime Minister Prayut Chan-o-cha."
+ thai_events.41.t: "Move Forward MP Defection"
+ thai_events.41.d: "After Future Forward was dissolved in February 2020, 55 MPs led by Pita Limjaroenrat agreed to move together to the newly formed Move Forward Party. However, one MP chose a different path. When it came time to formally register with the new party, Julapan Nonsrichai broke ranks and joined the Chartthaipattana Party, making him the only member of the 55-MP bloc not to follow the group into Move Forward."
+
  thai_events.41.a: "Orange Cobras..."
- thai_events_41_tt: ".\n\n\n\n\n£GFX_Snake_Eating_Orange\n\n\n\n\n\n.\n§g"Cobras" is a political term in Thailand used to describe MPs who vote or take political positions contrary to their party's stance in exchange for benefits from the opposing side. The term can also refer to MPs who choose not to follow the majority of their party members in joining a successor party after their original party has been dissolved.\n\nThe term "cobras" originates from a metaphor used by Samak Sundaravej, (25th Prime Minister of Thailand), who compared himself to a farmer who was bitten by a cobra after saving it being oblivious to its venom in Aesop's fable.§!"
+ thai_events_41_tt: "§g"Cobras" is a political term in Thailand used to describe MPs who vote or take political positions contrary to their party's stance in exchange for benefits from the opposing side. The term can also refer to MPs who choose not to follow the majority of their party members in joining a successor party after their original party has been dissolved.\n\nThe term "cobras" originates from a metaphor used by Samak Sundaravej, (25th Prime Minister of Thailand), who compared himself to a farmer who was bitten by a cobra after saving it being oblivious to its venom in Aesop's fable.§!"
  
- thai_events.42.t: "Party-List Formula Adjustments"
- thai_events.42.d: "The Election Commission of Thailand revised the allocation of party-list seats following a reinterpretation of the proportional representation formula established under the 2017 Constitution and the Organic Act on the Election of Members of the House of Representatives. This revised calculation enabled several small "micro-parties" to secure or retain party-list seats despite receiving far fewer votes than the standard quota of approximately 71,000 votes per MP.\n\nThe revision was strongly criticized by opposition parties, which argued that it disproportionately benefited pro-government micro-parties at the expense of larger opposition parties. The Future Forward Party was particularly affected, losing seven party-list seats as a result of the recalculation, alongside losing a constituency seat in Chiang Mai after a rerun election shifted local voting math. Overall, the changes increased the representation of parties supporting the government and strengthened the coalition led by Prime Minister Prayut Chan-o-cha."
- thai_events.42.a: "What Is This Prayut Blud Doing On The Calculator?"
+ thai_events.42.t: "Parliamentary Seat Change"
+ thai_events.42.d: "On 21 January 2020, the Supreme Court found Democrat Party candidate Chatchai Woraphiphat guilty of election fraud for spreading false information against a political opponent during the 2019 election campaign. He received a ten-year political ban, and his votes were invalidated.\n\nAs a result, the Election Commission recalculated party-list seats on 28 January 2020 under the electoral formula established by the 2017 Constitution and election law. The revision was criticized by opposition parties, including the Future Forward Party, which argued it favored smaller parties and strengthened the government coalition.\n\nFollowing the recalculation, the Democrat Party lost one party-list seat, which was reassigned to the Thai Rak Tham Party, allowing party leader Peerawit Ruanglertlopak to enter the House of Representatives as a party-list MP."
+ thai_events.42.a: "Thai Rak Tham Party? Who cares bro?"
  
  thai_events.43.t: "Parliamentary Seat Change"
  thai_events.43.d: "A by-election was held in Constituency 4 of Lampang Province to fill a vacant seat in the House of Representatives following the death of Itthirat Chantharasurin, a Pheu Thai Party MP. The election was one of Thailand's first polls conducted under COVID-19 public health measures, with voters and election officials required to observe social distancing guidelines.\n\nThe by-election was won by Wattana Sitthiwang of the Palang Pracharath Party, who defeated the opposition-backed candidate, Somboon Klaphachon of the Thai Liberal Party. The result marked a significant breakthrough for Palang Pracharath in a constituency that had previously been considered an opposition stronghold."
@@ -453,16 +456,18 @@
  SIA_parliament_speaker_party_loc: "Speaker Political Party: £GFX_democrat §YDemocrat Party§!"
 
  # Party full name lines (for single-column layout)
- SIA_parliament_pprp_full: "£GFX_palang_pracharath §PPalang Pracharath Party - Government Coalition Leader§!\n§Y[?SIA_pprp_seats_var|0]§! Seats"
- SIA_parliament_dp_full: "£GFX_democrat §CDemocrat Party§!\n§Y[?SIA_dp_seats_var|0]§! Seats"
- SIA_parliament_bjt_full: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n§Y[?SIA_bjt_seats_var|0]§! Seats"
- SIA_parliament_ctpp_full: "£GFX_chartthaipattana §sChart Thai Pattana Party§!\n§Y[?SIA_ctpp_seats_var|0]§! Seats"
- SIA_parliament_ptp_full: "£GFX_phua_thai §RPheu Thai Party - Opposition Leader§!\n§Y[?SIA_ptp_seats_var|0]§! Seats"
- SIA_parliament_ffp_full: "£GFX_orange_party_1 §OFuture Forward Party§!\n§Y[?SIA_ffp_seats_var|0]§! Seats"
- SIA_parliament_mfp_full: "£GFX_orange_party_2 §OMove Forward Party§!\n§Y[?SIA_ffp_seats_var|0]§! Seats"
- SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§!\n§Y[?SIA_tlp_seats_var|0]§! Seats"
- SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§!\n§Y[?SIA_pcc_seats_var|0]§! Seats"
+ SIA_parliament_pprp_full: "£GFX_palang_pracharath §PPalang Pracharath Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pprp_seats_var|0]§! Seats"
+ SIA_parliament_dp_full: "£GFX_democrat §CDemocrat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_dp_seats_var|0]§! Seats"
+ SIA_parliament_bjt_full: "£GFX_bhumjaithai §1Bhumjaithai Party§! [SIA_check_coalition_leader] \n§Y[?SIA_bjt_seats_var|0]§! Seats"
+ SIA_parliament_ctpp_full: "£GFX_chartthaipattana §sChart Thai Pattana Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ctpp_seats_var|0]§! Seats"
+ SIA_parliament_ptp_full: "£GFX_phua_thai §RPheu Thai Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ptp_seats_var|0]§! Seats"
+ SIA_parliament_ffp_full: "£GFX_orange_party_1 §OFuture Forward Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
+ SIA_parliament_mfp_full: "£GFX_orange_party_2 §OMove Forward Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
+ SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§! [SIA_check_coalition_leader] \n§Y[?SIA_tlp_seats_var|0]§! Seats"
+ SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pcc_seats_var|0]§! Seats"
 
+ SIA_government_coalition_leader: "§P- Government Coalition Leader§!"
+ SIA_opposition_leader: "§R- Opposition Leader§!"
  # Party support lines
  
  # Party Detail Panels
@@ -495,6 +500,10 @@
  SIA_seat_tt: "§YParliament Seat§!"
  SIA_parliament_vacant_seats_text: "§gVacant: [?SIA_vacant_seats_var|0]§!/500 Seats"
  
+ SIA_new_parliament_formed: "A New Parliament will be Formed:"
+ SIA_government_member: "§PGovernment§!: \n[SIA_get_government_leader]"
+ SIA_opposition_member: "\n§ROpposition§!: \n[SIA_get_opposition_leader]"
+ 
  SIA_change_pprp_seats: "£GFX_palang_pracharath §PPalang Pracharath Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_ptp_seats: "£GFX_phua_thai §RPheu Thai Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_ffp_seats: "£GFX_orange_party_1 §OFuture Forward Party§! §YSeat§! Change: [?seats|=+0]"
@@ -509,7 +518,7 @@
  SIA_change_vacant_seats: "§gVacant§! §YSeat§! Change: [?seats|=+0]"
  
  SIA_ffp_seats_dead: "£GFX_orange_party_1 §OFuture Forward Party§! §YSeat§! Change: §R-[?SIA_ffp_seats_var]§!"
- SIA_mfp_seats_replacement: "£GFX_orange_party_2 §OMove Forward Party§! §YSeat§! Change: §G+54§!"
+ SIA_mfp_seats_replacement: "£GFX_orange_party_2 §OMove Forward Party§! §YSeat§! Change: §G+55§!"
  
  # Decision Localization
  SIA_parliament_category: "Parliament of Thailand"
