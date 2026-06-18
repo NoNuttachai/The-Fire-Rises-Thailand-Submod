@@ -330,7 +330,6 @@ country_event = {
 	
     option = {
         name = thai_events.13.a
-		custom_effect_tooltip = thai_events_13_texticon
 		add_popularity = {
             ideology = social_democrat
             popularity = 0.005
@@ -387,7 +386,14 @@ country_event = {
 	
     option = {
         name = thai_events.16.a
-		custom_effect_tooltip = thai_events_16_texticon
+		add_popularity = {
+            ideology = social_democrat
+            popularity = 0.005
+        }
+		add_popularity = {
+            ideology = libertarian_socialist
+            popularity = 0.0025
+        }
 	}
 }
 country_event = {
@@ -869,6 +875,11 @@ country_event = {
 		set_temp_variable = { seats = 2 }
 		SIA_change_parliament_seat = yes
 		custom_effect_tooltip = thai_events_41_tt
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.01
+		}
+
 	}
 }
 country_event = {
@@ -903,7 +914,10 @@ country_event = {
 		set_temp_variable = { target = 9 }
 		set_temp_variable = { seats = 12 }
 		SIA_change_parliament_seat = yes
-		
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.01
+		}
 	}
 }
 country_event = {
