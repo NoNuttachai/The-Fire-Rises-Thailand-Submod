@@ -559,11 +559,11 @@ focus_tree = {
 	focus = {
 		id = SIA_utilized_the_media
 		icon = GFX_goal_SIA_utilized_the_media_on_our_side
-		x = 2
+		x = -1
 		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_information_operations }
-		relative_position_id = SIA_declare_state_of_emergency
+		relative_position_id = SIA_information_operations
 		
 		ai_will_do = {
 			factor = 10
@@ -640,11 +640,11 @@ focus_tree = {
 	focus = {
 		id = SIA_information_operations
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 2
-		y = 1
+		x = 0
+		y = 2
 		cost = 5
 		prerequisite = { focus = SIA_side_with_uncle_tuu }
-		relative_position_id = SIA_establish_ccsa
+		relative_position_id = SIA_side_with_uncle_tuu
 		
 		ai_will_do = {
 			factor = 10
@@ -765,6 +765,7 @@ focus_tree = {
 		cost = 5
 		prerequisite = { focus = SIA_organize_counter_protests }
 		prerequisite = { focus = SIA_persecute_the_agitators }
+		prerequisite = { focus = SIA_half_payment_policy }
 		relative_position_id = SIA_organize_counter_protests
 		
 		ai_will_do = {
