@@ -206,7 +206,6 @@
 			basic_light_cruiser = 1
 			early_heavy_cruiser = 1
 			early_carrier = 1
-			early_submarine = 1
 			transport = 1
 		}
 	}
@@ -218,7 +217,6 @@
 			early_ship_hull_cruiser = 1
 			basic_ship_hull_cruiser = 1
 			early_ship_hull_carrier = 1
-			early_ship_hull_submarine = 1
 			smoke_generator = 1
 			sonar = 1
 			basic_depth_charges = 1

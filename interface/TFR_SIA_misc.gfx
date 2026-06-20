@@ -13,6 +13,6 @@ spriteTypes = {
 	#Decision Pictures
 	spriteType = {
         name = "GFX_decision_cat_SIA_oil_crisis_picture"
-        texturefile = "gfx/interface/decisions/SIA_oil_crisis.png"
+        texturefile = "gfx/interface/decision_pictures/SIA_oil_crisis.png"
     }
 }	

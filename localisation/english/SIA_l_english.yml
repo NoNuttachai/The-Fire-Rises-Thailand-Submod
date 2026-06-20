@@ -572,6 +572,8 @@
  SIA_astrazeneca_and_siam_bioscience_cost: "£pol_power §H25§! £civ_factory §H5§!"
  SIA_astrazeneca_and_siam_bioscience_cost_blocked: "£pol_power §R25§! £civ_factory §R5§!"
  
+ SIA_expand_vaccination_centers: "Expand Vaccination Centers"
+ 
  SIA_covid_idea_1: "Mild Coronavirus Cases"
  SIA_covid_idea_2: "Moderate Coronavirus Cases"
  SIA_covid_idea_3: "Serious Coronavirus Cases"
@@ -668,8 +670,14 @@
  SIA_bbc_on_the_ground_with_jonathan_head: "BBC: On The Ground with Jonathan Head"
  SIA_bbc_on_the_ground_with_jonathan_head_desc: "\n\n\n\n\n£GFX_SIA_BBC_On_the_Ground_with_Jonathan_Head\n\n\n\n\n\nJonathan Head is a veteran British journalist and the long-serving Southeast Asia Correspondent for BBC News. Based in Bangkok, Thailand, he is one of the most recognizable international reporters covering the region, with a career at the BBC spanning more than three decades.\n\nIn Thailand, he is often viewed negatively by right wingers due to allegations that his reporting insulted the monarchy. In 2008, Thai police investigated him under lèse-majesté laws, an offense that can carry a prison sentence of up to 15 years. However, the case did not result in a conviction, reportedly because prosecuting a foreign journalist from the United Kingdom could have caused a diplomatic incident with the British government."
  
+ SIA_amnesty_international_complaint: "Amnesty International: Lodge Complaint Against the Government"
+ SIA_amnesty_international_complaint_desc: ""
  
+ SIA_amnesty_international_advocate: "Amnesty International: Advocate for the Released of Political Prisoners"
+ SIA_amnesty_international_advocate_desc: ""
  
+ SIA_amnesty_international_investigations: "Amnesty International: Expose Police Brutality"
+ SIA_amnesty_international_investigations_desc: ""
  
  
  
@@ -747,6 +755,8 @@
  SIA_bbc_thai_slander: "BBC Thai Slander"
  SIA_ned_interference: "NED Interference"
  SIA_astrazeneca_cooperation: "AstraZeneca Cooperation"
+ SIA_asean_petroleum_agreement: "ASEAN Petroleum Agreement"
+ SIA_oil_imports: "Oil Imports"
  #State Modifiers
  SIA_southern_fire_state_modifier: "Southern Fire"
  SIA_southern_fire_state_modifier_desc: "Southern Fire Description"
@@ -771,6 +781,7 @@
  SIA_ide_stratcon: "£GFX_palang_pracharath §PStrat. Conservative§!"
  SIA_ide_independent: "£GFX_FRA_centrist_texticon §LIndependent§!"
  SIA_ide_neoliberal: "£GFX_chartpattana §BNeo§!§Rliberal§!"
+ sec_political_architect: "Political Architect"
  
  
  #Decision cost tooltip for this mod that uses

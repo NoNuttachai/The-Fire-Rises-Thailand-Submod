@@ -220,7 +220,7 @@ SIA_coronavirus_category = {
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
 			has_active_mission = SIA_the_pandemic_worsens_mission
-			has_completed_focus = SIA_establish_ccsa
+			has_completed_focus = SIA_declare_state_of_emergency
 		}
 
 		days_remove = 30
@@ -269,7 +269,8 @@ SIA_coronavirus_category = {
 		}
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
-			has_active_mission = SIA_securing_vaccine_supply
+			has_active_mission = SIA_nationwide_vaccinations
+			has_completed_focus = SIA_covid_vaccine_drive
 		}
 		custom_cost_trigger = {
 			check_variable = {
@@ -293,7 +294,7 @@ SIA_coronavirus_category = {
 		}
 		remove_effect = {
 			add_days_mission_timeout = {
-				mission = SIA_securing_vaccine_supply
+				mission = SIA_nationwide_vaccinations
 				days = -50
 			}
 		}
@@ -308,7 +309,8 @@ SIA_coronavirus_category = {
 		}
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
-			has_active_mission = SIA_securing_vaccine_supply
+			has_active_mission = SIA_nationwide_vaccinations
+			has_completed_focus = SIA_covid_vaccine_drive
 		}
 		custom_cost_trigger = {
 			check_variable = {
@@ -332,7 +334,7 @@ SIA_coronavirus_category = {
 		}
 		remove_effect = {
 			add_days_mission_timeout = {
-				mission = SIA_securing_vaccine_supply
+				mission = SIA_nationwide_vaccinations
 				days = -30
 			}
 		}
@@ -347,7 +349,8 @@ SIA_coronavirus_category = {
 		}
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
-			has_active_mission = SIA_securing_vaccine_supply
+			has_active_mission = SIA_nationwide_vaccinations
+			has_completed_focus = SIA_covid_vaccine_drive
 		}
 		custom_cost_trigger = {
 			has_political_power > 24.9
@@ -367,7 +370,7 @@ SIA_coronavirus_category = {
 		}
 		remove_effect = {
 			add_days_mission_timeout = {
-				mission = SIA_securing_vaccine_supply
+				mission = SIA_nationwide_vaccinations
 				days = -30
 			}
 			add_opinion_modifier = {
@@ -403,6 +406,7 @@ SIA_coronavirus_category = {
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
 			has_active_mission = SIA_nationwide_vaccinations
+			has_completed_focus = SIA_covid_vaccine_drive
 		}
 		days_remove = 30
 		days_re_enable = 75
