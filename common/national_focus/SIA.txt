@@ -98,6 +98,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = SIA_secure_support_from_ned
 			unlock_decision_tooltip = SIA_bbc_coverage_of_the_protestors
+			unlock_decision_tooltip = SIA_amnesty_international_complaint
 		}                             
 	}                                 
 	focus = {                         
@@ -479,7 +480,6 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_enforce_lockdowns
 			unlock_decision_tooltip = SIA_tighten_border_control
 			unlock_decision_tooltip = SIA_expand_medical_services
-			unlock_decision_tooltip = SIA_stricten_curfews
 			unlock_decision_tooltip = SIA_conduct_nationwide_screenings
 		}
 	}
@@ -496,7 +496,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			has_active_mission = SIA_the_protests_intensify
 		}
 		available_if_capitulated = yes
 		
@@ -504,6 +504,7 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = -0.1
 			add_command_power = 30
+			unlock_decision_tooltip = SIA_stricten_curfews
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 15
@@ -554,6 +555,31 @@ focus_tree = {
 				value = 0.05
 			}
 			
+		}
+	}
+	focus = {
+		id = SIA_information_operations
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = SIA_side_with_uncle_tuu }
+		relative_position_id = SIA_side_with_uncle_tuu
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
+			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
+			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
+			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
 		}
 	}
 	focus = {
@@ -635,31 +661,6 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_activate_the_asean_petroleum_security_agreement
 			unlock_decision_tooltip = SIA_increase_american_oil_imports
 			unlock_decision_tooltip = SIA_oil_cooperation_with_singapore
-		}
-	}
-	focus = {
-		id = SIA_information_operations
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 0
-		y = 2
-		cost = 5
-		prerequisite = { focus = SIA_side_with_uncle_tuu }
-		relative_position_id = SIA_side_with_uncle_tuu
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 50
-			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
-			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
-			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
-			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
 		}
 	}
 	focus = {
@@ -830,7 +831,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			has_active_mission = SIA_nationwide_vaccinations
 		}
 		available_if_capitulated = yes
 		
@@ -843,8 +844,12 @@ focus_tree = {
 			add_debt = yes
 			add_days_mission_timeout = {
 				mission = SIA_nationwide_vaccinations
-				days = -100
+				days = -50
 			}
+			unlock_decision_tooltip = SIA_import_sinovac_vaccines
+			unlock_decision_tooltip = SIA_import_sputnik_vaccines
+			unlock_decision_tooltip = SIA_astrazeneca_and_siam_bioscience
+			unlock_decision_tooltip = SIA_expand_vaccination_centers
 		}
 	}
 	focus = {

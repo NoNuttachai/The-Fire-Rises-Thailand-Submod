@@ -103,6 +103,26 @@ SIA_oil_crisis_cat = {
 				mission = SIA_oil_in_reserves_mission
 				days = 20
 			}
+			add_opinion_modifier = {
+				target = INS
+				modifier = SIA_asean_petroleum_agreement
+			}
+			add_opinion_modifier = {
+				target = MAL
+				modifier = SIA_asean_petroleum_agreement
+			}
+			INS = {
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_asean_petroleum_agreement
+				}
+			}
+			MAL = {
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_asean_petroleum_agreement
+				}
+			}
 		}
 	}
 	SIA_russian_oil_deal = {
@@ -113,6 +133,7 @@ SIA_oil_crisis_cat = {
 			SOV
 		}
 		ai_will_do = { factor = 1 }
+		fire_only_once = yes
 		cost = 35
 		days_remove = 25
 		days_re_enable = 25
@@ -132,6 +153,10 @@ SIA_oil_crisis_cat = {
 				mission = SIA_oil_in_reserves_mission
 				days = 30
 			}
+			add_opinion_modifier = {
+				target = SOV
+				modifier = SIA_oil_imports
+			}
 		}
 	}
 	SIA_african_oil_deal = {
@@ -142,6 +167,7 @@ SIA_oil_crisis_cat = {
 			SAF
 		}
 		ai_will_do = { factor = 1 }
+		fire_only_once = yes
 		cost = 20
 		days_remove = 20
 		days_re_enable = 25
@@ -171,6 +197,7 @@ SIA_oil_crisis_cat = {
 			USA
 		}
 		ai_will_do = { factor = 1 }
+		fire_only_once = yes
 		cost = 50
 		days_remove = 30
 		days_re_enable = 25
@@ -191,6 +218,10 @@ SIA_oil_crisis_cat = {
 				mission = SIA_oil_in_reserves_mission
 				days = 45
 			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = SIA_oil_imports
+			}
 		}
 	}
 	SIA_enact_oil_rationing_measures = {
@@ -206,7 +237,6 @@ SIA_oil_crisis_cat = {
 		}
 		custom_cost_text = 10pp_and_25cp_cost
 		days_remove = 30
-		days_re_enable = 50
 		
 		complete_effect = {
 			add_political_power = -10
@@ -240,6 +270,7 @@ SIA_oil_crisis_cat = {
 		ai_will_do = { factor = 1 }
 		days_remove = 35
 		days_re_enable = 15
+		fire_only_once = yes
 		
 		custom_cost_trigger = {
 			check_variable = {
@@ -297,6 +328,7 @@ SIA_oil_crisis_cat = {
 		custom_cost_text = dx_more_than_25B_and_15pp
 		days_remove = 50
 		days_re_enable = 20
+		fire_only_once = yes
 		
 		complete_effect = {
 			add_political_power = -15
@@ -463,6 +495,7 @@ SIA_oil_crisis_cat = {
 		custom_cost_text = dx_more_than_25B_and_15pp
 		days_remove = 50
 		days_re_enable = 20
+		fire_only_once = yes
 		
 		complete_effect = {
 			add_political_power = -15

@@ -4,4 +4,6 @@ opinion_modifiers = {
 	SIA_bbc_thai_slander = { value = -10 }
 	SIA_ned_interference = { value = -15 months = 12 }
 	SIA_astrazeneca_cooperation = { value = 10 }
+	SIA_asean_petroleum_agreement = { value = 20 }
+	SIA_oil_imports = { value = 10 }
 }

@@ -7,10 +7,7 @@ spriteTypes = {
         name = "GFX_goal_SIA_Calm_the_People"
         texturefile = "gfx/interface/goals/SIA/SIA_Calm_the_People.png"
     }
-	SpriteType = {
-        name = "GFX_goal_SIA_CCSA"
-        texturefile = "gfx/interface/goals/SIA/SIA_CCSA.png"
-    }
+	
 	SpriteType = {
         name = "GFX_goal_SIA_Court_System"
         texturefile = "gfx/interface/goals/SIA/SIA_Court_System.png"
@@ -43,10 +40,7 @@ spriteTypes = {
         name = "GFX_goal_SIA_Mask_Mandate"
         texturefile = "gfx/interface/goals/SIA/SIA_Mask_Mandate.png"
     }
-	SpriteType = {
-        name = "GFX_goal_SIA_Oil_Crisis"
-        texturefile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
-    }
+	
 	SpriteType = {
         name = "GFX_goal_SIA_Product"
         texturefile = "gfx/interface/goals/SIA/SIA_Product.png"
@@ -127,5 +121,13 @@ spriteTypes = {
 	SpriteType = {
         name = "GFX_goal_SIA_fight_the_arrests"
         texturefile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_CCSA"
+        texturefile = "gfx/interface/goals/SIA/SIA_CCSA.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_Oil_Crisis"
+        texturefile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
     }
 }

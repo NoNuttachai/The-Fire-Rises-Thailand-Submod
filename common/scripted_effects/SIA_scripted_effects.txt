@@ -10,7 +10,6 @@ SIA_increase_coronavirus = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.05
-			tooltip_range = SIA_loss_side
 		}
 	}
 	else_if = {
@@ -24,7 +23,6 @@ SIA_increase_coronavirus = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.05
-			tooltip_range = SIA_loss_side
 		}
 	}
 	else_if = {
@@ -38,7 +36,6 @@ SIA_increase_coronavirus = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.05
-			tooltip_range = SIA_loss_side
 		}
 	}
 	else_if = {
@@ -52,7 +49,6 @@ SIA_increase_coronavirus = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.10
-			tooltip_range = SIA_loss_side
 		}
 	}
 	else_if = {
@@ -63,7 +59,6 @@ SIA_increase_coronavirus = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.05
-			tooltip_range = SIA_loss_side
 		}
 	}
 	else = {
@@ -81,7 +76,6 @@ SIA_decrease_covid = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = 0.15
-			tooltip_range = SIA_loss_side
 		}
 	}
 	else_if = {
@@ -165,15 +159,6 @@ SIA_increase_protests = {
 			remove_idea = SIA_active_protests_1
 			add_idea = SIA_active_protests_2
 		}
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = protests_newsevent_triggered
-				}
-			}
-			news_event = thai_newsevents.1
-			set_country_flag = protests_newsevent_triggered
-		}
 	}
 	else_if = {
 		limit = {
@@ -183,8 +168,12 @@ SIA_increase_protests = {
 			remove_idea = SIA_active_protests_2
 			add_idea = SIA_active_protests_3
 		}
-		
-		
+		1493 = {
+			damage_building = {
+			  type = infrastructure
+			  damage = 3
+			}
+		}
 	}
 	else_if = {
 		limit = {

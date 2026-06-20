@@ -546,7 +546,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_stratcon
-				sec_silent_lawyer
+				sec_political_architect
 			}
 		}
 	}
