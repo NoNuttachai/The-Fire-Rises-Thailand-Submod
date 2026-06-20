@@ -159,7 +159,7 @@ SIA_coronavirus_category = {
 			has_completed_focus = SIA_establish_ccsa
 		}
 		fire_only_once = yes
-		days_remove = 30
+		days_remove = 90
 		cost = 30
 		
 		remove_effect = {

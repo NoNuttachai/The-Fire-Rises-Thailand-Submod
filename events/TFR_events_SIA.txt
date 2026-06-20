@@ -450,7 +450,7 @@ country_event = {
     option = {
         name = thai_events.19.a 
         
-       air_experience = -15
+       air_experience = -5
     }
 }
 

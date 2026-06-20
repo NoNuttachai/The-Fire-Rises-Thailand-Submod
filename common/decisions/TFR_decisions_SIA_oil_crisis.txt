@@ -87,7 +87,7 @@ SIA_oil_crisis_cat = {
 		icon = GFX_decision_SIA_ASEAN_Petrol_Agreement
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
 		visible = { has_country_flag = SIA_oil_diplomacy }
-		cost = 25
+		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		complete_effect = {
@@ -101,7 +101,7 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 20
+				days = 50
 			}
 		}
 	}
@@ -130,7 +130,7 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 30
+				days = 45
 			}
 		}
 	}
@@ -142,7 +142,7 @@ SIA_oil_crisis_cat = {
 			SAF
 		}
 		ai_will_do = { factor = 1 }
-		cost = 20
+		cost = 35
 		days_remove = 20
 		days_re_enable = 25
 		modifier = {
@@ -159,7 +159,7 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 15
+				days = 30
 			}
 		}
 	}
@@ -171,7 +171,7 @@ SIA_oil_crisis_cat = {
 			USA
 		}
 		ai_will_do = { factor = 1 }
-		cost = 50
+		cost = 35
 		days_remove = 30
 		days_re_enable = 25
 		
@@ -519,7 +519,7 @@ SIA_oil_crisis_cat = {
 			SIG
 		}
 		ai_will_do = { factor = 1 }
-		cost = 40
+		cost = 25
 		days_remove = 25
 		complete_effect = {
 			if = {

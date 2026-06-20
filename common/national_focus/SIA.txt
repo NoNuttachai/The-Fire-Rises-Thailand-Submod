@@ -506,7 +506,7 @@ focus_tree = {
 			add_command_power = 30
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
-				days = 15
+				days = 30
 			}
 			add_days_mission_timeout = {
 				mission = SIA_the_protests_intensify
@@ -721,7 +721,7 @@ focus_tree = {
 			}
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.05
+				value = 0.15
 			}
 		}
 	}
