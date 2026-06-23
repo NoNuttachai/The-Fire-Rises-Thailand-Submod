@@ -476,7 +476,7 @@ country_event = {
         name = thai_events.20.a
 		add_power_balance_value = {
 			id = SIA_power_balance
-			value = 0.0069
+			value = -0.069
 		}
     }
 }
@@ -734,16 +734,28 @@ country_event = {
     id = thai_events.33 # Prayut Survives 2nd Motion of No Confidence
     title = thai_events.33.t
     desc = thai_events.33.d
+	picture = GFX_report_prayut_mogged_opposition_2
 	
 	is_triggered_only = yes
 
-    option = {
-        name = thai_events.33.a
-		add_stability = 0.05
+	option = {
+        name = thai_events.40.a
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+	}
+	option = {
+        name = thai_events.40.b
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
 		add_political_power = 25
+	}
+	after = {
+		add_stability = 0.05
 		add_days_mission_timeout = {
 			mission = SIA_the_protests_intensify
-			days = 20
+			days = 25
 		}
 		add_power_balance_value = {
 			id = SIA_power_balance

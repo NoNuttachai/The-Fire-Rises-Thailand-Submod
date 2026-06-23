@@ -314,31 +314,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_thalu_fa
+		id = SIA_thalu_fa_thalu_gaz
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -2
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_long_march_through_the_institutions }
-		
-		relative_position_id = SIA_long_march_through_the_institutions
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_thalu_gaz
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 0
 		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_long_march_through_the_institutions }
@@ -383,11 +361,11 @@ focus_tree = {
 		id = SIA_the_people_wrath
 		icon = GFX_goal_SIA_make_them_face_our_wrath
 		x = 1
-		y = 1
+		y = 2
 		cost = 5
-		prerequisite = { focus = SIA_thalu_gaz }
+		prerequisite = { focus = SIA_long_march_through_the_institutions }
 		mutually_exclusive = { focus = SIA_denouced_the_extremists }
-		relative_position_id = SIA_thalu_gaz
+		relative_position_id = SIA_long_march_through_the_institutions
 		
 		ai_will_do = {
 			factor = 10
@@ -406,11 +384,11 @@ focus_tree = {
 		id = SIA_denouced_the_extremists
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
-		y = 1
+		y = 2
 		cost = 5
-		prerequisite = { focus = SIA_thalu_gaz }
+		prerequisite = { focus = SIA_long_march_through_the_institutions }
 		mutually_exclusive = { focus = SIA_the_people_wrath }
-		relative_position_id = SIA_thalu_gaz
+		relative_position_id = SIA_long_march_through_the_institutions
 		
 		ai_will_do = {
 			factor = 10
@@ -794,7 +772,9 @@ focus_tree = {
 				id = SIA_power_balance
 				value = 0.05
 			}
+			unlock_decision_tooltip = SIA_perform_harsher_crackdowns
 			SIA_decrease_protests = yes
+			
 		}
 	}
 	focus = {
@@ -858,35 +838,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_further_crackdowns
-		icon = GFX_goal_SIA_deploy_the_riot_police
-		x = 0
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_deploy_the_riot_police }
-		relative_position_id = SIA_deploy_the_riot_police
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			unlock_decision_tooltip = SIA_perform_harsher_crackdowns
-		}
-	}
-	focus = {
 		id = SIA_smother_the_flames
 		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = -1
-		y = 1
+		y = 2
 		cost = 5
-		prerequisite = { focus = SIA_further_crackdowns }
+		prerequisite = { focus = SIA_deploy_the_riot_police }
 		mutually_exclusive = { focus = SIA_deploy_the_army }
-		relative_position_id = SIA_further_crackdowns
+		relative_position_id = SIA_deploy_the_riot_police
 		
 		ai_will_do = {
 			factor = 10
@@ -907,11 +866,11 @@ focus_tree = {
 		id = SIA_deploy_the_army
 		icon = GFX_goal_SIA_deploy_the_riot_police
 		x = 1
-		y = 1
+		y = 2
 		cost = 5
-		prerequisite = { focus = SIA_further_crackdowns }
+		prerequisite = { focus = SIA_deploy_the_riot_police }
 		mutually_exclusive = { focus = SIA_smother_the_flames }		
-		relative_position_id = SIA_further_crackdowns
+		relative_position_id = SIA_deploy_the_riot_police
 		
 		ai_will_do = {
 			factor = 10

@@ -331,7 +331,7 @@
  
  thai_events.27.t: "March to the German Embassy: 26th October Mob"
  thai_events.27.d: "At 17:00, protesters and organizers began gathering in front of the Samyan Mitrtown shopping mall, then marched along Rama IV Road before turning right onto South Sathorn Road toward the German Embassy.\n\nPolice set up metal barricades and deployed three lines of riot police to block the entrance in front of the embassy building, keeping several companies of officers on standby to secure the perimeter.\n\nThe protesters goal is to submit a letter to the German Ambassador to Thailand, Georg Schmidt, to be forwarded to the German government. The letter requested an investigation into the exercise of royal power by the Thai monarch within German territory. A representative of the protesters also read a statement in three languages: Thai, English, and German.\n\nIn the wake of the demonstration, Prime Minister Prayut Chan-o-cha announced that the government would enforce "all laws" against the demonstrators, and authorities intensified legal actions. Ultimately, 13 key protesters involved in the rally were jointly indicted on charges under both Section 112 (lèse-majesté) and Section 116 (sedition) of the Criminal Code."
- thai_events.27.a: "Einigkeit und Recht und Freiheit!"
+ thai_events.27.a: "Unity and Justice and Freedom!"
 
  thai_events.28.t: "Hushed Whispers of the Assembly"
  thai_events.28.d: "Prayut, you're about to get evicted if you dont raise your bop"
@@ -355,9 +355,10 @@
  thai_events.32.d: "Something something saudi civil war caused this btw"
  thai_events.32.a: "Peace was never meant to be."
  
- thai_events.33.t: "Prayut Survives 2nd Motion of No Confidence"
- thai_events.33.d: "NO LOCCCCCCCCCCCCCCCCCCCCC"
- thai_events.33.a: "It's in the title"
+ thai_events.33.t: "Prayut Survives 2nd Motion of No Confidence Vote"
+ thai_events.33.d: "Prime Minister Prayut Chan-o-cha and nine cabinet ministers have survived the second motion of no confidence brought against the government since the 2019 general election. The vote followed an intense four-day parliamentary censure debate, during which opposition lawmakers subjected the administration to heavy criticism.\n\nDespite mounting pressure from opposition parties and ongoing student-led protests in Bangkok, the ruling coalition held firm and secured victory in parliament. Lawmakers from the Move Forward and Pheu Thai parties accused the government of economic mismanagement, democratic backsliding, and mishandling of the pandemic.\n\nHowever, the parliamentary victory did little to ease tensions on the streets. Pro-democracy activists staged mock censure debates outside parliament during the vote and continued to demand the dissolution of parliament, the drafting of a new constitution, and reforms to the monarchy.\n\nFollowing the government's survival of the vote, many opposition MPs signaled their intention to prepare another motion of no confidence in the subsequent parliamentary session, ensuring that political tensions would remain high."
+ thai_events.33.a: "Another win"
+ thai_events.33.b: "The fight is not over yet! We will go for round 3!"
  
  thai_events.34.t: "Prayut Survives 3rd Motion of No Confidence"
  thai_events.34.d: "NO LOCCCCCCCCCCCCCCCCCCCCC"
@@ -424,7 +425,7 @@
  thai_events.46.t: "Rubbish Collection Organization Mobilizes Wave of Counter-Protests"
  thai_events.46.d: "\nMajor General Dr. Rienthong Nanna, Director of the private Mongkutwattana Hospital and leader of the Rubbish Collection Organization, launched his own counter-protest movement. Aimed at what he termed a now "radicalized student mob" seeking to overthrow the democratic order and the constitutional monarchy, he labeled the demonstrators "the rubbish of the nation" and "tyrants, not the people."\n\nIn an interview with news media publications, he stated, "Because of the current wave of anti-monarchy sentiment, the inability to enforce the law, and the fact that these so-called 'tyrants' are using violence against the monarchy, the very existence of the institution is being effectively damaged. Therefore, as a Thai citizen, I will not stand by. We do not have a policy of 'mob vs. mob' rule; instead, our approach is strictly 'face-to-face against tyrants.'"\n\nThe demonstration against the youth protesters, organized by the Rubbish Collection Organization, is scheduled to begin at the Chaeng Watthana Government Complex, with participants wearing yellow shirts to show their support for the monarchy."
  thai_events.46.a: "It's clear who will stand up for the Government and the Monarchy"
- thai_events.46.b: "Why should we care about a group of Brainwash People?"
+ thai_events.46.b: "Why should we care about a group of brainwashed boomers?"
  
  
  thai_newsevents.1.t: "Major Protests in Thailand"

@@ -17,6 +17,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_prayut_mogged_opposition_1.png"
 	}
 	spriteType = {
+		name = "GFX_report_prayut_mogged_opposition_2"
+		texturefile = "gfx/event_pictures/report_prayut_mogged_opposition_2.png"
+	}
+	spriteType = {
 		name = "GFX_report_event_korat_massacre"
 		texturefile = "gfx/event_pictures/report_event_korat_massacre.png"
 	}
