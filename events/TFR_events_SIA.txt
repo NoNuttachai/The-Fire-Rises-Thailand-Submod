@@ -859,16 +859,28 @@ country_event = {
     id = thai_events.40 # Prayut survives 1st motion of no confidence
     title = thai_events.40.t
     desc = thai_events.40.d
+	picture = GFX_report_prayut_mogged_opposition_1
 	
 	is_triggered_only = yes
 	
-    option = {
+	option = {
         name = thai_events.40.a
-		add_power_balance_value = {
-			id = SIA_power_balance
-			value = 0.05
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
 		}
 	}
+	option = {
+        name = thai_events.40.b
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+	}
+	after = {
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.1
+			tooltip_side = SIA_loss_side
+		}
 }
 country_event = {
     id = thai_events.41 # 8 March 2020  - Move Forward MP Defection
