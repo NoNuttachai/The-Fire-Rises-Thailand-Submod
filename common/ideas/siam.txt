@@ -521,7 +521,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_stratcon
-				eco_keynesian_economy
+				eco_economic_organizer
 			}
 		}
 		SIA_predee_daocha_advisor = {

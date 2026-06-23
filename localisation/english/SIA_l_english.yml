@@ -399,14 +399,8 @@
  thai_events.43.a: "One more MP on our side! YES!"
  thai_events.43.b: "We are losing opposition MPs!"
  
- #thailand_nonpolitical.1.t: ""
- #thailand_nonpolitical.1.d: ""
- #thailand_nonpolitical.1.a: ""
- 
- 
- 
  thai_newsevents.1.t: "Major Protests in Thailand"
- thai_newsevents.1.d: "In Thailand, following the Constitutional Court's decision to dissolve the Future Forward Party, the second largest opposition party in parliament, protests and demonstrations began to emerged against the government of Prayut Chan-o-cha, who had assumed power back in 2014 through a military coup. Supporters viewed the move as state suppression of the opposition, though the demonstrations were only due to the COVID-19 pandemic.\n\nHowever, following the disappearance of activist Wanchalearm Satsaksit, rising prices caused by the oil crisis, and broader opposition to the ruling government, the movement regained momentum amid growing public anger.\n\nThe protestors had no unified leadership, but were generally made up of liberals and leftists who put forward multiple demands, primarily calling for an early general election, the resignation of General Prayut Chan-o-cha as Prime Minister, and a complete rewriting of the constitution. They also called for reforms to the monarchy, which remains controversial in Thailand due to the monarchy being revered by conservatives and criticism of it being illegal under lese-majeste laws which carry a prison sentence.\n\nIn response, the government declared a state of emergency, tightened COVID-19 restrictions, deployed riot police across Bangkok, and mobilized state lawyers to pursue legal action against what it called an "unlawful demonstration.""
+ thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
     
  ###Tooltip###
