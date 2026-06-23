@@ -130,6 +130,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_Prayut_and_Brandon"
+		texturefile = "gfx/texticons/banners/Prayut_and_Brandon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_iran_oil_deal"
+		texturefile = "gfx/texticons/banners/iran_oil_deal.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
 	}
@@ -437,6 +447,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_anucha_nakasai.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_arkhom_termpittayapaisith"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_arkhom_termpittayapaisith.png"
+		legacy_lazy_load = no
+	}
 
 	# Laws
 	spriteType = {
@@ -496,5 +511,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hog_SIA_prawit_wongsuwan"
 		texturefile = "gfx/leaders/SIA/SIA_prawit_wongsuwan.png"
+		legacy_lazy_load = no
 	}
 }

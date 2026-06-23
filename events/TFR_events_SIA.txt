@@ -419,7 +419,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = SIA_coronavirus_ongoing
-			add_ideas = SIA_covid_idea_1
+			add_ideas = SIA_covid_idea
 			activate_mission = SIA_the_pandemic_worsens_mission
 		}
 	}
@@ -427,7 +427,7 @@ country_event = {
         name = thai_events.17.a
 		effect_tooltip = {
 			set_country_flag = SIA_coronavirus_ongoing
-			add_ideas = SIA_covid_idea_1
+			add_ideas = SIA_covid_idea
 			activate_mission = SIA_the_pandemic_worsens_mission
 		}
 	}
@@ -539,7 +539,20 @@ country_event = {
 		
     }
 }
-
+country_event = {
+    id = thai_events.23 # Predee resigns
+    title = thai_events.23.t
+    desc = thai_events.23.d
+	picture = GFX_report_predee_daochai_resigned
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.23.a
+		remove_ideas = SIA_predee_daocha_advisor
+		set_country_flag = SIA_predee_resign
+		add_ideas = SIA_arkhom_termpittayapaisith_advisor
+	}
+}
 country_event = {
     id = thai_events.24 # Three Demands fb post
     title = thai_events.24.t
@@ -860,10 +873,9 @@ country_event = {
     title = thai_events.40.t
     desc = thai_events.40.d
 	picture = GFX_report_prayut_mogged_opposition_1
-	
 	is_triggered_only = yes
 	
-	option = {
+    option = {
         name = thai_events.40.a
 		trigger = {
 			has_completed_focus = SIA_raise_our_three_fingers
@@ -879,8 +891,8 @@ country_event = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = 0.1
-			tooltip_side = SIA_loss_side
 		}
+	}
 }
 country_event = {
     id = thai_events.41 # 8 March 2020  - Move Forward MP Defection
@@ -965,6 +977,84 @@ country_event = {
 			id = SIA_power_balance
 			value = 0.01
 		}
+	}
+}
+country_event = {
+    id = thai_events.44 # Saudi Civil War who to aid
+    title = thai_events.44.t
+    desc = thai_events.44.desc
+	picture = GFX_generic_mutaib
+	trigger = {
+		tag = SIA
+		has_global_flag = saudi_civil_war_flag
+	}
+	fire_only_once = yes
+	
+    option = {
+        name = thai_events.44.a
+		set_variable = { SIA_saudi_civil_war_support = 1 }
+		custom_effect_tooltip = thai_events_44_a_tt
+		set_country_flag = SIA_intervene_in_the_saudi_civil_war
+	}
+	option = {
+        name = thai_events.44.b
+		set_variable = { SIA_saudi_civil_war_support = 2 }
+		custom_effect_tooltip = thai_events_44_b_tt
+		set_country_flag = SIA_intervene_in_the_saudi_civil_war
+	}
+	option = {
+        name = thai_events.44.c
+		set_variable = { SIA_saudi_civil_war_support = 3 }
+		custom_effect_tooltip = thai_events_44_c_tt
+		set_country_flag = SIA_intervene_in_the_saudi_civil_war
+	}
+	option = {
+        name = thai_events.44.d
+		set_country_flag = SIA_saudi_civil_war_no_intervention
+		unlock_decision_tooltip = SIA_iran_oil_deal
+		custom_effect_tooltip = thai_events_44_d_tt
+	}
+	
+}
+country_event = {
+    id = thai_events.45 # State of Emergency upscaled
+    title = thai_events.45.t
+    desc = thai_events.45.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.45.a
+		add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = 0.05
+        }
+		SIA_decrease_protests = yes
+	}
+}
+country_event = {
+    id = thai_events.46 # Rubbish Collection Organization Mobilizes Wave of Counter-Protests
+    title = thai_events.46.t
+    desc = thai_events.46.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.46.a
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.05
+		}
+	}
+	option = {
+        name = thai_events.46.b
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+		
 	}
 }
 news_event = {

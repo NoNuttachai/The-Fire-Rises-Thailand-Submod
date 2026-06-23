@@ -192,18 +192,18 @@ SIA_oil_crisis_cat = {
 	SIA_increase_american_oil_imports = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_oil_diplomacy }
+		visible = { has_country_flag = SIA_oil_diplomacy country_exists = USA}
 		targets = {
 			USA
 		}
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		cost = 50
-		days_remove = 30
+		days_remove = 15
 		days_re_enable = 25
 		
 		modifier = {
-			consumer_goods_factor = 0.15
+			consumer_goods_factor = 0.1
 		}
 		remove_effect = {
 			if = {
@@ -216,11 +216,52 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 45
+				days = 25
 			}
 			add_opinion_modifier = {
 				target = USA
 				modifier = SIA_oil_imports
+			}
+		}
+	}
+	SIA_iran_oil_deal = {
+		icon = GFX_decision_generic_oil
+		available = { 
+			has_country_flag = SIA_oil_crisis_ongoing 
+			date > 2020.11.03 
+		}
+		visible = { has_country_flag = SIA_saudi_civil_war_no_intervention }
+		targets = {
+			PER
+		}
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		cost = 50
+		days_remove = 30
+		
+		modifier = {
+			consumer_goods_factor = 0.10
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 100
+			}
+			add_opinion_modifier = {
+				target = USA
+				modifier = decreased_relations
+			}
+			add_opinion_modifier = {
+				target = ISR
+				modifier = decreased_relations
 			}
 		}
 	}

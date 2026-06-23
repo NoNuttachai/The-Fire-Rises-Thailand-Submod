@@ -172,6 +172,7 @@ SIA_protests_category = {
 				mission = SIA_the_protests_intensify
 				days = 15
 			}
+			country_event = { id = thai_events.46 hours = 6 }
 		}
 		ai_will_do = {
 			base = 10
@@ -201,6 +202,32 @@ SIA_protests_category = {
 		}
 		modifier = {
 			command_power_gain_mult = -0.5
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_upscale_the_emergency = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_declare_state_of_emergency
+			has_idea = SIA_active_protests_3
+		}
+		days_remove = 20
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 50
+			}
+			country_event = { id = thai_events.45 hours = 6 }
 		}
 		ai_will_do = {
 			base = 10

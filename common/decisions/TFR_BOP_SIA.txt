@@ -47,6 +47,8 @@ SIA_bop_prayut = {
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
+			activate_mission = SIA_securing_vaccine_supply
+			custom_effect_tooltip = SIA_establish_ccsa_tt
 			activate_mission = SIA_government_action_2
 		}
 	}

@@ -1,6 +1,19 @@
 SIA_increase_coronavirus = {
 	if = {
 		limit = {
+			has_idea = SIA_covid_idea
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea
+			add_idea = SIA_covid_idea_1
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+		}
+	}
+	else_if = {
+		limit = {
 			has_idea = SIA_covid_idea_1
 		}
 		swap_ideas = {
@@ -69,13 +82,22 @@ SIA_increase_coronavirus = {
 SIA_decrease_covid = {
 	if = {
 		limit = {
-			has_idea = SIA_covid_idea_1
+			has_idea = SIA_covid_idea
 		}
-		remove_ideas = SIA_covid_idea_1
+		remove_ideas = SIA_covid_idea
 		clr_country_flag = SIA_coronavirus_ongoing
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = 0.15
+		}
+	}
+	if = {
+		limit = {
+			has_idea = SIA_covid_idea_1
+		}
+		swap_ideas = {
+			remove_idea = SIA_covid_idea_1
+			add_idea = SIA_covid_idea
 		}
 	}
 	else_if = {

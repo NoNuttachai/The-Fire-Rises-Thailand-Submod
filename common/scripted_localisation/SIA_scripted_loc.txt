@@ -2,6 +2,12 @@ defined_text = {
 	name = SIA_covid_status
 	text = {
 		trigger = {
+			has_idea = SIA_covid_idea
+		}
+		localization_key = isolated_cases
+	}
+	text = {
+		trigger = {
 			has_idea = SIA_covid_idea_1
 		}
 		localization_key = mild_covid
@@ -71,5 +77,51 @@ defined_text = {
 			has_completed_focus = SIA_side_with_uncle_tuu
 		}
 		localization_key = SIA_supported_prayut
+	}
+}
+defined_text = {
+	name = GetSiaSaudiFaction
+	text = {
+		trigger = {
+			check_variable = { SIA_saudi_civil_war_support = 1 }
+		}
+		localization_key = SIA_saudi_civil_war_support_sau
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_saudi_civil_war_support = 2 }
+		}
+		localization_key = SIA_saudi_civil_war_support_roc
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_saudi_civil_war_support = 3 }
+		}
+		localization_key = SIA_saudi_civil_war_support_arr
+	}
+}
+defined_text = {
+	name = SIAJoeAndTrump
+	text = {
+		trigger = {
+			USA = {
+				has_country_leader = {
+					character = USA_donald_trump_char
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = SIA_trump_deal
+	}
+	text = {
+		trigger = {
+			USA = {
+				has_country_leader = {
+					character = USA_joe_biden_char
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = SIA_joe_biden_deal
 	}
 }

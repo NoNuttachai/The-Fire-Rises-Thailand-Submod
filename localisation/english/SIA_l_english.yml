@@ -174,7 +174,7 @@
  SIA_apirat_kongsompong_char: "Apirat Kongsompong"
  SIA_Kittinant_Chinsamran_char: "Kittinant Chinsamran"
  SIA_Preecha_Chan_o_cha_char: "Preecha Chan-o-cha"
- 
+ SIA_arkhom_termpittayapaisith: "Arkhom Termpittayapaisith"
 
  ###Startup Menu###
  SIA_country_summary: "§YCountry Summary§!:\nThailand, the "Land of Smiles," is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country`s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
@@ -313,6 +313,9 @@
  thai_events.22.e: "Aswin Kwanmuang (Rak Krung Thep) "
  thai_events_22_texticon_e: ".\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_SIA_aswin_bma_election\n\n\n\n\n\n\n\n\n\n\n\n\n\n."
  
+ thai_events.23.t: "Finance Minister Predee Resigned"
+ thai_events.23.d: "Finance Minister Predee Daochai resigned after just 26 days in office. Although he cited health reasons, many media outlets speculated that political pressure within the government may also have contributed to his departure. Reports suggested tensions over the appointment of the Excise Department's director-general, with Predee supporting Lavaron Sangsnit while Deputy Finance Minister Santi Promphat backed Prapas Kong-Ied.\n\nHowever, Predee later denied any conflict with Santi, stating that although they had different working styles, Santi was always supportive and willing to listen. He maintained that his resignation was primarily due to health concerns. Having suffered a stroke several years earlier, he experienced a recurrence of numbness in his left arm after taking office, which he attributed to the intense pressure he placed on himself while performing his duties. Despite efforts by Prime Minister Prayut Chan-o-cha to persuade him to remain in the position, Predee ultimately chose to step down."
+ thai_events.23.a: "Unfortunate news..."
  
  thai_events.24.t: "£GFX_facebook_logo  Free YOUTH's post"
  thai_events.24.d: "£GFX_free_youth_header \n\nWe have 3 demands! \n\n1. "Parliament must be dissolved." - The government, under Prayut Chan-o-cha, have failed to manage the economy, particularly through its mismanagement of oil prices following the crisis in Saudi Arabia and the COVID-19 pandemic, which led to widespread unemployment and loss of income. It failed to provide comprehensive and equitable relief, neglecting to address the economic hardships faced by the people. Furthermore, it allowed VIP guests infected with the virus to enter the country without quarantine, posing a significant risk of a second major outbreak. We demand that the Prime Minister dissolve Parliament and step down to pave the way for capable individuals to solve political and economic problems.\n\n2. "Stop threatening the citizens" - Following the 2019 election, many hoped Thailand would become more democratic, with freedom of expression and assembly protected from harassment. In reality, however, physical and psychological intimidation has continued much as it did under the NCPO. National security has been used as a pretext to silence those demanding democracy and justice. We therefore demand an end to all forms of harassment and the fabrication of charges against citizens. \n\n3. "New constitution" - The current constitution, drafted by Prayut Chan-o-cha and his cronies, was designed for him and soldier-turned-politicians in power to preserve authoritarian rule under disguised as democracy. Thailand's transition to genuine democracy therefore requires the drafting of a new constitution free from interference by unelected individuals. "
@@ -399,6 +402,30 @@
  thai_events.43.d: "A by-election was held in Constituency 4 of Lampang Province to fill a vacant seat in the House of Representatives following the death of Itthirat Chantharasurin, a Pheu Thai Party MP. The election was one of Thailand's first polls conducted under COVID-19 public health measures, with voters and election officials required to observe social distancing guidelines.\n\nThe by-election was won by Wattana Sitthiwang of the Palang Pracharath Party, who defeated the opposition-backed candidate, Somboon Klaphachon of the Thai Liberal Party. The result marked a significant breakthrough for Palang Pracharath in a constituency that had previously been considered an opposition stronghold."
  thai_events.43.a: "One more MP on our side! YES!"
  thai_events.43.b: "We are losing opposition MPs!"
+ 
+ thai_events.44.t: "Saud Udon"
+ thai_events.44.desc: "Until 1989, Thailand and Saudi Arabia enjoyed friendly relations, with up to 500,000 Thai laborers working in the oil-rich Gulf nation. However, diplomatic relations were severed following the "Blue Diamond Affair," which began when a Thai worker stole gems from the Saudi royal family. The crisis escalated dramatically after Mohammad al-Ruwaili, a Saudi businessman investigating the theft, was abducted and killed in Bangkok, followed by the assassination of three Saudi embassy officials three months later. Thailand's failure to properly investigate the incident caused the government of Saudi Arabia to cut relations with Thailand.\n\nThe civil war in Saudi Arabia presents an opportunity for our government to potentially reestablish relations. Major powers are backing different factions in the conflict with financial aid and troops on the ground. While we are only a minor player in this arena, choosing a side to support could bring significant benefits to our nation.\n\nThe Kingdom of Saudi Arabia under Mohammed bin Salman and the Royal Arabian Coalition under Mutaib bin Abdullah have both informed our government that, by supporting their respective causes, Thailand would stand to benefit greatly should their side emerge victorious once the conflict has ended. They have promised the restoration of the close and friendly relations that existed prior to the Blue Diamond Affair.\n\nAlternatively, we could choose to follow the nations of Europe and support the newly proclaimed Arabian Republic forces, or remain neutral in the conflict and simply observe as events continue to unfold."
+ thai_events.44.a: "Back the Kingdom of Saudi Arabia"
+ thai_events_44_a_tt: "Intervene in the §gSaudi Civil War§! and support the @SAU §Y[SAU.GetNameDef]§!"
+ 
+ thai_events.44.b: "Back the Royal Arabian Coalition"
+ thai_events_44_b_tt: "Intervene in the §gSaudi Civil War§! and support the @ROC §Y[ROC.GetNameDef]§!"
+ 
+ thai_events.44.c: "Back the Arabian Republic"
+ thai_events_44_c_tt: "Intervene in the §gSaudi Civil War§! and support the @ARR §Y[ARR.GetNameDef]§!"
+ 
+ thai_events.44.d: "Remain Neutral"
+ thai_events_44_d_tt: "§gRemain Neutral§! and negotiate with the @PER §Y[PER.GetNameDef]§! to stabilize our oil supply."
+ 
+ thai_events.45.t: "The "Upscale Level" of the State of Emergency"
+ thai_events.45.d: "PRIME MINISTER'S ORDER\nDATED: [?global.date.GetDateStringNoHourLong]\nRE: THE APPOINTMENT OF THE HEAD OF EMERGENCY SITUATION MANAGEMENT\n\nWHEREAS, a Declaration of a Serious State of Emergency in Bangkok was enacted on 15 October B.E. 2563 (2020), pursuant to which the Prime Minister appointed Police General Suwat Jangyodsuk,Commissioner-General of the Royal Thai Police, as the Head of Emergency Situation Management on the same date;\n\nWHEREAS, the severe emergency situation in Bangkok has since escalated due to unlawful demonstrations, resulting in breaches of public law and order, numerous statutory violations including acts of arson and the spread of anti-monarchy sentiment among the demonstrators. Despite the Government's persistent efforts to disperse the gatherings and de-escalate the unrest, containment measures have yielded limited results in restoring public tranquility;\n\nTHEREFORE, by virtue of the powers vested in the Prime Minister, Police General Suwat Jangyodsuk is hereby relieved of his duties as the Head of Emergency Situation Management.\n\nIn his stead, General Narongphan Jitkaewtae, Commander-in-Chief of the Royal Thai Army, is hereby appointed as the Head of Emergency Situation Management. All powers, duties, and authorities prescribed under the Emergency Decree on Public Administration in Emergency Situations, B.E. 2548 (2005) shall be fully vested in General Narongphan Jitkaewtae to resolve the ongoing crisis."
+ thai_events.45.a: "-General Prayut Chan-o-cha, Prime Minister"
+ 
+ thai_events.46.t: "Rubbish Collection Organization Mobilizes Wave of Counter-Protests"
+ thai_events.46.d: "\nMajor General Dr. Rienthong Nanna, Director of the private Mongkutwattana Hospital and leader of the Rubbish Collection Organization, launched his own counter-protest movement. Aimed at what he termed a now "radicalized student mob" seeking to overthrow the democratic order and the constitutional monarchy, he labeled the demonstrators "the rubbish of the nation" and "tyrants, not the people."\n\nIn an interview with news media publications, he stated, "Because of the current wave of anti-monarchy sentiment, the inability to enforce the law, and the fact that these so-called 'tyrants' are using violence against the monarchy, the very existence of the institution is being effectively damaged. Therefore, as a Thai citizen, I will not stand by. We do not have a policy of 'mob vs. mob' rule; instead, our approach is strictly 'face-to-face against tyrants.'"\n\nThe demonstration against the youth protesters, organized by the Rubbish Collection Organization, is scheduled to begin at the Chaeng Watthana Government Complex, with participants wearing yellow shirts to show their support for the monarchy."
+ thai_events.46.a: "It's clear who will stand up for the Government and the Monarchy"
+ thai_events.46.b: "Why should we care about a group of Brainwash People?"
+ 
  
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
@@ -569,6 +596,8 @@
  
  SIA_expand_vaccination_centers: "Expand Vaccination Centers"
  
+ isolated_cases: "§GIsolated Cases§!"
+ SIA_covid_idea: "Isolated Coronavirus Cases"
  SIA_covid_idea_1: "Mild Coronavirus Cases"
  SIA_covid_idea_2: "Moderate Coronavirus Cases"
  SIA_covid_idea_3: "Serious Coronavirus Cases"
@@ -646,6 +675,9 @@
  
  SIA_perform_harsher_crackdowns: "Perform Harsher Crackdowns"
  SIA_perform_harsher_crackdowns_desc: ""
+ 
+ SIA_upscale_the_emergency: "Upscale the Emergency"
+ SIA_upscale_the_emergency_desc: ""
 
  SIA_decision_deploy_the_army: "Dismantle the Protests"
  SIA_decision_deploy_the_army_tt: "The §RRiots§! will be stopped §Rviolently§!, §YProtests§! will §Ggreatly decay§!"
@@ -704,7 +736,9 @@
  SIA_african_oil_deal_desc: ""
  
  SIA_increase_american_oil_imports: "Increase American Oil Imports"
- SIA_increase_american_oil_imports_desc: "\n\n\n\n\n£GFX_SIA_Prayut_Trump\n\n\n\n\n\nThailand currently imports a limited volume of oil from the United States due to the higher shipping costs associated with long-distance transpacific logistics and the fact that domestic refineries are traditionally calibrated for Middle Eastern crude. However, given the situation in the Middle East and the need to diversify our energy sources, we should consider significantly increasing oil imports from the United States as a strategic measure."
+ SIA_increase_american_oil_imports_desc: "[SIAJoeAndTrump]Thailand currently imports a limited volume of oil from the United States due to the higher shipping costs associated with long-distance transpacific logistics and the fact that domestic refineries are traditionally calibrated for Middle Eastern crude. However, given the situation in the Middle East and the need to diversify our energy sources, we should consider significantly increasing oil imports from the United States as a strategic measure."
+ SIA_joe_biden_deal: "\n\n\n\n\n£GFX_SIA_Prayut_and_Brandon\n\n\n\n\n\n"
+ SIA_trump_deal: "\n\n\n\n\n£GFX_SIA_Prayut_Trump\n\n\n\n\n\n"
  
  SIA_enact_oil_rationing_measures: "Enact Oil Rationing Measures"
  SIA_enact_oil_rationing_measures_desc: ""
@@ -727,12 +761,22 @@
  SIA_oil_cooperation_with_singapore: "Oil Cooperation with Singapore"
  SIA_oil_cooperation_with_singapore_desc: "Thailand could strengthen energy cooperation with Singapore to secure reliable supplies of refined petroleum products. The partnership would expand fuel imports, improve stockpiling, and enhance coordination on energy logistics, leveraging Singapore's role as Asia's leading oil trading and refining hub."
  
+ SIA_iran_oil_deal: "Iran Oil Deal"
+ SIA_iran_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_iran_oil_deal\n\n\n\n\n\nI love iran"
  
+ SIA_saudi_civil_war: "Saudi Civil War"
+ SIA_saudi_civil_war_desc: "Our government has decided to become involved in the Saudi Arabian Civil War, following the major powers of the world, a move that would mark one of Thailand's most significant overseas military commitments in decades.\n\n§YWe are supporting§!: [GetSiaSaudiFaction]"
+ SIA_saudi_civil_war_support_sau: "§G[SAU.GetNameDef]§! @SAU"
+ SIA_saudi_civil_war_support_roc: "§G[ROC.GetNameDef]§! @ROC"
+ SIA_saudi_civil_war_support_arr: "§G[ARR.GetNameDef]§! @ARR"
  
+ SIA_saudi_civil_war_send_infantry_equipment: "§YARABIA§!: Send Infantry Equipment"
+ SIA_saudi_civil_war_send_infantry_equipment_cost: "£infantry_equipment_text_icon §H750§!"
+ SIA_saudi_civil_war_send_infantry_equipment_cost_blocked: "£infantry_equipment_text_icon §R750§!"
  
- 
- 
- 
+ SIA_saudi_civil_war_send_heavy_equipment: "§YARABIA§!: Send Heavy Equipment"
+ SIA_saudi_civil_war_send_humanitarian: "§YARABIA§!: Send Humanitarian Aid"
+ SIA_saudi_civil_war_intensify_volunteers: "§YARABIA§!: Intensify Volunteers"
  
  
  

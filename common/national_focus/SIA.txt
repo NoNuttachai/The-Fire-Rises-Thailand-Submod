@@ -815,7 +815,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			set_temp_variable = {
+				var = income_var_temp
+				value = 25
+			}
+			add_income = yes
+			increase_immigration = yes
 		}
 	}
 	focus = {

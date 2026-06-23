@@ -299,6 +299,22 @@ ideas = {
 				industrial_development_monthly = -0.02
 			}
 		}
+		SIA_covid_idea = {
+			picture = generic_covid
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_gain = -0.025
+				stability_factor = -0.025
+				expense_growth_factor = 0.01
+			}
+		}
 		SIA_covid_idea_1 = {
 			picture = generic_covid
 			traits = {
@@ -519,6 +535,11 @@ ideas = {
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				NOT = {
+					has_country_flag = pp_fallout
+				}
+			}
 			traits = {
 				SIA_ide_stratcon
 				eco_economic_organizer
@@ -530,10 +551,27 @@ ideas = {
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				NOT = {
+					has_country_flag = SIA_predee_resign
+				}
+			}
 			cost = 0
 			traits = {
 				SIA_ide_stratcon
 				eco_keynesian_economy
+			}
+		}
+		SIA_arkhom_termpittayapaisith_advisor = {
+			name = SIA_arkhom_termpittayapaisith
+			picture = SIA_arkhom_termpittayapaisith
+			allowed = {
+				original_tag = SIA
+			}
+			cost = 0
+			traits = {
+				SIA_ide_stratcon
+				eco_balanced_budget_economy
 			}
 		}
 	}
@@ -556,6 +594,11 @@ ideas = {
 			picture = SIA_thewan_liptapanlop
 			allowed = {
 				original_tag = SIA
+			}
+			visible = {
+				NOT = {
+					has_country_flag = pp_fallout
+				}
 			}
 			traits = {
 				SIA_ide_neoliberal

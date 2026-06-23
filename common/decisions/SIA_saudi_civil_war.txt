@@ -1,0 +1,88 @@
+SIA_saudi_civil_war = {
+	SIA_saudi_civil_war_send_infantry_equipment = {
+		icon = GFX_GER_guns_decision
+		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 749
+			}
+		}
+		custom_cost_text = SIA_saudi_civil_war_send_infantry_equipment_cost
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -750
+			}
+			if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 1 }
+				}
+				SAU = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_2
+						amount = 750
+						producer = SIA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 2 }
+				}
+				ROC = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_2
+						amount = 750
+						producer = SIA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 3 }
+				}
+				ARR = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_2
+						amount = 750
+						producer = SIA
+					}
+				}
+			}
+			set_temp_variable = {
+				var = income_var_temp
+				value = 10
+			}
+			add_income = yes
+		}
+	}
+	SIA_saudi_civil_war_send_heavy_equipment = {
+		icon = GFX_SOV_decision_military_aid
+		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
+		cost = 75
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		complete_effect = {
+		}
+	}
+	SIA_saudi_civil_war_send_humanitarian = {
+		icon = GFX_SOV_decision_military_aid
+		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
+		cost = 75
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		complete_effect = {
+		}
+	}
+	SIA_saudi_civil_war_intensify_volunteers = {
+		icon = GFX_SOV_decision_military_aid
+		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
+		cost = 75
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		complete_effect = {
+		}
+	}
+}

@@ -69,3 +69,17 @@ SIA_coronavirus_category = {
 	}
 	visible_when_empty = yes
 }
+SIA_saudi_civil_war = {
+	icon = GFX_GER_saudi_proxy
+	picture = GFX_decision_cat_SIA_saudi_civil_war_picture
+	priority = 6
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		original_tag = SIA
+		has_country_flag = SIA_intervene_in_the_saudi_civil_war
+		has_global_flag = saudi_civil_war_flag
+	}
+	visible_when_empty = yes
+}
