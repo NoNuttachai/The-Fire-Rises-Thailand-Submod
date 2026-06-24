@@ -997,11 +997,7 @@ country_event = {
     title = thai_events.44.t
     desc = thai_events.44.desc
 	picture = GFX_report_thailand_in_saudi_civil_war
-	trigger = {
-		tag = SIA
-		has_global_flag = saudi_civil_war_flag
-	}
-	fire_only_once = yes
+	is_triggered_only = yes
 	
     option = {
         name = thai_events.44.a

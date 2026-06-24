@@ -249,7 +249,7 @@ SIA_saudi_civil_war = {
 				has_country_flag = SIA_saudi_civil_war_max_volunteers 
 			} 
 		}
-		cost = 75
+		cost = 50
 		ai_will_do = { factor = 1 }
 		days_re_enable = 25
 		complete_effect = {

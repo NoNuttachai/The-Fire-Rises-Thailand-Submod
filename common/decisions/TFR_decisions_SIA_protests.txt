@@ -184,7 +184,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			has_completed_focus = SIA_further_crackdowns
+			has_completed_focus = SIA_deploy_riot_police
 		}
 		days_remove = 25
 		days_re_enable = 50

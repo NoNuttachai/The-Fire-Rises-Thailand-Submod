@@ -39,6 +39,7 @@ on_actions = {
 				country_event = { id = thai_events.41 days = 67 } #8 March 2020  - Move Forward MP Defection
 				country_event = { id = thai_events.42 days = 27 } #28 January 2020  - Parliamentary Seat Change
 				country_event = { id = thai_events.43 days = 171 } #20 June 2020  - Parliamentary Seat Change
+				country_event = { id = thai_events.44 days = 286 } #Saudi Civil War question of intervention
 				
 				
 				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }

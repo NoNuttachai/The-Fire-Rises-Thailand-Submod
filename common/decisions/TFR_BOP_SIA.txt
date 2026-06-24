@@ -322,7 +322,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_2
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -349,7 +349,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_3
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -376,7 +376,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_4
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -403,7 +403,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_6
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -430,7 +430,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_8
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -457,7 +457,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_7
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -484,7 +484,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_5
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -511,7 +511,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_9
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -538,7 +538,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_10
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -565,7 +565,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_11
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -591,7 +591,7 @@ SIA_bop_prayut = {
 		timeout_effect = {
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 			
 		}
@@ -687,7 +687,7 @@ SIA_bop_prayut = {
 			country_event = thai_events.13
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
@@ -701,7 +701,7 @@ SIA_bop_prayut = {
 			country_event = thai_events.13
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.015
 			}
 		}
 	}
