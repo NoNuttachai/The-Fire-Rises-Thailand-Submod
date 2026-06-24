@@ -42,7 +42,7 @@ country_event = {
     id = thai_events.2
     title = thai_events.2.t
     desc = thai_events.2.d
-    picture = GFX_report_event_the_somboon_story
+    picture = GFX_report_the_somboon_story
 	
 	is_triggered_only = yes
 
@@ -61,7 +61,7 @@ country_event = {
     id = thai_events.3
     title = thai_events.3.t
     desc = thai_events.3.d
-    picture = GFX_report_event_budget_bill_passed
+    picture = GFX_report_budget_bill_passed
 	
 	is_triggered_only = yes
 
@@ -80,7 +80,7 @@ country_event = {
     id = thai_events.4
     title = thai_events.4.t
     desc = thai_events.4.d
-    picture = report_freeyouth_three_demands
+    picture = GFX_report_three_fingers
 	
 	is_triggered_only = yes
 
@@ -231,9 +231,7 @@ country_event = {
 			tooltip_side = SIA_loss_side
 		}
 		activate_mission = SIA_the_protests_intensify
-		hidden_effect = {
-			news_event = { id = thai_newsevents.1 hours = 6 }
-		}
+		
 	}
 }
 
@@ -557,7 +555,7 @@ country_event = {
     id = thai_events.24 # Three Demands fb post
     title = thai_events.24.t
     desc = thai_events.24.d
-    picture = GFX_report_three_demands
+    picture = GFX_report_freeyouth_three_demands
 	
 	is_triggered_only = yes
 	
@@ -605,7 +603,7 @@ country_event = {
     id = thai_events.26 # FreeYOUTH post
     title = thai_events.26.t
     desc = thai_events.26.d
-    picture = GFX_report_kill_all_capitalists_ahhh_movement
+    picture = GFX_report_freeyouth_commie_larp
 	
 	is_triggered_only = yes
 	
@@ -622,7 +620,7 @@ country_event = {
     id = thai_events.27 # March to the German Embassy
     title = thai_events.27.t
     desc = thai_events.27.d
-    picture = GFX_report_kill_all_capitalists_ahhh_movement
+    picture = GFX_report_freeyouth_commie_larp
 	
 	is_triggered_only = yes
 	
@@ -686,11 +684,14 @@ country_event = {
     option = {
         name = thai_events.30.a
 		clr_country_flag = SIA_oil_crisis_ongoing
-		remove_ideas = {
-			SIA_oil_crisis
-			SIA_oil_crisis_1
-			SIA_oil_crisis_2
-			SIA_oil_crisis_3
+		increase_poverty = yes
+		hidden_effect = {
+			remove_ideas = {
+				SIA_oil_crisis
+				SIA_oil_crisis_1
+				SIA_oil_crisis_2
+				SIA_oil_crisis_3
+			}
 		}
 	}
 }
@@ -713,7 +714,7 @@ country_event = {
     id = thai_events.32 # Saudi Civil War Causes Pattani Ceasefire Collapse
     title = thai_events.32.t
     desc = thai_events.32.d
-	picture = GFX_report_Thai_Peacetalks_22_Jan_2020
+	picture = GFX_report_thai_pattani_peacetalks_jan_2020
 	fire_only_once = yes
 	
 	is_triggered_only = yes
@@ -817,7 +818,7 @@ country_event = {
     id = thai_events.36 # Prayut steps down after 3rd Motion of No Confidence
     title = thai_events.36.t
     desc = thai_events.36.d
-	picture = GFX_report_Its_Prayut_over
+	picture = GFX_report_its_prayut_over
 	
 	is_triggered_only = yes
 	
@@ -910,7 +911,7 @@ country_event = {
     id = thai_events.41 # 8 March 2020  - Move Forward MP Defection
     title = thai_events.41.t
     desc = thai_events.41.d
-	picture = GFX_report_Cobra_Eating_Orange
+	picture = GFX_report_cobra_eating_orange
 	
 	is_triggered_only = yes
 	
@@ -1069,13 +1070,19 @@ country_event = {
 		}
 		
 	}
+	after = {
+		add_popularity = {
+            ideology = fascist
+            popularity = 0.01
+        }
+	}
 }
 news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t
     desc = thai_newsevents.1.d
     picture = GFX_global_event_2020_thai_protests
-	
+	fire_only_once = yes
 	is_triggered_only = yes
 
     option = {

@@ -7,7 +7,10 @@ SIA_oil_crisis_cat = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				check_variable = { oil_reserves_days > 349 }
+				OR = {
+					check_variable = { oil_reserves_days > 355 }
+					has_global_flag = USA_american_civil_war_global
+				}
 				tooltip = SIA_oil_in_reserves_mission_tt
 			}
 		}
@@ -34,13 +37,21 @@ SIA_oil_crisis_cat = {
 			set_variable = { SIA_oil_in_reserves_days_timeout = 0 }
 		}
 		complete_effect = {
-			clr_country_flag = SIA_oil_crisis_ongoing
-			remove_ideas = SIA_oil_crisis
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.15
+			if = {
+				limit = {
+					has_global_flag = USA_american_civil_war_global
+				}
+				country_event = thai_events.30
 			}
-			increase_poverty = yes
+			else = {
+				clr_country_flag = SIA_oil_crisis_ongoing
+				remove_ideas = SIA_oil_crisis
+				add_power_balance_value = {
+					id = SIA_power_balance
+					value = 0.15
+				}
+				increase_poverty = yes
+			}
 		}
 	}
 	SIA_empty_oil_reserves_causes_damage_mission = {
@@ -101,7 +112,7 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 20
+				days = 50
 			}
 			add_opinion_modifier = {
 				target = INS
@@ -134,9 +145,8 @@ SIA_oil_crisis_cat = {
 		}
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
-		cost = 35
-		days_remove = 25
-		days_re_enable = 25
+		cost = 40
+		days_remove = 75
 		modifier = {
 			consumer_goods_factor = 0.10
 		}
@@ -185,7 +195,52 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 30
+				days = 50
+			}
+			
+			459 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			544 = {
+				add_resource = {
+					type = oil
+					amount = 8
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			MZB = {
+				give_resource_rights = {
+					receiver = SIA
+					state = 544
+					resources = { oil }
+				}
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_oil_investment
+				}
+			}
+			ALG = {
+				give_resource_rights = {
+					receiver = SIA
+					state = 459
+					resources = { oil }
+				}
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_oil_investment
+				}
 			}
 		}
 	}
@@ -337,6 +392,16 @@ SIA_oil_crisis_cat = {
 					}
 				}
 				activate_mission = SIA_oil_in_reserves_mission
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_tech = fuel_refining
+					}
+				}
+				set_technology = {
+					fuel_refining = 1
+				}
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission

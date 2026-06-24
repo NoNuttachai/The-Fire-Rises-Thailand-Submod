@@ -320,6 +320,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_2
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_2 = {
@@ -343,6 +347,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_3
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_3 = {
@@ -366,6 +374,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_4
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_4 = {
@@ -389,6 +401,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_6
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_5 = {
@@ -412,6 +428,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_8
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_6 = {
@@ -435,6 +455,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_7
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_7 = {
@@ -458,6 +482,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_5
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_8 = {
@@ -481,6 +509,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_9
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_9 = {
@@ -504,6 +536,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_10
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_10 = {
@@ -527,6 +563,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_11
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	SIA_protestor_action_11 = {
@@ -549,6 +589,10 @@ SIA_bop_prayut = {
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 			
 		}
 	}

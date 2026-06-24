@@ -491,10 +491,7 @@ focus_tree = {
 				mission = SIA_the_protests_intensify
 				days = 30
 			}
-			add_timed_idea = {
-				idea = SIA_state_of_emergency
-				days = 120
-			}
+			add_ideas = SIA_state_of_emergency
 			increase_police = yes
 		}
 	}

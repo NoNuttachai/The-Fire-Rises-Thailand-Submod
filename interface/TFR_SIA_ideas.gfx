@@ -249,6 +249,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/SIA_RTARF.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_light_mechanized_texticon"
+		texturefile = "gfx/texticons/light_mechanized_texticon.png"
+		legacy_lazy_load = no
+	}
 
 	# Texticons — intro style (leader portrait + party logo, used in event/idea descriptions)
 	spriteType = {
