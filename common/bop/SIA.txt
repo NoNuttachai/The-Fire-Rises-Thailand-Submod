@@ -129,10 +129,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							25 = {
+							10 = {
 								country_event = thai_events.33
 							}
-							75 = {
+							90 = {
 								country_event = thai_events.35
 							}
 						}
@@ -145,10 +145,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							25 = {
+							10 = {
 								country_event = thai_events.34
 							}
-							75 = {
+							90 = {
 								country_event = thai_events.36
 							}
 						}
@@ -163,10 +163,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							25 = {
+							10 = {
 								country_event = thai_events.33
 							}
-							75 = {
+							90 = {
 								country_event = thai_events.35
 							}
 						}
@@ -179,10 +179,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							25 = {
+							10 = {
 								country_event = thai_events.34
 							}
-							75 = {
+							90 = {
 								country_event = thai_events.36
 							}
 						}
@@ -411,10 +411,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							75 = {
+							90 = {
 								country_event = thai_events.33
 							}
-							25 = {
+							10 = {
 								country_event = thai_events.35
 							}
 						}
@@ -427,10 +427,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							75 = {
+							90 = {
 								country_event = thai_events.34
 							}
-							25 = {
+							10 = {
 								country_event = thai_events.36
 							}
 						}
@@ -445,10 +445,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							75 = {
+							90 = {
 								country_event = thai_events.33
 							}
-							25 = {
+							10 = {
 								country_event = thai_events.35
 							}
 						}
@@ -461,10 +461,10 @@ SIA_power_balance = {
 					}
 					effect_tooltip = {
 						random_list = {
-							75 = {
+							90 = {
 								country_event = thai_events.34
 							}
-							25 = {
+							10 = {
 								country_event = thai_events.36
 							}
 						}

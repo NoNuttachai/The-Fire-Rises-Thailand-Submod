@@ -181,6 +181,9 @@ SIA_increase_protests = {
 			remove_idea = SIA_active_protests_1
 			add_idea = SIA_active_protests_2
 		}
+		hidden_effect = {
+			news_event = { id = thai_newsevents.1 hours = 6 }
+		}
 	}
 	else_if = {
 		limit = {
@@ -411,10 +414,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 		
 			random_list = {
-				25 = {
+				10 = {
 					country_event = thai_events.33
 				}
-				75 = {
+				90 = {
 					country_event = thai_events.35
 				}
 			}
@@ -427,10 +430,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				25 = {
+				10 = {
 					country_event = thai_events.34
 				}
-				75 = {
+				90 = {
 					country_event = thai_events.36
 				}
 			}
@@ -445,10 +448,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				25 = {
+				10 = {
 					country_event = thai_events.33
 				}
-				75 = {
+				90 = {
 					country_event = thai_events.35
 				}
 			}
@@ -461,10 +464,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				25 = {
+				10 = {
 					country_event = thai_events.34
 				}
-				75 = {
+				90 = {
 					country_event = thai_events.36
 				}
 			}
@@ -487,10 +490,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				75 = {
+				90 = {
 					country_event = thai_events.33
 				}
-				25 = {
+				10 = {
 					country_event = thai_events.35
 				}
 			}
@@ -503,10 +506,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				75 = {
+				90 = {
 					country_event = thai_events.34
 				}
-				25 = {
+				10 = {
 					country_event = thai_events.36
 				}
 			}
@@ -521,10 +524,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				75 = {
+				90 = {
 					country_event = thai_events.33
 				}
-				25 = {
+				10 = {
 					country_event = thai_events.35
 				}
 			}
@@ -537,10 +540,10 @@ SIA_check_motion_of_no_confidence = {
 			}
 			
 			random_list = {
-				75 = {
+				90 = {
 					country_event = thai_events.34
 				}
-				25 = {
+				10 = {
 					country_event = thai_events.36
 				}
 			}

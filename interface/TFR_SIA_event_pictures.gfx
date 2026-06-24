@@ -1,7 +1,7 @@
 spriteTypes = {
 	# Events
 	spriteType = {
-		name = "GFX_report_constitutional_court
+		name = "GFX_report_constitutional_court"
 		textureFile = "gfx/event_pictures/report_constitutional_court.png"
 	}
 	spriteType = {

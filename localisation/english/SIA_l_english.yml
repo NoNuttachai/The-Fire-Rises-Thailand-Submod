@@ -343,8 +343,8 @@
  thai_events.29.a: "This is getting absurd now."
  thai_events_29_tt: "This will be §Ythe last hurdle§! for Prayut before the §ROpposition finally loses steam§!."
  
- thai_events.30.t: "Oil Crisis Fades"
- thai_events.30.d: ""
+ thai_events.30.t: "Venezuelan Oil Deal Ends Oil Crisis"
+ thai_events.30.d: "With the collapse and start of ongoing hostilities in the United States, erm idk lol"
  thai_events.30.a: "Back to the gas stations!"
  
  thai_events.31.t: "Pattani Peace Talks Conclude"
@@ -721,7 +721,7 @@
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y350 days§! of §YOil in Reserves§! or §Lwe are past the 23rd of August, 2021§!\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y356 days§! of §YOil in Reserves§! or §Lthe situation of the @USA United States is in a point of no return.§!\n"
  
  SIA_empty_oil_reserves_causes_damage_mission: "Depleted Oil Reserves Causing Shortages"
  SIA_empty_oil_reserves_causes_damage_mission_tt: "§gOil in Reserves is currently present§!."
@@ -733,7 +733,7 @@
  SIA_russian_oil_deal: "Russian Oil Deal"
  SIA_russian_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_Prayut_Putin\n\n\n\n\n\nThailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
  
- SIA_african_oil_deal: "African Oil Deal"
+ SIA_african_oil_deal: "PTT Exploration and Production in Africa"
  SIA_african_oil_deal_desc: ""
  
  SIA_increase_american_oil_imports: "Increase American Oil Imports"
@@ -772,21 +772,19 @@
  SIA_saudi_civil_war_support_arr: "§G[ARR.GetNameDef]§! @ARR"
  
  SIA_saudi_civil_war_send_infantry_equipment: "§YARABIA§!: Send Infantry Equipment"
- SIA_saudi_civil_war_send_infantry_equipment_cost: "£infantry_equipment_text_icon §H750§!"
- SIA_saudi_civil_war_send_infantry_equipment_cost_blocked: "£infantry_equipment_text_icon §R750§!"
+ SIA_saudi_civil_war_send_infantry_equipment_cost: "£infantry_equipment_text_icon §H350§!"
+ SIA_saudi_civil_war_send_infantry_equipment_cost_blocked: "£infantry_equipment_text_icon §R350§!"
  
  SIA_saudi_civil_war_send_heavy_equipment: "§YARABIA§!: Send Heavy Equipment"
+ SIA_saudi_civil_war_send_heavy_equipment_cost: "£GFX_light_mechanized_texticon §H75§!"
+ SIA_saudi_civil_war_send_heavy_equipment_cost_blocked: "£GFX_light_mechanized_texticon §R75§!"
+ 
  SIA_saudi_civil_war_send_humanitarian: "§YARABIA§!: Send Humanitarian Aid"
  SIA_saudi_civil_war_intensify_volunteers: "§YARABIA§!: Intensify Volunteers"
  
+ SIA_saudi_civil_war_oil_tt: "§GIn exchange for aid, we will be provided oil§!"
  
- 
- 
- 
- 
- 
- 
- 
+
  
  
  
@@ -797,6 +795,10 @@
  SIA_astrazeneca_cooperation: "AstraZeneca Cooperation"
  SIA_asean_petroleum_agreement: "ASEAN Petroleum Agreement"
  SIA_oil_imports: "Oil Imports"
+ SIA_oil_investment: "Oil Investment"
+ #Other Modifiers
+ volunteer_cap_modification_2: "Intensify Volunteers"
+ volunteer_cap_modification_4: "Intensify Volunteers"
  #State Modifiers
  SIA_southern_fire_state_modifier: "Southern Fire"
  SIA_southern_fire_state_modifier_desc: "Southern Fire Description"

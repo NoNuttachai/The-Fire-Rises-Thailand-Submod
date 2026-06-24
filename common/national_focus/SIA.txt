@@ -491,10 +491,7 @@ focus_tree = {
 				mission = SIA_the_protests_intensify
 				days = 30
 			}
-			add_timed_idea = {
-				idea = SIA_state_of_emergency
-				days = 120
-			}
+			add_ideas = SIA_state_of_emergency
 			increase_police = yes
 		}
 	}
@@ -583,6 +580,10 @@ focus_tree = {
 				days = 10
 			}
 			unlock_decision_tooltip = SIA_found_top_news
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	focus = {
@@ -768,11 +769,11 @@ focus_tree = {
 				popularity = 0.05
 			}
 			unlock_decision_tooltip = SIA_deploy_riot_police
+			unlock_decision_tooltip = SIA_perform_harsher_crackdowns
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = 0.05
 			}
-			unlock_decision_tooltip = SIA_perform_harsher_crackdowns
 			SIA_decrease_protests = yes
 			
 		}

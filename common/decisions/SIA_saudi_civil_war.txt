@@ -4,16 +4,21 @@ SIA_saudi_civil_war = {
 		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
 		custom_cost_trigger = {
 			has_equipment = {
-				infantry_equipment > 749
+				infantry_equipment > 349
+			}
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 349
 			}
 		}
 		custom_cost_text = SIA_saudi_civil_war_send_infantry_equipment_cost
 		ai_will_do = { factor = 1 }
-		fire_only_once = yes
+		days_re_enable = 40
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = -750
+				amount = -350
 			}
 			if = {
 				limit = {
@@ -21,8 +26,8 @@ SIA_saudi_civil_war = {
 				}
 				SAU = {
 					add_equipment_to_stockpile = {
-						type = infantry_equipment_2
-						amount = 750
+						type = infantry_equipment
+						amount = 350
 						producer = SIA
 					}
 				}
@@ -33,8 +38,8 @@ SIA_saudi_civil_war = {
 				}
 				ROC = {
 					add_equipment_to_stockpile = {
-						type = infantry_equipment_2
-						amount = 750
+						type = infantry_equipment
+						amount = 350
 						producer = SIA
 					}
 				}
@@ -45,44 +50,320 @@ SIA_saudi_civil_war = {
 				}
 				ARR = {
 					add_equipment_to_stockpile = {
-						type = infantry_equipment_2
-						amount = 750
+						type = infantry_equipment
+						amount = 350
 						producer = SIA
 					}
 				}
 			}
-			set_temp_variable = {
-				var = income_var_temp
-				value = 10
+			if = {
+				limit = {
+					has_country_flag = SIA_oil_crisis_ongoing
+				}
+				custom_effect_tooltip = SIA_saudi_civil_war_oil_tt
+				if = {
+					limit = {
+						NOT = {
+							has_active_mission = SIA_oil_in_reserves_mission
+						}
+					}
+					activate_mission = SIA_oil_in_reserves_mission
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_in_reserves_mission
+					days = 25
+				}
 			}
-			add_income = yes
 		}
 	}
 	SIA_saudi_civil_war_send_heavy_equipment = {
 		icon = GFX_SOV_decision_military_aid
 		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
-		cost = 75
 		ai_will_do = { factor = 1 }
-		fire_only_once = yes
+		days_re_enable = 30
+		custom_cost_trigger = {
+			has_equipment = {
+				light_mechanized_equipment > 74
+			}
+		}
+		available = {
+			has_equipment = {
+				light_mechanized_equipment > 74
+			}
+		}
+		custom_cost_text = SIA_saudi_civil_war_send_heavy_equipment_cost
 		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = light_mechanized_equipment
+				amount = -75
+			}
+			if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 1 }
+				}
+				SAU = {
+					add_equipment_to_stockpile = {
+						type = light_mechanized_equipment
+						amount = 75
+						producer = SIA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 2 }
+				}
+				ROC = {
+					add_equipment_to_stockpile = {
+						type = light_mechanized_equipment
+						amount = 75
+						producer = SIA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 3 }
+				}
+				ARR = {
+					add_equipment_to_stockpile = {
+						type = light_mechanized_equipment
+						amount = 75
+						producer = SIA
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SIA_oil_crisis_ongoing
+				}
+				custom_effect_tooltip = SIA_saudi_civil_war_oil_tt
+				if = {
+					limit = {
+						NOT = {
+							has_active_mission = SIA_oil_in_reserves_mission
+						}
+					}
+					activate_mission = SIA_oil_in_reserves_mission
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_in_reserves_mission
+					days = 30
+				}
+			}
 		}
 	}
 	SIA_saudi_civil_war_send_humanitarian = {
 		icon = GFX_SOV_decision_military_aid
 		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
-		cost = 75
+		cost = 50
 		ai_will_do = { factor = 1 }
-		fire_only_once = yes
+		days_re_enable = 50
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_15B
+		
 		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -15
+			}
+			add_income = yes
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 1 }
+				}
+				SAU = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 15
+					}
+					add_income = yes
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_stability = 0.025
+					add_war_support = 0.015
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 2 }
+				}
+				ROC = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 15
+					}
+					add_income = yes
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_stability = 0.025
+					add_war_support = 0.015
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 3 }
+				}
+				ARR = {
+					set_temp_variable = {
+						var = income_var_temp
+						value = 15
+					}
+					add_income = yes
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_stability = 0.025
+					add_war_support = 0.015
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SIA_oil_crisis_ongoing
+				}
+				custom_effect_tooltip = SIA_saudi_civil_war_oil_tt
+				if = {
+					limit = {
+						NOT = {
+							has_active_mission = SIA_oil_in_reserves_mission
+						}
+					}
+					activate_mission = SIA_oil_in_reserves_mission
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_in_reserves_mission
+					days = 35
+				}
+			}
 		}
 	}
 	SIA_saudi_civil_war_intensify_volunteers = {
 		icon = GFX_SOV_decision_military_aid
-		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
-		cost = 75
+		visible = { 
+			has_country_flag = SIA_intervene_in_the_saudi_civil_war 
+			NOT = { 
+				has_country_flag = SIA_saudi_civil_war_max_volunteers 
+			} 
+		}
+		cost = 50
 		ai_will_do = { factor = 1 }
-		fire_only_once = yes
+		days_re_enable = 25
 		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 1 }
+				}
+				if = {
+					limit = {
+						has_relation_modifier = {
+							target = SAU
+							modifier = volunteer_cap_modification_2
+						}
+					}
+					hidden_effect = {
+						remove_relation_modifier = {
+							target = SAU
+							modifier = volunteer_cap_modification_2
+						}
+					}
+					add_relation_modifier = {
+						target = SAU
+						modifier = volunteer_cap_modification_4
+					}
+					set_country_flag = SIA_saudi_civil_war_max_volunteers
+				}
+				else = {
+					add_relation_modifier = {
+						target = SAU
+						modifier = volunteer_cap_modification_2
+					}
+					
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 2 }
+				}
+				if = {
+					limit = {
+						has_relation_modifier = {
+							target = ROC
+							modifier = volunteer_cap_modification_2
+						}
+					}
+					hidden_effect = {
+						remove_relation_modifier = {
+							target = ROC
+							modifier = volunteer_cap_modification_2
+						}
+					}
+					add_relation_modifier = {
+						target = ROC
+						modifier = volunteer_cap_modification_4
+					}
+					set_country_flag = SIA_saudi_civil_war_max_volunteers
+				}
+				else = {
+					add_relation_modifier = {
+						target = ROC
+						modifier = volunteer_cap_modification_2
+					}
+					
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 3 }
+				}
+				if = {
+					limit = {
+						has_relation_modifier = {
+							target = ARR
+							modifier = volunteer_cap_modification_2
+						}
+					}
+					hidden_effect = {
+						remove_relation_modifier = {
+							target = AAR
+							modifier = volunteer_cap_modification_2
+						}
+					}
+					add_relation_modifier = {
+						target = ARR
+						modifier = volunteer_cap_modification_4
+					}
+					set_country_flag = SIA_saudi_civil_war_max_volunteers
+				}
+				else = {
+					add_relation_modifier = {
+						target = ARR
+						modifier = volunteer_cap_modification_2
+					}
+					
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = SIA_oil_crisis_ongoing
+				}
+				custom_effect_tooltip = SIA_saudi_civil_war_oil_tt
+				if = {
+					limit = {
+						NOT = {
+							has_active_mission = SIA_oil_in_reserves_mission
+						}
+					}
+					activate_mission = SIA_oil_in_reserves_mission
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_in_reserves_mission
+					days = 20
+				}
+			}
 		}
 	}
 }

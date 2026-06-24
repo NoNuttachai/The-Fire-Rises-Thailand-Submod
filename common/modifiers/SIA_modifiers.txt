@@ -1,0 +1,6 @@
+volunteer_cap_modification_2 = {
+	send_volunteer_size = 2
+}
+volunteer_cap_modification_4 = {
+	send_volunteer_size = 4
+}
