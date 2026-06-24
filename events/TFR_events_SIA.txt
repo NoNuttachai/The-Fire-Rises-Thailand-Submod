@@ -5,7 +5,7 @@ country_event = {
     id = thai_events.1
     title = thai_events.1.t
     desc = thai_events.1.d
-    picture = GFX_report_event_constitutional_court
+    picture = GFX_report_constitutional_court
 	
 	is_triggered_only = yes
 
@@ -80,7 +80,7 @@ country_event = {
     id = thai_events.4
     title = thai_events.4.t
     desc = thai_events.4.d
-    picture = GFX_report_event_three_fingers
+    picture = report_freeyouth_three_demands
 	
 	is_triggered_only = yes
 
@@ -97,7 +97,7 @@ country_event = {
     id = thai_events.5
     title = thai_events.5.t
     desc = thai_events.5.d
-    picture = GFX_report_event_new_orange_party
+    picture = GFX_report_new_orange_party
 	
 	is_triggered_only = yes
 	
@@ -145,7 +145,7 @@ country_event = {
     id = thai_events.6
     title = thai_events.6.t
     desc = thai_events.6.d
-    picture = GFX_report_Oil_Crisis_in_Thailand
+    picture = GFX_report_oil_crisis_in_thailand
 	
 	is_triggered_only = yes
 	immediate = {
@@ -204,7 +204,7 @@ country_event = {
     id = thai_events.8
     title = thai_events.8.t
     desc = thai_events.8.d
-    picture = GFX_report_saveWanchalerm
+    picture = GFX_report_wanchalearm_abduction
 	
 	is_triggered_only = yes
 	
@@ -241,7 +241,7 @@ country_event = {
     id = thai_events.9 # Cobra Gold 2020
     title = thai_events.9.t
     desc = thai_events.9.d
-    picture = GFX_report_Cobra_Gold_2020
+    picture = GFX_report_cobra_gold_2020
 	
 	is_triggered_only = yes
 	
@@ -262,7 +262,7 @@ country_event = {
     id = thai_events.10 #egyptian soldier
     title = thai_events.10.t
     desc = thai_events.10.d
-    picture = GFX_report_Egypt_Soldier_COVID_19
+    picture = GFX_report_egypt_soldier_covid_19
 	
 	is_triggered_only = yes
 	
@@ -413,7 +413,7 @@ country_event = {
     id = thai_events.17 #Covid first case
     title = thai_events.17.t
     desc = thai_events.17.d
-    picture = GFX_report_First_Covid_19
+    picture = GFX_report_thai_first_covid_19_case
 	
 	is_triggered_only = yes
 	immediate = {
@@ -437,7 +437,7 @@ country_event = {
     id = thai_events.18 #Korat Massacre
     title = thai_events.18.t
     desc = thai_events.18.d
-    picture = GFX_report_event_korat_massacre
+    picture = GFX_report_korat_massacre
 	
 	is_triggered_only = yes
 
@@ -453,7 +453,7 @@ country_event = {
     id = thai_events.19 #Thai Airways Face Crisis
     title = thai_events.19.t
     desc = thai_events.19.d
-    picture = GFX_report_Thai_Air_Bankruptcy_Event
+    picture = GFX_report_thai_air_bankruptcy_event
 	
 	is_triggered_only = yes
 
@@ -484,7 +484,7 @@ country_event = {
     id = thai_events.21 #Songkran 2020 Suspended Over Pandemic Concerns
     title = thai_events.21.t
     desc = thai_events.21.d
-    picture = GFX_report_First_Covid_19
+    picture = GFX_report_songkran_cancelled
 	
 	is_triggered_only = yes
 
@@ -579,7 +579,7 @@ country_event = {
     id = thai_events.25 # FreeYOUTH Commie Larp
     title = thai_events.25.t
     desc = thai_events.25.d
-    picture = GFX_report_kill_all_capitalists_ahhh_movement
+    picture = GFX_report_freeyouth_commie_larp
 	
 	is_triggered_only = yes
 	
@@ -698,7 +698,7 @@ country_event = {
     id = thai_events.31 # Pattani Peace
     title = thai_events.31.t
     desc = thai_events.31.d
-	picture = GFX_report_Thai_Peacetalks_22_Jan_2020
+	picture = GFX_report_thai_pattani_peacetalks_jan_2020
 	is_triggered_only = yes
 	
     option = {
@@ -794,7 +794,7 @@ country_event = {
     id = thai_events.35 # Prayut steps down after 2nd Motion of No Confidence
     title = thai_events.35.t
     desc = thai_events.35.d
-	picture = GFX_report_Its_Prayut_over
+	picture = GFX_report_its_prayut_over
 	
 	is_triggered_only = yes
 
@@ -856,7 +856,7 @@ country_event = {
     id = thai_events.38 # Thai Patriotic Singer Santi Lunphae Passes Away
     title = thai_events.38.t
     desc = thai_events.38.d
-	picture = GFX_report_Santi_Lunphae_Passes_Away
+	picture = GFX_report_santi_lunphae_passes_away
 	
 	is_triggered_only = yes
 	
@@ -934,7 +934,7 @@ country_event = {
     id = thai_events.42 # 21 January 2020  - Parliamentary Seat Change
     title = thai_events.42.t
     desc = thai_events.42.d
-	picture = GFX_report_Parliamentary_Seat_Change
+	picture = GFX_report_parliamentary_seat_change
 	
 	is_triggered_only = yes
 	
@@ -956,7 +956,7 @@ country_event = {
     id = thai_events.43 # 20 June 2020  - Parliamentary Seat Change
     title = thai_events.43.t
     desc = thai_events.43.d
-	picture = GFX_report_Parliamentary_Seat_Change
+	picture = GFX_report_parliamentary_seat_change
 	
 	is_triggered_only = yes
 	
@@ -995,7 +995,7 @@ country_event = {
     id = thai_events.44 # Saudi Civil War who to aid
     title = thai_events.44.t
     desc = thai_events.44.desc
-	picture = GFX_generic_mutaib
+	picture = GFX_report_thailand_in_saudi_civil_war
 	trigger = {
 		tag = SIA
 		has_global_flag = saudi_civil_war_flag
@@ -1048,6 +1048,7 @@ country_event = {
     id = thai_events.46 # Rubbish Collection Organization Mobilizes Wave of Counter-Protests
     title = thai_events.46.t
     desc = thai_events.46.d
+	picture = GFX_report_counterprotests
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -1073,7 +1074,7 @@ news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t
     desc = thai_newsevents.1.d
-    picture = GFX_global_event_2020_Thai_Protests_Global_Event
+    picture = GFX_global_event_2020_thai_protests
 	
 	is_triggered_only = yes
 

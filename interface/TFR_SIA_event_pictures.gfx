@@ -1,16 +1,16 @@
 spriteTypes = {
 	# Events
 	spriteType = {
-		name = "GFX_report_event_constitutional_court"
-		textureFile = "gfx/event_pictures/report_event_constitutional_court.png"
+		name = "GFX_report_constitutional_court
+		textureFile = "gfx/event_pictures/report_constitutional_court.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_the_somboon_story"
-		textureFile = "gfx/event_pictures/report_event_the_somboon_story.png"
+		name = "GFX_report_the_somboon_story"
+		textureFile = "gfx/event_pictures/report_the_somboon_story.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_budget_bill_passed"
-		texturefile = "gfx/event_pictures/report_event_budget_bill_passed.png"
+		name = "GFX_report_budget_bill_passed"
+		texturefile = "gfx/event_pictures/report_budget_bill_passed.png"
 	}
 	spriteType = {
 		name = "GFX_report_prayut_mogged_opposition_1"
@@ -21,108 +21,120 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_prayut_mogged_opposition_2.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_korat_massacre"
-		texturefile = "gfx/event_pictures/report_event_korat_massacre.png"
+		name = "GFX_report_korat_massacre"
+		texturefile = "gfx/event_pictures/report_korat_massacre.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_three_fingers"
-		texturefile = "gfx/event_pictures/report_event_three_fingers.png"
+		name = "GFX_report_three_fingers"
+		texturefile = "gfx/event_pictures/report_three_fingers.png"
 	}
 	spriteType = {
-		name = "GFX_report_event_new_orange_party"
-		texturefile = "gfx/event_pictures/report_event_new_orange_party.png"
+		name = "GFX_report_new_orange_party"
+		texturefile = "gfx/event_pictures/report_new_orange_party.png"
 	}
 	spriteType = {
 		name = "GFX_report_no_more_gooning"
 		texturefile = "gfx/event_pictures/NEVER_GOON.png"
 	}
 	spriteType = {
-		name = "GFX_report_Oil_Crisis_in_Thailand"
-		texturefile = "gfx/event_pictures/report_event_Oil_Crisis_in_Thailand.png"
+		name = "GFX_report_songkran_cancelled"
+		texturefile = "gfx/event_pictures/report_songkran_cancelled.png"
 	}
 	spriteType = {
-		name = "GFX_report_Thai_Air_Bankruptcy_Event"
-		texturefile = "gfx/event_pictures/report_event_Thai_Air_Bankruptcy_Event.png"
+		name = "GFX_report_oil_crisis_in_thailand"
+		texturefile = "gfx/event_pictures/report_oil_crisis_in_thailand.png"
 	}
 	spriteType = {
-		name = "GFX_report_First_Covid_19"
-		texturefile = "gfx/event_pictures/report_event_SIA_First_Covid_19.png"
+		name = "GFX_report_thai_air_bankruptcy_event"
+		texturefile = "gfx/event_pictures/report_thai_air_bankruptcy_event.png"
 	}
 	spriteType = {
-		name = "GFX_report_Egypt_Soldier_COVID_19"
-		texturefile = "gfx/event_pictures/report_event_Egypt_Soldier_COVID_19.png"
+		name = "GFX_report_thai_first_covid_19_case"
+		texturefile = "gfx/event_pictures/report_thai_first_covid_19_case.png"
+	}
+	spriteType = {
+		name = "GFX_report_egypt_soldier_covid_19"
+		texturefile = "gfx/event_pictures/report_egypt_soldier_covid_19.png"
 	}
 	spriteType = {
 		name = "GFX_report_prayut_vs_three_fingers"
-		texturefile = "gfx/event_pictures/report_event_prayut_VS_Three_Fingers.png"
+		texturefile = "gfx/event_pictures/report_prayut_vs_three_fingers.png"
 	}
 	spriteType = {
-		name = "GFX_report_saveWanchalerm"
-		texturefile = "gfx/event_pictures/report_event_saveWanchalerm.png"
+		name = "GFX_report_wanchalearm_abduction"
+		texturefile = "gfx/event_pictures/report_wanchalearm_abduction.png"
 	}
 	spriteType = {
-		name = "GFX_report_Cobra_Gold_2020"
-		texturefile = "gfx/event_pictures/report_Cobra_Gold_2020.png"
+		name = "GFX_report_cobra_gold_2020"
+		texturefile = "gfx/event_pictures/report_cobra_gold_2020.png"
 	}
 	spriteType = {
 		name = "GFX_report_palang_pracharat_fallout_and_cabinet_reshuffle"
-		texturefile = "gfx/event_pictures/report_event_palang_pracharat_fallout_and_cabinet_reshuffle.png"
+		texturefile = "gfx/event_pictures/report_palang_pracharat_fallout_and_cabinet_reshuffle.png"
 	}
 	spriteType = {
-		name = "GFX_report_kill_all_capitalists_ahhh_movement"
-		texturefile = "gfx/event_pictures/report_event_kill_all_capitalists_ahhh_movement.png"
+		name = "GFX_report_freeyouth_commie_larp"
+		texturefile = "gfx/event_pictures/THAI_COMMUNISM.png"
 	}
 	spriteType = {
-		name = "GFX_report_three_demands"
-		texturefile = "gfx/event_pictures/report_event_three_demands.png"
+		name = "GFX_report_freeyouth_three_demands"
+		texturefile = "gfx/event_pictures/report_freeyouth_three_demands.png"
 	}
 	spriteType = {
 		name = "GFX_report_ministry_of_energy_oil_protests"
-		texturefile = "gfx/event_pictures/report_event_ministry_of_energy_oil_protests.png"
+		texturefile = "gfx/event_pictures/report_ministry_of_energy_oil_protests.png"
 	}
 	spriteType = {
 		name = "GFX_report_illuminati_case"
-		texturefile = "gfx/event_pictures/report_event_illuminati_case.png"
+		texturefile = "gfx/event_pictures/report_illuminati_case.png"
 	}
 	spriteType = {
 		name = "GFX_report_hamtaro_protests"
-		texturefile = "gfx/event_pictures/report_event_hamtaro_protests.png"
+		texturefile = "gfx/event_pictures/report_hamtaro_protests.png"
 	}
 	spriteType = {
 		name = "GFX_report_harry_potter_mob"
-		texturefile = "gfx/event_pictures/report_event_harry_potter_mob.png"
+		texturefile = "gfx/event_pictures/report_harry_potter_mob.png"
 	}
 	spriteType = {
 		name = "GFX_report_protests_in_front_of_ptt_hq"
-		texturefile = "gfx/event_pictures/report_event_protests_in_front_of_ptt_hq.png"
+		texturefile = "gfx/event_pictures/report_protests_in_front_of_ptt_hq.png"
 	}
 	spriteType = {
-		name = "GFX_report_Thai_Peacetalks_22_Jan_2020"
-		texturefile = "gfx/event_pictures/report_Thai_Peacetalks_22_Jan_2020.png"
+		name = "GFX_report_thai_pattani_peacetalks_jan_2020"
+		texturefile = "gfx/event_pictures/report_thai_pattani_peacetalks_jan_2020.png"
 	}
 	spriteType = {
-		name = "GFX_report_Its_Prayut_over"
-		texturefile = "gfx/event_pictures/Its_Prayut-over.png"
+		name = "GFX_report_its_prayut_over"
+		texturefile = "gfx/event_pictures/ITS_PRAYUT-OVER.png"
 	}
 	spriteType = {
-		name = "GFX_report_Santi_Lunphae_Passes_Away"
-		texturefile = "gfx/event_pictures/Santi_Lunphae_Passes_Away.png"
+		name = "GFX_report_santi_lunphae_passes_away"
+		texturefile = "gfx/event_pictures/report_santi_lunphae_passes_away.png"
 	}
 	spriteType = {
-		name = "GFX_report_Parliamentary_Seat_Change"
-		texturefile = "gfx/event_pictures/Parliamentary_Seat_Change.png"
+		name = "GFX_report_parliamentary_seat_change"
+		texturefile = "gfx/event_pictures/report_parliamentary_seat_change.png"
 	}
 	spriteType = {
-		name = "GFX_report_Cobra_Eating_Orange"
-		texturefile = "gfx/event_pictures/Cobra_Eating_Orange.png"
+		name = "GFX_report_cobra_eating_orange"
+		texturefile = "gfx/event_pictures/SNEK_YUMMY_ORANGE.png"
 	}
 	spriteType = {
 		name = "GFX_report_predee_daochai_resigned"
-		texturefile = "gfx/event_pictures/report_event_predee_daochai_resigned.png"
+		texturefile = "gfx/event_pictures/report_predee_daochai_resigned.png"
+	}
+	spriteType = {
+		name = "GFX_report_thailand_in_saudi_civil_war" 
+		texturefile = "gfx/event_pictures/report_thailand_in_saudi_civil_war.png"
+	}
+	spriteType = {
+		name = "GFX_report_counterprotests"
+		texturefile = "gfx/event_pictures/report_counterprotests.png"
 	}
 	#World News
 	spriteType = {
-		name = "GFX_global_event_2020_Thai_Protests_Global_Event"
-		texturefile = "gfx/event_pictures/global_event_2020_Thai_Protests_Global_Event.png"
+		name = "GFX_global_event_2020_thai_protests"
+		texturefile = "gfx/event_pictures/global_event_2020_thai_protests.png"
 	}
 }
