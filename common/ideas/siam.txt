@@ -483,6 +483,22 @@ ideas = {
 				expense_growth_factor = 0.1
 			}
 		}
+		SIA_triumph_in_saudi_arabia = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_cost = -0.15
+				consumer_goods_factor = -0.1
+				factory_energy_consumption = -0.15
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

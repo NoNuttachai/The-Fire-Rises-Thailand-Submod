@@ -80,4 +80,101 @@ on_actions = {
 			}
 		}
 	}
+	on_capitulation = {
+		effect = {
+			if = {
+				# Salman Victory
+				limit = {
+					FROM = {
+						original_tag = SAU
+					}
+					ROOT = {
+						OR = {
+							original_tag = ROC
+							original_tag = ARR
+							original_tag = JAH
+							original_tag = SAR
+						}
+					}
+					NOT = {
+						ROC = { exists = yes }
+						ARR = { exists = yes }
+						JAH = { exists = yes }
+						SAR = { exists = yes }
+					}
+				}
+				SIA = {
+					if = {
+						limit = {
+							check_variable = { SIA_saudi_civil_war_support = 1 }
+						}
+						country_event = thai_events.47
+					}
+					
+				}	
+			}
+			if = {
+				# Coalition Victory
+				limit = {
+					FROM = {
+						original_tag = ROC
+					}
+					ROOT = {
+						OR = {
+							original_tag = SAU
+							original_tag = ARR
+							original_tag = SAR
+							original_tag = JAH
+						}
+					}
+					NOT = {
+						SAU = { exists = yes }
+						ARR = { exists = yes }
+						SAR = { exists = yes }
+						JAH = { exists = yes }
+					}
+				}
+				SIA = {
+					if = {
+						limit = {
+							check_variable = { SIA_saudi_civil_war_support = 2 }
+						}
+						country_event = thai_events.47
+					}
+					
+				}
+			}
+			if = {
+				# Liberal Victory
+				limit = {
+					FROM = {
+						original_tag = ARR
+					}
+					ROOT = {
+						OR = {
+							original_tag = ROC
+							original_tag = SAU
+							original_tag = JAH
+							original_tag = SAR
+						}
+					}
+					NOT = {
+						ROC = { exists = yes }
+						SAU = { exists = yes }
+						JAH = { exists = yes }
+						SAR = { exists = yes }
+					}
+				}
+				SIA = {
+					if = {
+						limit = {
+							check_variable = { SIA_saudi_civil_war_support = 3 }
+						}
+						country_event = thai_events.47
+					}
+					
+				}
+			}
+		}
+	}
 }

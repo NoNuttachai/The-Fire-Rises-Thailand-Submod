@@ -162,7 +162,7 @@ SIA_increase_oil_crisis = {
 		}
 		swap_ideas = {
 			remove_idea = SIA_oil_crisis_2
-			add_idea = SIA_covid_idea_3
+			add_idea = SIA_oil_crisis_3
 		}
 	}
 	else_if = {
