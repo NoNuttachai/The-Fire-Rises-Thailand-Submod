@@ -268,7 +268,6 @@ SIA_protests_category = {
 			has_completed_focus = SIA_smother_the_flames
 		}
 		days_remove = 100
-		cost = 100
 		remove_effect = {
 			clr_country_flag = SIA_anti_government_protests
 			custom_effect_tooltip = SIA_disperse_the_protests_tt

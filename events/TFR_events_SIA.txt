@@ -1074,6 +1074,33 @@ country_event = {
         }
 	}
 }
+country_event = {
+    id = thai_events.47 # congrats, your saudi faction won
+    title = thai_events.47.t
+    desc = thai_events.47.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.47.a
+		add_timed_idea = {
+			idea = SIA_triumph_in_saudi_arabia
+			days = 300
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_active_mission = SIA_oil_in_reserves_mission
+				}
+			}
+			activate_mission = SIA_oil_in_reserves_mission
+		}
+		add_days_mission_timeout = {
+			mission = SIA_oil_in_reserves_mission
+			days = 75
+		}
+	}
+}
 news_event = {
     id = thai_newsevents.1
     title = thai_newsevents.1.t

@@ -14,7 +14,7 @@ SIA_saudi_civil_war = {
 		}
 		custom_cost_text = SIA_saudi_civil_war_send_infantry_equipment_cost
 		ai_will_do = { factor = 1 }
-		days_re_enable = 40
+		days_re_enable = 3
 		complete_effect = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -80,7 +80,7 @@ SIA_saudi_civil_war = {
 		icon = GFX_SOV_decision_military_aid
 		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
 		ai_will_do = { factor = 1 }
-		days_re_enable = 30
+		days_re_enable = 3
 		custom_cost_trigger = {
 			has_equipment = {
 				light_mechanized_equipment > 74
@@ -158,20 +158,20 @@ SIA_saudi_civil_war = {
 		visible = { has_country_flag = SIA_intervene_in_the_saudi_civil_war }
 		cost = 50
 		ai_will_do = { factor = 1 }
-		days_re_enable = 50
+		days_re_enable = 3
 		custom_cost_trigger = {
 			check_variable = {
 				var = income_var
-				value = 15
+				value = 1
 				compare = greater_than_or_equals
 			}
 		}
-		custom_cost_text = dx_more_than_15B
+		custom_cost_text = dx_more_than_1B
 		
 		complete_effect = {
 			set_temp_variable = {
 				var = income_var_temp
-				value = -15
+				value = -1
 			}
 			add_income = yes
 		}
@@ -183,7 +183,7 @@ SIA_saudi_civil_war = {
 				SAU = {
 					set_temp_variable = {
 						var = income_var_temp
-						value = 15
+						value = 1
 					}
 					add_income = yes
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -198,7 +198,7 @@ SIA_saudi_civil_war = {
 				ROC = {
 					set_temp_variable = {
 						var = income_var_temp
-						value = 15
+						value = 1
 					}
 					add_income = yes
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -213,7 +213,7 @@ SIA_saudi_civil_war = {
 				ARR = {
 					set_temp_variable = {
 						var = income_var_temp
-						value = 15
+						value = 1
 					}
 					add_income = yes
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -251,7 +251,7 @@ SIA_saudi_civil_war = {
 		}
 		cost = 50
 		ai_will_do = { factor = 1 }
-		days_re_enable = 25
+		days_re_enable = 3
 		complete_effect = {
 			if = {
 				limit = {
