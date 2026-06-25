@@ -132,6 +132,10 @@ spriteTypes = {
 		name = "GFX_report_counterprotests"
 		texturefile = "gfx/event_pictures/report_counterprotests.png"
 	}
+	spriteType = {
+		name = "GFX_report_2022_bangkok_gubernatorial_election"
+		texturefile = "gfx/event_pictures/report_2022_bangkok_gubernatorial_election.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

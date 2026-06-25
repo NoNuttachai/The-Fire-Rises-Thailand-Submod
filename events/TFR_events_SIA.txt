@@ -503,6 +503,7 @@ country_event = {
     id = thai_events.22 #2022 Bangkok Mayoral Elections
     title = thai_events.22.t
     desc = thai_events.22.desc
+	picture = GFX_report_2022_bangkok_gubernatorial_election
 	
 	is_triggered_only = yes
 
