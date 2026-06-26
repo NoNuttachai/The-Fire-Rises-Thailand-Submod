@@ -167,7 +167,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_ally_with_workers_union
+		id = SIA_workers_union_strikes
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 1
@@ -193,9 +193,9 @@ focus_tree = {
 		x = -2
 		y = 1
 		cost = 5
-		prerequisite = { focus = SIA_ally_with_workers_union }
+		prerequisite = { focus = SIA_workers_union_strikes }
 		prerequisite = { focus = SIA_petrol_demonstrations }
-		relative_position_id = SIA_ally_with_workers_union
+		relative_position_id = SIA_workers_union_strikes
 		
 		ai_will_do = {
 			factor = 10
@@ -216,7 +216,7 @@ focus_tree = {
 		y = 2
 		cost = 5
 		prerequisite = { focus = SIA_move_forward_with_the_protestors }
-		relative_position_id = SIA_ally_with_workers_union
+		relative_position_id = SIA_workers_union_strikes
 		
 		ai_will_do = {
 			factor = 10
