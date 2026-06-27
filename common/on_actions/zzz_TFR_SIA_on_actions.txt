@@ -40,6 +40,9 @@ on_actions = {
 				country_event = { id = thai_events.42 days = 27 } #28 January 2020  - Parliamentary Seat Change
 				country_event = { id = thai_events.43 days = 171 } #20 June 2020  - Parliamentary Seat Change
 				country_event = { id = thai_events.44 days = 286 } #Saudi Civil War question of intervention
+				country_event = { id = thai_events.48 days = 1174 } #20 Mar 2023 Prachin Buri Radiation Incident
+				country_event = { id = thai_events.49 days = 2093 } #24 Sep 2025 Massive Sinkhole in Dusit District, Bangkok
+				country_event = { id = thai_events.50 days = 110 } # 20 April 2020 #MilkTeaAlliance
 				
 				
 				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }

@@ -126,7 +126,7 @@
  
  SIA_establish_ccsa: "Establish CCSA"
  SIA_establish_ccsa_desc: ""
- SIA_establish_ccsa_tt: "§GWe will start importing vaccines to eventually vaccinate our population§!"
+ SIA_establish_ccsa_tt: "§GWe will begin importing and manufacturing vaccines to vaccinate our population.§!"
  
  SIA_deploy_the_riot_police: "Deploy the Riot Police"
  SIA_deploy_the_riot_police_desc: ""
@@ -333,8 +333,8 @@
  thai_events.27.d: "At 17:00, protesters and organizers began gathering in front of the Samyan Mitrtown shopping mall, then marched along Rama IV Road before turning right onto South Sathorn Road toward the German Embassy.\n\nPolice set up metal barricades and deployed three lines of riot police to block the entrance in front of the embassy building, keeping several companies of officers on standby to secure the perimeter.\n\nThe protesters goal is to submit a letter to the German Ambassador to Thailand, Georg Schmidt, to be forwarded to the German government. The letter requested an investigation into the exercise of royal power by the Thai monarch within German territory. A representative of the protesters also read a statement in three languages: Thai, English, and German.\n\nIn the wake of the demonstration, Prime Minister Prayut Chan-o-cha announced that the government would enforce "all laws" against the demonstrators, and authorities intensified legal actions. Ultimately, 13 key protesters involved in the rally were jointly indicted on charges under both Section 112 (lèse-majesté) and Section 116 (sedition) of the Criminal Code."
  thai_events.27.a: "Unity and Justice and Freedom!"
 
- thai_events.28.t: "Hushed Whispers of the Assembly"
- thai_events.28.d: "Prayut, you're about to get evicted if you dont raise your bop"
+ thai_events.28.t: "Opposition Filed Second No-Confidence Motion"
+ thai_events.28.d: "The opposition, led by the Pheu Thai Party, has submitted a motion to open a second no-confidence debate against the government. The motion is led by Sompong Amornwiwat, Leader of the Opposition in the House of Representatives, together with the leaders of the other opposition parties and opposition MPs. Prime Minister General Prayut Chan-o-cha will be the principal target of the censure motion. The motion calling for the censure debate was backed by 208 MPs.\n\nPreparations for the February 2021 no-confidence debate are underway, with the opposition stating that it had gathered information and evidence highlighting what it described as the government's failures and shortcomings. The motion will be submitted to House Speaker Chuan Leekpai with the backing of the Pheu Thai Party, the Move Forward Party, and several smaller opposition parties.\n\nPita Limjaroenrat, the Move Forward Party leader, said debaters from all opposition parties would coordinate closely to prevent the mistakes in time management made during the last censure debate, when some of the MPs from the then-Future Forward party, were left out.\n\nIn addition to the Prime Minister, the censure motion is expected to target several senior cabinet ministers responsible for the country's economic management, internal affairs, and public health policies."
  thai_events.28.a: "..."
  thai_events_28_tt: "The §Rfate§! of §YPrayut§! will be decided once the §Yday of voting§! arrives."
  
@@ -426,6 +426,23 @@
  thai_events.46.d: "\nMajor General Dr. Rienthong Nanna, Director of the private Mongkutwattana Hospital and leader of the Rubbish Collection Organization, launched his own counter-protest movement. Aimed at what he termed a now "radicalized student mob" seeking to overthrow the democratic order and the constitutional monarchy, he labeled the demonstrators "the rubbish of the nation" and "tyrants, not the people."\n\nIn an interview with news media publications, he stated, "Because of the current wave of anti-monarchy sentiment, the inability to enforce the law, and the fact that these so-called 'tyrants' are using violence against the monarchy, the very existence of the institution is being effectively damaged. Therefore, as a Thai citizen, I will not stand by. We do not have a policy of 'mob vs. mob' rule; instead, our approach is strictly 'face-to-face against tyrants.'"\n\nThe demonstration against the youth protesters, organized by the Rubbish Collection Organization, is scheduled to begin at the Chaeng Watthana Government Complex, with participants wearing yellow shirts to show their support for the monarchy."
  thai_events.46.a: "It's clear who will stand up for the Government and the Monarchy"
  thai_events.46.b: "Why should we care about a group of brainwashed boomers?"
+ 
+ thai_events.47.t: "Our saudi faction won"
+ thai_events.47.d: "wohoo"
+ thai_events.47.a: "saudi buff"
+ 
+ thai_events.48.t: "Prachin Buri Radiation Incident"
+ thai_events.48.d: "A radiation incident occurred in Prachin Buri Province, Thailand, when a 25-kilogram cylinder containing a radioactive caesium-137 capsule went missing from National Power Plant 5A, a coal-fired steam energy plant in the Tha Tum area of Si Maha Phot district. The cylinder, measuring 30 centimeters by 13 centimeters, was used in the plant's measuring devices. While routine checks by staff indicated the cylinder may have been missing since February 17, 2023, the plant failed to report it to the police immediately. The disappearance was eventually noted on February 23, but the Thai public was not notified of the situation until March 14. The source remains missing, with authorities suspecting it was stolen and sold as scrap metal.\n\nThe disappearance sparked a search lasting more than ten days by the Office of Atoms for Peace and Prachin Buri provincial authorities. Investigators later detected caesium-137 contamination in furnace dust at a steel mill in Kabin Buri district, suggesting that the missing source had likely been melted down as scrap metal. Although authorities did not initially confirm that the contamination originated from the missing cylinder, there was a high likelihood that the material had been processed and refined at the steel mill.\n\nWhile the incident raised serious public health and environmental concerns, officials stated that the contaminated furnace dust was entirely contained within the factory compound. No radiation was detected within a five-kilometer radius of the plant, and authorities assured the public that there was no contamination in the wider Prachin Buri environment."
+ thai_events.48.a: "What is the cost of lies?"
+ 
+ thai_events.49.t: "Massive Sinkhole in Dusit District, Bangkok"
+ thai_events.49.d: "A massive sinkhole measuring 30 meters wide and 20 meters deep opened on Samsen Road outside Bangkok's Wachirapaya Hospital. The collapse began at 5:00 AM and fully emerged by approximately 7:00 AM, swallowing two electricity poles and three vehicles as it rapidly expanded toward the Samsen Police Station. Consequently, authorities closed Samsen Road between the Wachira and Sanghi intersections and safely evacuated hospital patients and nearby residents.\n\nVideos captured the four-lane road gradually caving in, rupturing water pipes and forcing drivers to quickly reverse. The crater eventually stopped just short of the police station and hospital, exposing the building's underground foundation.\n\nThe incident caused severe damage to surrounding infrastructure and nearby buildings. However, luckily there are no fatalities or injuries.\n\nInvestigators concluded that construction work on an underground train station altered local soil and groundwater conditions, weakening the surrounding ground. Leaking water and drainage pipes further destabilized the area, increasing underground pressure that widened existing cracks and ultimately triggered the collapse.\n\nRepair crews are working to restore the site as quickly as possible. As part of the recovery effort, the sinkhole will be filled and stabilized, while the structurally compromised Samsen Police Station building will be demolished before the road is reconstructed and reopened to traffic."
+ thai_events.49.a: "Fill the hole!"
+ 
+ thai_events.50.t: "#MilkTeaAlliance"
+ thai_events.50.d: "Online clashes erupted between China's so-called "50 Cent Army" and Thai internet users after Thai actor Vachirawit Chivaaree, known as Bright, inadvertently reposted an image on Twitter that listed Hong Kong as a "country" (rather than a Special Administrative Region of China). The post drew backlash from Chinese netizens, who directed criticism and attacks toward him. Vachirawit later apologized for the oversight and removed the image.\n\nIn response, Thai netizens rallied to defend him, and their criticism quickly broadened into more general opposition toward China, sparking a Twitter war. The dispute soon escalated into a wider digital confrontation, as netizens from Hong Kong, Taiwan, and Thailand united under a shared banner the "Milk Tea Alliance," named after a popular drink common to all three cultures.\n\nAlthough Thailand's role in the alliance may seem less directly tied to the core political struggles in Hong Kong and Taiwan against increasing pressure from the Chinese Communist Party, activists from all three regions have expressed a shared solidarity against authoritarianism. Some demonstrators in Thailand have been seen waving Tibetan flags, Hong Kong protest flags, and the Taiwanese independence flag."
+ thai_events.50.a: "Down with the CCP and Down with Prayut!"
+ thai_events_50_tt: "\n\n§LEvent Image is taken from Natthawut Loathaisong work on ArtStation\n\nhttps://www.artstation.com/artwork/zAdorQ§!"
  
  
  thai_newsevents.1.t: "Major Protests in Thailand"
@@ -766,7 +783,7 @@
  SIA_oil_cooperation_with_singapore_desc: "Thailand could strengthen energy cooperation with Singapore to secure reliable supplies of refined petroleum products. The partnership would expand fuel imports, improve stockpiling, and enhance coordination on energy logistics, leveraging Singapore's role as Asia's leading oil trading and refining hub."
  
  SIA_iran_oil_deal: "Iran Oil Deal"
- SIA_iran_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_iran_oil_deal\n\n\n\n\n\nI love iran"
+ SIA_iran_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_iran_oil_deal\n\n\n\n\n\nDue to U.S.-led sanctions and banking restrictions on Iranian oil exports, Thailand does not officially import crude oil from Iran. However, relations between the two countries have remained positive. During his 2016 visit to Thailand, Iranian President Hassan Rouhani stated that Iran was prepared to expand cooperation with Thailand and welcomed efforts to revive energy cooperation under the existing petroleum memorandum of understanding between the two countries.\n\nWith growing political divisions within the United States, some countries have begun reassessing their policies toward Iran. Germany and several other nations have eased restrictions on Iranian oil imports, creating the possibility that Thailand could also explore renewed energy cooperation with Iran should international sanctions continue to weaken."
  
  SIA_saudi_civil_war: "Saudi Civil War"
  SIA_saudi_civil_war_desc: "Our government has decided to become involved in the Saudi Arabian Civil War, following the major powers of the world, a move that would mark one of Thailand's most significant overseas military commitments in decades.\n\n§YWe are supporting§!: [GetSiaSaudiFaction]"
@@ -799,6 +816,9 @@
  SIA_asean_petroleum_agreement: "ASEAN Petroleum Agreement"
  SIA_oil_imports: "Oil Imports"
  SIA_oil_investment: "Oil Investment"
+ SIA_iran_oil_deal_opinion: "Iran Oil Deal"
+ SIA_milktea_prc: "#MilkTeaAlliance"
+ SIA_milktea_chi: "#MilkTeaAlliance"
  #Other Modifiers
  volunteer_cap_modification_2: "Intensify Volunteers"
  volunteer_cap_modification_4: "Intensify Volunteers"

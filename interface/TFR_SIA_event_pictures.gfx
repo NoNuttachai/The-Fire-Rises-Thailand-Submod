@@ -136,6 +136,22 @@ spriteTypes = {
 		name = "GFX_report_2022_bangkok_gubernatorial_election"
 		texturefile = "gfx/event_pictures/report_2022_bangkok_gubernatorial_election.png"
 	}
+	spriteType = {
+		name = "GFX_report_opposition_submitted_second_motion"
+		texturefile = "gfx/event_pictures/report_opposition_submitted_second_motion.png"
+	}
+	spriteType = {
+		name = "GFX_report_prachin_buri_radiation_incident"
+		texturefile = "gfx/event_pictures/report_prachin_buri_radiation_incident.png"
+	}
+	spriteType = {
+		name = "GFX_report_bangkok_sinkhole"
+		texturefile = "gfx/event_pictures/report_bangkok_sinkhole.png"
+	}
+	spriteType = {
+		name = "GFX_report_milk_tea_alliance"
+		texturefile = "gfx/event_pictures/report_milk_tea_alliance.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

@@ -373,6 +373,12 @@ SIA_oil_crisis_cat = {
 				target = ISR
 				modifier = decreased_relations
 			}
+			PER = {
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_iran_oil_deal_opinion
+				}
+			}
 		}
 	}
 	SIA_enact_oil_rationing_measures = {

@@ -7,4 +7,7 @@ opinion_modifiers = {
 	SIA_asean_petroleum_agreement = { value = 20 }
 	SIA_oil_imports = { value = 10 }
 	SIA_oil_investment = { value = 15 }
+	SIA_iran_oil_deal_opinion = { value = 20 }
+	SIA_milktea_chi = { value = 5 }
+	SIA_milktea_prc = { value = -5 }
 }

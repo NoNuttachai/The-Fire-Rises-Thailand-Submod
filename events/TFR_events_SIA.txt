@@ -635,7 +635,7 @@ country_event = {
     id = thai_events.28 # Warning that a 2nd motion of no confidence is coming
     title = thai_events.28.t
     desc = thai_events.28.d
-	
+	picture = GFX_report_opposition_submitted_second_motion
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -1099,6 +1099,66 @@ country_event = {
 			mission = SIA_oil_in_reserves_mission
 			days = 75
 		}
+	}
+}
+country_event = {
+    id = thai_events.48 # Prachin Buri Radiation Incident
+    title = thai_events.48.t
+    desc = thai_events.48.d
+	picture = GFX_report_prachin_buri_radiation_incident
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.48.a
+		1494 = {
+			damage_building = {
+			  type = power_plant
+			  damage = 1
+			}
+		}
+	}
+}
+country_event = {
+    id = thai_events.49 # Massive Sinkhole in Dusit District, Bangkok
+    title = thai_events.49.t
+    desc = thai_events.49.d
+	is_triggered_only = yes
+	picture = GFX_report_bangkok_sinkhole
+    option = {
+        name = thai_events.49.a
+		1493 = {
+			damage_building = {
+			  type = infrastructure
+			  damage = 1
+			}
+		}
+	}
+}
+country_event = {
+    id = thai_events.50 # #MilkTeaAlliance
+    title = thai_events.50.t
+    desc = thai_events.50.d
+	picture = GFX_report_milk_tea_alliance
+	is_triggered_only = yes
+    option = {
+        name = thai_events.50.a
+		add_opinion_modifier = {
+			target = PRC
+			modifier = SIA_milktea_prc
+		}
+		add_opinion_modifier = {
+			target = CHI
+			modifier = SIA_milktea_chi
+		}
+		add_days_mission_timeout = {
+			mission = SIA_the_protests_intensify
+			days = 10
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.02
+		}
+		custom_effect_tooltip = thai_events_50_tt
 	}
 }
 news_event = {

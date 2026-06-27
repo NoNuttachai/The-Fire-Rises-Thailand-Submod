@@ -148,7 +148,7 @@ SIA_power_balance = {
 							10 = {
 								country_event = thai_events.34
 							}
-							85 = {
+							90 = {
 								country_event = thai_events.36
 							}
 						}
