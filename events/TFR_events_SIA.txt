@@ -509,31 +509,31 @@ country_event = {
 
     option = { #Chadchart Sittipunt (Independent)
         name = thai_events.22.a
-		custom_effect_tooltip = thai_events_22_texticon_a
+		custom_effect_tooltip = thai_events_22_tt_a
 		set_variable = { bangkok_mayor = 2}
 		
     }
 	option = { #Suchatvee Suwansawat (Democrat)
         name = thai_events.22.b
-		custom_effect_tooltip = thai_events_22_texticon_b
+		custom_effect_tooltip = thai_events_22_tt_b
 		set_variable = { bangkok_mayor = 3}
 		
     }
 	option = { # Wiroj Lakkhanaadisorn (Move Forward)
         name = thai_events.22.c
-		custom_effect_tooltip = thai_events_22_texticon_c
+		custom_effect_tooltip = thai_events_22_tt_c
 		set_variable = { bangkok_mayor = 4}
 		
     }
 	option = { #Sita Divari (Thai Sang Thai)
         name = thai_events.22.d
-		custom_effect_tooltip = thai_events_22_texticon_d
+		custom_effect_tooltip = thai_events_22_tt_d
 		set_variable = { bangkok_mayor = 5}
 		
     }
 	option = { #Aswin Kwanmuang (Rak Krung Thep) 
         name = thai_events.22.e
-		custom_effect_tooltip = thai_events_22_texticon_e
+		custom_effect_tooltip = thai_events_22_tt_e
 		set_variable = { bangkok_mayor = 1}
 		
     }
@@ -1142,6 +1142,18 @@ country_event = {
 	is_triggered_only = yes
     option = {
         name = thai_events.50.a
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+	}
+	option = {
+        name = thai_events.50.b
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+	}
+	after = {
+		custom_effect_tooltip = thai_events_50_tt
 		add_opinion_modifier = {
 			target = PRC
 			modifier = SIA_milktea_prc
@@ -1150,15 +1162,10 @@ country_event = {
 			target = CHI
 			modifier = SIA_milktea_chi
 		}
-		add_days_mission_timeout = {
-			mission = SIA_the_protests_intensify
-			days = 10
-		}
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.02
 		}
-		custom_effect_tooltip = thai_events_50_tt
 	}
 }
 news_event = {

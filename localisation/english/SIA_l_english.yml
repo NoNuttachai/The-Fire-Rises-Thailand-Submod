@@ -441,8 +441,9 @@
  
  thai_events.50.t: "#MilkTeaAlliance"
  thai_events.50.d: "Online clashes erupted between China's so-called "50 Cent Army" and Thai internet users after Thai actor Vachirawit Chivaaree, known as Bright, inadvertently reposted an image on Twitter that listed Hong Kong as a "country" (rather than a Special Administrative Region of China). The post drew backlash from Chinese netizens, who directed criticism and attacks toward him. Vachirawit later apologized for the oversight and removed the image.\n\nIn response, Thai netizens rallied to defend him, and their criticism quickly broadened into more general opposition toward China, sparking a Twitter war. The dispute soon escalated into a wider digital confrontation, as netizens from Hong Kong, Taiwan, and Thailand united under a shared banner the "Milk Tea Alliance," named after a popular drink common to all three cultures.\n\nAlthough Thailand's role in the alliance may seem less directly tied to the core political struggles in Hong Kong and Taiwan against increasing pressure from the Chinese Communist Party, activists from all three regions have expressed a shared solidarity against authoritarianism. Some demonstrators in Thailand have been seen waving Tibetan flags, Hong Kong protest flags, and the Taiwanese independence flag."
- thai_events.50.a: "Down with the CCP and Down with Prayut!"
- thai_events_50_tt: "\n\n§LEvent Image is taken from Natthawut Loathaisong work on ArtStation\n\nhttps://www.artstation.com/artwork/zAdorQ§!"
+ thai_events.50.a: "Free Hong Kong! Free Taiwan! Free Thailand!"
+ thai_events.50.b: "Yet they idolized Mao cocksuckers like Chit Pumisak"
+ thai_events_50_tt: "§LEvent Image is taken from Natthawut Loathaisong work on ArtStation§!\n§Whttps://www.artstation.com/artwork/zAdorQ§!\n\n"
  
  
  thai_newsevents.1.t: "Major Protests in Thailand"
@@ -817,8 +818,8 @@
  SIA_oil_imports: "Oil Imports"
  SIA_oil_investment: "Oil Investment"
  SIA_iran_oil_deal_opinion: "Iran Oil Deal"
- SIA_milktea_prc: "#MilkTeaAlliance"
- SIA_milktea_chi: "#MilkTeaAlliance"
+ SIA_milktea_prc: "Milk Tea Alliance"
+ SIA_milktea_chi: "Milk Tea Alliance"
  #Other Modifiers
  volunteer_cap_modification_2: "Intensify Volunteers"
  volunteer_cap_modification_4: "Intensify Volunteers"
