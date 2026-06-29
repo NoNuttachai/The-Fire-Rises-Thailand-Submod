@@ -454,3 +454,140 @@ defined_text = {
 		localization_key = SIA_parliament_speaker_party_loc
 	}
 }
+
+
+
+### ELECTION CRAP ###
+defined_text = {
+	name = SIA_election_scrp_loc
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 1 }
+		}
+		localization_key = SIA_parliament_pprp_election
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 2 }
+		}
+		localization_key = SIA_parliament_ptp_election
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 3 }
+			NOT = {
+				has_country_flag = ffp_dismantled
+			}
+		}
+		localization_key = SIA_parliament_ffp_election
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 3 }
+			has_country_flag = ffp_dismantled
+		}
+		localization_key = SIA_parliament_mfp_election
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 4 }
+		}
+		localization_key = SIA_parliament_dp_election
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 5 }
+		}
+		localization_key = SIA_parliament_tlp_election
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 6 }
+		}
+		localization_key = SIA_parliament_bjt_election
+	}
+
+	
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 7 }
+		}
+		localization_key = SIA_parliament_ctpp_election
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 8 }
+		}
+		localization_key = SIA_parliament_pcc_election
+	}
+
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 9 }
+		}
+		localization_key = SIA_parliament_minor_parties_election
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_election = 11 }
+		}
+		localization_key = SIA_parliament_utp_election
+	}
+}
+
+defined_text = {
+	name = SIA_election_votes_party_change
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { target > 0 }
+		}
+		localization_key = SIA_change_[?target]_votes
+	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { 2nd_target > 0 }
+		}
+		localization_key = SIA_change_[?2nd_target]_votes
+	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { 1st_target > 0 }
+		}
+		localization_key = SIA_change_[?1st_target]_votes
+	}
+}
+defined_text = {
+	name = SIA_elections_playing_as
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = SIA_elections_playing_as_[?SIA_election_playing_as]
+	}
+}

@@ -495,8 +495,25 @@ ideas = {
 			
 			modifier = {
 				political_power_cost = -0.15
+				production_speed_buildings_factor = 0.1
 				consumer_goods_factor = -0.1
 				factory_energy_consumption = -0.15
+			}
+		}
+		SIA_iranian_oil_deal_idea = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05 
+				consumer_goods_factor = -0.075
+				factory_energy_consumption = -0.05
 			}
 		}
 	}

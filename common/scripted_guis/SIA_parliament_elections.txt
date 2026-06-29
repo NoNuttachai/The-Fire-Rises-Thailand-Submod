@@ -1,0 +1,36 @@
+scripted_gui = {
+	SIA_parliament_elections_gui = {
+		context_type = decision_category
+		window_name = "SIA_parliament_election_gui_window"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			original_tag = SIA
+		}
+		dynamic_lists = {
+			election_parties_gridbox = {
+				array = SIA_party_election_array
+				entry_container = SIA_parliament_party_elections_container
+				value = SIA_party_election
+			}
+		}
+		triggers = {
+			party_bar_fill_visible = {
+				check_variable = { SIA_party_election:party_votes > 0 }
+			}
+		}
+
+		effects = {
+			
+		}
+		properties = {
+			party_bar_fill = {
+				image = GFX_SIA_parliament_elections_bar_[?SIA_party_election]
+				frame = SIA_party_election:party_votes
+			}
+		}
+	}
+}

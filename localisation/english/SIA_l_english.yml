@@ -445,7 +445,6 @@
  thai_events.50.b: "Yet they idolized Mao cocksuckers like Chit Pumisak"
  thai_events_50_tt: "§LEvent Image is taken from Natthawut Loathaisong work on ArtStation§!\n§Whttps://www.artstation.com/artwork/zAdorQ§!\n\n"
  
- 
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
@@ -558,7 +557,50 @@
  SIA_ffp_seats_dead: "£GFX_orange_party_1 §OFuture Forward Party§! §YSeat§! Change: §R-[?SIA_ffp_seats_var]§!"
  SIA_mfp_seats_replacement: "£GFX_orange_party_2 §OMove Forward Party§! §YSeat§! Change: §G+55§!"
  
+ 
+ 
+ # ELECTION GUI SCRIPTED local
+ SIA_election_party_line: "[SIA_election_scrp_loc]"
+ 
+ SIA_parliament_pprp_election: "£GFX_palang_pracharath §PPalang Pracharath Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_dp_election: "£GFX_democrat §CDemocrat Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_bjt_election: "£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_ctpp_election: "£GFX_chartthaipattana §sChart Thai Pattana Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_ptp_election: "£GFX_phua_thai §RPheu Thai Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_ffp_election: "£GFX_orange_party_1 §OFuture Forward Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_mfp_election: "£GFX_orange_party_2 §OMove Forward Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_tlp_election: "£GFX_thai_liberal_party §YThai Liberal Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_pcc_election: "£GFX_prachachat §YPrachachat Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_utp_election: "§gUnited Thai Nation Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_minor_parties_election: "§LMinor Parties | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ 
+ SIA_change_1_votes: "£GFX_palang_pracharath §PPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_2_votes: "£GFX_phua_thai §RPheu Thai Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_3_votes: "£GFX_orange_party_2 §OMove Forward Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_4_votes: "£GFX_democrat §CDemocrat Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_6_votes: "£GFX_bhumjaithai §1Bhumjaithai Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_9_votes: "§LMinor Parties§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_11_votes: "§gUnited Thai Nation Party§! §LVote§! Change: [?vote_change|=+2]"
+ 
+ 
+ SIA_change_undecided_votes: "§gUndecided§! §LVotes§! Change: [?vote_change|=+2]" #THIS FOR UNDECIDED VOTES ONLY
+ 
+ SIA_election_undecided: "§gUndecided Votes: [?undecided_votes|2]%§!"
+ 
+ SIA_election_results_1: "£GFX_palang_pracharath §PPalang Pracharath Party§! is projected to §Gwin§!"
+ SIA_election_results_2: "£GFX_phua_thai §RPheu Thai Party§! is projected to §Gwin§!"
+ SIA_election_results_3: "£GFX_orange_party_2 §OMove Forward Party§! is projected to §Gwin§!"
+ SIA_election_results_4: "£GFX_democrat §CDemocrat Party§! is projected to §Gwin§!"
+ SIA_election_results_6: "£GFX_bhumjaithai §1Bhumjaithai Party§! is projected to §Gwin§!"
+ SIA_election_results_undecided: "§gElection season is still too early§!"
+ 
+ SIA_elections_playing_as_11: "§gUnited Thai Nation Party§!"
+ SIA_elections_playing_as_2: "£GFX_phua_thai §RPheu Thai Party§!"
+ 
  # Decision Localization
+ SIA_parliament_elections: "2023 Parliament Elections"
+ SIA_parliament_elections_desc: "Election season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
+ 
  SIA_parliament_category: "Parliament of Thailand"
  SIA_parliament_category_desc: ""
  SIA_open_parliament_gui: "View House of Representatives"
@@ -567,6 +609,7 @@
  SIA_second_no_confidence_vote: "Second Motion of No Confidence"
  SIA_third_no_confidence_vote: "Third Motion of No Confidence"
  SIA_2020_budget_bill_vote: "2020 Budget Bill"
+ SIA_prime_minister_desk: "                           §YPRIME MINISTER DESK§!             "
  SIA_emergency_loan_bill_covid: "§RCOVID§!: Emergency Loan Bill"
  SIA_emergency_loan_bill_covid_desc: "With the current global situation affecting Thailand, the government promulgated the 1 Trillion Baht Borrowing Decree, officially known as: §Ythe Emergency Decree Authorising the Ministry of Finance to Raise Loans to Solve Problems, to Remedy and Restore the Economy and Society as Affected by the Coronavirus Disease Pandemic, B.E. 2563 (2020).§!\n\nIf approved by Parliament, it would authorize borrowing of up to 1 trillion baht, making it the largest borrowing measure in Thailand's history to date and far exceeding the scale of previous emergency funding bills."
  SIA_emergency_loan_bill_oil_crisis: "§YOil Crisis§!: Emergency Loan Bill"

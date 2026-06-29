@@ -1,0 +1,78 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_bar_outline"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_outline.png"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_1"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_pprp.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_2"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_pheu.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_3"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_mfp.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_4"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_democrat.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_6"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_bhum.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_9"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_minor.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_11"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_utn.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+}

@@ -32,6 +32,20 @@ SIA_balance_of_power_category = {
 		original_tag = SIA
 	}
 }
+SIA_parliament_elections = {
+	icon = GFX_decision_cat_SIA_parliament
+
+	priority = 7
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		
+	}
+	visible_when_empty = yes
+	scripted_gui = SIA_parliament_elections_gui
+}
+
 SIA_protests_category = {
 	icon = GFX_decision_cat_SIA_parliament
 

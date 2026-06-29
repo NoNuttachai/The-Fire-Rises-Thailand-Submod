@@ -100,6 +100,15 @@ SIA_parliament_category = {
 		complete_effect = {
 		}
 	}
+	SIA_prime_minister_desk = {
+		icon = GFX_SOV_decision_decision_braker_tricolor
+		available = {
+			always = no
+		}
+		visible = {
+			always = yes
+		}
+	}
 	SIA_emergency_loan_bill_covid = {
 		icon = generic_coronavirus
 		visible = { has_country_flag = SIA_coronavirus_ongoing }

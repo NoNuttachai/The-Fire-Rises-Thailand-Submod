@@ -1,0 +1,169 @@
+SIA_parliament_elections = {
+	SIA_2023_elections = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 180
+		timeout_effect = {
+			SIA_decide_election_winner = yes
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_other_parties_campaigning = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		timeout_effect = {
+			SIA_roll_other_party_campaigning = yes
+			activate_mission = SIA_other_parties_campaigning
+			if = {
+				limit = {
+					check_variable = { campaign_cycle = 16 }
+				}
+				activate_mission = SIA_mfp_surges_in_polls
+				set_country_flag = mfp_cheat
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = mfp_cheat
+					}
+				}
+				add_to_variable = { campaign_cycle = 1 }
+			}
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_mfp_surges_in_polls = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		timeout_effect = {
+			set_temp_variable = { target = 3 }
+			set_temp_variable = { vote_change = 100 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_activate_prayut_2023 = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			activate_mission = SIA_2023_elections
+			activate_mission = SIA_other_parties_campaigning
+			SIA_setup_elections = yes
+			set_country_flag = SIA_ongoing_elections
+		}
+	}
+	SIA_campaign_for_your_party = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = SIA_ongoing_elections
+		}
+		cost = 25
+		days_remove = 14
+		complete_effect = {
+			set_temp_variable = { target = SIA_election_playing_as }
+			set_temp_variable = { vote_change = 3.5 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+	}
+	SIA_exchange_votes_for_pp = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = SIA_ongoing_elections
+		}
+		days_remove = 20
+		complete_effect = {
+			add_political_power = 50
+			set_temp_variable = { target = SIA_election_playing_as }
+			set_temp_variable = { vote_change = -3 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+	}
+	SIA_targetted_grab = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = SIA_ongoing_elections
+		}
+		complete_effect = {
+			set_temp_variable = { 1st_target = SIA_election_playing_as }
+			set_temp_variable = { 2nd_target = 1 }
+			set_temp_variable = { vote_change = 5 }
+			SIA_elections_targeted_vote_increase = yes
+		}
+	}
+	SIA_play_as_prayut = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			set_variable = { SIA_election_playing_as = 11 }
+		}
+	}
+	SIA_play_as_pheu = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		complete_effect = {
+			set_variable = { SIA_election_playing_as = 2 }
+		}
+	}
+}
