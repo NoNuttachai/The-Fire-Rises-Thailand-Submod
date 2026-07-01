@@ -1,5 +1,66 @@
 add_namespace = thai_events
+add_namespace = thai_elections
 add_namespace = thai_newsevents
+
+country_event = { #
+    id = thai_elections.1
+    title = thai_elections.1.t
+    desc = thai_elections.1.d
+   
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = { SIA_pprp_seats_var_temp = 1:party_seats_elections }
+			set_variable = { SIA_pprp_seats_var = SIA_pprp_seats_var_temp }
+			
+			set_temp_variable = { SIA_ptp_seats_var_temp = 2:party_seats_elections }
+			set_variable = { SIA_ptp_seats_var = SIA_ptp_seats_var_temp }
+			
+			set_temp_variable = { SIA_ffp_seats_var_temp = 3:party_seats_elections }
+			set_variable = { SIA_ffp_seats_var = SIA_ffp_seats_var_temp }
+			
+			set_temp_variable = { SIA_dp_seats_var_temp = 4:party_seats_elections }
+			set_variable = { SIA_dp_seats_var = SIA_dp_seats_var_temp }
+			
+			set_temp_variable = { SIA_tlp_seats_var_temp = 5:party_seats_elections }
+			set_variable = { SIA_tlp_seats_var = SIA_tlp_seats_var_temp }
+			
+			set_temp_variable = { SIA_bjt_seats_var_temp = 6:party_seats_elections }
+			set_variable = { SIA_bjt_seats_var = SIA_bjt_seats_var_temp }
+			
+			set_temp_variable = { SIA_ctpp_seats_var_temp = 7:party_seats_elections }
+			set_variable = { SIA_ctpp_seats_var = SIA_ctpp_seats_var_temp }
+			
+			set_temp_variable = { SIA_pcc_seats_var_temp = 8:party_seats_elections }
+			set_variable = { SIA_pcc_seats_var = SIA_pcc_seats_var_temp }
+			
+			set_temp_variable = { SIA_utn_seats_var_temp = 11:party_seats_elections }
+			set_variable = { SIA_utn_seats_var = SIA_utn_seats_var_temp }
+			
+			set_temp_variable = { minor_parties_temp = 9:party_seats_elections }
+			set_temp_variable = { minor_parties_divided = minor_parties_temp }
+			
+			divide_temp_variable = { minor_parties_divided = 2 }
+			round_temp_variable = minor_parties_divided
+			set_temp_variable_to_random = {
+				var = minor_parties_divided_random
+				min = 1
+				max = 6
+				integer = yes
+			}
+			subtract_from_temp_variable = { minor_parties_divided = minor_parties_divided_random }
+			subtract_from_temp_variable = { minor_parties_temp = minor_parties_divided }
+			
+			set_variable = { SIA_minor_gov_seats_var = minor_parties_temp }
+			set_variable = { SIA_minor_opp_seats_var = minor_parties_divided }
+		}
+	}
+    option = {
+        name = thai_elections.1.a 
+        SIA_setup_parliament_layout = yes
+		SIA_calculate_parliament_frame = yes
+    }
+}
 
 country_event = {
     id = thai_events.1

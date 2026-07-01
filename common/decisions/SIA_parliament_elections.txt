@@ -55,15 +55,24 @@ SIA_parliament_elections = {
 			activate_mission = SIA_other_parties_campaigning
 			SIA_setup_elections = yes
 			set_country_flag = SIA_ongoing_elections
+			set_country_flag = SIA_utn_active
 		}
 	}
 	SIA_campaign_for_your_party = {
 		icon = generic_crisis
 		available = {
-			always = yes
+			custom_trigger_tooltip = {
+				check_variable = { undecided_votes > 0 }
+				tooltip = SIA_undecided_votes_available
+			}
+			NOT = {
+				has_country_flag = SIA_active_election_decision
+			}
 		}
 		visible = {
-			has_country_flag = SIA_ongoing_elections
+			NOT = {
+				has_country_flag = SIA_active_election_decision
+			}
 		}
 		cost = 25
 		days_remove = 14
@@ -71,12 +80,64 @@ SIA_parliament_elections = {
 			set_temp_variable = { target = SIA_election_playing_as }
 			set_temp_variable = { vote_change = 3.5 }
 			SIA_elections_increase_votes_by_undecided = yes
+			set_country_flag = SIA_active_election_decision
+		}
+		remove_effect = {
+			clr_country_flag = SIA_active_election_decision
+		}
+	}
+	SIA_smear_campaign_against_pheu = {
+		icon = generic_crisis
+		available = {
+			NOT = {
+				has_country_flag = SIA_active_election_decision
+			}
+		}
+		visible = {
+			has_country_flag = SIA_ongoing_elections
+			check_variable = { SIA_election_playing_as = 11 }
+		}
+		cost = 25
+		days_remove = 14
+		complete_effect = {
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { vote_change = -3.5 }
+			SIA_elections_increase_votes_by_undecided = yes
+			set_country_flag = SIA_active_election_decision
+		}
+		remove_effect = {
+			clr_country_flag = SIA_active_election_decision
+		}
+	}
+	SIA_smear_campaign_against_utn = {
+		icon = generic_crisis
+		available = {
+			NOT = {
+				has_country_flag = SIA_active_election_decision
+			}
+		}
+		visible = {
+			has_country_flag = SIA_ongoing_elections
+			check_variable = { SIA_election_playing_as = 2 }
+		}
+		cost = 25
+		days_remove = 14
+		complete_effect = {
+			set_temp_variable = { target = 11 }
+			set_temp_variable = { vote_change = -3.5 }
+			SIA_elections_increase_votes_by_undecided = yes
+			set_country_flag = SIA_active_election_decision
+		}
+		remove_effect = {
+			clr_country_flag = SIA_active_election_decision
 		}
 	}
 	SIA_exchange_votes_for_pp = {
 		icon = generic_crisis
 		available = {
-			always = yes
+			NOT = {
+				has_country_flag = SIA_active_election_decision
+			}
 		}
 		visible = {
 			has_country_flag = SIA_ongoing_elections
@@ -87,21 +148,33 @@ SIA_parliament_elections = {
 			set_temp_variable = { target = SIA_election_playing_as }
 			set_temp_variable = { vote_change = -3 }
 			SIA_elections_increase_votes_by_undecided = yes
+			set_country_flag = SIA_active_election_decision
+		}
+		remove_effect = {
+			clr_country_flag = SIA_active_election_decision
 		}
 	}
-	SIA_targetted_grab = {
+	SIA_attract_pp_voters = {
 		icon = generic_crisis
 		available = {
-			always = yes
+			NOT = {
+				has_country_flag = SIA_active_election_decision
+			}
 		}
 		visible = {
 			has_country_flag = SIA_ongoing_elections
+			check_variable = { SIA_election_playing_as = 11 }
 		}
+		days_remove = 20
 		complete_effect = {
-			set_temp_variable = { 1st_target = SIA_election_playing_as }
+			set_temp_variable = { 1st_target = 11 }
 			set_temp_variable = { 2nd_target = 1 }
-			set_temp_variable = { vote_change = 5 }
+			set_temp_variable = { vote_change = 2.5 }
 			SIA_elections_targeted_vote_increase = yes
+			set_country_flag = SIA_active_election_decision
+		}
+		remove_effect = {
+			clr_country_flag = SIA_active_election_decision
 		}
 	}
 	SIA_play_as_prayut = {

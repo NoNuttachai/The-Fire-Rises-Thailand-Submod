@@ -42,296 +42,329 @@ SIA_setup_parliament_layout = {
 	custom_effect_tooltip = SIA_new_parliament_formed
 	# 0 - Government            1 - Opposition
 	custom_effect_tooltip = SIA_government_member
+	
+	
+	#PRIORITIZE GOVERNMENT LEADER FIRST
 	if = {
 		limit = {
-			check_variable = { party_1_alignment = 0 }
+			check_variable = { SIA_government_leader = 1 }
 		}
 		add_to_array = { SIA_government_party_array = 1 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 1 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_pprp_full
-		}
 	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 2 }
+		}
+		add_to_array = { SIA_government_party_array = 2 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 3 }
+		}
+		add_to_array = { SIA_government_party_array = 3 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 4 }
+		}
+		add_to_array = { SIA_government_party_array = 4 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 5 }
+		}
+		add_to_array = { SIA_government_party_array = 5 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 6 }
+		}
+		add_to_array = { SIA_government_party_array = 6 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 7 }
+		}
+		add_to_array = { SIA_government_party_array = 7 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 11 }
+		}
+		add_to_array = { SIA_government_party_array = 11 } 
+	}
+
 	
 	if = {
 		limit = {
-			
-			check_variable = { party_2_alignment = 0 }
-		}
-		add_to_array = { SIA_government_party_array = 2 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 2 }
-				}
+			NOT = {
+				check_variable = { SIA_government_leader = 1 }
 			}
-			custom_effect_tooltip = SIA_parliament_ptp_full
+			check_variable = { party_1_alignment = 0 }
 		}
+		add_to_array = { SIA_government_party_array = 1 } 
+		custom_effect_tooltip = SIA_parliament_pprp_full
 	}
 	
 	if = {
 		limit = {
 			NOT = {
-				
+				check_variable = { SIA_government_leader = 2 }
+			}
+			check_variable = { party_2_alignment = 0 }
+		}
+		add_to_array = { SIA_government_party_array = 2 } 
+		custom_effect_tooltip = SIA_parliament_ptp_full
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_government_leader = 3 }
 				has_country_flag = ffp_dismantled
 			}
 			check_variable = { party_3_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 3 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 3 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_ffp_full
-		}
+		custom_effect_tooltip = SIA_parliament_ffp_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_government_leader = 3 }
+			}
 			has_country_flag = ffp_dismantled
 			check_variable = { party_3_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 3 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 3 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_mfp_full
-		}
+		custom_effect_tooltip = SIA_parliament_mfp_full
 	}
 	
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_government_leader = 4 }
+			}
 			check_variable = { party_4_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 4 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 4 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_dp_full
-		}
+		custom_effect_tooltip = SIA_parliament_dp_full
 	}
 	
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_government_leader = 5 }
+			}
 			check_variable = { party_5_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 5 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 5 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_tlp_full
-		}
+		custom_effect_tooltip = SIA_parliament_tlp_full
 	}
 	
 	if = {
 		limit = {
 			
 			check_variable = { party_6_alignment = 0 }
+			NOT = {
+				check_variable = { SIA_government_leader = 6 }
+			}
 		}
 		add_to_array = { SIA_government_party_array = 6 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 6 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_bjt_full
-		}
+		custom_effect_tooltip = SIA_parliament_bjt_full
 	}
 	
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_government_leader = 7 }
+			}
 			check_variable = { party_7_alignment = 0 }
 		}
 		add_to_array = { SIA_government_party_array = 7 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 7 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_ctpp_full
-		}
+		custom_effect_tooltip = SIA_parliament_ctpp_full
 	}
 	
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_government_leader = 8 }
+			}
 			check_variable = { party_8_alignment = 0 }
 		}
-		add_to_array = { SIA_government_party_array = 8 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_government_leader = 8 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_pcc_full
-		}
+		add_to_array = { SIA_government_party_array = 8 }
+		custom_effect_tooltip = SIA_parliament_pcc_full		
 	}
-	
+	if = {
+		limit = {
+			has_country_flag = SIA_utn_active
+			NOT = {
+				check_variable = { SIA_government_leader = 11 }
+			}
+			check_variable = { party_11_alignment = 0 }
+		}
+		add_to_array = { SIA_government_party_array = 11 } 
+		custom_effect_tooltip = SIA_parliament_utn_full
+	}
 
 	#Minor Governmental Factions, Always align with either Government or Opposition
 	add_to_array = { SIA_government_party_array = 9 } 
 	custom_effect_tooltip = SIA_parliament_minor_gov_line_loc
 	
 	custom_effect_tooltip = SIA_opposition_member
+	#PRIORITIZE OPPOSITION LEADER FIRST EVIL LOGI(crap mouse brand) DID THIS TO ME
 	if = {
 		limit = {
-			
+			check_variable = { SIA_opposition_leader = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 1 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 2 }
+		}
+		add_to_array = { SIA_opposition_party_array = 2 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 3 }
+		}
+		add_to_array = { SIA_opposition_party_array = 3 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 4 }
+		}
+		add_to_array = { SIA_opposition_party_array = 4 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 5 }
+		}
+		add_to_array = { SIA_opposition_party_array = 5 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 6 }
+		}
+		add_to_array = { SIA_opposition_party_array = 6 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 7 }
+		}
+		add_to_array = { SIA_opposition_party_array = 7 } 
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_opposition_leader = 11 }
+		}
+		add_to_array = { SIA_opposition_party_array = 11 } 
+	}
+	
+	
+	
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_opposition_leader = 1 }
+			}
 			check_variable = { party_1_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 1 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 1 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_pprp_full
-		}
-	}
-	if = {
-		limit = {
-			
-			check_variable = { party_2_alignment = 1 }
-		}
-		add_to_array = { SIA_opposition_party_array = 2 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 2 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_ptp_full
-		}
+		custom_effect_tooltip = SIA_parliament_pprp_full
 	}
 	if = {
 		limit = {
 			NOT = {
-				
+				check_variable = { SIA_opposition_leader = 2 }
+			}
+			check_variable = { party_2_alignment = 1 }
+		}
+		add_to_array = { SIA_opposition_party_array = 2 } 
+		custom_effect_tooltip = SIA_parliament_ptp_full
+	}
+	if = {
+		limit = {
+			NOT = {
 				has_country_flag = ffp_dismantled
+				check_variable = { SIA_opposition_leader = 3 }
 			}
 			check_variable = { party_3_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 3 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 3 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_ffp_full
-		}
+		custom_effect_tooltip = SIA_parliament_ffp_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_opposition_leader = 3 }
+			}
 			check_variable = { party_3_alignment = 1 }
 			has_country_flag = ffp_dismantled
 		}
 		add_to_array = { SIA_opposition_party_array = 3 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 3 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_mfp_full
-		}
+		custom_effect_tooltip = SIA_parliament_mfp_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_opposition_leader = 4 }
+			}
 			check_variable = { party_4_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 4 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 4 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_dp_full
-		}
+		custom_effect_tooltip = SIA_parliament_dp_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_opposition_leader = 5 }
+			}
 			check_variable = { party_5_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 5 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 5 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_tlp_full
-		}
+		custom_effect_tooltip = SIA_parliament_tlp_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_opposition_leader = 6 }
+			}
 			check_variable = { party_6_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 6 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 6 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_bjt_full
-		}
+		custom_effect_tooltip = SIA_parliament_bjt_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_opposition_leader = 7 }
+			}
 			check_variable = { party_7_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 7 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 7 }
-				}
-			}
-			custom_effect_tooltip = SIA_parliament_ctpp_full
-		}
+		custom_effect_tooltip = SIA_parliament_ctpp_full
 	}
 	if = {
 		limit = {
-			
+			NOT = {
+				check_variable = { SIA_opposition_leader = 8 }
+			}
 			check_variable = { party_8_alignment = 1 }
 		}
 		add_to_array = { SIA_opposition_party_array = 8 } 
-		if = {
-			limit = {
-				NOT = {
-					check_variable = { SIA_opposition_leader = 8 }
-				}
+		custom_effect_tooltip = SIA_parliament_pcc_full
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_opposition_leader = 11 }
 			}
-			custom_effect_tooltip = SIA_parliament_pcc_full
+			check_variable = { party_11_alignment = 1 }
 		}
+		add_to_array = { SIA_opposition_party_array = 11 } 
+		custom_effect_tooltip = SIA_parliament_utn_full
 	}
 	
 	add_to_array = { SIA_opposition_party_array = 10 } 
@@ -434,6 +467,13 @@ SIA_change_parliament_seat = {
 		add_to_variable = { SIA_vacant_seats_var = seats }
 		custom_effect_tooltip = SIA_change_vacant_seats
 	}
+	if = {
+		limit = {
+			check_variable = { target = 12 }
+		}
+		add_to_variable = { SIA_utn_seats_var = seats }
+		custom_effect_tooltip = SIA_change_utn_seats
+	}
 	set_temp_variable = { seats = 0 }
 	clamp_variable = {
 		var = SIA_pprp_seats_var
@@ -472,6 +512,11 @@ SIA_change_parliament_seat = {
 	}
 	clamp_variable = {
 		var = SIA_pcc_seats_var
+		min = 0
+		max = 500
+	}
+	clamp_variable = {
+		var = SIA_utn_seats_var
 		min = 0
 		max = 500
 	}
@@ -566,8 +611,14 @@ SIA_calculate_total_seats = {
 		}
 		add_to_variable = { SIA_gov_seats_var = SIA_pcc_seats_var } 
 	}
+	if = {
+		limit = {
+			check_variable = { party_11_alignment = 0 }
+		}
+		add_to_variable = { SIA_gov_seats_var = SIA_utn_seats_var } 
+	}
 	else = {
-		add_to_variable = { SIA_opp_seats_var = SIA_pcc_seats_var } 
+		add_to_variable = { SIA_opp_seats_var = SIA_utn_seats_var } 
 	}
 	
 	add_to_variable = { SIA_gov_seats_var = SIA_minor_gov_seats_var } 

@@ -445,6 +445,10 @@
  thai_events.50.b: "Yet they idolized Mao cocksuckers like Chit Pumisak"
  thai_events_50_tt: "§LEvent Image is taken from Natthawut Loathaisong work on ArtStation§!\n§Whttps://www.artstation.com/artwork/zAdorQ§!\n\n"
  
+ thai_elections.1.t: "Results are out"
+ thai_elections.1.d: "Logi Sucks"
+ thai_elections.1.a: "new gov"
+ 
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
@@ -502,6 +506,7 @@
  SIA_parliament_mfp_full: "£GFX_orange_party_2 §OMove Forward Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§! [SIA_check_coalition_leader] \n§Y[?SIA_tlp_seats_var|0]§! Seats"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pcc_seats_var|0]§! Seats"
+ SIA_parliament_utn_full: "§gUnited Thai Nation Party§! [SIA_check_coalition_leader] \n§Y[?SIA_utn_seats_var|0]§! Seats"
 
  SIA_government_coalition_leader: "§P- Government Coalition Leader§!"
  SIA_opposition_leader: "§R- Opposition Leader§!"
@@ -528,6 +533,8 @@
  
  SIA_parliament_detail_pcc_desc: "£GFX_prachachat §YPrachachat Party§! (Phak Prachachat)\n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Wan Muhamad Noor Matha\n\n§YPrachachat Party§! is a Thai political party founded in 2018, primarily representing the §YMuslim-majority provinces in southern Thailand§!. Led by veteran politician §YWan Muhamad Noor Matha§!, the party focuses on issues affecting the southern border provinces near Malaysia, including §Ypeace and reconciliation, Muslim cultural rights, decentralization, and economic development.§!.\n\nIn the 2019 election, the party won 7 seats, all from southern constituencies, and aligned with the opposition."
  
+ SIA_parliament_detail_utn_desc: "§gUnited Thai Nation Party§! \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Prayut Chan-O-Cha\n\n§YUnited Thai Nation§! is prayut's party."
+ 
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
@@ -550,6 +557,7 @@
  SIA_change_tlp_seats: "£GFX_thai_liberal_party §YThai Liberal Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_ctpp_seats: "£GFX_chartthaipattana §sChart Thai Pattana Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_pcc_seats: "£GFX_prachachat §YPrachachat Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_utn_seats: "§gUnited Thai Nation Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_minor_government_coalition_seats: "§LMinor Governmental Coalition Parties§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_minor_oppositional_parties_seats: "§LMinor Oppositional Parties§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_vacant_seats: "§gVacant§! §YSeat§! Change: [?seats|=+0]"
@@ -571,7 +579,7 @@
  SIA_parliament_mfp_election: "£GFX_orange_party_2 §OMove Forward Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
  SIA_parliament_tlp_election: "£GFX_thai_liberal_party §YThai Liberal Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
  SIA_parliament_pcc_election: "£GFX_prachachat §YPrachachat Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_utp_election: "§gUnited Thai Nation Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_utn_election: "§gUnited Thai Nation Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
  SIA_parliament_minor_parties_election: "§LMinor Parties | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
  
  SIA_change_1_votes: "£GFX_palang_pracharath §PPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
@@ -601,7 +609,7 @@
  # Decision Localization
  SIA_parliament_elections: "2023 Parliament Elections"
  SIA_parliament_elections_desc: "Election season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
- 
+ SIA_undecided_votes_available: "§YThere are still available§! §gUndecided Votes§!"
  SIA_parliament_category: "Parliament of Thailand"
  SIA_parliament_category_desc: ""
  SIA_open_parliament_gui: "View House of Representatives"

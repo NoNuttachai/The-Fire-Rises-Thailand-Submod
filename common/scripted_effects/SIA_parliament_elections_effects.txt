@@ -644,6 +644,18 @@ SIA_decide_election_winner = {
 			check_variable = { 2:party_votes > 11:party_votes }
 		}
 		custom_effect_tooltip = SIA_election_results_2
+		set_variable = { SIA_government_leader = 2 }
+		set_variable = { party_1_alignment = 0 } 
+		set_variable = { party_2_alignment = 0 } 
+		set_variable = { party_3_alignment = 1 } 
+		set_variable = { party_4_alignment = 0 } 
+		set_variable = { party_5_alignment = 2 } 
+		set_variable = { party_6_alignment = 0 } 
+		set_variable = { party_7_alignment = 2 } 
+		set_variable = { party_8_alignment = 2 } 
+		set_variable = { party_11_alignment = 1 } 
+		
+		set_variable = { SIA_opposition_leader = 11 }
 	}
 	else_if = {
 		limit = {
@@ -688,8 +700,23 @@ SIA_decide_election_winner = {
 			check_variable = { 11:party_votes > 6:party_votes }
 		}
 		custom_effect_tooltip = SIA_election_results_11
+		set_variable = { party_11_alignment = 0 } 
+		set_variable = { SIA_government_leader = 11 }
+		set_variable = { party_1_alignment = 0 } 
+		set_variable = { party_2_alignment = 1 } 
+		set_variable = { party_3_alignment = 1 } 
+		set_variable = { party_4_alignment = 0 } 
+		set_variable = { party_5_alignment = 2 } 
+		set_variable = { party_6_alignment = 0 } 
+		set_variable = { party_7_alignment = 2 } 
+		set_variable = { party_8_alignment = 2 } 
+
+		
+		set_variable = { SIA_opposition_leader = 2 }
+		
 	}
 	else = {
 		custom_effect_tooltip = SIA_election_results_undecided
 	}
+	country_event = thai_elections.1
 }
