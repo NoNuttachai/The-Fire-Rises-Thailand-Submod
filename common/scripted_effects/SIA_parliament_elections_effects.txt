@@ -12,64 +12,45 @@ SIA_setup_elections = { #Protests dismantled - Prayut present scenario
 	set_variable = { undecided_votes = 100 }
 	# Party votes are in percentage out of 100
 	11 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 7 }
 	}
 	1 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 4 }
 	}
 	2 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 12 }
 	}
 	3 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 8 }
 	}
 	4 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 4 }
 	}
 	6 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 5 }
 	}
 	9 = {
-		set_variable = { party_votes = 0 }
+		set_variable = { party_votes = 3 }
 	}
 	SIA_elections_translate_votes_to_seats = yes
 }
 SIA_roll_other_party_campaigning = {
-	random_list = {
-		1 = {
-			modifier = {
-				factor = 0.5
-				check_variable = { 1:party_votes > 25 }
-			}
-			
-			set_temp_variable = { target = 1 }
-			set_temp_variable_to_random = {
-				var = vote_change
-				min = 2
-				max = 3.5
-				integer = no
-			}
-			if = {
-				limit = {
-					check_variable = { undecided_votes > 0 }
-				}
-				SIA_elections_increase_votes_by_undecided = yes
-			}
+	if = {
+		limit = {
+			check_variable = { SIA_election_playing_as = 2 }
 		}
-		if = {
-			limit = {
-				NOT = { check_variable = { SIA_election_playing_as = 2 } }
-			}
+		random_list = {
 			1 = {
 				modifier = {
-					factor = 0.5
-					check_variable = { 2:party_votes > 25 }
+					factor = 0
+					check_variable = { 1:party_votes > 5 }
 				}
-				set_temp_variable = { target = 2 }
+				
+				set_temp_variable = { target = 1 }
 				set_temp_variable_to_random = {
 					var = vote_change
 					min = 2
-					max = 3.5
+					max = 4
 					integer = no
 				}
 				if = {
@@ -79,94 +60,86 @@ SIA_roll_other_party_campaigning = {
 					SIA_elections_increase_votes_by_undecided = yes
 				}
 			}
-		}
-		1 = {
-			modifier = {
-				factor = 0
-				check_variable = { 6:party_votes > 10 }
-			}
-			set_temp_variable = { target = 6 }
-			set_temp_variable_to_random = {
-				var = vote_change
-				min = 2
-				max = 3.5
-				integer = no
-			}
-			if = {
-				limit = {
-					check_variable = { undecided_votes > 0 }
+			4 = {
+				modifier = {
+					factor = 0
+					check_variable = { 6:party_votes > 10 }
 				}
-				SIA_elections_increase_votes_by_undecided = yes
-			}
-		}
-		1 = {
-			modifier = {
-				factor = 0
-				check_variable = { 4:party_votes > 15 }
-			}
-			set_temp_variable = { target = 4 }
-			set_temp_variable_to_random = {
-				var = vote_change
-				min = 2
-				max = 3.5
-				integer = no
-			}
-			if = {
-				limit = {
-					check_variable = { undecided_votes > 0 }
+				set_temp_variable = { target = 6 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
 				}
-				SIA_elections_increase_votes_by_undecided = yes
-			}
-		}
-		1 = {
-			modifier = {
-				factor = 0.5
-				check_variable = { 3:party_votes > 25 }
-			}
-			set_temp_variable = { target = 3 }
-			set_temp_variable_to_random = {
-				var = vote_change
-				min = 2
-				max = 3.5
-				integer = no
-			}
-			if = {
-				limit = {
-					check_variable = { undecided_votes > 0 }
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
 				}
-				SIA_elections_increase_votes_by_undecided = yes
 			}
-		}
-		
-		
-		1 = {
-			modifier = {
-				factor = 0
-				check_variable = { 9:party_votes > 9 }
-			}
-			set_temp_variable = { target = 9 }
-			set_temp_variable_to_random = {
-				var = vote_change
-				min = 2
-				max = 3.5
-				integer = no
-			}
-			if = {
-				limit = {
-					check_variable = { undecided_votes > 0 }
+			3 = {
+				modifier = {
+					factor = 0
+					check_variable = { 4:party_votes > 12 }
 				}
-				SIA_elections_increase_votes_by_undecided = yes
+				set_temp_variable = { target = 4 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
 			}
-		}
-		if = {
-			limit = {
-				NOT = { check_variable = { SIA_election_playing_as = 11 } }
+			4 = {
+				modifier = {
+					factor = 0.5
+					check_variable = { 3:party_votes > 25 }
+				}
+				set_temp_variable = { target = 3 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
 			}
+			
+			
 			1 = {
 				modifier = {
 					factor = 0
-					
+					check_variable = { 9:party_votes > 9 }
 				}
+				set_temp_variable = { target = 9 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+			
+			4 = {
 				modifier = {
 					factor = 0.5
 					check_variable = { 11:party_votes > 25 }
@@ -175,7 +148,7 @@ SIA_roll_other_party_campaigning = {
 				set_temp_variable_to_random = {
 					var = vote_change
 					min = 2
-					max = 3.5
+					max = 4
 					integer = no
 				}
 				if = {
@@ -187,7 +160,132 @@ SIA_roll_other_party_campaigning = {
 			}
 		}
 	}
-	
+	if = {
+		limit = {
+			check_variable = { SIA_election_playing_as = 11 }
+		}
+		random_list = {
+			1 = {
+				modifier = {
+					factor = 0
+					check_variable = { 1:party_votes > 5 }
+				}
+				
+				set_temp_variable = { target = 1 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+			
+			5 = {
+				modifier = {
+					factor = 0.5
+					check_variable = { 2:party_votes > 25 }
+				}
+				set_temp_variable = { target = 2 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+			
+			4 = {
+				modifier = {
+					factor = 0
+					check_variable = { 6:party_votes > 10 }
+				}
+				set_temp_variable = { target = 6 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+			3 = {
+				modifier = {
+					factor = 0
+					check_variable = { 4:party_votes > 12 }
+				}
+				set_temp_variable = { target = 4 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+			4 = {
+				modifier = {
+					factor = 0.5
+					check_variable = { 3:party_votes > 22 }
+				}
+				set_temp_variable = { target = 3 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+			
+			
+			1 = {
+				modifier = {
+					factor = 0
+					check_variable = { 9:party_votes > 9 }
+				}
+				set_temp_variable = { target = 9 }
+				set_temp_variable_to_random = {
+					var = vote_change
+					min = 2
+					max = 4
+					integer = no
+				}
+				if = {
+					limit = {
+						check_variable = { undecided_votes > 0 }
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+				}
+			}
+		}
+	}
 }
 SIA_elections_update_undecided = {
 	clamp_variable = {
@@ -579,6 +677,17 @@ SIA_decide_election_winner = {
 			check_variable = { 6:party_votes > 11:party_votes }
 		}
 		custom_effect_tooltip = SIA_election_results_6
+	}
+	else_if = {
+		limit = {
+			check_variable = { 11:party_votes > 1:party_votes }
+			check_variable = { 11:party_votes > 3:party_votes }
+			check_variable = { 11:party_votes > 4:party_votes }
+			check_variable = { 11:party_votes > 2:party_votes }
+			check_variable = { 11:party_votes > 9:party_votes }
+			check_variable = { 11:party_votes > 6:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_11
 	}
 	else = {
 		custom_effect_tooltip = SIA_election_results_undecided

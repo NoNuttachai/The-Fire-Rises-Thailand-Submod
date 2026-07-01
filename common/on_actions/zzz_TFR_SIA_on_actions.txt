@@ -45,7 +45,7 @@ on_actions = {
 				country_event = { id = thai_events.50 days = 110 } # 20 April 2020 #MilkTeaAlliance
 				
 				
-				1493 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
+				1495 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
 				set_variable = { bangkok_mayor = 0 }
 				activate_mission = SIA_first_no_confidence_vote
 				activate_mission = SIA_2020_budget_bill_vote

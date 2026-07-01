@@ -37,44 +37,6 @@ SIA_parliament_elections = {
 		timeout_effect = {
 			SIA_roll_other_party_campaigning = yes
 			activate_mission = SIA_other_parties_campaigning
-			if = {
-				limit = {
-					check_variable = { campaign_cycle = 16 }
-				}
-				activate_mission = SIA_mfp_surges_in_polls
-				set_country_flag = mfp_cheat
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = mfp_cheat
-					}
-				}
-				add_to_variable = { campaign_cycle = 1 }
-			}
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_mfp_surges_in_polls = {
-		icon = generic_crisis
-		allowed = {
-			tag = SIA
-		}
-		available = {
-			always = no
-		}
-		activation = {
-			always = no
-		}
-		is_good = no
-		selectable_mission = no
-		days_mission_timeout = 10
-		timeout_effect = {
-			set_temp_variable = { target = 3 }
-			set_temp_variable = { vote_change = 100 }
-			SIA_elections_increase_votes_by_undecided = yes
 		}
 		complete_effect = {
 			

@@ -21,17 +21,17 @@ SIA_southern_fire_state_modifier = {
 	icon = "GFX_idea_SIA_SouthernFire"
 	enable = { 
 		SIA = {
-			controls_state = 1492
+			controls_state = 1494
 			
 		}
-		1492 = {
+		1494 = {
 			NOT = {
 				is_core_of = SIA
 			}
 		}
 	}
 	remove_trigger = {
-		1492 = {
+		1494 = {
 			is_core_of = SIA
 		}
 	}

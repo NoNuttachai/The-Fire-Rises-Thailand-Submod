@@ -705,7 +705,7 @@ country_event = {
 	
     option = {
         name = thai_events.31.a
-		1492 = {
+		1494 = {
 			add_core_of = SIA
 		}
 		add_stability = 0.05
@@ -722,7 +722,7 @@ country_event = {
 	
     option = {
         name = thai_events.32.a
-		1492 = {
+		1494 = {
 			remove_core_of = SIA
 			add_dynamic_modifier = { modifier = SIA_southern_fire_state_modifier }
 			hidden_effect = {

@@ -53,7 +53,7 @@ guiTypes = {
 		}
 		iconType = {
 			name = "party_bar_fill"
-			position = { x = 1 y = 30 }
+			position = { x = 1 y = 29 }
 			quadTextureSprite = "GFX_SIA_parliament_elections_bar"
 		}
 		iconType = {

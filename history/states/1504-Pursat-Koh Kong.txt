@@ -1,7 +1,7 @@
 state = {
-	id = 1500
-	name = "STATE_1500"
-	manpower = 254827
+	id = 1504
+	name = "STATE_1504"
+	manpower = 545854
 	state_category = town
 	
 	resources = {
@@ -10,13 +10,16 @@ state = {
 	history = {
 		owner = CAM
 		add_core_of = CAM
+		victory_points = { 7404 1 }
 		buildings = {
 			infrastructure = 2
-			
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
 		}
 	}
 	
 	provinces = {
-		12447 12460
+		1353 4359 7404 12191
 	}
 }
