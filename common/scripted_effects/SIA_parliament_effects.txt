@@ -611,6 +611,9 @@ SIA_calculate_total_seats = {
 		}
 		add_to_variable = { SIA_gov_seats_var = SIA_pcc_seats_var } 
 	}
+	else = {
+		add_to_variable = { SIA_opp_seats_var = SIA_pcc_seats_var } 
+	}
 	if = {
 		limit = {
 			check_variable = { party_11_alignment = 0 }

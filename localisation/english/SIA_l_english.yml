@@ -63,8 +63,8 @@
  SIA_move_forward_with_the_protestors: "Move Forward with the Protestors"
  SIA_move_forward_with_the_protestors_desc: ""
  
- SIA_ally_with_workers_union: "Ally with Workers Union"
- SIA_ally_with_workers_union_desc: "They have taken untold millions that they never toiled to earn,\nBut without our brain and muscle not a single wheel can turn.\nWe can break their haughty power, gain our freedom when we learn\nThat the union makes us strong.\n\nSolidarity Forever (song)\n- Ralph Chaplin"
+ SIA_workers_union_strikes: "Ally with Workers Union"
+ SIA_workers_union_strikes_desc: "They have taken untold millions that they never toiled to earn,\nBut without our brain and muscle not a single wheel can turn.\nWe can break their haughty power, gain our freedom when we learn\nThat the union makes us strong.\n\nSolidarity Forever (song)\n- Ralph Chaplin"
  
  SIA_ladyboys_against_dictatorship: "Ladyboys Against Dictatorship"
  SIA_ladyboys_against_dictatorship_desc: "The fight for LGBTQIA+ rights is inseparable from the struggle against the ruling dictatorship. While those in power claim that Thailand is already an accepting nation, they continue to exploit rigid social norms to keep people divided and distracted from systemic inequality. As long as the junta remains in power, LGBTQIA+ rights will remain out of reach."
@@ -89,9 +89,11 @@
  
  SIA_the_people_wrath: "The People's Wrath"
  SIA_the_people_wrath_desc: ""
+ SIA_the_people_wrath_tt: "§Y£GFX_orange_party_2 §OMove Forward Party§! will §Ggain an advantage§! in future elections§!"
  
  SIA_denouced_the_extremists: "Denounce the Extremists"
  SIA_denouced_the_extremists_desc: ""
+ SIA_denouced_the_extremists_tt: "§Y£GFX_democrat §CDemocrat Party§! and £GFX_phua_thai §RPheu Thai Party§! will §Ggain an advantage§! in future elections§!"
  
  SIA_side_with_uncle_tuu: "Side with Uncle Tuu"
  SIA_side_with_uncle_tuu_desc: "We will fulfill our promise, give us just a little more time,\nAnd the beautiful land will return.\nWe will act with integrity, just have trust and faith in us.\nThe land will soon be well, returning happiness to you, the people.\n\nReturning Happiness to Thailand (song)\n - Prayut Chan-o-cha"
@@ -203,6 +205,8 @@
  SIA_active_protests_3: "Mass Riots"
  SIA_state_of_emergency: "State of Emergency"
  SIA_triumph_in_saudi_arabia: "Triumph in Saudi Arabia"
+ SIA_iranian_oil_deal_idea: "Iranian Oil Deal"
+ SIA_truck_protests: "Truck Protests"
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -444,6 +448,15 @@
  thai_events.50.a: "Free Hong Kong! Free Taiwan! Free Thailand!"
  thai_events.50.b: "Yet they idolized Mao cocksuckers like Chit Pumisak"
  thai_events_50_tt: "§LEvent Image is taken from Natthawut Loathaisong work on ArtStation§!\n§Whttps://www.artstation.com/artwork/zAdorQ§!\n\n"
+ 
+ thai_events.51.t: "Petrol Stations Run Dry Amid Nationwide Trucker Strike"
+ thai_events.51.d: "A nationwide strike by truckers has caused petrol stations across the country to run out of fuel as tanker drivers joined the movement. With fuel tankers unable to transport petrol and diesel from refineries and storage depots to filling stations, many stations quickly exhausted their remaining supplies, leaving motorists facing widespread shortages."
+ thai_events.51.a: "Find out the hard way"
+ thai_events.51.b: "This is concerning"
+ 
+ thai_events.52.t: "Trucker Convoy Protests"
+ thai_events.52.d: "Hundreds of trucks from the Federation of Thai Land Transport, which represents more than 400,000 truck operators nationwide, staged a convoy protest against the government of Prayut Chan-o-cha and the Ministry of Energy over their failure to address soaring fuel prices and the economic impact of the government's COVID-19 lockdown measures on truckers' incomes and livelihoods. Police were mobilized to ensure road safety and minimize public disruption.\n\nThe federation's president said the demonstration was intended to highlight the impact of soaring fuel prices on the transport industry following the Saudi Arabian conflict, which disrupted global oil markets. He said the federation had already submitted proposals to the government and warned that, if its demands continued to be ignored, it would meet to discuss escalating its campaign.\n\nHe warned that if the government failed to take meaningful action to provide relief and improve conditions for the transport sector, the federation would organize a nationwide truckers' strike. In an interview with the media, he warned that a halt in freight transport would severely disrupt fuel distribution and supply chains, saying..."
+ thai_events.52.a: "Watch what happens if the trucks stop running."
  
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
@@ -777,12 +790,12 @@
  SIA_amnesty_international_investigations: "Amnesty International: Expose Police Brutality"
  SIA_amnesty_international_investigations_desc: ""
  
- 
- 
- 
- 
- 
- 
+ SIA_launch_rallies: "Launch Rallies"
+ SIA_organize_protests: "Organize Protests"
+ SIA_coordinate_with_workers_union: "Coordinate with Workers' Union"
+ SIA_radicalize_the_movement: "Radicalize the Movement"
+ SIA_fight_the_arrests_decision: "Fight the Arrests"
+ SIA_unify_the_movement: "Unify the Movement"
  
  
  
@@ -792,6 +805,8 @@
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
  SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y356 days§! of §YOil in Reserves§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
+ SIA_oil_distribution_to_stations: "Oil Distribution to Gas Stations"
+ SIA_truckers_start_protesting: "Truckers Start Protesting"
  
  SIA_empty_oil_reserves_causes_damage_mission: "Depleted Oil Reserves Causing Shortages"
  SIA_empty_oil_reserves_causes_damage_mission_tt: "§gOil in Reserves is currently present§!."
@@ -803,10 +818,10 @@
  SIA_russian_oil_deal: "Russian Oil Deal"
  SIA_russian_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_Prayut_Putin\n\n\n\n\n\nThailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
  
- SIA_african_oil_deal: "@ALG @MZBPTT Exploration and Production in @ALG @MZBAfrica"
+ SIA_african_oil_deal: "PTT Exploration and Production in @ALG @MZBAfrica"
  SIA_african_oil_deal_desc: ""
  
- SIA_african_oil_deal_2: "@ALG @MZBFurther PTT Exploration and Production in Africa"
+ SIA_african_oil_deal_2: "Further PTT Exploration and Production in @ALG @MZBAfrica"
  SIA_african_oil_deal_2_desc: ""
  
  SIA_increase_american_oil_imports: "Increase American Oil Imports"

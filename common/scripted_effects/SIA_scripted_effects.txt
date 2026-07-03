@@ -213,6 +213,14 @@ SIA_decrease_protests = {
 			has_idea = SIA_active_protests_1
 		}
 		remove_ideas = SIA_active_protests_1
+		remove_opinion_modifier = {
+			target = PRC
+			modifier = SIA_milktea_prc
+		}
+		remove_opinion_modifier = {
+			target = CHI
+			modifier = SIA_milktea_chi
+		}
 	}
 	else_if = {
 		limit = {

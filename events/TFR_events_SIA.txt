@@ -245,6 +245,7 @@ country_event = {
 		complete_national_focus = SIA_raise_our_three_fingers
 		hidden_effect = {
 			activate_mission = SIA_government_action_1
+			activate_mission = SIA_oil_distribution_to_stations
 		}
 	}
 	option = {
@@ -1226,6 +1227,44 @@ country_event = {
 		add_power_balance_value = {
 			id = SIA_power_balance
 			value = -0.02
+		}
+	}
+}
+country_event = {
+    id = thai_events.51 # Petrol Stations Run Dry Amid Nationwide Trucker Strike
+    title = thai_events.51.t
+    desc = thai_events.51.d
+	picture = GFX_report_tanker_truckers_on_strike
+	is_triggered_only = yes
+    option = {
+        name = thai_events.51.a
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+	}
+	option = {
+        name = thai_events.51.b
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+	}
+}
+country_event = {
+    id = thai_events.52 # Petrol Stations Run Dry Amid Nationwide Trucker Strike
+    title = thai_events.52.t
+    desc = thai_events.52.d
+	picture = GFX_report_trucker_convoy_protests
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			activate_mission = SIA_truckers_start_protesting
+		}
+	}
+    option = {
+        name = thai_events.52.a
+		effect_tooltip = {
+			activate_mission = SIA_truckers_start_protesting
 		}
 	}
 }

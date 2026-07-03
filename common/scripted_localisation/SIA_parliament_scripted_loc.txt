@@ -614,13 +614,6 @@ defined_text = {
 		}
 		localization_key = SIA_change_[?2nd_target]_votes
 	}
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { 1st_target > 0 }
-		}
-		localization_key = SIA_change_[?1st_target]_votes
-	}
 }
 defined_text = {
 	name = SIA_elections_playing_as

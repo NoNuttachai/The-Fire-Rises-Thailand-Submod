@@ -75,7 +75,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			set_variable = { SIA_protests_days = 100 }
+			activate_mission = SIA_the_protests_intensify
+			add_political_power = 25
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.1
+			}
+			unlock_decision_tooltip = SIA_launch_rallies
+			unlock_decision_tooltip = SIA_organize_protests
 		}
 	}
 	focus = {
@@ -120,7 +128,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -30
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
+			unlock_decision_tooltip = SIA_radicalize_the_movement
 		}
 	}
 	focus = {
@@ -162,6 +178,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			if = {
+				limit = {
+					has_active_mission = SIA_oil_distribution_to_stations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_distribution_to_stations
+					days = -25
+				}
+			}
+			else_if = {
+				limit = {
+					has_active_mission = SIA_truckers_start_protesting
+				}
+				add_days_mission_timeout = {
+					mission = SIA_truckers_start_protesting
+					days = -10
+				}
+			}
+			
 			unlock_decision_tooltip = SIA_demonstrate_infront_of_the_ministry_of_energy
 			unlock_decision_tooltip = SIA_demonstrate_infront_of_the_ptt_headquarters
 		}
@@ -184,7 +219,25 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_active_mission = SIA_oil_distribution_to_stations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_distribution_to_stations
+					days = -20
+				}
+			}
+			else_if = {
+				limit = {
+					has_active_mission = SIA_truckers_start_protesting
+				}
+				add_days_mission_timeout = {
+					mission = SIA_truckers_start_protesting
+					days = -10
+				}
+			}
+			unlock_decision_tooltip = SIA_coordinate_with_workers_union
 		}
 	}
 	focus = {
@@ -206,7 +259,32 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -10
+			}
+			if = {
+				limit = {
+					has_active_mission = SIA_oil_distribution_to_stations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_distribution_to_stations
+					days = -15
+				}
+			}
+			else_if = {
+				limit = {
+					has_active_mission = SIA_truckers_start_protesting
+				}
+				add_days_mission_timeout = {
+					mission = SIA_truckers_start_protesting
+					days = -10
+				}
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	focus = {
@@ -249,7 +327,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_political_power = 25
+			unlock_decision_tooltip = SIA_unify_the_movement
 		}
 	}
 	focus = {
@@ -270,7 +349,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			add_political_power = 50
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 	focus = {
@@ -354,7 +437,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_fight_the_arrests_decision
 		}
 	}
 	focus = {
@@ -376,7 +459,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = SIA_the_people_wrath_tt
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.025
+			}
 		}
 	}
 	
@@ -399,7 +486,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = SIA_denouced_the_extremists_tt
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.025
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.025
+			}
 		}
 	}
 	# Right Side - Prayut
@@ -497,7 +592,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_persecute_the_agitators
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Court_System
 		x = 1
 		y = 2
 		cost = 5
@@ -674,7 +769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_half_payment_policy
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_Subsidize_Government_Business
 		x = -1
 		y = 2
 		cost = 5
@@ -774,13 +869,12 @@ focus_tree = {
 				id = SIA_power_balance
 				value = 0.05
 			}
-			SIA_decrease_protests = yes
 			
 		}
 	}
 	focus = {
 		id = SIA_phuket_sandbox
-		icon = GFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_ReOpenTourism
 		x = -2
 		y = 1
 		cost = 5
@@ -806,7 +900,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_covid_vaccine_drive
-		icon = GFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_Vaccination
 		x = 2
 		y = 1
 		cost = 5
@@ -840,7 +934,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_smother_the_flames
-		icon = GFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_Extinguish_the_Flames
 		x = -1
 		y = 2
 		cost = 5
@@ -865,7 +959,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_deploy_the_army
-		icon = GFX_goal_SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_Crush_The_Movement
 		x = 1
 		y = 2
 		cost = 5

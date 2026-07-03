@@ -33,10 +33,19 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
+		fixed_random_seed = no
 		timeout_effect = {
 			SIA_roll_other_party_campaigning = yes
 			activate_mission = SIA_other_parties_campaigning
+			if = {
+				limit = {
+					check_variable = { undecided_votes = 0 }
+				}
+				hidden_effect = {
+					SIA_roll_2nd_target = yes
+				}
+			}
 		}
 		complete_effect = {
 			
@@ -70,9 +79,7 @@ SIA_parliament_elections = {
 			}
 		}
 		visible = {
-			NOT = {
-				has_country_flag = SIA_active_election_decision
-			}
+			has_country_flag = SIA_ongoing_elections
 		}
 		cost = 25
 		days_remove = 14
@@ -86,7 +93,7 @@ SIA_parliament_elections = {
 			clr_country_flag = SIA_active_election_decision
 		}
 	}
-	SIA_smear_campaign_against_pheu = {
+	SIA_smear_campaign = {
 		icon = generic_crisis
 		available = {
 			NOT = {
@@ -100,9 +107,90 @@ SIA_parliament_elections = {
 		cost = 25
 		days_remove = 14
 		complete_effect = {
-			set_temp_variable = { target = 2 }
-			set_temp_variable = { vote_change = -3.5 }
-			SIA_elections_increase_votes_by_undecided = yes
+			random_list = {
+				1 = {
+					modifier = {
+						factor = 0
+						check_variable = { 1:party_votes < 2 }
+					}
+					set_temp_variable = { target = 1 }
+					set_temp_variable_to_random = {
+						var = vote_change
+						min = -2
+						max = -1
+						integer = no
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+					
+				}
+				1 = {
+					set_temp_variable = { target = 2 }
+					set_temp_variable_to_random = {
+						var = vote_change
+						min = -2
+						max = -1
+						integer = no
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+					
+				}
+				1 = {
+					set_temp_variable = { target = 3 }
+					set_temp_variable_to_random = {
+						var = vote_change
+						min = -2
+						max = -1
+						integer = no
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+					
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						check_variable = { 4:party_votes < 6 }
+					}
+					set_temp_variable = { target = 4 }
+					set_temp_variable_to_random = {
+						var = vote_change
+						min = -2
+						max = -1
+						integer = no
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+					
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						check_variable = { 6:party_votes < 8 }
+					}
+					set_temp_variable = { target = 6 }
+					set_temp_variable_to_random = {
+						var = vote_change
+						min = -2
+						max = -1
+						integer = no
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+					
+				}
+				1 = {
+					modifier = {
+						factor = 0
+						check_variable = { 9:party_votes < 6 }
+					}
+					set_temp_variable = { target = 9 }
+					set_temp_variable_to_random = {
+						var = vote_change
+						min = -2
+						max = -1
+						integer = no
+					}
+					SIA_elections_increase_votes_by_undecided = yes
+					
+				}
+			}
 			set_country_flag = SIA_active_election_decision
 		}
 		remove_effect = {

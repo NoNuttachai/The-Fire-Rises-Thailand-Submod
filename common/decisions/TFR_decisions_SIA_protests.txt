@@ -44,12 +44,179 @@ SIA_protests_category = {
 			country_event = thai_events.39
 		}
 	}
+	SIA_launch_rallies = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_begin_student_activism
+			has_active_mission = SIA_the_protests_intensify
+		}
+		days_remove = 20
+		days_re_enable = 50
+		cost = 30
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -15
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_organize_protests = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_begin_student_activism
+			has_active_mission = SIA_the_protests_intensify
+		}
+		days_remove = 14
+		days_re_enable = 50
+		cost = 20
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -15
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_coordinate_with_workers_union = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_workers_union_strikes
+			has_active_mission = SIA_the_protests_intensify
+		}
+		days_remove = 15
+		days_re_enable = 50
+		cost = 50
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -25
+			}
+			if = {
+				limit = {
+					has_active_mission = SIA_oil_distribution_to_stations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_oil_distribution_to_stations
+					days = -20
+				}
+			}
+			else_if = {
+				limit = {
+					has_active_mission = SIA_truckers_start_protesting
+				}
+				add_days_mission_timeout = {
+					mission = SIA_truckers_start_protesting
+					days = -10
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_radicalize_the_movement = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_a_leftist_united_front
+			has_active_mission = SIA_the_protests_intensify
+		}
+		days_remove = 30
+		cost = 30
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = 0.25
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -5
+			}
+			add_stability = -0.05
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_fight_the_arrests_decision = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_fight_the_arrests
+			has_active_mission = SIA_the_protests_intensify
+		}
+		days_remove = 10
+		days_re_enable = 50
+		cost = 50
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -30
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SIA_unify_the_movement = {
+		icon = GFX_decision_generic_arrest
+		allowed = {
+			tag = SIA
+		}
+		visible = {
+			has_completed_focus = SIA_khana_ratsadon_reborn
+			has_active_mission = SIA_the_protests_intensify
+		}
+		days_remove = 50
+		days_re_enable = 50
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = 0.3
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -15
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	#PRAYUT SIDE
 	SIA_break_up_gatherings = {
 		icon = GFX_decision_generic_arrest
 		allowed = {
 			tag = SIA
 		}
 		visible = {
+			has_completed_focus = SIA_side_with_uncle_tuu
 			has_active_mission = SIA_the_protests_intensify
 		}
 		days_remove = 15
@@ -81,6 +248,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
+			has_completed_focus = SIA_side_with_uncle_tuu
 			has_active_mission = SIA_the_protests_intensify
 		}
 		days_remove = 15
@@ -295,7 +463,6 @@ SIA_protests_category = {
 				target = USA
 				modifier = SIA_ned_interference
 			}
-			unlock_decision_tooltip = SIA_bbc_coverage_of_the_protestors
 		}
 		ai_will_do = {
 			base = 10

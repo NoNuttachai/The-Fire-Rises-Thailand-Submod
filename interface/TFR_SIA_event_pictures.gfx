@@ -152,6 +152,14 @@ spriteTypes = {
 		name = "GFX_report_milk_tea_alliance"
 		texturefile = "gfx/event_pictures/report_milk_tea_alliance.png"
 	}
+	spriteType = {
+		name = "GFX_report_tanker_truckers_on_strike"
+		texturefile = "gfx/event_pictures/report_tanker_truckers_on_strike.png"
+	}
+	spriteType = {
+		name = "GFX_report_trucker_convoy_protests"
+		texturefile = "gfx/event_pictures/report_trucker_convoy_protests.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

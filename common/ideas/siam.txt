@@ -516,6 +516,21 @@ ideas = {
 				factory_energy_consumption = -0.05
 			}
 		}
+		SIA_truck_protests = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				income_growth_factor = -0.1
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

@@ -50,6 +50,10 @@ SIA_bop_prayut = {
 			activate_mission = SIA_securing_vaccine_supply
 			custom_effect_tooltip = SIA_establish_ccsa_tt
 			activate_mission = SIA_government_action_2
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_2 = {
@@ -73,6 +77,18 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_3
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = 30
+			}
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 30
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_3 = {
@@ -98,7 +114,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_government_action_7
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 20
+				days = 35
 			}
 			set_country_flag = SIA_deal_with_the_oil_crisis
 			unlock_decision_tooltip = SIA_enact_oil_rationing_measures
@@ -106,6 +122,10 @@ SIA_bop_prayut = {
 			unlock_decision_tooltip = SIA_increase_domestic_refining_capacity
 			unlock_decision_tooltip = SIA_synthetic_gas_initiative
 			unlock_decision_tooltip = SIA_subsidize_solar_energy
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_4 = {
@@ -129,6 +149,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_5
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.1
+			}
 		}
 	}
 	SIA_government_action_5 = {
@@ -152,6 +176,14 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_6
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 10
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_6 = {
@@ -175,6 +207,14 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_8
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.025
+			}
 		}
 	}
 	SIA_government_action_7 = {
@@ -204,6 +244,10 @@ SIA_bop_prayut = {
 			unlock_decision_tooltip = SIA_activate_the_asean_petroleum_security_agreement
 			unlock_decision_tooltip = SIA_increase_american_oil_imports
 			unlock_decision_tooltip = SIA_oil_cooperation_with_singapore
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_8 = {
@@ -227,6 +271,21 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_10
+			add_stability = -0.05
+			add_war_support = 0.025
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.05
+			}
+			add_society_development = yes
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 15
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_9 = {
@@ -250,6 +309,14 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_11
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 20
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	SIA_government_action_10 = {
@@ -273,6 +340,10 @@ SIA_bop_prayut = {
 		days_mission_timeout = 35
 		timeout_effect = {
 			activate_mission = SIA_government_action_9
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.1
+			}
 		}
 	}
 	SIA_government_action_11 = {
@@ -295,7 +366,19 @@ SIA_bop_prayut = {
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.1
+			}
+			add_society_development = yes
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	#Government Side - The Protestors are acting!
@@ -322,7 +405,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_2
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -349,7 +432,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_3
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -376,7 +459,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_4
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -403,7 +486,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_6
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -430,7 +513,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_8
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -457,7 +540,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_7
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -484,7 +567,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_5
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -511,7 +594,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_9
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -538,7 +621,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_10
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -565,7 +648,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_11
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 		}
 	}
@@ -591,7 +674,7 @@ SIA_bop_prayut = {
 		timeout_effect = {
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.05
 			}
 			
 		}
@@ -684,10 +767,17 @@ SIA_bop_prayut = {
 		ai_will_do = { factor = 1 }
 		
 		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_demonstrate_event = 0 }
+				}
+				country_event = thai_events.13
+				set_variable = { SIA_demonstrate_event = 1 }
+			}
 			country_event = thai_events.13
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.025
 			}
 		}
 	}
@@ -698,10 +788,16 @@ SIA_bop_prayut = {
 		fire_only_once = yes
 		ai_will_do = { factor = 1 }
 		complete_effect = {
-			country_event = thai_events.13
+			if = {
+				limit = {
+					check_variable = { SIA_demonstrate_event = 0 }
+				}
+				country_event = thai_events.13
+				set_variable = { SIA_demonstrate_event = 1 }
+			}
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.015
+				value = -0.025
 			}
 		}
 	}
