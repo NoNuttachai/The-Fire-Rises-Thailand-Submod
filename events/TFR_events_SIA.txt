@@ -663,20 +663,22 @@ country_event = {
 	}
 }
 country_event = {
-    id = thai_events.26 # FreeYOUTH post
+    id = thai_events.26 # 2021 Cobra Gold
     title = thai_events.26.t
     desc = thai_events.26.d
-    picture = GFX_report_freeyouth_commie_larp
+    picture = GFX_report_cobra_gold_2021
 	
 	is_triggered_only = yes
 	
     option = {
         name = thai_events.26.a
-        add_days_mission_timeout = {
-			mission = SIA_the_protests_intensify
-			days = -15
-		}
-       
+        add_opinion_modifier = {
+            target = USA
+            modifier = SIA_joint_training
+        }
+		add_command_power = 15
+        army_experience = 10
+       	upgrade_intelligence_agency = upgrade_army_department
 	}
 }
 country_event = {

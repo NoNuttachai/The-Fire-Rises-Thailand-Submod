@@ -69,6 +69,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_cobra_gold_2020.png"
 	}
 	spriteType = {
+		name = "GFX_report_cobra_gold_2021"
+		texturefile = "gfx/event_pictures/report_cobra_gold_2021.png"
+	}
+	spriteType = {
 		name = "GFX_report_palang_pracharat_fallout_and_cabinet_reshuffle"
 		texturefile = "gfx/event_pictures/report_palang_pracharat_fallout_and_cabinet_reshuffle.png"
 	}

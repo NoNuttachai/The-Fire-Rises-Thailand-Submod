@@ -30,7 +30,7 @@ on_actions = {
 				country_event = { id = thai_events.21 days = 102 } #Songkran 2020 Suspended Over Pandemic Concerns
 				country_event = { id = thai_events.22 days = 871 } #2022 Bangkok Mayoral Elections
 				country_event = { id = thai_events.23 days = 244 } #1 September 2020  - Predee Resigns
-				country_event = { id = thai_events.26 days = 296 } #Free YOUTH's post
+				country_event = { id = thai_events.26 days = 590 } # Cobra Gold 2021
 				country_event = { id = thai_events.27 days = 298 } #March to the German Embassy: 26th October Mob
 				country_event = { id = thai_events.28 days = 240 } #Warning that a 2nd motion of no confidence is coming
 				country_event = { id = thai_events.31 days = 19 } #Pattani Peace
