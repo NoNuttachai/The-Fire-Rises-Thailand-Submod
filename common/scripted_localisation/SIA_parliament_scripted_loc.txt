@@ -625,3 +625,34 @@ defined_text = {
 		localization_key = SIA_elections_playing_as_[?SIA_election_playing_as]
 	}
 }
+
+defined_text = {
+	name = SIA_elections_1st_rank
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = "GFX_SIA_parliament_elections_prayutreich_[?SIA_elections_1st]"
+	}
+}
+defined_text = {
+	name = SIA_elections_2nd_rank
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = "GFX_SIA_parliament_elections_prayutreich_[?SIA_elections_2nd]"
+	}
+}
+defined_text = {
+	name = SIA_elections_3rd_rank
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = "GFX_SIA_parliament_elections_prayutreich_[?SIA_elections_3rd]"
+	}
+}

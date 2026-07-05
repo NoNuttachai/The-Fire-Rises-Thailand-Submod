@@ -18,8 +18,27 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-			party_bar_fill_visible = {
-				check_variable = { SIA_party_election:party_votes > 0 }
+			SIA_parliament_bar_1_visible = {
+				check_variable = { 1:party_votes > 0 }
+			}
+			SIA_parliament_bar_2_visible = {
+				check_variable = { 2:party_votes > 0 }
+			}
+			SIA_parliament_bar_3_visible = {
+				check_variable = { 3:party_votes > 0 }
+			}
+			SIA_parliament_bar_4_visible = {
+				check_variable = { 4:party_votes > 0 }
+			}
+			SIA_parliament_bar_6_visible = {
+				check_variable = { 6:party_votes > 0 }
+			}
+			SIA_parliament_bar_9_visible = {
+				check_variable = { 9:party_votes > 0 }
+				
+			}
+			SIA_parliament_bar_11_visible = {
+				check_variable = { 11:party_votes > 0 }
 			}
 		}
 
@@ -27,9 +46,38 @@ scripted_gui = {
 			
 		}
 		properties = {
-			party_bar_fill = {
-				image = GFX_SIA_parliament_elections_bar_[?SIA_party_election]
-				frame = SIA_party_election:party_votes
+			SIA_parliament_bar_1 = {
+				frame = SIA_elections_bar_1_frame
+			}
+			SIA_parliament_bar_2 = {
+				frame = SIA_elections_bar_2_frame
+			}
+			SIA_parliament_bar_3 = {
+				frame = SIA_elections_bar_3_frame
+			}
+			SIA_parliament_bar_4 = {
+				frame = SIA_elections_bar_4_frame
+			}
+			SIA_parliament_bar_6 = {
+				frame = SIA_elections_bar_6_frame
+			}
+			SIA_parliament_bar_9 = {
+				frame = SIA_elections_bar_9_frame
+			}
+			SIA_parliament_bar_11 = {
+				frame = SIA_elections_bar_11_frame
+			}
+			SIA_parliament_elections_bar_undecided = {
+				frame = undecided_votes_elections
+			}
+			SIA_elections_1_winner = {
+				image = "[SIA_elections_1st_rank]"
+			}
+			SIA_elections_2_winner = {
+				image = "[SIA_elections_2nd_rank]"
+			}
+			SIA_elections_3_winner = {
+				image = "[SIA_elections_3rd_rank]"
 			}
 		}
 	}

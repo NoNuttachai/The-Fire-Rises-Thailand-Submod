@@ -421,6 +421,7 @@
  
  thai_events.44.d: "Remain Neutral"
  thai_events_44_d_tt: "§gRemain Neutral§! and negotiate with the @PER §Y[PER.GetNameDef]§! to stabilize our oil supply."
+ thai_events_44_effect_tt: "\n§gWhen our chosen Saudi faction wins:§!"
  
  thai_events.45.t: "The "Upscale Level" of the State of Emergency"
  thai_events.45.d: "PRIME MINISTER'S ORDER\nDATED: [?global.date.GetDateStringNoHourLong]\nRE: THE APPOINTMENT OF THE HEAD OF EMERGENCY SITUATION MANAGEMENT\n\nWHEREAS, a Declaration of a Serious State of Emergency in Bangkok was enacted on 15 October B.E. 2563 (2020), pursuant to which the Prime Minister appointed Police General Suwat Jangyodsuk,Commissioner-General of the Royal Thai Police, as the Head of Emergency Situation Management on the same date;\n\nWHEREAS, the severe emergency situation in Bangkok has since escalated due to unlawful demonstrations, resulting in breaches of public law and order, numerous statutory violations including acts of arson and the spread of anti-monarchy sentiment among the demonstrators. Despite the Government's persistent efforts to disperse the gatherings and de-escalate the unrest, containment measures have yielded limited results in restoring public tranquility;\n\nTHEREFORE, by virtue of the powers vested in the Prime Minister, Police General Suwat Jangyodsuk is hereby relieved of his duties as the Head of Emergency Situation Management.\n\nIn his stead, General Narongphan Jitkaewtae, Commander-in-Chief of the Royal Thai Army, is hereby appointed as the Head of Emergency Situation Management. All powers, duties, and authorities prescribed under the Emergency Decree on Public Administration in Emergency Situations, B.E. 2548 (2005) shall be fully vested in General Narongphan Jitkaewtae to resolve the ongoing crisis."
@@ -582,18 +583,19 @@
  
  # ELECTION GUI SCRIPTED local
  SIA_election_party_line: "[SIA_election_scrp_loc]"
+ SIA_election_status: "£GFX_palang_pracharath §PPalang Pracharath Party§! | §L[?1:party_votes|2]%§! - §W[?1:party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?2:party_votes|2]%§! - §W[?2:party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OMove Forward Party§! | §L[?3:party_votes|2]%§! - §W[?3:party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?4:party_votes|2]%§! - §W[?4:party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?6:party_votes|2]%§! - §W[?6:party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?9:party_votes|2]%§! - §W[?9:party_seats_elections]§! §YSeats§!\n§gUnited Thai Nation Party§! | §L[?11:party_votes|2]%§! - §W[?11:party_seats_elections]§! §YSeats§!\n"
  
- SIA_parliament_pprp_election: "£GFX_palang_pracharath §PPalang Pracharath Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_dp_election: "£GFX_democrat §CDemocrat Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_bjt_election: "£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_pprp_election: ""
+ SIA_parliament_dp_election: ""
+ SIA_parliament_bjt_election: ""
  SIA_parliament_ctpp_election: "£GFX_chartthaipattana §sChart Thai Pattana Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_ptp_election: "£GFX_phua_thai §RPheu Thai Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_ptp_election: ""
  SIA_parliament_ffp_election: "£GFX_orange_party_1 §OFuture Forward Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_mfp_election: "£GFX_orange_party_2 §OMove Forward Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_mfp_election: ""
  SIA_parliament_tlp_election: "£GFX_thai_liberal_party §YThai Liberal Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
  SIA_parliament_pcc_election: "£GFX_prachachat §YPrachachat Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_utn_election: "§gUnited Thai Nation Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_minor_parties_election: "§LMinor Parties | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
+ SIA_parliament_utn_election: ""
+ SIA_parliament_minor_parties_election: ""
  
  SIA_change_1_votes: "£GFX_palang_pracharath §PPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_2_votes: "£GFX_phua_thai §RPheu Thai Party§! §LVote§! Change: [?vote_change|=+2]"

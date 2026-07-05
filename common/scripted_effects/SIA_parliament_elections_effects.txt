@@ -1323,6 +1323,7 @@ SIA_elections_translate_votes_to_seats = {
 			round_variable = party_seats_elections
 		}
 	}
+	SIA_adjust_election_bar = yes
 }
 SIA_decide_election_winner = {
 	if = {
@@ -1421,4 +1422,305 @@ SIA_decide_election_winner = {
 		custom_effect_tooltip = SIA_election_results_undecided
 	}
 	country_event = thai_elections.1
+}
+
+
+SIA_adjust_election_bar = {
+	set_variable = { SIA_elections_bar_1_frame = 1:party_seats_elections }
+	
+	set_variable = { SIA_elections_bar_2_frame = 2:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_2_frame = SIA_elections_bar_1_frame }
+	
+	set_variable = { SIA_elections_bar_3_frame = 3:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_3_frame = SIA_elections_bar_2_frame }
+	
+	set_variable = { SIA_elections_bar_4_frame = 4:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_4_frame = SIA_elections_bar_3_frame }
+	
+	set_variable = { SIA_elections_bar_6_frame = 6:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_6_frame = SIA_elections_bar_4_frame }
+	
+	set_variable = { SIA_elections_bar_9_frame = 9:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_9_frame = SIA_elections_bar_6_frame }
+	
+	set_variable = { SIA_elections_bar_11_frame = 11:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_11_frame = SIA_elections_bar_9_frame }
+	
+	set_variable = { undecided_votes_elections = 500 }
+	
+	SIA_get_projected_winner_image = yes
+	
+}
+SIA_get_projected_winner_image = {
+	add_to_temp_array = { most_votes = 1:party_votes }
+	add_to_temp_array = { most_votes = 2:party_votes }
+	add_to_temp_array = { most_votes = 3:party_votes }
+	add_to_temp_array = { most_votes = 4:party_votes }
+	add_to_temp_array = { most_votes = 6:party_votes }
+	add_to_temp_array = { most_votes = 9:party_votes }
+	add_to_temp_array = { most_votes = 11:party_votes }
+	find_highest_in_array = {
+		array = most_votes
+		index = most
+	}
+	if = {
+		limit = { check_variable = { most = 0 } }
+		set_variable = { SIA_elections_1st = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 1 } }
+		set_variable = { SIA_elections_1st = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 2 } }
+		set_variable = { SIA_elections_1st = 3 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 3 } }
+		set_variable = { SIA_elections_1st = 4 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 4 } }
+		set_variable = { SIA_elections_1st = 6 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 5 } }
+		set_variable = { SIA_elections_1st = 9 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 6 } }
+		set_variable = { SIA_elections_1st = 11 }
+		
+	}
+
+	### 2nd Placer ###
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 1 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 1:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 2 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 2:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 3 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 3:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 4 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 4:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 6 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 6:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 9 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 9:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 11 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 11:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	
+	find_highest_in_array = {
+		array = most_votes2
+		index = most2
+	}
+	if = {
+		limit = { check_variable = { most2 = 0 } }
+		set_variable = { SIA_elections_2nd = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 1 } }
+		set_variable = { SIA_elections_2nd = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 2 } }
+		set_variable = { SIA_elections_2nd = 3 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 3 } }
+		set_variable = { SIA_elections_2nd = 4 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 4 } }
+		set_variable = { SIA_elections_2nd = 6 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 5 } }
+		set_variable = { SIA_elections_2nd = 9 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 6 } }
+		set_variable = { SIA_elections_2nd = 11 }
+	}
+	
+	### 3rd Placer ###
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 1 }
+				check_variable = { SIA_elections_2nd = 1 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 1:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 2 }
+				check_variable = { SIA_elections_2nd = 2 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 2:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 3 }
+				check_variable = { SIA_elections_2nd = 3 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 3:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 4 }
+				check_variable = { SIA_elections_2nd = 4 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 4:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 6 }
+				check_variable = { SIA_elections_2nd = 6 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 6:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 9 }
+				check_variable = { SIA_elections_2nd = 9 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 9:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 11 }
+				check_variable = { SIA_elections_2nd = 11 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 11:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	
+	find_highest_in_array = {
+		array = most_votes3
+		index = most3
+	}
+	if = {
+		limit = { check_variable = { most3 = 0 } }
+		set_variable = { SIA_elections_3rd = 1 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 1 } }
+		set_variable = { SIA_elections_3rd = 2 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 2 } }
+		set_variable = { SIA_elections_3rd = 3 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 3 } }
+		set_variable = { SIA_elections_3rd = 4 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 4 } }
+		set_variable = { SIA_elections_3rd = 6 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 5 } }
+		set_variable = { SIA_elections_3rd = 9 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 6 } }
+		set_variable = { SIA_elections_3rd = 11 }
+	}
 }

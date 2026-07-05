@@ -571,31 +571,31 @@ country_event = {
 
     option = { #Chadchart Sittipunt (Independent)
         name = thai_events.22.a
-		custom_effect_tooltip = thai_events_22_tt_a
+		custom_effect_tooltip = thai_events_22_texticon_a
 		set_variable = { bangkok_mayor = 2}
 		
     }
 	option = { #Suchatvee Suwansawat (Democrat)
         name = thai_events.22.b
-		custom_effect_tooltip = thai_events_22_tt_b
+		custom_effect_tooltip = thai_events_22_texticon_b
 		set_variable = { bangkok_mayor = 3}
 		
     }
 	option = { # Wiroj Lakkhanaadisorn (Move Forward)
         name = thai_events.22.c
-		custom_effect_tooltip = thai_events_22_tt_c
+		custom_effect_tooltip = thai_events_22_texticon_c
 		set_variable = { bangkok_mayor = 4}
 		
     }
 	option = { #Sita Divari (Thai Sang Thai)
         name = thai_events.22.d
-		custom_effect_tooltip = thai_events_22_tt_d
+		custom_effect_tooltip = thai_events_22_texticon_d
 		set_variable = { bangkok_mayor = 5}
 		
     }
 	option = { #Aswin Kwanmuang (Rak Krung Thep) 
         name = thai_events.22.e
-		custom_effect_tooltip = thai_events_22_tt_e
+		custom_effect_tooltip = thai_events_22_texticon_e
 		set_variable = { bangkok_mayor = 1}
 		
     }
@@ -667,7 +667,11 @@ country_event = {
     title = thai_events.26.t
     desc = thai_events.26.d
     picture = GFX_report_cobra_gold_2021
-	
+	trigger = {
+		NOT = {
+			has_global_flag = USA_american_civil_war_global
+		}
+	}
 	is_triggered_only = yes
 	
     option = {
@@ -678,7 +682,7 @@ country_event = {
         }
 		add_command_power = 15
         army_experience = 10
-       	upgrade_intelligence_agency = upgrade_army_department
+       	upgrade_intelligence_agency = upgrade_military_intelligence
 	}
 }
 country_event = {
@@ -1069,24 +1073,48 @@ country_event = {
 		set_variable = { SIA_saudi_civil_war_support = 1 }
 		custom_effect_tooltip = thai_events_44_a_tt
 		set_country_flag = SIA_intervene_in_the_saudi_civil_war
+		effect_tooltip = {
+			custom_effect_tooltip = thai_events_44_effect_tt
+			add_timed_idea = {
+				idea = SIA_triumph_in_saudi_arabia
+				days = 300
+			}
+		}
 	}
 	option = {
         name = thai_events.44.b
 		set_variable = { SIA_saudi_civil_war_support = 2 }
 		custom_effect_tooltip = thai_events_44_b_tt
 		set_country_flag = SIA_intervene_in_the_saudi_civil_war
+		effect_tooltip = {
+			custom_effect_tooltip = thai_events_44_effect_tt
+			add_timed_idea = {
+				idea = SIA_triumph_in_saudi_arabia
+				days = 300
+			}
+		}
 	}
 	option = {
         name = thai_events.44.c
 		set_variable = { SIA_saudi_civil_war_support = 3 }
 		custom_effect_tooltip = thai_events_44_c_tt
 		set_country_flag = SIA_intervene_in_the_saudi_civil_war
+		effect_tooltip = {
+			custom_effect_tooltip = thai_events_44_effect_tt
+			add_timed_idea = {
+				idea = SIA_triumph_in_saudi_arabia
+				days = 300
+			}
+		}
 	}
 	option = {
         name = thai_events.44.d
 		set_country_flag = SIA_saudi_civil_war_no_intervention
-		unlock_decision_tooltip = SIA_iran_oil_deal
 		custom_effect_tooltip = thai_events_44_d_tt
+		unlock_decision_tooltip = {
+			decision = SIA_iran_oil_deal
+			show_effect_tooltip = yes
+		}
 	}
 	
 }

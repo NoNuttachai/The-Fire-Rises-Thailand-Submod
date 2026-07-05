@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "SIA_parliament_election_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 470 height = 680 }
+		size = { width = 470 height = 250 }
 		
 		
 		instantTextBoxType = {
@@ -14,7 +14,80 @@ guiTypes = {
 			text = SIA_election_undecided
 			format = left
 		}
-		
+		iconType = {
+			name = "SIA_elections_1_winner"
+			position = { x = 175 y = 29 }
+			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
+			scale = 0.8
+		}
+		iconType = {
+			name = "SIA_elections_2_winner"
+			position = { x = 66 y = 48 }
+			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
+			scale = 0.7
+		}
+		iconType = {
+			name = "SIA_elections_3_winner"
+			position = { x = 300 y = 72 }
+			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
+			scale = 0.6
+		}
+		containerWindowType = {
+			name = "SIA_parliament_gui_bar_container"
+			position = { x = 25 y = 180 }
+
+			iconType = {
+				name = "SIA_parliament_elections_bar_undecided"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_undecided"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_11"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_11"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_9"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_9"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_6"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_6"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_4"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_4"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_3"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_3"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_2"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_2"
+			}
+			iconType = {
+				name = "SIA_parliament_bar_1"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_1"
+			}
+			
+			
+			
+
+			iconType = {
+				name = "party_bar_outline"
+				position = { x = 0 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_outline"
+				pdx_tooltip = SIA_election_status
+			}
+			
+		}
 		containerWindowType = {
 			name = "SIA_parliament_gui_parties"
 			position = { x = -160 y = 20 }
@@ -43,23 +116,6 @@ guiTypes = {
 			width = 0
 			height = 0
 		}
-		instantTextBoxType = {
-			name = "party_name"
-			position = { x = 0 y = 0 }
-			font = "VCR02_14"
-			maxwidth = 460
-			text = SIA_election_party_line
-			format = left
-		}
-		iconType = {
-			name = "party_bar_fill"
-			position = { x = 1 y = 29 }
-			quadTextureSprite = "GFX_SIA_parliament_elections_bar"
-		}
-		iconType = {
-			name = "party_bar_outline"
-			position = { x = 0 y = 30 }
-			quadTextureSprite = "GFX_SIA_parliament_elections_bar_outline"
-		}
+		
 	}
 }
