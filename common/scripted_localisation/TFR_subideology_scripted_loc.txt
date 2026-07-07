@@ -1250,7 +1250,7 @@ defined_text = {
 					ruling_only = yes
 				}
 			}
-			has_country_leader_ideology = right_populism
+			has_country_leader_ideology = national_conservativism_con
 		}
 		localization_key = ISR_right_zionism
 	}	
@@ -1298,7 +1298,7 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = FRA
-			has_country_leader_ideology = right_populism
+			has_country_leader_ideology = national_conservativism_con
 		}
 		localization_key = FRA_national_souverainism
 	}
@@ -1432,6 +1432,12 @@ defined_text = {
 			has_country_leader_ideology = sovereign_democracy_patrushev
 		}
 		localization_key = sovereign_democracy_patrushev 
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_conservativism_con
+		}
+		localization_key = national_conservativism_con 
 	}	
 	text = {
 		trigger = {
@@ -1847,6 +1853,18 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = hybrid_regime
+		}
+		localization_key = hybrid_regime
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = democratic_derzhavism
+		}
+		localization_key = democratic_derzhavism
+	}	
+	text = {
+		trigger = {
 			has_country_leader_ideology = populist_putinism
 		}
 		localization_key = populist_putinism
@@ -1936,6 +1954,12 @@ defined_text = {
 			has_country_leader_ideology = putinism
 		}
 		localization_key = putinism
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_conservativism_auth
+		}
+		localization_key = national_conservativism_auth
 	}	
 	text = {
 		trigger = {
@@ -2045,12 +2069,6 @@ defined_text = {
 		}
 		localization_key = hybrid_regime_SIA
 	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = hybrid_regime
-		}
-		localization_key = hybrid_regime
-	}	
 }
 
 	#Despotist

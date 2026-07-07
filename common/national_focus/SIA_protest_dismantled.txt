@@ -1,0 +1,666 @@
+focus_tree = {
+	id = SIA_prayut_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIA
+		}
+	}
+	
+	focus = {
+		id = SIA_prayut_triumphant
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 7
+		y = 0
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	#Post American Order Branch
+	focus = {
+		id = SIA_rupture
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -10
+		y = 1
+		cost = 7
+		relative_position_id = SIA_prayut_triumphant
+		prerequisite = { focus = SIA_prayut_triumphant }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_dial_beijing
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -2
+		y = 1
+		cost = 7
+		relative_position_id = SIA_rupture
+		prerequisite = { focus = SIA_rupture }
+		mutually_exclusive = { focus = SIA_dial_tokyo }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_dial_tokyo
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 2
+		y = 1
+		cost = 7
+		relative_position_id = SIA_rupture
+		prerequisite = { focus = SIA_rupture }
+		mutually_exclusive = { focus = SIA_dial_beijing }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_as_one_family
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_dial_beijing
+		prerequisite = { focus = SIA_dial_beijing }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_our_shared_future
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_as_one_family
+		prerequisite = { focus = SIA_as_one_family }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_stop_the_decline
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 2
+		cost = 7
+		relative_position_id = SIA_rupture
+		prerequisite = { focus = SIA_dial_beijing focus = SIA_dial_tokyo }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_restore_confidence
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_stop_the_decline
+		prerequisite = { focus = SIA_stop_the_decline }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_lets_talk_business
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_stop_the_decline
+		prerequisite = { focus = SIA_stop_the_decline }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_exchanging_note
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_dial_tokyo
+		prerequisite = { focus = SIA_dial_tokyo }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_level_the_field
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_exchanging_note
+		prerequisite = { focus = SIA_exchanging_note }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_pat_yourself_on_the_back
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 2
+		cost = 7
+		relative_position_id = SIA_stop_the_decline
+		prerequisite = { focus = SIA_our_shared_future focus = SIA_level_the_field }
+		prerequisite = { focus = SIA_lets_talk_business }
+		prerequisite = { focus = SIA_restore_confidence }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	
+	# Central Branch - Political
+	focus = {
+		id = SIA_review_the_autopsy
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_prayut_triumphant
+		prerequisite = { focus = SIA_prayut_triumphant }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_the_persistent_tumors
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -3
+		y = 1
+		cost = 7
+		relative_position_id = SIA_review_the_autopsy
+		prerequisite = { focus = SIA_review_the_autopsy }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_defend_against_opposition
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_the_persistent_tumors
+		prerequisite = { focus = SIA_the_persistent_tumors }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_weaponize_the_law
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_the_persistent_tumors
+		prerequisite = { focus = SIA_the_persistent_tumors }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_period_of_recuperation
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 3
+		y = 1
+		cost = 7
+		relative_position_id = SIA_review_the_autopsy
+		prerequisite = { focus = SIA_review_the_autopsy }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_khon_la_khrueng
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_period_of_recuperation
+		prerequisite = { focus = SIA_period_of_recuperation }
+		mutually_exclusive = { focus = SIA_support_our_smes }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_support_our_smes
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_period_of_recuperation
+		prerequisite = { focus = SIA_period_of_recuperation }
+		mutually_exclusive = { focus = SIA_khon_la_khrueng }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SIA_guaranteeing_satisfaction
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_khon_la_khrueng
+		prerequisite = { focus = SIA_khon_la_khrueng focus = SIA_support_our_smes }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SIA_prawits_caretaker
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_review_the_autopsy
+		prerequisite = { focus = SIA_review_the_autopsy }
+		allow_branch = { has_country_flag = SIA_prawit_caretaker }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SIA_reassure_the_nation
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_prawits_caretaker
+		prerequisite = { focus = SIA_prawits_caretaker }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	#Fakeout final focuses
+	focus = {
+		id = SIA_fakeout_1
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 3
+		cost = 7
+		relative_position_id = SIA_review_the_autopsy
+		prerequisite = { focus = SIA_khon_la_khrueng focus = SIA_support_our_smes }
+		prerequisite = { focus = SIA_defend_against_opposition }
+		prerequisite = { focus = SIA_weaponize_the_law }
+		allow_branch = { NOT = { has_country_flag = SIA_prayut_split } }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_fakeout_2
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_fakeout_1
+		prerequisite = { focus = SIA_fakeout_1 }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	#REAL final focuses
+	focus = {
+		id = SIA_no_hard_feelings
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 3
+		cost = 7
+		relative_position_id = SIA_review_the_autopsy
+		prerequisite = { focus = SIA_khon_la_khrueng focus = SIA_support_our_smes }
+		prerequisite = { focus = SIA_defend_against_opposition }
+		prerequisite = { focus = SIA_weaponize_the_law }
+		allow_branch = { has_country_flag = SIA_prayut_split }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_once_were_brothers
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_no_hard_feelings
+		prerequisite = { focus = SIA_no_hard_feelings }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	#Right Side Focus
+	focus = {
+		id = SIA_riding_with_uncle_tuu
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 9
+		y = 1
+		cost = 7
+		relative_position_id = SIA_prayut_triumphant
+		prerequisite = { focus = SIA_prayut_triumphant }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_stimulate_the_tourism_spending
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -2
+		y = 1
+		cost = 7
+		relative_position_id = SIA_riding_with_uncle_tuu
+		prerequisite = { focus = SIA_riding_with_uncle_tuu }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_30_30_vision
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 7
+		relative_position_id = SIA_stimulate_the_tourism_spending
+		prerequisite = { focus = SIA_stimulate_the_tourism_spending }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SIA_boost_domestic_spending
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 2
+		y = 1
+		cost = 7
+		relative_position_id = SIA_riding_with_uncle_tuu
+		prerequisite = { focus = SIA_riding_with_uncle_tuu }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_tackle_the_debts
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_boost_domestic_spending
+		prerequisite = { focus = SIA_boost_domestic_spending }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_attract_foreign_workers
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_boost_domestic_spending
+		prerequisite = { focus = SIA_boost_domestic_spending }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SIA_taste_the_appetizer
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 7
+		relative_position_id = SIA_tackle_the_debts
+		prerequisite = { focus = SIA_tackle_the_debts }
+		prerequisite = { focus = SIA_30_30_vision }
+		prerequisite = { focus = SIA_attract_foreign_workers }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+		}
+	}
+}

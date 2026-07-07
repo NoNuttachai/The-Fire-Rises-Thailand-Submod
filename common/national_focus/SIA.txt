@@ -991,35 +991,3 @@ focus_tree = {
 		}
 	}
 }
-
-focus_tree = {
-	id = SIA_prayut_focus_tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = SIA
-		}
-	}
-	
-	focus = {
-		id = SIA_prayut_triumphant
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 7
-		y = 0
-		cost = 7
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			effect_tooltip = {
-				country_event = thai_events.1
-			}
-		}
-	}
-}

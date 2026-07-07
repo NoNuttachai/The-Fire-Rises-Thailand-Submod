@@ -620,10 +620,19 @@
  
  SIA_elections_playing_as_11: "§gUnited Thai Nation Party§!"
  SIA_elections_playing_as_2: "£GFX_phua_thai §RPheu Thai Party§!"
+ SIA_elections_playing_as_0: "§gNo One§!"
+ 
+ 
+ #Focus Tree Names
+ thailand_focus_tfr_submod: "Thailand 2020 Focus Tree"
+ SIA_prayut_focus_tree: "Prayut 2021 Victory Against Protests"
  
  # Decision Localization
+ SIA_debug_prayut_terminal: "DEBUG - Prayut Terminal"
+ SIA_debug_prayut_terminal_desc: "Beep boop Big Tu, What can I do for you?"
+ 
  SIA_parliament_elections: "2023 Parliament Elections"
- SIA_parliament_elections_desc: "Election season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
+ SIA_parliament_elections_desc: "\n\n\n\n\n£GFX_SIA_protest_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
  SIA_undecided_votes_available: "§YThere are still available§! §gUndecided Votes§!"
  SIA_parliament_category: "Parliament of Thailand"
  SIA_parliament_category_desc: ""
@@ -922,3 +931,4 @@
  #Decision cost tooltip for this mod that uses
  dx_more_than_25B_and_15pp: "£dx  §H25B§! £pol_power  §H15§!"
  dx_more_than_25B_and_15pp_blocked: "£dx  §R25B§! £pol_power  §R15§!"
+ 

@@ -1,3 +1,16 @@
+SIA_debug_prayut_terminal = {
+	icon = GFX_decision_cat_SIA_parliament
+	priority = 15
+	picture = GFX_decision_cat_SIA_prayut_terminal_picture
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		original_tag = SIA
+		is_debug = yes
+		is_ai = no
+	}
+}
 SIA_parliament_category = {
 	icon = GFX_decision_cat_SIA_parliament
 	priority = 12
@@ -40,7 +53,8 @@ SIA_parliament_elections = {
 		original_tag = SIA
 	}
 	visible = {
-		
+		original_tag = SIA
+		has_country_flag = SIA_ongoing_elections
 	}
 	visible_when_empty = yes
 	scripted_gui = SIA_parliament_elections_gui

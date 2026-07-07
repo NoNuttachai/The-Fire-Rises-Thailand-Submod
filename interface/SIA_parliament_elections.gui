@@ -22,13 +22,13 @@ guiTypes = {
 		}
 		iconType = {
 			name = "SIA_elections_2_winner"
-			position = { x = 66 y = 48 }
+			position = { x = 66 y = 50 }
 			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
 			scale = 0.7
 		}
 		iconType = {
 			name = "SIA_elections_3_winner"
-			position = { x = 300 y = 72 }
+			position = { x = 300 y = 71 }
 			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
 			scale = 0.6
 		}
@@ -94,7 +94,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "election_parties_gridbox"
-				position = { x =  y = 0 }
+				position = { x = 0 y = 0 }
 				size = {
 					width = 460 height = 45
 				}

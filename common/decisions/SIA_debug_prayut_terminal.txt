@@ -1,0 +1,38 @@
+SIA_debug_prayut_terminal = {
+	SIA_load_starting_tree = {
+		complete_effect = {
+			load_focus_tree = thailand_focus_tfr_submod
+		}
+	}
+	SIA_load_prayut_evicted_tree = {
+		complete_effect = {
+		}
+	}
+	SIA_load_prayut_victory_tree = {
+		complete_effect = {
+			load_focus_tree = SIA_prayut_focus_tree
+		}
+	}
+	SIA_enable_the_prayutreich = {
+		complete_effect = {
+			set_party_name = {
+				ideology = social_democrat 
+				long_name = SIA_prayutreich
+				name = SIA_prayutreich
+			}
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { seats = SIA_ffp_seats_var }
+			SIA_change_parliament_seat = yes
+			set_temp_variable = { target = 3 }
+			set_temp_variable = { seats = SIA_ffp_seats_var }
+			multiply_temp_variable = { seats = -1 }
+			SIA_change_parliament_seat = yes
+			
+		}
+	}
+	SIA_enable_election_mech_prayut_victory = {
+		complete_effect = {
+			set_country_flag = SIA_ongoing_elections
+		}
+	}
+}

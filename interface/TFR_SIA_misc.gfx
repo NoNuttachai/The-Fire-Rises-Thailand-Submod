@@ -19,4 +19,8 @@ spriteTypes = {
         name = "GFX_decision_cat_SIA_saudi_civil_war_picture"
         texturefile = "gfx/interface/decision_pictures/SIA_saudi_civil_war.png"
     }
+	spriteType = {
+        name = "GFX_decision_cat_SIA_prayut_terminal_picture"
+        texturefile = "gfx/interface/decision_pictures/SIA_prayut_terminal.png"
+    }
 }	
