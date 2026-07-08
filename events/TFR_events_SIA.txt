@@ -1,6 +1,68 @@
 add_namespace = thai_events
+add_namespace = thai_prayut #separating events like this for now
 add_namespace = thai_elections
 add_namespace = thai_newsevents
+
+country_event = {
+    id = thai_prayut.1
+    title = thai_prayut.1.t
+    desc = thai_prayut.1.d
+	trigger = {
+		has_idea = SIA_prayut_chan-o-cha_advisor
+		has_completed_focus = SIA_prayut_triumphant
+	}
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_elections.2 days = 208 }
+		}
+	}
+    option = {
+        name = thai_prayut.1.a 
+		complete_national_focus = SIA_prawits_caretaker
+		focus_unlock = yes
+		remove_ideas = SIA_prayut_chan-o-cha_advisor
+		add_ideas = SIA_prawit_wongsuwan_hog
+		set_country_flag = SIA_prawit_caretaker
+    }
+}
+
+country_event = {
+    id = thai_prayut.2
+    title = thai_prayut.2.t
+    desc = thai_prayut.2.d
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_prayut.2.a 
+		remove_ideas = SIA_prawit_wongsuwan_hog
+		add_ideas = SIA_prayut_chan-o-cha_advisor
+		country_event = { id = thai_prayut.3 days = 10 }
+    }
+}
+
+country_event = {
+    id = thai_prayut.3
+    title = thai_prayut.3.t
+    desc = thai_prayut.3.d
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_prayut.3.a 
+		set_country_flag = SIA_utn_active
+		set_country_flag = SIA_prayut_split
+		focus_unlock = yes
+		custom_effect_tooltip = thai_prayut_3_tt
+		set_party_name = {
+			ideology = authoritarian_democrat 
+			long_name = SIA_utn
+			name = SIA_utn_long
+		}
+    }
+}
+
 
 country_event = { #
     id = thai_elections.1
@@ -60,6 +122,55 @@ country_event = { #
         SIA_setup_parliament_layout = yes
 		SIA_calculate_parliament_frame = yes
     }
+}
+
+country_event = { # Parliament dissolve
+    id = thai_elections.2
+    title = thai_elections.2.t
+    desc = thai_elections.2.d
+   
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_elections.3 days = 1 }
+		}
+	}
+    option = {
+        name = thai_elections.2.a 
+        custom_effect_tooltip = thai_elections_2_tt
+		SIA_dissolve_parliament = yes
+    }
+}
+country_event = { # 2023 Elections start
+    id = thai_elections.3
+    title = thai_elections.3.t
+    desc = thai_elections.3.d
+   
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			activate_mission = SIA_2023_elections
+			activate_mission = SIA_other_parties_campaigning
+			SIA_setup_elections = yes
+			set_country_flag = SIA_ongoing_elections
+		}
+	}
+    option = { #Prayut
+        name = thai_elections.3.a
+		set_variable = { SIA_election_playing_as = 11 }
+		custom_effect_tooltip = thai_elections_3_tt_a
+    }
+	option = { #play as Pheu thai
+        name = thai_elections.3.b
+		set_variable = { SIA_election_playing_as = 2 }
+		custom_effect_tooltip = thai_elections_3_tt_b
+    }
+	after = {
+		effect_tooltip = {
+			activate_mission = SIA_2023_elections
+			activate_mission = SIA_other_parties_campaigning
+		}
+	}
 }
 
 country_event = {
@@ -848,6 +959,7 @@ country_event = {
 			id = SIA_power_balance
 		}
 		load_focus_tree = SIA_prayut_focus_tree
+		complete_national_focus = SIA_prayut_triumphant
 		hidden_effect = {
 			remove_ideas = {
 				SIA_lack_of_the_political_legitimacy_highest

@@ -10,7 +10,7 @@ SIA_debug_prayut_terminal = {
 	}
 	SIA_load_prayut_victory_tree = {
 		complete_effect = {
-			load_focus_tree = SIA_prayut_focus_tree
+			country_event = thai_events.34
 		}
 	}
 	SIA_enable_the_prayutreich = {

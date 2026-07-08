@@ -33,6 +33,7 @@ SIA_setup_elections = { #Protests dismantled - Prayut present scenario
 		set_variable = { party_votes = 3 }
 	}
 	SIA_elections_translate_votes_to_seats = yes
+	SIA_elections_update_undecided = yes
 }
 SIA_roll_2nd_target = {
 	#playing as pheu
@@ -378,6 +379,13 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
+					check_variable = { 3:party_votes < 5 }
+				}
+				set_variable = { 2nd_target_2 = 3 }
+			}
+			1 = {
+				modifier = {
+					factor = 0
 					check_variable = { 11:party_votes < 5 }
 				}
 				set_variable = { 2nd_target_2 = 11 }
@@ -403,10 +411,6 @@ SIA_roll_2nd_target = {
 				}
 				set_variable = { 2nd_target_2 = 9 }
 			}
-			1 = {
-				set_variable = { 2nd_target_2 = 11 }
-			}
-		
 		}
 		random_list = { #BHUM
 			1 = {
@@ -1046,95 +1050,51 @@ SIA_elections_increase_votes_by_undecided = {
 			check_variable = { undecided_votes < vote_change }
 		}
 		set_temp_variable = { vote_change = undecided_votes }
-		if = {
-			limit = {
-				check_variable = { target = 1 }
-			}
-			add_to_variable = { 1:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 2 }
-			}
-			add_to_variable = { 2:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 3 }
-			}
-			add_to_variable = { 3:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 4 }
-			}
-			add_to_variable = { 4:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 6 }
-			}
-			add_to_variable = { 6:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 9 }
-			}
-			add_to_variable = { 9:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 11 }
-			}
-			add_to_variable = { 11:party_votes = vote_change }
-		}
-		custom_effect_tooltip = [SIA_election_votes_party_change]
 	}
-	else = {
-		if = {
-			limit = {
-				check_variable = { target = 1 }
-			}
-			add_to_variable = { 1:party_votes = vote_change }
+	if = {
+		limit = {
+			check_variable = { target = 1 }
 		}
-		if = {
-			limit = {
-				check_variable = { target = 2 }
-			}
-			add_to_variable = { 2:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 3 }
-			}
-			add_to_variable = { 3:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 4 }
-			}
-			add_to_variable = { 4:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 6 }
-			}
-			add_to_variable = { 6:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 9 }
-			}
-			add_to_variable = { 9:party_votes = vote_change }
-		}
-		if = {
-			limit = {
-				check_variable = { target = 11 }
-			}
-			add_to_variable = { 11:party_votes = vote_change }
-		}
-		custom_effect_tooltip = [SIA_election_votes_party_change]
+		add_to_variable = { 1:party_votes = vote_change }
 	}
+	if = {
+		limit = {
+			check_variable = { target = 2 }
+		}
+		add_to_variable = { 2:party_votes = vote_change }
+	}
+	if = {
+		limit = {
+			check_variable = { target = 3 }
+		}
+		add_to_variable = { 3:party_votes = vote_change }
+	}
+	if = {
+		limit = {
+			check_variable = { target = 4 }
+		}
+		add_to_variable = { 4:party_votes = vote_change }
+	}
+	if = {
+		limit = {
+			check_variable = { target = 6 }
+		}
+		add_to_variable = { 6:party_votes = vote_change }
+	}
+	if = {
+		limit = {
+			check_variable = { target = 9 }
+		}
+		add_to_variable = { 9:party_votes = vote_change }
+	}
+	if = {
+		limit = {
+			check_variable = { target = 11 }
+		}
+		add_to_variable = { 11:party_votes = vote_change }
+	}
+	custom_effect_tooltip = [SIA_election_votes_party_change]
+	
 	multiply_temp_variable = { vote_change = -1 } #tooltip for next line
 	custom_effect_tooltip = SIA_change_undecided_votes
 	SIA_elections_update_undecided = yes

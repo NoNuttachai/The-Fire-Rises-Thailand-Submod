@@ -10,4 +10,5 @@ opinion_modifiers = {
 	SIA_iran_oil_deal_opinion = { value = 20 }
 	SIA_milktea_chi = { value = 5 }
 	SIA_milktea_prc = { value = -5 }
+	SIA_diplomatic_efforts = { value = 10 }
 }

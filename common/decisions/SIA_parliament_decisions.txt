@@ -100,6 +100,30 @@ SIA_parliament_category = {
 		complete_effect = {
 		}
 	}
+	SIA_court_decides_prayuts_case = {
+		icon = generic_crisis
+		priority = 1
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 28
+		timeout_effect = {
+			country_event = thai_prayut.2
+		}
+		complete_effect = {
+		}
+	}
 	SIA_prime_minister_desk = {
 		icon = GFX_SOV_decision_decision_braker_tricolor
 		available = {

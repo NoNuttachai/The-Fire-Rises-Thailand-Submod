@@ -16,6 +16,8 @@
  SIA_dp_long: "£GFX_democrat Democrat Party/£GFX_bhumjaithai Bhumjaithai Party/£GFX_chartthaipattana Chart Thai Pattana Party"
  SIA_palang_pracharath_party_alt: "Palang Pracharath"
  SIA_palang_pracharath_party_alt_long: "£GFX_palang_pracharath Palang Pracharath Party"
+ SIA_utn: "UTN"
+ SIA_utn_long: "United Thai Nation"
  SIA_rtaf: "RTARF"
  SIA_rtaf_long: "£GFX_royal_thai_armed_forces Royal Thai Armed Forces"
  SIA_rubbish_collect: "RCO"
@@ -149,7 +151,7 @@
  SIA_deploy_the_army_desc: ""
  SIA_deploy_the_army_tt: "§RWith Riots all across the country, the situation has gotten out of hand§!"
 
-
+ SIA_reassure_the_nation_tt: "§gThe Court will make their final decision about Prayut's case§!"
  ###Characters###
  SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
  SIA_don_pramudwinai_char: "Don Pramudwinai"
@@ -463,6 +465,32 @@
  thai_elections.1.d: "Logi Sucks"
  thai_elections.1.a: "new gov"
  
+ thai_elections.2.t: "Parliament dissolved"
+ thai_elections.2.d: "woah elections"
+ thai_elections.2.a: "everyone loses employment"
+ thai_elections_2_tt: "§YParliament will now be closed until the formation of a new government§!"
+ 
+ thai_elections.3.t: "2023 Election Season"
+ thai_elections.3.d: "Imagine voting"
+ thai_elections.3.a: "§gUTN§!"
+ thai_elections_3_tt_a: "Campaign for the §gUnited Thai Nation Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
+ 
+ thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
+ thai_elections_3_tt_b: "Campaign for the §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
+ 
+ thai_prayut.1.t: "Prayut temporarily suspended"
+ thai_prayut.1.d: "Big Tu noooooo"
+ thai_prayut.1.a: "new pm for now lol"
+ 
+ thai_prayut.2.t: "Prayut comes back"
+ thai_prayut.2.d: "he now hates prawit maybe"
+ thai_prayut.2.a: "oh noes"
+ 
+ thai_prayut.3.t: "Prayut transfers to UTN"
+ thai_prayut.3.d: "Dark Prayut"
+ thai_prayut.3.a: "more evl coding needed"
+ thai_prayut_3_tt: "§YPrayut Chan-o-cha§! has transferred to the §gUnited Thai Nation Party§!"
+ 
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
@@ -471,7 +499,8 @@
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
  
  SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §ROngoing§!"
-
+ SIA_prayut_cant_do_this: "£GFX_palang_pracharath §PPalang Pracharath Party§! §Yinternal dispute has been sorted out§!"
+ SIA_prayut_split: "§gPrayut§! and §PPrawit§! has §Rbroken off§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -642,6 +671,7 @@
  SIA_second_no_confidence_vote: "Second Motion of No Confidence"
  SIA_third_no_confidence_vote: "Third Motion of No Confidence"
  SIA_2020_budget_bill_vote: "2020 Budget Bill"
+ SIA_court_decides_prayuts_case: "Supreme Court Makes Their Decision"
  SIA_prime_minister_desk: "                           §YPRIME MINISTER DESK§!             "
  SIA_emergency_loan_bill_covid: "§RCOVID§!: Emergency Loan Bill"
  SIA_emergency_loan_bill_covid_desc: "With the current global situation affecting Thailand, the government promulgated the 1 Trillion Baht Borrowing Decree, officially known as: §Ythe Emergency Decree Authorising the Ministry of Finance to Raise Loans to Solve Problems, to Remedy and Restore the Economy and Society as Affected by the Coronavirus Disease Pandemic, B.E. 2563 (2020).§!\n\nIf approved by Parliament, it would authorize borrowing of up to 1 trillion baht, making it the largest borrowing measure in Thailand's history to date and far exceeding the scale of previous emergency funding bills."
