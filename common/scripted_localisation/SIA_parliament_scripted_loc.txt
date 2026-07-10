@@ -637,6 +637,16 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SIA_elections_1st_rank_text
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = "SIA_parliament_elections_projected_winner_[?SIA_elections_1st]"
+	}
+}
+defined_text = {
 	name = SIA_elections_2nd_rank
 	
 	text = {
@@ -647,6 +657,16 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SIA_elections_2nd_rank_text
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = "SIA_parliament_elections_projected_winner_[?SIA_elections_2nd]"
+	}
+}
+defined_text = {
 	name = SIA_elections_3rd_rank
 	
 	text = {
@@ -654,5 +674,15 @@ defined_text = {
 			original_tag = SIA 
 		}
 		localization_key = "GFX_SIA_parliament_elections_projected_winner_[?SIA_elections_3rd]"
+	}
+}
+defined_text = {
+	name = SIA_elections_3rd_rank_text
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+		}
+		localization_key = "SIA_parliament_elections_projected_winner_[?SIA_elections_3rd]"
 	}
 }

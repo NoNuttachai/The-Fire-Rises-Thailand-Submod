@@ -13,6 +13,11 @@ SIA_debug_prayut_terminal = {
 			country_event = thai_events.34
 		}
 	}
+	SIA_enable_cambodia_war = {
+		complete_effect = {
+			country_event = thai_cambodia_tension.1
+		}
+	}
 	SIA_enable_the_prayutreich = {
 		complete_effect = {
 			set_party_name = {

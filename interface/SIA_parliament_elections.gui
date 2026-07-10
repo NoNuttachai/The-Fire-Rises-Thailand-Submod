@@ -19,18 +19,21 @@ guiTypes = {
 			position = { x = 175 y = 29 }
 			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
 			scale = 0.8
+			pdx_tooltip = SIA_1st_rank_tt
 		}
 		iconType = {
 			name = "SIA_elections_2_winner"
 			position = { x = 66 y = 50 }
 			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
 			scale = 0.7
+			pdx_tooltip = SIA_2nd_rank_tt
 		}
 		iconType = {
 			name = "SIA_elections_3_winner"
 			position = { x = 300 y = 71 }
 			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
 			scale = 0.6
+			pdx_tooltip = SIA_3rd_rank_tt
 		}
 		containerWindowType = {
 			name = "SIA_parliament_gui_bar_container"

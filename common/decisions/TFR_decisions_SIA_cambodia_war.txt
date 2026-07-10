@@ -1,0 +1,326 @@
+SIA_cambodia_war_category = {
+	SIA_cambodia_launches_skirmish = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_war_with = CAM
+		}
+		visible = {
+			
+			
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_skirmish_area = 1 }
+				}
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 1502
+						num_provinces = 1
+						on_win = thai_cambodia_tension.2
+						on_lose = thai_cambodia_tension.3
+						modifier = 0.5
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 1498
+						num_provinces = 1
+						
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_skirmish_area = 2 }
+				}
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 1499
+						num_provinces = 1
+						on_win = thai_cambodia_tension.3
+						on_lose = thai_cambodia_tension.2
+						modifier = 0.5
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 1503
+						num_provinces = 1
+						
+					}
+				}
+			}
+			else = {
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 286
+						num_provinces = 1
+						on_win = thai_cambodia_tension.2
+						on_lose = thai_cambodia_tension.3
+						modifier = 0.5
+						dig_in_factor = 0
+						terrain_factor = 0
+					}	
+					defender = {
+						state = 1509
+						num_provinces = 1
+						
+					}
+				}
+			}
+		}
+	}
+	SIA_mediation_settles_in = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_war_with = CAM
+		}
+		visible = {
+			
+			
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 100
+		timeout_effect = {
+			SIA_thai_cambodia_decide_mediation = yes
+		}
+	}
+	SIA_cambodia_demonstrates_their_case = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_war_with = CAM
+		}
+		visible = {
+			
+			
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 7
+		timeout_effect = {
+			set_temp_variable = { lean_change = -0.05 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+			
+			set_temp_variable = { lean_change = -0.05 }
+			set_temp_variable = { target = 0 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+			
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.03 }
+			SIA_change_thai_cambodia_tensions = yes
+			activate_mission = SIA_cambodia_demonstrates_their_case
+		}
+	}
+	SIA_increase_military_alertness = {
+		visible = {
+			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
+		}
+		complete_effect = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
+			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_fortify_border_checkpoints = {
+		visible = {
+			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
+		}
+		complete_effect = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.10 }
+			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_hold_talks = {
+		visible = {
+			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
+		}
+		cost = 30
+		complete_effect = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.05 }
+			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_push_for_peace = {
+		visible = {
+			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.10 }
+			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_send_out_diplomats = {
+		visible = {
+			check_variable = { SIA_thai_cambodia_phase = 2 }
+		}
+		cost = 25
+		complete_effect = {
+			set_temp_variable = { lean_change = 0.05 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+			
+			set_temp_variable = { lean_change = 0.05 }
+			set_temp_variable = { target = 0 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_appeal_our_case = {
+		visible = {
+			check_variable = { SIA_thai_cambodia_phase = 2 }
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = { lean_change = 0.10 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+			
+			set_temp_variable = { lean_change = 0.10 }
+			set_temp_variable = { target = 0 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_flex_our_aura = {
+		visible = {
+			check_variable = { SIA_thai_cambodia_phase = 2 }
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = { lean_change = -0.10 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+			
+			set_temp_variable = { lean_change = 0.15 }
+			set_temp_variable = { target = 0 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_promise_a_gacha_game = {
+		visible = {
+			check_variable = { SIA_thai_cambodia_phase = 2 }
+		}
+		cost = 50
+		complete_effect = {
+			set_temp_variable = { lean_change = 0.15 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+			
+			set_temp_variable = { lean_change = -0.10 }
+			set_temp_variable = { target = 0 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_increase_tensions = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
+			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_decrease_tensions = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.15 }
+			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_increase_jap_lean_to_cam = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { lean_change = -0.15 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_increase_jap_lean_to_sia = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { lean_change = 0.15 }
+			set_temp_variable = { target = 1 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_increase_prc_lean_to_cam = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { lean_change = -0.15 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_increase_prc_lean_to_sia = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { lean_change = 0.15 }
+			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_set_puppet_cambodia = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			puppet = CAM
+			CAM = {
+				set_cosmetic_tag = CAM_thai_occupation_government
+				set_politics = {
+					ruling_party = nationalist
+					long_name = "Thai Occupational Authority"
+					name = "Thai Occupational Authority"
+				}
+				set_popularities = {
+					nationalist = 100
+				}
+				create_country_leader = {
+					name = SIA_chaichan_changmongkol_char
+					picture = "gfx/leaders/SIA/SIA_chaichan_changmongkol.png"
+					ideology = military_junta
+					traits = {
+					}
+				}
+			}
+		}
+	}
+}

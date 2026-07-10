@@ -39,7 +39,6 @@ on_actions = {
 				country_event = { id = thai_events.41 days = 67 } #8 March 2020  - Move Forward MP Defection
 				country_event = { id = thai_events.42 days = 27 } #28 January 2020  - Parliamentary Seat Change
 				country_event = { id = thai_events.43 days = 171 } #20 June 2020  - Parliamentary Seat Change
-				country_event = { id = thai_events.44 days = 286 } #Saudi Civil War question of intervention
 				country_event = { id = thai_events.48 days = 1174 } #20 Mar 2023 Prachin Buri Radiation Incident
 				country_event = { id = thai_events.49 days = 2093 } #24 Sep 2025 Massive Sinkhole in Dusit District, Bangkok
 				country_event = { id = thai_events.50 days = 110 } # 20 April 2020 #MilkTeaAlliance
@@ -181,6 +180,46 @@ on_actions = {
 					}
 					
 				}
+			}
+		}
+	}
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				# Thailand kills Cambodia
+				limit = {
+					FROM = {
+						original_tag = SIA
+					}
+					ROOT = {
+						original_tag = CAM
+					}
+				}
+				SIA = {
+					puppet = CAM
+					CAM = {
+						set_cosmetic_tag = CAM_thai_occupation_government
+						set_politics = {
+							ruling_party = nationalist
+							long_name = "Thai Occupational Authority"
+							name = "Thai Occupational Authority"
+						}
+						set_popularities = {
+							nationalist = 100
+						}
+						create_country_leader = {
+							name = SIA_chaichan_changmongkol_char
+							picture = "gfx/leaders/SIA/SIA_chaichan_changmongkol.png"
+							ideology = military_junta
+							traits = {
+							}
+						}
+						remove_ideas = SIA_thai_cambodia_conflict
+						add_ideas = SIA_thai_military_occupation
+					}
+					clr_country_flag = SIA_thai_cambodia_tension
+					country_event = thai_cambodia_tension.6
+				}	
 			}
 		}
 	}

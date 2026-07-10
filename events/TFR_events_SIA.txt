@@ -1,7 +1,196 @@
 add_namespace = thai_events
 add_namespace = thai_prayut #separating events like this for now
+add_namespace = thai_cambodia_tension #separating events like this for now
 add_namespace = thai_elections
 add_namespace = thai_newsevents
+
+country_event = { #Start of border tensions
+    id = thai_cambodia_tension.1
+    title = thai_cambodia_tension.1.t
+    desc = thai_cambodia_tension.1.d
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = SIA_thai_cambodia_tension.4 days = 55 }
+			add_ideas = SIA_thai_cambodia_conflict
+			CAM = {
+				add_ideas = SIA_thai_cambodia_conflict
+			}
+		}
+	}
+    option = {
+        name = thai_cambodia_tension.1.a 
+		custom_effect_tooltip = thai_cambodia_tension_1_tt
+		set_variable = { SIA_thai_cambodia_tensions = 0.45 }
+		set_variable = { SIA_thai_cambodia_phase = 1 }
+		set_country_flag = SIA_thai_cambodia_tension
+		activate_mission = SIA_cambodia_launches_skirmish
+		effect_tooltip = {
+			add_ideas = SIA_thai_cambodia_conflict
+			CAM = {
+				add_ideas = SIA_thai_cambodia_conflict
+			}
+		}
+    }
+}
+country_event = { #Thailand loses skirmish
+    id = thai_cambodia_tension.2
+    title = thai_cambodia_tension.2.t
+    desc = thai_cambodia_tension.2.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.2.a 
+		SIA = {
+			add_stability = -0.1
+			add_political_power = -50
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
+			SIA_change_thai_cambodia_tensions = yes
+			activate_mission = SIA_cambodia_launches_skirmish
+			if = {
+				limit = {
+					check_variable = { SIA_skirmish_area = 1 }
+				}
+				set_variable = { SIA_skirmish_area = 2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_skirmish_area = 2 }
+				}
+				set_variable = { SIA_skirmish_area = 0 }
+			}
+			else = {
+				set_variable = { SIA_skirmish_area = 1 }
+			}
+		}
+    }
+}
+
+country_event = { #Skirmish held off
+    id = thai_cambodia_tension.3
+    title = thai_cambodia_tension.3.t
+    desc = thai_cambodia_tension.3.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.3.a 
+		SIA = {
+			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
+			army_experience = 15
+			SIA_change_thai_cambodia_tensions = yes
+			activate_mission = SIA_cambodia_launches_skirmish
+			if = {
+				limit = {
+					check_variable = { SIA_skirmish_area = 1 }
+				}
+				set_variable = { SIA_skirmish_area = 2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_skirmish_area = 2 }
+				}
+				set_variable = { SIA_skirmish_area = 0 }
+			}
+			else = {
+				set_variable = { SIA_skirmish_area = 1 }
+			}
+		}
+    }
+}
+country_event = { #China and Japan intervenes - Phase set to mediation
+    id = thai_cambodia_tension.4
+    title = thai_cambodia_tension.4.t
+    desc = thai_cambodia_tension.4.d
+	trigger = {
+		NOT = {
+			has_war_with = CAM
+		}
+		has_country_flag = SIA_thai_cambodia_tension
+	}
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.4.a 
+		custom_effect_tooltip = thai_cambodia_tension_4_tt
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.15 }
+		SIA_change_thai_cambodia_tensions = yes
+		set_variable = { SIA_thai_cambodia_phase = 2 }
+		set_variable = { SIA_thai_cambodia_jap_lean = 0.5 }
+		set_variable = { SIA_thai_cambodia_prc_lean = 0.5 }
+		activate_mission = SIA_mediation_settles_in
+		activate_mission = SIA_cambodia_demonstrates_their_case
+    }
+}
+country_event = { #War happens
+    id = thai_cambodia_tension.5
+    title = thai_cambodia_tension.5.t
+    desc = thai_cambodia_tension.5.d
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			declare_war_on = {
+                target = CAM
+                type = annex_everything
+            }
+		}
+	}
+    option = {
+        name = thai_cambodia_tension.5.a 
+		custom_effect_tooltip = thai_cambodia_tension_5_tt
+		set_variable = { SIA_thai_cambodia_phase = 3 }
+    }
+}
+country_event = { #War won
+    id = thai_cambodia_tension.6
+    title = thai_cambodia_tension.6.t
+    desc = thai_cambodia_tension.6.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.6.a 
+		CAM = {
+			add_stability = 0.1
+		}
+		add_political_power = 200
+		add_war_support = 0.15
+		remove_ideas = SIA_thai_cambodia_conflict
+    }
+}
+country_event = { #thai century of humiliation
+    id = thai_cambodia_tension.7
+    title = thai_cambodia_tension.7.t
+    desc = thai_cambodia_tension.7.d
+	trigger = {
+		SIA = {
+			surrender_progress > 0.2
+		}
+		tag = SIA
+	}
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			white_peace = CAM
+			CAM = {
+				remove_ideas = SIA_thai_cambodia_conflict
+			}
+		}
+	}
+    option = {
+        name = thai_cambodia_tension.7.a 
+	
+		add_political_power = -200
+		add_war_support = -0.25
+		remove_ideas = SIA_thai_cambodia_conflict
+		add_ideas = SIA_national_humiliation
+    }
+}
 
 country_event = {
     id = thai_prayut.1
@@ -1178,7 +1367,11 @@ country_event = {
     title = thai_events.44.t
     desc = thai_events.44.desc
 	picture = GFX_report_thailand_in_saudi_civil_war
-	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = SAU_saudi_civil_war_global
+		tag = SIA
+	}
 	
     option = {
         name = thai_events.44.a
@@ -1293,16 +1486,23 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
-					has_active_mission = SIA_oil_in_reserves_mission
-				}
+				has_country_flag = SIA_oil_crisis_ongoing
 			}
-			activate_mission = SIA_oil_in_reserves_mission
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
+			add_days_mission_timeout = {
+				mission = SIA_oil_in_reserves_mission
+				days = 75
+			}
+			
 		}
-		add_days_mission_timeout = {
-			mission = SIA_oil_in_reserves_mission
-			days = 75
-		}
+		
 	}
 }
 country_event = {

@@ -531,6 +531,50 @@ ideas = {
 				income_growth_factor = -0.1
 			}
 		}
+		SIA_thai_cambodia_conflict = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_attack_factor = 0.15
+			}
+		}
+		SIA_national_humiliation = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.3
+				stability_weekly = -0.05
+			}
+		}
+		SIA_thai_military_occupation = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

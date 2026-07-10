@@ -125,3 +125,9 @@ defined_text = {
 		localization_key = SIA_joe_biden_deal
 	}
 }
+defined_text = {
+	name = SIA_thai_cambodia_get_phase
+	text = {
+		localization_key = SIA_cambodia_war_phase_[?SIA_thai_cambodia_phase]
+	}
+}

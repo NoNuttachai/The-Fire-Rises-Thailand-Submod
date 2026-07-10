@@ -645,3 +645,151 @@ SIA_oil_crisis_restore_back_to_first_level = {
 	}
 	add_ideas = SIA_oil_crisis
 }
+SIA_change_thai_cambodia_tensions = {
+	add_to_variable = { SIA_thai_cambodia_tensions = SIA_thai_cambodia_tensions_temp }
+	custom_effect_tooltip = SIA_change_thai_cambodia_tensions_tt
+	
+	clamp_variable = {
+		var = SIA_thai_cambodia_tensions
+		min = 0
+		max = 1 
+	}
+	
+	if = {
+		limit = {
+			check_variable = { SIA_thai_cambodia_tensions = 1 }
+		}
+		country_event = thai_cambodia_tension.5
+	}
+}
+SIA_change_thai_cambodia_mediation_lean = {
+	if = {
+		limit = {
+			check_variable = { target = 1 }
+		}
+		add_to_variable = { SIA_thai_cambodia_jap_lean = lean_change }
+		if = {
+			limit = {
+				check_variable = { lean_change < 0 }
+			}
+			multiply_temp_variable = { lean_change = -1 }
+			custom_effect_tooltip = SIA_change_jap_lean_cam_tt
+		}
+		else = {
+			custom_effect_tooltip = SIA_change_jap_lean_sia_tt
+		}
+	}
+	else = {
+		add_to_variable = { SIA_thai_cambodia_prc_lean = lean_change }
+		if = {
+			limit = {
+				check_variable = { lean_change < 0 }
+			}
+			multiply_temp_variable = { lean_change = -1 }
+			custom_effect_tooltip = SIA_change_prc_lean_cam_tt
+		}
+		else = {
+			custom_effect_tooltip = SIA_change_prc_lean_sia_tt
+		}
+	}
+}
+SIA_thai_cambodia_decide_mediation = {
+	if = { #everyone says Thailand cool
+		limit = {
+			check_variable = { SIA_thai_cambodia_jap_lean > 0.64 }
+			check_variable = { SIA_thai_cambodia_prc_lean > 0.64 }
+		}
+		custom_effect_tooltip = SIA_mediation_china_will_side_with_thailand
+		custom_effect_tooltip = SIA_mediation_japan_will_side_with_thailand
+	}
+	else_if = { #everyone says Cambodia cool
+		limit = {
+			check_variable = { SIA_thai_cambodia_jap_lean < 0.36 }
+			check_variable = { SIA_thai_cambodia_prc_lean < 0.36 }
+		}
+		custom_effect_tooltip = SIA_mediation_china_will_side_with_cambodia
+		custom_effect_tooltip = SIA_mediation_japan_will_side_with_cambodia
+	}
+	else_if = { #1 side says thailand cool and 1 say cambodia cool
+		limit = {
+			OR = {
+				AND = {
+					check_variable = { SIA_thai_cambodia_jap_lean > 0.64 }
+					check_variable = { SIA_thai_cambodia_prc_lean < 0.36 }
+				}
+				AND = {
+					check_variable = { SIA_thai_cambodia_jap_lean < 0.36 }
+					check_variable = { SIA_thai_cambodia_prc_lean > 0.64 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { SIA_thai_cambodia_jap_lean > 0.64 }
+			}
+			custom_effect_tooltip = SIA_mediation_china_will_side_with_cambodia
+			custom_effect_tooltip = SIA_mediation_japan_will_side_with_thailand
+		}
+		else = {
+			custom_effect_tooltip = SIA_mediation_china_will_side_with_thailand
+			custom_effect_tooltip = SIA_mediation_japan_will_side_with_cambodia
+		}
+	}
+	else_if = { #1 side sides with someone but other doesnt care
+		limit = {
+			OR = {
+				AND = { #Japan sides with someone
+					OR = {
+						check_variable = { SIA_thai_cambodia_jap_lean > 0.64 }
+						check_variable = { SIA_thai_cambodia_jap_lean < 0.36 }
+					}
+					check_variable = { SIA_thai_cambodia_prc_lean < 0.65 }
+					check_variable = { SIA_thai_cambodia_prc_lean > 0.35 }
+				}
+				AND = { #China sides with someone
+					OR = {
+						check_variable = { SIA_thai_cambodia_prc_lean > 0.64 }
+						check_variable = { SIA_thai_cambodia_prc_lean < 0.36 }
+					}
+					check_variable = { SIA_thai_cambodia_jap_lean < 0.65 }
+					check_variable = { SIA_thai_cambodia_jap_lean > 0.35 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { SIA_thai_cambodia_jap_lean < 0.65 }
+				check_variable = { SIA_thai_cambodia_jap_lean > 0.35 }
+			}
+			custom_effect_tooltip = SIA_mediation_japan_apathy
+			if = {
+				limit = {
+					check_variable = { SIA_thai_cambodia_prc_lean > 0.64 }
+				}
+				custom_effect_tooltip = SIA_mediation_china_will_side_with_thailand
+			}
+			else = {
+				custom_effect_tooltip = SIA_mediation_china_will_side_with_cambodia
+			}
+		}
+		else = {
+			custom_effect_tooltip = SIA_mediation_china_apathy
+			if = {
+				limit = {
+					check_variable = { SIA_thai_cambodia_jap_lean > 0.64 }
+				}
+				custom_effect_tooltip = SIA_mediation_japan_will_side_with_thailand
+			}
+			else = {
+				custom_effect_tooltip = SIA_mediation_japan_will_side_with_cambodia
+			}
+		}
+	}
+	
+	else = { #both dont give a damn
+		custom_effect_tooltip = SIA_mediation_china_apathy
+		custom_effect_tooltip = SIA_mediation_japan_apathy
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 1 }
+		SIA_change_thai_cambodia_tensions = yes
+	}
+}

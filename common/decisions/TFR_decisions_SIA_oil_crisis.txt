@@ -435,6 +435,7 @@ SIA_oil_crisis_cat = {
 					NOT = {
 						has_active_mission = SIA_oil_in_reserves_mission
 					}
+					has_country_flag = SIA_oil_crisis_ongoing
 				}
 				activate_mission = SIA_oil_in_reserves_mission
 			}

@@ -39,7 +39,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -10
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_prayut_triumphant
 		prerequisite = { focus = SIA_prayut_triumphant }
 		ai_will_do = {
@@ -64,7 +64,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -2
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_rupture
 		prerequisite = { focus = SIA_rupture }
 		mutually_exclusive = { focus = SIA_dial_tokyo }
@@ -88,7 +88,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 2
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_rupture
 		prerequisite = { focus = SIA_rupture }
 		mutually_exclusive = { focus = SIA_dial_beijing }
@@ -112,7 +112,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_dial_beijing
 		prerequisite = { focus = SIA_dial_beijing }
 		ai_will_do = {
@@ -131,7 +131,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_as_one_family
 		prerequisite = { focus = SIA_as_one_family }
 		ai_will_do = {
@@ -150,7 +150,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 0
 		y = 2
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_rupture
 		prerequisite = { focus = SIA_dial_beijing focus = SIA_dial_tokyo }
 		ai_will_do = {
@@ -169,7 +169,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_stop_the_decline
 		prerequisite = { focus = SIA_stop_the_decline }
 		ai_will_do = {
@@ -188,7 +188,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_stop_the_decline
 		prerequisite = { focus = SIA_stop_the_decline }
 		ai_will_do = {
@@ -207,7 +207,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 1
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_dial_tokyo
 		prerequisite = { focus = SIA_dial_tokyo }
 		ai_will_do = {
@@ -226,7 +226,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 0
 		y = 1
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_exchanging_note
 		prerequisite = { focus = SIA_exchanging_note }
 		ai_will_do = {
@@ -245,7 +245,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 0
 		y = 2
-		cost = 1
+		cost = 4
 		relative_position_id = SIA_stop_the_decline
 		prerequisite = { focus = SIA_our_shared_future focus = SIA_level_the_field }
 		prerequisite = { focus = SIA_lets_talk_business }

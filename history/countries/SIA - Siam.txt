@@ -75,7 +75,6 @@
 	recruit_character = SIA_anupong_paochinda_char
 	recruit_character = SIA_Kittinant_Chinsamran_char
 	recruit_character = SIA_Preecha_Chan_o_cha_char
-	recruit_character = SIA_prayut_chan-o-cha_char
 	
 	add_ideas = {
 		SIA_gdp_fix_new

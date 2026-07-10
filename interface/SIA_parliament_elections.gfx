@@ -9,31 +9,31 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_1"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_1.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_2"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha2.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_2_1.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_3"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha3.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_3.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_4"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha4.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_4.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_6"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha6.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_6.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_9"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha9.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_9.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_11"
-		textureFile = "gfx/interface/SIA/parliament_elections/SIA_prayut_chan-o-cha11.png"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_11.png"
 	}
 	progressbartype = {
 		name = "GFX_SIA_parliament_elections_bar_1"

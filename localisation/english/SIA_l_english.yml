@@ -209,6 +209,10 @@
  SIA_triumph_in_saudi_arabia: "Triumph in Saudi Arabia"
  SIA_iranian_oil_deal_idea: "Iranian Oil Deal"
  SIA_truck_protests: "Truck Protests"
+ SIA_thai_cambodia_conflict: "Thai-Cambodian Conflict"
+ SIA_national_humiliation: "National Humiliation"
+ SIA_thai_military_occupation: "Thai Military Occupation"
+ 
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -491,6 +495,37 @@
  thai_prayut.3.a: "more evl coding needed"
  thai_prayut_3_tt: "§YPrayut Chan-o-cha§! has transferred to the §gUnited Thai Nation Party§!"
  
+ thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
+ thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
+ thai_cambodia_tension.1.a: "What is this idiot doing!"
+ thai_cambodia_tension_1_tt: "§YThai-Cambodian Tensions§! will now start at the §OBorder Skirmishes§! Phase"
+ 
+ thai_cambodia_tension.2.t: "Thai Military Retreats in Disgrace"
+ thai_cambodia_tension.2.d: "erm"
+ thai_cambodia_tension.2.a: "oh noes"
+ 
+ thai_cambodia_tension.3.t: "Cambodians Pushed Out"
+ thai_cambodia_tension.3.d: "ezezezezez"
+ thai_cambodia_tension.3.a: "oh noes"
+ 
+ thai_cambodia_tension.4.t: "China and Japan calling"
+ thai_cambodia_tension.4.d: "They want us to calm the hell down"
+ thai_cambodia_tension.4.a: "Stop ruining the fun"
+ thai_cambodia_tension_4_tt: "§YThai-Cambodian Tensions§! will update to the §GMediation§! Phase"
+ 
+ thai_cambodia_tension.5.t: "Point of No Return"
+ thai_cambodia_tension.5.d: "Alright, let's punish them"
+ thai_cambodia_tension.5.a: "Mobilize the Army"
+ thai_cambodia_tension_5_tt: "§YThai-Cambodian Tensions§! will update to the §RFull-On War§! Phase"
+ 
+ thai_cambodia_tension.6.t: "war won"
+ thai_cambodia_tension.6.d: "why are we occupying cambodia"
+ thai_cambodia_tension.6.a: "evil"
+ 
+ thai_cambodia_tension.7.t: "war.... lost sad"
+ thai_cambodia_tension.7.d: "I afked"
+ thai_cambodia_tension.7.a: "death to thailand parliament"
+ 
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
@@ -651,7 +686,17 @@
  SIA_elections_playing_as_2: "£GFX_phua_thai §RPheu Thai Party§!"
  SIA_elections_playing_as_0: "§gNo One§!"
  
+ SIA_1st_rank_tt: "1st Place - §Y[SIA_elections_1st_rank_text]§!"
+ SIA_2nd_rank_tt: "2nd Place - §Y[SIA_elections_2nd_rank_text]§!"
+ SIA_3rd_rank_tt: "3rd Place - §Y[SIA_elections_3rd_rank_text]§!"
  
+ SIA_parliament_elections_projected_winner_1: "£GFX_palang_pracharath Prawit Wongsuwan"
+ SIA_parliament_elections_projected_winner_2: "£GFX_phua_thai Sretta Thavisin"
+ SIA_parliament_elections_projected_winner_3: "£GFX_orange_party_2 Pita Limjaroenrat"
+ SIA_parliament_elections_projected_winner_4: "£GFX_democrat WHO?!?!?!"
+ SIA_parliament_elections_projected_winner_6: "£GFX_bhumjaithai Anutin Charnvirakul"
+ SIA_parliament_elections_projected_winner_9: "If you're seeing this, something has gone wrong"
+ SIA_parliament_elections_projected_winner_11: "Prayut Chan-o-cha"
  #Focus Tree Names
  thailand_focus_tfr_submod: "Thailand 2020 Focus Tree"
  SIA_prayut_focus_tree: "Prayut 2021 Victory Against Protests"
@@ -913,9 +958,28 @@
  
  SIA_saudi_civil_war_oil_tt: "§GIn exchange for aid, we will be provided oil§!"
  
-
+ SIA_cambodia_war_category: "Thai-Cambodian Tensions"
+ SIA_cambodia_war_category_desc: "Thailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
+ SIA_cambodia_war_phase_1: "§OBorder Skirmishes§!"
+ SIA_cambodia_war_phase_2: "§GMediation§!\n\n@JAP Japanese §gLean§!: [?SIA_thai_cambodia_jap_lean|%0]\n@PRC §RChinese§! §gLean§!: [?SIA_thai_cambodia_prc_lean|%0]"
+ SIA_cambodia_war_phase_3: "§RFull-On War§!"
  
+ SIA_change_thai_cambodia_tensions_tt: "§YThai-Cambodian§! §RTensions§! will change by [?SIA_thai_cambodia_tensions_temp|+-0%]"
  
+ SIA_change_jap_lean_cam_tt: "@JAP Japanese §gLean§! will drift closer to §Y[CAM.GetNameWithFlag]§! by §R[?lean_change|%]§!"
+ SIA_change_jap_lean_sia_tt: "@JAP Japanese §gLean§! will drift closer to §Y[SIA.GetNameWithFlag]§! by §G[?lean_change|%]§!"
+ 
+ SIA_change_prc_lean_cam_tt: "@PRC §RChinese§! §gLean§! will drift closer to §Y[CAM.GetNameWithFlag]§! by §R[?lean_change|%]§!"
+ SIA_change_prc_lean_sia_tt: "@PRC §RChinese§! §gLean§! will drift closer to §Y[SIA.GetNameWithFlag]§! by §G[?lean_change|%]§!"
+ 
+ SIA_mediation_china_will_side_with_thailand: "@PRC §RChina§! will §Yside in favor§! of §L@SIA Thailand§!"
+ SIA_mediation_japan_will_side_with_thailand: "@JAP Japan will §Yside in favor§! of §L@SIA Thailand§!"
+ 
+ SIA_mediation_china_will_side_with_cambodia: "@PRC §RChina§! will §Yside in favor§! of §R@CAM Cambodia§!"
+ SIA_mediation_japan_will_side_with_cambodia: "@JAP Japan will §Yside in favor§! of §R@CAM Cambodia§!"
+ 
+ SIA_mediation_china_apathy: "@PRC §RChina§! §gwill leave the region to its own devices§!"
+ SIA_mediation_japan_apathy: "@JAP Japan §gwill leave the region to its own devices§!"
  
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
@@ -962,3 +1026,5 @@
  dx_more_than_25B_and_15pp: "£dx  §H25B§! £pol_power  §H15§!"
  dx_more_than_25B_and_15pp_blocked: "£dx  §R25B§! £pol_power  §R15§!"
  
+ #Cosmetic Names
+ CAM_thai_occupation_government: "Thai Occupational Authority of Cambodia"
