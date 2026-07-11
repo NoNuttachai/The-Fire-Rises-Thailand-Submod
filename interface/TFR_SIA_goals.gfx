@@ -130,4 +130,8 @@ spriteTypes = {
         name = "GFX_goal_SIA_Oil_Crisis"
         texturefile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_ally_with_workers_union"
+        texturefile = "gfx/interface/goals/SIA/SIA_ally_with_workers_union.png"
+    }
 }

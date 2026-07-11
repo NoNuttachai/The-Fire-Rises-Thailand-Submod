@@ -1,5 +1,5 @@
 SIA_cambodia_war_category = {
-	SIA_cambodia_launches_skirmish = {
+	SIA_situation_escalates = {
 		icon = generic_crisis
 		priority = 10
 		allowed = {
@@ -107,6 +107,30 @@ SIA_cambodia_war_category = {
 		days_mission_timeout = 100
 		timeout_effect = {
 			SIA_thai_cambodia_decide_mediation = yes
+		}
+	}
+	SIA_the_war_turns_into_a_slog = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			NOT = { has_war_with = CAM }
+		}
+		visible = {
+			
+			
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 120
+		timeout_effect = {
+			country_event = thai_cambodia_tension.7
 		}
 	}
 	SIA_cambodia_demonstrates_their_case = {

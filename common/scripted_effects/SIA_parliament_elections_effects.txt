@@ -1317,8 +1317,8 @@ SIA_decide_election_winner = {
 		set_variable = { party_7_alignment = 2 } 
 		set_variable = { party_8_alignment = 2 } 
 		set_variable = { party_11_alignment = 1 } 
-		
 		set_variable = { SIA_opposition_leader = 11 }
+		load_focus_tree = SIA_2023_pheu_thai_focus_tree
 	}
 	else_if = {
 		limit = {
@@ -1373,10 +1373,8 @@ SIA_decide_election_winner = {
 		set_variable = { party_6_alignment = 0 } 
 		set_variable = { party_7_alignment = 2 } 
 		set_variable = { party_8_alignment = 2 } 
-
-		
 		set_variable = { SIA_opposition_leader = 2 }
-		
+		load_focus_tree = SIA_2023_utn_focus_tree
 	}
 	else = {
 		custom_effect_tooltip = SIA_election_results_undecided

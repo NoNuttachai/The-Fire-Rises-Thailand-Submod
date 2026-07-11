@@ -12,10 +12,36 @@ country_event = { #Start of border tensions
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
-			country_event = { id = SIA_thai_cambodia_tension.4 days = 55 }
+			country_event = { id = thai_cambodia_tension.4 days = 55 }
 			add_ideas = SIA_thai_cambodia_conflict
 			CAM = {
 				add_ideas = SIA_thai_cambodia_conflict
+				division_template = {
+					name = "Hun Sen Marines"
+
+					regiments = {
+						marine = { x = 0 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 0 y = 2 }
+						marine = { x = 0 y = 3 }
+
+						spaa_brigade = { x = 1 y = 0 }
+						spaa_brigade = { x = 1 y = 1 }
+						light_mechanized = { x = 1 y = 2 }
+						light_mechanized = { x = 1 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Hun Sen Marines\" division_template = \"Hun Sen Marines\" start_experience_factor = 0.2"
+						owner = CAM
+						count = 1
+						allow_spawning_on_enemy_provs = yes
+					}
+				}
 			}
 		}
 	}
@@ -25,11 +51,21 @@ country_event = { #Start of border tensions
 		set_variable = { SIA_thai_cambodia_tensions = 0.45 }
 		set_variable = { SIA_thai_cambodia_phase = 1 }
 		set_country_flag = SIA_thai_cambodia_tension
-		activate_mission = SIA_cambodia_launches_skirmish
+		activate_mission = SIA_situation_escalates
 		effect_tooltip = {
 			add_ideas = SIA_thai_cambodia_conflict
 			CAM = {
 				add_ideas = SIA_thai_cambodia_conflict
+			}
+		}
+		add_opinion_modifier = {
+			target = CAM
+			modifier = SIA_border_tensions
+		}
+		CAM = {
+			add_opinion_modifier = {
+				target = SIA
+				modifier = SIA_border_tensions
 			}
 		}
     }
@@ -48,7 +84,7 @@ country_event = { #Thailand loses skirmish
 			add_political_power = -50
 			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
 			SIA_change_thai_cambodia_tensions = yes
-			activate_mission = SIA_cambodia_launches_skirmish
+			activate_mission = SIA_situation_escalates
 			if = {
 				limit = {
 					check_variable = { SIA_skirmish_area = 1 }
@@ -81,7 +117,7 @@ country_event = { #Skirmish held off
 			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
 			army_experience = 15
 			SIA_change_thai_cambodia_tensions = yes
-			activate_mission = SIA_cambodia_launches_skirmish
+			activate_mission = SIA_situation_escalates
 			if = {
 				limit = {
 					check_variable = { SIA_skirmish_area = 1 }
@@ -137,11 +173,29 @@ country_event = { #War happens
                 target = CAM
                 type = annex_everything
             }
+			activate_mission = SIA_the_war_turns_into_a_slog
+			swap_ideas = {
+				remove_idea = SIA_thai_cambodia_conflict
+				add_idea = SIA_thai_cambodia_conflict_2
+			}
+			CAM = {
+				swap_ideas = {
+					remove_idea = SIA_thai_cambodia_conflict
+					add_idea = SIA_thai_cambodia_conflict_3
+				}
+			}
 		}
 	}
     option = {
         name = thai_cambodia_tension.5.a 
 		custom_effect_tooltip = thai_cambodia_tension_5_tt
+		effect_tooltip = {
+			activate_mission = SIA_the_war_turns_into_a_slog
+			swap_ideas = {
+				remove_idea = SIA_thai_cambodia_conflict
+				add_idea = SIA_thai_cambodia_conflict_2
+			}
+		}
 		set_variable = { SIA_thai_cambodia_phase = 3 }
     }
 }
@@ -159,7 +213,7 @@ country_event = { #War won
 		}
 		add_political_power = 200
 		add_war_support = 0.15
-		remove_ideas = SIA_thai_cambodia_conflict
+		remove_ideas = SIA_thai_cambodia_conflict_2
     }
 }
 country_event = { #thai century of humiliation
@@ -184,7 +238,24 @@ country_event = { #thai century of humiliation
 	}
     option = {
         name = thai_cambodia_tension.7.a 
-	
+		1501 = {
+			set_demilitarized_zone = yes
+		}
+		1500 = {
+			set_demilitarized_zone = yes
+		}
+		1509 = {
+			set_demilitarized_zone = yes
+		}
+		1508 = {
+			set_demilitarized_zone = yes
+		}
+		1499 = {
+			set_demilitarized_zone = yes
+		}
+		1498 = {
+			set_demilitarized_zone = yes
+		}
 		add_political_power = -200
 		add_war_support = -0.25
 		remove_ideas = SIA_thai_cambodia_conflict
@@ -204,6 +275,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			country_event = { id = thai_elections.2 days = 208 }
+			country_event = { id = thai_elections.3 days = 127 }
 		}
 	}
     option = {
@@ -253,7 +325,7 @@ country_event = {
 }
 
 
-country_event = { #
+country_event = { #elections calculated
     id = thai_elections.1
     title = thai_elections.1.t
     desc = thai_elections.1.d
@@ -310,6 +382,7 @@ country_event = { #
         name = thai_elections.1.a 
         SIA_setup_parliament_layout = yes
 		SIA_calculate_parliament_frame = yes
+		focus_unlock = yes
     }
 }
 
@@ -319,11 +392,6 @@ country_event = { # Parliament dissolve
     desc = thai_elections.2.d
    
 	is_triggered_only = yes
-	immediate = {
-		hidden_effect = {
-			country_event = { id = thai_elections.3 days = 1 }
-		}
-	}
     option = {
         name = thai_elections.2.a 
         custom_effect_tooltip = thai_elections_2_tt
@@ -516,6 +584,7 @@ country_event = {
 			activate_mission = SIA_oil_in_reserves_mission
 			set_country_flag = SIA_oil_crisis_ongoing
 			set_variable = { oil_reserves_days = days_mission_timeout@SIA_oil_in_reserves_mission }
+			SIA_decrease_economic_engine = yes
 		}
 	}
     option = {
@@ -523,6 +592,7 @@ country_event = {
 		effect_tooltip = {
 			add_ideas = SIA_oil_crisis
 			activate_mission = SIA_oil_in_reserves_mission
+			SIA_decrease_economic_engine = yes
 		}
 		add_power_balance_value = {
 			id = SIA_power_balance
@@ -1054,6 +1124,7 @@ country_event = {
         name = thai_events.30.a
 		clr_country_flag = SIA_oil_crisis_ongoing
 		increase_poverty = yes
+		SIA_increase_economic_engine = yes
 		hidden_effect = {
 			remove_ideas = {
 				SIA_oil_crisis

@@ -203,7 +203,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_workers_union_strikes
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_ally_with_workers_union
 		x = 1
 		y = 1
 		cost = 5

@@ -793,3 +793,99 @@ SIA_thai_cambodia_decide_mediation = {
 		SIA_change_thai_cambodia_tensions = yes
 	}
 }
+
+SIA_increase_economic_engine = {
+	custom_effect_tooltip = SIA_economic_engine_increase
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = SIA_economic_engine_1
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_1
+				add_idea = SIA_economic_engine_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_2
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_2
+				add_idea = SIA_economic_engine_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_3
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_3
+				add_idea = SIA_economic_engine_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_4
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_4
+				add_idea = SIA_economic_engine_5
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_5
+			}
+			add_stability = 0.1
+			add_political_power = 100
+		}
+	}
+}
+SIA_decrease_economic_engine = {
+	custom_effect_tooltip = SIA_economic_engine_decrease
+	hidden_effect = {
+		if = {
+			limit = {
+				has_idea = SIA_economic_engine_1
+			}
+			#just... don't
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_2
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_2
+				add_idea = SIA_economic_engine_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_3
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_3
+				add_idea = SIA_economic_engine_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_4
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_4
+				add_idea = SIA_economic_engine_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SIA_economic_engine_5
+			}
+			swap_ideas = {
+				remove_idea = SIA_economic_engine_5
+				add_idea = SIA_economic_engine_4
+			}
+		}
+	}
+}

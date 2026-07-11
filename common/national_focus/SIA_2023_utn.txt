@@ -1,0 +1,30 @@
+focus_tree = {
+	id = SIA_2023_utn_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIA
+		}
+	}
+	
+	focus = {
+		id = SIA_utn_victory
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 7
+		y = 0
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	
+}

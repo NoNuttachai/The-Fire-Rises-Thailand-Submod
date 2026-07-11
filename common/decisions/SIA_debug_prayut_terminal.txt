@@ -13,6 +13,16 @@ SIA_debug_prayut_terminal = {
 			country_event = thai_events.34
 		}
 	}
+	SIA_load_2023_utn_tree = {
+		complete_effect = {
+			load_focus_tree = SIA_2023_utn_focus_tree
+		}
+	}
+	SIA_load_2023_pheu_thai_tree = {
+		complete_effect = {
+			load_focus_tree = SIA_2023_pheu_thai_focus_tree
+		}
+	}
 	SIA_enable_cambodia_war = {
 		complete_effect = {
 			country_event = thai_cambodia_tension.1

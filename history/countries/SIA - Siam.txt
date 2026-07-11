@@ -82,6 +82,7 @@
 		SIA_an_army_with_a_country_1
 		SIA_constitution_60
 		SIA_lack_of_the_political_legitimacy
+		SIA_economic_engine_3
 		# Ministers
 		SIA_prayut_chan-o-cha_advisor
 		SIA_don_pramudwinai_advisor

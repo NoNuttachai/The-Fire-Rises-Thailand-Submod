@@ -1,0 +1,37 @@
+bookmarks = {
+	bookmark = {
+		name = "FIRE_NAME"
+		desc = "FIRE_NAME_DESC"
+		date = 2020.1.1.1
+		picture = "GFX_select_date_2020"
+		default_country = "SIA"
+		default = yes
+		#filters = {}
+		sort_unplayed_first = no
+		
+		"SIA" = {
+			minor = no
+			history = "SIA_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			version = base_game
+			available = {
+				always = yes
+			}
+			ideas = {
+				SIA_an_army_with_a_country_1
+				SIA_lack_of_the_political_legitimacy
+				SIA_constitution_60
+			}
+			focuses = {
+				SIA_raise_our_three_fingers
+				SIA_side_with_uncle_tuu
+				SIA_deal_with_the_oil_crisis
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

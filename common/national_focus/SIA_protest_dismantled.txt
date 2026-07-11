@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 9999
 			tag = SIA
 		}
 	}
@@ -49,6 +49,9 @@ focus_tree = {
 			has_idea = SIA_prayut_chan-o-cha_advisor
 			has_global_flag = USA_american_civil_war_global
 		}
+		allow_branch = {
+			has_global_flag = USA_american_civil_war_global
+		}
 		bypass = {
 			
 			has_global_flag = USA_american_civil_war_global
@@ -57,6 +60,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			modify_timed_idea = {
+				idea = generic_world_wide_financial_crisis_1
+				days = -50
+			}
+			SIA_decrease_economic_engine = yes
+			add_stability = -0.1
+			add_political_power = -50
+		}
+		bypass_effect = {
+			modify_timed_idea = {
+				idea = generic_world_wide_financial_crisis_1
+				days = -50
+			}
+			SIA_decrease_economic_engine = yes
+			add_stability = -0.1
+			add_political_power = -50
+			
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	focus = {
@@ -143,6 +164,10 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			swap_ideas = {
+				remove_idea = ETH_chinese_investments
+				add_idea = SIA_chinese_investments
+			}
 		}
 	}
 	focus = {
@@ -219,6 +244,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = 10
+			}
+			add_income = yes
 		}
 	}
 	focus = {
@@ -259,6 +289,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			SIA_increase_economic_engine = yes
 		}
 	}
 	
@@ -586,6 +617,10 @@ focus_tree = {
 		}
 		available = {
 			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_country_flag = SIA_prayut_split
+			has_completed_focus = SIA_once_were_brothers
+		}
+		allow_branch = {
 			has_country_flag = SIA_prayut_split
 		}
 		available_if_capitulated = yes

@@ -90,6 +90,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_election_banner"
+		texturefile = "gfx/texticons/banners/SIA_election_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_Jae_Juk"
 		texturefile = "gfx/texticons/banners/Jae_Juk.png"
 		legacy_lazy_load = no

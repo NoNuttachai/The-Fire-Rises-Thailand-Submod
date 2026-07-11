@@ -212,6 +212,11 @@
  SIA_thai_cambodia_conflict: "Thai-Cambodian Conflict"
  SIA_national_humiliation: "National Humiliation"
  SIA_thai_military_occupation: "Thai Military Occupation"
+ SIA_economic_engine_1: "Catastrophic Engine"
+ SIA_economic_engine_2: "Aching Engine"
+ SIA_economic_engine_3: "Stagnating Engine"
+ SIA_economic_engine_4: "Revitalizing Engine"
+ SIA_economic_engine_5: "Roaring Engine"
  
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
@@ -536,6 +541,8 @@
  SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §ROngoing§!"
  SIA_prayut_cant_do_this: "£GFX_palang_pracharath §PPalang Pracharath Party§! §Yinternal dispute has been sorted out§!"
  SIA_prayut_split: "§gPrayut§! and §PPrawit§! has §Rbroken off§!"
+ SIA_economic_engine_decrease: "§YThe Engine§! slowly §Rbreaks down...§!"
+ SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -706,7 +713,7 @@
  SIA_debug_prayut_terminal_desc: "Beep boop Big Tu, What can I do for you?"
  
  SIA_parliament_elections: "2023 Parliament Elections"
- SIA_parliament_elections_desc: "\n\n\n\n\n£GFX_SIA_protest_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
+ SIA_parliament_elections_desc: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
  SIA_undecided_votes_available: "§YThere are still available§! §gUndecided Votes§!"
  SIA_parliament_category: "Parliament of Thailand"
  SIA_parliament_category_desc: ""
@@ -992,6 +999,8 @@
  SIA_iran_oil_deal_opinion: "Iran Oil Deal"
  SIA_milktea_prc: "Milk Tea Alliance"
  SIA_milktea_chi: "Milk Tea Alliance"
+ SIA_diplomatic_efforts: "Diplomatic Efforts"
+ SIA_border_tensions: "Border Tensions"
  #Other Modifiers
  volunteer_cap_modification_2: "Intensify Volunteers"
  volunteer_cap_modification_4: "Intensify Volunteers"

@@ -183,7 +183,7 @@ on_actions = {
 			}
 		}
 	}
-	on_capitulation_immediate = {
+	on_capitulation = {
 		effect = {
 			if = {
 				# Thailand kills Cambodia
@@ -196,7 +196,7 @@ on_actions = {
 					}
 				}
 				SIA = {
-					puppet = CAM
+					release_puppet = CAM
 					CAM = {
 						set_cosmetic_tag = CAM_thai_occupation_government
 						set_politics = {
@@ -215,6 +215,7 @@ on_actions = {
 							}
 						}
 						remove_ideas = SIA_thai_cambodia_conflict
+						remove_ideas = SIA_thai_cambodia_conflict_3
 						add_ideas = SIA_thai_military_occupation
 					}
 					clr_country_flag = SIA_thai_cambodia_tension
