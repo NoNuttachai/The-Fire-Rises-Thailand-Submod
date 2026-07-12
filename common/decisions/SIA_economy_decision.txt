@@ -1,0 +1,22 @@
+SIA_Economy_category = {
+	SIA_KEK = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		complete_effect = {
+		}
+	}
+}

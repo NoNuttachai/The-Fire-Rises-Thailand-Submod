@@ -1,0 +1,78 @@
+guiTypes = {
+	containerWindowType = {
+		name = "SIA_Eco_map_container"
+		clipping = no
+                size = { width = 470 height = 300 }
+		position = { x = 500 y = 500 }
+		
+		buttonType = {
+			name = "SIA_Eco_Bangkok_button"
+			position = { x = 82 y = 119 }
+			spriteType = "GFX_SIA_Eco_Bangkok"
+			pdx_tooltip = "SIA_BK_gui_tt"
+		}
+		
+		buttonType = {
+			name = "SIA_Eco_ChiangMai_button"
+			position = { x = 45 y = 16 }
+			spriteType = "GFX_SIA_Eco_Chiangmai"
+			pdx_tooltip = "SIA_CM_gui_tt"
+		}
+		
+		buttonType = {
+			name = "SIA_Eco_Chonburi_button"
+			position = { x = 101 y = 109 }
+			spriteType = "GFX_SIA_Eco_Chonburi"
+			pdx_tooltip = "SIA_CB_gui_tt"
+
+		}
+
+		buttonType = {
+			name = "SIA_Eco_Isan_button"
+			position = { x = 100 y = 50 }
+			spriteType = "GFX_SIA_Eco_Isan"
+			pdx_tooltip = "SIA_IS_gui_tt"
+
+		}
+
+		buttonType = {
+			name = "SIA_Eco_Nonthaburi_button"
+			position = { x = 70 y = 69 }
+			spriteType = "GFX_SIA_Eco_Nonthaburi"
+			pdx_tooltip = "SIA_NB_gui_tt"
+
+		}
+		buttonType = {
+			name = "SIA_Eco_Pattani_button"
+			position = { x = 98 y = 239 }
+			spriteType = "GFX_SIA_Eco_Pattani"
+			pdx_tooltip = "SIA_PT_gui_tt"
+
+		}
+
+		buttonType = {
+			name = "SIA_Eco_ST1_button"
+			position = { x = 61 y = 130 }
+			spriteType = "GFX_SIA_Eco_ST1"
+			pdx_tooltip = "SIA_ST1_gui_tt"
+
+		}
+
+		buttonType = {
+			name = "SIA_Eco_ST2_button"
+			position = { x = 60 y = 199 }
+			spriteType = "GFX_SIA_Eco_ST2"
+			pdx_tooltip = "SIA_ST2_gui_tt"
+
+		}
+
+		buttonType = {
+			name = "SIA_Eco_WB_button"
+			position = { x = 55 y = 62 }
+			spriteType = "GFX_SIA_Eco_WB"
+			pdx_tooltip = "SIA_WB_gui_tt"
+
+		}
+		
+	}
+}

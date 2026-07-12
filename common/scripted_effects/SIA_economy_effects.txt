@@ -1,0 +1,66 @@
+SIA_update_frame = {
+	set_variable = { SIA_eco_bangkok_frame = 1 } 
+        set_variable = { SIA_eco_ChiangMai_frame = 1 }
+        set_variable = { SIA_eco_Chonburi_frame = 1 }
+        set_variable = { SIA_eco_Isan_frame = 1 }
+        set_variable = { SIA_eco_Nonthaburi_frame = 1 }
+        set_variable = { SIA_eco_Pattani_frame = 1 }
+        set_variable = { SIA_eco_ST1_frame = 1 }
+        set_variable = { SIA_eco_ST2_frame = 1 }
+        set_variable = { SIA_eco_WB_frame = 1 }
+	
+	if = { #Bangkok
+		limit = { 
+			check_variable = { SIA_map_var = 1 }
+		}
+		set_variable = { SIA_eco_bangkok_frame = 2 } 
+	}
+	else_if = { #Chiang Mai
+		limit = { 
+			check_variable = { SIA_map_var = 2 }
+		}
+		set_variable = { SIA_Eco_ChiangMai_frame = 2 } 
+	}
+	else_if = { #Chonburi
+		limit = { 
+			check_variable = { SIA_map_var = 3 }
+		}
+		set_variable = { SIA_Eco_Chonburi_frame = 2 } 
+	}
+	else_if = { #Isan
+		limit = { 
+			check_variable = { SIA_map_var = 4 }
+		}
+		set_variable = { SIA_Eco_Isan_frame = 2 } 
+	}
+	else_if = { #Nonthaburi
+		limit = { 
+			check_variable = { SIA_map_var = 5 }
+		}
+		set_variable = { SIA_Eco_Nonthaburi_frame = 2 } 
+	}
+	else_if = { #Pattani
+		limit = { 
+			check_variable = { SIA_map_var = 6 }
+		}
+		set_variable = { SIA_Eco_Pattani_frame = 2 } 
+	}
+	else_if = { #South Thailand 1
+		limit = { 
+			check_variable = { SIA_map_var = 7 }
+		}
+		set_variable = { SIA_Eco_ST1_frame = 2 } 
+	}
+	else_if = { #South Thailand 2
+		limit = { 
+			check_variable = { SIA_map_var = 8 }
+		}
+		set_variable = { SIA_Eco_ST2_frame = 2 } 
+	}
+	else_if = { #West Bangkok
+		limit = { 
+			check_variable = { SIA_map_var = 9 }
+		}
+		set_variable = { SIA_Eco_WB_frame = 2 } 
+	}
+}

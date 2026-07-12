@@ -111,6 +111,16 @@ SIA_saudi_civil_war = {
 	}
 	visible_when_empty = yes
 }
+SIA_Economy_category = {
+	icon = GFX_decision_cat_SIA_parliament
+	priority = 15
+	scripted_gui = SIA_Economy_gui
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+	}
+}
 SIA_cambodia_war_category = {
 	icon = GFX_decision_cat_SIA_parliament
 

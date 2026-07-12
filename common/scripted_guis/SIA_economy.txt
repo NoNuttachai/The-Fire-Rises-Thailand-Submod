@@ -1,0 +1,105 @@
+scripted_gui = {
+	SIA_Economy_gui = {
+		context_type = decision_category
+		window_name = "SIA_Eco_map_container"
+		visible = {
+			original_tag = SIA
+		}
+		triggers = {
+		}
+		effects = {
+			SIA_Eco_Bangkok_button_click = {
+				set_variable = {
+					var = SIA_map_var
+					value = 1
+				}
+                                SIA_update_frame = yes
+		        }
+			SIA_Eco_ChiangMai_button_click = {
+				set_variable = {
+					 var = SIA_map_var
+					 value = 2
+				}
+                                SIA_update_frame = yes
+			}
+			SIA_Eco_Chonburi_button_click = {
+				set_variable = {
+					 var = SIA_map_var
+					 value = 3
+				}
+                                SIA_update_frame = yes
+		        }
+			SIA_Eco_Isan_button_click = {
+				set_variable = {
+					var = SIA_map_var
+					value = 4
+				}
+                                SIA_update_frame = yes
+		        }
+			SIA_Eco_Nonthaburi_button_click = {
+				set_variable = {
+					 var = SIA_map_var
+					 value = 5
+				}
+                                SIA_update_frame = yes
+			}
+			SIA_Eco_Pattani_button_click = {
+				set_variable = {
+					 var = SIA_map_var
+					 value = 6
+				}
+                                SIA_update_frame = yes
+		        }
+			SIA_Eco_ST1_button_click = {
+				set_variable = {
+					 var = SIA_map_var
+					 value = 7
+				}
+                                SIA_update_frame = yes
+		        }
+			SIA_Eco_ST2_button_click = {
+				set_variable = {
+					var = SIA_map_var
+					value = 8
+				}
+                                SIA_update_frame = yes
+		        }
+			SIA_Eco_WB_button_click = {
+				set_variable = {
+					 var = SIA_map_var
+					 value = 9
+				}
+                                SIA_update_frame = yes
+			}
+                }
+		properties = {
+			SIA_Eco_Bangkok_button = {
+				frame = SIA_Eco_Bangkok_frame
+			}
+			SIA_Eco_ChiangMai_button = {
+				frame = SIA_Eco_ChiangMai_frame
+			}
+			SIA_Eco_Chonburi_button = {
+				frame = SIA_Eco_Chonburi_frame
+			}
+			SIA_Eco_Isan_button = {
+				frame = SIA_Eco_Isan_frame
+			}
+			SIA_Eco_Nonthaburi_button = {
+				frame = SIA_Eco_Nonthaburi_frame
+			}
+			SIA_Eco_Pattani_button = {
+				frame = SIA_Eco_Pattani_frame
+			}
+			SIA_Eco_ST1_button = {
+				frame = SIA_Eco_ST1_frame
+			}
+			SIA_Eco_ST2_button = {
+				frame = SIA_Eco_ST2_frame
+			}
+			SIA_Eco_WB_button = {
+				frame = SIA_Eco_WB_frame
+			}
+		}
+        }
+}
