@@ -1048,3 +1048,14 @@
  SIA_mfp_path_tt: "£GFX_orange_party_2 §OMove Forward Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nFeaturing even more failures to form government majority."
  SIA_ptp_path_tt: "£GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nThis is an otl reference"
  SIA_bhum_path_tt: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nDread it, run from it, Anutin is destined."
+
+ #Economic gui 
+ SIA_BK_gui_tt: "§GBangkok Province§!"
+ SIA_CM_gui_tt: "§CChiang Mai Province§!"
+ SIA_CB_gui_tt: "§R Chonburi Province (Removed in next rendition)§!"
+ SIA_IS_gui_tt: "§nEastern Thailand§!"
+ SIA_NB_gui_tt: "§PCentral Thailand§!"
+ SIA_PT_gui_tt: "§7Pattani Province§!"
+ SIA_ST1_gui_tt: "§YKek Province 1 (Merge with ST2)§!"
+ SIA_ST2_gui_tt: "§OKek Province 2 (Merge with ST1)§!"
+ SIA_WB_gui_tt: "§VWestern Thailand§!"
