@@ -150,8 +150,122 @@
  SIA_deploy_the_army: "Deploy the Army"
  SIA_deploy_the_army_desc: ""
  SIA_deploy_the_army_tt: "§RWith Riots all across the country, the situation has gotten out of hand§!"
+ 
+ #2021 Prayut tree
+ SIA_prayut_triumphant: "Prayut Triumphant"
+ SIA_prayut_triumphant_desc: ""
+ 
+ SIA_rupture: "Rupture"
+ SIA_rupture_desc: ""
+ 
+ SIA_dial_beijing: "Dial Beijing"
+ SIA_dial_beijing_desc: ""
+ 
+ SIA_dial_tokyo: "Dial Tokyo"
+ SIA_dial_tokyo_desc: ""
+ 
+ SIA_as_one_family: "As One Family"
+ SIA_as_one_family_desc: ""
+ 
+ SIA_our_shared_future: "Our Shared Future"
+ SIA_our_shared_future_desc: ""
+ 
+ SIA_stop_the_decline: "Stop the Decline"
+ SIA_stop_the_decline_desc: ""
+ 
+ SIA_restore_confidence: "Restore Confidence"
+ SIA_restore_confidence_desc: ""
+ 
+ SIA_lets_talk_business: "Let's Talk Business"
+ SIA_lets_talk_business_desc: ""
+ 
+ SIA_exchanging_note: "Exchanging Note"
+ SIA_exchanging_note_desc: ""
+ 
+ SIA_level_the_field: "Level the Field"
+ SIA_level_the_field_desc: ""
+ 
+ SIA_pat_yourself_on_the_back: "Pat Yourself on the Back"
+ SIA_pat_yourself_on_the_back_desc: ""
+ 
+ SIA_review_the_autopsy: "Review the Autopsy"
+ SIA_review_the_autopsy_desc: ""
+ 
+ SIA_the_persistent_tumors: "The Persistent Tumors"
+ SIA_the_persistent_tumors_desc: ""
+ 
+ SIA_defend_against_opposition: "Defend Against Opposition"
+ SIA_defend_against_opposition_desc: ""
+ 
+ SIA_weaponize_the_law: "Weaponize the Law"
+ SIA_weaponize_the_law_desc: ""
+ 
+ SIA_period_of_recuperation: "Period of Recuperation"
+ SIA_period_of_recuperation_desc: ""
+ 
+ SIA_khon_la_khrueng: "Khon La Khrueng"
+ SIA_khon_la_khrueng_desc: ""
+ 
+ SIA_support_our_smes: "Support Our SMEs"
+ SIA_support_our_smes_desc: ""
+ 
+ SIA_guaranteeing_satisfaction: "Guaranteeing Satisfaction"
+ SIA_guaranteeing_satisfaction_desc: ""
+ 
+ SIA_prawits_caretaker: "Prawit's Caretaker Period"
+ SIA_prawits_caretaker_desc: ""
+ SIA_prawits_caretaker_tt: "£GFX_palang_pracharath §YGeneral Prawit Wongsuwan§! will assume the role of §YPM§! for a brief period"
+ 
+ SIA_reassure_the_nation: "Reassure the Nation"
+ SIA_reassure_the_nation_desc: ""
+ 
+ SIA_united_as_one: "United as One"
+ SIA_united_as_one_desc: ""
+ 
+ SIA_brothers_forever: "Brothers Forever"
+ SIA_brothers_forever_desc: ""
+ 
+ SIA_no_hard_feelings: "No Hard Feelings"
+ SIA_no_hard_feelings_desc: ""
+ 
+ SIA_once_were_brothers: "Once Were Brothers"
+ SIA_once_were_brothers_desc: ""
+ SIA_once_were_brothers_tt: "Don't take it too hard\n\n\n\n\n£GFX_SIA_prawit_and_prayut\n\n\n\n\n\nIt's just Politics"
+ 
+ SIA_riding_with_uncle_tuu: "Riding with Uncle Tuu"
+ SIA_riding_with_uncle_tuu_desc: ""
+ 
+ SIA_stimulate_the_tourism_spending: "Stimulate the Tourism Spending"
+ SIA_stimulate_the_tourism_spending_desc: ""
+ 
+ SIA_30_30_vision: "30&30 Vision"
+ SIA_30_30_vision_desc: ""
+ 
+ SIA_boost_domestic_spending: "Boost Domestic Spending"
+ SIA_boost_domestic_spending_desc: ""
+ 
+ SIA_tackle_the_debts: "Tackle the Debts"
+ SIA_tackle_the_debts_desc: ""
+ 
+ SIA_attract_foreign_workers: "Attract Foreign Workers"
+ SIA_attract_foreign_workers_desc: ""
+ 
+ SIA_taste_the_appetizer: "Taste the Appetizer"
+ SIA_taste_the_appetizer_desc: ""
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  SIA_reassure_the_nation_tt: "§gThe Court will make their final decision about Prayut's case§!"
+ 
+ SIA_no_hard_feelings: "No Hard Feelings"
+ SIA_no_hard_feelings_tt: "£GFX_united_thai_nation §PPrayut§! and £GFX_palang_pracharath §BPrawit§! will §Rbreak off§! and the £GFX_palang_pracharath §BPalang Pracharath Party§! §Rwill no longer be the same§!"
  ###Characters###
  SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
  SIA_don_pramudwinai_char: "Don Pramudwinai"
@@ -217,7 +331,10 @@
  SIA_economic_engine_3: "Stagnating Engine"
  SIA_economic_engine_4: "Revitalizing Engine"
  SIA_economic_engine_5: "Roaring Engine"
- 
+ SIA_japanese_cooperation: "Japanese-Thai Cooperation"
+ SIA_support_our_smes_idea: "Supporting Our SMEs"
+ SIA_khon_la_khrueng_idea: "Khon La Khrueng Program"
+ SIA_pushback_against_the_establishment: "Pushback Against the Establishment"
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -500,6 +617,22 @@
  thai_prayut.3.a: "more evl coding needed"
  thai_prayut_3_tt: "§YPrayut Chan-o-cha§! has transferred to the £GFX_united_thai_nation §PUnited Thai Nation Party§!"
  
+ thai_prayut.4.t: "Cannabis Legalized"
+ thai_prayut.4.d: ""
+ thai_prayut.4.a: "crazy"
+ 
+ thai_prayut.5.t: "Applause All Around"
+ thai_prayut.5.d: "The room was filled with joy as General Prawit Wongsuwan and General Prayut shook hands and for the first time have together agreed that the direction of the party shall follow General Prayut... Wait wrong loc, if you're reading this, stop cheating. You aren't supposed to get this"
+ thai_prayut.5.a: ""Someone call Logi to fix the timeline""
+ 
+ thai_prayut.6.t: "I Gently open the Autopsy"
+ thai_prayut.6.d: "I see a big debuff"
+ thai_prayut.6.a: "evil devs"
+ 
+ thai_prayut.7.t: "A Session in Parliament"
+ thai_prayut.7.d: "hater: erm your policies suck\n\nPrayut: We'll bomb cambodia"
+ thai_prayut.7.a: "Which message better resonates with voters"
+ 
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
  thai_cambodia_tension.1.a: "What is this idiot doing!"
@@ -540,7 +673,7 @@
  
  SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §ROngoing§!"
  SIA_prayut_cant_do_this: "£GFX_palang_pracharath §BPalang Pracharath Party§! §Yinternal dispute has been sorted out§!"
- SIA_prayut_split: "§gPrayut§! and §PPrawit§! has §Rbroken off§!"
+ SIA_prayut_split: "§PPrayut§! and §BPrawit§! has §Rbroken off§!"
  SIA_economic_engine_decrease: "§YThe Engine§! slowly §Rbreaks down...§!"
  SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
 #MIO's

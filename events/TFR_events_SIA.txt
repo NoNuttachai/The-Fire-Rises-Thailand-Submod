@@ -319,13 +319,75 @@ country_event = { #Prayut splits from the PPRP and joins UTN
 		complete_national_focus = SIA_no_hard_feelings
 		set_party_name = {
 			ideology = authoritarian_democrat 
-			long_name = SIA_utn
-			name = SIA_utn_long
+			long_name = SIA_utn_long
+			name = SIA_utn
 		}
     }
 }
+country_event = { #Cannabis
+    id = thai_prayut.4
+    title = thai_prayut.4.t
+    desc = thai_prayut.4.d
+	
+	is_triggered_only = yes
 
+    option = {
+        name = thai_prayut.4.a 
 
+    }
+}
+country_event = { #Brothers forever fakeout event
+    id = thai_prayut.5
+    title = thai_prayut.5.t
+    desc = thai_prayut.5.d
+	
+	is_triggered_only = yes
+
+    option = {
+        name = thai_prayut.5.a 
+		set_temp_variable = { target = 1 }
+		set_temp_variable = { seats = SIA_pprp_seats_var }
+		multiply_temp_variable = { seats = -1 }
+		SIA_change_parliament_seat = yes
+		add_stability = -1
+		add_war_support = -1
+		add_political_power = -1000
+    }
+}
+country_event = { #review the autopsy
+    id = thai_prayut.6
+    title = thai_prayut.6.t
+    desc = thai_prayut.6.d
+	
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = SIA_pushback_against_the_establishment
+		}
+	}
+    option = {
+        name = thai_prayut.6.a 
+		effect_tooltip = {
+			add_ideas = SIA_pushback_against_the_establishment
+		}
+    }
+}
+country_event = { #Defend against opposition
+    id = thai_prayut.7
+    title = thai_prayut.7.t
+    desc = thai_prayut.7.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.7.a 
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.03
+		}
+		add_political_power = 30
+    }
+}
 country_event = { #elections calculated
     id = thai_elections.1
     title = thai_elections.1.t

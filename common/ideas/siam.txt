@@ -622,18 +622,18 @@ ideas = {
 			}
 			
 			modifier = {
-				        stability_factor = -0.3
-					poverty_development_monthly = -0.015	
-				        society_development_monthly = -0.015
-					industrial_development_monthly = -0.015
-					consumer_goods_factor = 0.4
-					industrial_capacity_factory = -0.4
-					production_factory_efficiency_gain_factor = -0.4
-					production_factory_max_efficiency_factor = -0.4
-					income_growth_factor = -0.4
-				        personal_expense_factor = 0.4
-				        production_speed_buildings_factor = -0.4
-				        inflation_monthly_factor = 0.15
+				stability_factor = -0.3
+				poverty_development_monthly = -0.015	
+				society_development_monthly = -0.015
+				industrial_development_monthly = -0.015
+				consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.4
+				production_factory_efficiency_gain_factor = -0.4
+				production_factory_max_efficiency_factor = -0.4
+				income_growth_factor = -0.4
+				personal_expense_factor = 0.4
+				production_speed_buildings_factor = -0.4
+				inflation_monthly_factor = 0.15
 			}
 		}
 		SIA_economic_engine_2 = {
@@ -647,18 +647,18 @@ ideas = {
 			}
 			
 			modifier = {
-				        stability_factor = -0.15
-					poverty_development_monthly = -0.01	
-				        society_development_monthly = -0.01
-					industrial_development_monthly = -0.01
-					consumer_goods_factor = 0.2
-					industrial_capacity_factory = -0.2
-					production_factory_efficiency_gain_factor = -0.2
-					production_factory_max_efficiency_factor = -0.2
-					income_growth_factor = -0.2
-				        personal_expense_factor = 0.2
-				        production_speed_buildings_factor = -0.2
-				        inflation_monthly_factor = 0.05			
+				stability_factor = -0.15
+				poverty_development_monthly = -0.01	
+				society_development_monthly = -0.01
+				industrial_development_monthly = -0.01
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				income_growth_factor = -0.2
+				personal_expense_factor = 0.2
+				production_speed_buildings_factor = -0.2
+				inflation_monthly_factor = 0.05			
 			}
 		}
 		SIA_economic_engine_3 = {
@@ -672,16 +672,16 @@ ideas = {
 			}
 			
 			modifier = {
-			                stability_factor = -0.05
-					poverty_development_monthly = -0.005	
-					industrial_development_monthly = -0.005
-					consumer_goods_factor = 0.1
-					industrial_capacity_factory = -0.05
-					production_factory_efficiency_gain_factor = -0.05
-					production_factory_max_efficiency_factor = -0.05
-					income_growth_factor = -0.05
-				        production_speed_buildings_factor = -0.075
-				        inflation_monthly_factor = 0.01			
+				stability_factor = -0.05
+				poverty_development_monthly = -0.005	
+				industrial_development_monthly = -0.005
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				income_growth_factor = -0.05
+				production_speed_buildings_factor = -0.075
+				inflation_monthly_factor = 0.01			
 			}
 		}
 		SIA_economic_engine_4 = {
@@ -695,18 +695,18 @@ ideas = {
 			}
 			
 			modifier = {
-					stability_factor = 0.075
-					poverty_development_monthly = 0.005	
-					industrial_development_monthly = 0.005
-					consumer_goods_factor = -0.1
-					industrial_capacity_factory = 0.075
-					income_growth_factor = 0.1
-				        production_speed_buildings_factor = 0.1
-				        factory_energy_consumption = -0.1
-				        business_value_factor = 0.05
-				        local_resources_factor = 0.075
-					global_building_slots_factor = 0.05
-				        production_speed_office_park_factor = 0.1
+				stability_factor = 0.075
+				poverty_development_monthly = 0.005	
+				industrial_development_monthly = 0.005
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.075
+				income_growth_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				factory_energy_consumption = -0.1
+				business_value_factor = 0.05
+				local_resources_factor = 0.075
+				global_building_slots_factor = 0.05
+				production_speed_office_park_factor = 0.1
 			}
 		}
 		SIA_economic_engine_5 = {
@@ -720,21 +720,21 @@ ideas = {
 			}
 			
 			modifier = {
-					stability_factor = 0.15
-					poverty_development_monthly = 0.01
-					industrial_development_monthly = 0.01
-					consumer_goods_factor = -0.2
-					industrial_capacity_factory = 0.15
-					income_growth_factor = 0.2
-				        production_speed_buildings_factor = 0.2
-				        factory_energy_consumption = -0.2
-				        business_value_factor = 0.1
-				        local_resources_factor = 0.15
-					global_building_slots_factor = 0.1
-				        production_speed_office_park_factor = 0.2
-					production_factory_efficiency_gain_factor = 0.05
-					production_factory_max_efficiency_factor = 0.1
-				        society_development_monthly = 0.01
+				stability_factor = 0.15
+				poverty_development_monthly = 0.01
+				industrial_development_monthly = 0.01
+				consumer_goods_factor = -0.2
+				industrial_capacity_factory = 0.15
+				income_growth_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				factory_energy_consumption = -0.2
+				business_value_factor = 0.1
+				local_resources_factor = 0.15
+				global_building_slots_factor = 0.1
+				production_speed_office_park_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				society_development_monthly = 0.01
 			}
 		}
 		SIA_chinese_investments = {
@@ -756,8 +756,6 @@ ideas = {
 				is_in_faction_with = JAP
 				has_war_with = PRC
 			}
-
-			removal_cost = -1
 				
 			modifier = {
 				political_power_gain = -0.15
@@ -765,6 +763,97 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.2
 				income_growth_factor = 0.15
+			}
+		}
+		SIA_japanese_cooperation = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+			cancel = {
+				is_in_faction_with = PRC
+				has_war_with = JAP
+			}
+
+			modifier = {
+				political_power_gain = -0.25
+				consumer_goods_factor = -0.20
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				research_speed_factor = 0.05
+				income_growth_factor = 0.10
+			}
+		}
+		SIA_support_our_smes_idea = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.075
+				income_growth_factor = -0.10
+				business_value_factor = 0.15
+				industrial_development_monthly = 0.05
+			}
+		}
+		SIA_khon_la_khrueng_idea = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				stability_weekly = 0.005
+				poverty_development_monthly = 0.05
+				society_development_monthly = 0.05
+				income_growth_factor = -0.10
+				personal_expense_factor = 0.15
+			}
+		}
+		SIA_pushback_against_the_establishment = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				
+				stability_weekly = -0.01
+				political_power_factor = -0.3
+			}
+		}
+		SIA_pushback_against_the_establishment_1 = {
+			name = SIA_pushback_against_the_establishment
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				stability_weekly = -0.003
+				political_power_factor = -0.1
 			}
 		}
 	}
