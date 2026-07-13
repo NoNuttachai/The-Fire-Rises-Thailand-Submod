@@ -45,15 +45,17 @@ guiTypes = {
 				quadTextureSprite = "GFX_SIA_parliament_elections_bar_undecided"
 			}
 			iconType = {
-				name = "SIA_parliament_bar_11"
-				position = { x = 1 y = 29 }
-				quadTextureSprite = "GFX_SIA_parliament_elections_bar_11"
-			}
-			iconType = {
 				name = "SIA_parliament_bar_9"
 				position = { x = 1 y = 29 }
 				quadTextureSprite = "GFX_SIA_parliament_elections_bar_9"
 			}
+			
+			iconType = {
+				name = "SIA_parliament_bar_11"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_parliament_elections_bar_11"
+			}
+			
 			iconType = {
 				name = "SIA_parliament_bar_6"
 				position = { x = 1 y = 29 }

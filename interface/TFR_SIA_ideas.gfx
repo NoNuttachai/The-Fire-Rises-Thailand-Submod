@@ -240,6 +240,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_united_thai_nation"
+		texturefile = "gfx/texticons/SIA_UTNP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_chartthaipattana"
 		texturefile = "gfx/texticons/SIA_CTPP.png"
 		legacy_lazy_load = no
@@ -521,6 +526,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hog_SIA_prawit_wongsuwan"
 		texturefile = "gfx/leaders/SIA/SIA_prawit_wongsuwan.png"
+		legacy_lazy_load = no
+	}
+	#for paths in bookmark
+	spriteType = {
+		name = "GFX_path_utn_icon"
+		texturefile = "gfx/texticons/path_utn_icon.png"
+	}
+	spriteType = {
+		name = "GFX_path_ptp_icon"
+		texturefile = "gfx/texticons/path_ptp_icon.png"
+	}
+	spriteType = {
+		name = "GFX_path_mfp_icon"
+		texturefile = "gfx/texticons/path_mfp_icon.png"
+	}
+	spriteType = {
+		name = "GFX_path_bhum_icon"
+		texturefile = "gfx/texticons/path_bhum_icon.png"
+	}
+	spriteType = {
+		name = "GFX_UTN_victorious"
+		texturefile = "gfx/texticons/UTN_victorious.png"
 		legacy_lazy_load = no
 	}
 }

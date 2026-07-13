@@ -1,5 +1,5 @@
 SIA_Economy_category = {
-	SIA_KEK = {
+	SIA_decision_that_appears_to_all = {
 		icon = generic_crisis
 		priority = 10
 		allowed = {

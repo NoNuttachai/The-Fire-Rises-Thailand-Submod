@@ -17,7 +17,7 @@
  SIA_palang_pracharath_party_alt: "Palang Pracharath"
  SIA_palang_pracharath_party_alt_long: "£GFX_palang_pracharath Palang Pracharath Party"
  SIA_utn: "UTN"
- SIA_utn_long: "United Thai Nation"
+ SIA_utn_long: "£GFX_united_thai_nation United Thai Nation"
  SIA_rtaf: "RTARF"
  SIA_rtaf_long: "£GFX_royal_thai_armed_forces Royal Thai Armed Forces"
  SIA_rubbish_collect: "RCO"
@@ -266,7 +266,7 @@
  thai_events.11.t: "Palang Pracharat Fallout and Cabinet Reshuffle"
  thai_events.11.d: "Main characters of the Palang Pracharat Party most notably the 'Four Coaches,' which included Party Leader and Minister of Finance Uttama Savanayana, Party General Secretary and Minister of Energy Sontirat Sontijirawong, Deputy Party Leader and Minister of Higher Education Suvit Maesincee, and Party Executive Committee Member Kobsak Pootrakool all announced at a press conference at Centara Grand at Central Plaza Ladprao, Bangkok, their intention to resign from the Palang Pracharat Party.\n\nMany media speculations pointed out that since the formal formation of the government in 2019, the party was faced with a series of scandals and criticism regarding the party's handling of their own background checks for MPs, and also the consolidation of the military faction within the Palang Pracharat Party. This turned out to be true as the party members met and elected General Prawit Wongsuwan as their own party leader.\n\nIn the meantime, the 'Four Coaches' group all announced their resignation from the cabinet. The Prime Minister announced the replacements, which included many people from other factions within the Palang Pracharat Party."
  thai_events.11.a: "Well... that's an entire year wasted."
- thai_events_11_texticon: "§YGeneral Prawit Wongsuwan§! assumed leadership of £GFX_palang_pracharath §PPalang Pracharath Party§!\n\n\n\n\n£GFX_SIA_PPRP1_banner\n\n\n\n\n\n"
+ thai_events_11_texticon: "§YGeneral Prawit Wongsuwan§! assumed leadership of £GFX_palang_pracharath §BPalang Pracharath Party§!\n\n\n\n\n£GFX_SIA_PPRP1_banner\n\n\n\n\n\n"
  
  thai_events.12.t: "The Constitutional Court drops "Illuminati Case" against FFP"
  thai_events.12.d: "The Constitutional Court delivered its ruling in the so-called "Illuminati Case," dismissing allegations that the Future Forward Party sought to undermine Thailand's democratic system with the monarchy as head of state, citing insufficient evidence of wrongdoing by the party or its executive committee.\n\nThe petition was filed directly with the Constitutional Court on May 15, 2019, by Nattaporn Toprayoon, a former advisor to the Chief Ombudsman. One allegation made by the petitioner was that the party's symbol when flipped resembled a triangle which is associated with the Illuminati, a Bavarian secret society founded in 1776 that promoted Enlightenment ideals of republicanism and secularism. The group was later banned by the Bavarian government, and although it became the subject of conspiracy theories about its secret global influence and efforts to establish a "New World Order," historians generally agree that it ceased to exist after its suppression in the late eighteenth century.\n\nAt the Future Forward Party headquarters, supporters cheered after the verdict was delivered. Future Forward secretary-general Piyabutr Saengkanokkul and party leader Thanathorn Juangroongruangkit later held a press conference, thanking supporters and insisting the case should never have been filed.\n\nHowever, the party still faces another imminent case before the Constitutional Court, which alleges it violated laws governing political parties by accepting loans from its leader, auto-parts billionaire Thanathorn."
@@ -481,11 +481,11 @@
  
  thai_elections.3.t: "2023 Election Season"
  thai_elections.3.d: "Imagine voting"
- thai_elections.3.a: "§gUTN§!"
- thai_elections_3_tt_a: "Campaign for the §gUnited Thai Nation Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
+ thai_elections.3.a: "£GFX_united_thai_nation §gUTN§!"
+ thai_elections_3_tt_a: "Campaign for the £GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
  
  thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
- thai_elections_3_tt_b: "Campaign for the §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
+ thai_elections_3_tt_b: "Campaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
  
  thai_prayut.1.t: "Prayut temporarily suspended"
  thai_prayut.1.d: "Big Tu noooooo"
@@ -498,7 +498,7 @@
  thai_prayut.3.t: "Prayut transfers to UTN"
  thai_prayut.3.d: "Dark Prayut"
  thai_prayut.3.a: "more evl coding needed"
- thai_prayut_3_tt: "§YPrayut Chan-o-cha§! has transferred to the §gUnited Thai Nation Party§!"
+ thai_prayut_3_tt: "§YPrayut Chan-o-cha§! has transferred to the £GFX_united_thai_nation §PUnited Thai Nation Party§!"
  
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
@@ -539,7 +539,7 @@
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
  
  SIA_oil_crisis_ongoing: "The §YOil Crisis§! is currently §ROngoing§!"
- SIA_prayut_cant_do_this: "£GFX_palang_pracharath §PPalang Pracharath Party§! §Yinternal dispute has been sorted out§!"
+ SIA_prayut_cant_do_this: "£GFX_palang_pracharath §BPalang Pracharath Party§! §Yinternal dispute has been sorted out§!"
  SIA_prayut_split: "§gPrayut§! and §PPrawit§! has §Rbroken off§!"
  SIA_economic_engine_decrease: "§YThe Engine§! slowly §Rbreaks down...§!"
  SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
@@ -582,7 +582,7 @@
  SIA_parliament_speaker_party_loc: "Speaker Political Party: £GFX_democrat §YDemocrat Party§!"
 
  # Party full name lines (for single-column layout)
- SIA_parliament_pprp_full: "£GFX_palang_pracharath §PPalang Pracharath Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pprp_seats_var|0]§! Seats"
+ SIA_parliament_pprp_full: "£GFX_palang_pracharath §BPalang Pracharath Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pprp_seats_var|0]§! Seats"
  SIA_parliament_dp_full: "£GFX_democrat §CDemocrat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_dp_seats_var|0]§! Seats"
  SIA_parliament_bjt_full: "£GFX_bhumjaithai §1Bhumjaithai Party§! [SIA_check_coalition_leader] \n§Y[?SIA_bjt_seats_var|0]§! Seats"
  SIA_parliament_ctpp_full: "£GFX_chartthaipattana §sChart Thai Pattana Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ctpp_seats_var|0]§! Seats"
@@ -591,7 +591,7 @@
  SIA_parliament_mfp_full: "£GFX_orange_party_2 §OMove Forward Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§! [SIA_check_coalition_leader] \n§Y[?SIA_tlp_seats_var|0]§! Seats"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pcc_seats_var|0]§! Seats"
- SIA_parliament_utn_full: "§gUnited Thai Nation Party§! [SIA_check_coalition_leader] \n§Y[?SIA_utn_seats_var|0]§! Seats"
+ SIA_parliament_utn_full: "£GFX_united_thai_nation §PUnited Thai Nation Party§! [SIA_check_coalition_leader] \n§Y[?SIA_utn_seats_var|0]§! Seats"
 
  SIA_government_coalition_leader: "§P- Government Coalition Leader§!"
  SIA_opposition_leader: "§R- Opposition Leader§!"
@@ -618,7 +618,7 @@
  
  SIA_parliament_detail_pcc_desc: "£GFX_prachachat §YPrachachat Party§! (Phak Prachachat)\n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Wan Muhamad Noor Matha\n\n§YPrachachat Party§! is a Thai political party founded in 2018, primarily representing the §YMuslim-majority provinces in southern Thailand§!. Led by veteran politician §YWan Muhamad Noor Matha§!, the party focuses on issues affecting the southern border provinces near Malaysia, including §Ypeace and reconciliation, Muslim cultural rights, decentralization, and economic development.§!.\n\nIn the 2019 election, the party won 7 seats, all from southern constituencies, and aligned with the opposition."
  
- SIA_parliament_detail_utn_desc: "§gUnited Thai Nation Party§! \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Prayut Chan-O-Cha\n\n§YUnited Thai Nation§! is prayut's party."
+ SIA_parliament_detail_utn_desc: "£GFX_united_thai_nation §YUnited Thai Nation Party§! (Pak Ruam Thai Sang Chart) \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Prayut Chan-O-Cha\n\n§YThe United Thai Nation Party§! (Ruam Thai Sang Chart) was founded on March 31, 2021, by Seksakon Atthawong, a former deputy minister to Prime Minister Prayut Chan-o-cha. The party takes its name from a phrase originally coined by General Prayut.\n\nIn late 2022, ahead of the 2023 general election,§Y a rift emerged between General Prayut Chan-o-cha and General Prawit Wongsuwan§!, leader of the Palang Pracharath Party. As a result of the conflict, the Palang Pracharath Party dropped Prayut from its list of prime ministerial candidates and instead nominated Prawit as its candidate for the office. Consequently, Prayut announced his decision to join the United Thai Nation Party and seek its nomination for another term as Prime Minister. \n\nThe party's spokesperson, Akkradech Wongpitakroj, has stated that the party espouses "modern conservatism." Ideologically, the party has been described by its left-wing opponents as §Yultra-conservative, pro-military, monarchist, and far-right§!."
  
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
@@ -633,7 +633,7 @@
  SIA_government_member: "§PGovernment§!: \n[SIA_get_government_leader]"
  SIA_opposition_member: "\n§ROpposition§!: \n[SIA_get_opposition_leader]"
  
- SIA_change_pprp_seats: "£GFX_palang_pracharath §PPalang Pracharath Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_pprp_seats: "£GFX_palang_pracharath §BPalang Pracharath Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_ptp_seats: "£GFX_phua_thai §RPheu Thai Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_ffp_seats: "£GFX_orange_party_1 §OFuture Forward Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_mfp_seats: "£GFX_orange_party_2 §OMove Forward Party§! §YSeat§! Change: [?seats|=+0]"
@@ -642,7 +642,7 @@
  SIA_change_tlp_seats: "£GFX_thai_liberal_party §YThai Liberal Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_ctpp_seats: "£GFX_chartthaipattana §sChart Thai Pattana Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_pcc_seats: "£GFX_prachachat §YPrachachat Party§! §YSeat§! Change: [?seats|=+0]"
- SIA_change_utn_seats: "§gUnited Thai Nation Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_utn_seats: "£GFX_united_thai_nation §PUnited Thai Nation Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_minor_government_coalition_seats: "§LMinor Governmental Coalition Parties§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_minor_oppositional_parties_seats: "§LMinor Oppositional Parties§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_vacant_seats: "§gVacant§! §YSeat§! Change: [?seats|=+0]"
@@ -654,7 +654,7 @@
  
  # ELECTION GUI SCRIPTED local
  SIA_election_party_line: "[SIA_election_scrp_loc]"
- SIA_election_status: "£GFX_palang_pracharath §PPalang Pracharath Party§! | §L[?1:party_votes|2]%§! - §W[?1:party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?2:party_votes|2]%§! - §W[?2:party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OMove Forward Party§! | §L[?3:party_votes|2]%§! - §W[?3:party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?4:party_votes|2]%§! - §W[?4:party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?6:party_votes|2]%§! - §W[?6:party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?9:party_votes|2]%§! - §W[?9:party_seats_elections]§! §YSeats§!\n§gUnited Thai Nation Party§! | §L[?11:party_votes|2]%§! - §W[?11:party_seats_elections]§! §YSeats§!\n"
+ SIA_election_status: "£GFX_palang_pracharath §BPalang Pracharath Party§! | §L[?1:party_votes|2]%§! - §W[?1:party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?2:party_votes|2]%§! - §W[?2:party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OMove Forward Party§! | §L[?3:party_votes|2]%§! - §W[?3:party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?4:party_votes|2]%§! - §W[?4:party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?6:party_votes|2]%§! - §W[?6:party_seats_elections]§! §YSeats§!\n£GFX_united_thai_nation §PUnited Thai Nation Party§! | §L[?11:party_votes|2]%§! - §W[?11:party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?9:party_votes|2]%§! - §W[?9:party_seats_elections]§! §YSeats§!\n"
  
  SIA_parliament_pprp_election: ""
  SIA_parliament_dp_election: ""
@@ -668,28 +668,28 @@
  SIA_parliament_utn_election: ""
  SIA_parliament_minor_parties_election: ""
  
- SIA_change_1_votes: "£GFX_palang_pracharath §PPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_1_votes: "£GFX_palang_pracharath §BPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_2_votes: "£GFX_phua_thai §RPheu Thai Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_3_votes: "£GFX_orange_party_2 §OMove Forward Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_4_votes: "£GFX_democrat §CDemocrat Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_6_votes: "£GFX_bhumjaithai §1Bhumjaithai Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_9_votes: "§LMinor Parties§! §LVote§! Change: [?vote_change|=+2]"
- SIA_change_11_votes: "§gUnited Thai Nation Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_11_votes: "£GFX_united_thai_nation §PUnited Thai Nation Party§! §LVote§! Change: [?vote_change|=+2]"
  
  
  SIA_change_undecided_votes: "§gUndecided§! §LVotes§! Change: [?vote_change|=+2]" #THIS FOR UNDECIDED VOTES ONLY
  
  SIA_election_undecided: "§gUndecided Votes: [?undecided_votes|2]%§!"
  
- SIA_election_results_1: "£GFX_palang_pracharath §PPalang Pracharath Party§! is projected to §Gwin§!"
+ SIA_election_results_1: "£GFX_palang_pracharath §BPalang Pracharath Party§! is projected to §Gwin§!"
  SIA_election_results_2: "£GFX_phua_thai §RPheu Thai Party§! is projected to §Gwin§!"
  SIA_election_results_3: "£GFX_orange_party_2 §OMove Forward Party§! is projected to §Gwin§!"
  SIA_election_results_4: "£GFX_democrat §CDemocrat Party§! is projected to §Gwin§!"
  SIA_election_results_6: "£GFX_bhumjaithai §1Bhumjaithai Party§! is projected to §Gwin§!"
- SIA_election_results_11: "§gUnited Thai Nation Party§! is projected to §Gwin§!"
+ SIA_election_results_11: "£GFX_united_thai_nation §PUnited Thai Nation Party§! is projected to §Gwin§!"
  SIA_election_results_undecided: "§gElection season is still too early§!"
  
- SIA_elections_playing_as_11: "§gUnited Thai Nation Party§!"
+ SIA_elections_playing_as_11: "£GFX_united_thai_nation §PUnited Thai Nation Party§!"
  SIA_elections_playing_as_2: "£GFX_phua_thai §RPheu Thai Party§!"
  SIA_elections_playing_as_0: "§gNo One§!"
  
@@ -703,7 +703,7 @@
  SIA_parliament_elections_projected_winner_4: "£GFX_democrat WHO?!?!?!"
  SIA_parliament_elections_projected_winner_6: "£GFX_bhumjaithai Anutin Charnvirakul"
  SIA_parliament_elections_projected_winner_9: "If you're seeing this, something has gone wrong"
- SIA_parliament_elections_projected_winner_11: "Prayut Chan-o-cha"
+ SIA_parliament_elections_projected_winner_11: "£GFX_united_thai_nation Prayut Chan-o-cha"
  #Focus Tree Names
  thailand_focus_tfr_submod: "Thailand 2020 Focus Tree"
  SIA_prayut_focus_tree: "Prayut 2021 Victory Against Protests"
@@ -894,10 +894,10 @@
  
  
  SIA_oil_crisis_cat: "The Oil Crisis"
- SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control."
+ SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control.\n\n§YTotal Accumulated Days§!: §g[?SIA_total_oil_stockpiled_days]§!"
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y356 days§! of §YOil in Reserves§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y356 days§! of §YTotal Accumulated Days§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
  SIA_oil_distribution_to_stations: "Oil Distribution to Gas Stations"
  SIA_truckers_start_protesting: "Truckers Start Protesting"
  
@@ -964,6 +964,10 @@
  SIA_saudi_civil_war_intensify_volunteers: "§YARABIA§!: Intensify Volunteers"
  
  SIA_saudi_civil_war_oil_tt: "§GIn exchange for aid, we will be provided oil§!"
+ 
+ SIA_Economy_category: "Fuelling the Engine"
+ SIA_Economy_category_desc: "The Thai economy is so badddddddddddddddd im not even kidding we're so doomed, disaster incoming, first fifth world country. Everyone will now run to cambodia Hun Sen Marines"
+ 
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
  SIA_cambodia_war_category_desc: "Thailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
@@ -1037,3 +1041,10 @@
  
  #Cosmetic Names
  CAM_thai_occupation_government: "Thai Occupational Authority of Cambodia"
+ 
+ 
+ #Bookmark
+ SIA_utn_path_tt: "£GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nDone that, still doing, and will continue to do.\nTrust in General Prayut to lead Thailand forward."
+ SIA_mfp_path_tt: "£GFX_orange_party_2 §OMove Forward Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nFeaturing even more failures to form government majority."
+ SIA_ptp_path_tt: "£GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nThis is an otl reference"
+ SIA_bhum_path_tt: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nDread it, run from it, Anutin is destined."

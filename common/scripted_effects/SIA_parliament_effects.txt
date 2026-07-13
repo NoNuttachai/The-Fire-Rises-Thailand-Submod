@@ -668,6 +668,27 @@ SIA_calculate_total_seats = {
 	
 	add_to_variable = { SIA_gov_seats_var = SIA_minor_gov_seats_var } 
 	add_to_variable = { SIA_opp_seats_var = SIA_minor_opp_seats_var } 
+	
+	
+	
+	#dont over 500 capper for elections
+	set_temp_variable = { total = SIA_gov_seats_var }
+	add_to_temp_variable = { total = SIA_opp_seats_var }
+	if = {
+		limit = {
+			check_variable = { total > 500 }
+		}
+		subtract_from_temp_variable = { total = 500 }
+		subtract_from_variable = { SIA_minor_opp_seats_var = total } #lol rip minor opp
+		subtract_from_variable = { SIA_opp_seats_var = total } #lol rip minor opp
+	}
+	
+	#kill vacant - useful during elections after parliament dismantled
+	set_temp_variable = { vacant_reducer = SIA_gov_seats_var }
+	add_to_temp_variable = { vacant_reducer = SIA_opp_seats_var }
+	set_variable = { SIA_vacant_seats_var = 500 }
+	subtract_from_variable = { SIA_vacant_seats_var = vacant_reducer }
+	
 	SIA_calculate_parliament_frame = yes
 }
 SIA_calculate_parliament_frame = { #frame is out of 500

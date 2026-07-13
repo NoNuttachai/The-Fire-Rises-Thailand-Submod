@@ -134,4 +134,8 @@ spriteTypes = {
         name = "GFX_goal_SIA_ally_with_workers_union"
         texturefile = "gfx/interface/goals/SIA/SIA_ally_with_workers_union.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_information_operations"
+        texturefile = "gfx/interface/goals/SIA/SIA_information_operations.png"
+    }
 }

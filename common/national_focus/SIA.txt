@@ -629,7 +629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_information_operations
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 2
 		cost = 5
@@ -703,6 +703,7 @@ focus_tree = {
 				mission = SIA_oil_in_reserves_mission
 				days = 35
 			}
+			add_to_variable = { SIA_total_oil_stockpiled_days = 35 }
 			set_country_flag = SIA_deal_with_the_oil_crisis
 			unlock_decision_tooltip = SIA_enact_oil_rationing_measures
 			unlock_decision_tooltip = SIA_expand_fuel_storage_facilities

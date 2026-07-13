@@ -1286,6 +1286,8 @@ SIA_elections_translate_votes_to_seats = {
 	SIA_adjust_election_bar = yes
 }
 SIA_decide_election_winner = {
+	end_coalition = yes
+	end_ruling_party_wings = yes
 	if = {
 		limit = {
 			check_variable = { 1:party_votes > 2:party_votes }
@@ -1319,6 +1321,34 @@ SIA_decide_election_winner = {
 		set_variable = { party_11_alignment = 1 } 
 		set_variable = { SIA_opposition_leader = 11 }
 		load_focus_tree = SIA_2023_pheu_thai_focus_tree
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		set_party_name = {
+			ideology = social_liberal
+			long_name = "Pheu Thai Party"
+			name = "PTP"
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = "Palang Pracharath Party"
+			name = "PPRP"
+		}
+		set_party_name = {
+			ideology = conservative
+			long_name = "Bhumjaithai"
+			name = "BJT"
+		}
+		set_temp_variable = {
+			coalition_partner_var_temp = token:conservative
+		}
+		add_to_coalition = yes
+		set_temp_variable = {
+			coalition_partner_var_temp = token:authoritarian_democrat
+		}
+		add_to_coalition = yes
 	}
 	else_if = {
 		limit = {
@@ -1375,6 +1405,25 @@ SIA_decide_election_winner = {
 		set_variable = { party_8_alignment = 2 } 
 		set_variable = { SIA_opposition_leader = 2 }
 		load_focus_tree = SIA_2023_utn_focus_tree
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = "United Thai Nation/Palang Pracharath Party"
+			name = "UTN/PPRP"
+		}
+		set_party_name = {
+			ideology = conservative
+			long_name = "Bhumjaithai"
+			name = "BJT"
+		}
+		set_temp_variable = {
+			coalition_partner_var_temp = token:conservative
+		}
+		add_to_coalition = yes
 	}
 	else = {
 		custom_effect_tooltip = SIA_election_results_undecided
@@ -1398,11 +1447,11 @@ SIA_adjust_election_bar = {
 	set_variable = { SIA_elections_bar_6_frame = 6:party_seats_elections }
 	add_to_variable = { SIA_elections_bar_6_frame = SIA_elections_bar_4_frame }
 	
-	set_variable = { SIA_elections_bar_9_frame = 9:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_9_frame = SIA_elections_bar_6_frame }
-	
 	set_variable = { SIA_elections_bar_11_frame = 11:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_11_frame = SIA_elections_bar_9_frame }
+	add_to_variable = { SIA_elections_bar_11_frame = SIA_elections_bar_6_frame }
+	
+	set_variable = { SIA_elections_bar_9_frame = 9:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_9_frame = SIA_elections_bar_11_frame }
 	
 	set_variable = { undecided_votes_elections = 500 }
 	

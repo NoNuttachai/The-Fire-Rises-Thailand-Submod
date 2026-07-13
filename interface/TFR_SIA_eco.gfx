@@ -4,56 +4,102 @@ spriteTypes = {
 		name = "GFX_SIA_Eco_Bangkok"
 		texturefile = "gfx/interface/SIA/Economy/Eco_Bangkok.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	} 
 	
 	spriteType = {
 		name = "GFX_SIA_Eco_Chiangmai"
 		texturefile = "gfx/interface/SIA/Economy/Eco_ChiangMai.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	
 	spriteType = {
 		name = "GFX_SIA_Eco_Chonburi"
 		texturefile = "gfx/interface/SIA/Economy/Eco_Chonburi.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_SIA_Eco_Isan"
 		texturefile = "gfx/interface/SIA/Economy/Eco_Isan.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_SIA_Eco_Nonthaburi"
 		texturefile = "gfx/interface/SIA/Economy/Eco_Nonthaburi.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_SIA_Eco_Pattani"
 		texturefile = "gfx/interface/SIA/Economy/Eco_Pattani.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_SIA_Eco_ST1"
 		texturefile = "gfx/interface/SIA/Economy/Eco_ST1.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_SIA_Eco_ST2"
 		texturefile = "gfx/interface/SIA/Economy/Eco_ST2.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
 	}
 	spriteType = {
 		name = "GFX_SIA_Eco_WB"
 		texturefile = "gfx/interface/SIA/Economy/Eco_WB.png"
 		noOfFrames = 2
-                transparencecheck = yes
+		transparencecheck = yes
+	}
+	
+	### State images
+	spriteType = {
+		name = "GFX_SIA_state_image_outline"
+		texturefile = "gfx/interface/SIA/Economy/state_image_outline.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_0"
+		texturefile = "gfx/interface/SIA/Economy/state_image_unselected.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_1"
+		texturefile = "gfx/interface/SIA/Economy/state_image_bangkok.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_2"
+		texturefile = "gfx/interface/SIA/Economy/state_image_chiangmai.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_3"
+		texturefile = "gfx/interface/SIA/Economy/state_image_chonburi.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_4"
+		texturefile = "gfx/interface/SIA/Economy/state_image_isan.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_5"
+		texturefile = "gfx/interface/SIA/Economy/state_image_nonthaburi.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_6"
+		texturefile = "gfx/interface/SIA/Economy/state_image_pattani.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_7"
+		texturefile = "gfx/interface/SIA/Economy/state_image_st1.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_8"
+		texturefile = "gfx/interface/SIA/Economy/state_image_st2.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_state_image_9"
+		texturefile = "gfx/interface/SIA/Economy/state_image_wb.png"
 	}
 }

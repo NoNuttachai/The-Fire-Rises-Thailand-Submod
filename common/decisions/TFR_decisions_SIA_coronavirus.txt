@@ -15,7 +15,7 @@ SIA_coronavirus_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 85
+		days_mission_timeout = 60
 		timeout_effect = {
 			SIA_increase_coronavirus = yes
 			activate_mission = SIA_the_pandemic_worsens_mission
