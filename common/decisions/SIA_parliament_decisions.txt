@@ -125,7 +125,7 @@ SIA_parliament_category = {
 		}
 	}
 	SIA_prime_minister_desk = {
-		icon = GFX_SOV_decision_decision_braker_tricolor
+		icon = GFX_decision_SIA_decision_head
 		available = {
 			always = no
 		}
