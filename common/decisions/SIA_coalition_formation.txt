@@ -1,0 +1,183 @@
+SIA_government_coalition_formation = {
+	SIA_form_government = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			check_variable = { SIA_projected_gov_seats > 249 }
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			SIA_end_coalition_forming = yes
+		}
+	}
+	SIA_coalition_with_pprp = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_1_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			set_variable = { SIA_party_1_attitude = 3 }
+			SIA_update_projected_government_seats = yes
+		}
+	}
+	SIA_coalition_with_pheu_thai = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_2_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			set_variable = { SIA_party_2_attitude = 3 }
+			SIA_update_projected_government_seats = yes
+		}
+	}
+	SIA_coalition_with_mfp = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_3_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			set_variable = { SIA_party_3_attitude = 3 }
+			SIA_update_projected_government_seats = yes
+		}
+	}
+	SIA_coalition_with_dp = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_4_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			set_variable = { SIA_party_4_attitude = 3 }
+			SIA_update_projected_government_seats = yes
+		}
+	}
+	SIA_coalition_with_bhumjaithai = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_6_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			set_variable = { SIA_party_6_attitude = 3 }
+			SIA_update_projected_government_seats = yes
+		}
+	}
+	SIA_coalition_with_utn = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_11_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+
+		complete_effect = {
+			set_variable = { SIA_party_11_attitude = 3 }
+			SIA_update_projected_government_seats = yes
+		}
+	}
+	SIA_negotiate_with_minor_parties = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			check_variable = { SIA_party_9_attitude = 2 }
+		}
+		activation = {
+			always = no
+		}
+		cost = 30
+
+		complete_effect = {
+			set_temp_variable_to_random = {
+				var = minor_parties_convinced
+				min = 1
+				max = 3
+				integer = yes
+			}
+			add_to_variable = { SIA_minor_parties_coalitioned = minor_parties_convinced }
+			custom_effect_tooltip = SIA_negotiate_with_minor_parties_tt
+			if = {
+				limit = {
+					check_variable = { SIA_projected_gov_seats > 250 }
+				}
+				set_variable = { SIA_party_9_attitude = 5 }
+			}
+			SIA_update_projected_government_seats = yes
+		}
+	}
+}

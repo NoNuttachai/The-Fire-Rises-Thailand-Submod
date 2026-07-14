@@ -27,9 +27,9 @@ spriteTypes = {
 		name = "GFX_decision_SIA_NED"
 		textureFile = "gfx/interface/decisions/SIA_NED.png"
 	}
-        spriteType = {
-                name = "GFX_decision_SIA_decision_head"
-                textureFile = "gfx/interface/decisions/SIA_decision_flag.png"
-        }
+	spriteType = {
+		name = "GFX_decision_SIA_decision_head"
+		textureFile = "gfx/interface/decisions/SIA_decision_flag.png"
+	}
 	
 }

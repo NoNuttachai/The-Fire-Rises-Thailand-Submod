@@ -11,7 +11,12 @@ SIA_debug_prayut_terminal = {
 	SIA_load_prayut_victory_tree = {
 		complete_effect = {
 			country_event = thai_events.34
+			add_timed_idea = {
+				idea = generic_world_wide_financial_crisis_1
+				days = 356 
+			}
 		}
+		
 	}
 	SIA_load_2023_utn_tree = {
 		complete_effect = {

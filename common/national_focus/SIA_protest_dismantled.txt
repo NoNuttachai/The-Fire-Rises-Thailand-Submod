@@ -376,6 +376,11 @@ focus_tree = {
 				remove_idea = ETH_chinese_investments
 				add_idea = SIA_japanese_cooperation
 			}
+			set_temp_variable = {
+				var = global.JAP_influence_SIA_var_temp
+				value = 0.10
+			}
+			JAP_add_SIA_influence = yes
 		}
 	}
 	focus = {
@@ -693,6 +698,7 @@ focus_tree = {
 			activate_mission = SIA_court_decides_prayuts_case
 		}
 		completion_reward = {
+			add_stability = 0.05
 			custom_effect_tooltip = SIA_reassure_the_nation_tt
 		}
 	}

@@ -65,6 +65,8 @@ SIA_parliament_elections = {
 			SIA_setup_elections = yes
 			set_country_flag = SIA_ongoing_elections
 			set_country_flag = SIA_utn_active
+			country_event = thai_elections.2
+			country_event = thai_elections.3
 		}
 	}
 	SIA_campaign_for_your_party = {

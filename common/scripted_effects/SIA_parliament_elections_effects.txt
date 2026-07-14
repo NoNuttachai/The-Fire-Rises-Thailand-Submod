@@ -1310,45 +1310,7 @@ SIA_decide_election_winner = {
 		}
 		custom_effect_tooltip = SIA_election_results_2
 		set_variable = { SIA_government_leader = 2 }
-		set_variable = { party_1_alignment = 0 } 
-		set_variable = { party_2_alignment = 0 } 
-		set_variable = { party_3_alignment = 1 } 
-		set_variable = { party_4_alignment = 1 } 
-		set_variable = { party_5_alignment = 2 } 
-		set_variable = { party_6_alignment = 0 } 
-		set_variable = { party_7_alignment = 2 } 
-		set_variable = { party_8_alignment = 2 } 
-		set_variable = { party_11_alignment = 1 } 
 		set_variable = { SIA_opposition_leader = 11 }
-		load_focus_tree = SIA_2023_pheu_thai_focus_tree
-		set_politics = {
-			ruling_party = social_liberal
-			elections_allowed = yes
-			election_frequency = 48
-		}
-		set_party_name = {
-			ideology = social_liberal
-			long_name = "Pheu Thai Party"
-			name = "PTP"
-		}
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = "Palang Pracharath Party"
-			name = "PPRP"
-		}
-		set_party_name = {
-			ideology = conservative
-			long_name = "Bhumjaithai"
-			name = "BJT"
-		}
-		set_temp_variable = {
-			coalition_partner_var_temp = token:conservative
-		}
-		add_to_coalition = yes
-		set_temp_variable = {
-			coalition_partner_var_temp = token:authoritarian_democrat
-		}
-		add_to_coalition = yes
 	}
 	else_if = {
 		limit = {
@@ -1392,38 +1354,10 @@ SIA_decide_election_winner = {
 			check_variable = { 11:party_votes > 9:party_votes }
 			check_variable = { 11:party_votes > 6:party_votes }
 		}
-		custom_effect_tooltip = SIA_election_results_11
-		set_variable = { party_11_alignment = 0 } 
+		custom_effect_tooltip = SIA_election_results_11 
 		set_variable = { SIA_government_leader = 11 }
-		set_variable = { party_1_alignment = 0 } 
-		set_variable = { party_2_alignment = 1 } 
-		set_variable = { party_3_alignment = 1 } 
-		set_variable = { party_4_alignment = 1 } 
-		set_variable = { party_5_alignment = 2 } 
-		set_variable = { party_6_alignment = 0 } 
-		set_variable = { party_7_alignment = 2 } 
-		set_variable = { party_8_alignment = 2 } 
 		set_variable = { SIA_opposition_leader = 2 }
-		load_focus_tree = SIA_2023_utn_focus_tree
-		set_politics = {
-			ruling_party = authoritarian_democrat
-			elections_allowed = yes
-			election_frequency = 48
-		}
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = "United Thai Nation/Palang Pracharath Party"
-			name = "UTN/PPRP"
-		}
-		set_party_name = {
-			ideology = conservative
-			long_name = "Bhumjaithai"
-			name = "BJT"
-		}
-		set_temp_variable = {
-			coalition_partner_var_temp = token:conservative
-		}
-		add_to_coalition = yes
+		
 	}
 	else = {
 		custom_effect_tooltip = SIA_election_results_undecided
@@ -1730,4 +1664,283 @@ SIA_get_projected_winner_image = {
 		limit = { check_variable = { most3 = 6 } }
 		set_variable = { SIA_elections_3rd = 11 }
 	}
+}
+
+
+
+SIA_initiate_coalition_forming = {
+	hidden_effect = {
+		set_temp_variable = { SIA_pprp_seats_var_temp = 1:party_seats_elections }
+		set_variable = { SIA_pprp_seats_var = SIA_pprp_seats_var_temp }
+		
+		set_temp_variable = { SIA_ptp_seats_var_temp = 2:party_seats_elections }
+		set_variable = { SIA_ptp_seats_var = SIA_ptp_seats_var_temp }
+		
+		set_temp_variable = { SIA_ffp_seats_var_temp = 3:party_seats_elections }
+		set_variable = { SIA_ffp_seats_var = SIA_ffp_seats_var_temp }
+		
+		set_temp_variable = { SIA_dp_seats_var_temp = 4:party_seats_elections }
+		set_variable = { SIA_dp_seats_var = SIA_dp_seats_var_temp }
+		
+		set_temp_variable = { SIA_tlp_seats_var_temp = 5:party_seats_elections }
+		set_variable = { SIA_tlp_seats_var = SIA_tlp_seats_var_temp }
+		
+		set_temp_variable = { SIA_bjt_seats_var_temp = 6:party_seats_elections }
+		set_variable = { SIA_bjt_seats_var = SIA_bjt_seats_var_temp }
+		
+		set_temp_variable = { SIA_ctpp_seats_var_temp = 7:party_seats_elections }
+		set_variable = { SIA_ctpp_seats_var = SIA_ctpp_seats_var_temp }
+		
+		set_temp_variable = { SIA_pcc_seats_var_temp = 8:party_seats_elections }
+		set_variable = { SIA_pcc_seats_var = SIA_pcc_seats_var_temp }
+		
+		set_temp_variable = { SIA_utn_seats_var_temp = 11:party_seats_elections }
+		set_variable = { SIA_utn_seats_var = SIA_utn_seats_var_temp }
+		
+		set_temp_variable = { minor_parties_temp = 9:party_seats_elections }
+		set_variable = { SIA_minor_parties_seats_var = minor_parties_temp }
+		
+		set_temp_variable = { total = SIA_pprp_seats_var }
+		add_to_temp_variable = { total = SIA_ptp_seats_var }
+		add_to_temp_variable = { total = SIA_ffp_seats_var }
+		add_to_temp_variable = { total = SIA_dp_seats_var }
+		add_to_temp_variable = { total = SIA_tlp_seats_var }
+		add_to_temp_variable = { total = SIA_bjt_seats_var }
+		add_to_temp_variable = { total = SIA_ctpp_seats_var }
+		add_to_temp_variable = { total = SIA_pcc_seats_var }
+		add_to_temp_variable = { total = SIA_utn_seats_var }
+		add_to_temp_variable = { total = SIA_minor_parties_seats_var }
+		
+		if = {
+			limit = {
+				check_variable = { total > 500 }
+			}
+			add_to_temp_variable = { total = -500 }
+			multiply_temp_variable = { total = -1 }
+			add_to_variable = { SIA_minor_parties_seats_var = total }
+		}
+		set_variable = { SIA_minor_parties_coalitioned = 0 }
+	}
+	
+	#Check who won, set formation attitude
+	# 1 - Refuse 2- Open 3- In Coalition 4- Infighting #DP
+	if = {
+		limit = { #Pheu Thai won
+			check_variable = { SIA_government_leader = 2 }
+		}
+		set_variable = { SIA_party_1_attitude = 2 }
+		set_variable = { SIA_party_2_attitude = 3 }
+		set_variable = { SIA_party_3_attitude = 1 }
+		set_variable = { SIA_party_4_attitude = 4 }
+		set_variable = { SIA_party_6_attitude = 2 }
+		set_variable = { SIA_party_9_attitude = 2 }
+		set_variable = { SIA_party_11_attitude = 1 }
+		set_variable = { SIA_election_result_scenario = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_government_leader = 11 }
+		}
+		set_variable = { SIA_party_1_attitude = 2 }
+		set_variable = { SIA_party_2_attitude = 1 }
+		set_variable = { SIA_party_3_attitude = 1 }
+		set_variable = { SIA_party_4_attitude = 4 }
+		set_variable = { SIA_party_6_attitude = 2 }
+		set_variable = { SIA_party_9_attitude = 2 }
+		set_variable = { SIA_party_11_attitude = 3 }
+		set_variable = { SIA_election_result_scenario = 2 }
+	}
+	set_country_flag = SIA_government_coalition_formation_ongoing
+	SIA_update_projected_government_seats = yes
+}
+SIA_update_projected_government_seats = {
+	set_variable = { SIA_projected_gov_seats = 0 }
+	if = {
+		limit = {
+			check_variable = { SIA_party_1_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_pprp_seats_var }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_2_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_ptp_seats_var }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_3_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_ffp_seats_var }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_4_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_dp_seats_var }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_6_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_bjt_seats_var }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_9_attitude = 5 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_minor_parties_coalitioned }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_11_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_utn_seats_var }
+	}
+
+}
+SIA_end_coalition_forming = { #Only run this after coalition formation lol
+	# Process: Check scenario, check who won, check who was coalitioned
+	
+	if = {
+		limit = {
+			check_variable = { SIA_party_1_attitude = 3 }
+		}
+		set_variable = { party_1_alignment = 0 }
+	}
+	else = {
+		set_variable = { party_1_alignment = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_2_attitude = 3 }
+		}
+		set_variable = { party_2_alignment = 0 }
+	}
+	else = {
+		set_variable = { party_2_alignment = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_3_attitude = 3 }
+		}
+		set_variable = { party_3_alignment = 0 }
+	}
+	else = {
+		set_variable = { party_3_alignment = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_4_attitude = 3 }
+		}
+		set_variable = { party_4_alignment = 0 }
+	}
+	else = {
+		set_variable = { party_4_alignment = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_6_attitude = 3 }
+		}
+		set_variable = { party_6_alignment = 0 }
+		
+		set_temp_variable = {
+			coalition_partner_var_temp = token:conservative
+		}
+		add_to_coalition = yes
+	}
+	else = {
+		set_variable = { party_6_alignment = 1 }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_11_attitude = 3 }
+		}
+		set_variable = { party_11_alignment = 0 }
+	}
+	else = {
+		set_variable = { party_11_alignment = 1 }
+	}
+	
+	
+	### NAMING CHANGES FOR PARTY ####
+	if = {
+		limit = {
+			check_variable = { SIA_election_result_scenario = 1 }
+		}
+		if = {
+			limit = {
+				check_variable = { SIA_party_1_attitude = 3 }
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = "Palang Pracharath Party"
+				name = "PPRP"
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+		}
+		if = {
+			limit = {
+				check_variable = { SIA_party_6_attitude = 3 }
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = "Bhumjaithai"
+				name = "BJT"
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		set_party_name = {
+			ideology = social_liberal
+			long_name = "Pheu Thai Party"
+			name = "PTP"
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_election_result_scenario = 2 }
+		}
+		if = {
+			limit = {
+				check_variable = { SIA_party_1_attitude = 3 }
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = "United Thai Nation/Palang Pracharath Party"
+				name = "UTN/PPRP"
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { SIA_party_6_attitude = 3 }
+			}
+			set_party_name = {
+				ideology = conservative
+				long_name = "Bhumjaithai"
+				name = "BJT"
+			}
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+	}
+	
+	set_variable = { SIA_minor_gov_seats_var = SIA_minor_parties_coalitioned }
+	set_variable = { SIA_minor_opp_seats_var = SIA_minor_parties_seats_var }
+	subtract_from_variable = { SIA_minor_opp_seats_var = SIA_minor_parties_coalitioned }
+	
+	country_event = thai_elections.4
 }

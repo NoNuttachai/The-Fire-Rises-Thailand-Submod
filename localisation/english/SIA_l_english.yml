@@ -232,7 +232,7 @@
  SIA_once_were_brothers_desc: ""
  SIA_once_were_brothers_tt: "Don't take it too hard\n\n\n\n\n£GFX_SIA_prawit_and_prayut\n\n\n\n\n\nIt's just Politics"
  
- SIA_riding_with_uncle_tuu: "Riding with Uncle Tuu"
+ SIA_riding_with_uncle_tuu: "Uncle Tuu's Wild Ride"
  SIA_riding_with_uncle_tuu_desc: ""
  
  SIA_stimulate_the_tourism_spending: "Stimulate the Tourism Spending"
@@ -600,6 +600,10 @@
  thai_elections.3.d: "Imagine voting"
  thai_elections.3.a: "£GFX_united_thai_nation §gUTN§!"
  thai_elections_3_tt_a: "Campaign for the £GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
+ 
+ thai_elections.4.t: "Government Coalition Formed"
+ thai_elections.4.d: "yippee you get new content"
+ thai_elections.4.a: "I love this mechanic"
  
  thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
  thai_elections_3_tt_b: "Campaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
@@ -1125,6 +1129,30 @@
  SIA_mediation_china_apathy: "@PRC §RChina§! §gwill leave the region to its own devices§!"
  SIA_mediation_japan_apathy: "@JAP Japan §gwill leave the region to its own devices§!"
  
+ SIA_government_coalition_formation: "Coalition Negotiations"
+ SIA_government_coalition_formation_desc: "With the elections now over, the reality is that no sole party can rule alone. Through backroom deals and open promises we must form a government coalition with other parties if we actually want a functioning government ruled by our party.\n\n[SIACoalitionFormationScenario]\n\nProjected Government Coalition Seats: [?SIA_projected_gov_seats]/500"
+ 
+ SIA_start_coalition_formation: "§YCoalition Negotiations are now §Gavailable§!§!. §gWe must be swift in securing our allies in order to shape our government§!"
+ SIA_coalition_attitude_1: "§RRefuses to Coalition§!"
+ SIA_coalition_attitude_2: "§YOpen to Coalition§!"
+ SIA_coalition_attitude_3: "§CIn Coalition§!"
+ SIA_coalition_attitude_4: "§R£GFX_democrat - Party Infighting Ongoing§!" #DP status
+ SIA_coalition_attitude_5: "§YPolitical sway has been exhausted§!" #STOP COALITIONING 
+ 
+ #Scenarios
+ SIA_scenario_1_formation: "£GFX_palang_pracharath §BPalang Pracharath Party§!: [SIA_coalition_negotiation_status_1]\n£GFX_orange_party_2 §OMove Forward Party§!: [SIA_coalition_negotiation_status_3]\n£GFX_democrat §CDemocrat Party§!: [SIA_coalition_negotiation_status_4]\n£GFX_bhumjaithai §1Bhumjaithai Party§!: [SIA_coalition_negotiation_status_6]\n£GFX_united_thai_nation §PUnited Thai Nation Party§!: [SIA_coalition_negotiation_status_11]\n§LMinor Parties§!: [SIA_coalition_negotiation_status_9] - [?SIA_minor_parties_coalitioned]/[?SIA_minor_parties_seats_var]\n" #2023 Elections Pheu Thai
+ SIA_scenario_2_formation: "£GFX_palang_pracharath §BPalang Pracharath Party§!: [SIA_coalition_negotiation_status_1]\n£GFX_phua_thai §RPheu Thai Party§!: [SIA_coalition_negotiation_status_2]\n£GFX_orange_party_2 §OMove Forward Party§!: [SIA_coalition_negotiation_status_3]\n£GFX_democrat §CDemocrat Party§!: [SIA_coalition_negotiation_status_4]\n£GFX_bhumjaithai §1Bhumjaithai Party§!: [SIA_coalition_negotiation_status_6]\n§LMinor Parties§!: [SIA_coalition_negotiation_status_9] - [?SIA_minor_parties_coalitioned]/[?SIA_minor_parties_seats_var]\n" #2023 Elections UTN
+ 
+ 
+ SIA_change_1_votes: "£GFX_palang_pracharath §BPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_2_votes: "£GFX_phua_thai §RPheu Thai Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_3_votes: "£GFX_orange_party_2 §OMove Forward Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_4_votes: "£GFX_democrat §CDemocrat Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_6_votes: "£GFX_bhumjaithai §1Bhumjaithai Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_9_votes: "§LMinor Parties§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_11_votes: "£GFX_united_thai_nation §PUnited Thai Nation Party§! §LVote§! Change: [?vote_change|=+2]"
+
+ SIA_negotiate_with_minor_parties_tt: "§Y2-3§! §LMinor Party§! §Yseats§! will join the coalition"
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
  SIA_bbc_thai_slander: "BBC Thai Slander"

@@ -133,3 +133,15 @@ SIA_cambodia_war_category = {
 	}
 	visible_when_empty = yes
 }
+SIA_government_coalition_formation = {
+	icon = GFX_decision_cat_SIA_parliament
+
+	priority = 7
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_government_coalition_formation_ongoing
+	}
+	visible_when_empty = yes
+}
