@@ -856,6 +856,21 @@ ideas = {
 				political_power_factor = -0.1
 			}
 		}
+		SIA_foreign_worker_program = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				stability_factor = -0.05
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

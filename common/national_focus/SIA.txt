@@ -44,7 +44,8 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			is_completed_by_event = yes
+			#is_completed_by_event = yes
+			has_country_flag = SIA_raise_trigger
 		}
 		available_if_capitulated = yes
 		

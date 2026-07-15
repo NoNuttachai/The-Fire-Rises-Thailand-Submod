@@ -1797,7 +1797,7 @@ SIA_update_projected_government_seats = {
 		}
 		add_to_variable = { SIA_projected_gov_seats = SIA_utn_seats_var }
 	}
-
+	add_to_variable = { SIA_projected_gov_seats = SIA_minor_parties_coalitioned }
 }
 SIA_end_coalition_forming = { #Only run this after coalition formation lol
 	# Process: Check scenario, check who won, check who was coalitioned
@@ -1868,6 +1868,16 @@ SIA_end_coalition_forming = { #Only run this after coalition formation lol
 		limit = {
 			check_variable = { SIA_election_result_scenario = 1 }
 		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		set_party_name = {
+			ideology = social_liberal
+			long_name = "Pheu Thai Party"
+			name = "PTP"
+		}
 		if = {
 			limit = {
 				check_variable = { SIA_party_1_attitude = 3 }
@@ -1896,20 +1906,16 @@ SIA_end_coalition_forming = { #Only run this after coalition formation lol
 			}
 			add_to_coalition = yes
 		}
-		set_politics = {
-			ruling_party = social_liberal
-			elections_allowed = yes
-			election_frequency = 48
-		}
-		set_party_name = {
-			ideology = social_liberal
-			long_name = "Pheu Thai Party"
-			name = "PTP"
-		}
+		
 	}
 	else_if = {
 		limit = {
 			check_variable = { SIA_election_result_scenario = 2 }
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
 		}
 		if = {
 			limit = {
@@ -1931,11 +1937,7 @@ SIA_end_coalition_forming = { #Only run this after coalition formation lol
 				name = "BJT"
 			}
 		}
-		set_politics = {
-			ruling_party = authoritarian_democrat
-			elections_allowed = yes
-			election_frequency = 48
-		}
+		
 	}
 	
 	set_variable = { SIA_minor_gov_seats_var = SIA_minor_parties_coalitioned }

@@ -43,6 +43,7 @@
  SIA_raise_our_three_fingers: "Raise our Three Fingers"
  SIA_raise_our_three_fingers_desc: "The government's decision to dissolve §Othe Future Forward Party§! opened the eyes of an entire generation of young Thais to the reality of authoritarian rule and a political system stacked against them. Unlike previous generations, they are not willing to accept things simply because "that is the way they have always been." These young people are standing up to challenge the status quo and demand real change. They will §Omove forward§! with the §Opeople§! in the pursuit of democracy. Our voices cannot be ignored, and our three fingers will be raised!."
  SIA_raise_our_three_fingers_tt: "Side with the §YGovernmental Opposition§! to §Roust§! §BPrayut Chan-o-cha§! from power."
+ SIA_raise_trigger: "§YWhite Elephant Devs§! finally §Gfinished§! all possible content when siding with §BPrayut§!"
  
  SIA_begin_student_activism: "Begin Student Activism"
  SIA_begin_student_activism_desc: ""
@@ -230,7 +231,7 @@
  
  SIA_once_were_brothers: "Once Were Brothers"
  SIA_once_were_brothers_desc: ""
- SIA_once_were_brothers_tt: "Don't take it too hard\n\n\n\n\n£GFX_SIA_prawit_and_prayut\n\n\n\n\n\nIt's just Politics"
+ SIA_once_were_brothers_tt: "Don't take it too hard,\nIt's just §RPolitics§!.\n\n\n\n\n£GFX_SIA_prawit_and_prayut\n\n\n\n\n\n£GFX_united_thai_nation £GFX_palang_pracharath £GFX_phua_thai §YIt's time to decide the path forward§!"
  
  SIA_riding_with_uncle_tuu: "Uncle Tuu's Wild Ride"
  SIA_riding_with_uncle_tuu_desc: ""
@@ -680,6 +681,7 @@
  SIA_prayut_split: "§PPrayut§! and §BPrawit§! has §Rbroken off§!"
  SIA_economic_engine_decrease: "§YThe Engine§! slowly §Rbreaks down...§!"
  SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
+ SIA_ongoing_elections: "§YElections are ongoing§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -1105,6 +1107,9 @@
  SIA_Economy_category: "Fuelling the Engine"
  SIA_Economy_category_desc: "The Thai economy is so badddddddddddddddd im not even kidding we're so doomed, disaster incoming, first fifth world country. Everyone will now run to cambodia Hun Sen Marines"
  
+ SIA_military_reformation: "Royal Army of Thailand"
+ SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\nThough the military is known to be §Rtrigger happy§!, a §Ygood balance§! of §Gimproving the military§! and §Gkeeping the public happy§! is a must.\n\nMilitary Resources: 0\nCombat Readiness: 0\nPublic Perception: 0 "
+ 
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
  SIA_cambodia_war_category_desc: "Thailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
@@ -1130,7 +1135,7 @@
  SIA_mediation_japan_apathy: "@JAP Japan §gwill leave the region to its own devices§!"
  
  SIA_government_coalition_formation: "Coalition Negotiations"
- SIA_government_coalition_formation_desc: "With the elections now over, the reality is that no sole party can rule alone. Through backroom deals and open promises we must form a government coalition with other parties if we actually want a functioning government ruled by our party.\n\n[SIACoalitionFormationScenario]\n\nProjected Government Coalition Seats: [?SIA_projected_gov_seats]/500"
+ SIA_government_coalition_formation_desc: "With the Thai general election now over, no single party secured a clear parliamentary majority due to the large number of parties competing in the election. Consequently, the winning party must negotiate with other parties to form a governing coalition capable of commanding a majority in the House of Representatives. These coalition talks typically involve bargaining over cabinet positions, policy priorities, and the terms of cooperation needed to establish a stable government.\n\n[SIACoalitionFormationScenario]\n\nProjected Government Coalition Seats: [?SIA_projected_gov_seats]/500"
  
  SIA_start_coalition_formation: "§YCoalition Negotiations are now §Gavailable§!§!. §gWe must be swift in securing our allies in order to shape our government§!"
  SIA_coalition_attitude_1: "§RRefuses to Coalition§!"
@@ -1152,7 +1157,7 @@
  SIA_change_9_votes: "§LMinor Parties§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_11_votes: "£GFX_united_thai_nation §PUnited Thai Nation Party§! §LVote§! Change: [?vote_change|=+2]"
 
- SIA_negotiate_with_minor_parties_tt: "§Y2-3§! §LMinor Party§! §Yseats§! will join the coalition"
+ SIA_negotiate_with_minor_parties_tt: "§Y7-11§! §LMinor Party§! §Yseats§! will join the coalition"
  #Opinion Modifiers
  decreased_relations: "Decreased Relations"
  SIA_bbc_thai_slander: "BBC Thai Slander"

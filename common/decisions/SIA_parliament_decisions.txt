@@ -133,6 +133,8 @@ SIA_parliament_category = {
 			always = yes
 		}
 	}
+	
+	#PRAYUT DECISIONS
 	SIA_emergency_loan_bill_covid = {
 		icon = generic_coronavirus
 		visible = { has_country_flag = SIA_coronavirus_ongoing }
@@ -183,6 +185,46 @@ SIA_parliament_category = {
 				var = debt_var_temp
 				value = 5
 			}
+			add_debt = yes
+		}
+	}
+	SIA_promote_tourism = {
+		icon = generic_coronavirus
+		#visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
+		cost = 50
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		days_remove = 120
+		modifier = {
+			income_growth_factor = 0.1
+		}
+		remove_effect = {
+			
+		}
+	}
+	SIA_increase_funding_to_renewables = {
+		icon = generic_coronavirus
+		#visible = { has_completed_focus = SIA_30_30_vision }
+		cost = 50
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		days_remove = 30
+		modifier = {
+			
+		}
+		remove_effect = {
+			
+		}
+	}
+	SIA_fund_ev_industry = {
+		icon = generic_coronavirus
+		#visible = { has_completed_focus = SIA_30_30_vision }
+		cost = 50
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		
+		complete_effect = {
+			set_temp_variable = { debt_var_temp = -14.263 }
 			add_debt = yes
 		}
 	}

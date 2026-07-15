@@ -399,6 +399,7 @@ country_event = { #elections calculated
         name = thai_elections.1.a 
 		custom_effect_tooltip = SIA_start_coalition_formation
 		SIA_initiate_coalition_forming = yes
+		clr_country_flag = SIA_ongoing_elections
     }
 }
 

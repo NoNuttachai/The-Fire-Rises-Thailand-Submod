@@ -1,0 +1,18 @@
+SIA_military_reformation = {
+	SIA_placeholder_mil = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+		}
+	}
+}

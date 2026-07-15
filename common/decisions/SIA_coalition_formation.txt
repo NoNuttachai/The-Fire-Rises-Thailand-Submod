@@ -156,26 +156,27 @@ SIA_government_coalition_formation = {
 		}
 		visible = {
 			check_variable = { SIA_party_9_attitude = 2 }
+			NOT = { check_variable = { SIA_negotiate_with_minor_parties = 3 } }
 		}
 		activation = {
 			always = no
 		}
 		cost = 30
-
+		fixed_random_seed = no
 		complete_effect = {
 			set_temp_variable_to_random = {
 				var = minor_parties_convinced
-				min = 1
-				max = 3
+				min = 7
+				max = 11
 				integer = yes
 			}
 			add_to_variable = { SIA_minor_parties_coalitioned = minor_parties_convinced }
 			custom_effect_tooltip = SIA_negotiate_with_minor_parties_tt
 			if = {
 				limit = {
-					check_variable = { SIA_projected_gov_seats > 250 }
+					check_variable = { SIA_negotiate_with_minor_parties < 3 }
 				}
-				set_variable = { SIA_party_9_attitude = 5 }
+				add_to_variable = { SIA_negotiate_with_minor_parties = 1 }
 			}
 			SIA_update_projected_government_seats = yes
 		}
