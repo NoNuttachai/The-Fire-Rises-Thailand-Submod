@@ -336,6 +336,9 @@
  SIA_support_our_smes_idea: "Supporting Our SMEs"
  SIA_khon_la_khrueng_idea: "Khon La Khrueng Program"
  SIA_pushback_against_the_establishment: "Pushback Against the Establishment"
+ SIA_SMILE_Strategy: "SMILE Initiative"
+ SIA_We_Travel_Together: "We Travel Together"
+ SIA_recuperation: "Grace Period"
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
