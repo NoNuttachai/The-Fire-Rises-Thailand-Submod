@@ -1225,3 +1225,7 @@
  SIA_ST1_gui_tt: "§YKek Province 1 (Merge with ST2)§!"
  SIA_ST2_gui_tt: "§OKek Province 2 (Merge with ST1)§!"
  SIA_WB_gui_tt: "§VWestern Thailand§!"
+
+ #decision tooltip
+ SIA_stabilize_Baht_tt: "This Will §GRemove§! §G50§! Days From §RWorldwide Financial Crisis!§!"
+ SIA_Discuss_Business_tt: "Don Pramudwinai go sightseeing in the middle of §Rbumfuck nowhere§!!"

@@ -188,9 +188,70 @@ SIA_parliament_category = {
 			add_debt = yes
 		}
 	}
+        SIA_appeal_MPs = {
+                icon = generic_coronavirus
+                visible = { 
+                         has_complete_focus = SIA_once_were_brothers
+                         check_variable = { SIA_election_playing_as = 11 }
+                }
+                cost = 30
+                ai_will_do = { factor = 1 }
+                days_re_enable = 30
+                days_remove = 14
+                modifier = {
+                        political_power_gain = -0.1
+                        income_growth_factor = -0.05
+                }
+                remove_effect = {
+                      random_list = {
+                          3 = {
+                                if = {
+				        limit = {
+					          has_country_flag = SIA_ongoing_elections
+				        }
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 3 }
+				SIA_elections_increase_votes_by_undecided = yes
+                                }
+			  }
+                          2 = {
+                                if = {
+				        limit = {
+					          has_country_flag = SIA_ongoing_elections
+				        }
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = -2 }
+				SIA_elections_increase_votes_by_undecided = yes
+                                }
+                          }	
+                      }
+                }
+        }
+	SIA_Stabilize_Baht = {
+		icon = generic_coronavirus
+		visible = { 
+                        has_complete_focus = SIA_stop_the_decline 
+                        has_idea = generic_world_wide_financial_crisis_1
+                }
+		cost = 60
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		days_remove = 7
+		modifier = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = SIA_stabilize_Baht_tt
+			hidden_effect = {
+				modify_timed_idea = {
+					idea = generic_world_wide_financial_crisis_1
+					days = -50
+				}
+			}
+		}
+	}
 	SIA_promote_tourism = {
 		icon = generic_coronavirus
-		#visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
+		visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
 		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
@@ -199,9 +260,33 @@ SIA_parliament_category = {
 			income_growth_factor = 0.1
 		}
 		remove_effect = {
-			
+  
 		}
 	}
+	SIA_introduce_SMILE = {
+		icon = generic_coronavirus
+		visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
+		cost = 50
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		days_remove = 14
+		remove_effect = {
+		      add_ideas = SIA_SMILE_Strategy	
+		}
+	}
+        SIA_extent_travel_subsidy
+                icon = generic_coronavirus
+                visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
+                cost = 40
+                ai_will_do = { factor = 1 }
+                fire_only_once = yes
+                complete_effect = {
+			add_timed_idea = {
+				idea = SIA_We_Travel_Together
+				days = 120
+			}
+                }
+        }
 	SIA_increase_funding_to_renewables = {
 		icon = generic_coronavirus
 		#visible = { has_completed_focus = SIA_30_30_vision }

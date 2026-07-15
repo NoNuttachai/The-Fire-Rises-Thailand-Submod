@@ -871,6 +871,63 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		SIA_SMILE_Strategy = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+		        cancel = {
+			        NOT = {
+                                         OR = {
+                                                has_idea = SIA_prayut_chan-o-cha_advisor
+                                                has_idea = SIA_prawit_wongsuwan_hog 
+                                         }
+                                }
+                                     
+		        }
+				
+			modifier = {
+				stability_factor = -0.05
+                                poverty_development_monthly = 0.02
+                                business_value_factor = 0.05
+				income_growth_factor = 0.05
+			}
+		}
+		SIA_We_Travel_Together = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				income_growth_factor = 0.05
+                                society_development_monthly = 0.01
+			}
+		}
+		SIA_recuperation = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+                                stability_weekly = 0.015
+				income_growth_factor = 0.05
+                                society_development_monthly = 0.01
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

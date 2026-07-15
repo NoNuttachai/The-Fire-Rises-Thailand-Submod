@@ -249,15 +249,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			modify_timed_idea = {
-				idea = generic_world_wide_financial_crisis_1
-				days = -50
-			}
-			
+                        unlock_decision_tooltip = SIA_Stabilize_Baht
 			set_temp_variable = { debt_var_temp = 15 }
 			add_debt = yes
 			set_temp_variable = { inflation_var_temp = -0.015 }
 			add_inflation = yes
+
 		}
 	}
 	focus = {
@@ -283,6 +280,10 @@ focus_tree = {
 				value = 0.05
 			}
 			add_poverty_development = yes
+			modify_timed_idea = {
+				idea = generic_world_wide_financial_crisis_1
+				days = -60
+			}
 		}
 	}
 	focus = {
@@ -302,6 +303,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+                        custom_effect_tooltip = SIA_Discuss_Business_tt
 			random_owned_state = {
 				add_building_construction = {
 					type = office_park
@@ -564,6 +566,10 @@ focus_tree = {
 				value = 76.427
 			}
 			add_income = yes
+                        add_timed_idea = {
+                                   idea = SIA_recuperation
+                                   days = 90
+                        }
 		}
 	}
 	focus = {
@@ -869,21 +875,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 			unlock_decision_tooltip = SIA_promote_tourism
-			random_owned_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+                        unlock_decision_tooltip = SIA_introduce_SMILE
+                        unlock_decision_tooltip = SIA_extent_travel_subsidy
 		}
 	}
 	focus = {
