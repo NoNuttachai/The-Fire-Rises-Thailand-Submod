@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 9999
+			add = 9999999
 			tag = SIA
 		}
 	}
@@ -407,6 +407,11 @@ focus_tree = {
 			SIA_increase_economic_engine = yes
 			add_stability = 0.1
 			add_political_power = 50
+			set_temp_variable = {
+				var = poverty_development_var_temp
+				value = 0.075
+			}
+			add_poverty_development = yes
 		}
 	}
 	
@@ -574,7 +579,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_khon_la_khrueng
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_khon_la_krueng
 		x = -1
 		y = 1
 		cost = 4
@@ -732,11 +737,11 @@ focus_tree = {
 		
 		completion_reward = {
 			effect_tooltip = {
-				add_political_power = 150
-				add_stability = 0.25
+				add_political_power = 250
+				add_stability = 0.3
 				add_popularity = {
 					ideology = conservative
-					popularity = 0.10
+					popularity = 0.15
 				}
 			}
 			hidden_effect = { #Stop cheating
@@ -853,7 +858,7 @@ focus_tree = {
 			}
 			add_political_power = 50
 			unlock_decision_tooltip = SIA_berate_our_opponents
-			unlock_decision_tooltip = SIA_hype_prayuts_achievements
+			unlock_decision_tooltip = SIA_showcase_prayuts_achievements
 			unlock_decision_tooltip = SIA_campaign_for_the_utn
 			unlock_decision_tooltip = SIA_smear_campaign
 		}
@@ -933,6 +938,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			set_temp_variable = { debt_var_temp = 14.931 }
+			add_debt = yes
 			if = {
 				limit = {
 					has_country_flag = SIA_ongoing_elections
@@ -940,6 +947,20 @@ focus_tree = {
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 3 }
 				SIA_elections_increase_votes_by_undecided = yes
+			}
+			289 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1496 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -968,8 +989,7 @@ focus_tree = {
 				set_temp_variable = { vote_change = 1.5 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
-			set_temp_variable = { debt_var_temp = -19.720 }
-			add_debt = yes
+			
 		}
 	}
 	focus = {

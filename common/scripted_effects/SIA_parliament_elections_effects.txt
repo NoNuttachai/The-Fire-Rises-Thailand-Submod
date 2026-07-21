@@ -12,7 +12,7 @@ SIA_setup_elections = { #Protests dismantled - Prayut present scenario
 	set_variable = { undecided_votes = 100 }
 	# Party votes are in percentage out of 100
 	11 = {
-		set_variable = { party_votes = 7 }
+		set_variable = { party_votes = 3 }
 	}
 	1 = {
 		set_variable = { party_votes = 4 }
@@ -83,7 +83,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_1 = 9 }
 			}
@@ -128,7 +128,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_2 = 9 }
 			}
@@ -169,7 +169,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_3 = 9 }
 			}
@@ -214,7 +214,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_4 = 9 }
 			}
@@ -311,7 +311,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_6 = 9 }
 			}
@@ -355,7 +355,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_1 = 9 }
 			}
@@ -407,7 +407,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_2 = 9 }
 			}
@@ -444,7 +444,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_3 = 9 }
 			}
@@ -489,7 +489,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_4 = 9 }
 			}
@@ -520,7 +520,7 @@ SIA_roll_2nd_target = {
 			1 = {
 				modifier = {
 					factor = 0
-					check_variable = { 9:party_votes < 5 }
+					check_variable = { 9:party_votes < 9 }
 				}
 				set_variable = { 2nd_target_5 = 9 }
 			}
@@ -605,8 +605,8 @@ SIA_roll_other_party_campaigning = {
 			random_list = {
 				1 = {
 					modifier = {
-						factor = 0
-						check_variable = { 1:party_votes > 5 }
+						factor = 0.5
+						check_variable = { 1:party_votes > 8 }
 					}
 					
 					set_temp_variable = { target = 1 }
@@ -620,7 +620,7 @@ SIA_roll_other_party_campaigning = {
 				}
 				4 = {
 					modifier = {
-						factor = 0
+						factor = 0.3
 						check_variable = { 6:party_votes > 10 }
 					}
 					set_temp_variable = { target = 6 }
@@ -634,8 +634,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				3 = {
 					modifier = {
-						factor = 0
-						check_variable = { 4:party_votes > 5 }
+						factor = 0.3
+						check_variable = { 4:party_votes > 7 }
 					}
 					set_temp_variable = { target = 4 }
 					set_temp_variable_to_random = {
@@ -648,8 +648,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				4 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 3:party_votes > 25 }
+						factor = 0.3
+						check_variable = { 3:party_votes > 18 }
 					}
 					set_temp_variable = { target = 3 }
 					set_temp_variable_to_random = {
@@ -665,7 +665,7 @@ SIA_roll_other_party_campaigning = {
 				1 = {
 					modifier = {
 						factor = 0
-						check_variable = { 9:party_votes > 9 }
+						check_variable = { 9:party_votes > 10 }
 					}
 					set_temp_variable = { target = 9 }
 					set_temp_variable_to_random = {
@@ -680,7 +680,7 @@ SIA_roll_other_party_campaigning = {
 				4 = {
 					modifier = {
 						factor = 0.5
-						check_variable = { 11:party_votes > 25 }
+						check_variable = { 11:party_votes > 18 }
 					}
 					set_temp_variable = { target = 11 }
 					set_temp_variable_to_random = {
@@ -700,8 +700,8 @@ SIA_roll_other_party_campaigning = {
 			random_list = {
 				1 = {
 					modifier = {
-						factor = 0
-						check_variable = { 1:party_votes > 5 }
+						factor = 0.5
+						check_variable = { 1:party_votes > 8 }
 					}
 					
 					set_temp_variable = { target = 1 }
@@ -716,8 +716,8 @@ SIA_roll_other_party_campaigning = {
 				
 				5 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 2:party_votes > 25 }
+						factor = 0.3
+						check_variable = { 2:party_votes > 18 }
 					}
 					set_temp_variable = { target = 2 }
 					set_temp_variable_to_random = {
@@ -731,7 +731,7 @@ SIA_roll_other_party_campaigning = {
 				
 				4 = {
 					modifier = {
-						factor = 0
+						factor = 0.3
 						check_variable = { 6:party_votes > 10 }
 					}
 					set_temp_variable = { target = 6 }
@@ -745,8 +745,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				3 = {
 					modifier = {
-						factor = 0
-						check_variable = { 4:party_votes > 5 }
+						factor = 0.3
+						check_variable = { 4:party_votes > 7 }
 					}
 					set_temp_variable = { target = 4 }
 					set_temp_variable_to_random = {
@@ -759,8 +759,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				4 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 3:party_votes > 22 }
+						factor = 0.3
+						check_variable = { 3:party_votes > 18 }
 					}
 					set_temp_variable = { target = 3 }
 					set_temp_variable_to_random = {
@@ -776,7 +776,7 @@ SIA_roll_other_party_campaigning = {
 				1 = {
 					modifier = {
 						factor = 0
-						check_variable = { 9:party_votes > 9 }
+						check_variable = { 9:party_votes > 10 }
 					}
 					set_temp_variable = { target = 9 }
 					set_temp_variable_to_random = {
@@ -800,8 +800,8 @@ SIA_roll_other_party_campaigning = {
 			random_list = {
 				1 = {
 					modifier = {
-						factor = 0
-						check_variable = { 1:party_votes > 5 }
+						factor = 0.5
+						check_variable = { 1:party_votes > 8 }
 					}
 					
 					set_temp_variable = { 1st_target = 1 }
@@ -816,7 +816,7 @@ SIA_roll_other_party_campaigning = {
 				}
 				4 = {
 					modifier = {
-						factor = 0
+						factor = 0.3
 						check_variable = { 3:party_votes > 10 }
 					}
 					set_temp_variable = { 1st_target = 3 }
@@ -831,8 +831,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				3 = {
 					modifier = {
-						factor = 0
-						check_variable = { 4:party_votes > 5 }
+						factor = 0.3
+						check_variable = { 4:party_votes > 7 }
 					}
 					set_temp_variable = { 1st_target = 4 }
 					set_temp_variable_to_random = {
@@ -846,8 +846,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				4 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 6:party_votes > 25 }
+						factor = 0.3
+						check_variable = { 6:party_votes > 18 }
 					}
 					set_temp_variable = { 1st_target = 6 }
 					set_temp_variable_to_random = {
@@ -864,7 +864,7 @@ SIA_roll_other_party_campaigning = {
 				1 = {
 					modifier = {
 						factor = 0
-						check_variable = { 9:party_votes > 9 }
+						check_variable = { 9:party_votes > 10 }
 					}
 					set_temp_variable = { 1st_target = 9 }
 					set_temp_variable_to_random = {
@@ -879,8 +879,8 @@ SIA_roll_other_party_campaigning = {
 				
 				4 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 11:party_votes > 25 }
+						factor = 0.3
+						check_variable = { 11:party_votes > 18 }
 					}
 					set_temp_variable = { 1st_target = 11 }
 					set_temp_variable_to_random = {
@@ -901,8 +901,8 @@ SIA_roll_other_party_campaigning = {
 			random_list = {
 				1 = {
 					modifier = {
-						factor = 0
-						check_variable = { 1:party_votes > 5 }
+						factor = 0.5
+						check_variable = { 1:party_votes > 8 }
 					}
 					
 					set_temp_variable = { 1st_target = 1 }
@@ -918,8 +918,8 @@ SIA_roll_other_party_campaigning = {
 				
 				5 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 2:party_votes > 25 }
+						factor = 0.3
+						check_variable = { 2:party_votes > 18 }
 					}
 					set_temp_variable = { 1st_target = 2 }
 					set_temp_variable_to_random = {
@@ -934,7 +934,7 @@ SIA_roll_other_party_campaigning = {
 				
 				4 = {
 					modifier = {
-						factor = 0
+						factor = 0.3
 						check_variable = { 6:party_votes > 10 }
 					}
 					set_temp_variable = { 1st_target = 6 }
@@ -949,8 +949,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				3 = {
 					modifier = {
-						factor = 0
-						check_variable = { 4:party_votes > 5 }
+						factor = 0.3
+						check_variable = { 4:party_votes > 7 }
 					}
 					set_temp_variable = { 1st_target = 4 }
 					set_temp_variable_to_random = {
@@ -964,8 +964,8 @@ SIA_roll_other_party_campaigning = {
 				}
 				4 = {
 					modifier = {
-						factor = 0.5
-						check_variable = { 3:party_votes > 22 }
+						factor = 0.3
+						check_variable = { 3:party_votes > 18 }
 					}
 					set_temp_variable = { 1st_target = 3 }
 					set_temp_variable_to_random = {
@@ -982,7 +982,7 @@ SIA_roll_other_party_campaigning = {
 				1 = {
 					modifier = {
 						factor = 0
-						check_variable = { 9:party_votes > 9 }
+						check_variable = { 9:party_votes > 10 }
 					}
 					set_temp_variable = { 1st_target = 9 }
 					set_temp_variable_to_random = {
@@ -1409,8 +1409,25 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_1st = 1 }
 	}
 	else_if = {
-		limit = { check_variable = { most = 1 } }
+		limit = { 
+			check_variable = { most = 1 } 
+			check_variable = { ptp_candidate = 0 }
+		}
 		set_variable = { SIA_elections_1st = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most = 1 } 
+			check_variable = { ptp_candidate = 1 }
+		}
+		set_variable = { SIA_elections_1st = 2.1 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most = 1 } 
+			check_variable = { ptp_candidate = 2 }
+		}
+		set_variable = { SIA_elections_1st = 2.2 }
 	}
 	else_if = {
 		limit = { check_variable = { most = 2 } }
@@ -1449,7 +1466,11 @@ SIA_get_projected_winner_image = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { SIA_elections_1st = 2 }
+				OR = {
+					check_variable = { SIA_elections_1st = 2 }
+					check_variable = { SIA_elections_1st = 2.1 }
+					check_variable = { SIA_elections_1st = 2.2 }
+				}
 			}
 		}
 		add_to_temp_array = { most_votes2 = 2:party_votes }
@@ -1522,8 +1543,25 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_2nd = 1 }
 	}
 	else_if = {
-		limit = { check_variable = { most2 = 1 } }
+		limit = { 
+			check_variable = { most2 = 1 } 
+			check_variable = { ptp_candidate = 0 } 
+		}
 		set_variable = { SIA_elections_2nd = 2 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most2 = 1 } 
+			check_variable = { ptp_candidate = 1 } 
+		}
+		set_variable = { SIA_elections_2nd = 2.1 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most2 = 1 } 
+			check_variable = { ptp_candidate = 2 } 
+		}
+		set_variable = { SIA_elections_2nd = 2.2 }
 	}
 	else_if = {
 		limit = { check_variable = { most2 = 2 } }
@@ -1562,8 +1600,16 @@ SIA_get_projected_winner_image = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { SIA_elections_1st = 2 }
-				check_variable = { SIA_elections_2nd = 2 }
+				
+				OR = {
+					check_variable = { SIA_elections_1st = 2 }
+					check_variable = { SIA_elections_1st = 2.1 }
+					check_variable = { SIA_elections_1st = 2.2 }
+					
+					check_variable = { SIA_elections_2nd = 2 }
+					check_variable = { SIA_elections_2nd = 2.1 }
+					check_variable = { SIA_elections_2nd = 2.2 }
+				}
 			}
 		}
 		add_to_temp_array = { most_votes3 = 2:party_votes }
@@ -1641,8 +1687,28 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_3rd = 1 }
 	}
 	else_if = {
-		limit = { check_variable = { most3 = 1 } }
+		limit = {
+			check_variable = { most3 = 1 } 
+			check_variable = { ptp_candidate = 0 } 
+			
+		}
 		set_variable = { SIA_elections_3rd = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { most3 = 1 } 
+			check_variable = { ptp_candidate = 1 } 
+			
+		}
+		set_variable = { SIA_elections_3rd = 2.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { most3 = 1 } 
+			check_variable = { ptp_candidate = 2 } 
+			
+		}
+		set_variable = { SIA_elections_3rd = 2.2 }
 	}
 	else_if = {
 		limit = { check_variable = { most3 = 2 } }
@@ -1731,7 +1797,7 @@ SIA_initiate_coalition_forming = {
 		set_variable = { SIA_party_1_attitude = 2 }
 		set_variable = { SIA_party_2_attitude = 3 }
 		set_variable = { SIA_party_3_attitude = 1 }
-		set_variable = { SIA_party_4_attitude = 4 }
+		set_variable = { SIA_party_4_attitude = 1 }
 		set_variable = { SIA_party_6_attitude = 2 }
 		set_variable = { SIA_party_9_attitude = 2 }
 		set_variable = { SIA_party_11_attitude = 1 }
@@ -1744,12 +1810,13 @@ SIA_initiate_coalition_forming = {
 		set_variable = { SIA_party_1_attitude = 2 }
 		set_variable = { SIA_party_2_attitude = 1 }
 		set_variable = { SIA_party_3_attitude = 1 }
-		set_variable = { SIA_party_4_attitude = 4 }
+		set_variable = { SIA_party_4_attitude = 1 }
 		set_variable = { SIA_party_6_attitude = 2 }
 		set_variable = { SIA_party_9_attitude = 2 }
 		set_variable = { SIA_party_11_attitude = 3 }
 		set_variable = { SIA_election_result_scenario = 2 }
 	}
+	hidden_effect = { country_event = thai_elections.5 }
 	set_country_flag = SIA_government_coalition_formation_ongoing
 	SIA_update_projected_government_seats = yes
 }

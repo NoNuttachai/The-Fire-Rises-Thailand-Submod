@@ -1,11 +1,10 @@
 spriteTypes = {
-	#PRAYUT SIDE
 	SpriteType = {
 		name = "GFX_goal_SIA_Another_Year_with_Prayut_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Another_Year_with_Prayut.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Another_Year_with_Prayut.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -18,162 +17,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_SIA_deploy_the_riot_police_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_deploy_the_riot_police.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_deploy_the_riot_police.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_deploy_the_riot_police.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_SIA_utilized_the_media_on_our_side_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_utilized_the_media_on_our_side.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_utilized_the_media_on_our_side.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_utilized_the_media_on_our_side.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_SIA_Oil_Crisis_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_SIA_grant_oil_subsidies_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_SIA_CCSA_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_CCSA.png"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_CCSA.png"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-
-		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_CCSA.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Another_Year_with_Prayut.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -188,10 +32,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_SIA_State_of_Emergency_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_State_of_Emergency.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_State_of_Emergency.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_State_of_Emergency.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_State_of_Emergency.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -204,7 +48,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_State_of_Emergency.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_State_of_Emergency.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -217,14 +61,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
-	### PROTESTS SIDE
 	SpriteType = {
-		name = "GFX_goal_SIA_a_leftist_united_front_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_a_leftist_united_front.png"
+		name = "GFX_goal_SIA_Extinguish_the_Flames_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Extinguish_the_Flames.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_a_leftist_united_front.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Extinguish_the_Flames.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -237,7 +79,193 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_a_leftist_united_front.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Extinguish_the_Flames.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_Subsidize_Government_Business_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Subsidize_Government_Business.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Subsidize_Government_Business.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Subsidize_Government_Business.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_Court_System_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Court_System.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Court_System.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Court_System.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_ReOpenTourism_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_ReOpenTourism.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_ReOpenTourism.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_ReOpenTourism.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_Vaccination_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Vaccination.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Vaccination.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Vaccination.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_Crush_The_Movement_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Crush_The_Movement.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Crush_The_Movement.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Crush_The_Movement.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_a_leftist_united_front_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_a_leftist_united_front.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_a_leftist_united_front.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_a_leftist_united_front.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -252,10 +280,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_SIA_begin_student_activism_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_begin_student_activism.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_begin_student_activism.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_begin_student_activism.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_begin_student_activism.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -268,7 +296,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_begin_student_activism.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_begin_student_activism.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -283,10 +311,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_SIA_social_media_campaigning_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_social_media_campaigning.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_social_media_campaigning.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_social_media_campaigning.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_social_media_campaigning.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -299,7 +327,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_social_media_campaigning.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_social_media_campaigning.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -312,13 +340,12 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
 	SpriteType = {
-		name = "GFX_goal_SIA_make_them_face_our_wrath_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_make_them_face_our_wrath.png"
+		name = "GFX_goal_SIA_deploy_the_riot_police_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_deploy_the_riot_police.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_make_them_face_our_wrath.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_deploy_the_riot_police.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -331,7 +358,100 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_make_them_face_our_wrath.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_deploy_the_riot_police.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_make_them_face_our_wrath_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_make_them_face_our_wrath.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_make_them_face_our_wrath.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_make_them_face_our_wrath.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_utilized_the_media_on_our_side_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_utilized_the_media_on_our_side.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_utilized_the_media_on_our_side.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_utilized_the_media_on_our_side.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_grant_oil_subsidies_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -346,10 +466,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_SIA_khana_ratsadon_reborn_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_khana_ratsadon_reborn.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_khana_ratsadon_reborn.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_khana_ratsadon_reborn.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_khana_ratsadon_reborn.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -362,7 +482,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_khana_ratsadon_reborn.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_khana_ratsadon_reborn.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -377,10 +497,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_SIA_maintain_peaceful_protests_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_maintain_peaceful_protests.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_maintain_peaceful_protests.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_maintain_peaceful_protests.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_maintain_peaceful_protests.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -393,7 +513,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_maintain_peaceful_protests.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_maintain_peaceful_protests.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -408,10 +528,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_goal_SIA_fight_the_arrests_shine"
-		texturefile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_fight_the_arrests.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_fight_the_arrests.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -424,7 +544,131 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_fight_the_arrests.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_CCSA_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_CCSA.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_CCSA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_CCSA.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_Oil_Crisis_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Oil_Crisis.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Oil_Crisis.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Oil_Crisis.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_ally_with_workers_union_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_ally_with_workers_union.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_ally_with_workers_union.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_ally_with_workers_union.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_SIA_information_operations_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_information_operations.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_information_operations.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_information_operations.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -438,4 +682,36 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	#Prayut 2021-2023
+	SpriteType = {
+		name = "GFX_goal_SIA_prayut_2021_khon_la_krueng_shine"
+		texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_prayut_2021_khon_la_krueng.png"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/prayut2021/SIA_prayut_2021_khon_la_krueng.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/SIA/prayut2021/SIA_prayut_2021_khon_la_krueng.png"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
 }

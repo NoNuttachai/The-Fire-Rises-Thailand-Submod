@@ -1,0 +1,15 @@
+leader_traits = {
+	#SIA
+	SIA_ide_pprp = {
+		random = no
+	}
+	SIA_ide_stratcon = {
+		random = no
+	}
+	SIA_ide_independent = {
+		random = no
+	}
+	SIA_ide_neoliberal = {
+		random = no
+	}
+}

@@ -349,9 +349,10 @@ country_event = { #Brothers forever fakeout event
 		set_temp_variable = { seats = SIA_pprp_seats_var }
 		multiply_temp_variable = { seats = -1 }
 		SIA_change_parliament_seat = yes
-		add_stability = -1
-		add_war_support = -1
+		add_stability = -3
+		add_war_support = -3
 		add_political_power = -1000
+		add_manpower = -99999999
     }
 }
 country_event = { #review the autopsy
@@ -370,6 +371,14 @@ country_event = { #review the autopsy
 		effect_tooltip = {
 			add_ideas = SIA_pushback_against_the_establishment
 		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
     }
 }
 country_event = { #Defend against opposition
@@ -384,6 +393,26 @@ country_event = { #Defend against opposition
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.03
+		}
+		add_political_power = 30
+    }
+}
+country_event = { #Prayut wins 2023 Elections
+    id = thai_prayut.8
+    title = thai_prayut.8.t
+    desc = thai_prayut.8.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.8.a
+		focus_unlock = yes
+		hidden_effect = {
+			load_focus_tree = SIA_2023_utn_focus_tree
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.05
 		}
 		add_political_power = 30
     }
@@ -444,6 +473,66 @@ country_event = { # 2023 Elections start
 			activate_mission = SIA_2023_elections
 			activate_mission = SIA_other_parties_campaigning
 		}
+		#Prayut Government Performance Check
+		if = {
+			limit = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+			}
+			if = { #Covid Performance
+				limit = { #Isolated
+					check_variable = { SIA_prayut_check_covid = 0 }
+				}
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 3 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else_if = { #Covid Performance
+				limit = { #Mild
+					check_variable = { SIA_prayut_check_covid = 1 }
+				}
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 1.5 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else_if = { #Covid Performance
+				limit = { #Moderate
+					check_variable = { SIA_prayut_check_covid = 2 }
+				}
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 0.5 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			if = { #BOP rating check
+				limit = { #Very High
+					power_balance_value = {
+						id = SIA_power_balance
+						value > 0.449
+					}
+				}
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 2 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else_if = { #BOP rating check
+				limit = { #Overwhelming
+					power_balance_value = {
+						id = SIA_power_balance
+						value > 0.749
+					}
+				}
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 5 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			if = { #protest severity check
+				limit = { #Minor Demonstrations
+					check_variable = { SIA_prayut_check_protest = 0 }
+				}
+				set_temp_variable = { target = 11 }
+				set_temp_variable = { vote_change = 3 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+		}
 	}
 }
 country_event = { # Coalition Formed
@@ -459,18 +548,59 @@ country_event = { # Coalition Formed
 			limit = {
 				check_variable = { SIA_government_leader = 2 }
 			}
-			load_focus_tree = SIA_2023_pheu_thai_focus_tree
+			focus_unlock = yes
+			hidden_effect = {
+				load_focus_tree = SIA_2023_pheu_thai_focus_tree
+			}
 		}
 		else_if = {
 			limit = {
 				check_variable = { SIA_government_leader = 11 }
 			}
-			load_focus_tree = SIA_2023_utn_focus_tree
+			country_event = thai_prayut.8
 		}
 		clr_country_flag = SIA_government_coalition_formation_ongoing
+		hidden_effect = {
+			add_ideas = {
+				vacant_hog
+				vacant_for
+				vacant_eco
+				vacant_sec
+				vacant_int
+				vacant_theorist
+			}
+		}
     }
 }
-country_event = {
+country_event = { # PTP leadership choice
+    id = thai_elections.5
+    title = thai_elections.5.t
+    desc = thai_elections.5.d
+   
+	is_triggered_only = yes
+    option = { #sretta
+        name = thai_elections.5.a 
+		set_variable = { ptp_candidate = 1 }
+		custom_effect_tooltip = thai_elections_5_tt_a
+    }
+	option = { #Shinawatra
+        name = thai_elections.5.b 
+		set_variable = { ptp_candidate = 2 } 
+		custom_effect_tooltip = thai_elections_5_tt_b
+    }
+}
+country_event = { # DP falls to chaos after lost in elections
+    id = thai_elections.5
+    title = thai_elections.5.t
+    desc = thai_elections.5.d
+   
+	is_triggered_only = yes
+    option = { 
+        name = thai_elections.5.a 
+		set_variable = { SIA_party_4_attitude = 4 }
+    }
+}
+country_event = { #Verdict on FFP
     id = thai_events.1
     title = thai_events.1.t
     desc = thai_events.1.d
@@ -507,7 +637,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #Start Event
     id = thai_events.2
     title = thai_events.2.t
     desc = thai_events.2.d
@@ -526,7 +656,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #Budget Bill Passed
     id = thai_events.3
     title = thai_events.3.t
     desc = thai_events.3.d
@@ -562,7 +692,7 @@ country_event = {
     }
 }
 
-country_event = {
+country_event = { #MFP established
     id = thai_events.5
     title = thai_events.5.t
     desc = thai_events.5.d
@@ -610,7 +740,7 @@ country_event = {
 		}
 	}
 }
-country_event = {
+country_event = { #Oil Crisis Hits Thailand
     id = thai_events.6
     title = thai_events.6.t
     desc = thai_events.6.d
@@ -651,19 +781,19 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    option = {
-        name = thai_events.7.a
-		complete_national_focus = SIA_raise_our_three_fingers
-		hidden_effect = {
-			activate_mission = SIA_government_action_1
-			activate_mission = SIA_oil_distribution_to_stations
-		}
-	}
+    #option = {
+    #    name = thai_events.7.a
+	#	complete_national_focus = SIA_raise_our_three_fingers
+	#	hidden_effect = {
+	#		activate_mission = SIA_government_action_1
+	#		activate_mission = SIA_oil_distribution_to_stations
+	#	}
+	#}
 	option = {
         name = thai_events.7.b
 		complete_national_focus = SIA_side_with_uncle_tuu
 		hidden_effect = {
-			set_variable = { SIA_protests_days = 60 }
+			set_variable = { SIA_protests_days = 40 }
 			activate_mission = SIA_protestor_action_1
 			
 		}
@@ -673,7 +803,7 @@ country_event = {
 		add_ideas = SIA_active_protests_1
 	}
 }
-country_event = {
+country_event = { #Wanchalearm Abduction
     id = thai_events.8
     title = thai_events.8.t
     desc = thai_events.8.d

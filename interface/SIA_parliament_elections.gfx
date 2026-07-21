@@ -13,7 +13,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_2"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_2.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_2.1"
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_2_1.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_2.2"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_2_2.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_3"

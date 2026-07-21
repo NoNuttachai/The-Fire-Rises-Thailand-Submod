@@ -18,6 +18,7 @@ SIA_coronavirus_category = {
 		days_mission_timeout = 60
 		timeout_effect = {
 			SIA_increase_coronavirus = yes
+			add_to_variable = { SIA_prayut_check_covid = 1 }
 			activate_mission = SIA_the_pandemic_worsens_mission
 		}
 		complete_effect = {

@@ -58,6 +58,7 @@ SIA_parliament_elections = {
 		}
 		visible = {
 			always = yes
+			is_debug = yes
 		}
 		complete_effect = {
 			activate_mission = SIA_2023_elections
@@ -107,42 +108,51 @@ SIA_parliament_elections = {
 			has_country_flag = SIA_ongoing_elections
 			check_variable = { SIA_election_playing_as = 11 }
 		}
-		cost = 25
-		days_remove = 10
+		cost = 50
+		days_remove = 20
+		fixed_random_seed = no
 		complete_effect = {
 			random_list = {
 				1 = {
 					modifier = {
 						factor = 0
-						check_variable = { 1:party_votes < 2 }
+						check_variable = { 1:party_votes < 5 }
 					}
 					set_temp_variable = { target = 1 }
 					set_temp_variable_to_random = {
 						var = vote_change
-						min = -2
-						max = -1
+						min = -5
+						max = -3
 						integer = no
 					}
 					SIA_elections_increase_votes_by_undecided = yes
 					
 				}
 				1 = {
+					modifier = {
+						factor = 0
+						check_variable = { 2:party_votes < 12 }
+					}
 					set_temp_variable = { target = 2 }
 					set_temp_variable_to_random = {
 						var = vote_change
-						min = -2
-						max = -1
+						min = -5
+						max = -3
 						integer = no
 					}
 					SIA_elections_increase_votes_by_undecided = yes
 					
 				}
 				1 = {
+					modifier = {
+						factor = 0
+						check_variable = { 3:party_votes < 10 }
+					}
 					set_temp_variable = { target = 3 }
 					set_temp_variable_to_random = {
 						var = vote_change
-						min = -2
-						max = -1
+						min = -5
+						max = -3
 						integer = no
 					}
 					SIA_elections_increase_votes_by_undecided = yes
@@ -156,8 +166,8 @@ SIA_parliament_elections = {
 					set_temp_variable = { target = 4 }
 					set_temp_variable_to_random = {
 						var = vote_change
-						min = -2
-						max = -1
+						min = -5
+						max = -3
 						integer = no
 					}
 					SIA_elections_increase_votes_by_undecided = yes
@@ -171,8 +181,8 @@ SIA_parliament_elections = {
 					set_temp_variable = { target = 6 }
 					set_temp_variable_to_random = {
 						var = vote_change
-						min = -2
-						max = -1
+						min = -5
+						max = -3
 						integer = no
 					}
 					SIA_elections_increase_votes_by_undecided = yes
@@ -181,13 +191,13 @@ SIA_parliament_elections = {
 				1 = {
 					modifier = {
 						factor = 0
-						check_variable = { 9:party_votes < 6 }
+						check_variable = { 9:party_votes < 8 }
 					}
 					set_temp_variable = { target = 9 }
 					set_temp_variable_to_random = {
 						var = vote_change
-						min = -2
-						max = -1
+						min = -5
+						max = -3
 						integer = no
 					}
 					SIA_elections_increase_votes_by_undecided = yes
@@ -235,12 +245,13 @@ SIA_parliament_elections = {
 			set_temp_variable = { target = 6 }
 			set_temp_variable = { vote_change = -2 }
 			SIA_elections_increase_votes_by_undecided = yes
+			set_country_flag = SIA_active_election_decision
 		}
 		remove_effect = {
 			clr_country_flag = SIA_active_election_decision
 		}
 	}
-	SIA_exchange_votes_for_pp = {
+	SIA_conduct_fundraising = {
 		icon = generic_crisis
 		available = {
 			NOT = {
@@ -250,7 +261,7 @@ SIA_parliament_elections = {
 		visible = {
 			has_country_flag = SIA_ongoing_elections
 		}
-		days_remove = 20
+		days_remove = 15
 		complete_effect = {
 			add_political_power = 50
 			set_temp_variable = { target = SIA_election_playing_as }
@@ -262,7 +273,7 @@ SIA_parliament_elections = {
 			clr_country_flag = SIA_active_election_decision
 		}
 	}
-	SIA_hype_prayuts_achievements = {
+	SIA_showcase_prayuts_achievements = {
 		icon = generic_crisis
 		available = {
 			NOT = {
@@ -274,15 +285,16 @@ SIA_parliament_elections = {
 			check_variable = { SIA_election_playing_as = 11 }
 			has_completed_focus = SIA_riding_with_uncle_tuu
 		}
+		cost = 30
 		days_remove = 20
 		fire_only_once = yes
 		complete_effect = {
-			set_temp_variable = { target = 11 }
-			set_temp_variable = { vote_change = 3 }
-			SIA_elections_increase_votes_by_undecided = yes
 			set_country_flag = SIA_active_election_decision
 		}
 		remove_effect = {
+			set_temp_variable = { target = 11 }
+			set_temp_variable = { vote_change = 3 }
+			SIA_elections_increase_votes_by_undecided = yes
 			clr_country_flag = SIA_active_election_decision
 		}
 	}

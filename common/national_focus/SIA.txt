@@ -549,7 +549,6 @@ focus_tree = {
 			}
 			activate_mission = SIA_securing_vaccine_supply
 			custom_effect_tooltip = SIA_establish_ccsa_tt
-			unlock_decision_tooltip = SIA_nationwide_vaccinations
 			unlock_decision_tooltip = SIA_mask_distribution
 			unlock_decision_tooltip = SIA_enforce_lockdowns
 			unlock_decision_tooltip = SIA_tighten_border_control
@@ -939,7 +938,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Extinguish_the_Flames
 		x = -1
 		y = 2
-		cost = 5
+		cost = 7
 		prerequisite = { focus = SIA_deploy_the_riot_police }
 		mutually_exclusive = { focus = SIA_deploy_the_army }
 		relative_position_id = SIA_deploy_the_riot_police
@@ -964,7 +963,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Crush_The_Movement
 		x = 1
 		y = 2
-		cost = 5
+		cost = 7
 		prerequisite = { focus = SIA_deploy_the_riot_police }
 		mutually_exclusive = { focus = SIA_smother_the_flames }		
 		relative_position_id = SIA_deploy_the_riot_police

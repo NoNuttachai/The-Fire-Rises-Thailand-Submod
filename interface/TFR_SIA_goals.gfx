@@ -1,141 +1,158 @@
 spriteTypes = {
+	################ TABLE OF CONTENTS ######################
+	# 1. Unused
+	# 2. Initial Tree
+	# 3. Prayut 2021-2023
+	
+	
+	### 1. Unused ###
     SpriteType = {
         name = "GFX_goal_SIA_Application"
-        texturefile = "gfx/interface/goals/SIA/SIA_Application.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Application.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Calm_the_People"
-        texturefile = "gfx/interface/goals/SIA/SIA_Calm_the_People.png"
-    }
-	
-	SpriteType = {
-        name = "GFX_goal_SIA_Court_System"
-        texturefile = "gfx/interface/goals/SIA/SIA_Court_System.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Calm_the_People.png"
     }
 	SpriteType = {
-        name = "GFX_goal_SIA_Crush_The_Movement"
-        texturefile = "gfx/interface/goals/SIA/SIA_Crush_The_Movement.png"
+        name = "GFX_goal_SIA_reestablish_relations_with_the_saudis"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_reestablish_relations_with_the_saudis.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_arabian_republic_thai_brigades"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_arabian_republic_thai_brigades.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Deal_with_the_Moment"
-        texturefile = "gfx/interface/goals/SIA/SIA_Deal_with_the_Moment.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Deal_with_the_Moment.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Digitalized"
-        texturefile = "gfx/interface/goals/SIA/SIA_Digitalized.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Digitalized.png"
     }
-	SpriteType = {
-        name = "GFX_goal_SIA_Extinguish_the_Flames"
-        texturefile = "gfx/interface/goals/SIA/SIA_Extinguish_the_Flames.png"
-    }
+	
 	SpriteType = {
         name = "GFX_goal_SIA_Foreign_Oil_Deal"
-        texturefile = "gfx/interface/goals/SIA/SIA_Foreign_Oil_Deal.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Foreign_Oil_Deal.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_HappyNewYear2020"
-        texturefile = "gfx/interface/goals/SIA/SIA_HappyNewYear2020.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_HappyNewYear2020.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Mask_Mandate"
-        texturefile = "gfx/interface/goals/SIA/SIA_Mask_Mandate.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Mask_Mandate.png"
     }
 	
 	SpriteType = {
         name = "GFX_goal_SIA_Product"
-        texturefile = "gfx/interface/goals/SIA/SIA_Product.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Product.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Public_Gathering"
-        texturefile = "gfx/interface/goals/SIA/SIA_Public_Gathering.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Public_Gathering.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Reduce"
-        texturefile = "gfx/interface/goals/SIA/SIA_Reduce.png"
+        texturefile = "gfx/interface/goals/SIA/unused/SIA_Reduce.png"
     }
+   
+    
+    
+	
+	### 2. Initial Tree ###
     SpriteType = {
-        name = "GFX_goal_SIA_ReOpenTourism"
-        texturefile = "gfx/interface/goals/SIA/SIA_ReOpenTourism.png"
+        name = "GFX_goal_SIA_Another_Year_with_Prayut"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Another_Year_with_Prayut.png"
     }
-    SpriteType = {
+	SpriteType = {
         name = "GFX_goal_SIA_State_of_Emergency"
-        texturefile = "gfx/interface/goals/SIA/SIA_State_of_Emergency.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_State_of_Emergency.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_Extinguish_the_Flames"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Extinguish_the_Flames.png"
     }
     SpriteType = {
         name = "GFX_goal_SIA_Subsidize_Government_Business"
-        texturefile = "gfx/interface/goals/SIA/SIA_Subsidize_Government_Business.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Subsidize_Government_Business.png"
     }
-    SpriteType = {
+	SpriteType = {
+        name = "GFX_goal_SIA_Court_System"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Court_System.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_ReOpenTourism"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_ReOpenTourism.png"
+    }
+	SpriteType = {
         name = "GFX_goal_SIA_Vaccination"
-        texturefile = "gfx/interface/goals/SIA/SIA_Vaccination.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Vaccination.png"
     }
-	#new stuff
-    SpriteType = {
-        name = "GFX_goal_SIA_Another_Year_with_Prayut"
-        texturefile = "gfx/interface/goals/SIA/SIA_Another_Year_with_Prayut.png"
+	SpriteType = {
+        name = "GFX_goal_SIA_Crush_The_Movement"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Crush_The_Movement.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_a_leftist_united_front"
-        texturefile = "gfx/interface/goals/SIA/SIA_a_leftist_united_front.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_a_leftist_united_front.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_begin_student_activism"
-        texturefile = "gfx/interface/goals/SIA/SIA_begin_student_activism.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_begin_student_activism.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_social_media_campaigning"
-        texturefile = "gfx/interface/goals/SIA/SIA_social_media_campaigning.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_social_media_campaigning.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_deploy_the_riot_police"
-        texturefile = "gfx/interface/goals/SIA/SIA_deploy_the_riot_police.png"
-    }
-	SpriteType = {
-        name = "GFX_goal_SIA_reestablish_relations_with_the_saudis"
-        texturefile = "gfx/interface/goals/SIA/SIA_reestablish_relations_with_the_saudis.png"
-    }
-	SpriteType = {
-        name = "GFX_goal_SIA_arabian_republic_thai_brigades"
-        texturefile = "gfx/interface/goals/SIA/SIA_arabian_republic_thai_brigades.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_deploy_the_riot_police.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_make_them_face_our_wrath"
-        texturefile = "gfx/interface/goals/SIA/SIA_make_them_face_our_wrath.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_make_them_face_our_wrath.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_utilized_the_media_on_our_side"
-        texturefile = "gfx/interface/goals/SIA/SIA_utilized_the_media_on_our_side.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_utilized_the_media_on_our_side.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_grant_oil_subsidies"
-        texturefile = "gfx/interface/goals/SIA/SIA_grant_oil_subsidies.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_khana_ratsadon_reborn"
-        texturefile = "gfx/interface/goals/SIA/SIA_khana_ratsadon_reborn.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_khana_ratsadon_reborn.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_maintain_peaceful_protests"
-        texturefile = "gfx/interface/goals/SIA/SIA_maintain_peaceful_protests.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_maintain_peaceful_protests.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_fight_the_arrests"
-        texturefile = "gfx/interface/goals/SIA/SIA_fight_the_arrests.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_fight_the_arrests.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_CCSA"
-        texturefile = "gfx/interface/goals/SIA/SIA_CCSA.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_CCSA.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_Oil_Crisis"
-        texturefile = "gfx/interface/goals/SIA/SIA_Oil_Crisis.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Oil_Crisis.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_ally_with_workers_union"
-        texturefile = "gfx/interface/goals/SIA/SIA_ally_with_workers_union.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_ally_with_workers_union.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_information_operations"
-        texturefile = "gfx/interface/goals/SIA/SIA_information_operations.png"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_information_operations.png"
+    }
+	
+	### 3. Prayut 2021-2023 ###
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_khon_la_krueng"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_prayut_2021_khon_la_krueng.png"
     }
 }

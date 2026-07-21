@@ -20,6 +20,7 @@ SIA_protests_category = {
 		days_mission_timeout = SIA_protests_days
 		timeout_effect = {
 			SIA_increase_protests = yes
+			add_to_variable = { SIA_prayut_check_protest = 1 }
 			add_to_variable = { SIA_protests_days = 10 }
 			activate_mission = SIA_the_protests_intensify
 			effect_tooltip = {
@@ -363,9 +364,10 @@ SIA_protests_category = {
 		
 		complete_effect = {
 			add_command_power = -20
+			add_stability = -0.1
 			add_days_mission_timeout = {
 				mission = SIA_the_protests_intensify
-				days = 40
+				days = 30
 			}
 		}
 		modifier = {

@@ -311,6 +311,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.025
+				monthly_population = -0.015
 				stability_factor = -0.025
 				expense_growth_factor = 0.01
 			}
@@ -327,6 +328,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.05
+				monthly_population = -0.05
 				stability_factor = -0.05
 				expense_growth_factor = 0.02
 			}
@@ -343,6 +345,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.1
+				monthly_population = -0.1
 				stability_factor = -0.1
 				expense_growth_factor = 0.05
 			}
@@ -360,6 +363,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.3
+				monthly_population = -0.2
 				stability_factor = -0.15
 				society_development_monthly = -0.02
 				expense_growth_factor = 0.1
@@ -379,6 +383,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.5
+				monthly_population = -0.3
 				stability_factor = -0.2
 				society_development_monthly = -0.05
 				expense_growth_factor = 0.12
@@ -396,6 +401,7 @@ ideas = {
 			
 			modifier = {
 				political_power_gain = -0.6
+				monthly_population = -0.35
 				stability_factor = -0.3
 				society_development_monthly = -0.08
 				expense_growth_factor = 0.15
@@ -799,7 +805,7 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.125
 				consumer_goods_factor = -0.075
 				income_growth_factor = -0.10
 				business_value_factor = 0.15
@@ -868,7 +874,8 @@ ideas = {
 				
 			modifier = {
 				production_speed_buildings_factor = 0.075
-				stability_factor = -0.05
+				stability_factor = -0.075
+				industrial_capacity_factory = 0.05
 			}
 		}
 		SIA_SMILE_Strategy = {
@@ -880,20 +887,19 @@ ideas = {
 			allowed = {
 				always = no
 			}
-		        cancel = {
-			        NOT = {
-                                         OR = {
-                                                has_idea = SIA_prayut_chan-o-cha_advisor
-                                                has_idea = SIA_prawit_wongsuwan_hog 
-                                         }
-                                }
-                                     
-		        }
+			cancel = {
+				NOT = {
+					OR = {
+						has_idea = SIA_prayut_chan-o-cha_advisor
+						has_idea = SIA_prawit_wongsuwan_hog 
+					}
+				}		 
+			}
 				
 			modifier = {
 				stability_factor = -0.05
-                                poverty_development_monthly = 0.02
-                                business_value_factor = 0.05
+				poverty_development_monthly = 0.02
+				business_value_factor = 0.05
 				income_growth_factor = 0.05
 			}
 		}
@@ -909,7 +915,7 @@ ideas = {
 				
 			modifier = {
 				income_growth_factor = 0.05
-                                society_development_monthly = 0.01
+				society_development_monthly = 0.01
 			}
 		}
 		SIA_recuperation = {
@@ -923,9 +929,9 @@ ideas = {
 			}
 				
 			modifier = {
-                                stability_weekly = 0.015
+				stability_weekly = 0.003
 				income_growth_factor = 0.05
-                                society_development_monthly = 0.01
+				society_development_monthly = 0.01
 			}
 		}
 	}
@@ -959,6 +965,59 @@ ideas = {
 				hog_old_general
 			}
 		}
+		SIA_sretta_thavisin_hog = {
+			name = SIA_sretta_thavisin_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				
+			}
+		}
+		SIA_paetongtarn_shinawatra_hog = {
+			name = SIA_paetongtarn_shinawatra_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				
+			}
+		}
+		SIA_pita_limjaroenrat_hog = {
+			name = SIA_pita_limjaroenrat_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				
+			}
+		}
+		SIA_anutin_charnvirakul_hog = {
+			name = SIA_anutin_charnvirakul_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				
+			}
+		}
+		
 	}
 	foreign_minister = {
 		SIA_don_pramudwinai_advisor = {

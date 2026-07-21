@@ -328,7 +328,7 @@ SIA_saudi_civil_war = {
 					}
 					hidden_effect = {
 						remove_relation_modifier = {
-							target = AAR
+							target = ARR
 							modifier = volunteer_cap_modification_2
 						}
 					}

@@ -188,51 +188,46 @@ SIA_parliament_category = {
 			add_debt = yes
 		}
 	}
-        SIA_appeal_MPs = {
-                icon = generic_coronavirus
-                visible = { 
-                         has_complete_focus = SIA_once_were_brothers
-                         check_variable = { SIA_election_playing_as = 11 }
-                }
-                cost = 30
-                ai_will_do = { factor = 1 }
-                days_re_enable = 30
-                days_remove = 14
-                modifier = {
-                        political_power_gain = -0.1
-                        income_growth_factor = -0.05
-                }
-                remove_effect = {
-                      random_list = {
-                          3 = {
-                                if = {
-				        limit = {
-					          has_country_flag = SIA_ongoing_elections
-				        }
-				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 3 }
-				SIA_elections_increase_votes_by_undecided = yes
-                                }
-			  }
-                          2 = {
-                                if = {
-				        limit = {
-					          has_country_flag = SIA_ongoing_elections
-				        }
-				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = -2 }
-				SIA_elections_increase_votes_by_undecided = yes
-                                }
-                          }	
-                      }
-                }
-        }
+	SIA_appeal_MPs = {
+		icon = generic_coronavirus
+		visible = { 
+			has_completed_focus = SIA_once_were_brothers
+			check_variable = { SIA_election_playing_as = 11 }
+		}
+		cost = 30
+		ai_will_do = { factor = 1 }
+		days_re_enable = 30
+		days_remove = 14
+		modifier = {
+			political_power_gain = -0.1
+			income_growth_factor = -0.05
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_country_flag = SIA_ongoing_elections
+				}
+				random_list = {
+					3 = {
+						set_temp_variable = { target = 11 }
+						set_temp_variable = { vote_change = 3 }
+						SIA_elections_increase_votes_by_undecided = yes
+					}
+					2 = {
+						set_temp_variable = { target = 11 }
+						set_temp_variable = { vote_change = -2 }
+						SIA_elections_increase_votes_by_undecided = yes
+					}
+				}
+			}
+		}
+	}
 	SIA_Stabilize_Baht = {
 		icon = generic_coronavirus
 		visible = { 
-                        has_complete_focus = SIA_stop_the_decline 
-                        has_idea = generic_world_wide_financial_crisis_1
-                }
+			has_completed_focus = SIA_stop_the_decline 
+			has_idea = generic_world_wide_financial_crisis_1
+		}
 		cost = 60
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
@@ -251,13 +246,15 @@ SIA_parliament_category = {
 	}
 	SIA_promote_tourism = {
 		icon = generic_coronavirus
-		visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
+		visible = { 
+			has_completed_focus = SIA_stimulate_the_tourism_spending 
+		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		days_remove = 120
 		modifier = {
-			income_growth_factor = 0.1
+			income_growth_factor = 0.10
 		}
 		remove_effect = {
   
@@ -265,52 +262,93 @@ SIA_parliament_category = {
 	}
 	SIA_introduce_SMILE = {
 		icon = generic_coronavirus
-		visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
+		visible = { 
+			has_completed_focus = SIA_stimulate_the_tourism_spending 
+		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		days_remove = 14
 		remove_effect = {
-		      add_ideas = SIA_SMILE_Strategy	
+			add_ideas = SIA_SMILE_Strategy	
 		}
 	}
-        SIA_extent_travel_subsidy
-                icon = generic_coronavirus
-                visible = { has_completed_focus = SIA_stimulate_the_tourism_spending }
-                cost = 40
-                ai_will_do = { factor = 1 }
-                fire_only_once = yes
-                complete_effect = {
-			add_timed_idea = {
-				idea = SIA_We_Travel_Together
-				days = 120
-			}
-                }
-        }
-	SIA_increase_funding_to_renewables = {
+	SIA_extent_travel_subsidy = {
 		icon = generic_coronavirus
-		#visible = { has_completed_focus = SIA_30_30_vision }
-		cost = 50
-		ai_will_do = { factor = 1 }
-		fire_only_once = yes
-		days_remove = 30
-		modifier = {
-			
+		visible = { 
+			has_completed_focus = SIA_stimulate_the_tourism_spending 
 		}
-		remove_effect = {
-			
-		}
-	}
-	SIA_fund_ev_industry = {
-		icon = generic_coronavirus
-		#visible = { has_completed_focus = SIA_30_30_vision }
-		cost = 50
+		cost = 40
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
 		
 		complete_effect = {
-			set_temp_variable = { debt_var_temp = -14.263 }
+			add_timed_idea = {
+				idea = SIA_We_Travel_Together
+				days = 120
+			}
+		}
+	}
+	SIA_increase_funding_to_renewables = {
+		icon = generic_coronavirus
+		visible = { has_completed_focus = SIA_30_30_vision }
+		cost = 50
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			expense_growth_factor = 0.2
+			income_growth_factor = -0.1
+			factory_energy_consumption = -0.1
+			production_speed_energy_farm_factor = 0.15
+		}
+		remove_effect = {
+			1497 = {
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			891 = {
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_fund_ev_industry = {
+		icon = generic_coronavirus
+		visible = { has_completed_focus = SIA_30_30_vision }
+		cost = 50
+		ai_will_do = { factor = 1 }
+		fire_only_once = yes
+		days_remove = 80
+		modifier = {
+			research_speed_factor = 0.05
+			expense_growth_factor = 0.2
+			income_growth_factor = -0.15
+			business_value_factor = 0.1
+		}
+		remove_effect = {
+			set_temp_variable = { debt_var_temp = 21.263 }
 			add_debt = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = energy
+			}
 		}
 	}
 }

@@ -1073,4 +1073,32 @@ defined_text = {
 		}
 		localization_key = SIA_prawit_wongsuwan_hog
 	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_sretta_thavisin_hog
+		}
+		localization_key = SIA_sretta_thavisin_hog
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_paetongtarn_shinawatra_hog
+		}
+		localization_key = SIA_paetongtarn_shinawatra_hog
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_pita_limjaroenrat_hog
+		}
+		localization_key = SIA_pita_limjaroenrat_hog
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_anutin_charnvirakul_hog
+		}
+		localization_key = SIA_anutin_charnvirakul_hog
+	}
 }

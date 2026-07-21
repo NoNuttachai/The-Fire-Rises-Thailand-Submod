@@ -276,6 +276,11 @@
  SIA_prawit_wongsuwan_char: "Prawit Wongsuwan"
  SIA_predee_daocha_char: "Predee Daocha"
  SIA_anucha_nakasai_char: "Anucha Nakasai"
+ #PRIME MINISTER CHARACTERS
+ SIA_sretta_thavisin_char: "Sretta Thavisin"
+ SIA_paetongtarn_shinawatra_char: "Paetongtarn Shinawatra"
+ SIA_pita_limjaroenrat_char: "Pita Limjaroenrat"
+ SIA_anutin_charnvirakul_char: "Anutin Charnvirakul"
 
  SIA_adung_phan_iam_char: "Adung Phan-iam"
  SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
@@ -336,6 +341,7 @@
  SIA_support_our_smes_idea: "Supporting Our SMEs"
  SIA_khon_la_khrueng_idea: "Khon La Khrueng Program"
  SIA_pushback_against_the_establishment: "Pushback Against the Establishment"
+ SIA_foreign_worker_program: "Foreign Labour Program"
  SIA_SMILE_Strategy: "SMILE Initiative"
  SIA_We_Travel_Together: "We Travel Together"
  SIA_recuperation: "Grace Period"
@@ -605,12 +611,26 @@
  thai_elections.3.a: "£GFX_united_thai_nation §gUTN§!"
  thai_elections_3_tt_a: "Campaign for the £GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
  
+ thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
+ thai_elections_3_tt_b: "Campaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
+ 
  thai_elections.4.t: "Government Coalition Formed"
  thai_elections.4.d: "yippee you get new content"
  thai_elections.4.a: "I love this mechanic"
  
- thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
- thai_elections_3_tt_b: "Campaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
+ thai_elections.5.t: "PTP Selects their candidate"
+ thai_elections.5.d: "Who even reads descriptions"
+ thai_elections.5.a: "Sretta Thavisin"
+ thai_elections_5_tt_a: "Choose this guy\n\n\n\n\n\n\n\n£GFX_hog_SIA_sretta_thavisin\n\n\n\n\n\n\n\n\nHe got evicted by the court for losing aura"
+ 
+ thai_elections.5.b: "Paetongtarn Shinawatra"
+ thai_elections_5_tt_b: "Side with Phone caller\n\n\n\n\n\n\n\n£GFX_hog_SIA_paetongtarn_shinawatra\n\n\n\n\n\n\n\n\nUse mobile data and call Hun Sen"
+ 
+ thai_elections.6.t: "DP falls into chaos after leader resigns"
+ thai_elections.6.d: "cant coalition LOL"
+ thai_elections.6.a: "Oh noes"
+ 
+ 
  
  thai_prayut.1.t: "Prayut temporarily suspended"
  thai_prayut.1.d: "Big Tu noooooo"
@@ -640,6 +660,10 @@
  thai_prayut.7.t: "A Session in Parliament"
  thai_prayut.7.d: "hater: erm your policies suck\n\nPrayut: We'll bomb cambodia"
  thai_prayut.7.a: "Which message better resonates with voters"
+ 
+ thai_prayut.8.t: "Prayut Prayutblasts everyone and wins 2023"
+ thai_prayut.8.d: "Prayut won, UTN regime will endure"
+ thai_prayut.8.a: "Prayut!!!!!!!!"
  
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
@@ -685,6 +709,7 @@
  SIA_economic_engine_decrease: "§YThe Engine§! slowly §Rbreaks down...§!"
  SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
  SIA_ongoing_elections: "§YElections are ongoing§!"
+ SIA_active_election_decision: "Doing a Campaign Action"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -840,7 +865,9 @@
  SIA_3rd_rank_tt: "3rd Place - §Y[SIA_elections_3rd_rank_text]§!"
  
  SIA_parliament_elections_projected_winner_1: "£GFX_palang_pracharath Prawit Wongsuwan"
- SIA_parliament_elections_projected_winner_2: "£GFX_phua_thai Sretta Thavisin"
+ SIA_parliament_elections_projected_winner_2: "£GFX_phua_thai Being Decided"
+ SIA_parliament_elections_projected_winner_2.1: "£GFX_phua_thai Sretta Thavisin"
+ SIA_parliament_elections_projected_winner_2.2: "£GFX_phua_thai Paetongtarn Shinawatra"
  SIA_parliament_elections_projected_winner_3: "£GFX_orange_party_2 Pita Limjaroenrat"
  SIA_parliament_elections_projected_winner_4: "£GFX_democrat WHO?!?!?!"
  SIA_parliament_elections_projected_winner_6: "£GFX_bhumjaithai Anutin Charnvirakul"
@@ -857,6 +884,15 @@
  SIA_parliament_elections: "2023 Parliament Elections"
  SIA_parliament_elections_desc: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
  SIA_undecided_votes_available: "§YThere are still available§! §gUndecided Votes§!"
+ SIA_2023_elections: "2023 Elections - §YElection Day§!"
+ SIA_other_parties_campaigning: "Other Parties Campaigning"
+ SIA_activate_prayut_2023: "Activate Elections: 2023 Prayut Version"
+ SIA_campaign_for_the_utn: "Campaign for the UTN"
+ SIA_smear_campaign: "Smear Campaign"
+ SIA_berate_our_opponents: "Discredit Our Opponents"
+ SIA_conduct_fundraising: "Conduct Fundraising"
+ SIA_showcase_prayuts_achievements: "Showcase Prayut's Achievements"
+ 
  SIA_parliament_category: "Parliament of Thailand"
  SIA_parliament_category_desc: ""
  SIA_open_parliament_gui: "View House of Representatives"
@@ -871,6 +907,22 @@
  SIA_emergency_loan_bill_covid_desc: "With the current global situation affecting Thailand, the government promulgated the 1 Trillion Baht Borrowing Decree, officially known as: §Ythe Emergency Decree Authorising the Ministry of Finance to Raise Loans to Solve Problems, to Remedy and Restore the Economy and Society as Affected by the Coronavirus Disease Pandemic, B.E. 2563 (2020).§!\n\nIf approved by Parliament, it would authorize borrowing of up to 1 trillion baht, making it the largest borrowing measure in Thailand's history to date and far exceeding the scale of previous emergency funding bills."
  SIA_emergency_loan_bill_oil_crisis: "§YOil Crisis§!: Emergency Loan Bill"
  SIA_emergency_loan_bill_oil_crisis_desc: "Under normal circumstances, the Oil Fuel Fund Act of 2019 strictly regulates how the government may intervene in fuel markets. To prevent the state from accumulating excessive liabilities, the law caps the fund's borrowing authority at §R40 billion baht.§!\n\nHowever, during a major global crisis such as the situation in Saudi Arabia, 40 billion baht is merely a drop in the bucket and is insufficient to stabilize domestic fuel prices. To address this extraordinary situation, the government has proposed an emergency decree authorizing the Ministry of Finance to guarantee up to §Y150 billion baht§! in commercial loans for the Oil Fuel Fund, significantly expanding its financial capacity to cushion the impact of the oil crisis."
+ SIA_appeal_MPs: "Appeal to MPs"
+ SIA_Stabilize_Baht: "Stabilize Baht"
+ SIA_promote_tourism: "Promote Tourism"
+ SIA_introduce_SMILE: "Introduce SMILE"
+ SIA_extent_travel_subsidy: "Extent Travel Subsidy"
+ SIA_increase_funding_to_renewables: "Increase Funding to Renewables"
+ SIA_fund_ev_industry: "Fund EV Industry"
+
+
+
+
+
+
+
+
+
 
  SIA_coronavirus_category: "COVID-19 Outbreak"
  SIA_coronavirus_category_desc: "Thailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]"
