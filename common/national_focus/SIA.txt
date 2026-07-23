@@ -740,7 +740,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_secured_support_from_conservatives
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_secure_conservative_support
 		x = 1
 		y = 1
 		cost = 5

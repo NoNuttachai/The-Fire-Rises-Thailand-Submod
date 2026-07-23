@@ -1,18 +1,77 @@
 SIA_military_reformation = {
-	SIA_placeholder_mil = {
+	SIA_reset = {
 		icon = generic_crisis
 		priority = 10
 		allowed = {
 			tag = SIA
 		}
 		available = {
-			always = no
+			
 		}
 		visible = {
 			
 		}
 		
 		complete_effect = {
+			add_dynamic_modifier = { modifier = SIA_military_mech_dynamic_modifier }
+			set_variable = { SIA_military_resource_var = 2 }
+			set_variable = { SIA_combat_readiness_var = 0.3}
+			set_variable = { SIA_public_perception_var = 0.5}
+			SIA_mil_mech_update_modifiers = yes
+		}
+	}
+	SIA_add_resource = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = 2 }
+			SIA_mil_mech_resource_change = yes
+		}
+	}
+	SIA_add_readiness = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_add_perception = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		
+		complete_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.025 }
+			SIA_mil_mech_public_perception_change = yes
 		}
 	}
 }

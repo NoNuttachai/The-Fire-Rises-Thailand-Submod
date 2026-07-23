@@ -613,6 +613,12 @@
  
  thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
  thai_elections_3_tt_b: "Campaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
+ thai_elections_3_tt_prayut_check_covid_0: "Due to §PPrayut§! having §RCovid§! at §GIsolated Cases§!"
+ thai_elections_3_tt_prayut_check_covid_1: "Due to §PPrayut§! having §RCovid§! at §YMild§!"
+ thai_elections_3_tt_prayut_check_covid_2: "Due to §PPrayut§! having §RCovid§! at §RModerate§!"
+ thai_elections_3_tt_prayut_check_bop_0: "Due to §PPrayut§! having the §YBalance of Power§! at §GVery High Approval§!"
+ thai_elections_3_tt_prayut_check_bop_1: "Due to §PPrayut§! having the §YBalance of Power! at §GOverwhelmingly High Approval§!"
+ thai_elections_3_tt_prayut_check_riots: "Due to §PPrayut§! defusing the §RRiots§! at §OMinor Anti-Governmental Demonstrations§!"
  
  thai_elections.4.t: "Government Coalition Formed"
  thai_elections.4.d: "yippee you get new content"
@@ -1163,7 +1169,10 @@
  SIA_Economy_category_desc: "The Thai economy is so badddddddddddddddd im not even kidding we're so doomed, disaster incoming, first fifth world country. Everyone will now run to cambodia Hun Sen Marines"
  
  SIA_military_reformation: "Royal Army of Thailand"
- SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\nThough the military is known to be §Rtrigger happy§!, a §Ygood balance§! of §Gimproving the military§! and §Gkeeping the public happy§! is a must.\n\nMilitary Resources: 0\nCombat Readiness: 0\nPublic Perception: 0 "
+ SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our army§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the army in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n\n§RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100\n§gEffects§!:\n$war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n$battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
+ SIA_military_resource_change_tt: "§GMilitary Resources§! will change by [?SIA_military_resource_var_temp|-+0]"
+ SIA_combat_readiness_change_tt: "§RCombat Readiness§! will change by [?SIA_combat_readiness_var_temp|-+2%]"
+ SIA_public_perception_change_tt: "§YPublic Perception§! will change by [?SIA_public_perception_var_temp|-+2%]"       
  
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"

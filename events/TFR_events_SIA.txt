@@ -473,6 +473,7 @@ country_event = { # 2023 Elections start
 			activate_mission = SIA_2023_elections
 			activate_mission = SIA_other_parties_campaigning
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
 		#Prayut Government Performance Check
 		if = {
 			limit = {
@@ -482,6 +483,7 @@ country_event = { # 2023 Elections start
 				limit = { #Isolated
 					check_variable = { SIA_prayut_check_covid = 0 }
 				}
+				custom_effect_tooltip = thai_elections_3_tt_prayut_check_covid_0
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 3 }
 				SIA_elections_increase_votes_by_undecided = yes
@@ -490,6 +492,7 @@ country_event = { # 2023 Elections start
 				limit = { #Mild
 					check_variable = { SIA_prayut_check_covid = 1 }
 				}
+				custom_effect_tooltip = thai_elections_3_tt_prayut_check_covid_1
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 1.5 }
 				SIA_elections_increase_votes_by_undecided = yes
@@ -498,10 +501,12 @@ country_event = { # 2023 Elections start
 				limit = { #Moderate
 					check_variable = { SIA_prayut_check_covid = 2 }
 				}
+				custom_effect_tooltip = thai_elections_3_tt_prayut_check_covid_2
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 0.5 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = { #BOP rating check
 				limit = { #Very High
 					power_balance_value = {
@@ -509,6 +514,7 @@ country_event = { # 2023 Elections start
 						value > 0.449
 					}
 				}
+				custom_effect_tooltip = thai_elections_3_tt_prayut_check_bop_0
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 2 }
 				SIA_elections_increase_votes_by_undecided = yes
@@ -520,14 +526,17 @@ country_event = { # 2023 Elections start
 						value > 0.749
 					}
 				}
+				custom_effect_tooltip = thai_elections_3_tt_prayut_check_bop_1
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 5 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			if = { #protest severity check
 				limit = { #Minor Demonstrations
 					check_variable = { SIA_prayut_check_protest = 0 }
 				}
+				custom_effect_tooltip = thai_elections_3_tt_prayut_check_riots
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 3 }
 				SIA_elections_increase_votes_by_undecided = yes
