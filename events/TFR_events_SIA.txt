@@ -513,6 +513,10 @@ country_event = { # 2023 Elections start
 						id = SIA_power_balance
 						value > 0.449
 					}
+					power_balance_value = {
+						id = SIA_power_balance
+						value < 0.75
+					}
 				}
 				custom_effect_tooltip = thai_elections_3_tt_prayut_check_bop_0
 				set_temp_variable = { target = 11 }
@@ -599,13 +603,13 @@ country_event = { # PTP leadership choice
     }
 }
 country_event = { # DP falls to chaos after lost in elections
-    id = thai_elections.5
-    title = thai_elections.5.t
-    desc = thai_elections.5.d
+    id = thai_elections.6
+    title = thai_elections.6.t
+    desc = thai_elections.6.d
    
 	is_triggered_only = yes
     option = { 
-        name = thai_elections.5.a 
+        name = thai_elections.6.a 
 		set_variable = { SIA_party_4_attitude = 4 }
     }
 }

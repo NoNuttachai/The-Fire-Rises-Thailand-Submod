@@ -1017,7 +1017,19 @@ ideas = {
 				
 			}
 		}
-		
+		SIA_yodchanan_wongsawat_hog = {
+			name = SIA_yodchanan_wongsawat_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				
+			}
+		}
 	}
 	foreign_minister = {
 		SIA_don_pramudwinai_advisor = {

@@ -1,0 +1,67 @@
+### TABLE OF CONTENTS ###
+# MILITARY
+# ECONOMY
+# FORPOL
+
+
+
+
+# MILITARY
+shared_focus = {
+	id = SIA_mil_opening
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 7
+	y = 0
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+
+# ECONOMY
+shared_focus = {
+	id = SIA_economy_opening
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 26
+	y = 0
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}
+
+# FORPOL
+shared_focus = {
+	id = SIA_forpol_opening
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 36
+	y = 0
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	
+	completion_reward = {
+		
+	}
+}

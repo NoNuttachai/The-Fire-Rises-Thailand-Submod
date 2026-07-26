@@ -1,7 +1,55 @@
 SIA_military_reformation = {
-	SIA_reset = {
+	SIA_readiness_falters = {
 		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		activation = {
+			check_variable = { SIA_combat_readiness_var > 0.3 }
+		}
 		priority = 10
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = -0.05 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_perception_decreases = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		activation = {
+			check_variable = { SIA_public_perception_var > 0.3 }
+		}
+		priority = 10
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 60
+		timeout_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+	}
+	SIA_activate_the_thailand_war_machine = {
+		icon = generic_crisis
+		
 		allowed = {
 			tag = SIA
 		}
@@ -14,15 +62,26 @@ SIA_military_reformation = {
 		
 		complete_effect = {
 			add_dynamic_modifier = { modifier = SIA_military_mech_dynamic_modifier }
-			set_variable = { SIA_military_resource_var = 2 }
-			set_variable = { SIA_combat_readiness_var = 0.3}
-			set_variable = { SIA_public_perception_var = 0.5}
+			activate_mission = SIA_readiness_falters
+			activate_mission = SIA_perception_decreases
+			set_variable = { SIA_military_resource_var = 1 }
+			set_variable = { SIA_combat_readiness_var = 0.2406}
+			set_variable = { SIA_public_perception_var = 0.4276}
 			SIA_mil_mech_update_modifiers = yes
 		}
 	}
-	SIA_add_resource = {
+	SIA_military_resources_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			always = yes
+		}
+	}
+	SIA_invest_funding = {
 		icon = generic_crisis
-		priority = 10
+		
 		allowed = {
 			tag = SIA
 		}
@@ -32,15 +91,25 @@ SIA_military_reformation = {
 		visible = {
 			
 		}
-		
-		complete_effect = {
+		cost = 75
+		days_remove = 80
+		remove_effect = {
 			set_temp_variable = { SIA_military_resource_var_temp = 2 }
 			SIA_mil_mech_resource_change = yes
 		}
 	}
-	SIA_add_readiness = {
+	SIA_combat_readiness_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			always = yes
+		}
+	}
+	SIA_conduct_drills = {
 		icon = generic_crisis
-		priority = 10
+		
 		allowed = {
 			tag = SIA
 		}
@@ -50,15 +119,33 @@ SIA_military_reformation = {
 		visible = {
 			
 		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.025 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_revise_outdated_tactics = {
+		icon = generic_crisis
 		
-		complete_effect = {
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
 			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
 			SIA_mil_mech_combat_readiness_change = yes
 		}
 	}
-	SIA_add_perception = {
+	SIA_purchase_foreign_equipment = {
 		icon = generic_crisis
-		priority = 10
+		
 		allowed = {
 			tag = SIA
 		}
@@ -68,10 +155,165 @@ SIA_military_reformation = {
 		visible = {
 			
 		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.03 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_tighten_standards = {
+		icon = generic_crisis
 		
-		complete_effect = {
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.025 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_modernize_rotc_program = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.045 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_public_perception_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			always = yes
+		}
+	}
+	SIA_stage_a_small_parade = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
 			set_temp_variable = { SIA_public_perception_var_temp = 0.025 }
 			SIA_mil_mech_public_perception_change = yes
+		}
+	}
+	SIA_stage_a_large_parade = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.065 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+	}
+	SIA_make_a_public_showcase = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.03 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+	}
+	SIA_expand_conscription_program = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
+			SIA_mil_mech_public_perception_change = yes
+			add_manpower = 50000
+		}
+	}
+	SIA_expand_military_presence = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.025 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+	}
+	SIA_crackdown_on_the_underworld = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 30
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.05 }
+			SIA_mil_mech_public_perception_change = yes
+			add_stability = 0.03
 		}
 	}
 }

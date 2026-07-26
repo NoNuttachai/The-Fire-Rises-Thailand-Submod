@@ -281,6 +281,7 @@
  SIA_paetongtarn_shinawatra_char: "Paetongtarn Shinawatra"
  SIA_pita_limjaroenrat_char: "Pita Limjaroenrat"
  SIA_anutin_charnvirakul_char: "Anutin Charnvirakul"
+ SIA_yodchanan_wongsawat_char: "Yodchanan Wongsawat"
 
  SIA_adung_phan_iam_char: "Adung Phan-iam"
  SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
@@ -345,6 +346,7 @@
  SIA_SMILE_Strategy: "SMILE Initiative"
  SIA_We_Travel_Together: "We Travel Together"
  SIA_recuperation: "Grace Period"
+ SIA_military_mech_dynamic_modifier: "Royal Army of Thailand"
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -617,7 +619,7 @@
  thai_elections_3_tt_prayut_check_covid_1: "Due to §PPrayut§! having §RCovid§! at §YMild§!"
  thai_elections_3_tt_prayut_check_covid_2: "Due to §PPrayut§! having §RCovid§! at §RModerate§!"
  thai_elections_3_tt_prayut_check_bop_0: "Due to §PPrayut§! having the §YBalance of Power§! at §GVery High Approval§!"
- thai_elections_3_tt_prayut_check_bop_1: "Due to §PPrayut§! having the §YBalance of Power! at §GOverwhelmingly High Approval§!"
+ thai_elections_3_tt_prayut_check_bop_1: "Due to §PPrayut§! having the §YBalance of Power§! at §GOverwhelmingly High Approval§!"
  thai_elections_3_tt_prayut_check_riots: "Due to §PPrayut§! defusing the §RRiots§! at §OMinor Anti-Governmental Demonstrations§!"
  
  thai_elections.4.t: "Government Coalition Formed"
@@ -1169,11 +1171,13 @@
  SIA_Economy_category_desc: "The Thai economy is so badddddddddddddddd im not even kidding we're so doomed, disaster incoming, first fifth world country. Everyone will now run to cambodia Hun Sen Marines"
  
  SIA_military_reformation: "Royal Army of Thailand"
- SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our army§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the army in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n\n§RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100\n§gEffects§!:\n$war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n$battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
+ SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our army§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the army in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n\n§RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n§gEffects§!:\n$war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n$battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
  SIA_military_resource_change_tt: "§GMilitary Resources§! will change by [?SIA_military_resource_var_temp|-+0]"
  SIA_combat_readiness_change_tt: "§RCombat Readiness§! will change by [?SIA_combat_readiness_var_temp|-+2%]"
  SIA_public_perception_change_tt: "§YPublic Perception§! will change by [?SIA_public_perception_var_temp|-+2%]"       
- 
+ SIA_military_resources_decisions: "                          §GMILITARY RESOURCES§! §YDECISIONS§!             "
+ SIA_combat_readiness_decisions: "                          §RCOMBAT READINESS§! §YDECISIONS§!             "
+ SIA_public_perception_decisions: "                         §YPUBLIC PERCEPTION DECISIONS§!             "
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
  SIA_cambodia_war_category_desc: "Thailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"

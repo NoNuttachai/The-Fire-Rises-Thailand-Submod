@@ -1816,7 +1816,7 @@ SIA_initiate_coalition_forming = {
 		set_variable = { SIA_party_11_attitude = 3 }
 		set_variable = { SIA_election_result_scenario = 2 }
 	}
-	hidden_effect = { country_event = thai_elections.5 }
+	hidden_effect = { country_event = thai_elections.6 }
 	set_country_flag = SIA_government_coalition_formation_ongoing
 	SIA_update_projected_government_seats = yes
 }

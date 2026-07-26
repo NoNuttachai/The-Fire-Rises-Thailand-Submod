@@ -3,15 +3,18 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 99999999
 			tag = SIA
 		}
 	}
+	shared_focus = SIA_mil_opening
+	shared_focus = SIA_economy_opening
+	shared_focus = SIA_forpol_opening
 	
 	focus = {
-		id = SIA_utn_victory
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 7
+		id = SIA_third_prayut_cabinet
+		icon = GFX_goal_SIA_information_operations
+		x = 16
 		y = 0
 		cost = 4
 		ai_will_do = {
@@ -26,5 +29,798 @@ focus_tree = {
 			
 		}
 	}
+	focus = {
+		id = SIA_tonight_in_bangkok
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_third_prayut_cabinet
+		prerequisite = { focus = SIA_third_prayut_cabinet }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_our_probable_friends
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_tonight_in_bangkok
+		prerequisite = { focus = SIA_tonight_in_bangkok }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_friends_with_benefits
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_our_probable_friends
+		prerequisite = { focus = SIA_our_probable_friends }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_light_the_street
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_tonight_in_bangkok
+		prerequisite = { focus = SIA_tonight_in_bangkok }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_rotten_streets
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_light_the_street
+		prerequisite = { focus = SIA_light_the_street }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_our_opposition
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_tonight_in_bangkok
+		prerequisite = { focus = SIA_tonight_in_bangkok }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_debunking_lies
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_our_opposition
+		prerequisite = { focus = SIA_our_opposition }
+		
+		completion_reward = {
+			
+		}
+	}
 	
+	#Left side
+	focus = {
+		id = SIA_ev_revolution
+		icon = GFX_goal_SIA_information_operations
+		x = -5
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_friends_with_benefits
+		prerequisite = { focus = SIA_friends_with_benefits }
+		prerequisite = { focus = SIA_rotten_streets }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_ridin_with_the_dragon
+		icon = GFX_goal_SIA_information_operations
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_ev_revolution
+		prerequisite = { focus = SIA_ev_revolution }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_toward_a_greener_future
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_ev_revolution
+		prerequisite = { focus = SIA_ev_revolution }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_troubled_south
+		icon = GFX_goal_SIA_information_operations
+		x = 3
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_ev_revolution
+		prerequisite = { focus = SIA_ev_revolution }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_roll_the_carpets
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_ridin_with_the_dragon
+		prerequisite = { focus = SIA_ridin_with_the_dragon }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_china_cooperation_focus
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_ridin_with_the_dragon
+		prerequisite = { focus = SIA_ridin_with_the_dragon }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_against_chung_chart
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_ridin_with_the_dragon
+		prerequisite = { focus = SIA_ridin_with_the_dragon }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_hit_the_book
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_toward_a_greener_future
+		prerequisite = { focus = SIA_toward_a_greener_future }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_king_of_cannabis
+		icon = GFX_goal_SIA_information_operations
+		x = 4
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_toward_a_greener_future
+		prerequisite = { focus = SIA_toward_a_greener_future }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_value_over_volume
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_roll_the_carpets
+		prerequisite = { focus = SIA_roll_the_carpets }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_amazing_new_chapters
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_roll_the_carpets
+		prerequisite = { focus = SIA_roll_the_carpets }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_shore_up_supports
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_against_chung_chart
+		prerequisite = { focus = SIA_against_chung_chart }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_smart_government
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_hit_the_book
+		prerequisite = { focus = SIA_against_chung_chart }
+		prerequisite = { focus = SIA_hit_the_book }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_will_continue
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_hit_the_book
+		prerequisite = { focus = SIA_hit_the_book }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_wonderful_thailand
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_roll_the_carpets
+		prerequisite = { focus = SIA_value_over_volume }
+		prerequisite = { focus = SIA_amazing_new_chapters }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_show_of_forces
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_amazing_new_chapters
+		prerequisite = { focus = SIA_amazing_new_chapters }
+		prerequisite = { focus = SIA_shore_up_supports }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_along_with_the_wind
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_shore_up_supports
+		prerequisite = { focus = SIA_shore_up_supports }
+		prerequisite = { focus = SIA_smart_government }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_farm_to_market
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_will_continue
+		prerequisite = { focus = SIA_will_continue }
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	#Right side
+	focus = {
+		id = SIA_friend_and_foes
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_debunking_lies
+		prerequisite = { focus = SIA_debunking_lies }
+		prerequisite = { focus = SIA_rotten_streets }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_rekindling_spirit
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_friend_and_foes
+		prerequisite = { focus = SIA_friend_and_foes }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_heir_to_the_party
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_friend_and_foes
+		prerequisite = { focus = SIA_friend_and_foes }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_sizable_lots
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_friend_and_foes
+		prerequisite = { focus = SIA_friend_and_foes }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_old_friendship
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_rekindling_spirit
+		prerequisite = { focus = SIA_rekindling_spirit }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_the_general_and_his_right_hand
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_heir_to_the_party
+		prerequisite = { focus = SIA_heir_to_the_party }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_the_king_in_another_castle
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_sizable_lots
+		prerequisite = { focus = SIA_sizable_lots }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_court_the_barons
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_sizable_lots
+		prerequisite = { focus = SIA_sizable_lots }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_next_time
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_old_friendship
+		prerequisite = { focus = SIA_old_friendship }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_their_lieutenant
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_the_general_and_his_right_hand
+		prerequisite = { focus = SIA_the_general_and_his_right_hand }
+		prerequisite = { focus = SIA_the_king_in_another_castle }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_respectful_pawns
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_the_king_in_another_castle
+		prerequisite = { focus = SIA_the_general_and_his_right_hand }
+		prerequisite = { focus = SIA_the_king_in_another_castle }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_straight_from_the_pocket
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_court_the_barons
+		prerequisite = { focus = SIA_court_the_barons }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_make_a_show
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_their_lieutenant
+		prerequisite = { focus = SIA_their_lieutenant }
+		prerequisite = { focus = SIA_respectful_pawns }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_woe
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_respectful_pawns
+		prerequisite = { focus = SIA_respectful_pawns }
+		prerequisite = { focus = SIA_straight_from_the_pocket }
+		
+		completion_reward = {
+			
+		}
+	}
 }

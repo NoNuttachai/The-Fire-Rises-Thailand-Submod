@@ -553,6 +553,11 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SIA/SIA_anutin_charnvirakul.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_hog_SIA_yodchanan_wongsawat"
+		texturefile = "gfx/leaders/SIA/SIA_yodchanan_wongsawat.png"
+		legacy_lazy_load = no
+	}
 	#for paths in bookmark
 	spriteType = {
 		name = "GFX_path_utn_icon"
