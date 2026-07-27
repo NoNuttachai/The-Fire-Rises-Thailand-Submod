@@ -7,11 +7,15 @@ focus_tree = {
 			tag = SIA
 		}
 	}
+	shared_focus = SIA_presentation
+	shared_focus = SIA_economy_opening
+	shared_focus = SIA_thailand_in_the_world_stage
+	shared_focus = SIA_cambodia_1
 	
 	focus = {
 		id = SIA_pheu_thai_victory
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 7
+		x = 22
 		y = 0
 		cost = 4
 		ai_will_do = {

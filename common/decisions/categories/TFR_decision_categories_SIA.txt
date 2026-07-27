@@ -129,6 +129,7 @@ SIA_military_reformation = {
 		original_tag = SIA
 	}
 	visible = {
+		has_country_flag = SIA_active_military_mech
 	}
 	visible_when_empty = yes
 }

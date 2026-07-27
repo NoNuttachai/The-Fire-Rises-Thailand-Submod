@@ -7,14 +7,14 @@ focus_tree = {
 			tag = SIA
 		}
 	}
-	shared_focus = SIA_mil_opening
-	shared_focus = SIA_economy_opening
-	shared_focus = SIA_forpol_opening
+	shared_focus = SIA_presentation
+	shared_focus = SIA_thailand_in_the_world_stage
+	shared_focus = SIA_cambodia_1
 	
 	focus = {
 		id = SIA_third_prayut_cabinet
 		icon = GFX_goal_SIA_information_operations
-		x = 16
+		x = 22
 		y = 0
 		cost = 4
 		ai_will_do = {
@@ -237,7 +237,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 3
 		y = 1
-		cost = 4
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -273,7 +273,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_china_cooperation_focus
+		id = SIA_beautiful_east
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -337,7 +337,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 4
 		y = 1
-		cost = 4
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -357,7 +357,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -377,7 +377,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -818,6 +818,47 @@ focus_tree = {
 		relative_position_id = SIA_respectful_pawns
 		prerequisite = { focus = SIA_respectful_pawns }
 		prerequisite = { focus = SIA_straight_from_the_pocket }
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_fallen_flat
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_rotten_streets
+		prerequisite = { focus = SIA_rotten_streets }
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_farewell
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_fallen_flat
+		prerequisite = { focus = SIA_fallen_flat }
 		
 		completion_reward = {
 			
