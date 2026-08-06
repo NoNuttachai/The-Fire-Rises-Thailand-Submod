@@ -421,11 +421,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_SIA_thewan_liptapanlop"
-		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_thewan_liptapanlop.png"
-		legacy_lazy_load = no
-	}
-	spriteType = {
 		name = "GFX_SIA_prawit_wongsuwan"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_prawit_wongsuwan.png"
 		legacy_lazy_load = no
@@ -446,10 +441,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_prayut_chan_o_cha.png"
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_thewan_liptapanlop"
-		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_thewan_liptapanlop.png"
-	}
-	spriteType = {
 		name = "GFX_idea_SIA_uttama_saowanayon"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_uttama_saowanayon.png"
 	}
@@ -463,9 +454,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_idea_SIA_anucha_nakasai"
-		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_anucha_nakasai.png"
+		name = "GFX_idea_SIA_Thanakorn_Buaratsat"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_Thanakorn_Buaratsat.png"
 		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Anukul_Jaimongkol"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_Anukul_Jaimongkol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Thanat_Suwannanon"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_Thanat_Suwannanon.png"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_arkhom_termpittayapaisith"

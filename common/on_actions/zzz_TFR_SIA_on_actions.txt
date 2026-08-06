@@ -43,7 +43,7 @@ on_actions = {
 				country_event = { id = thai_events.49 days = 2093 } #24 Sep 2025 Massive Sinkhole in Dusit District, Bangkok
 				country_event = { id = thai_events.50 days = 110 } # 20 April 2020 #MilkTeaAlliance
 				
-				
+				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM
 				
 				
 				
@@ -183,7 +183,7 @@ on_actions = {
 			}
 		}
 	}
-	on_capitulation_immediate = {
+	on_capitulation = {
 		effect = {
 			if = {
 				# Thailand kills Cambodia
@@ -196,7 +196,7 @@ on_actions = {
 					}
 				}
 				SIA = {
-					puppet = CAM
+					release_puppet = CAM
 					CAM = {
 						set_cosmetic_tag = CAM_thai_occupation_government
 						set_politics = {

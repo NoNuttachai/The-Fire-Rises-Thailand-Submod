@@ -889,3 +889,67 @@ SIA_decrease_economic_engine = {
 		}
 	}
 }
+SIA_increase_youth_status = {
+	if = {
+		limit = {
+			has_idea = SIA_flaming_youth_1
+		}
+		swap_ideas = {
+			remove_idea = SIA_flaming_youth_1
+			add_idea = SIA_flaming_youth_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_flaming_youth_2
+		}
+		swap_ideas = {
+			remove_idea = SIA_flaming_youth_2
+			add_idea = SIA_flaming_youth_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_flaming_youth_3
+		}
+		swap_ideas = {
+			remove_idea = SIA_flaming_youth_4
+			add_idea = SIA_flaming_youth_4
+		}
+	}
+}
+SIA_decrease_youth_status = {
+	if = {
+		limit = {
+			has_idea = SIA_flaming_youth_1
+		}
+		remove_ideas = SIA_flaming_youth_1
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_flaming_youth_2
+		}
+		swap_ideas = {
+			remove_idea = SIA_flaming_youth_2
+			add_idea = SIA_flaming_youth_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_flaming_youth_3
+		}
+		swap_ideas = {
+			remove_idea = SIA_flaming_youth_3
+			add_idea = SIA_flaming_youth_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SIA_flaming_youth_4
+		}
+		swap_ideas = {
+			remove_idea = SIA_flaming_youth_4
+			add_idea = SIA_flaming_youth_3
+		}
+	}
+}

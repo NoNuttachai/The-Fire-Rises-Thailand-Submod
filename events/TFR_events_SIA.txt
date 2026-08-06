@@ -1,6 +1,7 @@
 add_namespace = thai_events
 add_namespace = thai_prayut #separating events like this for now
 add_namespace = thai_cambodia_tension #separating events like this for now
+add_namespace = thai_shared_events #separating events like this for now
 add_namespace = thai_elections
 add_namespace = thai_newsevents
 
@@ -262,7 +263,42 @@ country_event = { #thai century of humiliation
 		add_ideas = SIA_national_humiliation
     }
 }
-
+country_event = { #Situation of the royal airforce
+    id = thai_shared_events.1
+    title = thai_shared_events.1.t
+    desc = thai_shared_events.1.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_shared_events.1.a 
+		
+    }
+}
+country_event = { #Situation of the royal army
+    id = thai_shared_events.2
+    title = thai_shared_events.2.t
+    desc = thai_shared_events.2.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_shared_events.2.a 
+		
+    }
+}
+country_event = { #Situation of the royal navy
+    id = thai_shared_events.3
+    title = thai_shared_events.3.t
+    desc = thai_shared_events.3.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_shared_events.3.a 
+		
+    }
+}
 country_event = { #Prayut leaves temporarily
     id = thai_prayut.1
     title = thai_prayut.1.t
@@ -415,6 +451,27 @@ country_event = { #Prayut wins 2023 Elections
 			popularity = 0.05
 		}
 		add_political_power = 30
+    }
+}
+country_event = { #Prayut steps down and Pirapan takes over
+    id = thai_prayut.9
+    title = thai_prayut.9.t
+    desc = thai_prayut.9.d
+	trigger = {
+		has_idea = SIA_prayut_chan-o-cha_advisor
+	}
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.9.a
+		add_ideas = SIA_pirapan_salirathavibhaga_hog
+		
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.05
+		}
+		add_political_power = -50
+		complete_national_focus = SIA_farewell
     }
 }
 country_event = { #elections calculated
@@ -914,7 +971,6 @@ country_event = {
         remove_ideas = SIA_thewan_liptapanlop_advisor
         
         add_ideas = SIA_predee_daocha_advisor
-        add_ideas = SIA_anucha_nakasai_advisor
         add_stability = -0.01
 		set_country_flag = pp_fallout
 	}

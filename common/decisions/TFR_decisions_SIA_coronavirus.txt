@@ -231,7 +231,7 @@ SIA_coronavirus_category = {
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
-				days = 20
+				days = 30
 			}
 		}
 		ai_will_do = {
@@ -256,7 +256,7 @@ SIA_coronavirus_category = {
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
-				days = 10
+				days = 15
 			}
 		}
 		ai_will_do = {

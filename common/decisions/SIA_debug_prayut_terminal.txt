@@ -55,4 +55,49 @@ SIA_debug_prayut_terminal = {
 			set_country_flag = SIA_ongoing_elections
 		}
 	}
+	SIA_PM_change_decisions = {
+		available = {
+			always = no
+		}
+	}
+	SIA_PM_change_add_prayut = {
+		complete_effect = {
+			add_ideas = SIA_prayut_chan-o-cha_advisor
+		}
+	}
+	SIA_PM_change_add_prawit = {
+		complete_effect = {
+			add_ideas = SIA_prawit_wongsuwan_hog
+		}
+	}
+	SIA_PM_change_add_sretta = {
+		complete_effect = {
+			add_ideas = SIA_sretta_thavisin_hog
+		}
+	}
+	SIA_PM_change_add_paetongtarn = {
+		complete_effect = {
+			add_ideas = SIA_paetongtarn_shinawatra_hog
+		}
+	}
+	SIA_PM_change_add_pita = {
+		complete_effect = {
+			add_ideas = SIA_pita_limjaroenrat_hog
+		}
+	}
+	SIA_PM_change_add_anutin = {
+		complete_effect = {
+			add_ideas = SIA_anutin_charnvirakul_hog
+		}
+	}
+	SIA_PM_change_add_yodchanan = {
+		complete_effect = {
+			add_ideas = SIA_yodchanan_wongsawat_hog
+		}
+	}
+	SIA_PM_change_add_pirapan = {
+		complete_effect = {
+			add_ideas = SIA_pirapan_salirathavibhaga_hog
+		}
+	}
 }

@@ -30,6 +30,188 @@ ideas = {
 		}
 	}
 	country = {
+		#GOD, please save me from this
+		SIA_royal_army_of_thailand_dummy = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+		SIA_royal_army_of_thailand_improve_officer_training = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				land_doctrine_cost_factor = -0.1
+				max_planning_factor = 0.05
+			}
+		}
+		SIA_royal_army_of_thailand_one_of_many = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				special_forces_cap = 0.1
+				army_org_factor = 0.075
+				training_time_factor = -0.1
+			}
+		}
+		SIA_royal_army_of_thailand_weapons_of_war = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.05
+				army_defence_factor = 0.075
+			}
+		}
+		SIA_royal_army_of_thailand_foreign_arms = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SIA_royal_army_of_thailand_valiant_soldiers = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_infantry_attack_factor = 0.125
+				army_infantry_defence_factor = 0.1
+				conscription_factor = 0.1
+				army_morale_factor = 0.075
+				battalion_upkeep_factor = 0.05
+			}
+		}
+		SIA_royal_army_of_thailand_armored_core = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.05
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.075
+				army_armor_speed_factor = 0.05
+				battalion_upkeep_factor = 0.125
+			}
+		}
+		SIA_royal_army_of_thailand_unleash_our_brightest = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.05
+			}
+		}
+		SIA_royal_army_of_thailand_guardian_of_asia = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				compliance_growth = 0.05
+				minimum_training_level = -0.1
+				conscription_factor = 0.15
+				battalion_upkeep_factor = 0.15
+			}
+		}
 		SIA_an_army_with_a_country_1 = {
 			picture = SIA_an_army_with_a_country
 			traits = {
@@ -612,9 +794,15 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			
+			targeted_modifier = {
+				tag = SIA
+				cic_to_target_factor = 0.5
+				mic_to_target_factor = 0.5
+			}
 			modifier = {
-				
+				stability_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				political_power_factor = -0.3
 			}
 		}
 		SIA_economic_engine_1 = {
@@ -934,6 +1122,66 @@ ideas = {
 				society_development_monthly = 0.01
 			}
 		}
+		SIA_flaming_youth_1 = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				stability_factor = -0.025
+				party_popularity_stability_factor = -0.03
+			}
+		}
+		SIA_flaming_youth_2 = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = -0.075
+				stability_factor = -0.075
+			}
+		}
+		SIA_flaming_youth_3 = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = -0.15
+				stability_factor = -0.125
+			}
+		}
+		SIA_flaming_youth_4 = {
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = -0.3
+				stability_factor = -0.2
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {
@@ -1087,7 +1335,7 @@ ideas = {
 			}
 			cost = 0
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_independent
 				eco_keynesian_economy
 			}
 		}
@@ -1099,7 +1347,7 @@ ideas = {
 			}
 			cost = 0
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_independent
 				eco_balanced_budget_economy
 			}
 		}
@@ -1118,31 +1366,44 @@ ideas = {
 		}
 	}
 	intelligence_minister = {
-		SIA_thewan_liptapanlop_advisor = {
-			name = SIA_thewan_liptapanlop_char
-			picture = SIA_thewan_liptapanlop
+		SIA_anukul_jaimongkol_advisor = {
+			name = SIA_anukul_jaimongkol_char
+			picture = SIA_Anukul_Jaimongkol
 			allowed = {
 				original_tag = SIA
 			}
 			visible = {
-				NOT = {
-					has_country_flag = pp_fallout
-				}
+				#has_idea = SIA_anukul_jaimongkol_advisor
 			}
 			traits = {
-				SIA_ide_neoliberal
 				int_balanced_cryptographer
 			}
 		}
-		SIA_anucha_nakasai_advisor = {
-			name = SIA_anucha_nakasai_char
-			picture = SIA_anucha_nakasai
+		SIA_thanakorn_buaratsat_advisor = {
+			name = SIA_thanakorn_buaratsat_char
+			picture = SIA_Thanakorn_Buaratsat
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				#has_idea = SIA_thanakorn_buaratsat_advisor
+			}
 			cost = 0
 			traits = {
-				SIA_ide_stratcon
+				int_balanced_cryptographer
+			}
+		}
+		SIA_thanat_suwannanon_advisor = {
+			name = SIA_thanat_suwannanon_char
+			picture = SIA_Thanat_Suwannanon
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				#has_idea = SIA_thanat_suwannanon_advisor
+			}
+			cost = 0
+			traits = {
 				int_balanced_cryptographer
 			}
 		}
@@ -1156,7 +1417,59 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_stratcon
-				military_theorist
+				SIA_deputy_pm_prawit
+			}
+		}
+		SIA_sutin_klungsang_advisor = { #PTP
+			name = SIA_sutin_klungsang_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				
+			}
+		}
+		SIA_phumtham_wechayachai_advisor = {#PTP
+			name = SIA_phumtham_wechayachai_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				
+			}
+		}
+		SIA_adul_boonthamcharoen_advisor = { #Indep to BJT
+			name = SIA_adul_boonthamcharoen_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				SIA_ide_independent
+			}
+		}
+		SIA_nattapol_nakphanit_advisor = { #Indep
+			name = SIA_nattapol_nakphanit_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				SIA_ide_independent
+				
+			}
+		}
+		SIA_chaichan_changmongkol_advisor = { #minister if Prayut loses to protest, replaces prawit
+			name = SIA_chaichan_changmongkol_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			traits = {
+				SIA_ide_stratcon
+				SIA_deputy_minister
 			}
 		}
 	}

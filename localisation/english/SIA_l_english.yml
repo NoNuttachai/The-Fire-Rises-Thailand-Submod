@@ -256,7 +256,59 @@
  
  
  
+ #SHARED FOCUSES
+ SIA_presentation: "Presentation"
+ SIA_bangkoks_sky: "Bangkok's Sky"
+ SIA_silent_and_waiting: "Silent And Waiting"
+ SIA_state_of_the_art: "State Of The Art"
+ SIA_made_in_thailand: "Made In Thailand"
+ SIA_off_the_stock: "Off The Stock"
+ SIA_thinking_smart: "Thinking Smart"
+ SIA_raining_the_skies: "Raining The Skies"
+ SIA_praetorian_guard: "Praetorian Guard"
+ SIA_improve_officer_training: "Improve Officer Training"
+ SIA_foreign_arms: "Import Foreign Arms"
+ SIA_with_human_face: "With Human Face"
+ SIA_one_of_many: "One Of Many"
+ SIA_valiant_soldiers: "Valiant Soldiers"
+ SIA_armored_core: "Armored Core"
+ SIA_showcase: "Showcasing Our Past"
+ SIA_weapons_of_war: "Weapons Of War"
+ SIA_unleash_our_brightest: "Unleash Our Brightest"
+ SIA_on_a_rescue: "On A Rescue"
+ SIA_guardian_of_asia: "Guardian Of Asia"
+ SIA_the_royal_thai_navy: "Royal Thai Navy"
+ SIA_enrich_its_presence: "Enrich Its Presence"
+ SIA_expansion: "Fleet Expansion"
+ SIA_fleet_modernization: "Fleet Modernization"
+ SIA_with_striking_efficiency: "With Striking Efficiency"
+ SIA_htms_placeholder: "HTMS PLACEHOLDER"
+ SIA_upcoming_storms: "The Upcoming Storms"
+ SIA_fuel_the_machine: "Fuel The Machine"
+ SIA_patriotic_people: "Patriotic People"
+ SIA_brand_of_terror: "Brand Of Terror"
+ SIA_smooth_as_it_get: "Smooth As It Gets"
+ SIA_on_watch: "On Watch"
+ SIA_nation_religion_monarchy: "Nation, Religion, and Monarchy"
  
+ 
+ #2023-2027 UTN Tree
+ SIA_third_prayut_cabinet: "Third Prayut Cabinet"
+ SIA_tonight_in_bangkok: "Tonight In Bangkok"
+ SIA_our_probable_friends: "Our Probable Friends"
+ SIA_friends_with_benefits: "Friends With Benefits"
+ SIA_light_the_street: "Light The Street"
+ SIA_rotten_streets: "Rotten Streets"
+ SIA_our_opposition: "Our Opposition"
+ SIA_debunking_lies: "Debunking Lies"
+ 
+ 
+ 
+ 
+ 
+ 
+ SIA_farewell: "Farewell"
+ SIA_farewell_tt: "§g£GFX_united_thai_nation §PPrayut§! will step down and £GFX_united_thai_nation §PPirapan§! will replace him as §YPrime Minister§!§!"
  
  
  
@@ -275,7 +327,23 @@
  SIA_thewan_liptapanlop_char: "Thewan Liptapanlop "
  SIA_prawit_wongsuwan_char: "Prawit Wongsuwan"
  SIA_predee_daocha_char: "Predee Daocha"
- SIA_anucha_nakasai_char: "Anucha Nakasai"
+ SIA_anukul_jaimongkol_char: "Anukul Jaimongkol"
+ SIA_thanakorn_buaratsat_char: "Thanakorn Buaratsat"
+ SIA_thanat_suwannanon_char: "Thanat Suwannanon"
+ SIA_sutin_klungsang_char: "Sutin Klungsang"
+ SIA_phumtham_wechayachai_char: "Phumtham Wechayachai"
+ SIA_adul_boonthamcharoen_char: "Adul Boonthamcharoen"
+ SIA_nattapol_nakphanit_char: "Nattapol Nakphanit"
+ SIA_chaichan_changmongkol_char: "Chaichan Changmongkol"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  #PRIME MINISTER CHARACTERS
  SIA_sretta_thavisin_char: "Sretta Thavisin"
  SIA_paetongtarn_shinawatra_char: "Paetongtarn Shinawatra"
@@ -347,7 +415,17 @@
  SIA_SMILE_Strategy: "SMILE Initiative"
  SIA_We_Travel_Together: "We Travel Together"
  SIA_recuperation: "Grace Period"
+ SIA_flaming_youth_1: "Flaming Youth - §LCalm§! "
+ SIA_flaming_youth_1_desc: "The youth of Thailand are becoming ever more politically active as the years go by. \n\nIssues still remain that affect them but for now, they are content with the status quo and they continue to live their ordinary lives."
+ SIA_flaming_youth_2: "Flaming Youth - §gConcerning§! "
+ SIA_flaming_youth_2_desc: "Recent economic hardships and the ongoing crisis has made the lives of the youth more harder, thousands are voicing their concerns in online spaces and only the occasional gatherings are observed."
+ SIA_flaming_youth_3: "Flaming Youth - §OAlarming§! "
+ SIA_flaming_youth_4: "Flaming Youth - §RCrisis§! "
  SIA_military_mech_dynamic_modifier: "Royal Army of Thailand"
+ SIA_royal_army_of_thailand_dynamic_modifier: "Royal Army of Thailand"
+ SIA_royal_army_of_thailand_dynamic_modifier_desc: "The Royal Army of Thailand serves as the first and foremost protectors of our country."
+ SIA_royal_airforce_of_thailand_dynamic_modifier: "Royal Airforce of Thailand"
+ SIA_royal_navy_of_thailand_dynamic_modifier: "Royal Navy of Thailand"
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -674,6 +752,10 @@
  thai_prayut.8.d: "Prayut won, UTN regime will endure"
  thai_prayut.8.a: "Prayut!!!!!!!!"
  
+ thai_prayut.9.t: "General Prayut Steps Down"
+ thai_prayut.9.d: "He steps down 1 set of stairs"
+ thai_prayut.9.a: "Wow, who is this guy? Pirapan? good enough, his name starts with P"
+ 
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
  thai_cambodia_tension.1.a: "What is this idiot doing!"
@@ -705,6 +787,20 @@
  thai_cambodia_tension.7.d: "I afked"
  thai_cambodia_tension.7.a: "death to thailand parliament"
  
+ thai_shared_events.1.t: "Situation of the Royal Thai Airforce"
+ thai_shared_events.1.d: "Text should be here"
+ thai_shared_events.1.a: "get to work"
+ 
+ thai_shared_events.2.t: "Situation of the Royal Thai Army"
+ thai_shared_events.2.d: "Text should be here"
+ thai_shared_events.2.a: "get to work
+ 
+ thai_shared_events.3.t: "Situation of the Royal Thai Navy"
+ thai_shared_events.3.d: "Text should be here"
+ thai_shared_events.3.a: "get to work
+ 
+ 
+ 
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
@@ -719,6 +815,9 @@
  SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
  SIA_ongoing_elections: "§YElections are ongoing§!"
  SIA_active_election_decision: "Doing a Campaign Action"
+ SIA_utn_in_charge_tt: "There is currently a £GFX_united_thai_nation §PUTN§! §YPrime Minister§!"
+ SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
+ SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -1100,7 +1199,7 @@
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control.\n\n§YTotal Accumulated Days§!: §g[?SIA_total_oil_stockpiled_days]§!"
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y356 days§! of §YTotal Accumulated Days§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y600 days§! of §YTotal Accumulated Days§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
  SIA_oil_distribution_to_stations: "Oil Distribution to Gas Stations"
  SIA_truckers_start_protesting: "Truckers Start Protesting"
  
@@ -1262,8 +1361,10 @@
  
  #Leader Traits
  SIA_Vajiralongkorn: "Vajiralongkorn"
+ SIA_deputy_pm_prawit: "Deputy Prime Minister"
+ SIA_deputy_minister: "Deputy Minister"
  #SIA
- SIA_ide_pprp: "£GFX_palang_pracharath §RPPRP§!"
+
  SIA_ide_stratcon: "£GFX_palang_pracharath §PStrat. Conservative§!"
  SIA_ide_independent: "£GFX_FRA_centrist_texticon §LIndependent§!"
  SIA_ide_neoliberal: "£GFX_chartpattana §BNeo§!§Rliberal§!"

@@ -1,426 +1,536 @@
-	capital = 1495
-	
-	oob = "SIA_2020"
-	
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SIA_2000_naval_mtg"
-		else = {
-			set_naval_oob = "SIA_2000_naval_legacy"
-		}
+capital = 1495
+
+oob = "SIA_2020"
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SIA_2000_naval_mtg"
+	else = {
+		set_naval_oob = "SIA_2000_naval_legacy"
 	}
+}
+
+set_research_slots = 3
+set_convoys = 550
+set_stability = 0.83
+
+set_country_flag = country_language_thai
+set_country_flag = head_of_gov_ui_enabled
+
+set_variable = { Russian_Influence = 0.00 }
+set_variable = { Chinese_Influence = 0.60 }
+set_variable = { American_Influence = 0.10 }
+set_variable = { European_Influence = 0.00 }
+set_variable = { PDO_Influence = 0.30 }
+set_variable = { Sovereign_Influence = 0.20 }
+
+# Parliament variables
+SIA_parliament_init_variables = yes
+
+recruit_character = SIA_rama_x_char
+recruit_character = SIA_dipangkorn_rasmijoti_char
+recruit_character = SIA_vacharaesorn_vivacharawongse_char
+recruit_character = SIA_maha_chakri_sirindhorn_char
+recruit_character = SIA_apirat_kongsompong_char
+recruit_character = SIA_santi_sakuntanak_char
+recruit_character = SIA_thanathorn_juangroongruangkit_char
+recruit_character = SIA_pita_char
+recruit_character = SIA_thaksin_shinawatra_char
+recruit_character = SIA_yingluck_shinawatra_char
+recruit_character = SIA_jurin_lakasanawisit_char
+recruit_character = SIA_sereepisuth_temeeyaves_char
+recruit_character = SIA_arnon_nanpa_char
+recruit_character = SIA_panusaya_sithijirawattanakul_char
+recruit_character = SIA_jatupat_boonpattararaksa_char
+recruit_character = SIA_anarchist_council_char
+recruit_character = SIA_wichai_chutham_char
+recruit_character = SIA_peoples_coaltion_char
+recruit_character = SIA_airbull_suttiwan_char
+recruit_character = SIA_chalermpol_srisawat_char
+recruit_character = SIA_chaichan_changmongkol_char
+recruit_character = SIA_kukiat_srinaka_char
+recruit_character = SIA_maanat_wongwat_char
+recruit_character = SIA_narongpan_jitkaewthae_char
+recruit_character = SIA_natthaphon_narkphanit_char
+recruit_character = SIA_pornpipat_benyasri_char
+recruit_character = SIA_punpakdee_pattanakul_char
+recruit_character = SIA_worakiat_rattananon_char
+recruit_character = SIA_tummanun_withi_char
+recruit_character = SIA_luechai_ruddit_char
+recruit_character = SIA_chatchai_sriworakan_char
+recruit_character = SIA_predee_daocha_char
+recruit_character = SIA_anucha_nakasai_char
+recruit_character = SIA_adung_phan_iam_char
+recruit_character = SIA_choengchai_chomchoengpaet_char
+recruit_character = SIA_jirapol_wongwit_char
+recruit_character = SIA_somprasong_nilsamai_char
+recruit_character = SIA_charoenchai_hinthao_char
+recruit_character = SIA_phana_khlaeoplotthuk_char
+recruit_character = SIA_manat_wongwat_char
+recruit_character = SIA_napadej_thupatemi_char
+recruit_character = SIA_santi_lunphae_char
+recruit_character = SIA_seksan_kantha_char
+recruit_character = SIA_alongkorn_wannarot_char
+recruit_character = SIA_boonsin_padklang_char
+recruit_character = SIA_anupong_paochinda_char
+recruit_character = SIA_Kittinant_Chinsamran_char
+recruit_character = SIA_Preecha_Chan_o_cha_char
+
+add_ideas = {
+	SIA_gdp_fix_new
+	ETH_chinese_investments
+	SIA_an_army_with_a_country_1
+	SIA_constitution_60
+	SIA_lack_of_the_political_legitimacy
+	SIA_economic_engine_3
+	SIA_flaming_youth_1
+	# Ministers
+	SIA_prayut_chan-o-cha_advisor
+	SIA_don_pramudwinai_advisor
+	SIA_uttama_saowanayon_advisor
+	SIA_anupong_paochinda_advisor
+	SIA_anukul_jaimongkol_advisor
+	SIA_prawit_wongsuwan_advisor
+}
+
+
+set_technology = {
+	## Infantry ##
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	infantry_rifle_upgrade = 1
+	infantry_rifle_upgrade2 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	night_vision = 1
+	night_vision2 = 1
+	body_armor = 1
+	body_armor2 = 1
+	camouflage = 1
+	camouflage2 = 1
+	marines = 1
+	tech_mountaineers = 1
+	tech_rangers = 1
+	paratroopers = 1
+	basic_train = 1
 	
-	set_research_slots = 3
-	set_convoys = 550
-	set_stability = 0.83
-
-	set_country_flag = country_language_thai
-	set_country_flag = head_of_gov_ui_enabled
-
-	set_variable = { Russian_Influence = 0.00 }
-	set_variable = { Chinese_Influence = 0.60 }
-	set_variable = { American_Influence = 0.10 }
-	set_variable = { European_Influence = 0.00 }
-	set_variable = { PDO_Influence = 0.30 }
-	set_variable = { Sovereign_Influence = 0.20 }
-
-	# Parliament variables
-	SIA_parliament_init_variables = yes
-
-	recruit_character = SIA_rama_x_char
-	recruit_character = SIA_dipangkorn_rasmijoti_char
-	recruit_character = SIA_vacharaesorn_vivacharawongse_char
-	recruit_character = SIA_maha_chakri_sirindhorn_char
-	recruit_character = SIA_apirat_kongsompong_char
-	recruit_character = SIA_santi_sakuntanak_char
-	recruit_character = SIA_thanathorn_juangroongruangkit_char
-	recruit_character = SIA_pita_char
-	recruit_character = SIA_thaksin_shinawatra_char
-	recruit_character = SIA_yingluck_shinawatra_char
-	recruit_character = SIA_jurin_lakasanawisit_char
-	recruit_character = SIA_sereepisuth_temeeyaves_char
-	recruit_character = SIA_arnon_nanpa_char
-	recruit_character = SIA_panusaya_sithijirawattanakul_char
-	recruit_character = SIA_jatupat_boonpattararaksa_char
-	recruit_character = SIA_anarchist_council_char
-	recruit_character = SIA_wichai_chutham_char
-	recruit_character = SIA_peoples_coaltion_char
-	recruit_character = SIA_airbull_suttiwan_char
-	recruit_character = SIA_chalermpol_srisawat_char
-	recruit_character = SIA_chaichan_changmongkol_char
-	recruit_character = SIA_kukiat_srinaka_char
-	recruit_character = SIA_maanat_wongwat_char
-	recruit_character = SIA_narongpan_jitkaewthae_char
-	recruit_character = SIA_natthaphon_narkphanit_char
-	recruit_character = SIA_pornpipat_benyasri_char
-	recruit_character = SIA_punpakdee_pattanakul_char
-	recruit_character = SIA_worakiat_rattananon_char
-	recruit_character = SIA_tummanun_withi_char
-	recruit_character = SIA_luechai_ruddit_char
-	recruit_character = SIA_chatchai_sriworakan_char
-	recruit_character = SIA_predee_daocha_char
-	recruit_character = SIA_anucha_nakasai_char
-	recruit_character = SIA_adung_phan_iam_char
-	recruit_character = SIA_choengchai_chomchoengpaet_char
-	recruit_character = SIA_jirapol_wongwit_char
-	recruit_character = SIA_somprasong_nilsamai_char
-	recruit_character = SIA_charoenchai_hinthao_char
-	recruit_character = SIA_phana_khlaeoplotthuk_char
-	recruit_character = SIA_manat_wongwat_char
-	recruit_character = SIA_napadej_thupatemi_char
-	recruit_character = SIA_santi_lunphae_char
-	recruit_character = SIA_seksan_kantha_char
-	recruit_character = SIA_alongkorn_wannarot_char
-	recruit_character = SIA_boonsin_padklang_char
-	recruit_character = SIA_anupong_paochinda_char
-	recruit_character = SIA_Kittinant_Chinsamran_char
-	recruit_character = SIA_Preecha_Chan_o_cha_char
+	## Support Companies ##
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	tech_field_hospital = 1
+	tech_logistics_company = 1
+	tech_signal_company = 1
 	
-	add_ideas = {
-		SIA_gdp_fix_new
-		ETH_chinese_investments
-		SIA_an_army_with_a_country_1
-		SIA_constitution_60
-		SIA_lack_of_the_political_legitimacy
-		SIA_economic_engine_3
-		# Ministers
-		SIA_prayut_chan-o-cha_advisor
-		SIA_don_pramudwinai_advisor
-		SIA_uttama_saowanayon_advisor
-		SIA_anupong_paochinda_advisor
-		SIA_thewan_liptapanlop_advisor
-		SIA_prawit_wongsuwan_advisor
+	## Armor ##
+	main_battle_tank1 = 1
+	main_battle_tank2 = 1
+	main_battle_tank3 = 1
+	light_tank1 = 1
+	mechanised_infantry1 = 1
+	light_mechanized_infantry1 = 1
+	
+	## Artillery ##
+	gw_artillery = 1
+	artillery1 = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	interwar_artillery = 1
+	sp_artillery1 = 1
+	tank_destroyer1 = 1
+	self_propelled_aa1 = 1
+	antitank1 = 1
+	antitank2 = 1
+	antiair1 = 1
+	antiair2 = 1
+	
+	## Engineering ##
+	electronic_mechanical_engineering = 1
+	power_plants = 1
+	
+	## Industry ##
+	basic_machine_tools = 1
+	fuel_silos = 1
+	
+	## Doctrines ##
+	base_strike = 1
+	formation_flying = 1
+	
+	## Air ##
+	attack_helicopter_1 = 1
+	utility_helicopter_1 = 1
+}
+## Armor ##
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
 	}
-	
-	
 	set_technology = {
-		## Infantry ##
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		motorised_infantry = 1
-		infantry_rifle_upgrade = 1
-		infantry_rifle_upgrade2 = 1
-		support_weapons = 1
-		support_weapons2 = 1
-		night_vision = 1
-		night_vision2 = 1
-		body_armor = 1
-		body_armor2 = 1
-		camouflage = 1
-		camouflage2 = 1
-		marines = 1
-		tech_mountaineers = 1
-		tech_rangers = 1
-		paratroopers = 1
-		basic_train = 1
-		
-		## Support Companies ##
-		tech_support = 1
-		tech_engineers = 1
-		tech_recon = 1
-		tech_military_police = 1
-		tech_maintenance_company = 1
-		tech_field_hospital = 1
-		tech_logistics_company = 1
-		tech_signal_company = 1
-		
-		## Armor ##
 		main_battle_tank1 = 1
 		main_battle_tank2 = 1
 		main_battle_tank3 = 1
 		light_tank1 = 1
 		mechanised_infantry1 = 1
+		mechanised_infantry2 = 1
 		light_mechanized_infantry1 = 1
-		
-		## Artillery ##
-		gw_artillery = 1
-		interwar_antitank = 1
-		interwar_antiair = 1
-		rocket_artillery = 1
-		interwar_artillery = 1
-		sp_artillery1 = 1
-		tank_destroyer1 = 1
-		self_propelled_aa1 = 1
-		antitank1 = 1
-		antitank2 = 1
-		antiair1 = 1
-		antiair2 = 1
-		
-		## Engineering ##
-		electronic_mechanical_engineering = 1
-		power_plants = 1
-		
-		## Industry ##
-		basic_machine_tools = 1
-		fuel_silos = 1
-		
-		## Doctrines ##
-		base_strike = 1
-		formation_flying = 1
-		
-		## Air ##
-		utility_helicopter_1 = 1
+		light_mechanized_infantry2 = 1
 	}
-	
-	if = {
-		limit = { has_dlc = "By Blood Alone" }
-			set_technology = {
-				aa_lmg = 1
-				aa_cannon_1 = 1
-				aa_hmg = 1
-				engines_1 = 1
-				engines_2 = 1
-				early_bombs = 1
-				guided_bombs = 1
-				aircraft_construction = 1
-				survivability_studies = 1
-				iw_small_airframe = 1
-				basic_small_airframe = 1
-				iw_medium_airframe = 1
-				basic_medium_airframe = 1
-				iw_large_airframe = 1
-			}
-		else = {
-			set_technology = {
-				CAS1 = 1
-				CAS2 = 1
-				cv_CAS1 = 1
-				cv_CAS2 = 1
-				fighter1 = 1
-				fighter2 = 1
-				fighter3 = 1
-				cv_fighter1 = 1
-				naval_bomber1 = 1
-				naval_bomber2 = 1
-				strategic_bomber1 = 1
-				tactical_bomber1 = 1
-			}
-		}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
 	}
-
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		legacy_armor_designs = 1
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		basic_medium_tank_chassis = 1
+		improved_medium_tank_chassis = 1
+		auto_loader_tech = 1
+		third_gen_nv_tech = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		armor_tech_1 = 1
+		armor_tech_2 = 1
+		heat_tech = 1
+		apds_tech = 1
+		turret_mounted_mg_tech = 1
+		apfsds_tech = 1
+		heatfs_tech = 1
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "SIA_2020_air_bba"
 		set_technology = {
-			early_destroyer = 1
-			basic_destroyer = 1
-			early_light_cruiser = 1
-			basic_light_cruiser = 1
-			early_heavy_cruiser = 1
-			early_carrier = 1
-			transport = 1
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			aa_hmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			guided_bombs = 1
+			aircraft_construction = 1
+			survivability_studies = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
 		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
+	else = {
+		set_air_oob = "SIA_2020_air_legacy"
 		set_technology = {
-			early_ship_hull_light = 1
-			basic_ship_hull_light = 1
-			early_ship_hull_cruiser = 1
-			basic_ship_hull_cruiser = 1
-			early_ship_hull_carrier = 1
-			smoke_generator = 1
-			sonar = 1
-			basic_depth_charges = 1
-			improved_airplane_launcher = 1
-			basic_cruiser_armor_scheme = 1
-			basic_torpedo = 1
-			basic_battery = 1
-			basic_light_battery = 1
-			basic_medium_battery = 1
-			#basic_secondary_battery = 1
-			mtg_transport = 1
-			basic_naval_mines = 1
-			submarine_mine_laying = 1
+			CAS1 = 1
+			cv_CAS1 = 1
+			fighter1 = 1
+			fighter2 = 1
+			fighter3 = 1
+			cv_fighter1 = 1
+			naval_bomber1 = 1
+			naval_bomber2 = 1
+			tactical_bomber1 = 1
 		}
 	}
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-		create_intelligence_agency = yes
-	}
-	
-	add_ideas = {
-		SIA_lottery_conscription
-		SIA_low_income_only_welfare
-		general_exemptions
-		high_poverty
-		medium_police
-		low_female_service
-		high_racial_integration
-		ASEAN_member
-	}
-	
-	#Events
-	country_event = {
-		id = thailand.1
-		days = 8
-	}
-	country_event = {
-		id = thailand.2
-		days = 51
-	}
-	country_event = {
-		id = thailand.4
-		days = 90
-	}
-	country_event = {
-		id = thailand.18
-		days = 1
-	}
+}
 
-	set_party_name = {
-		ideology = totalitarian_socialist
-		long_name = SIA_cpt_long
-		name = SIA_cpt
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		early_carrier = 1
+		transport = 1
 	}
-	set_party_name = {
-		ideology = communist
-		long_name = SIA_swt_long
-		name = SIA_swt
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_carrier = 1
+		smoke_generator = 1
+		sonar = 1
+		basic_depth_charges = 1
+		improved_airplane_launcher = 1
+		basic_cruiser_armor_scheme = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		#basic_secondary_battery = 1
+		mtg_transport = 1
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
 	}
-	set_party_name = {
-		ideology = libertarian_socialist
-		long_name = SIA_ls_long
-		name = SIA_ls
+}
+if = {
+	limit = {
+		has_dlc = "La Resistance"
 	}
-	set_party_name = {
-		ideology = social_democrat
-		long_name = SIA_ffp_long
-		name = SIA_ffp
-	}
-	set_party_name = {
-		ideology = social_liberal
-		long_name = SIA_ptp_long
-		name = SIA_ptp
-	}
-	set_party_name = {
-		ideology = market_liberal
-		long_name = SIA_tlp_long
-		name = SIA_tlp
-	}
-	set_party_name = {
-		ideology = conservative
-		long_name = SIA_dp_long
-		name = SIA_dp
-	}
-	set_party_name = {
-		ideology = authoritarian_democrat
-		long_name = SIA_palang_pracharath_party_alt_long
-		name = SIA_palang_pracharath_party_alt
-	}
-	set_party_name = {
-		ideology = nationalist
-		long_name = SIA_rtaf_long
-		name = SIA_rtaf
-	}
-	set_party_name = {
-		ideology = fascist
-		long_name = SIA_rubbish_collect_long
-		name = SIA_rubbish_collect
-	}
-	set_party_name = {
-		ideology = national_socialist
-		long_name = SIA_thai_people_are_aryans_from_the_depth_of_agatha
-		name = SIA_thai_people_are_aryans
-	}
-	
-	set_politics = {
-		ruling_party = authoritarian_democrat
-		last_election = 2019.3.24
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	
-	set_popularities = {
-		nationalist = 0
-		authoritarian_democrat = 30
-		conservative = 10
-		market_liberal = 10
-		social_liberal = 20
-		social_democrat = 25
-		libertarian_socialist = 5
-	}
+	create_intelligence_agency = yes
+}
 
-	### VARIANTS ###
-	# 2000 Start #
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		
+add_ideas = {
+	SIA_lottery_conscription
+	SIA_low_income_only_welfare
+	general_exemptions
+	high_poverty
+	medium_police
+	low_female_service
+	high_racial_integration
+	ASEAN_member
+}
+
+#Events
+country_event = {
+	id = thailand.1
+	days = 8
+}
+country_event = {
+	id = thailand.2
+	days = 51
+}
+country_event = {
+	id = thailand.4
+	days = 90
+}
+country_event = {
+	id = thailand.18
+	days = 1
+}
+
+set_party_name = {
+	ideology = totalitarian_socialist
+	long_name = SIA_cpt_long
+	name = SIA_cpt
+}
+set_party_name = {
+	ideology = communist
+	long_name = SIA_swt_long
+	name = SIA_swt
+}
+set_party_name = {
+	ideology = libertarian_socialist
+	long_name = SIA_ls_long
+	name = SIA_ls
+}
+set_party_name = {
+	ideology = social_democrat
+	long_name = SIA_ffp_long
+	name = SIA_ffp
+}
+set_party_name = {
+	ideology = social_liberal
+	long_name = SIA_ptp_long
+	name = SIA_ptp
+}
+set_party_name = {
+	ideology = market_liberal
+	long_name = SIA_tlp_long
+	name = SIA_tlp
+}
+set_party_name = {
+	ideology = conservative
+	long_name = SIA_dp_long
+	name = SIA_dp
+}
+set_party_name = {
+	ideology = authoritarian_democrat
+	long_name = SIA_palang_pracharath_party_alt_long
+	name = SIA_palang_pracharath_party_alt
+}
+set_party_name = {
+	ideology = nationalist
+	long_name = SIA_rtaf_long
+	name = SIA_rtaf
+}
+set_party_name = {
+	ideology = fascist
+	long_name = SIA_rubbish_collect_long
+	name = SIA_rubbish_collect
+}
+set_party_name = {
+	ideology = national_socialist
+	long_name = SIA_thai_people_are_aryans_from_the_depth_of_agatha
+	name = SIA_thai_people_are_aryans
+}
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = 2019.3.24
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	nationalist = 0
+	authoritarian_democrat = 30
+	conservative = 10
+	market_liberal = 10
+	social_liberal = 20
+	social_democrat = 25
+	libertarian_socialist = 5
+}
+
+### VARIANTS ###
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
 	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		## Corvettes ##
-		create_equipment_variant = { #Corvette 2
-			name = "Ratanakosin-class"
-			type = ship_hull_light_2
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-			obsolete = no
+	create_equipment_variant = {
+		name = "F-16A/B Fighting Falcon"
+		type = small_plane_airframe_1
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			fixed_auxiliary_weapon_slot_3 = empty
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
 		}
-		## Frigates ##
-		create_equipment_variant = { #Frigate 1
-			name = "Knox-class"
-			type = ship_hull_cruiser_1
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_1
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_armor_slot = ship_armor_cruiser_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = { #Frigate 2
-			name = "Naresuan-class"
-			type = ship_hull_cruiser_2
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_light_medium_battery_2
-				mid_1_custom_slot = ship_airplane_launcher_1
-				mid_2_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = empty
-			}
-			obsolete = no
-		}
-		## Carriers ##
-		create_equipment_variant = { #Carrier 1 #Not needed for variant, just use type
-			name = "Chakri Naruebet-class"
-			type = ship_hull_carrier_conversion_bb
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = empty
-				
-			}
-			obsolete = no
-		}
+		icon = "GFX_CAS3_medium"
+
 	}
+	create_equipment_variant = {
+		name = "JAS-39 Gripens"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = empty
+		}
+		icon = "GFX_basic_small_airframe_medium"		
+	}
+	create_equipment_variant = {
+		name = "F-5E/F Tiger II"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x	
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = empty
+		}
+		icon = "GFX_basic_small_airframe_medium"		
+	}
+	create_equipment_variant = {
+		name = "Alpha Jet A"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			fixed_auxiliary_weapon_slot_2 = empty
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = lmg_defense_turret_2x
+		}
+		icon = "GFX_CAS2_medium"
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
 	
-	
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	## Corvettes ##
+	create_equipment_variant = { #Corvette 2
+		name = "Ratanakosin-class"
+		type = ship_hull_light_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = no
+	}
+	## Frigates ##
+	create_equipment_variant = { #Frigate 1
+		name = "Knox-class"
+		type = ship_hull_cruiser_1
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = { #Frigate 2
+		name = "Naresuan-class"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = no
+	}
+	## Carriers ##
+	create_equipment_variant = { #Carrier 1 #Not needed for variant, just use type
+		name = "Chakri Naruebet-class"
+		type = ship_hull_carrier_conversion_bb
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = carrier_ship_engine_1
+			fixed_ship_secondaries_slot = empty
+			
+		}
+		obsolete = no
+	}
+}
+

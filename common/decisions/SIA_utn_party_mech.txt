@@ -1,0 +1,22 @@
+SIA_utn_party_mech = {
+	SIA_honor_the_generals_legacy = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		complete_effect = {
+		}
+	}
+}

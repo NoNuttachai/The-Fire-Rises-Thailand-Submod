@@ -87,22 +87,22 @@ spriteTypes = {
 	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/1980_Stingray.png"
 	#}
 	##WITH NO STEP BACK DLC
-	#SpriteType = {
-	#	name = "GFX_SIA_basic_medium_tank_chassis_medium"
-	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/1980_Stingray.png"
-	#}
-	#SpriteType = {
-	#	name = "GFX_SIA_improved_medium_tank_chassis_medium"
-	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2020_T84 Oplot-T.png"
-	#}
-	#SpriteType = {
-	#	name = "GFX_SIA_advanced_medium_tank_chassis_medium"
-	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2028_VT-4.png"
-	#}
-	#SpriteType = {
-	#	name = "GFX_SIA_main_battle_tank_chassis_medium"
-	#	texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2030_VT-4F.png"
-	#}
+	SpriteType = {
+		name = "GFX_SIA_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/1980_M60A3.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2018_T-84 Oplot-M.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2024_VT-4.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Main Battle Tank/2032_VT-4F.png"
+	}
 	### LIGHT TANKS ##
 	#SpriteType = {
 	#	name = "GFX_SIA_light_tank1_medium"
@@ -110,8 +110,78 @@ spriteTypes = {
 	#}
 	
 	#WITH NO STEP BACK DLC
-	#SpriteType = {
-	#	name = "GFX_SIA_gwtank_chassis_medium"
-	#	texturefile = "gfx/interface/technologies/Tank/Reconnaissance Tank/2000.png"
-	#}
+	SpriteType = {
+		name = "GFX_SIA_gwtank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Reconnaissance Tank/1980_m41_walker_bulldog.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Reconnaissance Tank/2018_Stingray.png"
+	}
+	#Amphibious Tank
+	SpriteType = {
+		name = "GFX_SIA_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/Tank/Amphibious Tank/2018_Chaiseri AWAV 8x8.png"
+	}
+	
+	#AIRPLANES
+	SpriteType = {
+		name = "GFX_SIA_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/FIG_2012_F-22_Raptor.png"
+	}
+
+	SpriteType = {
+		name = "GFX_SIA_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/aircraft/FIG_2018_F-35_Lightning_II.png"
+	}
+	### ANTI-AIR ###
+	SpriteType = {
+		name = "GFX_SIA_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/Artillery/2006_9K38 Igla.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_antiair2_medium"
+		texturefile = "gfx/interface/technologies/Artillery/2018_Starstreak.png"
+	}
+	### SELF-PROPELLED Anti-Air ###
+	SpriteType = {
+		name = "GFX_SIA_self_propelled_aa1_medium"
+		texturefile = "gfx/interface/technologies/artillery/2006_M42 Duster.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_self_propelled_aa2_medium"
+		texturefile = "gfx/interface/technologies/artillery/2024_M163 VADS.png"
+	}
+	### Rocket Artillery ###
+	SpriteType = {
+		name = "GFX_SIA_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/artillery/2006_DTI-1.png"
+	}
+	SpriteType = {
+		name = "GFX_SIA_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/artillery/2027_D11A.png"
+	}
+	
+	### ARTILLERY ###
+	SpriteType = {
+		name = "GFX_SIA_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Artillery/2000_M198.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_SIA_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Artillery/2012_Soltam M-71.png"
+	}
+	### SELF-PROPELLED ARTILLERY ###
+	
+	SpriteType = {
+		name = "GFX_SIA_sp_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Artillery/2006_M109 Howitzer.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_SIA_sp_artillery2_medium"
+		texturefile = "gfx/interface/technologies/Artillery/2021_ATMOS 2000.png"
+	}
+	
 }

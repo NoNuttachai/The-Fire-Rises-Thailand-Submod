@@ -689,7 +689,7 @@ SIA_bop_prayut = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.05
+				value = 0.1
 			}
 		}
 	}
@@ -734,7 +734,7 @@ SIA_bop_prayut = {
 		ai_will_do = { factor = 1 }
 		
 		modifier = {
-			power_balance_weekly = 0.02
+			power_balance_weekly = 0.03
 		}
 		
 		complete_effect = {

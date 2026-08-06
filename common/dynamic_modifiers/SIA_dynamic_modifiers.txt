@@ -16,3 +16,59 @@ SIA_military_mech_dynamic_modifier = {
 	stability_factor = SIA_military_mech_stability_factor_var
 	conscription_factor = SIA_military_mech_conscription_factor_var
 }
+SIA_royal_army_of_thailand_dynamic_modifier = {
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	army_attack_factor = SIA_royal_army_of_thailand_army_attack_factor_var
+	army_defence_factor = SIA_royal_army_of_thailand_army_defence_factor_var
+	research_speed_factor = SIA_royal_army_of_thailand_research_speed_factor_var
+	surrender_limit = SIA_royal_army_of_thailand_surrender_limit_var
+	compliance_growth = SIA_royal_army_of_thailand_compliance_growth_var
+	conscription_factor = SIA_royal_army_of_thailand_conscription_factor_var
+	training_time_factor = SIA_royal_army_of_thailand_training_time_factor_var
+	land_doctrine_cost_factor = SIA_royal_army_of_thailand_land_doctrine_cost_factor_var
+	minimum_training_level = SIA_royal_army_of_thailand_minimum_training_level_var
+	army_morale_factor = SIA_royal_army_of_thailand_army_morale_factor_var
+	army_org_factor = SIA_royal_army_of_thailand_army_org_factor_var
+	army_speed_factor = SIA_royal_army_of_thailand_army_speed_factor_var
+	max_planning_factor = SIA_royal_army_of_thailand_max_planning_factor_var
+	special_forces_cap = SIA_royal_army_of_thailand_special_forces_cap_var
+	industrial_capacity_factory = SIA_royal_army_of_thailand_industrial_capacity_factory_var
+	battalion_upkeep_factor = SIA_royal_army_of_thailand_battalion_upkeep_factor_var
+	army_infantry_attack_factor = SIA_royal_army_of_thailand_army_infantry_attack_factor_var
+	army_infantry_defence_factor = SIA_royal_army_of_thailand_army_infantry_defence_factor_var
+	army_armor_attack_factor = SIA_royal_army_of_thailand_army_armor_attack_factor_factor_var
+	army_armor_defence_factor = SIA_royal_army_of_thailand_army_armor_defence_factor_factor_var
+	army_armor_speed_factor = SIA_royal_army_of_thailand_army_armor_speed_factor_factor_var
+}
+SIA_royal_airforce_of_thailand_dynamic_modifier = {
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	
+}
+SIA_royal_navy_of_thailand_dynamic_modifier = {
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	
+}

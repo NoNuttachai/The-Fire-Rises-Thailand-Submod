@@ -57,7 +57,17 @@ shared_focus = {
 	relative_position_id = SIA_presentation
 	prerequisite = { focus = SIA_presentation }
 	completion_reward = {
-		
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = SIA_royal_airforce_of_thailand_dynamic_modifier
+					}
+				}
+			}
+			add_dynamic_modifier = { modifier = SIA_royal_airforce_of_thailand_dynamic_modifier }
+		}
+		country_event = thai_shared_events.1
 	}
 }
 shared_focus = {
@@ -200,7 +210,20 @@ shared_focus = {
 	prerequisite = { focus = SIA_presentation }
 	
 	completion_reward = {
-		
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = SIA_royal_army_of_thailand_dynamic_modifier
+					}
+				}
+			}
+			add_dynamic_modifier = { modifier = SIA_royal_army_of_thailand_dynamic_modifier }
+		}
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.03 }
+		SIA_mil_mech_combat_readiness_change = yes
+		country_event = thai_shared_events.2
+		army_experience = 10
 	}
 }
 shared_focus = {
@@ -220,7 +243,18 @@ shared_focus = {
 	prerequisite = { focus = SIA_praetorian_guard }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.065 }
+		SIA_mil_mech_combat_readiness_change = yes
 		
+		add_to_variable = { SIA_royal_army_of_thailand_land_doctrine_cost_factor_var = -0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_max_planning_factor_var = 0.05 }
+		
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_improve_officer_training
+			}
+		}
 	}
 }
 shared_focus = {
@@ -240,7 +274,17 @@ shared_focus = {
 	prerequisite = { focus = SIA_praetorian_guard }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_military_resource_var_temp = 1 }
+		SIA_mil_mech_resource_change = yes
+		unlock_decision_tooltip = SIA_purchase_foreign_equipment
+		add_to_variable = { SIA_royal_army_of_thailand_industrial_capacity_factory_var = 0.05 }
 		
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_foreign_arms
+			}
+		}
 	}
 }
 shared_focus = {
@@ -260,7 +304,12 @@ shared_focus = {
 	prerequisite = { focus = SIA_praetorian_guard }
 	
 	completion_reward = {
-		
+		add_stability = 0.05
+		add_war_support = 0.025
+		set_temp_variable = { SIA_public_perception_var_temp = 0.05 }
+		set_temp_variable = { SIA_combat_readiness_var_temp = -0.03 }
+		SIA_mil_mech_combat_readiness_change = yes
+		SIA_mil_mech_public_perception_change = yes
 	}
 }
 shared_focus = {
@@ -280,7 +329,19 @@ shared_focus = {
 	prerequisite = { focus = SIA_improve_officer_training }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
+		SIA_mil_mech_combat_readiness_change = yes
 		
+		add_to_variable = { SIA_royal_army_of_thailand_special_forces_cap_var = 0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_org_factor_var = 0.075 }
+		add_to_variable = { SIA_royal_army_of_thailand_training_time_factor_var = -0.1 }
+		
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_one_of_many
+			}
+		}
 	}
 }
 shared_focus = {
@@ -301,7 +362,28 @@ shared_focus = {
 	prerequisite = { focus = SIA_foreign_arms }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
+		SIA_mil_mech_combat_readiness_change = yes
 		
+		add_mastery = {
+			amount = 100
+			folder = land
+			grand_doctrine = csto_eastern_doctrine
+		}
+		army_experience = 20
+		
+		add_to_variable = { SIA_royal_army_of_thailand_army_infantry_attack_factor_var = 0.125 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_infantry_defence_factor_var = 0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = 0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_morale_factor_var = 0.075 }
+		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_attack_factor_var = 0.05 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_valiant_soldiers
+			}
+		}
 	}
 }
 shared_focus = {
@@ -322,7 +404,36 @@ shared_focus = {
 	prerequisite = { focus = SIA_foreign_arms }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
+		SIA_mil_mech_combat_readiness_change = yes
 		
+		add_mastery = {
+			amount = 100
+			folder = land
+			grand_doctrine = nato_western_doctrine
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = armor
+		}
+		army_experience = 20
+		add_to_variable = { SIA_royal_army_of_thailand_army_armor_attack_factor_factor_var = 0.125 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_armor_defence_factor_factor_var = 0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_armor_speed_factor_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_speed_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.125 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_armored_core
+			}
+		}
 	}
 }
 shared_focus = {
@@ -340,10 +451,14 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = SIA_with_human_face
 	prerequisite = { focus = SIA_with_human_face }
-	prerequisite = { focus = SIA_royal_thai_navy }
+	prerequisite = { focus = SIA_the_royal_thai_navy }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_public_perception_var_temp = 0.1 }
+		SIA_mil_mech_public_perception_change = yes
 		
+		add_political_power = 75
+		add_war_support = 0.1
 	}
 }
 shared_focus = {
@@ -363,7 +478,23 @@ shared_focus = {
 	prerequisite = { focus = SIA_improve_officer_training }
 	
 	completion_reward = {
+		set_temp_variable = { SIA_military_resource_var_temp = 2 }
+		SIA_mil_mech_resource_change = yes
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
+		SIA_mil_mech_combat_readiness_change = yes
+		set_temp_variable = { SIA_public_perception_var_temp = -0.1 }
+		SIA_mil_mech_public_perception_change = yes
 		
+		add_to_variable = { SIA_royal_army_of_thailand_army_attack_factor_var = 0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_defence_factor_var = 0.075 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_morale_factor_var = 0.05 }
+		
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_weapons_of_war
+			}
+		}
 	}
 }
 shared_focus = {
@@ -383,7 +514,15 @@ shared_focus = {
 	prerequisite = { focus = SIA_valiant_soldiers focus = SIA_armored_core }
 	
 	completion_reward = {
-		
+		add_research_slot = 1
+		add_to_variable = { SIA_royal_army_of_thailand_research_speed_factor_var = 0.075 }
+		add_to_variable = { SIA_royal_army_of_thailand_industrial_capacity_factory_var = 0.05 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_unleash_our_brightest
+			}
+		}
 	}
 }
 shared_focus = {
@@ -403,7 +542,11 @@ shared_focus = {
 	prerequisite = { focus = SIA_with_human_face }
 	
 	completion_reward = {
-		
+		set_temp_variable = { SIA_public_perception_var_temp = 0.15 }
+		SIA_mil_mech_public_perception_change = yes
+		set_temp_variable = { SIA_combat_readiness_var_temp = -0.05 }
+		SIA_mil_mech_combat_readiness_change = yes
+		add_stability = 0.1
 	}
 }
 shared_focus = {
@@ -425,12 +568,27 @@ shared_focus = {
 	prerequisite = { focus = SIA_on_a_rescue }
 	
 	completion_reward = {
-		
+		add_war_support = 0.125
+		set_temp_variable = { SIA_public_perception_var_temp = 0.075 }
+		SIA_mil_mech_public_perception_change = yes
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
+		SIA_mil_mech_combat_readiness_change = yes
+		add_to_variable = { SIA_royal_army_of_thailand_army_defence_factor_var = 0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_compliance_growth_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = 0.15 }
+		add_to_variable = { SIA_royal_army_of_thailand_minimum_training_level_var = -0.1 }
+		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.15 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_guardian_of_asia
+			}
+		}
 	}
 }
 #Navy
 shared_focus = {
-	id = SIA_royal_thai_navy
+	id = SIA_the_royal_thai_navy
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 7
 	y = 1
@@ -445,7 +603,17 @@ shared_focus = {
 	relative_position_id = SIA_presentation
 	prerequisite = { focus = SIA_presentation }
 	completion_reward = {
-		
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = SIA_royal_navy_of_thailand_dynamic_modifier
+					}
+				}
+			}
+			add_dynamic_modifier = { modifier = SIA_royal_navy_of_thailand_dynamic_modifier }
+		}
+		country_event = thai_shared_events.3
 	}
 }
 shared_focus = {
@@ -461,8 +629,8 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_royal_thai_navy
-	prerequisite = { focus = SIA_royal_thai_navy }
+	relative_position_id = SIA_the_royal_thai_navy
+	prerequisite = { focus = SIA_the_royal_thai_navy }
 	completion_reward = {
 		
 	}
@@ -837,7 +1005,15 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		custom_trigger_tooltip = {
+			OR = {
+				is_in_faction_with = PRC
+				NOT = {
+					is_in_faction = yes
+				}
+			}
+			tooltip = SIA_unaligned_or_eadi_tt
+		}
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_asian_house_of_cards
@@ -856,7 +1032,15 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		custom_trigger_tooltip = {
+			OR = {
+				is_in_faction_with = JAP
+				NOT = {
+					is_in_faction = yes
+				}
+			}
+			tooltip = SIA_unaligned_or_pdto_tt
+		}
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_asian_house_of_cards
@@ -875,7 +1059,10 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		OR = {
+			is_in_faction_with = PRC
+			is_in_faction_with = JAP
+		}
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_asian_house_of_cards

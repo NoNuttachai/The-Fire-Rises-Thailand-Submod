@@ -231,7 +231,7 @@ SIA_protests_category = {
 			
 		}
 		modifier = {
-			command_power_gain_mult = -0.5
+			command_power_gain_mult = -0.8
 		}
 		remove_effect = {
 			add_days_mission_timeout = {
@@ -339,7 +339,7 @@ SIA_protests_category = {
 		complete_effect = {
 			add_days_mission_timeout = {
 				mission = SIA_the_protests_intensify
-				days = 15
+				days = 20
 			}
 			country_event = { id = thai_events.46 hours = 6 }
 		}
@@ -371,7 +371,7 @@ SIA_protests_category = {
 			}
 		}
 		modifier = {
-			command_power_gain_mult = -0.5
+			command_power_gain_mult = -0.8
 		}
 		ai_will_do = {
 			base = 10
@@ -419,7 +419,7 @@ SIA_protests_category = {
 			
 		}
 		modifier = {
-			command_power_gain_mult = -0.5
+			command_power_gain_mult = -0.8
 		}
 		remove_effect = {
 			clr_country_flag = SIA_anti_government_protests

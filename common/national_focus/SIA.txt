@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 100
+			add = 999999
 			tag = SIA
 		}
 	}
@@ -521,7 +521,7 @@ focus_tree = {
 			custom_effect_tooltip = SIA_side_with_uncle_tuu_tt
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.05
+				value = 0.1
 			}
 		}
 	}
@@ -545,7 +545,7 @@ focus_tree = {
 		completion_reward = {
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
-				days = 25
+				days = 35
 			}
 			activate_mission = SIA_securing_vaccine_supply
 			custom_effect_tooltip = SIA_establish_ccsa_tt
@@ -574,13 +574,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 50
-			add_stability = -0.1
-			add_command_power = 30
+			add_political_power = 100
+			add_stability = -0.15
+			add_command_power = 10
 			unlock_decision_tooltip = SIA_stricten_curfews
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
-				days = 30
+				days = 40
 			}
 			add_days_mission_timeout = {
 				mission = SIA_the_protests_intensify
@@ -650,6 +650,10 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
 			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
 			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
 		}
 	}
 	focus = {
@@ -677,7 +681,7 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_found_top_news
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.05
+				value = 0.1
 			}
 		}
 	}
@@ -759,7 +763,7 @@ focus_tree = {
 			add_political_power = 25
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.05
+				value = 0.1
 			}
 			add_popularity = {
 				ideology = conservative
@@ -803,7 +807,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_organize_counter_protests
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_organize_counter_protests
 		x = 1
 		y = 1
 		cost = 5

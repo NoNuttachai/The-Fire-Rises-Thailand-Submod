@@ -119,7 +119,7 @@ SIA_Economy_category = {
 		original_tag = SIA
 	}
 	visible = {
-		#has_country_flag = SIA_economy_mechanic_on
+		has_country_flag = SIA_economy_mechanic_on
 	}
 }
 SIA_military_reformation = {
@@ -130,6 +130,17 @@ SIA_military_reformation = {
 	}
 	visible = {
 		has_country_flag = SIA_active_military_mech
+	}
+	visible_when_empty = yes
+}
+SIA_utn_party_mech = {
+	icon = GFX_decision_cat_SIA_parliament
+	priority = 15
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_utn_party_mech_on
 	}
 	visible_when_empty = yes
 }

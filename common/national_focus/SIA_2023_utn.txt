@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 99999999
+			add = 9999999999
 			tag = SIA
 		}
 	}
@@ -21,7 +21,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -39,14 +46,21 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_third_prayut_cabinet
 		prerequisite = { focus = SIA_third_prayut_cabinet }
 		
 		completion_reward = {
-			
+			add_political_power = 50
 		}
 	}
 	focus = {
@@ -59,7 +73,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_tonight_in_bangkok
@@ -79,7 +100,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_our_probable_friends
@@ -99,7 +127,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_tonight_in_bangkok
@@ -119,7 +154,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_light_the_street
@@ -139,7 +181,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_tonight_in_bangkok
@@ -159,7 +208,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_our_opposition
@@ -181,7 +237,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friends_with_benefits
@@ -189,6 +252,22 @@ focus_tree = {
 		prerequisite = { focus = SIA_rotten_streets }
 		
 		completion_reward = {
+			1497 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			724 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
 			
 		}
 	}
@@ -202,14 +281,25 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ev_revolution
 		prerequisite = { focus = SIA_ev_revolution }
 		
 		completion_reward = {
-			
+			set_temp_variable = {
+				var = global.PRC_influence_SIA_var_temp
+				value = 0.20
+			}
+			PRC_add_SIA_influence = yes
 		}
 	}
 	focus = {
@@ -222,14 +312,24 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ev_revolution
 		prerequisite = { focus = SIA_ev_revolution }
 		
 		completion_reward = {
-			
+			set_temp_variable = { campaign_slot_total_var_temp = 1 }
+			add_total_campaign_slot = yes
+			set_temp_variable = { farming_development_var_temp = 0.05 }
+			add_farming_development = yes
 		}
 	}
 	focus = {
@@ -242,14 +342,25 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
+			command_power > 30
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ev_revolution
 		prerequisite = { focus = SIA_ev_revolution }
 		
 		completion_reward = {
-			
+			1494 = {
+				add_core_of = ROOT
+			}
+			add_stability = 0.05
 		}
 	}
 	focus = {
@@ -262,7 +373,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
@@ -282,14 +400,33 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
 		
 		completion_reward = {
-			
+			891 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -302,7 +439,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
@@ -322,14 +466,22 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_toward_a_greener_future
 		prerequisite = { focus = SIA_toward_a_greener_future }
 		
 		completion_reward = {
-			
+			set_temp_variable = { academic_development_var_temp = 0.05 }
+			add_academic_development = yes
 		}
 	}
 	focus = {
@@ -342,7 +494,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_toward_a_greener_future
@@ -362,7 +521,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_roll_the_carpets
@@ -382,7 +548,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_roll_the_carpets
@@ -402,7 +575,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_against_chung_chart
@@ -422,7 +602,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_hit_the_book
@@ -443,7 +630,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_hit_the_book
@@ -463,33 +657,19 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_roll_the_carpets
 		prerequisite = { focus = SIA_value_over_volume }
 		prerequisite = { focus = SIA_amazing_new_chapters }
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_show_of_forces
-		icon = GFX_goal_SIA_information_operations
-		x = 1
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		relative_position_id = SIA_amazing_new_chapters
-		prerequisite = { focus = SIA_amazing_new_chapters }
-		prerequisite = { focus = SIA_shore_up_supports }
 		
 		completion_reward = {
 			
@@ -505,7 +685,42 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_amazing_new_chapters
+		prerequisite = { focus = SIA_shore_up_supports }
+		prerequisite = { focus = SIA_amazing_new_chapters }
+		
+		completion_reward = {
+			SIA_increase_economic_engine = yes
+		}
+	}
+	focus = {
+		id = SIA_show_of_forces
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_shore_up_supports
@@ -526,7 +741,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_will_continue
@@ -548,7 +770,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_debunking_lies
@@ -556,7 +785,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_rotten_streets }
 		
 		completion_reward = {
-			
+			add_political_power = 30
 		}
 	}
 	focus = {
@@ -569,7 +798,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friend_and_foes
@@ -589,7 +825,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friend_and_foes
@@ -609,7 +852,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friend_and_foes
@@ -629,7 +879,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_rekindling_spirit
@@ -649,7 +906,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_heir_to_the_party
@@ -669,7 +933,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_sizable_lots
@@ -689,7 +960,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_sizable_lots
@@ -709,7 +987,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_old_friendship
@@ -729,7 +1014,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_the_general_and_his_right_hand
@@ -750,7 +1042,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_the_king_in_another_castle
@@ -771,7 +1070,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_court_the_barons
@@ -791,7 +1097,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_their_lieutenant
@@ -812,7 +1125,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				OR = {
+					has_idea = SIA_prayut_chan-o-cha_advisor
+					has_idea = SIA_pirapan_salirathavibhaga_hog
+					#has_idea = SIA_suchat_chomklin_hog
+				}
+				tooltip = SIA_utn_in_charge_tt
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_respectful_pawns
@@ -861,7 +1181,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_fallen_flat }
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = SIA_farewell_tt
 		}
 	}
 }
