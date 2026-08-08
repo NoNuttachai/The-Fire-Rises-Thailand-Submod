@@ -215,6 +215,14 @@ country_event = { #War won
 		add_political_power = 200
 		add_war_support = 0.15
 		remove_ideas = SIA_thai_cambodia_conflict_2
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_minus_one
+			}
+		}
     }
 }
 country_event = { #thai century of humiliation
@@ -261,6 +269,14 @@ country_event = { #thai century of humiliation
 		add_war_support = -0.25
 		remove_ideas = SIA_thai_cambodia_conflict
 		add_ideas = SIA_national_humiliation
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.2 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.2 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_cambodia_loser
+			}
+		}
     }
 }
 country_event = { #Situation of the royal airforce
@@ -450,6 +466,14 @@ country_event = { #Prayut wins 2023 Elections
 			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
+			}
+		}
 		add_political_power = 30
     }
 }
@@ -457,6 +481,7 @@ country_event = { #Prayut steps down and Pirapan takes over
     id = thai_prayut.9
     title = thai_prayut.9.t
     desc = thai_prayut.9.d
+	picture = GFX_report_prayut_pirapan
 	trigger = {
 		has_idea = SIA_prayut_chan-o-cha_advisor
 	}
@@ -472,6 +497,72 @@ country_event = { #Prayut steps down and Pirapan takes over
 		}
 		add_political_power = -50
 		complete_national_focus = SIA_farewell
+    }
+}
+country_event = { #Prayut launches media campaign
+    id = thai_prayut.10
+    title = thai_prayut.10.t
+    desc = thai_prayut.10.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.10.a
+		
+    }
+}
+country_event = { #The Opposition - Orange Party and PTP
+    id = thai_prayut.11
+    title = thai_prayut.11.t
+    desc = thai_prayut.11.d
+	
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.11.a
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.02 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.02 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_two
+			}
+		}
+		add_war_support = -0.1
+    }
+}
+country_event = { #Old Friend Prawit
+    id = thai_prayut.12
+    title = thai_prayut.12.t
+    desc = thai_prayut.12.d
+	picture = GFX_report_prayut_prawit_reconciliation
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.12.a
+		
+    }
+}
+country_event = { #King of Cannabis
+    id = thai_prayut.13
+    title = thai_prayut.13.t
+    desc = thai_prayut.13.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.13.a
+		
+    }
+}
+country_event = { #Pirapan introduction
+    id = thai_prayut.14
+    title = thai_prayut.14.t
+    desc = thai_prayut.14.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.14.a
+		
     }
 }
 country_event = { #elections calculated
@@ -704,6 +795,14 @@ country_event = { #Verdict on FFP
         hidden_effect = {
             retire_character = SIA_thanathorn_juangroongruangkit_char
         }
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.02 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.02 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_two
+			}
+		}
     }
 }
 
@@ -841,6 +940,14 @@ country_event = { #Oil Crisis Hits Thailand
 		}
 		decrease_poverty = yes
 		decrease_society = yes
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
+			}
+		}
 	}
 }
 country_event = {
@@ -904,7 +1011,14 @@ country_event = { #Wanchalearm Abduction
 			tooltip_side = SIA_loss_side
 		}
 		activate_mission = SIA_the_protests_intensify
-		
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
+			}
+		}
 	}
 }
 
@@ -1099,6 +1213,14 @@ country_event = {
 			set_country_flag = SIA_coronavirus_ongoing
 			add_ideas = SIA_covid_idea
 			activate_mission = SIA_the_pandemic_worsens_mission
+		}
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
+			}
 		}
 	}
 }
@@ -1442,6 +1564,14 @@ country_event = {
 			id = SIA_power_balance
 			value = 0.05
 		}
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
+			}
+		}
 	}
 }
 country_event = {
@@ -1468,6 +1598,14 @@ country_event = {
 				SIA_lack_of_the_political_legitimacy
 				SIA_lack_of_the_political_legitimacy_low
 				SIA_lack_of_the_political_legitimacy_lower
+			}
+		}
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
 			}
 		}
 	}
@@ -1919,6 +2057,51 @@ country_event = {
 		effect_tooltip = {
 			activate_mission = SIA_truckers_start_protesting
 		}
+	}
+}
+country_event = {
+    id = thai_events.53 # Thanakorn Buaratsat becomes Intelligence Minister
+    title = thai_events.53.t
+    desc = thai_events.53.d
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_events.54 days = 2030 } 
+		}
+	}
+    option = {
+        name = thai_events.53.a
+		add_ideas = SIA_thanakorn_buaratsat_advisor
+	}
+}
+country_event = {
+    id = thai_events.54 # Thanat Suwannanon becomes Intelligence Minister
+    title = thai_events.54.t
+    desc = thai_events.54.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.54.a
+		add_ideas = SIA_thanat_suwannanon_advisor
+	}
+}
+country_event = {
+    id = thai_events.55 # MFP DIES
+    title = thai_events.55.t
+    desc = thai_events.55.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.55.a
+		if = {
+			limit = {
+				has_focus_tree = SIA_2023_utn_focus_tree
+			}
+			complete_national_focus = SIA_fallen_flat
+		}
+		set_country_flag = mfp_dismantled
+		custom_effect_tooltip = thai_events_55_tt
 	}
 }
 news_event = {

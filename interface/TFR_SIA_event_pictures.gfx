@@ -164,6 +164,14 @@ spriteTypes = {
 		name = "GFX_report_trucker_convoy_protests"
 		texturefile = "gfx/event_pictures/report_trucker_convoy_protests.png"
 	}
+	spriteType = {
+		name = "GFX_report_prayut_prawit_reconciliation"
+		texturefile = "gfx/event_pictures/prayut_prawit_reconciliation.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_pirapan"
+		texturefile = "gfx/event_pictures/prayut_pirapan.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

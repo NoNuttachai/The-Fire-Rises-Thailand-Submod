@@ -11,11 +11,34 @@ SIA_utn_party_mech = {
 		visible = {
 			
 		}
-		activation = {
-			always = no
+		complete_effect = {
 		}
-		is_good = no
-		selectable_mission = no
+	}
+	SIA_bhumjaithai_agenda = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SIA_friends_with_benefits
+		}
+		complete_effect = {
+		}
+	}
+	SIA_pprp_agenda = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+		
+		}
+		visible = {
+			has_completed_focus = SIA_friends_with_benefits
+		}
 		complete_effect = {
 		}
 	}

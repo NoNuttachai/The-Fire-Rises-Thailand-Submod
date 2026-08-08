@@ -61,6 +61,17 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 50
+			unlock_decision_category_tooltip = SIA_utn_party_mech
+			set_country_flag = SIA_utn_party_mech_on
+			add_to_variable = { SIA_conservative_revolution_political_power_gain_var = 0.05 }
+			add_to_variable = { SIA_conservative_revolution_authoritarian_democrat_drift_var = 0.03 }
+			add_dynamic_modifier = { modifier = SIA_conservative_revolution_dynamic_modifier }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_conservative_revolution_dummy
+					add_idea = SIA_conservative_revolution_SIA_tonight_in_bangkok
+				}
+			}
 		}
 	}
 	focus = {
@@ -87,7 +98,8 @@ focus_tree = {
 		prerequisite = { focus = SIA_tonight_in_bangkok }
 		
 		completion_reward = {
-			
+			add_political_power = 50
+			country_event = thai_prayut.12
 		}
 	}
 	focus = {
@@ -114,7 +126,8 @@ focus_tree = {
 		prerequisite = { focus = SIA_our_probable_friends }
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_bhumjaithai_agenda
+			unlock_decision_tooltip = SIA_pprp_agenda
 		}
 	}
 	focus = {
@@ -141,7 +154,17 @@ focus_tree = {
 		prerequisite = { focus = SIA_tonight_in_bangkok }
 		
 		completion_reward = {
-			
+			add_stability = -0.05
+			add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.02 }
+			add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.02 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_flaming_youth_dummy
+					add_idea = SIA_flaming_youth_minus_two
+				}
+			}
+			set_temp_variable = { academic_development_var_temp = -0.05 }
+			add_academic_development = yes
 		}
 	}
 	focus = {
@@ -168,7 +191,10 @@ focus_tree = {
 		prerequisite = { focus = SIA_light_the_street }
 		
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = SIA_quelling_agitators
+				days = 100
+			}
 		}
 	}
 	focus = {
@@ -195,7 +221,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_tonight_in_bangkok }
 		
 		completion_reward = {
-			
+			country_event = thai_prayut.11
 		}
 	}
 	focus = {
@@ -222,7 +248,21 @@ focus_tree = {
 		prerequisite = { focus = SIA_our_opposition }
 		
 		completion_reward = {
+			add_political_power = 30
 			
+			country_event = thai_prayut.10
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.025
+			}
+			add_to_variable = { SIA_conservative_revolution_party_popularity_stability_factor_var = 0.03 }
+			add_to_variable = { SIA_conservative_revolution_war_support_weekly_var = 0.002 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_conservative_revolution_dummy
+					add_idea = SIA_conservative_revolution_debunking_lies
+				}
+			}
 		}
 	}
 	
@@ -252,6 +292,8 @@ focus_tree = {
 		prerequisite = { focus = SIA_rotten_streets }
 		
 		completion_reward = {
+			unlock_decision_category_tooltip = SIA_Economy_category
+			set_country_flag = SIA_economy_mechanic_on
 			1497 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -268,7 +310,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			
+			add_to_variable = { SIA_renewable_economy_drive_production_lack_of_resource_penalty_factor = -0.075 }
+			add_to_variable = { SIA_renewable_economy_drive_production_speed_energy_farm_factor = 0.1 }
+			add_dynamic_modifier = { modifier = SIA_renewable_economy_drive_dynamic_modifier }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_ev_revolution
+				}
+			}
 		}
 	}
 	focus = {
@@ -300,6 +350,31 @@ focus_tree = {
 				value = 0.20
 			}
 			PRC_add_SIA_influence = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.075 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_development_monthly = 0.01 }
+			add_to_variable = { SIA_renewable_economy_drive_production_speed_buildings_factor = 0.075 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_ridin_with_the_dragon
+				}
+			}
 		}
 	}
 	focus = {
@@ -328,6 +403,19 @@ focus_tree = {
 		completion_reward = {
 			set_temp_variable = { campaign_slot_total_var_temp = 1 }
 			add_total_campaign_slot = yes
+			unlock_decision_tooltip = SIA_utn_promote_green_energy
+			add_to_variable = { SIA_renewable_economy_drive_farming_development_monthly = 0.01 }
+			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_expense_growth_factor = 0.1 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_toward_a_greener_future
+				}
+			}
+			unlock_decision_tooltip = SIA_generic_increase_resource_extraction
+			custom_effect_tooltip = SIA_unlock_generic_fueling_the_engine_decision
+			set_country_flag = SIA_econ_activate_generic_extraction
 			set_temp_variable = { farming_development_var_temp = 0.05 }
 			add_farming_development = yes
 		}
@@ -387,7 +475,17 @@ focus_tree = {
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_utn_encourage_tourism
+			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.075 }
+			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.1 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_roll_the_carpets
+				}
+			}
+			set_temp_variable = { society_development_var_temp = 0.075 }
+			add_society_development = yes
 		}
 	}
 	focus = {
@@ -412,6 +510,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
+		prerequisite = { focus = SIA_toward_a_greener_future }
 		
 		completion_reward = {
 			891 = {
@@ -427,6 +526,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = SIA_unlock_isan_decisions_tt
 		}
 	}
 	focus = {
@@ -447,13 +547,23 @@ focus_tree = {
 				}
 				tooltip = SIA_utn_in_charge_tt
 			}
+			has_completed_focus = SIA_presentation
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
+		prerequisite = { focus = SIA_toward_a_greener_future }
 		
 		completion_reward = {
-			
+			add_war_support = 0.05
+			add_political_power = 50
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
+			SIA_mil_mech_combat_readiness_change = yes
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.035
+			}
+			unlock_decision_tooltip = SIA_utn_subsidize_agriculture
 		}
 	}
 	focus = {
@@ -480,6 +590,17 @@ focus_tree = {
 		prerequisite = { focus = SIA_toward_a_greener_future }
 		
 		completion_reward = {
+			unlock_decision_tooltip = SIA_utn_enhance_vocational_training
+			add_to_variable = { SIA_renewable_economy_drive_research_speed_factor = 0.075 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_production_factory_max_efficiency_factor = 0.1 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_hit_the_book
+				}
+			}
+			increase_education = yes
 			set_temp_variable = { academic_development_var_temp = 0.05 }
 			add_academic_development = yes
 		}
@@ -508,7 +629,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_toward_a_greener_future }
 		
 		completion_reward = {
-			
+			country_event = thai_prayut.13
 		}
 	}
 	focus = {
@@ -535,7 +656,33 @@ focus_tree = {
 		prerequisite = { focus = SIA_roll_the_carpets }
 		
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			unlock_decision_tooltip = SIA_generic_initiate_construction_program
+			custom_effect_tooltip = SIA_unlock_generic_fueling_the_engine_decision
+			set_country_flag = SIA_econ_activate_generic_construction
 		}
 	}
 	focus = {
@@ -562,7 +709,10 @@ focus_tree = {
 		prerequisite = { focus = SIA_roll_the_carpets }
 		
 		completion_reward = {
-			
+			increase_immigration = yes
+			unlock_decision_tooltip = SIA_generic_subsidize_area_infrastructure
+			custom_effect_tooltip = SIA_unlock_generic_fueling_the_engine_decision
+			set_country_flag = SIA_econ_activate_generic_infrastructure
 		}
 	}
 	focus = {
@@ -583,13 +733,16 @@ focus_tree = {
 				}
 				tooltip = SIA_utn_in_charge_tt
 			}
+			
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_against_chung_chart
 		prerequisite = { focus = SIA_against_chung_chart }
 		
 		completion_reward = {
-			
+			add_political_power = 75
+			set_temp_variable = { SIA_public_perception_var_temp = 0.1 }
+			SIA_mil_mech_public_perception_change = yes
 		}
 	}
 	focus = {
@@ -617,7 +770,20 @@ focus_tree = {
 		prerequisite = { focus = SIA_hit_the_book }
 		
 		completion_reward = {
-			
+			add_to_variable = { SIA_renewable_economy_drive_consumer_goods_factor = -0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_development_monthly = 0.015 }
+			add_to_variable = { SIA_renewable_economy_drive_production_factory_max_efficiency_factor = 0.075 }
+			add_to_variable = { SIA_renewable_economy_drive_production_speed_buildings_factor = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_expense_growth_factor = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_research_speed_factor = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_smart_government
+				}
+			}
+			set_temp_variable = { academic_development_var_temp = 0.1 }
+			add_academic_development = yes
 		}
 	}
 	focus = {
@@ -638,6 +804,9 @@ focus_tree = {
 				}
 				tooltip = SIA_utn_in_charge_tt
 			}
+			has_completed_focus = SIA_wonderful_thailand
+			has_completed_focus = SIA_show_of_forces
+			has_completed_focus = SIA_along_with_the_wind
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_hit_the_book
@@ -672,7 +841,24 @@ focus_tree = {
 		prerequisite = { focus = SIA_amazing_new_chapters }
 		
 		completion_reward = {
-			
+			add_to_variable = { SIA_renewable_economy_drive_global_building_slots_factor = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_farming_development_monthly = 0.015 }
+			add_to_variable = { SIA_renewable_economy_drive_poverty_development_monthly = 0.02 }
+			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.3 }
+			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.15 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_wonderful_thailand
+				}
+			}
+			set_temp_variable = { society_development_var_temp = 0.15 }
+			add_society_development = yes
+			set_temp_variable = {
+				var = income_var_temp
+				value = 64.481
+			}
+			add_income = yes
 		}
 	}
 	focus = {
@@ -700,7 +886,22 @@ focus_tree = {
 		prerequisite = { focus = SIA_amazing_new_chapters }
 		
 		completion_reward = {
+			set_temp_variable = { campaign_slot_total_var_temp = 1 }
+			add_total_campaign_slot = yes
+			add_to_variable = { SIA_renewable_economy_drive_production_speed_buildings_factor = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_consumer_goods_factor = -0.2 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_development_monthly = 0.02 }
+			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.25 }
+			add_to_variable = { SIA_renewable_economy_drive_global_building_slots_factor = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.125 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_along_with_the_wind
+				}
+			}
 			SIA_increase_economic_engine = yes
+			increase_industry = yes
 		}
 	}
 	focus = {
@@ -728,7 +929,15 @@ focus_tree = {
 		prerequisite = { focus = SIA_smart_government }
 		
 		completion_reward = {
-			
+			add_war_support = 0.15
+			army_experience = 30
+			navy_experience = 30
+			air_experience = 30
+			increase_military = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.15 }
+			SIA_mil_mech_combat_readiness_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = 0.125 }
+			SIA_mil_mech_public_perception_change = yes
 		}
 	}
 	focus = {
@@ -755,7 +964,18 @@ focus_tree = {
 		prerequisite = { focus = SIA_will_continue }
 		
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_farming_development_monthly = 0.02 }
+			add_to_variable = { SIA_renewable_economy_drive_local_resources_factor = 0.1 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_drive_farm_to_market
+				}
+			}
+			set_temp_variable = { farming_development_var_temp = 0.25 }
+			add_farming_development = yes
 		}
 	}
 	
@@ -786,6 +1006,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 30
+			
 		}
 	}
 	focus = {
@@ -839,7 +1060,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_friend_and_foes }
 		
 		completion_reward = {
-			
+			country_event = thai_prayut.14
 		}
 	}
 	focus = {
@@ -1161,7 +1382,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_rotten_streets }
 		
 		completion_reward = {
-			
+			custom_effect_tooltip = thai_events_55_tt
 		}
 	}
 	focus = {

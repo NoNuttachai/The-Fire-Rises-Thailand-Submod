@@ -248,7 +248,7 @@ shared_focus = {
 		
 		add_to_variable = { SIA_royal_army_of_thailand_land_doctrine_cost_factor_var = -0.1 }
 		add_to_variable = { SIA_royal_army_of_thailand_max_planning_factor_var = 0.05 }
-		
+		increase_training = yes
 		effect_tooltip = {
 			swap_ideas = {
 				remove_idea = SIA_royal_army_of_thailand_dummy

@@ -47,6 +47,7 @@ SIA_royal_army_of_thailand_dynamic_modifier = {
 	army_armor_attack_factor = SIA_royal_army_of_thailand_army_armor_attack_factor_factor_var
 	army_armor_defence_factor = SIA_royal_army_of_thailand_army_armor_defence_factor_factor_var
 	army_armor_speed_factor = SIA_royal_army_of_thailand_army_armor_speed_factor_factor_var
+	military_development_monthly = SIA_royal_army_of_thailand_military_development_monthly
 }
 SIA_royal_airforce_of_thailand_dynamic_modifier = {
 	icon = "GFX_ETH_chinese_investments"
@@ -72,3 +73,74 @@ SIA_royal_navy_of_thailand_dynamic_modifier = {
 	}
 	
 }
+SIA_flaming_youth_dynamic_modifier = {
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	party_popularity_stability_factor = SIA_flaming_youth_party_popularity_stability_var
+	stability_factor = SIA_flaming_youth_stability_factor_var
+}
+SIA_conservative_revolution_dynamic_modifier = { #UTN Political spirit
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	party_popularity_stability_factor = SIA_conservative_revolution_party_popularity_stability_factor_var
+	stability_factor = SIA_conservative_revolution_stability_factor_var
+	political_power_gain = SIA_conservative_revolution_political_power_gain_var
+	war_support_weekly = SIA_conservative_revolution_war_support_weekly_var
+	conscription_factor = SIA_conservative_revolution_conscription_factor_var
+	authoritarian_democrat_drift = SIA_conservative_revolution_authoritarian_democrat_drift_var
+	production_speed_buildings_factor = SIA_conservative_revolution_production_speed_buildings_factor_var
+	production_factory_efficiency_gain_factor = SIA_conservative_revolution_production_factory_efficiency_gain_factor_var
+	
+	income_growth_factor = SIA_conservative_revolution_income_growth_factor_var
+	inflation_monthly_factor = SIA_conservative_revolution_inflation_monthly_factor_var
+	business_value_factor = SIA_conservative_revolution_business_value_factor_var
+	academic_development_monthly = SIA_conservative_revolution_academic_development_monthly_var
+	society_development_monthly = SIA_conservative_revolution_society_development_monthly_var
+}
+SIA_renewable_economy_drive_dynamic_modifier = { #UTN Econ spirit
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	monthly_population = SIA_renewable_economy_drive_monthly_population
+	production_speed_buildings_factor = SIA_renewable_economy_drive_production_speed_buildings_factor
+	production_speed_energy_farm_factor = SIA_renewable_economy_drive_production_speed_energy_farm_factor
+	consumer_goods_factor = SIA_renewable_economy_drive_consumer_goods_factor
+	industrial_capacity_factory = SIA_renewable_economy_drive_industrial_capacity_factory
+	global_building_slots_factor = SIA_renewable_economy_drive_global_building_slots_factor
+	production_factory_max_efficiency_factor = SIA_renewable_economy_drive_production_factory_max_efficiency_factor
+	production_lack_of_resource_penalty_factor = SIA_renewable_economy_drive_production_lack_of_resource_penalty_factor
+	local_resources_factor = SIA_renewable_economy_drive_local_resources_factor
+	industrial_development_monthly = SIA_renewable_economy_drive_industrial_development_monthly
+	poverty_development_monthly = SIA_renewable_economy_drive_poverty_development_monthly
+	farming_development_monthly = SIA_renewable_economy_drive_farming_development_monthly
+	personal_expense_factor = SIA_renewable_economy_drive_personal_expense_factor
+	personal_value_factor = SIA_renewable_economy_drive_personal_value_factor
+	business_value_factor = SIA_renewable_economy_drive_business_value_factor
+	expense_growth_factor = SIA_renewable_economy_drive_expense_growth_factor
+	research_speed_factor = SIA_renewable_economy_drive_research_speed_factor
+}
+
+
+
+
+

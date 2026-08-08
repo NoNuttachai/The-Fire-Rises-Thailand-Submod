@@ -41,3 +41,43 @@ SIA_southern_fire_state_modifier = {
 	local_resources = -0.2
 	local_building_slots_factor = -0.3
 }
+
+
+#ECON STATE MODIFIERS
+SIA_construction_boost = { 
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	state_production_speed_buildings_factor = 0.1
+	state_production_speed_industrial_complex_factor = 0.1
+}
+SIA_infrastructure_subsidies = { 
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	local_building_slots_factor = 0.15
+}
+SIA_increased_resource_extraction = { 
+	icon = "GFX_ETH_chinese_investments"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	local_resources = 0.15
+}

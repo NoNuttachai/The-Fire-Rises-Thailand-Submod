@@ -1122,7 +1122,7 @@ ideas = {
 				society_development_monthly = 0.01
 			}
 		}
-		SIA_flaming_youth_1 = {
+		SIA_quelling_agitators = {
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
 		        ZZZ_blank_idea_trait
@@ -1133,11 +1133,13 @@ ideas = {
 			}
 				
 			modifier = {
-				stability_factor = -0.025
-				party_popularity_stability_factor = -0.03
+				stability_factor = -0.1
+				stability_weekly = 0.0025
+				society_development_monthly = 0.01
 			}
 		}
-		SIA_flaming_youth_2 = {
+		SIA_flaming_youth_dummy = {
+			name = SIA_flaming_youth_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
 		        ZZZ_blank_idea_trait
@@ -1148,11 +1150,11 @@ ideas = {
 			}
 				
 			modifier = {
-				party_popularity_stability_factor = -0.075
-				stability_factor = -0.075
+				
 			}
 		}
-		SIA_flaming_youth_3 = {
+		SIA_flaming_youth_plus_one = {
+			name = SIA_flaming_youth_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
 		        ZZZ_blank_idea_trait
@@ -1163,11 +1165,12 @@ ideas = {
 			}
 				
 			modifier = {
-				party_popularity_stability_factor = -0.15
-				stability_factor = -0.125
+				party_popularity_stability_factor = -0.01
+				stability_factor = -0.01
 			}
 		}
-		SIA_flaming_youth_4 = {
+		SIA_flaming_youth_plus_two = {
+			name = SIA_flaming_youth_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
 		        ZZZ_blank_idea_trait
@@ -1178,8 +1181,278 @@ ideas = {
 			}
 				
 			modifier = {
-				party_popularity_stability_factor = -0.3
+				party_popularity_stability_factor = -0.02
+				stability_factor = -0.02
+			}
+		}
+		SIA_flaming_youth_cambodia_loser = {
+			name = SIA_flaming_youth_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = -0.2
 				stability_factor = -0.2
+			}
+		}
+		SIA_flaming_youth_minus_one = {
+			name = SIA_flaming_youth_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = 0.01
+				stability_factor = 0.01
+			}
+		}
+		SIA_flaming_youth_minus_two = {
+			name = SIA_flaming_youth_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = 0.02
+				stability_factor = 0.02
+			}
+		}
+		SIA_conservative_revolution_dummy = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				
+			}
+		}
+		SIA_conservative_revolution_SIA_tonight_in_bangkok = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				political_power_gain = 0.05
+				authoritarian_democrat_drift = 0.03
+			}
+		}
+		SIA_conservative_revolution_debunking_lies = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = 0.03
+				war_support_weekly = 0.002
+			}
+		}
+		SIA_renewable_economy_drive_dummy = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				
+			}
+		}
+		SIA_renewable_economy_drive_ev_revolution = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.075
+				production_speed_energy_farm_factor = 0.1
+			}
+		}
+		SIA_renewable_economy_drive_ridin_with_the_dragon = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				industrial_capacity_factory = 0.075
+				industrial_development_monthly = 0.01
+				production_speed_buildings_factor = 0.075
+			}
+		}
+		SIA_renewable_economy_drive_toward_a_greener_future = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				farming_development_monthly = 0.01
+				monthly_population = 0.1
+				expense_growth_factor = 0.1
+			}
+		}
+		SIA_renewable_economy_drive_roll_the_carpets = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				business_value_factor = 0.075
+				monthly_population = 0.1
+			}
+		}
+		SIA_renewable_economy_drive_hit_the_book = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		SIA_renewable_economy_wonderful_thailand = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				global_building_slots_factor = 0.1
+				farming_development_monthly = 0.015
+				poverty_development_monthly = 0.02
+				monthly_population = 0.3
+				business_value_factor = 0.15
+				
+			}
+		}
+		SIA_renewable_economy_drive_along_with_the_wind = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.2
+				industrial_development_monthly = 0.02
+				business_value_factor = 0.25
+				global_building_slots_factor = 0.15
+				industrial_capacity_factory = 0.125
+			}
+		}
+		SIA_renewable_economy_drive_smart_government = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.075
+				industrial_development_monthly = 0.015
+				production_speed_buildings_factor = 0.1
+				expense_growth_factor = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		SIA_renewable_economy_drive_farm_to_market = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				monthly_population = 0.15
+				farming_development_monthly = 0.02
+				local_resources_factor = 0.1
 			}
 		}
 	}
@@ -1291,6 +1564,19 @@ ideas = {
 				
 			}
 		}
+		SIA_suchat_chomklin_hog = {
+			name = SIA_suchat_chomklin_char
+			picture = SIA_prawit_wongsuwan
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				
+			}
+		}
 	}
 	foreign_minister = {
 		SIA_don_pramudwinai_advisor = {
@@ -1390,7 +1676,7 @@ ideas = {
 			}
 			cost = 0
 			traits = {
-				int_balanced_cryptographer
+				int_decryptor
 			}
 		}
 		SIA_thanat_suwannanon_advisor = {
@@ -1404,7 +1690,7 @@ ideas = {
 			}
 			cost = 0
 			traits = {
-				int_balanced_cryptographer
+				int_resistance_crusher
 			}
 		}
 	}

@@ -34,8 +34,20 @@ defined_text = {
 			original_tag = SIA 
 			check_variable = { SIA_party_faction = 3 }
 			has_country_flag = ffp_dismantled
+			NOT = {
+				has_country_flag = mfp_dismantled
+			}
 		}
 		localization_key = SIA_parliament_detail_mfp_desc
+	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 3 }
+			has_country_flag = ffp_dismantled
+			has_country_flag = mfp_dismantled
+		}
+		localization_key = SIA_parliament_detail_pp_desc
 	}
 
 	text = {
@@ -122,8 +134,20 @@ defined_text = {
 			original_tag = SIA 
 			check_variable = { SIA_party_faction = 3 }
 			has_country_flag = ffp_dismantled
+			NOT = {
+				has_country_flag = mfp_dismantled
+			}
 		}
 		localization_key = SIA_parliament_mfp_full
+	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 3 }
+			has_country_flag = ffp_dismantled
+			has_country_flag = mfp_dismantled
+		}
+		localization_key = SIA_parliament_pp_full
 	}
 
 	text = {
@@ -366,8 +390,19 @@ defined_text = {
 		trigger = { 
 			check_variable = { SIA_government_leader = 3 }
 			has_country_flag = ffp_dismantled
+			NOT = {
+				has_country_flag = mfp_dismantled
+			}
 		}
 		localization_key = SIA_parliament_mfp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 3 }
+			has_country_flag = ffp_dismantled
+			has_country_flag = mfp_dismantled
+		}
+		localization_key = SIA_parliament_pp_full
 	}
 	text = {
 		trigger = { 
@@ -439,8 +474,19 @@ defined_text = {
 		trigger = { 
 			check_variable = { SIA_opposition_leader = 3 }
 			has_country_flag = ffp_dismantled
+			NOT = {
+				has_country_flag = mfp_dismantled
+			}
 		}
 		localization_key = SIA_parliament_mfp_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 3 }
+			has_country_flag = ffp_dismantled
+			has_country_flag = mfp_dismantled
+		}
+		localization_key = SIA_parliament_pp_full
 	}
 	text = {
 		trigger = { 
@@ -499,104 +545,6 @@ defined_text = {
 
 
 ### ELECTION CRAP ###
-defined_text = {
-	name = SIA_election_scrp_loc
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 1 }
-		}
-		localization_key = SIA_parliament_pprp_election
-	}
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 2 }
-		}
-		localization_key = SIA_parliament_ptp_election
-	}
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 3 }
-			NOT = {
-				has_country_flag = ffp_dismantled
-			}
-		}
-		localization_key = SIA_parliament_ffp_election
-	}
-	
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 3 }
-			has_country_flag = ffp_dismantled
-		}
-		localization_key = SIA_parliament_mfp_election
-	}
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 4 }
-		}
-		localization_key = SIA_parliament_dp_election
-	}
-	
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 5 }
-		}
-		localization_key = SIA_parliament_tlp_election
-	}
-	
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 6 }
-		}
-		localization_key = SIA_parliament_bjt_election
-	}
-
-	
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 7 }
-		}
-		localization_key = SIA_parliament_ctpp_election
-	}
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 8 }
-		}
-		localization_key = SIA_parliament_pcc_election
-	}
-
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 9 }
-		}
-		localization_key = SIA_parliament_minor_parties_election
-	}
-	
-	text = {
-		trigger = { 
-			original_tag = SIA 
-			check_variable = { SIA_party_election = 11 }
-		}
-		localization_key = SIA_parliament_utn_election
-	}
-}
-
 defined_text = {
 	name = SIA_election_votes_party_change
 	

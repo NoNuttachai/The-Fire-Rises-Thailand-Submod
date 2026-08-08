@@ -83,7 +83,6 @@ add_ideas = {
 	SIA_constitution_60
 	SIA_lack_of_the_political_legitimacy
 	SIA_economic_engine_3
-	SIA_flaming_youth_1
 	# Ministers
 	SIA_prayut_chan-o-cha_advisor
 	SIA_don_pramudwinai_advisor

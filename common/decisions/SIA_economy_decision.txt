@@ -1,22 +1,277 @@
 SIA_Economy_category = {
-	SIA_decision_that_appears_to_all = {
+	SIA_utn_promote_green_energy = {
 		icon = generic_crisis
-		priority = 10
+		
 		allowed = {
 			tag = SIA
 		}
 		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_toward_a_greener_future
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+		    society_development_monthly = 0.01
+		    factory_energy_consumption = -0.15
+		    monthly_population = 0.075
+			production_speed_energy_farm_factor = 0.075
+			expense_growth_factor = 0.15
+		}
+		cost = 75
+		days_remove = 60
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			set_temp_variable = { society_development_var_temp = 0.05 }
+			add_society_development = yes
+		}
+	}
+	SIA_utn_enhance_vocational_training = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_hit_the_book
+		}
+		
+		modifier = {
+			academic_development_monthly = 0.01
+			research_speed_factor = 0.075
+			industrial_capacity_factory = 0.1
+			production_factory_efficiency_gain_factor = 0.15
+			production_speed_buildings_factor = 0.1
+			expense_growth_factor = 0.15
+		}
+		cost = 75
+		days_remove = 60
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			set_temp_variable = { academic_development_var_temp = 0.05 }
+			add_academic_development = yes
+		}
+	}
+	SIA_utn_encourage_tourism = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_roll_the_carpets
+		}
+		
+		modifier = {
+			personal_value_factor = 0.1
+		    income_growth_factor = 0.125
+			business_value_factor = 0.1
+			stability_factor = -0.05
+			production_speed_office_park_factor = 0.1
+		    poverty_development_monthly = 0.01
+			expense_growth_factor = 0.1
+		}
+		cost = 75
+		days_remove = 60
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			set_temp_variable = { poverty_development_var_temp = 0.05 }
+			add_poverty_development = yes
+		}
+	}
+	SIA_utn_subsidize_agriculture = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_against_chung_chart
+		}
+		
+		modifier = {
+			stability_factor = 0.125
+			production_speed_infrastructure_factor = 0.125
+		    farmining_development_monthly = 0.01
+			production_lack_of_resource_penalty_factor = -0.1
+			local_resources_factor = 0.1
+			expense_growth_factor = 0.075
+		}
+		cost = 75
+		days_remove = 60
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			set_temp_variable = { farming_development_var_temp = 0.05 }
+			add_farming_development = yes
+		}
+	}
+	SIA_economy_area_focused_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
 			always = no
 		}
 		visible = {
+			always = yes
+		}
+	}
+	SIA_isan_revitalization_program = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
 			
 		}
-		activation = {
-			always = no
+		visible = {
+			check_variable = { SIA_map_var = 4 } 
+			has_completed_focus = SIA_beautiful_east
 		}
-		is_good = no
-		selectable_mission = no
+		cost = 100
+		days_remove = 200
+		remove_effect = {
+			891 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				increase_state_category = yes
+			}
+		}
+	}
+	SIA_generic_Phuket_Medicare_Program = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_map_var = 8 } 
+		}
+		cost = 50
 		complete_effect = {
+			724 = {
+			
+			}
+		}
+	}
+	SIA_generic_initiate_construction_program = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = SIA_econ_activate_generic_construction
+		}
+		cost = 50
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					SIA_selected_area = yes
+					NOT = { has_dynamic_modifier = { modifier = SIA_construction_boost } }
+				}
+				add_dynamic_modifier = { modifier = SIA_construction_boost days = 150 }
+			}
+		}
+	}
+	SIA_generic_subsidize_area_infrastructure = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			NOT = { infrastructure = 10 }
+		}
+		visible = {
+			has_country_flag = SIA_econ_activate_generic_infrastructure
+		}
+		cost = 50
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					SIA_selected_area = yes
+					NOT = { has_dynamic_modifier = { modifier = SIA_infrastructure_subsidies } }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_dynamic_modifier = { modifier = SIA_infrastructure_subsidies days = 150 }
+				
+			}
+		}
+	}
+	SIA_generic_increase_resource_extraction = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = SIA_econ_activate_generic_extraction
+		}
+		cost = 50
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					SIA_selected_area = yes
+					NOT = { has_dynamic_modifier = { modifier = SIA_increased_resource_extraction } }
+				}
+				add_dynamic_modifier = { modifier = SIA_increased_resource_extraction days = 150 }
+			}
 		}
 	}
 }

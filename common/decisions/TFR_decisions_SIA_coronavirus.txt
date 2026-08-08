@@ -96,6 +96,14 @@ SIA_coronavirus_category = {
 				}
 				clr_country_flag = SIA_coronavirus_ongoing
 			}
+			add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.01 }
+			add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.01 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_flaming_youth_dummy
+					add_idea = SIA_flaming_youth_minus_one
+				}
+			}
 		}
 	}
 	SIA_mask_distribution = {

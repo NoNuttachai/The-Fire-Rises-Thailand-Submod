@@ -83,6 +83,13 @@ guiTypes = {
 			pdx_tooltip = "SIA_WB_gui_tt"
 
 		}
-		
+		instantTextBoxType = {
+			name = "selected_area"
+			position = { x = 200 y = 100 }
+			font = "VCR02_14"
+			maxwidth = 460
+			text = SIA_selected_state
+			format = left
+		}
 	}
 }

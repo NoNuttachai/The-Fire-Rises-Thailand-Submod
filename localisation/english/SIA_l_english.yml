@@ -204,6 +204,9 @@
  SIA_period_of_recuperation: "Period of Recuperation"
  SIA_period_of_recuperation_desc: ""
  
+ SIA_quelling_agitators: "Quelling Agitators"
+ SIA_quelling_agitators_desc: ""
+ 
  SIA_khon_la_khrueng: "Khon La Khrueng"
  SIA_khon_la_khrueng_desc: ""
  
@@ -301,10 +304,101 @@
  SIA_rotten_streets: "Rotten Streets"
  SIA_our_opposition: "Our Opposition"
  SIA_debunking_lies: "Debunking Lies"
+ SIA_ev_revolution: "EV Revolution"
+ SIA_ev_revolution_desc: ""
  
+ SIA_ridin_with_the_dragon: "Ridin With The Dragon"
+ SIA_ridin_with_the_dragon_desc: ""
  
+ SIA_toward_a_greener_future: "Toward A Greener Future"
+ SIA_toward_a_greener_future_desc: ""
  
+ SIA_troubled_south: "Troubled South"
+ SIA_troubled_south_desc: ""
  
+ SIA_roll_the_carpets: "Roll The Carpets"
+ SIA_roll_the_carpets_desc: ""
+ 
+ SIA_beautiful_east: "Beautiful East"
+ SIA_beautiful_east_desc: ""
+ 
+ SIA_against_chung_chart: "Against Chung Chart"
+ SIA_against_chung_chart_desc: ""
+ 
+ SIA_hit_the_book: "Hit The Book"
+ SIA_hit_the_book_desc: ""
+ 
+ SIA_value_over_volume: "Value Over Volume"
+ SIA_value_over_volume_desc: ""
+ 
+ SIA_amazing_new_chapters: "Amazing New Chapters"
+ SIA_amazing_new_chapters_desc: ""
+ 
+ SIA_shore_up_supports: "Shore Up Supports"
+ SIA_shore_up_supports_desc: ""
+ 
+ SIA_smart_government: "Smart Government"
+ SIA_smart_government_desc: ""
+ 
+ SIA_will_continue: "Will Continue"
+ SIA_will_continue_desc: ""
+ 
+ SIA_wonderful_thailand: "Wonderful Thailand"
+ SIA_wonderful_thailand_desc: ""
+ 
+ SIA_along_with_the_wind: "Along With The Wind"
+ SIA_along_with_the_wind_desc: ""
+ 
+ SIA_show_of_forces: "Show Of Forces"
+ SIA_show_of_forces_desc: ""
+ 
+ SIA_farm_to_market: "Farm To Market"
+ SIA_farm_to_market_desc: ""
+ 
+ SIA_friend_and_foes: "Friend And Foes"
+ SIA_friend_and_foes_desc: ""
+ 
+ SIA_rekindling_spirit: "Rekindling Spirit"
+ SIA_rekindling_spirit_desc: ""
+ 
+ SIA_heir_to_the_party: "Heir To The Party"
+ SIA_heir_to_the_party_desc: ""
+ 
+ SIA_sizable_lots: "Sizable Lots"
+ SIA_sizable_lots_desc: ""
+ 
+ SIA_old_friendship: "Old Friendship"
+ SIA_old_friendship_desc: ""
+ 
+ SIA_the_general_and_his_right_hand: "The General And His Right Hand"
+ SIA_the_general_and_his_right_hand_desc: ""
+ 
+ SIA_the_king_in_another_castle: "The King In Another Castle"
+ SIA_the_king_in_another_castle_desc: ""
+ 
+ SIA_court_the_barons: "Court The Barons"
+ SIA_court_the_barons_desc: ""
+ 
+ SIA_next_time: "Next Time"
+ SIA_next_time_desc: ""
+ 
+ SIA_their_lieutenant: "Their Lieutenant"
+ SIA_their_lieutenant_desc: ""
+ 
+ SIA_respectful_pawns: "Respectful Pawns"
+ SIA_respectful_pawns_desc: ""
+ 
+ SIA_straight_from_the_pocket: "Straight From The Pocket"
+ SIA_straight_from_the_pocket_desc: ""
+ 
+ SIA_make_a_show: "Make A Show"
+ SIA_make_a_show_desc: ""
+ 
+ SIA_woe: "Woe"
+ SIA_woe_desc: ""
+ 
+ SIA_fallen_flat: "Fallen Flat"
+ SIA_fallen_flat_desc: ""
  
  
  SIA_farewell: "Farewell"
@@ -351,6 +445,7 @@
  SIA_anutin_charnvirakul_char: "Anutin Charnvirakul"
  SIA_yodchanan_wongsawat_char: "Yodchanan Wongsawat"
  SIA_pirapan_salirathavibhaga_char: "Pirapan Salirathavibhaga"
+ SIA_suchat_chomklin_char: "Suchat Chomklin"
 
  SIA_adung_phan_iam_char: "Adung Phan-iam"
  SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
@@ -415,12 +510,9 @@
  SIA_SMILE_Strategy: "SMILE Initiative"
  SIA_We_Travel_Together: "We Travel Together"
  SIA_recuperation: "Grace Period"
- SIA_flaming_youth_1: "Flaming Youth - §LCalm§! "
- SIA_flaming_youth_1_desc: "The youth of Thailand are becoming ever more politically active as the years go by. \n\nIssues still remain that affect them but for now, they are content with the status quo and they continue to live their ordinary lives."
- SIA_flaming_youth_2: "Flaming Youth - §gConcerning§! "
- SIA_flaming_youth_2_desc: "Recent economic hardships and the ongoing crisis has made the lives of the youth more harder, thousands are voicing their concerns in online spaces and only the occasional gatherings are observed."
- SIA_flaming_youth_3: "Flaming Youth - §OAlarming§! "
- SIA_flaming_youth_4: "Flaming Youth - §RCrisis§! "
+ SIA_flaming_youth_dynamic_modifier: "Leftist Anti-Establishment Opposition"
+ SIA_conservative_revolution_dynamic_modifier: "Conservative Revolution"
+ SIA_renewable_economy_drive_dynamic_modifier: "Renewable Economy Drive"
  SIA_military_mech_dynamic_modifier: "Royal Army of Thailand"
  SIA_royal_army_of_thailand_dynamic_modifier: "Royal Army of Thailand"
  SIA_royal_army_of_thailand_dynamic_modifier_desc: "The Royal Army of Thailand serves as the first and foremost protectors of our country."
@@ -678,6 +770,11 @@
  thai_events.52.d: "Hundreds of trucks from the Federation of Thai Land Transport, which represents more than 400,000 truck operators nationwide, staged a convoy protest against the government of Prayut Chan-o-cha and the Ministry of Energy over their failure to address soaring fuel prices and the economic impact of the government's COVID-19 lockdown measures on truckers' incomes and livelihoods. Police were mobilized to ensure road safety and minimize public disruption.\n\nThe federation's president said the demonstration was intended to highlight the impact of soaring fuel prices on the transport industry following the Saudi Arabian conflict, which disrupted global oil markets. He said the federation had already submitted proposals to the government and warned that, if its demands continued to be ignored, it would meet to discuss escalating its campaign.\n\nHe warned that if the government failed to take meaningful action to provide relief and improve conditions for the transport sector, the federation would organize a nationwide truckers' strike. In an interview with the media, he warned that a halt in freight transport would severely disrupt fuel distribution and supply chains, saying..."
  thai_events.52.a: "Watch what happens if the trucks stop running."
  
+ thai_events.55.t: "Constitutional Court Dissolves Move Forward Party"
+ thai_events.55.d: "womp womp"
+ thai_events.55.a: "okay"
+ thai_events_55_tt: "The £GFX_orange_party_2 §OMove Forward Party§! will dissolve, its successor the §OPeople's Party§! will take its position"
+ 
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
  thai_elections.1.a: "new gov"
@@ -755,6 +852,26 @@
  thai_prayut.9.t: "General Prayut Steps Down"
  thai_prayut.9.d: "He steps down 1 set of stairs"
  thai_prayut.9.a: "Wow, who is this guy? Pirapan? good enough, his name starts with P"
+ 
+ thai_prayut.10.t: "Youtube: Opposition Lies Gets Exposed!"
+ thai_prayut.10.d: ""
+ thai_prayut.10.a: "Like, Share, and Subscribe!"
+ 
+ thai_prayut.11.t: "The Ever Present Opposition"
+ thai_prayut.11.d: ""
+ thai_prayut.11.a: "Of course they are"
+ 
+ thai_prayut.12.t: "An Awkward Reunion"
+ thai_prayut.12.d: "PPRP actually coalition with UTN and stuff"
+ thai_prayut.12.a: "I guess all is forgiven?"
+ 
+ thai_prayut.13.t: "Bhumjaithai Applauds Regulations For Cannabis"
+ thai_prayut.13.d: ""
+ thai_prayut.13.a: ""
+ 
+ thai_prayut.14.t: "Just Who Is Pirapan Salirathavibhaga?"
+ thai_prayut.14.d: ""
+ thai_prayut.14.a: ""
  
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
@@ -864,6 +981,7 @@
  SIA_parliament_ptp_full: "£GFX_phua_thai §RPheu Thai Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ptp_seats_var|0]§! Seats"
  SIA_parliament_ffp_full: "£GFX_orange_party_1 §OFuture Forward Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
  SIA_parliament_mfp_full: "£GFX_orange_party_2 §OMove Forward Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
+ SIA_parliament_pp_full: "£GFX_orange_party_2 §OPeople's Party§! [SIA_check_coalition_leader] \n§Y[?SIA_ffp_seats_var|0]§! Seats"
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§! [SIA_check_coalition_leader] \n§Y[?SIA_tlp_seats_var|0]§! Seats"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pcc_seats_var|0]§! Seats"
  SIA_parliament_utn_full: "£GFX_united_thai_nation §PUnited Thai Nation Party§! [SIA_check_coalition_leader] \n§Y[?SIA_utn_seats_var|0]§! Seats"
@@ -882,6 +1000,7 @@
 
  SIA_parliament_detail_ffp_desc: "£GFX_orange_party_1 §YFuture Forward Party§! (Phak Anakhot Mai)\n\n\n\n\n\n£GFX_SIA_intro_FFP\n\n\n\n\n\n\n\n§YParty Leader:§! Thanathorn Juangroongruangkit\n\n§YFuture Forward Party§! is a left wing Thai political party founded by §YThanathorn Juangroongruangkit§!, vice president of Thai Summit Group, Thailand's largest auto parts manufacturer, and §YPiyabutr Saengkanokkul§!, a Marxist legal scholar. The party has strong support among liberals, progressives, and leftists especially Thai youth who have grown disillusioned with the right-wing establishment.\n\nThe party campaigns on §Ydemocratic reform, opposition to military intervention in politics, the development of a welfare state to reduce social inequality, progressive social values, and the abolition of lèse-majesté laws (Section 112).§!\n\n§RThe party is currently facing charges before the Constitutional Court over alleged violations of election laws, including accusations that it sought to undermine the monarchy and breached regulations concerning political donations. If found guilty, the party could face dissolution. Supporters of the party argue that the case is politically motivated and intended by the government to suppress the opposition.§!"
  SIA_parliament_detail_mfp_desc: "£GFX_orange_party_2 §YMove Forward Party§! \n\n\n\n\n\n£GFX_SIA_intro_MFP\n\n\n\n\n\n\n\n§YParty Leader:§! Pita Limjaroenrat\n\nThe Move Forward Party (MFP) is the successor to the progressive Future Forward Party following its dissolution by the Constitutional Court in 2020. Originally founded in 2014 as the Ruam Pattana Chart Thai Party, it was renamed the Move Forward Party on 21 February 2020 and became the de facto continuation of Future Forward.\n\nFollowing Future Forward's dissolution, the group elected Pita as its party leader and Viroj Lakkhanaadisorn as its spokesperson, while also unveiling a new logo closely resembling that of Future Forward.\n\nThe party largely inherited Future Forward's ideology, advocating democratic reforms, opposition to military influence in politics, the expansion of the welfare state to reduce social inequality, progressive social policies, and reform of Thailand's lèse-majesté law (Section 112). The party quickly emerged as the primary opposition force representing the former Future Forward movement and its supporters."
+ SIA_parliament_detail_pp_desc: "£GFX_orange_party_2 §YPeople's Party§! \n\n\n\n\n\n£GFX_SIA_intro_MFP\n\n\n\n\n\n\n\n§YParty Leader:§! Natthaphong Ruengpanyawut\n\nWe are not dead, 3rd times the charm."
 
  SIA_parliament_detail_dp_desc: "£GFX_democrat §YDemocrat Party§! (Phak Prachathipat)\n\n\n\n\n\n£GFX_SIA_intro_DP\n\n\n\n\n\n\n\n§YParty Leader:§! Jurin Laksanawisit\n\n§YThe Democrat Party§! is Thailand's oldest active political party, founded in 1946. §YIt has long positioned itself as a defender of conservatism, constitutional monarchism, and liberal democratic values.§! Historically, the party has drawn much of its electoral support from southern Thailand and Bangkok. Several of Thailand's prime ministers have emerged from the party, including §YKhuang Aphaiwong, Seni Pramoj, Chuan Leekpai,§! and §YAbhisit Vejjajiva.§! \n\nDespite its historical prominence, the party's influence has declined significantly in recent elections, especially in Bangkok, where its support base has rapidly eroded.\n\nIn the 2019 general election, the party won 53 seats in parliament and later joined the Palang Pracharath-led coalition government.\nThe decision proved controversial and cost the party support among many of its more liberal and anti-junta supporters."
 
@@ -1267,8 +1386,22 @@
  
  SIA_saudi_civil_war_oil_tt: "§GIn exchange for aid, we will be provided oil§!"
  
- SIA_Economy_category: "Fuelling the Engine"
- SIA_Economy_category_desc: "The Thai economy is so badddddddddddddddd im not even kidding we're so doomed, disaster incoming, first fifth world country. Everyone will now run to cambodia Hun Sen Marines"
+ SIA_Economy_category: "Fueling the Engine"
+ SIA_Economy_category_desc: "The Thai economy kinda needs upgrading"
+ SIA_utn_promote_green_energy: "£GFX_united_thai_nation §BUTN§!: Promote Green Energy"
+ SIA_utn_enhance_vocational_training: "£GFX_united_thai_nation §BUTN§!: Enhance Vocational Training"
+ SIA_utn_encourage_tourism: "£GFX_united_thai_nation §BUTN§!: Encourage Tourism"
+ SIA_utn_subsidize_agriculture: "£GFX_united_thai_nation §BUTN§!: Subsidize Agriculture"
+ 
+ SIA_economy_area_focused_decisions: "                          §YAREA FOCUSED§! §YDECISIONS§!             "
+ SIA_generic_initiate_construction_program: "§YGENERIC§!: Initiate Construction Program"
+ SIA_isan_revitalization_program: "§nEastern Thailand§!: Isan Revitalization Program"
+ SIA_generic_Phuket_Medicare_Program: "§YPhuket§!: Medicare Program"
+ SIA_generic_subsidize_area_infrastructure: "§YGENERIC§!: Subsidize Area Infrastructure"
+ SIA_generic_increase_resource_extraction: "§YGENERIC§!: Increase Extraction Rates"
+ 
+ SIA_unlock_generic_fueling_the_engine_decision: "§gUnlocks above §Ygeneric decision§! for the §YFueling the Engine§! mechanic§!"
+ SIA_unlock_isan_decisions_tt: "Decision will unlock in the §nEastern Thailand§! Area in the §YFueling the Engine§! mechanic"
  
  SIA_military_reformation: "Royal Army of Thailand"
  SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our army§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the army in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n\n§RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n§gEffects§!:\n$war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n$battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
@@ -1278,6 +1411,14 @@
  SIA_military_resources_decisions: "                          §GMILITARY RESOURCES§! §YDECISIONS§!             "
  SIA_combat_readiness_decisions: "                          §RCOMBAT READINESS§! §YDECISIONS§!             "
  SIA_public_perception_decisions: "                         §YPUBLIC PERCEPTION DECISIONS§!             "
+ 
+ SIA_utn_party_mech: "£GFX_united_thai_nation UTN Party Machine"
+ SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER]"
+ SIA_utn_banner_prayut: "£GFX_SIA_utn_party_mech_prayut\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §BUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nPast those loud praises for Prayut is the intricate political scheming in the background, within those closed doors will decide how the UTN will become and whether or not §Ran ambitious figure§! tries to secure control over the party for themselves.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
+ SIA_utn_banner_pirapan: "£GFX_SIA_utn_party_mech_pirapan\n\n\n\n\n\n\n\nFresh from §YGeneral Prayut's§! stepping down as §YPrime Minister§! in 2025, the £GFX_united_thai_nation §BUTN§! has followed the will of §YPrayut§! and has chosen §BPirapan Salirathavibhaga§! as the next Prime Minister.\n\nNow, §BPirapan§! must §Gearn the trust§! and §Gsupport§! from within the party if he ever wants to win the §Ynext elections§!"
+ SIA_utn_banner_pirapan2: "£GFX_SIA_party_mech_pirapan2\n\n\n\n\n\n\n\nAfter winning the §Y2027 Elections§!, §BPirapan§! has managed to rally the £GFX_united_thai_nation §BUTN§! behind him as the designated successor."
+ SIA_utn_banner_suchat: "£GFX_SIA_utn_party_mech_suchat\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchat Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchat§! will now lead the way and guide the £GFX_united_thai_nation §BUTN§! forward and will not repeat the same mistakes as his predecessor"
+ 
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
  SIA_cambodia_war_category_desc: "Thailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
@@ -1386,14 +1527,15 @@
  SIA_bhum_path_tt: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nDread it, run from it, Anutin is destined."
 
  #Economic gui 
+ SIA_selected_state: "Selected Area: [SIA_selected_econ_area]"
  SIA_BK_gui_tt: "§GBangkok Province§!"
  SIA_CM_gui_tt: "§CChiang Mai Province§!"
- SIA_CB_gui_tt: "§R Chonburi Province (Removed in next rendition)§!"
+ SIA_CB_gui_tt: "§RChonburi Province§!"
  SIA_IS_gui_tt: "§nEastern Thailand§!"
  SIA_NB_gui_tt: "§PCentral Thailand§!"
  SIA_PT_gui_tt: "§7Pattani Province§!"
  SIA_ST1_gui_tt: "§YKek Province 1 (Merge with ST2)§!"
- SIA_ST2_gui_tt: "§OKek Province 2 (Merge with ST1)§!"
+ SIA_ST2_gui_tt: "§OPak Tai§!"
  SIA_WB_gui_tt: "§VWestern Thailand§!"
 
  #decision tooltip

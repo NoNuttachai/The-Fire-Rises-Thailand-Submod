@@ -101,6 +101,14 @@ focus_tree = {
 				value = -0.1
 			}
 			add_poverty_development = yes
+			add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.02 }
+			add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.02 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_flaming_youth_dummy
+					add_idea = SIA_flaming_youth_plus_two
+				}
+			}
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -412,6 +420,14 @@ focus_tree = {
 				value = 0.075
 			}
 			add_poverty_development = yes
+			add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.01 }
+			add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.01 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_flaming_youth_dummy
+					add_idea = SIA_flaming_youth_minus_one
+				}
+			}
 		}
 	}
 	
@@ -571,10 +587,10 @@ focus_tree = {
 				value = 76.427
 			}
 			add_income = yes
-                        add_timed_idea = {
-                                   idea = SIA_recuperation
-                                   days = 90
-                        }
+			add_timed_idea = {
+					   idea = SIA_recuperation
+					   days = 90
+			}
 		}
 	}
 	focus = {
