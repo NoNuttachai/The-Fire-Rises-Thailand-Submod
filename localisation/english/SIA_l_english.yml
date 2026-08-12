@@ -38,7 +38,7 @@
  
  ###National Focuses###
  SIA_future_forward_on_trial: "Future Forward on Trial"
- SIA_future_forward_on_trial_desc: ""
+ SIA_future_forward_on_trial_desc: "The Future Forward Party is a progressive political party founded by law professor and Marxist Piyabutr Saengkanokkul and businessman Thanathorn Juangroongruangkit. Its platform centered on amending the 2017 Constitution of Thailand and controversially abolishing the lèse-majesté law, while maintaining a hardline opposition to the government of Prime Minister General Prayut Chan-o-cha.\n\nThe party faced intense scrutiny from legal petitions seeking its dissolution, alleging that it is conspiring to overthrow Thailand’s constitutional monarchy. The party also faced allegations that a major financial loan provided by Thanathorn constituted an illegal act of political influence under the Organic Act on Political Parties. The Constitutional Court will be ultimately responsible for issuing the final judgment on the cases."
  
  SIA_raise_our_three_fingers: "Raise our Three Fingers"
  SIA_raise_our_three_fingers_desc: "The government's decision to dissolve §Othe Future Forward Party§! opened the eyes of an entire generation of young Thais to the reality of authoritarian rule and a political system stacked against them. Unlike previous generations, they are not willing to accept things simply because "that is the way they have always been." These young people are standing up to challenge the status quo and demand real change. They will §Omove forward§! with the §Opeople§! in the pursuit of democracy. Our voices cannot be ignored, and our three fingers will be raised!."
@@ -112,7 +112,7 @@
  SIA_utilized_the_media_desc: ""
  
  SIA_persecute_the_agitators: "Persecute the Agitators"
- SIA_persecute_the_agitators_desc: ""
+ SIA_persecute_the_agitators_desc: "The key Three Hooves agitators are riling up and brainwashing the youth to riot, they are threatening to destroy the three pillars of Thai society. They are propagandizing Communism and Republicanism. We must put an end to these acts of evil by utilizing the law to persecute them."
  
  SIA_deal_with_the_oil_crisis: "Deal with the Oil Crisis"
  SIA_deal_with_the_oil_crisis_desc: ""
@@ -495,13 +495,25 @@
  SIA_iranian_oil_deal_idea: "Iranian Oil Deal"
  SIA_truck_protests: "Truck Protests"
  SIA_thai_cambodia_conflict: "Thai-Cambodian Conflict"
+ SIA_thai_cambodia_conflict_desc: "\n\n\n\n\n£GFX_SIA_cambodia_war\n\n\n\n\n\n"
+ 
  SIA_national_humiliation: "National Humiliation"
  SIA_thai_military_occupation: "Thai Military Occupation"
  SIA_economic_engine_1: "Catastrophic Engine"
+ SIA_economic_engine_1_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
+ 
  SIA_economic_engine_2: "Aching Engine"
+ SIA_economic_engine_2_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
+ 
  SIA_economic_engine_3: "Stagnating Engine"
+ SIA_economic_engine_3_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
+ 
  SIA_economic_engine_4: "Revitalizing Engine"
+ SIA_economic_engine_4_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
+ 
  SIA_economic_engine_5: "Roaring Engine"
+ SIA_economic_engine_5_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
+ 
  SIA_japanese_cooperation: "Japanese-Thai Cooperation"
  SIA_support_our_smes_idea: "Supporting Our SMEs"
  SIA_khon_la_khrueng_idea: "Khon La Khrueng Program"
@@ -511,8 +523,13 @@
  SIA_We_Travel_Together: "We Travel Together"
  SIA_recuperation: "Grace Period"
  SIA_flaming_youth_dynamic_modifier: "Leftist Anti-Establishment Opposition"
+ 
  SIA_conservative_revolution_dynamic_modifier: "Conservative Revolution"
+ SIA_conservative_revolution_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_utn_conservative_revolution\n\n\n\n\n\n"
+ 
  SIA_renewable_economy_drive_dynamic_modifier: "Renewable Economy Drive"
+ SIA_renewable_economy_drive_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_utn_renewable_drive\n\n\n\n\n\n"
+ 
  SIA_military_mech_dynamic_modifier: "Royal Army of Thailand"
  SIA_royal_army_of_thailand_dynamic_modifier: "Royal Army of Thailand"
  SIA_royal_army_of_thailand_dynamic_modifier_desc: "The Royal Army of Thailand serves as the first and foremost protectors of our country."
@@ -606,7 +623,7 @@
  thai_events.20.d: "On the evening of November 2, people in Thailand who had failed No Nut November found themselves unable to access Pornhub. When entering the site, they were met with a white page displaying a message stating, "This content has been suspended due to its illegal acts in accordance with the Computer-related Crime Act 2007 (B.E. 2550) and additional amendments and/or the Gambling Act 1935 (B.E. 2478) and additional amendments" along with the seal of the Ministry of Digital Economy and Society. \n\nThe Ministry of Digital Economy and Society justified the ban on Pornhub by citing its illegality and complaints that it disseminated obscene content, noting that a court order had been issued to suspend access to more than 191 Pornhub URLs. \n\nThe ban has met with various reactions on social media. On Twitter, Thai users trended the hashtag #SavePornhub. Many joked that they could easily bypass the ban with a VPN, that the decision would motivate gooners to join anti-government protests, that the government's ban was actually an attempt to block a scandalous video of £GFX_redacted  on the site, etc. \n\nSome have took to staging demonstrations outside the Ministry of Digital Economy and Society, holding signs (such as "DON'T HURT LONELY FOLKS BY MAKING IT INACCESSIBLE #SavePornhub" in the image below), protesting the government's decision under heavy police security."
  thai_events.20.a: " "LUAK CHUCK WAOW" - Prayut Chan-o-cha " #Stop Masterbating
  
- thai_events.21.t: "Songkran 2020 Suspended Over Pandemic Concerns"
+ thai_events.21.t: "Songkran [GetYear] Suspended Over Pandemic Concerns"
  thai_events.21.d: "Songkran is a national festival of Thailand and a major cultural celebration that marks the beginning of the traditional solar year, characterized by people throwing water at each other amidst much fun and laughter. However, the government announced that the annual nationwide Songkran celebrations for the year 2020 would be cancelled and moved to a compensatory holiday period in July. This marked the first time in Thailand that many Songkran activities had been cancelled, as fears over the spread of the COVID-19 pandemic continued to escalate across Southeast Asia.\n\nThe public was requested to refrain from water splashing, all types of Songkran celebrations, consuming alcohol, traveling back to their hometowns, participating in large gatherings or traveling to areas at high risk of disease transmission, performing the traditional water-pouring ceremony to bless elders, and to maintain social distancing during all activities.\n\nPrime Minister General Prayut Chan-o-cha declared emergency measures following a sharp increase in confirmed infections linked to crowded entertainment districts and international tourism. Authorities warned that the traditional water festival, known for massive street gatherings, religious ceremonies, and cross-country travel, could become a "super-spreader event" capable of overwhelming the nation's healthcare system.\nCitizens expressed mixed reactions online. While some supported the government's efforts to contain the virus, others feared the loss of cultural identity and the economic devastation caused by prolonged restrictions."
  thai_events.21.a: "Safety is needed above all"
  
@@ -775,6 +792,22 @@
  thai_events.55.a: "okay"
  thai_events_55_tt: "The £GFX_orange_party_2 §OMove Forward Party§! will dissolve, its successor the §OPeople's Party§! will take its position"
  
+ thai_events.56.t: "[GetYear] Songkran"
+ thai_events.56.d: ""
+ thai_events.56.a: ""
+ 
+ thai_events.57.t: "[GetYear] King Rama X Birthday"
+ thai_events.57.d: ""
+ thai_events.57.a: ""
+ 
+ thai_events.58.t: "[GetYear] Constitutional Day"
+ thai_events.58.d: ""
+ thai_events.58.a: ""
+ 
+ thai_events.59.t: "Thailand Now Covid Free"
+ thai_events.59.d: ""
+ thai_events.59.a: ""
+ 
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
  thai_elections.1.a: "new gov"
@@ -903,6 +936,10 @@
  thai_cambodia_tension.7.t: "war.... lost sad"
  thai_cambodia_tension.7.d: "I afked"
  thai_cambodia_tension.7.a: "death to thailand parliament"
+ 
+ thai_cambodia_tension.8.t: "A Peace That Satisfies No One"
+ thai_cambodia_tension.8.d: ""
+ thai_cambodia_tension.8.a: "stop being so slow"
  
  thai_shared_events.1.t: "Situation of the Royal Thai Airforce"
  thai_shared_events.1.d: "Text should be here"
@@ -1404,7 +1441,7 @@
  SIA_unlock_isan_decisions_tt: "Decision will unlock in the §nEastern Thailand§! Area in the §YFueling the Engine§! mechanic"
  
  SIA_military_reformation: "Royal Army of Thailand"
- SIA_military_reformation_desc: "With the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our army§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the army in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n\n§RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n§gEffects§!:\n$war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n$battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
+ SIA_military_reformation_desc: "\n\n\n\n\n£GFX_SIA_royal_thai_army\n\n\n\n\n\n\n\nWith the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the army grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our army§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the army in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n\n§RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n§gEffects§!:\n$war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n$MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n$battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
  SIA_military_resource_change_tt: "§GMilitary Resources§! will change by [?SIA_military_resource_var_temp|-+0]"
  SIA_combat_readiness_change_tt: "§RCombat Readiness§! will change by [?SIA_combat_readiness_var_temp|-+2%]"
  SIA_public_perception_change_tt: "§YPublic Perception§! will change by [?SIA_public_perception_var_temp|-+2%]"       
@@ -1425,6 +1462,9 @@
  SIA_cambodia_war_phase_1: "§OBorder Skirmishes§!"
  SIA_cambodia_war_phase_2: "§GMediation§!\n\n@JAP Japanese §gLean§!: [?SIA_thai_cambodia_jap_lean|%0]\n@PRC §RChinese§! §gLean§!: [?SIA_thai_cambodia_prc_lean|%0]"
  SIA_cambodia_war_phase_3: "§RFull-On War§!"
+ 
+ SIA_shinawatra_call_uncle_hun: "£GFX_phua_thai §RShinawatra§!: Ring Up Uncle Hun"
+ SIA_shinawatra_call_uncle_hun_desc: "§YPM Paetongtarn§!: "Today, I want to discuss about our border dispute. I understand that both Mr. Hun Sen and I myself want both of our countries to be at peace.\n\nI don’t want §Runcle§! to listen to those who are in the opposite party from us. This is because when you listen to those people from the opposite side like the Commander of the 2nd Army Area, since they are from the opposite side, whatever they said may disturb you or may even made you angry when you listen to them.""
  
  SIA_change_thai_cambodia_tensions_tt: "§YThai-Cambodian§! §RTensions§! will change by [?SIA_thai_cambodia_tensions_temp|+-0%]"
  
@@ -1522,9 +1562,9 @@
  
  #Bookmark
  SIA_utn_path_tt: "£GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nDone that, still doing, and will continue to do.\nTrust in General Prayut to lead Thailand forward."
- SIA_mfp_path_tt: "£GFX_orange_party_2 §OMove Forward Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nFeaturing even more failures to form government majority."
- SIA_ptp_path_tt: "£GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nThis is an otl reference"
- SIA_bhum_path_tt: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nDread it, run from it, Anutin is destined."
+ SIA_mfp_path_tt: "£GFX_orange_party_2 §OMove Forward Party§!\n\n\n\n\n£GFX_mfp_path\n\n\n\n\n\nFeaturing even more failures to form government majority."
+ SIA_ptp_path_tt: "£GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_ptp_path\n\n\n\n\n\nThis is an otl reference"
+ SIA_bhum_path_tt: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n\n\n\n\n£GFX_bhum_path\n\n\n\n\n\nDread it, run from it, Anutin is destined."
 
  #Economic gui 
  SIA_selected_state: "Selected Area: [SIA_selected_econ_area]"

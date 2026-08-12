@@ -130,7 +130,7 @@ SIA_cambodia_war_category = {
 		selectable_mission = no
 		days_mission_timeout = 120
 		timeout_effect = {
-			country_event = thai_cambodia_tension.7
+			country_event = thai_cambodia_tension.8
 		}
 	}
 	SIA_cambodia_demonstrates_their_case = {
@@ -193,6 +193,15 @@ SIA_cambodia_war_category = {
 		complete_effect = {
 			set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.05 }
 			SIA_change_thai_cambodia_tensions = yes
+		}
+	}
+	SIA_shinawatra_call_uncle_hun = {
+		visible = {
+			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
+		}
+		cost = 30
+		complete_effect = {
+			
 		}
 	}
 	SIA_push_for_peace = {

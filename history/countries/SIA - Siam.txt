@@ -288,23 +288,6 @@ add_ideas = {
 }
 
 #Events
-country_event = {
-	id = thailand.1
-	days = 8
-}
-country_event = {
-	id = thailand.2
-	days = 51
-}
-country_event = {
-	id = thailand.4
-	days = 90
-}
-country_event = {
-	id = thailand.18
-	days = 1
-}
-
 set_party_name = {
 	ideology = totalitarian_socialist
 	long_name = SIA_cpt_long
@@ -364,7 +347,7 @@ set_party_name = {
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = 2019.3.24
-	election_frequency = 48
+	election_frequency = 50
 	elections_allowed = yes
 }
 

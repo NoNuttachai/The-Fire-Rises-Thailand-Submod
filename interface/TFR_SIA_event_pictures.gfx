@@ -166,15 +166,199 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_prayut_prawit_reconciliation"
-		texturefile = "gfx/event_pictures/prayut_prawit_reconciliation.png"
+		texturefile = "gfx/event_pictures/report_prayut_prawit_reconciliation.png"
 	}
 	spriteType = {
 		name = "GFX_report_prayut_pirapan"
-		texturefile = "gfx/event_pictures/prayut_pirapan.png"
+		texturefile = "gfx/event_pictures/report_prayut_and_pirapan.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_skirmish_lost"
+		texturefile = "gfx/event_pictures/report_cambodia_skirmish_lost.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_skirmish_repelled"
+		texturefile = "gfx/event_pictures/report_cambodia_skirmish_repelled.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_skirmish_starts"
+		texturefile = "gfx/event_pictures/report_cambodia_skirmish_starts.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_war_defeat"
+		texturefile = "gfx/event_pictures/report_cambodia_war_defeat.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_war_stalemate"
+		texturefile = "gfx/event_pictures/report_cambodia_war_stalemate.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_war_start"
+		texturefile = "gfx/event_pictures/report_cambodia_war_start.png"
+	}
+	spriteType = {
+		name = "GFX_report_cambodia_war_victory"
+		texturefile = "gfx/event_pictures/report_cambodia_war_victory.png"
+	}
+	spriteType = {
+		name = "GFX_report_cannabis_legalized"
+		texturefile = "gfx/event_pictures/report_cannabis_legalized.png"
+	}
+	spriteType = {
+		name = "GFX_report_cannabis_regulated"
+		texturefile = "gfx/event_pictures/report_cannabis_regulated.png"
+	}
+	spriteType = {
+		name = "GFX_report_dp_leadership_crisis"
+		texturefile = "gfx/event_pictures/report_dp_leadership_crisis.png"
+	}
+	spriteType = {
+		name = "GFX_report_military_salute"
+		texturefile = "gfx/event_pictures/report_military_salute.png"
+	}
+	spriteType = {
+		name = "GFX_report_parliament_dissolved"
+		texturefile = "gfx/event_pictures/report_parliament_dissolved.png"
+	}
+	spriteType = {
+		name = "GFX_report_people_party_formation"
+		texturefile = "gfx/event_pictures/report_people_party_formation.png"
+	}
+	spriteType = {
+		name = "GFX_report_prawit_caretaker"
+		texturefile = "gfx/event_pictures/report_prawit_caretaker.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_mogged_opposition_3"
+		texturefile = "gfx/event_pictures/report_prayut_mogged_opposition_3.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_mogged_opposition_4"
+		texturefile = "gfx/event_pictures/report_prayut_mogged_opposition_4.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_pprp_split"
+		texturefile = "gfx/event_pictures/report_prayut_pprp_split.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_returns"
+		texturefile = "gfx/event_pictures/report_prayut_returns.png"
+	}
+	spriteType = {
+		name = "GFX_report_ptp_candidate_selection"
+		texturefile = "gfx/event_pictures/report_ptp_candidate_selection.png"
+	}
+	spriteType = {
+		name = "GFX_report_thai_airforce"
+		texturefile = "gfx/event_pictures/report_thai_airforce.png"
+	}
+	spriteType = {
+		name = "GFX_report_thai_army"
+		texturefile = "gfx/event_pictures/report_thai_army.png"
+	}
+	spriteType = {
+		name = "GFX_report_thai_elections"
+		texturefile = "gfx/event_pictures/report_thai_elections.png"
+	}
+	spriteType = {
+		name = "GFX_report_thai_navy"
+		texturefile = "gfx/event_pictures/report_thai_navy.png"
+	}
+	spriteType = {
+		name = "GFX_report_china_japan"
+		texturefile = "gfx/event_pictures/report_china_japan.png"
+	}
+	spriteType = {
+		name = "GFX_report_constitution_day"
+		texturefile = "gfx/event_pictures/report_constitution_day.png"
+	}
+	spriteType = {
+		name = "GFX_report_election_results"
+		texturefile = "gfx/event_pictures/report_election_results.png"
+	}
+	spriteType = {
+		name = "GFX_report_mfp_pita"
+		texturefile = "gfx/event_pictures/report_mfp_pita.png"
+	}
+	spriteType = {
+		name = "GFX_report_monarch_birthday"
+		texturefile = "gfx/event_pictures/report_monarch_birthday.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_media_campaign"
+		texturefile = "gfx/event_pictures/report_prayut_media_campaign.png"
+	}
+	spriteType = {
+		name = "GFX_report_protests_dispersed"
+		texturefile = "gfx/event_pictures/report_protests_dispersed.png"
+	}
+	spriteType = {
+		name = "GFX_report_songkran_post_covid"
+		texturefile = "gfx/event_pictures/report_songkran_post_covid.png"
+	}
+	spriteType = {
+		name = "GFX_report_thailand_covid_free"
+		texturefile = "gfx/event_pictures/report_thailand_covid_free.png"
+	}
+	spriteType = {
+		name = "GFX_report_thanakorn"
+		texturefile = "gfx/event_pictures/report_thanakorn.png"
+	}
+	spriteType = {
+		name = "GFX_report_thanat"
+		texturefile = "gfx/event_pictures/report_thanat.png"
+	}
+	spriteType = {
+		name = "GFX_report_third_motion_filing"
+		texturefile = "gfx/event_pictures/report_third_motion_filing.png"
 	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"
 		texturefile = "gfx/event_pictures/global_event_2020_thai_protests.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_prayut_survives_motion_of_no_confidence"
+		texturefile = "gfx/event_pictures/newsevent_prayut_survives_motion_of_no_confidence.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_prayut_removed_from_office"
+		texturefile = "gfx/event_pictures/newsevent_prayut_removed_from_office.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_utn_wins_2023"
+		texturefile = "gfx/event_pictures/newsevent_utn_wins_2023.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_ptp_wins_2023_elections"
+		texturefile = "gfx/event_pictures/newsevent_ptp_wins_2023_elections.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_prayut_steps_down"
+		texturefile = "gfx/event_pictures/newsevent_prayut_steps_down.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_utn_wins_2026"
+		texturefile = "gfx/event_pictures/newsevent_utn_wins_2026.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_ptp_wins_2027_elections"
+		texturefile = "gfx/event_pictures/newsevent_ptp_wins_2027_elections.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_utn_wins_2027"
+		texturefile = "gfx/event_pictures/newsevent_utn_wins_2027.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_bhumjaithai_wins_elections"
+		texturefile = "gfx/event_pictures/newsevent_bhumjaithai_wins_elections.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_thailand_joins_eadi"
+		texturefile = "gfx/event_pictures/newsevent_thailand_joins_eadi.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_thailand_joins_pdto"
+		texturefile = "gfx/event_pictures/newsevent_thailand_joins_pdto.png"
 	}
 }

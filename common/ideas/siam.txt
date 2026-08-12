@@ -164,10 +164,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_speed_factor = 0.05
+				conscription_factor = -0.2
+				army_speed_factor = 0.075
 				army_armor_attack_factor = 0.1
 				army_armor_defence_factor = 0.075
-				army_armor_speed_factor = 0.05
+				army_armor_speed_factor = 0.1
 				battalion_upkeep_factor = 0.125
 			}
 		}
@@ -208,7 +209,6 @@ ideas = {
 				army_defence_factor = 0.1
 				compliance_growth = 0.05
 				minimum_training_level = -0.1
-				conscription_factor = 0.15
 				battalion_upkeep_factor = 0.15
 			}
 		}
@@ -1359,6 +1359,7 @@ ideas = {
 			modifier = {
 				business_value_factor = 0.075
 				monthly_population = 0.1
+				personal_expense_factor = 0.075
 			}
 		}
 		SIA_renewable_economy_drive_hit_the_book = {
@@ -1374,7 +1375,7 @@ ideas = {
 				
 			modifier = {
 				research_speed_factor = 0.075
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
@@ -1390,11 +1391,11 @@ ideas = {
 			}
 				
 			modifier = {
-				global_building_slots_factor = 0.1
+				personal_value_factor = 0.1
 				farming_development_monthly = 0.015
 				poverty_development_monthly = 0.02
-				monthly_population = 0.3
-				business_value_factor = 0.15
+				monthly_population = 0.15
+				business_value_factor = 0.10
 				
 			}
 		}
@@ -1413,9 +1414,9 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 				consumer_goods_factor = -0.2
 				industrial_development_monthly = 0.02
-				business_value_factor = 0.25
-				global_building_slots_factor = 0.15
-				industrial_capacity_factory = 0.125
+				business_value_factor = 0.1
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
 		}
 		SIA_renewable_economy_drive_smart_government = {
@@ -1488,7 +1489,7 @@ ideas = {
 		}
 		SIA_sretta_thavisin_hog = {
 			name = SIA_sretta_thavisin_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_sretta
 			allowed = {
 				original_tag = SIA
 			}
@@ -1501,7 +1502,7 @@ ideas = {
 		}
 		SIA_paetongtarn_shinawatra_hog = {
 			name = SIA_paetongtarn_shinawatra_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_paetongtarn
 			allowed = {
 				original_tag = SIA
 			}
@@ -1527,7 +1528,7 @@ ideas = {
 		}
 		SIA_anutin_charnvirakul_hog = {
 			name = SIA_anutin_charnvirakul_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_anutin
 			allowed = {
 				original_tag = SIA
 			}
@@ -1540,7 +1541,7 @@ ideas = {
 		}
 		SIA_yodchanan_wongsawat_hog = {
 			name = SIA_yodchanan_wongsawat_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_yodchanan
 			allowed = {
 				original_tag = SIA
 			}
@@ -1553,7 +1554,7 @@ ideas = {
 		}
 		SIA_pirapan_salirathavibhaga_hog = {
 			name = SIA_pirapan_salirathavibhaga_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_pirapan
 			allowed = {
 				original_tag = SIA
 			}
@@ -1566,7 +1567,7 @@ ideas = {
 		}
 		SIA_suchat_chomklin_hog = {
 			name = SIA_suchat_chomklin_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_suchart
 			allowed = {
 				original_tag = SIA
 			}

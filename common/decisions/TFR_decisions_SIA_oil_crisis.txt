@@ -53,14 +53,8 @@ SIA_oil_crisis_cat = {
 				SIA_increase_economic_engine = yes
 				increase_poverty = yes
 			}
-			add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.01 }
-			add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.01 }
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = SIA_flaming_youth_dummy
-					add_idea = SIA_flaming_youth_minus_one
-				}
-			}
+			set_temp_variable = { increase = 1 }
+			SIA_decrease_youth_status = yes
 		}
 	}
 	SIA_oil_distribution_to_stations = {

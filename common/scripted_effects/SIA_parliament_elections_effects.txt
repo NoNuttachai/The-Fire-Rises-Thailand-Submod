@@ -1802,6 +1802,7 @@ SIA_initiate_coalition_forming = {
 		set_variable = { SIA_party_9_attitude = 2 }
 		set_variable = { SIA_party_11_attitude = 1 }
 		set_variable = { SIA_election_result_scenario = 1 }
+		news_event = thai_newsevents.5
 	}
 	else_if = {
 		limit = {
@@ -1815,6 +1816,7 @@ SIA_initiate_coalition_forming = {
 		set_variable = { SIA_party_9_attitude = 2 }
 		set_variable = { SIA_party_11_attitude = 3 }
 		set_variable = { SIA_election_result_scenario = 2 }
+		news_event = thai_newsevents.4
 	}
 	hidden_effect = { country_event = thai_elections.6 }
 	set_country_flag = SIA_government_coalition_formation_ongoing

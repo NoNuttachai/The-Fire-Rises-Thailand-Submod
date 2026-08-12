@@ -20,7 +20,12 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		if = {
+			limit = {
+				has_focus_tree = SIA_2023_utn_focus_tree
+			}
+			has_completed_focus = SIA_tonight_in_bangkok
+		}
 	}
 	available_if_capitulated = yes
 	
@@ -423,10 +428,11 @@ shared_focus = {
 			category = armor
 		}
 		army_experience = 20
+		add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = -0.2 }
 		add_to_variable = { SIA_royal_army_of_thailand_army_armor_attack_factor_factor_var = 0.125 }
 		add_to_variable = { SIA_royal_army_of_thailand_army_armor_defence_factor_factor_var = 0.1 }
-		add_to_variable = { SIA_royal_army_of_thailand_army_armor_speed_factor_factor_var = 0.05 }
-		add_to_variable = { SIA_royal_army_of_thailand_army_speed_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_armor_speed_factor_factor_var = 0.075 }
+		add_to_variable = { SIA_royal_army_of_thailand_army_speed_factor_var = 0.1 }
 		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.125 }
 		effect_tooltip = {
 			swap_ideas = {
@@ -575,7 +581,6 @@ shared_focus = {
 		SIA_mil_mech_combat_readiness_change = yes
 		add_to_variable = { SIA_royal_army_of_thailand_army_defence_factor_var = 0.1 }
 		add_to_variable = { SIA_royal_army_of_thailand_compliance_growth_var = 0.05 }
-		add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = 0.15 }
 		add_to_variable = { SIA_royal_army_of_thailand_minimum_training_level_var = -0.1 }
 		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.15 }
 		effect_tooltip = {
@@ -888,7 +893,12 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		if = {
+			limit = {
+				has_focus_tree = SIA_2023_utn_focus_tree
+			}
+			has_completed_focus = SIA_tonight_in_bangkok
+		}
 	}
 	available_if_capitulated = yes
 	

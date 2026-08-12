@@ -193,7 +193,7 @@ SIA_increase_protests = {
 			remove_idea = SIA_active_protests_2
 			add_idea = SIA_active_protests_3
 		}
-		1493 = {
+		1495 = {
 			damage_building = {
 			  type = infrastructure
 			  damage = 3
@@ -892,64 +892,69 @@ SIA_decrease_economic_engine = {
 SIA_increase_youth_status = {
 	if = {
 		limit = {
-			has_idea = SIA_flaming_youth_1
+			check_variable = { increase = 1 }
 		}
-		swap_ideas = {
-			remove_idea = SIA_flaming_youth_1
-			add_idea = SIA_flaming_youth_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = SIA_flaming_youth_2
-		}
-		swap_ideas = {
-			remove_idea = SIA_flaming_youth_2
-			add_idea = SIA_flaming_youth_3
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_one
+			}
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
-			has_idea = SIA_flaming_youth_3
+			check_variable = { increase = 2 }
 		}
-		swap_ideas = {
-			remove_idea = SIA_flaming_youth_4
-			add_idea = SIA_flaming_youth_4
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.02 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.02 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_plus_two
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { increase = 20 }
+		}
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = -0.2 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = -0.2 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_cambodia_loser
+			}
 		}
 	}
 }
 SIA_decrease_youth_status = {
 	if = {
 		limit = {
-			has_idea = SIA_flaming_youth_1
+			check_variable = { increase = 1 }
 		}
-		remove_ideas = SIA_flaming_youth_1
-	}
-	else_if = {
-		limit = {
-			has_idea = SIA_flaming_youth_2
-		}
-		swap_ideas = {
-			remove_idea = SIA_flaming_youth_2
-			add_idea = SIA_flaming_youth_1
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.01 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.01 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_minus_one
+			}
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
-			has_idea = SIA_flaming_youth_3
+			check_variable = { increase = 2 }
 		}
-		swap_ideas = {
-			remove_idea = SIA_flaming_youth_3
-			add_idea = SIA_flaming_youth_2
-		}
-	}
-	else_if = {
-		limit = {
-			has_idea = SIA_flaming_youth_4
-		}
-		swap_ideas = {
-			remove_idea = SIA_flaming_youth_4
-			add_idea = SIA_flaming_youth_3
+		add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.02 }
+		add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.02 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_flaming_youth_dummy
+				add_idea = SIA_flaming_youth_minus_two
+			}
 		}
 	}
 }

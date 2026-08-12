@@ -257,7 +257,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-                        unlock_decision_tooltip = SIA_Stabilize_Baht
+			unlock_decision_tooltip = SIA_Stabilize_Baht
 			set_temp_variable = { debt_var_temp = 15 }
 			add_debt = yes
 			set_temp_variable = { inflation_var_temp = -0.015 }
@@ -859,7 +859,7 @@ focus_tree = {
 			has_country_flag = SIA_ongoing_elections
 		}
 		allow_branch = {
-			#has_country_flag = SIA_prayut_split
+			has_country_flag = SIA_prayut_split
 		}
 		available_if_capitulated = yes
 		
@@ -1054,9 +1054,14 @@ focus_tree = {
 				limit = {
 					has_country_flag = SIA_ongoing_elections
 				}
-				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 4 }
-				SIA_elections_increase_votes_by_undecided = yes
+				set_temp_variable = { 1st_target = 11 }
+				set_temp_variable = { vote_change = 2 }
+				set_temp_variable = { 2nd_target = 2 }
+				SIA_elections_targeted_vote_increase = yes
+				set_temp_variable = { 1st_target = 11 }
+				set_temp_variable = { vote_change = 2 }
+				set_temp_variable = { 2nd_target = 3 }
+				SIA_elections_targeted_vote_increase = yes
 			}
 		}
 	}

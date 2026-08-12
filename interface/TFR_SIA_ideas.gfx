@@ -169,6 +169,31 @@ spriteTypes = {
 		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_suchat.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_SIA_royal_thai_army"
+		texturefile = "gfx/texticons/banners/SIA_royal_thai_army.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_utn_conservative_revolution"
+		texturefile = "gfx/texticons/banners/utn_conservative_revolution.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_utn_renewable_drive"
+		texturefile = "gfx/texticons/banners/utn_renewable_drive.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_cambodia_war"
+		texturefile = "gfx/texticons/banners/cambodia_war.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_economic_engine"
+		texturefile = "gfx/texticons/banners/SIA_economic_engine.png"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
@@ -492,7 +517,36 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_arkhom_termpittayapaisith.png"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_idea_SIA_anutin"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_anutin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_paetongtarn"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_paetongtarn.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_pirapan"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_pirapan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_sretta"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_sretta.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_suchart"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_suchart.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_yodchanan"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_yodchanan.png"
+		legacy_lazy_load = no
+	}
 	# Laws
 	spriteType = {
 		name = "GFX_idea_SIA_lottery_conscription"
@@ -603,6 +657,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_UTN_victorious"
 		texturefile = "gfx/texticons/UTN_victorious.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_ptp_path"
+		texturefile = "gfx/texticons/ptp_path.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_mfp_path"
+		texturefile = "gfx/texticons/mfp_path.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bhum_path"
+		texturefile = "gfx/texticons/bhum_path.png"
 		legacy_lazy_load = no
 	}
 }

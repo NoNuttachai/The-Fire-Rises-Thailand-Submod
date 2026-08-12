@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 9999999999
+			add = 9999999999999
 			tag = SIA
 		}
 	}
@@ -65,7 +65,12 @@ focus_tree = {
 			set_country_flag = SIA_utn_party_mech_on
 			add_to_variable = { SIA_conservative_revolution_political_power_gain_var = 0.05 }
 			add_to_variable = { SIA_conservative_revolution_authoritarian_democrat_drift_var = 0.03 }
-			add_dynamic_modifier = { modifier = SIA_conservative_revolution_dynamic_modifier }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = SIA_conservative_revolution_dynamic_modifier } }
+				}
+				add_dynamic_modifier = { modifier = SIA_conservative_revolution_dynamic_modifier }
+			}
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = SIA_conservative_revolution_dummy
@@ -312,7 +317,13 @@ focus_tree = {
 			}
 			add_to_variable = { SIA_renewable_economy_drive_production_lack_of_resource_penalty_factor = -0.075 }
 			add_to_variable = { SIA_renewable_economy_drive_production_speed_energy_farm_factor = 0.1 }
-			add_dynamic_modifier = { modifier = SIA_renewable_economy_drive_dynamic_modifier }
+			if = {
+				limit = {
+					NOT = { has_dynamic_modifier = { modifier = SIA_renewable_economy_drive_dynamic_modifier } }
+				}
+				add_dynamic_modifier = { modifier = SIA_renewable_economy_drive_dynamic_modifier }
+			}
+			
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = SIA_renewable_economy_drive_dummy
@@ -478,6 +489,7 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_utn_encourage_tourism
 			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.075 }
 			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_personal_expense_factor = 0.075 }
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = SIA_renewable_economy_drive_dummy
@@ -592,7 +604,7 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_tooltip = SIA_utn_enhance_vocational_training
 			add_to_variable = { SIA_renewable_economy_drive_research_speed_factor = 0.075 }
-			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.05 }
 			add_to_variable = { SIA_renewable_economy_drive_production_factory_max_efficiency_factor = 0.1 }
 			effect_tooltip = {
 				swap_ideas = {
@@ -841,11 +853,11 @@ focus_tree = {
 		prerequisite = { focus = SIA_amazing_new_chapters }
 		
 		completion_reward = {
-			add_to_variable = { SIA_renewable_economy_drive_global_building_slots_factor = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_personal_value_factor = 0.1 }
 			add_to_variable = { SIA_renewable_economy_drive_farming_development_monthly = 0.015 }
 			add_to_variable = { SIA_renewable_economy_drive_poverty_development_monthly = 0.02 }
-			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.3 }
-			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.15 }
+			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.1 }
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = SIA_renewable_economy_drive_dummy
@@ -891,9 +903,9 @@ focus_tree = {
 			add_to_variable = { SIA_renewable_economy_drive_production_speed_buildings_factor = 0.15 }
 			add_to_variable = { SIA_renewable_economy_drive_consumer_goods_factor = -0.2 }
 			add_to_variable = { SIA_renewable_economy_drive_industrial_development_monthly = 0.02 }
-			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.25 }
-			add_to_variable = { SIA_renewable_economy_drive_global_building_slots_factor = 0.15 }
-			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.125 }
+			add_to_variable = { SIA_renewable_economy_drive_business_value_factor = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_global_building_slots_factor = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_industrial_capacity_factory = 0.1 }
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = SIA_renewable_economy_drive_dummy
@@ -1377,6 +1389,9 @@ focus_tree = {
 		available = {
 			always = no
 		}
+		allow_branch = {
+			has_country_flag = mfp_dismantled
+		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_rotten_streets
 		prerequisite = { focus = SIA_rotten_streets }
@@ -1396,6 +1411,11 @@ focus_tree = {
 		}
 		available = {
 			always = no
+		}
+		allow_branch = {
+			NOT = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_fallen_flat
