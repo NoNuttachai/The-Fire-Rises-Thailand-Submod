@@ -1,4 +1,73 @@
 SIA_utn_party_mech = {
+	SIA_load_prayut = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = SIA_prayut_chan-o-cha_advisor
+			}
+		}
+	}
+	SIA_load_party_fighting = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = SIA_pirapan_salirathavibhaga_hog
+				set_country_flag = SIA_utn_party_mech_dispute
+			}
+		}
+	}
+	SIA_load_pirapan = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = SIA_pirapan_salirathavibhaga_hog
+				clr_country_flag = SIA_utn_party_mech_dispute
+				clr_country_flag = SIA_utn_won_2027
+			}
+		}
+	}
+	SIA_load_pirapan_victory = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = SIA_pirapan_salirathavibhaga_hog
+				clr_country_flag = SIA_utn_party_mech_dispute
+				set_country_flag = SIA_utn_won_2027
+			}
+		}
+	}
+	SIA_load_suchart = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = SIA_suchat_chomklin_hog
+				clr_country_flag = SIA_utn_party_mech_dispute
+				clr_country_flag = SIA_utn_won_2027
+				clr_country_flag = SIA_cambodia_war_stalemate
+			}
+		}
+	}
+	SIA_load_suchart_stalemate = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_ideas = SIA_suchat_chomklin_hog
+				set_country_flag = SIA_cambodia_war_stalemate
+			}
+		}
+	}
 	SIA_honor_the_generals_legacy = {
 		icon = generic_crisis
 		priority = 10

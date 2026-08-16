@@ -253,6 +253,7 @@ shared_focus = {
 		
 		add_to_variable = { SIA_royal_army_of_thailand_land_doctrine_cost_factor_var = -0.1 }
 		add_to_variable = { SIA_royal_army_of_thailand_max_planning_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_military_development_monthly = 0.005 }
 		increase_training = yes
 		effect_tooltip = {
 			swap_ideas = {
@@ -523,6 +524,7 @@ shared_focus = {
 		add_research_slot = 1
 		add_to_variable = { SIA_royal_army_of_thailand_research_speed_factor_var = 0.075 }
 		add_to_variable = { SIA_royal_army_of_thailand_industrial_capacity_factory_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_military_development_monthly = 0.01 }
 		effect_tooltip = {
 			swap_ideas = {
 				remove_idea = SIA_royal_army_of_thailand_dummy
@@ -730,6 +732,11 @@ shared_focus = {
 	}
 	available = {
 		
+	}
+	allow_branch = {
+		has_country_flag = SIA_2027_elections_finished
+		has_country_flag = SIA_2026_elections_finished
+		has_country_flag = SIA_auth_thailand
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_guardian_of_asia
@@ -1082,7 +1089,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_money
+	id = SIA_attract_chinese_investment
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -2
 	y = 1
@@ -1091,7 +1098,7 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = PRC
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_riding_the_shoulders_of_the_chinese_dragon
@@ -1101,7 +1108,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_chinese_stuff
+	id = SIA_joint_sino_thai_training
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 0
 	y = 1
@@ -1129,7 +1136,7 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = PRC
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_riding_the_shoulders_of_the_chinese_dragon
@@ -1139,7 +1146,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_final_eadi_focus
+	id = SIA_eadi_business_deals
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -1
 	y = 1
@@ -1148,18 +1155,18 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = PRC
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_bri_integration
 	prerequisite = { focus = SIA_bri_integration }
-	prerequisite = { focus = SIA_money }
+	prerequisite = { focus = SIA_attract_chinese_investment }
 	completion_reward = {
 		
 	}
 }
 shared_focus = {
-	id = SIA_pdto_focus_1
+	id = SIA_containing_the_chinese_threat
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 0
 	y = 1
@@ -1178,7 +1185,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_pdto_focus_2
+	id = SIA_attract_japanese_business
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 2
 	y = 1
@@ -1187,7 +1194,7 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = JAP
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_pdtos_sea_gateway
@@ -1197,7 +1204,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_pdto_focus_3
+	id = SIA_increase_production_output
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 2
@@ -1206,7 +1213,7 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = JAP
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_pdtos_sea_gateway
@@ -1216,7 +1223,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_final_pdto_focus
+	id = SIA_marching_alongside_the_rising_sun
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 1
@@ -1225,12 +1232,12 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = JAP
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_pdto_focus_3
-	prerequisite = { focus = SIA_pdto_focus_3 }
-	prerequisite = { focus = SIA_pdto_focus_2 }
+	relative_position_id = SIA_increase_production_output
+	prerequisite = { focus = SIA_increase_production_output }
+	prerequisite = { focus = SIA_attract_japanese_business }
 	completion_reward = {
 		
 	}
@@ -1246,7 +1253,7 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		NOT = { has_idea = ASEAN_member }
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_thailand_in_the_world_stage
@@ -1296,7 +1303,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_attract_ally_investment
+	id = SIA_investing_on_our_allies
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 1
@@ -1327,16 +1334,16 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_attract_ally_investment
-	prerequisite = { focus = SIA_attract_ally_investment }
+	relative_position_id = SIA_investing_on_our_allies
+	prerequisite = { focus = SIA_investing_on_our_allies }
 	completion_reward = {
 		
 	}
 }
 
-#Cambodia
+#Cambodia - Victory
 shared_focus = {
-	id = SIA_cambodia_1
+	id = SIA_marching_in_phnom_penh
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 0
 	y = 1
@@ -1347,6 +1354,9 @@ shared_focus = {
 	available = {
 		
 	}
+	allow_branch = {
+		has_country_flag = SIA_cambodia_war_victory
+	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_integrate_our_militaries
 	completion_reward = {
@@ -1354,7 +1364,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_cambodia_2
+	id = SIA_under_our_bootstraps
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -2
 	y = 1
@@ -1366,15 +1376,15 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_cambodia_1
-	mutually_exclusive = { focus = SIA_cambodia_3 }
-	prerequisite = { focus = SIA_cambodia_1 }
+	relative_position_id = SIA_marching_in_phnom_penh
+	mutually_exclusive = { focus = SIA_path_to_forgiving }
+	prerequisite = { focus = SIA_marching_in_phnom_penh }
 	completion_reward = {
 		
 	}
 }
 shared_focus = {
-	id = SIA_cambodia_3
+	id = SIA_path_to_forgiving
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 2
 	y = 1
@@ -1386,15 +1396,15 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_cambodia_1
-	mutually_exclusive = { focus = SIA_cambodia_2 }
-	prerequisite = { focus = SIA_cambodia_1 }
+	relative_position_id = SIA_marching_in_phnom_penh
+	mutually_exclusive = { focus = SIA_under_our_bootstraps }
+	prerequisite = { focus = SIA_marching_in_phnom_penh }
 	completion_reward = {
 		
 	}
 }
 shared_focus = {
-	id = SIA_cambodia_4
+	id = SIA_after_the_ruins
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 1
@@ -1406,14 +1416,14 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_cambodia_2
-	prerequisite = { focus = SIA_cambodia_2 focus = SIA_cambodia_3 }
+	relative_position_id = SIA_under_our_bootstraps
+	prerequisite = { focus = SIA_under_our_bootstraps focus = SIA_path_to_forgiving }
 	completion_reward = {
 		
 	}
 }
 shared_focus = {
-	id = SIA_cambodia_5
+	id = SIA_settling_disputes
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -1
 	y = 1
@@ -1425,14 +1435,14 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_cambodia_3
-	prerequisite = { focus = SIA_cambodia_2 focus = SIA_cambodia_3 }
+	relative_position_id = SIA_path_to_forgiving
+	prerequisite = { focus = SIA_under_our_bootstraps focus = SIA_path_to_forgiving }
 	completion_reward = {
 		
 	}
 }
 shared_focus = {
-	id = SIA_cambodia_6
+	id = SIA_a_new_relationship
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 1
@@ -1444,9 +1454,130 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_cambodia_4
-	prerequisite = { focus = SIA_cambodia_4 }
-	prerequisite = { focus = SIA_cambodia_5 }
+	relative_position_id = SIA_after_the_ruins
+	prerequisite = { focus = SIA_after_the_ruins }
+	prerequisite = { focus = SIA_settling_disputes }
+	completion_reward = {
+		
+	}
+}
+
+#Cambodia - Stalemate
+shared_focus = {
+	id = SIA_neither_a_victory_nor_defeat
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	allow_branch = {
+		has_country_flag = SIA_cambodia_war_stalemate
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_integrate_our_militaries
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_guard_our_border
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -2
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_neither_a_victory_nor_defeat
+	mutually_exclusive = { focus = SIA_planning_the_next_offensive }
+	prerequisite = { focus = SIA_neither_a_victory_nor_defeat }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_planning_the_next_offensive
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 2
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_neither_a_victory_nor_defeat
+	mutually_exclusive = { focus = SIA_guard_our_border }
+	prerequisite = { focus = SIA_neither_a_victory_nor_defeat }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_learning_from_our_mistakes
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_guard_our_border
+	prerequisite = { focus = SIA_guard_our_border focus = SIA_planning_the_next_offensive }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_stoke_patriotism
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_planning_the_next_offensive
+	prerequisite = { focus = SIA_guard_our_border focus = SIA_planning_the_next_offensive }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_fighting_the_good_fight
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_learning_from_our_mistakes
+	prerequisite = { focus = SIA_learning_from_our_mistakes }
+	prerequisite = { focus = SIA_stoke_patriotism }
 	completion_reward = {
 		
 	}

@@ -26,7 +26,7 @@ SIA_oil_crisis_cat = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 110
+		days_mission_timeout = SIA_oil_in_reserves_days_timeout
 		timeout_effect = {
 			SIA_increase_oil_crisis = yes
 			add_power_balance_value = {
@@ -165,6 +165,7 @@ SIA_oil_crisis_cat = {
 				id = SIA_power_balance
 				value = -0.1
 			}
+			activate_mission = SIA_empty_oil_reserves_causes_damage_mission
 		}
 		complete_effect = {
 			hidden_effect = {

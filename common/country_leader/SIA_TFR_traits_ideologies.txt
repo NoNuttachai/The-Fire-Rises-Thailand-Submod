@@ -3,10 +3,28 @@ leader_traits = {
 	SIA_ide_stratcon = {
 		random = no
 	}
+	SIA_ide_utn = {
+		random = no
+	}
 	SIA_ide_independent = {
 		random = no
 	}
 	SIA_ide_neoliberal = {
+		random = no
+	}
+	SIA_ide_ptp = {
+		random = no
+	}
+	SIA_ide_bhumjaithai = {
+		random = no
+	}
+	SIA_ide_dp = {
+		random = no
+	}
+	SIA_ide_mfp = {
+		random = no
+	}
+	SIA_ide_minor_party = {
 		random = no
 	}
 }

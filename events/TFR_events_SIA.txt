@@ -218,6 +218,8 @@ country_event = { #War won
 		remove_ideas = SIA_thai_cambodia_conflict_2
 		set_temp_variable = { increase = 1 }
 		SIA_decrease_youth_status = yes
+		set_country_flag = SIA_cambodia_war_victory
+		focus_unlock = yes
     }
 }
 country_event = { #thai century of humiliation
@@ -278,7 +280,8 @@ country_event = { #War stalemate
 	
     option = {
         name = thai_cambodia_tension.8.a 
-		
+		set_country_flag = SIA_cambodia_war_stalemate
+		focus_unlock = yes
     }
 }
 country_event = { #Situation of the royal airforce
@@ -557,6 +560,20 @@ country_event = { #Pirapan introduction
     option = {
         name = thai_prayut.14.a
 		
+    }
+}
+country_event = { #Third Prayut Cabinet formed
+    id = thai_prayut.15
+    title = thai_prayut.15.t
+    desc = thai_prayut.15.d
+	is_triggered_only = yes
+	picture = GFX_report_prayut_pirapan
+    option = {
+        name = thai_prayut.15.a
+		add_timed_idea = {
+			idea = SIA_cabinet_forming
+			days = 60
+		}
     }
 }
 country_event = { #elections calculated

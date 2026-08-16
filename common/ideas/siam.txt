@@ -66,6 +66,7 @@ ideas = {
 			modifier = {
 				land_doctrine_cost_factor = -0.1
 				max_planning_factor = 0.05
+				military_development_monthly = 0.005
 			}
 		}
 		SIA_royal_army_of_thailand_one_of_many = {
@@ -189,6 +190,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.075
 				industrial_capacity_factory = 0.05
+				military_development_monthly = 0.01
 			}
 		}
 		SIA_royal_army_of_thailand_guardian_of_asia = {
@@ -1456,6 +1458,27 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
+		SIA_cabinet_forming = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			removal_cost = -1
+			modifier = {
+				foreign_minister_cost_factor = -0.8
+				economic_minister_cost_factor = -0.8
+				interior_minister_cost_factor = -0.8
+				theorist_minister_cost_factor = -0.8
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {
@@ -1466,6 +1489,9 @@ ideas = {
 			}
 			allowed_to_remove = {
 				head_minister_trigger = yes
+			}
+			visible = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
 			}
 			traits = {
 				SIA_ide_stratcon
@@ -1482,6 +1508,9 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_prawit_wongsuwan_hog
+			}
 			traits = {
 				SIA_ide_stratcon
 				hog_old_general
@@ -1496,8 +1525,11 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_sretta_thavisin_hog
+			}
 			traits = {
-				
+				SIA_ide_ptp
 			}
 		}
 		SIA_paetongtarn_shinawatra_hog = {
@@ -1509,21 +1541,27 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_paetongtarn_shinawatra_hog
+			}
 			traits = {
-				
+				SIA_ide_ptp
 			}
 		}
 		SIA_pita_limjaroenrat_hog = {
 			name = SIA_pita_limjaroenrat_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_pita
 			allowed = {
 				original_tag = SIA
 			}
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_pita_limjaroenrat_hog
+			}
 			traits = {
-				
+				SIA_ide_mfp
 			}
 		}
 		SIA_anutin_charnvirakul_hog = {
@@ -1535,8 +1573,11 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_anutin_charnvirakul_hog
+			}
 			traits = {
-				
+				SIA_ide_bhumjaithai
 			}
 		}
 		SIA_yodchanan_wongsawat_hog = {
@@ -1548,8 +1589,11 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_yodchanan_wongsawat_hog
+			}
 			traits = {
-				
+				SIA_ide_ptp
 			}
 		}
 		SIA_pirapan_salirathavibhaga_hog = {
@@ -1561,8 +1605,11 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+			}
 			traits = {
-				
+				SIA_ide_utn
 			}
 		}
 		SIA_suchat_chomklin_hog = {
@@ -1574,12 +1621,67 @@ ideas = {
 			allowed_to_remove = {
 				head_minister_trigger = yes
 			}
+			visible = {
+				has_idea = SIA_suchat_chomklin_hog
+			}
 			traits = {
-				
+				SIA_ide_utn
 			}
 		}
 	}
 	foreign_minister = {
+		SIA_paetongtarn_shinawatra_for = {
+			name = SIA_paetongtarn_shinawatra_char
+			picture = SIA_paetongtarn
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
+		SIA_sihasak_phuangketkeow_for = {
+			name = SIA_sihasak_phuangketkeow_char
+			picture = SIA_sihasak
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 6 }
+			}
+			traits = {
+				SIA_ide_bhumjaithai
+			}
+		}
+		SIA_maris_sangiampongsa_for = {
+			name = SIA_maris_sangiampongsa_char
+			picture = SIA_maris
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
+		SIA_parnpree_bahiddha_nukara_for = {
+			name = SIA_parnpree_bahiddha_nukara_char
+			picture = SIA_parnpree
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
 		SIA_don_pramudwinai_advisor = {
 			name = SIA_don_pramudwinai_char
 			picture = SIA_don_pramudwinai
@@ -1593,20 +1695,43 @@ ideas = {
 		}
 	}
 	economic_minister = {
-		SIA_uttama_saowanayon_advisor = {
-			name = SIA_uttama_saowanayon_char
-			picture = SIA_uttama_saowanayon
+		SIA_parnpree_bahiddha_nukara_advisor = {
+			name = SIA_parnpree_bahiddha_nukara_char
+			picture = SIA_parnpree
 			allowed = {
 				original_tag = SIA
 			}
 			visible = {
-				NOT = {
-					has_country_flag = pp_fallout
-				}
+				check_variable = { SIA_government_leader = 2 }
 			}
 			traits = {
-				SIA_ide_stratcon
-				eco_economic_organizer
+				SIA_ide_ptp
+			}
+		}
+		SIA_maris_sangiampongsa_advisor = {
+			name = SIA_maris_sangiampongsa_char
+			picture = SIA_maris
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
+		SIA_sihasak_phuangketkeow_advisor = {
+			name = SIA_sihasak_phuangketkeow_char
+			picture = SIA_sihasak
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 6 }
+			}
+			traits = {
+				SIA_ide_bhumjaithai
 			}
 		}
 		SIA_predee_daocha_advisor = {
@@ -1638,6 +1763,155 @@ ideas = {
 				eco_balanced_budget_economy
 			}
 		}
+		SIA_santi_promphat_advisor = {
+			name = SIA_santi_promphat_char
+			picture = SIA_santi
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 1 }
+			}
+			traits = {
+				SIA_ide_stratcon
+			}
+		}
+		SIA_srettha_thavisin_advisor = {
+			name = SIA_sretta_thavisin_char
+			picture = SIA_sretta
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
+		SIA_pichai_chunhavajira_advisor = {
+			name = SIA_pichai_chunhavajira_char
+			picture = SIA_pichai
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
+		SIA_ekniti_nitithanprapas_advisor = {
+			name = SIA_ekniti_nitithanprapas_char
+			picture = SIA_ekniti
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 6 }
+			}
+			traits = {
+				SIA_ide_bhumjaithai
+			}
+		}
+		SIA_uttama_saowanayon_advisor = {
+			name = SIA_uttama_saowanayon_char
+			picture = SIA_uttama_saowanayon
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				NOT = {
+					has_country_flag = pp_fallout
+				}
+				visible = {
+					check_variable = { SIA_government_leader = 1 }
+				}
+			}
+			traits = {
+				SIA_ide_stratcon
+				eco_economic_organizer
+			}
+		}
+		SIA_jurin_laksanawisit_advisor = {
+			name = SIA_jurin_laksanawisit_char
+			picture = SIA_jurin
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 4 }
+			}
+			traits = {
+				SIA_ide_dp
+			}
+		}
+		SIA_ml_chayotid_kridakon_advisor = {
+			name = SIA_ml_chayotid_kridakon_char
+			picture = SIA_ml
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 11 }
+			}
+			traits = {
+				SIA_ide_utn
+			}
+		}
+		SIA_trairong_suwankiri_advisor = {
+			name = SIA_trairong_suwankiri_char
+			picture = SIA_trairong
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 11 }
+			}
+			traits = {
+				SIA_ide_utn
+			}
+		}
+		SIA_korn_chatikavanij_advisor = {
+			name = SIA_korn_chatikavanij_char
+			picture = SIA_korn
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				
+			}
+			traits = {
+				SIA_ide_minor_party
+			}
+		}
+		SIA_chatchai_payuhanaveechai_advisor = {
+			name = SIA_chatchai_payuhanaveechai_char
+			picture = SIA_chatchai
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				
+			}
+			traits = {
+				SIA_ide_minor_party
+			}
+		}
+		SIA_suphan_mongkolsuthee_advisor = {
+			name = SIA_suphan_mongkolsuthee_char
+			picture = SIA_suphan
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				
+			}
+			traits = {
+				SIA_ide_minor_party
+			}
+		}
 	}
 	interior_minister = {
 		SIA_anupong_paochinda_advisor = {
@@ -1646,9 +1920,88 @@ ideas = {
 			allowed = {
 				original_tag = SIA
 			}
+			
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_independent
 				sec_political_architect
+			}
+		}
+		SIA_chonlanan_srikaew_advisor = {
+			name = SIA_chonlanan_srikaew_char
+			picture = SIA_chonlanan
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
+			}
+		}
+		SIA_anutin_charnvirakul_advisor = {
+			name = SIA_anutin_charnvirakul_char
+			picture = SIA_anutin
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_bhumjaithai
+			}
+		}
+		SIA_chatchai_phromlert_advisor = {
+			name = SIA_chatchai_phromlert_char
+			picture = SIA_chatchai_phromlert
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 11 }
+			}
+			traits = {
+				SIA_ide_independent
+			}
+		}
+		SIA_songsak_thongsri_advisor = {
+			name = SIA_songsak_thongsri_char
+			picture = SIA_songsak
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 6 }
+			}
+			traits = {
+				SIA_ide_bhumjaithai
+			}
+		}
+		SIA_naris_khamnurak_advisor = {
+			name = SIA_naris_khamnurak_char
+			picture = SIA_naris
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 4 }
+			}
+			traits = {
+				SIA_ide_dp
+			}
+		}
+		SIA_phumtham_wechayachai_inter = {
+			name = SIA_phumtham_wechayachai_char
+			picture = SIA_phumtham
+			allowed = {
+				original_tag = SIA
+			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
+			traits = {
+				SIA_ide_ptp
 			}
 		}
 	}
@@ -1673,7 +2026,7 @@ ideas = {
 				original_tag = SIA
 			}
 			visible = {
-				#has_idea = SIA_thanakorn_buaratsat_advisor
+				has_idea = SIA_thanakorn_buaratsat_advisor
 			}
 			cost = 0
 			traits = {
@@ -1687,7 +2040,7 @@ ideas = {
 				original_tag = SIA
 			}
 			visible = {
-				#has_idea = SIA_thanat_suwannanon_advisor
+				has_idea = SIA_thanat_suwannanon_advisor
 			}
 			cost = 0
 			traits = {
@@ -1702,6 +2055,9 @@ ideas = {
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				check_variable = { SIA_government_leader = 1 }
+			}
 			traits = {
 				SIA_ide_stratcon
 				SIA_deputy_pm_prawit
@@ -1709,37 +2065,46 @@ ideas = {
 		}
 		SIA_sutin_klungsang_advisor = { #PTP
 			name = SIA_sutin_klungsang_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_sutin
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
 			traits = {
-				
+				SIA_ide_ptp
 			}
 		}
 		SIA_phumtham_wechayachai_advisor = {#PTP
 			name = SIA_phumtham_wechayachai_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_phumtham
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				check_variable = { SIA_government_leader = 2 }
+			}
 			traits = {
-				
+				SIA_ide_ptp
 			}
 		}
 		SIA_adul_boonthamcharoen_advisor = { #Indep to BJT
 			name = SIA_adul_boonthamcharoen_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_adul
 			allowed = {
 				original_tag = SIA
 			}
+			visible = {
+				check_variable = { SIA_government_leader = 6 }
+			}
 			traits = {
-				SIA_ide_independent
+				SIA_ide_bhumjaithai
 			}
 		}
 		SIA_nattapol_nakphanit_advisor = { #Indep
 			name = SIA_nattapol_nakphanit_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_natthaphon
 			allowed = {
 				original_tag = SIA
 			}
@@ -1750,9 +2115,12 @@ ideas = {
 		}
 		SIA_chaichan_changmongkol_advisor = { #minister if Prayut loses to protest, replaces prawit
 			name = SIA_chaichan_changmongkol_char
-			picture = SIA_prawit_wongsuwan
+			picture = SIA_chaichan
 			allowed = {
 				original_tag = SIA
+			}
+			visible = {
+				has_idea = SIA_chaichan_changmongkol_advisor
 			}
 			traits = {
 				SIA_ide_stratcon

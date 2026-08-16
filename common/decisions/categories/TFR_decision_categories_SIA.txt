@@ -143,6 +143,7 @@ SIA_utn_party_mech = {
 		has_country_flag = SIA_utn_party_mech_on
 	}
 	visible_when_empty = yes
+	scripted_gui = SIA_pirapan_vs_suchart_gui
 }
 SIA_cambodia_war_category = {
 	icon = GFX_decision_cat_SIA_parliament

@@ -56,27 +56,27 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_SIA_aswin_bma_election"
-		texturefile = "gfx/texticons/banners/texticon_aswin_bma_election.png"
+		texturefile = "gfx/texticons/banners/elections/texticon_aswin_bma_election.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_chadchart_bma_election"
-		texturefile = "gfx/texticons/banners/texticon_chadchart_bma_election.png"
+		texturefile = "gfx/texticons/banners/elections/texticon_chadchart_bma_election.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_Sita_bma_election"
-		texturefile = "gfx/texticons/banners/texticon_Sita_bma_election.png"
+		texturefile = "gfx/texticons/banners/elections/texticon_Sita_bma_election.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_suchatchavee_bma_election"
-		texturefile = "gfx/texticons/banners/texticon_suchatchavee_bma_election.png"
+		texturefile = "gfx/texticons/banners/elections/texticon_suchatchavee_bma_election.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_wiroj_bma_election"
-		texturefile = "gfx/texticons/banners/texticon_wiroj_bma_election.png"
+		texturefile = "gfx/texticons/banners/elections/texticon_wiroj_bma_election.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -155,6 +155,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_utn_party_mech_pirapanvssuchart"
+		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_pirapanvssuchart.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_utn_party_mech_pirapan"
 		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_pirapan.png"
 		legacy_lazy_load = no
@@ -167,6 +172,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_utn_party_mech_suchat"
 		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_suchat.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_utn_party_mech_suchat2"
+		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_suchat2.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -194,7 +204,91 @@ spriteTypes = {
 		texturefile = "gfx/texticons/banners/SIA_economic_engine.png"
 		legacy_lazy_load = no
 	}
-	
+	spriteType = {
+		name = "GFX_SIA_state_of_emergency"
+		texturefile = "gfx/texticons/banners/SIA_state_of_emergency.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_minor_demonstrations"
+		texturefile = "gfx/texticons/banners/SIA_minor_demonstrations.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_mass_protests"
+		texturefile = "gfx/texticons/banners/SIA_mass_protests.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_mass_riots"
+		texturefile = "gfx/texticons/banners/SIA_mass_riots.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_covid"
+		texturefile = "gfx/texticons/banners/SIA_covid.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_leftist_opposition"
+		texturefile = "gfx/texticons/banners/SIA_leftist_opposition.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_oil_crisis"
+		texturefile = "gfx/texticons/banners/SIA_oil_crisis.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_airforce"
+		texturefile = "gfx/texticons/banners/SIA_airforce.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_army"
+		texturefile = "gfx/texticons/banners/SIA_army.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_navy"
+		texturefile = "gfx/texticons/banners/SIA_navy.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_combat_readiness"
+		texturefile = "gfx/texticons/banners/SIA_combat_readiness.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_public_perception"
+		texturefile = "gfx/texticons/banners/SIA_public_perception.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_covid_banner"
+		texturefile = "gfx/texticons/banners/SIA_covid_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_thai_cambodia_war_banner"
+		texturefile = "gfx/texticons/banners/SIA_thai_cambodia_war_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_coalition_forming_srettha"
+		texturefile = "gfx/texticons/banners/SIA_coalition_forming_srettha.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_coalition_forming_paetongtarn"
+		texturefile = "gfx/texticons/banners/SIA_coalition_forming_paetongtarn.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_coalition_forming_prayut"
+		texturefile = "gfx/texticons/banners/SIA_coalition_forming_prayut.png"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_idea_SIA_constitution_2017"
 		textureFile = "gfx/interface/ideas/SIA/SIA_constitution_2017.png"
@@ -547,6 +641,141 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_yodchanan.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_pita"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_pita.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_chatchai"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_chatchai.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ekniti"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_ekniti.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_jurin"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_jurin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_korn"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_korn.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_maris"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_maris.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_ml"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_ml.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_parnpree"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_parnpree.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_pichai"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_pichai.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_santi"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_santi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_sihasak"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_sihasak.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_suphan"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_suphan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_trairong"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_trairong.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_adul"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_adul.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_apirat"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_apirat.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_chaichan"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_chaichan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_Chalermpol"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_Chalermpol.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_charoenchai"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_charoenchai.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_narongpan"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_narongpan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_natthaphon"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_natthaphon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_phana"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_phana.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_phumtham"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_phumtham.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_sutin"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_sutin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_chonlanan"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_chonlanan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_naris"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_naris.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_songsak"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_songsak.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_chatchai_phromlert"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_chatchai_phromlert.png"
+		legacy_lazy_load = no
+	}
 	# Laws
 	spriteType = {
 		name = "GFX_idea_SIA_lottery_conscription"
@@ -635,6 +864,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hog_SIA_pirapan_salirathavibhaga"
 		texturefile = "gfx/leaders/SIA/SIA_pirapan_salirathavibhaga.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hog_SIA_SIA_suchat_chomklin"
+		texturefile = "gfx/leaders/SIA/SIA_suchat_chomklin.png"
 		legacy_lazy_load = no
 	}
 	#for paths in bookmark

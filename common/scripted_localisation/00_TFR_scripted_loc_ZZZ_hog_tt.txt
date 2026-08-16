@@ -1115,4 +1115,11 @@ defined_text = {
 		}
 		localization_key = SIA_pirapan_salirathavibhaga_hog
 	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_suchat_chomklin_hog
+		}
+		localization_key = SIA_suchat_chomklin_hog
+	}
 }

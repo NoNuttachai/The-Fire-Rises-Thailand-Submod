@@ -10,7 +10,7 @@ focus_tree = {
 
 	focus = {
 		id = SIA_future_forward_on_trial
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_future_forward_on_trial
 		x = 7
 		y = 0
 		cost = 7
@@ -46,6 +46,9 @@ focus_tree = {
 		available = {
 			#is_completed_by_event = yes
 			has_country_flag = SIA_raise_trigger
+		}
+		allow_branch = {
+			always = no
 		}
 		available_if_capitulated = yes
 		
@@ -502,7 +505,7 @@ focus_tree = {
 	focus = {
 		id = SIA_side_with_uncle_tuu
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 5
+		x = 0
 		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_future_forward_on_trial }
@@ -703,6 +706,14 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_active_mission = SIA_oil_in_reserves_mission
+					}
+				}
+				activate_mission = SIA_oil_in_reserves_mission
+			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
 				days = 35

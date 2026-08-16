@@ -61,6 +61,10 @@ spriteTypes = {
     
 	
 	### 2. Initial Tree ###
+	SpriteType = {
+        name = "GFX_goal_SIA_future_forward_on_trial"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_future_forward_on_trial.png"
+    }
     SpriteType = {
         name = "GFX_goal_SIA_Another_Year_with_Prayut"
         texturefile = "gfx/interface/goals/SIA/initial/SIA_Another_Year_with_Prayut.png"

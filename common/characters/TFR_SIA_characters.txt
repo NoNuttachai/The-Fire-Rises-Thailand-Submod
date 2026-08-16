@@ -330,6 +330,7 @@ characters={
 		portraits={
 			civilian = {
 				large = GFX_portrait_SIA_apirat_kongsompong
+				small = GFX_idea_SIA_apirat
 			}
 		}
 		advisor = {
@@ -398,6 +399,9 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_chalermpol_srisawat.png"
+			}
+			civilian = {
+				small = GFX_idea_SIA_Chalermpol
 			}
 		}
 		advisor = {
@@ -478,10 +482,13 @@ characters={
 			army = {
 				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
 			}
+			civilian = {
+				small = GFX_idea_SIA_narongpan
+			}
 		}
 		advisor = {
 			slot = army_chief
-			idea_token = SIA_apirat_kongsompong_army_chief
+			idea_token = SIA_narongpan_jitkaewthae_army_chief
 			traits = { 
 				army_chief_defensive_2 
 			}
@@ -506,6 +513,9 @@ characters={
 			army = {
 				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
 			}
+			civilian = {
+				small = GFX_idea_SIA_charoenchai
+			}
 		}
 		advisor = {
 			slot = army_chief
@@ -526,6 +536,9 @@ characters={
 			army = {
 				large = "gfx/leaders/SIA/SIA_narongpan_jitkaewthae.png"
 			}
+			civilian = {
+				small = GFX_idea_SIA_phana
+			}
 		}
 		advisor = {
 			slot = army_chief
@@ -545,6 +558,9 @@ characters={
 		portraits={
 			army = {
 				large = "gfx/leaders/SIA/SIA_natthaphon_narkphanit.png"
+			}
+			civilian = {
+				small = GFX_idea_SIA_natthaphon
 			}
 		}
 		advisor = {
@@ -903,7 +919,7 @@ characters={
 	SIA_boonsin_padklang_char = {
 		portraits={
 			civilian = {
-				small = "gfx/interface/ideas/SIA/advisors/SIA_Alongkorn_Wannarot.png"
+				small = "gfx/interface/ideas/SIA/advisors/SIA_boonsin.png"
 			}
 		}
 		advisor = {

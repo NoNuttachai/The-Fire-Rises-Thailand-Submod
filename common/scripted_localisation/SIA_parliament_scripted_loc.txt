@@ -702,3 +702,27 @@ defined_text = {
 		localization_key = "SIA_scenario_2_formation"
 	}
 }
+defined_text = {
+	name = SIACoalitionFormationBanner
+	
+	text = {
+		trigger = {
+			check_variable = { SIA_government_leader = 2 }
+			check_variable = { ptp_candidate = 1 }
+		}
+		localization_key = "SIACoalitionFormationBanner_2_1"
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_government_leader = 2 }
+			check_variable = { ptp_candidate = 2 }
+		}
+		localization_key = "SIACoalitionFormationBanner_2_2"
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_government_leader = 11 }
+		}
+		localization_key = "SIACoalitionFormationBanner_11"
+	}
+}

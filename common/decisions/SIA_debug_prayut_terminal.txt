@@ -28,74 +28,195 @@ SIA_debug_prayut_terminal = {
 			load_focus_tree = SIA_2023_pheu_thai_focus_tree
 		}
 	}
+	SIA_show_mechanic_decisions = {
+		visible = {
+			NOT = {
+				has_country_flag = show_mechanic_list
+			}
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			set_country_flag = show_mechanic_list
+		}
+	}
+	SIA_hide_mechanic_decisions = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			clr_country_flag = show_mechanic_list
+		}
+	}
+	SIA_enable_protests = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			set_country_flag = SIA_anti_government_protests
+		}
+	}
+	SIA_enable_oil_crisis = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			country_event = thai_events.6
+		}
+	}
+	SIA_enable_covid = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			country_event = thai_events.17
+		}
+	}
+	SIA_enable_saudi_civil_war = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			country_event = thai_events.44
+			set_global_flag = saudi_civil_war_flag
+		}
+	}
+	SIA_enable_economy_mech = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			set_country_flag = SIA_economy_mechanic_on
+		}
+	}
+	SIA_enable_military_reformation = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			set_country_flag = SIA_active_military_mech
+		}
+	}
+	SIA_enable_utn_party_mech = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			set_country_flag = SIA_utn_party_mech_on
+		}
+	}
+	SIA_enable_coalition_making = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			set_country_flag = SIA_government_coalition_formation_ongoing
+		}
+	}
 	SIA_enable_cambodia_war = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
 		complete_effect = {
 			country_event = thai_cambodia_tension.1
 		}
 	}
-	SIA_enable_the_prayutreich = {
-		complete_effect = {
-			set_party_name = {
-				ideology = social_democrat 
-				long_name = SIA_prayutreich
-				name = SIA_prayutreich
-			}
-			set_temp_variable = { target = 1 }
-			set_temp_variable = { seats = SIA_ffp_seats_var }
-			SIA_change_parliament_seat = yes
-			set_temp_variable = { target = 3 }
-			set_temp_variable = { seats = SIA_ffp_seats_var }
-			multiply_temp_variable = { seats = -1 }
-			SIA_change_parliament_seat = yes
-			
-		}
-	}
 	SIA_enable_election_mech_prayut_victory = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
 		complete_effect = {
 			set_country_flag = SIA_ongoing_elections
 		}
 	}
-	SIA_PM_change_decisions = {
+	SIA_show_PM_change_decisions = {
+		visible = {
+			NOT = {
+				has_country_flag = show_pm_list
+			}
+		}
 		available = {
-			always = no
+			always = yes
+		}
+		complete_effect = {
+			set_country_flag = show_pm_list
+		}
+	}
+	SIA_hide_PM_change_decisions = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			clr_country_flag = show_pm_list
 		}
 	}
 	SIA_PM_change_add_prayut = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_prayut_chan-o-cha_advisor
 		}
 	}
 	SIA_PM_change_add_prawit = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_prawit_wongsuwan_hog
 		}
 	}
 	SIA_PM_change_add_sretta = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_sretta_thavisin_hog
 		}
 	}
 	SIA_PM_change_add_paetongtarn = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_paetongtarn_shinawatra_hog
 		}
 	}
 	SIA_PM_change_add_pita = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_pita_limjaroenrat_hog
 		}
 	}
 	SIA_PM_change_add_anutin = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_anutin_charnvirakul_hog
 		}
 	}
 	SIA_PM_change_add_yodchanan = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_yodchanan_wongsawat_hog
 		}
 	}
 	SIA_PM_change_add_pirapan = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
 		complete_effect = {
 			add_ideas = SIA_pirapan_salirathavibhaga_hog
 		}

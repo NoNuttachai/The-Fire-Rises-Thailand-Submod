@@ -191,32 +191,52 @@ defined_text = {
 }
 defined_text = {
 	name = SIA_UTN_PARTY_MECH_BANNER
-	text = {
+	text = { #Starting UTN party mech
 		trigger = {
 			has_idea = SIA_prayut_chan-o-cha_advisor
 		}
 		localization_key = SIA_utn_banner_prayut
 	}
-	text = {
+	text = { #UTN Pirapan Vs Suchat
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			has_country_flag = SIA_utn_party_mech_dispute
+		}
+		localization_key = SIA_utn_banner_prayutvssuchart
+	}
+	text = { #Pirapan secured nomination
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			NOT = {
 				has_country_flag = SIA_utn_won_2027
+				has_country_flag = SIA_utn_party_mech_dispute
 			}
 		}
 		localization_key = SIA_utn_banner_pirapan
 	}
-	text = {
+	text = { #Suchat secured nomination
+		trigger = {
+			has_idea = SIA_suchat_chomklin_hog
+			NOT = {
+				has_country_flag = SIA_utn_won_2027
+				has_country_flag = SIA_utn_party_mech_dispute
+				has_country_flag = SIA_cambodia_war_stalemate
+			}
+		}
+		localization_key = SIA_utn_banner_suchat
+	}
+	text = { #Pirapan wins 2027
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			has_country_flag = SIA_utn_won_2027
 		}
 		localization_key = SIA_utn_banner_pirapan2
 	}
-	text = {
+	text = { #Stalemate
 		trigger = {
 			has_idea = SIA_suchat_chomklin_hog
+			has_country_flag = SIA_cambodia_war_stalemate
 		}
-		localization_key = SIA_utn_banner_suchat
+		localization_key = SIA_utn_banner_suchat_stalemate
 	}
 }

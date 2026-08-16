@@ -1,0 +1,30 @@
+scripted_gui = {
+	SIA_pirapan_vs_suchart_gui = {
+		context_type = decision_category
+		window_name = "SIA_pvs_container"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			original_tag = SIA
+		}
+		dynamic_lists = {
+		}
+		triggers = {
+			SIA_white_outline_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			
+		}
+
+		effects = {
+			
+		}
+		properties = {
+			
+		}
+	}
+}

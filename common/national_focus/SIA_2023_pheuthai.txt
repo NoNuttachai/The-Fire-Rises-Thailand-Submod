@@ -10,7 +10,8 @@ focus_tree = {
 	shared_focus = SIA_presentation
 	shared_focus = SIA_economy_opening
 	shared_focus = SIA_thailand_in_the_world_stage
-	shared_focus = SIA_cambodia_1
+	hared_focus = SIA_marching_in_phnom_penh
+	shared_focus = SIA_neither_a_victory_nor_defeat
 	
 	focus = {
 		id = SIA_pheu_thai_victory

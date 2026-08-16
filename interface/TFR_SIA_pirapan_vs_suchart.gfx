@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SIA_pvs_arrow"
+		texturefile = "gfx/interface/SIA/pirapanvssuchart/arrow.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_pvs_bar"
+		texturefile = "gfx/interface/SIA/pirapanvssuchart/bar.png"
+	}
+}
