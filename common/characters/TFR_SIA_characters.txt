@@ -199,52 +199,6 @@ characters={
 			}
 		}
 	}
-	SIA_don_pramudwinai_char = {
-		name = SIA_don_pramudwinai_char
-		portraits={
-			civilian = {
-				small = GFX_SIA_don_pramudwinai
-			}
-		}
-		advisor={
-			slot = foreign_minister
-			idea_token = SIA_don_pramudwinai_advisor
-			desc = SIA_don_pramudwinai_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
-	}
-	SIA_uttama_saowanayon_char = {
-		name = SIA_uttama_saowanayon_char
-		portraits={
-			civilian = {
-				small = GFX_SIA_uttama_saowanayon
-			}
-		}
-		advisor={
-			slot = economic_minister
-			idea_token = SIA_uttama_saowanayon_advisor
-			desc = SIA_uttama_saowanayon_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
-	}
 	SIA_anupong_paochinda_char = {
 		name = SIA_anupong_paochinda_char
 		portraits={
@@ -260,29 +214,6 @@ characters={
 			ai_will_do = { factor = 1 }
 		}
 			
-	}
-	SIA_thewan_liptapanlop_char = {
-		name = SIA_thewan_liptapanlop_char
-		portraits={
-			civilian = {
-				small = GFX_SIA_thewan_liptapanlop
-			}
-		}
-		advisor={
-			slot = intelligence_minister
-			idea_token = SIA_thewan_liptapanlop_advisor
-			desc = SIA_thewan_liptapanlop_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
 	}
 	SIA_prawit_wongsuwan_char = {
 		name = SIA_prawit_wongsuwan_char
@@ -306,24 +237,6 @@ characters={
 				#GER_plenipotentiary_of_the_four_year_plan 
 			}
 		}		
-	}
-
-	SIA_predee_daocha_char = {
-		name = SIA_predee_daocha_char
-		portraits={
-			civilian = {
-				small = GFX_SIA_predee_daocha
-			}
-		}
-		
-	}
-	SIA_anucha_nakasai_char = {
-		name = SIA_anucha_nakasai_char
-		portraits={
-			civilian = {
-				small = GFX_SIA_anucha_nakasai
-			}
-		}
 	}
 
 	SIA_apirat_kongsompong_char = {

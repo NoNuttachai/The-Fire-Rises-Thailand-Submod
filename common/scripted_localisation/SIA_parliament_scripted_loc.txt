@@ -96,6 +96,13 @@ defined_text = {
 		}
 		localization_key = SIA_parliament_detail_utn_desc
 	}
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 12 }
+		}
+		localization_key = SIA_parliament_detail_klatham_desc
+	}
 }
 
 ### Party Lines ###
@@ -214,6 +221,14 @@ defined_text = {
 			check_variable = { SIA_party_faction = 11 }
 		}
 		localization_key = SIA_parliament_utn_full
+	}
+	
+	text = {
+		trigger = { 
+			original_tag = SIA 
+			check_variable = { SIA_party_faction = 12 }
+		}
+		localization_key = SIA_parliament_klatham_full
 	}
 }
 
@@ -362,6 +377,21 @@ defined_text = {
 		}
 		localization_key = SIA_opposition_leader
 	}
+	
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 12 }
+			check_variable = { SIA_party_faction = 12 }
+		}
+		localization_key = SIA_government_coalition_leader
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 12 }
+			check_variable = { SIA_party_faction = 12 }
+		}
+		localization_key = SIA_opposition_leader
+	}
 }
 defined_text = {
 	name = SIA_get_government_leader
@@ -439,6 +469,12 @@ defined_text = {
 			check_variable = { SIA_government_leader = 11 }
 		}
 		localization_key = SIA_parliament_utn_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_government_leader = 12 }
+		}
+		localization_key = SIA_parliament_klatham_full
 	}
 }
 defined_text = {
@@ -523,6 +559,12 @@ defined_text = {
 			check_variable = { SIA_opposition_leader = 11 }
 		}
 		localization_key = SIA_parliament_utn_full
+	}
+	text = {
+		trigger = { 
+			check_variable = { SIA_opposition_leader = 12 }
+		}
+		localization_key = SIA_parliament_klatham_full
 	}
 }
 ### Speaker Info ###

@@ -358,44 +358,44 @@
  SIA_friend_and_foes: "Friend And Foes"
  SIA_friend_and_foes_desc: ""
  
+ SIA_partys_prince: "Party's Prince"
+ SIA_partys_prince_desc: ""
+ 
+ SIA_not_the_same_as_before: "Not The Same As Before"
+ SIA_not_the_same_as_before_desc: ""
+ 
+ SIA_capital_of_yellow_shirts: "Capital Of Yellow Shirts"
+ SIA_capital_of_yellow_shirts_desc: ""
+ 
+ SIA_respectfulness_for_elderly: "Respectfulness For Elderly"
+ SIA_respectfulness_for_elderly_desc: ""
+ 
+ SIA_same_old: "Same Old"
+ SIA_same_old_desc: ""
+ 
+ SIA_nation_of_patriot: "Nation Of Patriot"
+ SIA_nation_of_patriot_desc: ""
+ 
+ SIA_conservative_revolution: "Conservative Revolution"
+ SIA_conservative_revolution_desc: ""
+ 
+ SIA_proud_citizens: "Proud Citizens"
+ SIA_proud_citizens_desc: ""
+ 
+ SIA_support_our_heroes: "Support Our Heroes"
+ SIA_support_our_heroes_desc: ""
+ 
+ SIA_we_will_not_change: "We Will Not Change"
+ SIA_we_will_not_change_desc: ""
+ 
  SIA_rekindling_spirit: "Rekindling Spirit"
  SIA_rekindling_spirit_desc: ""
  
- SIA_heir_to_the_party: "Heir To The Party"
- SIA_heir_to_the_party_desc: ""
- 
- SIA_sizable_lots: "Sizable Lots"
- SIA_sizable_lots_desc: ""
- 
  SIA_old_friendship: "Old Friendship"
  SIA_old_friendship_desc: ""
- 
- SIA_the_general_and_his_right_hand: "The General And His Right Hand"
- SIA_the_general_and_his_right_hand_desc: ""
- 
- SIA_the_king_in_another_castle: "The King In Another Castle"
- SIA_the_king_in_another_castle_desc: ""
- 
- SIA_court_the_barons: "Court The Barons"
- SIA_court_the_barons_desc: ""
- 
+
  SIA_next_time: "Next Time"
  SIA_next_time_desc: ""
- 
- SIA_their_lieutenant: "Their Lieutenant"
- SIA_their_lieutenant_desc: ""
- 
- SIA_respectful_pawns: "Respectful Pawns"
- SIA_respectful_pawns_desc: ""
- 
- SIA_straight_from_the_pocket: "Straight From The Pocket"
- SIA_straight_from_the_pocket_desc: ""
- 
- SIA_make_a_show: "Make A Show"
- SIA_make_a_show_desc: ""
- 
- SIA_woe: "Woe"
- SIA_woe_desc: ""
  
  SIA_fallen_flat: "Fallen Flat"
  SIA_fallen_flat_desc: ""
@@ -1002,7 +1002,7 @@
  SIA_economic_engine_increase: "§YThe Engine§! slowly §Groars louder...§!"
  SIA_ongoing_elections: "§YElections are ongoing§!"
  SIA_active_election_decision: "Doing a Campaign Action"
- SIA_utn_in_charge_tt: "There is currently a £GFX_united_thai_nation §PUTN§! §YPrime Minister§!"
+ SIA_utn_in_charge_tt: "There is currently a £GFX_united_thai_nation §PUTN§! §YGovernment§! lead by §YPrayut Chan-O-Cha§!"
  SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
  SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
 #MIO's
@@ -1055,6 +1055,7 @@
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§! [SIA_check_coalition_leader] \n§Y[?SIA_tlp_seats_var|0]§! Seats"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pcc_seats_var|0]§! Seats"
  SIA_parliament_utn_full: "£GFX_united_thai_nation §PUnited Thai Nation Party§! [SIA_check_coalition_leader] \n§Y[?SIA_utn_seats_var|0]§! Seats"
+ SIA_parliament_klatham_full: "klatham [SIA_check_coalition_leader] \n§Y[?SIA_klatham_seats_var|0]§! Seats"
 
  SIA_government_coalition_leader: "§P- Government Coalition Leader§!"
  SIA_opposition_leader: "§R- Opposition Leader§!"
@@ -1084,6 +1085,8 @@
  
  SIA_parliament_detail_utn_desc: "£GFX_united_thai_nation §YUnited Thai Nation Party§! (Pak Ruam Thai Sang Chart) \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Prayut Chan-O-Cha\n\n§YThe United Thai Nation Party§! (Ruam Thai Sang Chart) was founded on March 31, 2021, by Seksakon Atthawong, a former deputy minister to Prime Minister Prayut Chan-o-cha. The party takes its name from a phrase originally coined by General Prayut.\n\nIn late 2022, ahead of the 2023 general election,§Y a rift emerged between General Prayut Chan-o-cha and General Prawit Wongsuwan§!, leader of the Palang Pracharath Party. As a result of the conflict, the Palang Pracharath Party dropped Prayut from its list of prime ministerial candidates and instead nominated Prawit as its candidate for the office. Consequently, Prayut announced his decision to join the United Thai Nation Party and seek its nomination for another term as Prime Minister. \n\nThe party's spokesperson, Akkradech Wongpitakroj, has stated that the party espouses "modern conservatism." Ideologically, the party has been described by its left-wing opponents as §Yultra-conservative, pro-military, monarchist, and far-right§!."
  
+ SIA_parliament_detail_klatham_desc: "§YKla Tham§! (Pak Ruam Thai Sang Chart) \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! erm\n\nKla tham."
+ 
  # Parliament GUI - new layout keys
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
@@ -1107,6 +1110,7 @@
  SIA_change_ctpp_seats: "£GFX_chartthaipattana §sChart Thai Pattana Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_pcc_seats: "£GFX_prachachat §YPrachachat Party§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_utn_seats: "£GFX_united_thai_nation §PUnited Thai Nation Party§! §YSeat§! Change: [?seats|=+0]"
+ SIA_change_klatham_seats: "Kla Tham §YSeat§! Change: [?seats|=+0]"
  SIA_change_minor_government_coalition_seats: "§LMinor Governmental Coalition Parties§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_minor_oppositional_parties_seats: "§LMinor Oppositional Parties§! §YSeat§! Change: [?seats|=+0]"
  SIA_change_vacant_seats: "§gVacant§! §YSeat§! Change: [?seats|=+0]"

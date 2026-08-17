@@ -1,7 +1,7 @@
 focus_tree = {
 	id = SIA_2023_utn_focus_tree
 	country = {
-		factor = 99999999
+		factor = 1
 		modifier = {
 			add = 1
 			tag = SIA
@@ -23,11 +23,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -48,11 +44,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -91,11 +83,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -119,11 +107,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -147,11 +131,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -184,11 +164,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -214,11 +190,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -241,11 +213,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -284,11 +252,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -344,11 +308,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -400,11 +360,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -443,11 +399,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 			command_power > 30
@@ -474,11 +426,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -512,11 +460,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -553,11 +497,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 			has_completed_focus = SIA_presentation
@@ -590,11 +530,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -629,11 +565,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -656,11 +588,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -709,11 +637,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -739,11 +663,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 			
@@ -769,11 +689,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -810,11 +726,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 			has_completed_focus = SIA_wonderful_thailand
@@ -840,11 +752,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -885,11 +793,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -928,11 +832,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -964,11 +864,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -1004,11 +900,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -1019,6 +911,53 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 30
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_partys_prince
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				tooltip = SIA_utn_in_charge_tt
+			}
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_friend_and_foes
+		prerequisite = { focus = SIA_friend_and_foes }
+		
+		completion_reward = {
+			country_event = thai_prayut.14
+		}
+	}
+	focus = {
+		id = SIA_not_the_same_as_before
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				tooltip = SIA_utn_in_charge_tt
+			}
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_friend_and_foes
+		prerequisite = { focus = SIA_friend_and_foes }
+		
+		completion_reward = {
 			
 		}
 	}
@@ -1033,71 +972,13 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_friend_and_foes
-		prerequisite = { focus = SIA_friend_and_foes }
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_heir_to_the_party
-		icon = GFX_goal_SIA_information_operations
-		x = 0
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
-				tooltip = SIA_utn_in_charge_tt
-			}
-		}
-		available_if_capitulated = yes
-		relative_position_id = SIA_friend_and_foes
-		prerequisite = { focus = SIA_friend_and_foes }
-		
-		completion_reward = {
-			country_event = thai_prayut.14
-		}
-	}
-	focus = {
-		id = SIA_sizable_lots
-		icon = GFX_goal_SIA_information_operations
-		x = 2
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
-				tooltip = SIA_utn_in_charge_tt
-			}
-		}
-		available_if_capitulated = yes
-		relative_position_id = SIA_friend_and_foes
-		prerequisite = { focus = SIA_friend_and_foes }
+		relative_position_id = SIA_partys_prince
+		prerequisite = { focus = SIA_partys_prince }
 		
 		completion_reward = {
 			
@@ -1114,11 +995,7 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
@@ -1131,7 +1008,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_the_general_and_his_right_hand
+		id = SIA_capital_of_yellow_shirts
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -1141,24 +1018,20 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_heir_to_the_party
-		prerequisite = { focus = SIA_heir_to_the_party }
+		relative_position_id = SIA_partys_prince
+		prerequisite = { focus = SIA_partys_prince }
 		
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = SIA_the_king_in_another_castle
+		id = SIA_respectfulness_for_elderly
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -1168,24 +1041,20 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_sizable_lots
-		prerequisite = { focus = SIA_sizable_lots }
+		relative_position_id = SIA_not_the_same_as_before
+		prerequisite = { focus = SIA_not_the_same_as_before }
 		
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = SIA_court_the_barons
+		id = SIA_same_old
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
@@ -1195,17 +1064,38 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_sizable_lots
-		prerequisite = { focus = SIA_sizable_lots }
+		relative_position_id = SIA_not_the_same_as_before
+		prerequisite = { focus = SIA_not_the_same_as_before }
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SIA_nation_of_patriot
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				tooltip = SIA_utn_in_charge_tt
+			}
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_capital_of_yellow_shirts
+		prerequisite = { focus = SIA_capital_of_yellow_shirts }
+		prerequisite = { focus = SIA_respectfulness_for_elderly }
 		
 		completion_reward = {
 			
@@ -1214,7 +1104,7 @@ focus_tree = {
 	focus = {
 		id = SIA_next_time
 		icon = GFX_goal_SIA_information_operations
-		x = 0
+		x = 1
 		y = 1
 		cost = 4
 		ai_will_do = {
@@ -1222,24 +1112,21 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_old_friendship
 		prerequisite = { focus = SIA_old_friendship }
+		prerequisite = { focus = SIA_nation_of_patriot }
 		
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = SIA_their_lieutenant
+		id = SIA_conservative_revolution
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -1249,25 +1136,21 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_the_general_and_his_right_hand
-		prerequisite = { focus = SIA_the_general_and_his_right_hand }
-		prerequisite = { focus = SIA_the_king_in_another_castle }
+		relative_position_id = SIA_respectfulness_for_elderly
+		prerequisite = { focus = SIA_capital_of_yellow_shirts }
+		prerequisite = { focus = SIA_respectfulness_for_elderly }
 		
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = SIA_respectful_pawns
+		id = SIA_proud_citizens
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -1277,52 +1160,20 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_the_king_in_another_castle
-		prerequisite = { focus = SIA_the_general_and_his_right_hand }
-		prerequisite = { focus = SIA_the_king_in_another_castle }
+		relative_position_id = SIA_same_old
+		prerequisite = { focus = SIA_same_old }
 		
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = SIA_straight_from_the_pocket
-		icon = GFX_goal_SIA_information_operations
-		x = 0
-		y = 1
-		cost = 4
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
-				tooltip = SIA_utn_in_charge_tt
-			}
-		}
-		available_if_capitulated = yes
-		relative_position_id = SIA_court_the_barons
-		prerequisite = { focus = SIA_court_the_barons }
-		
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = SIA_make_a_show
+		id = SIA_support_our_heroes
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
@@ -1332,25 +1183,21 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_their_lieutenant
-		prerequisite = { focus = SIA_their_lieutenant }
-		prerequisite = { focus = SIA_respectful_pawns }
+		relative_position_id = SIA_nation_of_patriot
+		prerequisite = { focus = SIA_nation_of_patriot }
+		prerequisite = { focus = SIA_conservative_revolution }
 		
 		completion_reward = {
 			
 		}
 	}
 	focus = {
-		id = SIA_woe
+		id = SIA_we_will_not_change
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
@@ -1360,18 +1207,14 @@ focus_tree = {
 		}
 		available = {
 			custom_trigger_tooltip = {
-				OR = {
-					has_idea = SIA_prayut_chan-o-cha_advisor
-					has_idea = SIA_pirapan_salirathavibhaga_hog
-					#has_idea = SIA_suchat_chomklin_hog
-				}
+				has_idea = SIA_prayut_chan-o-cha_advisor
 				tooltip = SIA_utn_in_charge_tt
 			}
 		}
 		available_if_capitulated = yes
-		relative_position_id = SIA_respectful_pawns
-		prerequisite = { focus = SIA_respectful_pawns }
-		prerequisite = { focus = SIA_straight_from_the_pocket }
+		relative_position_id = SIA_conservative_revolution
+		prerequisite = { focus = SIA_conservative_revolution }
+		prerequisite = { focus = SIA_proud_citizens }
 		
 		completion_reward = {
 			
