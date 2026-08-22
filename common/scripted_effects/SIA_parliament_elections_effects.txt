@@ -1,6 +1,12 @@
-SIA_setup_elections = { #Protests dismantled - Prayut present scenario
+###ELECTION SCENARIOS###
+
+#2023
+SIA_setup_elections_2023 = { #Protests dismantled - Prayut present scenario
 	clear_array = SIA_party_election_array
-	
+	SIA_reset_party_votes = yes
+	set_country_flag = SIA_2023_elections
+	set_variable = { ptp_candidate = 0 }
+	set_variable = { orange_candidate = 0 }
 	add_to_array = { SIA_party_election_array = 11 }
 	add_to_array = { SIA_party_election_array = 1 }
 	add_to_array = { SIA_party_election_array = 2 }
@@ -35,7 +41,7 @@ SIA_setup_elections = { #Protests dismantled - Prayut present scenario
 	SIA_elections_translate_votes_to_seats = yes
 	SIA_elections_update_undecided = yes
 }
-SIA_roll_2nd_target = {
+SIA_roll_2nd_target_2023 = {
 	#playing as pheu
 	# structure should be that all 6 have different stuff with a random list to grab var, fixed to always be for 1 party Example: option 1 is always about PP party
 	# PARTIES
@@ -593,7 +599,7 @@ SIA_roll_2nd_target = {
 		}
 	}
 }
-SIA_roll_other_party_campaigning = {
+SIA_roll_other_party_campaigning_2023 = {
 	if = {
 		limit = {
 			check_variable = { undecided_votes > 0 }
@@ -998,6 +1004,300 @@ SIA_roll_other_party_campaigning = {
 		}
 	}
 }
+
+SIA_decide_election_winner_2023 = {
+	end_coalition = yes
+	end_ruling_party_wings = yes
+	if = {
+		limit = {
+			check_variable = { 1:party_votes > 2:party_votes }
+			check_variable = { 1:party_votes > 3:party_votes }
+			check_variable = { 1:party_votes > 4:party_votes }
+			check_variable = { 1:party_votes > 6:party_votes }
+			check_variable = { 1:party_votes > 9:party_votes }
+			check_variable = { 1:party_votes > 11:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { 2:party_votes > 1:party_votes }
+			check_variable = { 2:party_votes > 3:party_votes }
+			check_variable = { 2:party_votes > 4:party_votes }
+			check_variable = { 2:party_votes > 6:party_votes }
+			check_variable = { 2:party_votes > 9:party_votes }
+			check_variable = { 2:party_votes > 11:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_2
+		set_variable = { SIA_government_leader = 2 }
+		set_variable = { SIA_opposition_leader = 11 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { 3:party_votes > 1:party_votes }
+			check_variable = { 3:party_votes > 2:party_votes }
+			check_variable = { 3:party_votes > 4:party_votes }
+			check_variable = { 3:party_votes > 6:party_votes }
+			check_variable = { 3:party_votes > 9:party_votes }
+			check_variable = { 3:party_votes > 11:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_3
+	}
+	else_if = {
+		limit = {
+			check_variable = { 4:party_votes > 1:party_votes }
+			check_variable = { 4:party_votes > 3:party_votes }
+			check_variable = { 4:party_votes > 2:party_votes }
+			check_variable = { 4:party_votes > 6:party_votes }
+			check_variable = { 4:party_votes > 9:party_votes }
+			check_variable = { 4:party_votes > 11:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_4
+	}
+	else_if = {
+		limit = {
+			check_variable = { 6:party_votes > 1:party_votes }
+			check_variable = { 6:party_votes > 3:party_votes }
+			check_variable = { 6:party_votes > 4:party_votes }
+			check_variable = { 6:party_votes > 2:party_votes }
+			check_variable = { 6:party_votes > 9:party_votes }
+			check_variable = { 6:party_votes > 11:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_6
+	}
+	else_if = {
+		limit = {
+			check_variable = { 11:party_votes > 1:party_votes }
+			check_variable = { 11:party_votes > 3:party_votes }
+			check_variable = { 11:party_votes > 4:party_votes }
+			check_variable = { 11:party_votes > 2:party_votes }
+			check_variable = { 11:party_votes > 9:party_votes }
+			check_variable = { 11:party_votes > 6:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_11 
+		set_variable = { SIA_government_leader = 11 }
+		set_variable = { SIA_opposition_leader = 2 }
+		
+	}
+	else = {
+		custom_effect_tooltip = SIA_election_results_undecided
+	}
+	country_event = thai_elections.1
+}
+SIA_adjust_election_bar_2023 = {
+	set_variable = { SIA_elections_bar_1_frame = 1:party_seats_elections }
+	
+	set_variable = { SIA_elections_bar_2_frame = 2:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_2_frame = SIA_elections_bar_1_frame }
+	
+	set_variable = { SIA_elections_bar_3_frame = 3:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_3_frame = SIA_elections_bar_2_frame }
+	
+	set_variable = { SIA_elections_bar_4_frame = 4:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_4_frame = SIA_elections_bar_3_frame }
+	
+	set_variable = { SIA_elections_bar_6_frame = 6:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_6_frame = SIA_elections_bar_4_frame }
+	
+	set_variable = { SIA_elections_bar_11_frame = 11:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_11_frame = SIA_elections_bar_6_frame }
+	
+	set_variable = { SIA_elections_bar_9_frame = 9:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_9_frame = SIA_elections_bar_11_frame }
+	
+	set_variable = { undecided_votes_elections = 500 }
+	
+	SIA_get_projected_winner_image = yes
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SIA_setup_elections_2027 = { #Cambodia Victory - Any Party
+	clear_array = SIA_party_election_array
+	SIA_reset_party_votes = yes
+	set_country_flag = SIA_2027_elections
+	set_variable = { ptp_candidate = 3 }
+	set_variable = { orange_candidate = 1 }
+	add_to_array = { SIA_party_election_array = 11 }
+	add_to_array = { SIA_party_election_array = 1 }
+	add_to_array = { SIA_party_election_array = 2 }
+	add_to_array = { SIA_party_election_array = 3 }
+	add_to_array = { SIA_party_election_array = 4 }
+	add_to_array = { SIA_party_election_array = 6 }
+	add_to_array = { SIA_party_election_array = 12 }
+	add_to_array = { SIA_party_election_array = 9 }
+	
+	set_variable = { undecided_votes = 100 }
+	# Party votes are in percentage out of 100
+	11 = {
+		set_variable = { party_votes = 58 }
+	}
+	1 = {
+		set_variable = { party_votes = 4 }
+	}
+	2 = {
+		set_variable = { party_votes = 12 }
+	}
+	3 = {
+		set_variable = { party_votes = 8 }
+	}
+	4 = {
+		set_variable = { party_votes = 4 }
+	}
+	6 = {
+		set_variable = { party_votes = 5 }
+	}
+	12 = {
+		set_variable = { party_votes = 6 }
+	}
+	9 = {
+		set_variable = { party_votes = 3 }
+	}
+	SIA_elections_translate_votes_to_seats = yes
+	SIA_elections_update_undecided = yes
+}
+
+SIA_decide_election_winner_2027 = {
+	end_coalition = yes
+	end_ruling_party_wings = yes
+	if = {
+		limit = {
+			check_variable = { 1:party_votes > 2:party_votes }
+			check_variable = { 1:party_votes > 3:party_votes }
+			check_variable = { 1:party_votes > 4:party_votes }
+			check_variable = { 1:party_votes > 6:party_votes }
+			check_variable = { 1:party_votes > 9:party_votes }
+			check_variable = { 1:party_votes > 11:party_votes }
+			check_variable = { 1:party_votes > 12:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { 2:party_votes > 1:party_votes }
+			check_variable = { 2:party_votes > 3:party_votes }
+			check_variable = { 2:party_votes > 4:party_votes }
+			check_variable = { 2:party_votes > 6:party_votes }
+			check_variable = { 2:party_votes > 9:party_votes }
+			check_variable = { 2:party_votes > 11:party_votes }
+			check_variable = { 2:party_votes > 12:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_2
+		set_variable = { SIA_government_leader = 2 }
+		set_variable = { SIA_opposition_leader = 11 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { 3:party_votes > 1:party_votes }
+			check_variable = { 3:party_votes > 2:party_votes }
+			check_variable = { 3:party_votes > 4:party_votes }
+			check_variable = { 3:party_votes > 6:party_votes }
+			check_variable = { 3:party_votes > 9:party_votes }
+			check_variable = { 3:party_votes > 11:party_votes }
+			check_variable = { 3:party_votes > 12:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_3
+	}
+	else_if = {
+		limit = {
+			check_variable = { 4:party_votes > 1:party_votes }
+			check_variable = { 4:party_votes > 3:party_votes }
+			check_variable = { 4:party_votes > 2:party_votes }
+			check_variable = { 4:party_votes > 6:party_votes }
+			check_variable = { 4:party_votes > 9:party_votes }
+			check_variable = { 4:party_votes > 11:party_votes }
+			check_variable = { 4:party_votes > 12:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_4
+	}
+	else_if = {
+		limit = {
+			check_variable = { 6:party_votes > 1:party_votes }
+			check_variable = { 6:party_votes > 3:party_votes }
+			check_variable = { 6:party_votes > 4:party_votes }
+			check_variable = { 6:party_votes > 2:party_votes }
+			check_variable = { 6:party_votes > 9:party_votes }
+			check_variable = { 6:party_votes > 11:party_votes }
+			check_variable = { 6:party_votes > 12:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_6
+	}
+	else_if = {
+		limit = {
+			check_variable = { 11:party_votes > 1:party_votes }
+			check_variable = { 11:party_votes > 3:party_votes }
+			check_variable = { 11:party_votes > 4:party_votes }
+			check_variable = { 11:party_votes > 2:party_votes }
+			check_variable = { 11:party_votes > 9:party_votes }
+			check_variable = { 11:party_votes > 6:party_votes }
+			check_variable = { 11:party_votes > 12:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_11 
+		set_variable = { SIA_government_leader = 11 }
+		set_variable = { SIA_opposition_leader = 2 }
+		
+	}
+	else_if = {
+		limit = {
+			check_variable = { 12:party_votes > 1:party_votes }
+			check_variable = { 12:party_votes > 3:party_votes }
+			check_variable = { 12:party_votes > 4:party_votes }
+			check_variable = { 12:party_votes > 2:party_votes }
+			check_variable = { 12:party_votes > 9:party_votes }
+			check_variable = { 12:party_votes > 6:party_votes }
+			check_variable = { 12:party_votes > 11:party_votes }
+		}
+		custom_effect_tooltip = SIA_election_results_12 
+		
+	}
+	else = {
+		custom_effect_tooltip = SIA_election_results_undecided
+	}
+	country_event = thai_elections.1
+}
+SIA_adjust_election_bar_2027 = {
+	set_variable = { SIA_elections_bar_1_frame = 1:party_seats_elections }
+	
+	set_variable = { SIA_elections_bar_2_frame = 2:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_2_frame = SIA_elections_bar_1_frame }
+	
+	set_variable = { SIA_elections_bar_3_frame = 3:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_3_frame = SIA_elections_bar_2_frame }
+	
+	set_variable = { SIA_elections_bar_4_frame = 4:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_4_frame = SIA_elections_bar_3_frame }
+	
+	set_variable = { SIA_elections_bar_6_frame = 6:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_6_frame = SIA_elections_bar_4_frame }
+	
+	set_variable = { SIA_elections_bar_11_frame = 11:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_11_frame = SIA_elections_bar_6_frame }
+	
+	set_variable = { SIA_elections_bar_12_frame = 12:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_12_frame = SIA_elections_bar_11_frame }
+	
+	set_variable = { SIA_elections_bar_9_frame = 9:party_seats_elections }
+	add_to_variable = { SIA_elections_bar_9_frame = SIA_elections_bar_12_frame }
+	
+	set_variable = { undecided_votes_elections = 500 }
+	
+	SIA_get_projected_winner_image = yes
+	
+}
+
+###END OF ELECTION SCENARIOS###
 SIA_elections_update_undecided = {
 	clamp_variable = {
 		var = 1:party_votes
@@ -1031,6 +1331,11 @@ SIA_elections_update_undecided = {
 	}
 	clamp_variable = {
 		var = 11:party_votes
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = 12:party_votes
 		min = 0
 		max = 100
 	}
@@ -1093,6 +1398,12 @@ SIA_elections_increase_votes_by_undecided = {
 		}
 		add_to_variable = { 11:party_votes = vote_change }
 	}
+	if = {
+		limit = {
+			check_variable = { target = 12 }
+		}
+		add_to_variable = { 12:party_votes = vote_change }
+	}
 	custom_effect_tooltip = [SIA_election_votes_party_change]
 	
 	multiply_temp_variable = { vote_change = -1 } #tooltip for next line
@@ -1149,6 +1460,13 @@ SIA_elections_targeted_vote_increase = { #1st target grabs votes from 2nd target
 		}
 		add_to_variable = { 11:party_votes = vote_change }
 		custom_effect_tooltip = SIA_change_11_votes
+	}
+	else_if = {
+		limit = {
+			check_variable = { 1st_target = 12 }
+		}
+		add_to_variable = { 12:party_votes = vote_change }
+		custom_effect_tooltip = SIA_change_12_votes
 	}
 
 	multiply_temp_variable = { vote_change = -1 }
@@ -1266,13 +1584,28 @@ SIA_elections_targeted_vote_increase = { #1st target grabs votes from 2nd target
 		}
 		custom_effect_tooltip = SIA_change_11_votes
 	}
-	
+	else_if = {
+		limit = {
+			check_variable = { 2nd_target = 12 }
+		}
+		if = {
+			limit = {  #chance that vote_change will be higher than current votes, just grab the votes and delete var
+				check_variable = { 12:party_votes < vote_change }
+			}
+			set_temp_variable = { vote_change = 12:party_votes }
+			add_to_variable = { 12:party_votes = vote_change }
+		}
+		else = {
+			add_to_variable = { 12:party_votes = vote_change }
+		}
+		custom_effect_tooltip = SIA_change_12_votes
+	}
 	SIA_elections_update_undecided = yes
 	SIA_elections_translate_votes_to_seats = yes
 }
 
 
-# FINAL CALC
+# FINAL CALC - UNIVERSAL CODES
 SIA_elections_translate_votes_to_seats = {
 	for_each_loop = {
 		array = SIA_party_election_array
@@ -1283,115 +1616,20 @@ SIA_elections_translate_votes_to_seats = {
 			round_variable = party_seats_elections
 		}
 	}
-	SIA_adjust_election_bar = yes
-}
-SIA_decide_election_winner = {
-	end_coalition = yes
-	end_ruling_party_wings = yes
 	if = {
 		limit = {
-			check_variable = { 1:party_votes > 2:party_votes }
-			check_variable = { 1:party_votes > 3:party_votes }
-			check_variable = { 1:party_votes > 4:party_votes }
-			check_variable = { 1:party_votes > 6:party_votes }
-			check_variable = { 1:party_votes > 9:party_votes }
-			check_variable = { 1:party_votes > 11:party_votes }
+			has_country_flag = SIA_2023_elections
 		}
-		custom_effect_tooltip = SIA_election_results_1
+		SIA_adjust_election_bar_2023 = yes
 	}
-	else_if = {
+	if = {
 		limit = {
-			check_variable = { 2:party_votes > 1:party_votes }
-			check_variable = { 2:party_votes > 3:party_votes }
-			check_variable = { 2:party_votes > 4:party_votes }
-			check_variable = { 2:party_votes > 6:party_votes }
-			check_variable = { 2:party_votes > 9:party_votes }
-			check_variable = { 2:party_votes > 11:party_votes }
+			has_country_flag = SIA_2027_elections
 		}
-		custom_effect_tooltip = SIA_election_results_2
-		set_variable = { SIA_government_leader = 2 }
-		set_variable = { SIA_opposition_leader = 11 }
+		SIA_adjust_election_bar_2027 = yes
 	}
-	else_if = {
-		limit = {
-			check_variable = { 3:party_votes > 1:party_votes }
-			check_variable = { 3:party_votes > 2:party_votes }
-			check_variable = { 3:party_votes > 4:party_votes }
-			check_variable = { 3:party_votes > 6:party_votes }
-			check_variable = { 3:party_votes > 9:party_votes }
-			check_variable = { 3:party_votes > 11:party_votes }
-		}
-		custom_effect_tooltip = SIA_election_results_3
-	}
-	else_if = {
-		limit = {
-			check_variable = { 4:party_votes > 1:party_votes }
-			check_variable = { 4:party_votes > 3:party_votes }
-			check_variable = { 4:party_votes > 2:party_votes }
-			check_variable = { 4:party_votes > 6:party_votes }
-			check_variable = { 4:party_votes > 9:party_votes }
-			check_variable = { 4:party_votes > 11:party_votes }
-		}
-		custom_effect_tooltip = SIA_election_results_4
-	}
-	else_if = {
-		limit = {
-			check_variable = { 6:party_votes > 1:party_votes }
-			check_variable = { 6:party_votes > 3:party_votes }
-			check_variable = { 6:party_votes > 4:party_votes }
-			check_variable = { 6:party_votes > 2:party_votes }
-			check_variable = { 6:party_votes > 9:party_votes }
-			check_variable = { 6:party_votes > 11:party_votes }
-		}
-		custom_effect_tooltip = SIA_election_results_6
-	}
-	else_if = {
-		limit = {
-			check_variable = { 11:party_votes > 1:party_votes }
-			check_variable = { 11:party_votes > 3:party_votes }
-			check_variable = { 11:party_votes > 4:party_votes }
-			check_variable = { 11:party_votes > 2:party_votes }
-			check_variable = { 11:party_votes > 9:party_votes }
-			check_variable = { 11:party_votes > 6:party_votes }
-		}
-		custom_effect_tooltip = SIA_election_results_11 
-		set_variable = { SIA_government_leader = 11 }
-		set_variable = { SIA_opposition_leader = 2 }
-		
-	}
-	else = {
-		custom_effect_tooltip = SIA_election_results_undecided
-	}
-	country_event = thai_elections.1
 }
 
-
-SIA_adjust_election_bar = {
-	set_variable = { SIA_elections_bar_1_frame = 1:party_seats_elections }
-	
-	set_variable = { SIA_elections_bar_2_frame = 2:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_2_frame = SIA_elections_bar_1_frame }
-	
-	set_variable = { SIA_elections_bar_3_frame = 3:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_3_frame = SIA_elections_bar_2_frame }
-	
-	set_variable = { SIA_elections_bar_4_frame = 4:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_4_frame = SIA_elections_bar_3_frame }
-	
-	set_variable = { SIA_elections_bar_6_frame = 6:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_6_frame = SIA_elections_bar_4_frame }
-	
-	set_variable = { SIA_elections_bar_11_frame = 11:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_11_frame = SIA_elections_bar_6_frame }
-	
-	set_variable = { SIA_elections_bar_9_frame = 9:party_seats_elections }
-	add_to_variable = { SIA_elections_bar_9_frame = SIA_elections_bar_11_frame }
-	
-	set_variable = { undecided_votes_elections = 500 }
-	
-	SIA_get_projected_winner_image = yes
-	
-}
 SIA_get_projected_winner_image = {
 	add_to_temp_array = { most_votes = 1:party_votes }
 	add_to_temp_array = { most_votes = 2:party_votes }
@@ -1400,6 +1638,7 @@ SIA_get_projected_winner_image = {
 	add_to_temp_array = { most_votes = 6:party_votes }
 	add_to_temp_array = { most_votes = 9:party_votes }
 	add_to_temp_array = { most_votes = 11:party_votes }
+	add_to_temp_array = { most_votes = 12:party_votes }
 	find_highest_in_array = {
 		array = most_votes
 		index = most
@@ -1430,8 +1669,25 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_1st = 2.2 }
 	}
 	else_if = {
-		limit = { check_variable = { most = 2 } }
+		limit = { 
+			check_variable = { most = 1 } 
+			check_variable = { ptp_candidate = 3 }
+		}
+		set_variable = { SIA_elections_1st = 2.3 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most = 2 } 
+			check_variable = { orange_candidate = 0 }
+		}
 		set_variable = { SIA_elections_1st = 3 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most = 2 } 
+			check_variable = { orange_candidate = 1 }
+		}
+		set_variable = { SIA_elections_1st = 3.1 }
 	}
 	else_if = {
 		limit = { check_variable = { most = 3 } }
@@ -1446,10 +1702,33 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_1st = 9 }
 	}
 	else_if = {
-		limit = { check_variable = { most = 6 } }
+		limit = { 
+			check_variable = { most = 6 } 
+			check_variable = { utn_candidate = 0 }
+		}
 		set_variable = { SIA_elections_1st = 11 }
 		
 	}
+	else_if = {
+		limit = { 
+			check_variable = { most = 6 } 
+			check_variable = { utn_candidate = 1 }
+		}
+		set_variable = { SIA_elections_1st = 11.1 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most = 6 } 
+			check_variable = { utn_candidate = 2 }
+		}
+		set_variable = { SIA_elections_1st = 11.2 }
+	}
+	else_if = {
+		limit = { check_variable = { most = 7 } }
+		set_variable = { SIA_elections_1st = 12 }
+		
+	}
+	
 
 	### 2nd Placer ###
 	if = {
@@ -1470,6 +1749,7 @@ SIA_get_projected_winner_image = {
 					check_variable = { SIA_elections_1st = 2 }
 					check_variable = { SIA_elections_1st = 2.1 }
 					check_variable = { SIA_elections_1st = 2.2 }
+					check_variable = { SIA_elections_1st = 2.3 }
 				}
 			}
 		}
@@ -1481,7 +1761,10 @@ SIA_get_projected_winner_image = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { SIA_elections_1st = 3 }
+				OR = {
+					check_variable = { SIA_elections_1st = 3 }
+					check_variable = { SIA_elections_1st = 3.1 }
+				}
 			}
 		}
 		add_to_temp_array = { most_votes2 = 3:party_votes }
@@ -1525,10 +1808,25 @@ SIA_get_projected_winner_image = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { SIA_elections_1st = 11 }
+				OR = {
+					check_variable = { SIA_elections_1st = 11 }
+					check_variable = { SIA_elections_1st = 11.1 }
+					check_variable = { SIA_elections_1st = 11.2 }
+				}
 			}
 		}
 		add_to_temp_array = { most_votes2 = 11:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes2 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 12 }
+			}
+		}
+		add_to_temp_array = { most_votes2 = 12:party_votes }
 	}
 	else = {
 		add_to_temp_array = { most_votes2 = 0 }
@@ -1564,8 +1862,25 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_2nd = 2.2 }
 	}
 	else_if = {
-		limit = { check_variable = { most2 = 2 } }
+		limit = { 
+			check_variable = { most2 = 1 } 
+			check_variable = { ptp_candidate = 3 } 
+		}
+		set_variable = { SIA_elections_2nd = 2.3 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most2 = 2 } 
+			check_variable = { orange_candidate = 0 } 
+		}
 		set_variable = { SIA_elections_2nd = 3 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most2 = 2 } 
+			check_variable = { orange_candidate = 1 } 
+		}
+		set_variable = { SIA_elections_2nd = 3.1 }
 	}
 	else_if = {
 		limit = { check_variable = { most2 = 3 } }
@@ -1580,8 +1895,29 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_2nd = 9 }
 	}
 	else_if = {
-		limit = { check_variable = { most2 = 6 } }
+		limit = { 
+			check_variable = { most2 = 6 } 
+			check_variable = { utn_candidate = 0 } 
+		}
 		set_variable = { SIA_elections_2nd = 11 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most2 = 6 } 
+			check_variable = { utn_candidate = 1 } 
+		}
+		set_variable = { SIA_elections_2nd = 11.1 }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { most2 = 6 } 
+			check_variable = { utn_candidate = 2 } 
+		}
+		set_variable = { SIA_elections_2nd = 11.2 }
+	}
+	else_if = {
+		limit = { check_variable = { most2 = 7 } }
+		set_variable = { SIA_elections_2nd = 12 }
 	}
 	
 	### 3rd Placer ###
@@ -1605,10 +1941,12 @@ SIA_get_projected_winner_image = {
 					check_variable = { SIA_elections_1st = 2 }
 					check_variable = { SIA_elections_1st = 2.1 }
 					check_variable = { SIA_elections_1st = 2.2 }
+					check_variable = { SIA_elections_1st = 2.3 }
 					
 					check_variable = { SIA_elections_2nd = 2 }
 					check_variable = { SIA_elections_2nd = 2.1 }
 					check_variable = { SIA_elections_2nd = 2.2 }
+					check_variable = { SIA_elections_2nd = 2.3 }
 				}
 			}
 		}
@@ -1620,8 +1958,13 @@ SIA_get_projected_winner_image = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { SIA_elections_1st = 3 }
-				check_variable = { SIA_elections_2nd = 3 }
+				OR = {
+					check_variable = { SIA_elections_1st = 3 }
+					check_variable = { SIA_elections_1st = 3.1 }
+					
+					check_variable = { SIA_elections_2nd = 3 }
+					check_variable = { SIA_elections_2nd = 3.1 }
+				}
 			}
 		}
 		add_to_temp_array = { most_votes3 = 3:party_votes }
@@ -1668,11 +2011,31 @@ SIA_get_projected_winner_image = {
 	if = {
 		limit = {
 			NOT = {
-				check_variable = { SIA_elections_1st = 11 }
-				check_variable = { SIA_elections_2nd = 11 }
+				
+				OR = {
+					check_variable = { SIA_elections_1st = 11 }
+					check_variable = { SIA_elections_1st = 11.1 }
+					check_variable = { SIA_elections_1st = 11.2 }
+					
+					check_variable = { SIA_elections_2nd = 11 }
+					check_variable = { SIA_elections_2nd = 11.1 }
+					check_variable = { SIA_elections_2nd = 11.2 }
+				}
 			}
 		}
 		add_to_temp_array = { most_votes3 = 11:party_votes }
+	}
+	else = {
+		add_to_temp_array = { most_votes3 = 0 }
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { SIA_elections_1st = 12 }
+				check_variable = { SIA_elections_2nd = 12 }
+			}
+		}
+		add_to_temp_array = { most_votes3 = 12:party_votes }
 	}
 	else = {
 		add_to_temp_array = { most_votes3 = 0 }
@@ -1711,8 +2074,20 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_3rd = 2.2 }
 	}
 	else_if = {
-		limit = { check_variable = { most3 = 2 } }
+		limit = {
+			check_variable = { most3 = 2 } 
+			check_variable = { orange_candidate = 0 } 
+			
+		}
 		set_variable = { SIA_elections_3rd = 3 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { most3 = 2 } 
+			check_variable = { orange_candidate = 1 } 
+			
+		}
+		set_variable = { SIA_elections_3rd = 3.1 }
 	}
 	else_if = {
 		limit = { check_variable = { most3 = 3 } }
@@ -1727,8 +2102,32 @@ SIA_get_projected_winner_image = {
 		set_variable = { SIA_elections_3rd = 9 }
 	}
 	else_if = {
-		limit = { check_variable = { most3 = 6 } }
+		limit = {
+			check_variable = { most3 = 6 } 
+			check_variable = { utn_candidate = 0 } 
+			
+		}
 		set_variable = { SIA_elections_3rd = 11 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { most3 = 6 } 
+			check_variable = { utn_candidate = 1 } 
+			
+		}
+		set_variable = { SIA_elections_3rd = 11.1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { most3 = 6 } 
+			check_variable = { utn_candidate = 2 } 
+			
+		}
+		set_variable = { SIA_elections_3rd = 11.2 }
+	}
+	else_if = {
+		limit = { check_variable = { most3 = 7 } }
+		set_variable = { SIA_elections_3rd = 12 }
 	}
 }
 
@@ -1763,6 +2162,9 @@ SIA_initiate_coalition_forming = {
 		set_temp_variable = { SIA_utn_seats_var_temp = 11:party_seats_elections }
 		set_variable = { SIA_utn_seats_var = SIA_utn_seats_var_temp }
 		
+		set_temp_variable = { SIA_klatham_seats_var_temp = 12:party_seats_elections }
+		set_variable = { SIA_klatham_seats_var = SIA_klatham_seats_var_temp }
+		
 		set_temp_variable = { minor_parties_temp = 9:party_seats_elections }
 		set_variable = { SIA_minor_parties_seats_var = minor_parties_temp }
 		
@@ -1775,6 +2177,7 @@ SIA_initiate_coalition_forming = {
 		add_to_temp_variable = { total = SIA_ctpp_seats_var }
 		add_to_temp_variable = { total = SIA_pcc_seats_var }
 		add_to_temp_variable = { total = SIA_utn_seats_var }
+		add_to_temp_variable = { total = SIA_klatham_seats_var }
 		add_to_temp_variable = { total = SIA_minor_parties_seats_var }
 		
 		if = {
@@ -1789,6 +2192,23 @@ SIA_initiate_coalition_forming = {
 	}
 	
 	#Check who won, set formation attitude
+	if = {
+		limit = {
+			has_country_flag = SIA_2023_elections
+		}
+		SIA_setup_coalition_attitude_2023 = yes
+		hidden_effect = { country_event = thai_elections.6 }
+	}
+	else_if = {
+		limit = {
+			has_country_flag = SIA_2027_elections
+		}
+		SIA_setup_coalition_attitude_2027 = yes
+	}
+	set_country_flag = SIA_government_coalition_formation_ongoing
+	SIA_update_projected_government_seats = yes
+}
+SIA_setup_coalition_attitude_2023 = {
 	# 1 - Refuse 2- Open 3- In Coalition 4- Infighting #DP
 	if = {
 		limit = { #Pheu Thai won
@@ -1818,9 +2238,23 @@ SIA_initiate_coalition_forming = {
 		set_variable = { SIA_election_result_scenario = 2 }
 		news_event = thai_newsevents.4
 	}
-	hidden_effect = { country_event = thai_elections.6 }
-	set_country_flag = SIA_government_coalition_formation_ongoing
-	SIA_update_projected_government_seats = yes
+}
+SIA_setup_coalition_attitude_2027 = {
+	# 1 - Refuse 2- Open 3- In Coalition
+	if = {
+		limit = { #UTN won
+			check_variable = { SIA_government_leader = 11 }
+		}
+		set_variable = { SIA_party_1_attitude = 2 }
+		set_variable = { SIA_party_2_attitude = 1 }
+		set_variable = { SIA_party_3_attitude = 1 }
+		set_variable = { SIA_party_4_attitude = 2 }
+		set_variable = { SIA_party_6_attitude = 2 }
+		set_variable = { SIA_party_9_attitude = 2 }
+		set_variable = { SIA_party_11_attitude = 3 }
+		set_variable = { SIA_party_12_attitude = 2 }
+		set_variable = { SIA_election_result_scenario = 3 }
+	}
 }
 SIA_update_projected_government_seats = {
 	set_variable = { SIA_projected_gov_seats = 0 }
@@ -1865,6 +2299,12 @@ SIA_update_projected_government_seats = {
 			check_variable = { SIA_party_11_attitude = 3 }
 		}
 		add_to_variable = { SIA_projected_gov_seats = SIA_utn_seats_var }
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_party_12_attitude = 3 }
+		}
+		add_to_variable = { SIA_projected_gov_seats = SIA_klatham_seats_var }
 	}
 	add_to_variable = { SIA_projected_gov_seats = SIA_minor_parties_coalitioned }
 }
@@ -1930,7 +2370,15 @@ SIA_end_coalition_forming = { #Only run this after coalition formation lol
 	else = {
 		set_variable = { party_11_alignment = 1 }
 	}
-	
+	if = {
+		limit = {
+			check_variable = { SIA_party_12_attitude = 3 }
+		}
+		set_variable = { party_12_alignment = 0 }
+	}
+	else = {
+		set_variable = { party_12_alignment = 1 }
+	}
 	
 	### NAMING CHANGES FOR PARTY ####
 	if = {
@@ -2014,4 +2462,33 @@ SIA_end_coalition_forming = { #Only run this after coalition formation lol
 	subtract_from_variable = { SIA_minor_opp_seats_var = SIA_minor_parties_coalitioned }
 	
 	country_event = thai_elections.4
+}
+SIA_reset_party_votes = {
+	1 = {
+		set_variable = { party_votes = 0 }
+	}
+	2 = {
+		set_variable = { party_votes = 0 }
+	}
+	3 = {
+		set_variable = { party_votes = 0 }
+	}
+	4 = {
+		set_variable = { party_votes = 0 }
+	}
+	6 = {
+		set_variable = { party_votes = 0 }
+	}
+	9 = {
+		set_variable = { party_votes = 0 }
+	}
+	11 = {
+		set_variable = { party_votes = 0 }
+	}
+	12 = {
+		set_variable = { party_votes = 0 }
+	}
+	
+	clr_country_flag = SIA_2023_elections
+	clr_country_flag = SIA_2027_elections
 }

@@ -1062,7 +1062,10 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = SIA
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		localization_key = SIA_hog_prayut_chan
 	}

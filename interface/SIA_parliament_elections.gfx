@@ -24,8 +24,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_2_2.png"
 	}
 	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_2.3"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_2_3.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_3"
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_3.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_3.1"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_3_1.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_4"
@@ -42,6 +50,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_11"
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_11.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_11.1"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_11_1.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_11.2"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_11_2.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_parliament_elections_projected_winner_12"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_12.png"
 	}
 	progressbartype = {
 		name = "GFX_SIA_parliament_elections_bar_1"
@@ -100,6 +120,15 @@ spriteTypes = {
 	progressbartype = {
 		name = "GFX_SIA_parliament_elections_bar_11"
 		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_utn.png"
+		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
+		size = { x = 446 y = 19 }
+		steps = 500 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
+	progressbartype = {
+		name = "GFX_SIA_parliament_elections_bar_12"
+		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_klatham.png"
 		texturefile2 = "gfx/interface/SIA/parliament/sia_parliament_donut_blank.dds"
 		size = { x = 446 y = 19 }
 		steps = 500 

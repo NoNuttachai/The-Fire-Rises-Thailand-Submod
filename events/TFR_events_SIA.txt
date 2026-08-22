@@ -266,6 +266,7 @@ country_event = { #thai century of humiliation
 		add_political_power = -200
 		add_war_support = -0.25
 		remove_ideas = SIA_thai_cambodia_conflict
+		clr_country_flag = SIA_thai_cambodia_tension
 		add_ideas = SIA_national_humiliation
 		set_temp_variable = { increase = 20 }
 		SIA_increase_youth_status = yes
@@ -375,6 +376,10 @@ country_event = { #Prayut splits from the PPRP and joins UTN
 		focus_unlock = yes
 		custom_effect_tooltip = thai_prayut_3_tt
 		complete_national_focus = SIA_no_hard_feelings
+		swap_ideas = {
+			remove_idea = SIA_prayut_chan-o-cha_advisor
+			add_idea = SIA_prayut_chan_o_cha_utn_hog
+		}
 		set_party_name = {
 			ideology = authoritarian_democrat 
 			long_name = SIA_utn_long
@@ -559,7 +564,8 @@ country_event = { #Pirapan introduction
 	picture = GFX_report_prayut_pirapan
     option = {
         name = thai_prayut.14.a
-		
+		add_to_variable = { SIA_pirapan_booster = 1 }
+		custom_effect_tooltip = SIA_tug_of_war_pirapan_booster
     }
 }
 country_event = { #Third Prayut Cabinet formed
@@ -567,13 +573,68 @@ country_event = { #Third Prayut Cabinet formed
     title = thai_prayut.15.t
     desc = thai_prayut.15.d
 	is_triggered_only = yes
-	picture = GFX_report_prayut_pirapan
+	picture = GFX_report_prayut2
     option = {
         name = thai_prayut.15.a
 		add_timed_idea = {
 			idea = SIA_cabinet_forming
 			days = 60
 		}
+    }
+}
+country_event = { #UTN party talks
+    id = thai_prayut.16
+    title = thai_prayut.16.t
+    desc = thai_prayut.16.d
+	is_triggered_only = yes
+	picture = GFX_report_pirapan_suchart
+    option = {
+        name = thai_prayut.16.a
+		
+    }
+}
+country_event = { #UTN-PPRP Yapping
+    id = thai_prayut.17
+    title = thai_prayut.17.t
+    desc = thai_prayut.17.d
+	is_triggered_only = yes
+	picture = GFX_report_prayut_prawit_moment
+    option = {
+        name = thai_prayut.17.a
+		
+    }
+}
+country_event = { #UTN-PPRP Yapping part 2
+    id = thai_prayut.18
+    title = thai_prayut.18.t
+    desc = thai_prayut.18.d
+	is_triggered_only = yes
+	picture = GFX_report_prayut
+    option = {
+        name = thai_prayut.18.a
+		
+    }
+}
+country_event = { #UTN-PPRP Yapping part 3
+    id = thai_prayut.19
+    title = thai_prayut.19.t
+    desc = thai_prayut.19.d
+	is_triggered_only = yes
+	picture = GFX_report_prayut_pirapan
+    option = {
+        name = thai_prayut.19.a
+		
+    }
+}
+country_event = { #Support our heroes
+    id = thai_prayut.20
+    title = thai_prayut.20.t
+    desc = thai_prayut.20.d
+	is_triggered_only = yes
+	picture = GFX_report_military_salute
+    option = {
+        name = thai_prayut.20.a
+		
     }
 }
 country_event = { #elections calculated
@@ -614,7 +675,7 @@ country_event = { # 2023 Elections start
 		hidden_effect = {
 			activate_mission = SIA_2023_elections
 			activate_mission = SIA_other_parties_campaigning
-			SIA_setup_elections = yes
+			SIA_setup_elections_2023 = yes
 			set_country_flag = SIA_ongoing_elections
 		}
 	}
@@ -775,6 +836,36 @@ country_event = { # DP falls to chaos after lost in elections
         name = thai_elections.6.a 
 		set_variable = { SIA_party_4_attitude = 4 }
     }
+}
+country_event = { # 2027 Elections start
+    id = thai_elections.7
+    title = thai_elections.7.t
+    desc = thai_elections.7.d
+    picture = GFX_report_thai_elections
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			activate_mission = SIA_2027_elections
+			activate_mission = SIA_other_parties_campaigning
+			SIA_setup_elections_2027 = yes
+			set_country_flag = SIA_ongoing_elections
+		}
+	}
+    option = { #UTN
+        name = thai_elections.7.a
+		
+    }
+	option = { #Pheu thai
+        name = thai_elections.7.b
+		
+    }
+	after = {
+		effect_tooltip = {
+			activate_mission = SIA_2027_elections
+			activate_mission = SIA_other_parties_campaigning
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
 }
 country_event = { #Verdict on FFP
     id = thai_events.1
@@ -2081,7 +2172,10 @@ country_event = {
 	}
     option = {
         name = thai_events.53.a
-		add_ideas = SIA_thanakorn_buaratsat_advisor
+		swap_ideas = {
+			remove_idea = SIA_anukul_jaimongkol_advisor
+			add_idea = SIA_thanakorn_buaratsat_advisor
+		}
 	}
 }
 country_event = {
@@ -2093,7 +2187,10 @@ country_event = {
 	
     option = {
         name = thai_events.54.a
-		add_ideas = SIA_thanat_suwannanon_advisor
+		swap_ideas = {
+			remove_idea = SIA_thanakorn_buaratsat_advisor
+			add_idea = SIA_thanat_suwannanon_advisor
+		}
 	}
 }
 country_event = {
@@ -2179,9 +2276,15 @@ country_event = {
 	
     option = {
         name = thai_events.59.a
+		add_stability = 0.1
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.1
+		}
+		add_society_development = yes
 		add_power_balance_value = {
 			id = SIA_power_balance
-			value = 0.25
+			value = 0.1
 		}
 	}
 }

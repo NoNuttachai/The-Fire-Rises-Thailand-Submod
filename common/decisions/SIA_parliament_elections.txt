@@ -14,7 +14,28 @@ SIA_parliament_elections = {
 		selectable_mission = no
 		days_mission_timeout = 180
 		timeout_effect = {
-			SIA_decide_election_winner = yes
+			SIA_decide_election_winner_2023 = yes
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_2027_elections = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 180
+		timeout_effect = {
+			SIA_decide_election_winner_2027 = yes
 		}
 		complete_effect = {
 			
@@ -36,14 +57,26 @@ SIA_parliament_elections = {
 		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
-			SIA_roll_other_party_campaigning = yes
+			if = {
+				limit = {
+					has_country_flag = SIA_2023_elections
+				}
+				SIA_roll_other_party_campaigning_2023 = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SIA_2027_elections
+				}
+				#SIA_roll_other_party_campaigning_2027 = yes
+			}
 			activate_mission = SIA_other_parties_campaigning
 			if = {
 				limit = {
+					has_country_flag = SIA_2023_elections
 					check_variable = { undecided_votes = 0 }
 				}
 				hidden_effect = {
-					SIA_roll_2nd_target = yes
+					SIA_roll_2nd_target_2023 = yes
 				}
 			}
 		}
@@ -63,11 +96,28 @@ SIA_parliament_elections = {
 		complete_effect = {
 			activate_mission = SIA_2023_elections
 			activate_mission = SIA_other_parties_campaigning
-			SIA_setup_elections = yes
 			set_country_flag = SIA_ongoing_elections
 			set_country_flag = SIA_utn_active
 			country_event = thai_elections.2
 			country_event = thai_elections.3
+		}
+	}
+	SIA_activate_election_2027 = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+			is_debug = yes
+		}
+		complete_effect = {
+			activate_mission = SIA_2027_elections
+			activate_mission = SIA_other_parties_campaigning
+			set_country_flag = SIA_ongoing_elections
+			set_country_flag = SIA_utn_active
+			country_event = thai_elections.2
+			country_event = thai_elections.7
 		}
 	}
 	SIA_campaign_for_the_utn = {
@@ -106,6 +156,7 @@ SIA_parliament_elections = {
 		}
 		visible = {
 			has_country_flag = SIA_ongoing_elections
+			has_country_flag = SIA_2023_elections
 			check_variable = { SIA_election_playing_as = 11 }
 		}
 		cost = 50
@@ -219,6 +270,7 @@ SIA_parliament_elections = {
 		}
 		visible = {
 			has_country_flag = SIA_ongoing_elections
+			has_country_flag = SIA_2023_elections
 			check_variable = { SIA_election_playing_as = 11 }
 			has_completed_focus = SIA_riding_with_uncle_tuu
 		}
@@ -282,6 +334,7 @@ SIA_parliament_elections = {
 		}
 		visible = {
 			has_country_flag = SIA_ongoing_elections
+			has_country_flag = SIA_2023_elections
 			check_variable = { SIA_election_playing_as = 11 }
 			has_completed_focus = SIA_riding_with_uncle_tuu
 		}

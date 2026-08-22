@@ -45,3 +45,9 @@ SIA_selected_area = {
 		state = 1497
 	}
 }
+SIA_utn_in_charge = {
+	custom_trigger_tooltip = {
+		has_idea = SIA_prayut_chan_o_cha_utn_hog
+		tooltip = SIA_utn_in_charge_tt
+	}
+}

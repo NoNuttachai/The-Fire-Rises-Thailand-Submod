@@ -910,7 +910,8 @@ shared_focus = {
 	available_if_capitulated = yes
 	
 	completion_reward = {
-		
+		unlock_decision_category_tooltip = SIA_forpol_category
+		set_country_flag = SIA_forpol_unlocked
 	}
 }
 shared_focus = {
@@ -933,7 +934,7 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_deals_with_euros
+	id = SIA_deals_with_the_europeans
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -2
 	y = 1
@@ -966,7 +967,7 @@ shared_focus = {
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_ventures_in_europe
-	mutually_exclusive = { focus = SIA_deals_with_euros }
+	mutually_exclusive = { focus = SIA_deals_with_the_europeans }
 	prerequisite = { focus = SIA_ventures_in_europe }
 	completion_reward = {
 		
@@ -986,7 +987,7 @@ shared_focus = {
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_talks_with_the_russians
-	prerequisite = { focus = SIA_talks_with_the_russians focus = SIA_deals_with_euros }
+	prerequisite = { focus = SIA_talks_with_the_russians focus = SIA_deals_with_the_europeans }
 	completion_reward = {
 		
 	}

@@ -729,6 +729,13 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = SIA_coalition_negotiation_status_12
+	
+	text = {
+		localization_key = "SIA_coalition_attitude_[?SIA_party_12_attitude]"
+	}
+}
+defined_text = {
 	name = SIACoalitionFormationScenario
 	
 	text = {
@@ -742,6 +749,60 @@ defined_text = {
 			check_variable = { SIA_election_result_scenario = 2 }
 		}
 		localization_key = "SIA_scenario_2_formation"
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_election_result_scenario = 3 }
+		}
+		localization_key = "SIA_scenario_3_formation"
+	}
+}
+defined_text = {
+	name = SIA_election_title
+	
+	text = {
+		trigger = {
+			has_country_flag = SIA_2023_elections
+		}
+		localization_key = "SIA_parliament_elections_2023_title"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIA_2027_elections
+		}
+		localization_key = "SIA_parliament_elections_2027_title"
+	}
+}
+defined_text = {
+	name = SIA_election_desc
+	
+	text = {
+		trigger = {
+			has_country_flag = SIA_2023_elections
+		}
+		localization_key = "SIA_parliament_elections_desc_2023"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIA_2027_elections
+		}
+		localization_key = "SIA_parliament_elections_desc_2027"
+	}
+}
+defined_text = {
+	name = SIA_election_tooltip
+	
+	text = {
+		trigger = {
+			has_country_flag = SIA_2023_elections
+		}
+		localization_key = "SIA_election_status_2023"
+	}
+	text = {
+		trigger = {
+			has_country_flag = SIA_2027_elections
+		}
+		localization_key = "SIA_election_status_2027"
 	}
 }
 defined_text = {

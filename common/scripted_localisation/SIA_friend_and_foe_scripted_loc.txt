@@ -1,0 +1,352 @@
+defined_text = {
+	name = SIA_faf_brm_icon
+	text = {
+		trigger = {
+			BRM = {
+				has_war = yes
+				OR = {
+					NOT = {
+						is_in_faction_with = PRC
+					}
+					NOT = {
+						is_in_faction_with = JAP
+					}
+				}
+			}
+		}
+		localization_key = "GFX_SIA_BRM_warzone"
+	}
+	text = {
+		trigger = {
+			BRM = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_BRM_red"
+	}
+	text = {
+		trigger = {
+			BRM = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_BRM_blue"
+	}
+	text = {
+		
+		localization_key = "GFX_SIA_BRM_unaligned"
+	}
+}
+defined_text = {
+	name = SIA_faf_cam_icon
+	text = {
+		trigger = {
+			CAM = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_CAM_red"
+	}
+	text = {
+		trigger = {
+			CAM = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_CAM_blue"
+	}
+	text = {
+		
+		localization_key = "GFX_SIA_CAM_unaligned"
+	}
+}
+defined_text = {
+	name = SIA_faf_lao_icon
+	text = {
+		trigger = {
+			LAO = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_LAO_red"
+	}
+	text = {
+		trigger = {
+			LAO = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_LAO_blue"
+	}
+	text = {
+		
+		localization_key = "GFX_SIA_LAO_unaligned"
+	}
+}
+defined_text = {
+	name = SIA_faf_vin_icon
+	text = {
+		trigger = {
+			VIN = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_VIN_red"
+	}
+	text = {
+		trigger = {
+			VIN = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_VIN_blue"
+	}
+	text = {
+		localization_key = "GFX_SIA_VIN_unaligned"
+	}
+}
+defined_text = {
+	name = SIA_faf_sia_icon
+	text = {
+		trigger = {
+			SIA = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_SIA_red"
+	}
+	text = {
+		trigger = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_SIA_blue"
+	}
+	text = {
+		localization_key = "GFX_SIA_SIA_thailand_centric"
+	}
+}
+defined_text = {
+	name = SIA_faf_mal_icon
+	text = {
+		trigger = {
+			MAL = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_MAL_red"
+	}
+	text = {
+		trigger = {
+			MAL = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_MAL_blue"
+	}
+	text = {
+		
+		localization_key = "GFX_SIA_MAL_unaligned"
+	}
+}
+defined_text = {
+	name = SIA_faf_ins_icon
+	text = {
+		trigger = {
+			INS = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = "GFX_SIA_INS_red"
+	}
+	text = {
+		trigger = {
+			INS = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = "GFX_SIA_INS_blue"
+	}
+	text = {
+		
+		localization_key = "GFX_SIA_INS_unaligned"
+	}
+}
+
+#TOOLTIP FOR FACTION
+defined_text = {
+	name = SIA_faf_brm_tooltip
+	text = {
+		trigger = {
+			BRM = {
+				has_war = yes
+				OR = {
+					NOT = {
+						is_in_faction_with = PRC
+					}
+					NOT = {
+						is_in_faction_with = JAP
+					}
+				}
+			}
+		}
+		localization_key = SIA_forpol_warzone_aligned
+	}
+	text = {
+		trigger = {
+			BRM = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			BRM = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}
+defined_text = {
+	name = SIA_faf_cam_tooltip
+	text = {
+		trigger = {
+			CAM = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			CAM = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}
+defined_text = {
+	name = SIA_faf_lao_tooltip
+	text = {
+		trigger = {
+			LAO = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			LAO = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}
+defined_text = {
+	name = SIA_faf_vin_tooltip
+	text = {
+		trigger = {
+			VIN = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			VIN = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}
+defined_text = {
+	name = SIA_faf_sia_tooltip
+	text = {
+		trigger = {
+			SIA = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}
+defined_text = {
+	name = SIA_faf_mal_tooltip
+	text = {
+		trigger = {
+			MAL = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			MAL = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}
+defined_text = {
+	name = SIA_faf_ins_tooltip
+	text = {
+		trigger = {
+			INS = {
+				is_in_faction_with = PRC
+			}
+		}
+		localization_key = SIA_forpol_eadi_aligned
+	}
+	text = {
+		trigger = {
+			INS = {
+				is_in_faction_with = JAP
+			}
+		}
+		localization_key = SIA_forpol_pdto_aligned
+	}
+	text = {
+		
+		localization_key = SIA_forpol_unaligned_aligned
+	}
+}

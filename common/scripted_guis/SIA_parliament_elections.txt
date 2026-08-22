@@ -10,13 +10,7 @@ scripted_gui = {
 		visible = {
 			original_tag = SIA
 		}
-		dynamic_lists = {
-			election_parties_gridbox = {
-				array = SIA_party_election_array
-				entry_container = SIA_parliament_party_elections_container
-				value = SIA_party_election
-			}
-		}
+		
 		triggers = {
 			SIA_parliament_bar_1_visible = {
 				check_variable = { 1:party_votes > 0 }
@@ -35,10 +29,12 @@ scripted_gui = {
 			}
 			SIA_parliament_bar_9_visible = {
 				check_variable = { 9:party_votes > 0 }
-				
 			}
 			SIA_parliament_bar_11_visible = {
 				check_variable = { 11:party_votes > 0 }
+			}
+			SIA_parliament_bar_12_visible = {
+				check_variable = { 12:party_votes > 0 }
 			}
 		}
 
@@ -66,6 +62,9 @@ scripted_gui = {
 			}
 			SIA_parliament_bar_11 = {
 				frame = SIA_elections_bar_11_frame
+			}
+			SIA_parliament_bar_12 = {
+				frame = SIA_elections_bar_12_frame
 			}
 			SIA_parliament_elections_bar_undecided = {
 				frame = undecided_votes_elections

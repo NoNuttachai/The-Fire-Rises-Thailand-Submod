@@ -1,0 +1,182 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_SIA_countryoutline"
+		textureFile = "gfx/interface/SIA/forpol/countryoutline.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_countryoutlinebg"
+		textureFile = "gfx/interface/SIA/forpol/countryoutlinebg.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_faction_alignment"
+		textureFile = "gfx/interface/SIA/forpol/faction_alignment.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_country_interaction"
+		textureFile = "gfx/interface/SIA/forpol/country_interaction.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_situation_ongoing"
+		textureFile = "gfx/interface/SIA/forpol/situation_ongoing.png"
+	}
+	
+	#Country Color Fill
+	spriteType = {
+		name = "GFX_SIA_BRM_color"
+		textureFile = "gfx/interface/SIA/forpol/BRM_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_BRM_blue"
+		textureFile = "gfx/interface/SIA/forpol/BRM_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_BRM_red"
+		textureFile = "gfx/interface/SIA/forpol/BRM_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_BRM_warzone"
+		textureFile = "gfx/interface/SIA/forpol/BRM_warzone.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_BRM_unaligned"
+		textureFile = "gfx/interface/SIA/forpol/BRM_unaligned.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SIA_CAM_color"
+		textureFile = "gfx/interface/SIA/forpol/CAM_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_CAM_blue"
+		textureFile = "gfx/interface/SIA/forpol/CAM_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_CAM_red"
+		textureFile = "gfx/interface/SIA/forpol/CAM_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_CAM_unaligned"
+		textureFile = "gfx/interface/SIA/forpol/CAM_unaligned.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SIA_INS_color"
+		textureFile = "gfx/interface/SIA/forpol/INS_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_INS_blue"
+		textureFile = "gfx/interface/SIA/forpol/INS_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_INS_red"
+		textureFile = "gfx/interface/SIA/forpol/INS_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_INS_unaligned"
+		textureFile = "gfx/interface/SIA/forpol/INS_unaligned.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SIA_LAO_color"
+		textureFile = "gfx/interface/SIA/forpol/LAO_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_LAO_blue"
+		textureFile = "gfx/interface/SIA/forpol/LAO_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_LAO_red"
+		textureFile = "gfx/interface/SIA/forpol/LAO_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_LAO_unaligned"
+		textureFile = "gfx/interface/SIA/forpol/LAO_unaligned.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SIA_MAL_color"
+		textureFile = "gfx/interface/SIA/forpol/MAL_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_MAL_blue"
+		textureFile = "gfx/interface/SIA/forpol/MAL_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_MAL_red"
+		textureFile = "gfx/interface/SIA/forpol/MAL_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_MAL_unaligned"
+		textureFile = "gfx/interface/SIA/forpol/MAL_unaligned.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SIA_PRC_color"
+		textureFile = "gfx/interface/SIA/forpol/PRC_color.png"
+		transparencecheck = yes
+	}
+	
+	
+	spriteType = {
+		name = "GFX_SIA_SIA_color"
+		textureFile = "gfx/interface/SIA/forpol/SIA_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_SIA_blue"
+		textureFile = "gfx/interface/SIA/forpol/SIA_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_SIA_red"
+		textureFile = "gfx/interface/SIA/forpol/SIA_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_SIA_thailand_centric"
+		textureFile = "gfx/interface/SIA/forpol/SIA_thailand_centric.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "GFX_SIA_VIN_color"
+		textureFile = "gfx/interface/SIA/forpol/VIN_color.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_VIN_blue"
+		textureFile = "gfx/interface/SIA/forpol/VIN_blue.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_VIN_red"
+		textureFile = "gfx/interface/SIA/forpol/VIN_red.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_VIN_unaligned"
+		textureFile = "gfx/interface/SIA/forpol/VIN_unaligned.png"
+		transparencecheck = yes
+	}
+}

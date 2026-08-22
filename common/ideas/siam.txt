@@ -1282,6 +1282,129 @@ ideas = {
 				war_support_weekly = 0.002
 			}
 		}
+		SIA_conservative_revolution_not_the_same_as_before = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				authoritarian_democrat_drift = 0.03
+				society_development_monthly = 0.002
+			}
+		}
+		SIA_conservative_revolution_respectfulness_for_elderly = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				stability_factor = 0.05
+				party_popularity_stability_factor = 0.015
+				income_growth_factor = -0.05
+				society_development_monthly = 0.005
+			}
+		}
+		SIA_conservative_revolution_same_old = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				business_value_factor = 0.15
+				stability_factor = 0.05
+				society_development_monthly = 0.01
+				inflation_monthly_factor = 0.05
+			}
+		}
+		SIA_conservative_revolution_proud_citizens = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.075
+				academic_development_monthly = 0.015
+				income_growth_factor = -0.05
+				business_value_factor = 0.1
+			}
+		}
+		SIA_conservative_revolution_nation_of_patriot = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = 0.025
+				war_support_weekly = 0.0015
+				conscription_factor = 0.05
+				income_growth_factor = -0.05
+			}
+		}
+		SIA_conservative_revolution_conservative_revolution = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				party_popularity_stability_factor = 0.05
+				political_power_gain = 0.25
+				authoritarian_democrat_drift = 0.03
+			}
+		}
+		SIA_conservative_revolution_we_will_not_change = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				stability_factor = 0.1
+				society_development_monthly = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
 		SIA_renewable_economy_drive_dummy = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
@@ -1494,7 +1617,25 @@ ideas = {
 				has_idea = SIA_prayut_chan-o-cha_advisor
 			}
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_pprp
+				hog_political_protege
+				hog_old_general
+			}
+		}
+		SIA_prayut_chan_o_cha_utn_hog = {
+			name = SIA_prayut_chan-o-cha_char
+			picture = SIA_prayut_chan_o_cha
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
+			traits = {
+				SIA_ide_utn
 				hog_political_protege
 				hog_old_general
 			}
@@ -1512,7 +1653,7 @@ ideas = {
 				has_idea = SIA_prawit_wongsuwan_hog
 			}
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_pprp
 				hog_old_general
 			}
 		}
@@ -1773,7 +1914,7 @@ ideas = {
 				check_variable = { SIA_government_leader = 1 }
 			}
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_pprp
 			}
 		}
 		SIA_srettha_thavisin_advisor = {
@@ -1830,7 +1971,7 @@ ideas = {
 				}
 			}
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_pprp
 				eco_economic_organizer
 			}
 		}
@@ -2013,7 +2154,7 @@ ideas = {
 				original_tag = SIA
 			}
 			visible = {
-				#has_idea = SIA_anukul_jaimongkol_advisor
+				has_idea = SIA_anukul_jaimongkol_advisor
 			}
 			traits = {
 				int_balanced_cryptographer
@@ -2059,7 +2200,7 @@ ideas = {
 				check_variable = { SIA_government_leader = 1 }
 			}
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_pprp
 				SIA_deputy_pm_prawit
 			}
 		}
@@ -2123,7 +2264,7 @@ ideas = {
 				has_idea = SIA_chaichan_changmongkol_advisor
 			}
 			traits = {
-				SIA_ide_stratcon
+				SIA_ide_pprp
 				SIA_deputy_minister
 			}
 		}

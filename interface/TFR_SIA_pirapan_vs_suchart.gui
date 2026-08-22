@@ -2,14 +2,78 @@ guiTypes = {
 	containerWindowType = {
 		name = "SIA_pvs_container"
 		clipping = no
-		
-		position = { x = 500 y = 500 }
-		
+			
+		iconType = {
+			name = "SIA_pirapan_picture"
+			position = { x = 26 y = -179 }
+			spriteType = "GFX_SIA_pvs_pirapan"
+		}
+		instantTextBoxType = {
+			name = "SIA_pirapan_name"
+			position = { x = 5 y = -70 }
+			font = "VCR02_14"
+			maxwidth = 130
+			text = SIA_tug_of_war_pirapan_text
+			format = center
+		}
+		iconType = {
+			name = "SIA_suchart_picture"
+			position = { x = 401 y = -179 }
+			spriteType = "GFX_SIA_pvs_suchart"
+		}
+		instantTextBoxType = {
+			name = "SIA_suchart_name"
+			position = { x = 400 y = -70 }
+			font = "VCR02_14"
+			maxwidth = 80
+			text = SIA_tug_of_war_suchart_text
+			format = center
+		}
+		iconType = {
+			name = "SIA_pirapan_bar"
+			position = { x = 106 y = -147 }
+			spriteType = "GFX_SIA_pirapan_bar"
+		}
 		
 		iconType = {
 			name = "SIA_white_outline"
 			position = { x = 25 y = -180 }
 			spriteType = "GFX_SIA_pvs_bar"
+		}
+		
+		instantTextBoxType = {
+			name = "SIA_utn_tug_of_war_text"
+			position = { x = 20 y = -200 }
+			font = "VCR02_36"
+			maxwidth = 460
+			text = SIA_tug_of_war_top_text
+			format = center
+		}
+		instantTextBoxType = {
+			name = "SIA_utn_tug_of_war_status_text"
+			position = { x = 100 y = -100 }
+			font = "VCR02_16"
+			maxwidth = 300
+			text = SIA_tug_of_war_status_text
+			format = center
+		}
+		instantTextBoxType = {
+			name = "SIA_utn_tug_of_war_status"
+			position = { x = 100 y = -50 }
+			font = "VCR02_24"
+			maxwidth = 300
+			text = SIA_tug_of_war_status_grab
+			format = center
+			pdx_tooltip = SIA_tug_of_war_status_tt_grab
+		}
+		instantTextBoxType = {
+			name = "SIA_utn_tug_of_war_influence_breakdown"
+			position = { x = 20 y = -15 }
+			font = "VCR02_16"
+			maxwidth = 460
+			text = SIA_tug_of_war_variable_breakdown
+			format = center
+			
 		}
 	}
 }

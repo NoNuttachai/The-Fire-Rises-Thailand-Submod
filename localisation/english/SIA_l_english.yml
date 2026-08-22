@@ -293,8 +293,28 @@
  SIA_smooth_as_it_get: "Smooth As It Gets"
  SIA_on_watch: "On Watch"
  SIA_nation_religion_monarchy: "Nation, Religion, and Monarchy"
- 
- 
+ SIA_thailand_in_the_world_stage: "Thailand In The World Stage"
+ SIA_ventures_in_europe: "Ventures In Europe"
+ SIA_deals_with_the_europeans: "Deals With The Europeans"
+ SIA_talks_with_the_russians: "Talks With The Russians"
+ SIA_off_continent_diplomacy: "Off-Continent Diplomacy"
+ SIA_asian_house_of_cards: "Asian House Of Cards"
+ SIA_riding_the_shoulders_of_the_chinese_dragon: "Riding The Shoulders Of The Chinese Dragon"
+ SIA_pdtos_sea_gateway: "PDTO's SEA Gateway"
+ SIA_integrate_our_militaries: "Integrate Our Militaries"
+ SIA_attract_chinese_investment: "Attract Chinese Investment"
+ SIA_joint_sino_thai_training: "Joint Sino-Thai Training"
+ SIA_bri_integration: "BRI Integration"
+ SIA_eadi_business_deals: "EADI Business Deals"
+ SIA_containing_the_chinese_threat: "Containing The Chinese Threat"
+ SIA_attract_japanese_business: "Attract Japanese Business"
+ SIA_increase_production_output: "Increase Production Output"
+ SIA_marching_alongside_the_rising_sun: "Marching Alongside The Rising Sun"
+ SIA_post_asean_cooperation: "Post ASEAN Cooperation"
+ SIA_fortress_thailand: "Fortress Thailand"
+ SIA_alongside_our_brothers: "Alongside Our Brothers"
+ SIA_investing_on_our_allies: "Investing On Our Allies"
+ SIA_thailand_land_of_the_free: "Thailand, Land Of The Free"
  #2023-2027 UTN Tree
  SIA_third_prayut_cabinet: "Third Prayut Cabinet"
  SIA_tonight_in_bangkok: "Tonight In Bangkok"
@@ -939,6 +959,26 @@
  thai_prayut.15.d: ""
  thai_prayut.15.a: ""
  
+ thai_prayut.16.t: "Suchart Demands Concessions"
+ thai_prayut.16.d: ""
+ thai_prayut.16.a: ""
+ 
+ thai_prayut.17.t: "Prayut and Prawit Holds Talks"
+ thai_prayut.17.d: ""
+ thai_prayut.17.a: ""
+ 
+ thai_prayut.18.t: "A Conservative Alliance?"
+ thai_prayut.18.d: ""
+ thai_prayut.18.a: ""
+ 
+ thai_prayut.19.t: "A Conversation Between The Next Generation of Leaders"
+ thai_prayut.19.d: ""
+ thai_prayut.19.a: ""
+ 
+ thai_prayut.20.t: "A Veterans Payment"
+ thai_prayut.20.d: ""
+ thai_prayut.20.a: ""
+ 
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
  thai_cambodia_tension.1.a: "What is this idiot doing!"
@@ -1003,6 +1043,7 @@
  SIA_ongoing_elections: "§YElections are ongoing§!"
  SIA_active_election_decision: "Doing a Campaign Action"
  SIA_utn_in_charge_tt: "There is currently a £GFX_united_thai_nation §PUTN§! §YGovernment§! lead by §YPrayut Chan-O-Cha§!"
+ SIA_utn_pprp_relationship: "£GFX_united_thai_nation §PUTN§! and £GFX_palang_pracharath §BPPRP§! §Yrelations§! will §Gincrease§!"
  SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
  SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
 #MIO's
@@ -1055,7 +1096,7 @@
  SIA_parliament_tlp_full: "£GFX_thai_liberal_party §YThai Liberal Party§! [SIA_check_coalition_leader] \n§Y[?SIA_tlp_seats_var|0]§! Seats"
  SIA_parliament_pcc_full: "£GFX_prachachat §YPrachachat Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pcc_seats_var|0]§! Seats"
  SIA_parliament_utn_full: "£GFX_united_thai_nation §PUnited Thai Nation Party§! [SIA_check_coalition_leader] \n§Y[?SIA_utn_seats_var|0]§! Seats"
- SIA_parliament_klatham_full: "klatham [SIA_check_coalition_leader] \n§Y[?SIA_klatham_seats_var|0]§! Seats"
+ SIA_parliament_klatham_full: "§GKla Tham§! [SIA_check_coalition_leader] \n§Y[?SIA_klatham_seats_var|0]§! Seats"
 
  SIA_government_coalition_leader: "§P- Government Coalition Leader§!"
  SIA_opposition_leader: "§R- Opposition Leader§!"
@@ -1122,7 +1163,9 @@
  
  # ELECTION GUI SCRIPTED local
  SIA_election_party_line: "[SIA_election_scrp_loc]"
- SIA_election_status: "UNDER CONSTRUCTION" #£GFX_palang_pracharath §BPalang Pracharath Party§! | §L[?var:1:party_votes|2]%§! - §W[?var:1:party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?var:2:party_votes|2]%§! - §W[?var:2:party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OMove Forward Party§! | §L[?var:3:party_votes|2]%§! - §W[?var:3:party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?var:4:party_votes|2]%§! - §W[?var:4:party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?var:6:party_votes|2]%§! - §W[?var:6:party_seats_elections]§! §YSeats§!\n£GFX_united_thai_nation §PUnited Thai Nation Party§! | §L[?var:11:party_votes|2]%§! - §W[?var:11:party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?var:9:party_votes|2]%§! - §W[?var:9:party_seats_elections]§! §YSeats§!\n
+ SIA_election_status: "[SIA_election_tooltip]" 
+ SIA_election_status_2023: "£GFX_palang_pracharath §BPalang Pracharath Party§! | §L[?SIA:1.party_votes|2]%§! - §W[?SIA:1.party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?SIA:2.party_votes|2]%§! - §W[?SIA:2.party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OMove Forward Party§! | §L[?SIA:3.party_votes|2]%§! - §W[?SIA:3.party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?SIA:4.party_votes|2]%§! - §W[?SIA:4.party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?SIA:6.party_votes|2]%§! - §W[?SIA:6.party_seats_elections]§! §YSeats§!\n£GFX_united_thai_nation §PUnited Thai Nation Party§! | §L[?SIA:11.party_votes|2]%§! - §W[?SIA:11.party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?SIA:9.party_votes|2]%§! - §W[?SIA:9.party_seats_elections]§! §YSeats§!\n" 
+ SIA_election_status_2027: "£GFX_palang_pracharath §BPalang Pracharath Party§! | §L[?SIA:1.party_votes|2]%§! - §W[?SIA:1.party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?SIA:2.party_votes|2]%§! - §W[?SIA:2.party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OPeople's Party§! | §L[?SIA:3.party_votes|2]%§! - §W[?SIA:3.party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?SIA:4.party_votes|2]%§! - §W[?SIA:4.party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?SIA:6.party_votes|2]%§! - §W[?SIA:6.party_seats_elections]§! §YSeats§!\n£GFX_united_thai_nation §PUnited Thai Nation Party§! | §L[?SIA:11.party_votes|2]%§! - §W[?SIA:11.party_seats_elections]§! §YSeats§!\n§GKla Tham Party§! | §L[?SIA:12.party_votes|2]%§! - §W[?SIA:12.party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?SIA:9.party_votes|2]%§! - §W[?SIA:9.party_seats_elections]§! §YSeats§!\n" 
  
  SIA_parliament_pprp_election: ""
  SIA_parliament_dp_election: ""
@@ -1143,6 +1186,7 @@
  SIA_change_6_votes: "£GFX_bhumjaithai §1Bhumjaithai Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_9_votes: "§LMinor Parties§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_11_votes: "£GFX_united_thai_nation §PUnited Thai Nation Party§! §LVote§! Change: [?vote_change|=+2]"
+ SIA_change_12_votes: "§GKla Tham§! §LVote§! Change: [?vote_change|=+2]"
  
  
  SIA_change_undecided_votes: "§gUndecided§! §LVotes§! Change: [?vote_change|=+2]" #THIS FOR UNDECIDED VOTES ONLY
@@ -1169,11 +1213,16 @@
  SIA_parliament_elections_projected_winner_2: "£GFX_phua_thai Being Decided"
  SIA_parliament_elections_projected_winner_2.1: "£GFX_phua_thai Srettha Thavisin"
  SIA_parliament_elections_projected_winner_2.2: "£GFX_phua_thai Paetongtarn Shinawatra"
+ SIA_parliament_elections_projected_winner_2.3: "£GFX_phua_thai Yodchanan Wongsawat"
  SIA_parliament_elections_projected_winner_3: "£GFX_orange_party_2 Pita Limjaroenrat"
+ SIA_parliament_elections_projected_winner_3.1: "Natthaphong Ruengpanyawut"
  SIA_parliament_elections_projected_winner_4: "£GFX_democrat WHO?!?!?!"
  SIA_parliament_elections_projected_winner_6: "£GFX_bhumjaithai Anutin Charnvirakul"
  SIA_parliament_elections_projected_winner_9: "If you're seeing this, something has gone wrong"
  SIA_parliament_elections_projected_winner_11: "£GFX_united_thai_nation Prayut Chan-o-cha"
+ SIA_parliament_elections_projected_winner_11.1: "£GFX_united_thai_nation Pirapan Salirathavibhaga"
+ SIA_parliament_elections_projected_winner_11.2: "£GFX_united_thai_nation Suchart Chomklin"
+ SIA_parliament_elections_projected_winner_12: "Thamanat Prompow"
  #Focus Tree Names
  thailand_focus_tfr_submod: "Thailand 2020 Focus Tree"
  SIA_prayut_focus_tree: "Prayut 2021 Victory Against Protests"
@@ -1186,10 +1235,15 @@
  SIA_show_PM_change_decisions: "§YShow§! §YPM§! §GChange§! Decisions"
  SIA_hide_PM_change_decisions: "§RHide§! §YPM§! §GChange§! Decisions"
  
- SIA_parliament_elections: "2023 Parliament Elections"
- SIA_parliament_elections_desc: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
+ SIA_parliament_elections: "[SIA_election_title]"
+ SIA_parliament_elections_2023_title: "2023 Parliament Elections"
+ SIA_parliament_elections_2027_title: "2027 Parliament Elections"
+ SIA_parliament_elections_desc: "[SIA_election_desc]"
+ SIA_parliament_elections_desc_2023: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
+ SIA_parliament_elections_desc_2027: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The it's 2027\n\nCampaigning for: [SIA_elections_playing_as]"
  SIA_undecided_votes_available: "§YThere are still available§! §gUndecided Votes§!"
  SIA_2023_elections: "2023 Elections - §YElection Day§!"
+ SIA_2027_elections: "2027 Elections - §YElection Day§!"
  SIA_other_parties_campaigning: "Other Parties Campaigning"
  SIA_activate_prayut_2023: "Activate Elections: 2023 Prayut Version"
  SIA_campaign_for_the_utn: "Campaign for the UTN"
@@ -1493,7 +1547,7 @@
  SIA_unlock_isan_decisions_tt: "Decision will unlock in the §nEastern Thailand§! Area in the §YFueling the Engine§! mechanic"
  
  SIA_military_reformation: "Royal Thai Armed Forces"
- SIA_military_reformation_desc: "\n\n\n\n\n£GFX_SIA_royal_thai_army\n\n\n\n\n\n\n\nWith the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the armed forces grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our armed forces§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the armed forces in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n§GMilitary Resources§!: [?SIA_military_resource_var]\n                                                   §RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n                                                   §gEffects§!:\n                                                   $war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n£GFX_SIA_combat_readiness  $MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n                                                   $MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n                                                   $battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n---------------------------------------------------------------------------------------------\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!                                     £GFX_SIA_public_perception \n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
+ SIA_military_reformation_desc: "\n\n\n\n\n£GFX_SIA_royal_thai_army\n\n\n\n\n\n\n\nWith the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the armed forces grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our armed forces§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the armed forces in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n£GFX_royal_thai_armed_forces §GMilitary Resources§!: [?SIA_military_resource_var]\n                                                   §RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n                                                   §gEffects§!:\n                                                   $war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n£GFX_SIA_combat_readiness  $MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n                                                   $MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n                                                   $battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n---------------------------------------------------------------------------------------------\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!                                    £GFX_SIA_public_perception \n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+2%]§!"
  SIA_military_resource_change_tt: "§GMilitary Resources§! will change by [?SIA_military_resource_var_temp|-+0]"
  SIA_combat_readiness_change_tt: "§RCombat Readiness§! will change by [?SIA_combat_readiness_var_temp|-+2%]"
  SIA_public_perception_change_tt: "§YPublic Perception§! will change by [?SIA_public_perception_var_temp|-+2%]"       
@@ -1509,6 +1563,56 @@
  SIA_utn_banner_pirapan2: "£GFX_SIA_party_mech_pirapan2\n\n\n\n\n\n\n\nAfter winning the §Y2027 Elections§!, §BPirapan§! has managed to rally the £GFX_united_thai_nation §BUTN§! behind him as the designated successor."
  SIA_utn_banner_suchat: "£GFX_SIA_utn_party_mech_suchat\n\n\n\n\n\n\n\nIt wasn't §RPirapan§! who came out on top but instead it was §BSuchart Chomklin§!. After dealing with internal opposition, Suchart now leads the £GFX_united_thai_nation §BUTN§! as the §Y2027 Elections§! draws near."
  SIA_utn_banner_suchat_stalemate: "£GFX_SIA_utn_party_mech_suchat2\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchart Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchart§! will now lead the way and guide the £GFX_united_thai_nation §BUTN§! forward and will not repeat the same mistakes as his predecessor"
+ SIA_tug_of_war_top_text: "§gTug Of War§!"
+ SIA_tug_of_war_pirapan_text: "§YPirapan Salirathavibhaga§!"
+ SIA_tug_of_war_suchart_text: "§YSuchart Chomklin§!"
+ SIA_tug_of_war_status_text: "The §YStatus§! of the §gTug Of War§! is currently:"
+ SIA_tug_of_war_status_grab: "[SIA_utn_tug_of_war_winning]"
+ SIA_tug_of_war_status_tt_grab: "[SIA_utn_tug_of_war_winning_tt]"
+ SIA_tug_of_war_status_pirapan: "§BPirapan Winning§!"
+ SIA_tug_of_war_status_pirapan_tt: "If this continues, §BPirapan§! will §Gwin§! and he will be the §Ycandidate§! for the upcoming elections"
+ SIA_tug_of_war_status_tie: "§RStalemate§!"
+ SIA_tug_of_war_status_tie_tt: "§RNot having a clear winner will give us a major disadvantage in the upcoming elections§!"
+ SIA_tug_of_war_status_suchart: "§PSuchart Winning§!"
+ SIA_tug_of_war_status_suchart_tt: "If this continues, §PSuchart§! will §Gwin§! and he will be the §Ycandidate§! for the upcoming elections"
+ SIA_tug_of_war_pirapan_booster: "When §YPrayut§! steps down, §BPirapan§! will gain a §Gbetter§! §Ystarting advantage§! in the §gTug Of War§!"
+ SIA_tug_of_war_suchart_booster: "When §YPrayut§! steps down, §PSuchart§! will gain a §Gbetter§! §Ystarting advantage§! in the §gTug Of War§!"
+ SIA_tug_of_war_variable_breakdown: "§B[?SIA_pirapan_influ]§!-§P[?SIA_suchart_influ]§!"
+ SIA_tug_of_war_pirapan_increase: "§BPirapan's§! §YInfluence§! will change by [?influ_change|-+]"
+ SIA_tug_of_war_suchart_increase: "§PSuchart's§! §YInfluence§! will change by [?influ_change|-+]"
+ 
+ SIA_forpol_category: "Friends And Foes"
+ SIA_forpol_int_text: "§WCountry Interaction§!"
+ SIA_forpol_ali_text: "§YFaction§! §RAlign§!ment"
+ SIA_forpol_desc_text: "The §Rfall§! of the §CAmerican Hegemon§! has left §YSoutheast Asia§! into a §Rprecarious state of alignment.§!\n\nAs tensions grow between §WJapan§! and §RChina§!, there is an increasing certainty that a §YGreat Asian War§! is coming.\n\nWe must §Ychoose our cards§! right and make sure our direct neighbors are §Galigned to our side§! lest we suffer later."
+ SIA_forpol_BRM_tt: "§Y[BRM.GetNameWithFlag]§!"
+ SIA_forpol_CAM_tt: "§Y[CAM.GetNameWithFlag]§!"
+ SIA_forpol_LAO_tt: "§Y[LAO.GetNameWithFlag]§!"
+ SIA_forpol_VIN_tt: "§Y[VIN.GetNameWithFlag]§!"
+ SIA_forpol_SIA_tt: "§Y[SIA.GetNameWithFlag]§!"
+ SIA_forpol_MAL_tt: "§Y[MAL.GetNameWithFlag]§!"
+ SIA_forpol_INS_tt: "§Y[INS.GetNameWithFlag]§!"
+ SIA_forpol_PRC_tt: "§Y[PRC.GetNameWithFlag]§! - §READI Leader§!"
+ 
+ SIA_forpol_BRM_alignment_tt: "§Y[BRM.GetNameWithFlag]§! - [SIA_faf_brm_tooltip]"
+ SIA_forpol_CAM_alignment_tt: "§Y[CAM.GetNameWithFlag]§! - [SIA_faf_cam_tooltip]"
+ SIA_forpol_LAO_alignment_tt: "§Y[LAO.GetNameWithFlag]§! - [SIA_faf_lao_tooltip]"
+ SIA_forpol_VIN_alignment_tt: "§Y[VIN.GetNameWithFlag]§! - [SIA_faf_vin_tooltip]"
+ SIA_forpol_SIA_alignment_tt: "§Y[SIA.GetNameWithFlag]§! - [SIA_faf_sia_tooltip]"
+ SIA_forpol_MAL_alignment_tt: "§Y[MAL.GetNameWithFlag]§! - [SIA_faf_mal_tooltip]"
+ SIA_forpol_INS_alignment_tt: "§Y[INS.GetNameWithFlag]§! - [SIA_faf_ins_tooltip]"
+ 
+ SIA_forpol_eadi_aligned: "§READI§!"
+ SIA_forpol_pdto_aligned: "§CPDTO§!"
+ SIA_forpol_unaligned_aligned: "§gUnaligned§!"
+ SIA_forpol_warzone_aligned: "§OActive Conflict§!"
+ 
+ SIA_forpol_situation_myanmar: "§YSituation Ongoing§! - §RMyanmar Civil War§!"
+ SIA_forpol_situation_thai_cambodia: "§YSituation Ongoing§! - §RThai-Cambodia Border Conflict§!"
+ SIA_forpol_situation_thai_time_of_trouble: "§YSituation Ongoing§! - §RThailand Time of Troubles§!"
+ 
+ SIA_forpol_neighbor_text: "§YBorder Security§!"
+ SIA_forpol_neighbor_status: "[LAO.GetFlag]: [SIA_faf_lao_tooltip]\n[CAM.GetFlag]: [SIA_faf_cam_tooltip]\n[MAL.GetFlag]: [SIA_faf_mal_tooltip]\n[BRM.GetFlag]: [SIA_faf_brm_tooltip]"
  
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
@@ -1553,6 +1657,7 @@
  #Scenarios
  SIA_scenario_1_formation: "£GFX_palang_pracharath §BPalang Pracharath Party§!: [SIA_coalition_negotiation_status_1]\n£GFX_orange_party_2 §OMove Forward Party§!: [SIA_coalition_negotiation_status_3]\n£GFX_democrat §CDemocrat Party§!: [SIA_coalition_negotiation_status_4]\n£GFX_bhumjaithai §1Bhumjaithai Party§!: [SIA_coalition_negotiation_status_6]\n£GFX_united_thai_nation §PUnited Thai Nation Party§!: [SIA_coalition_negotiation_status_11]\n§LMinor Parties§!: [SIA_coalition_negotiation_status_9] - [?SIA_minor_parties_coalitioned]/[?SIA_minor_parties_seats_var]\n" #2023 Elections Pheu Thai
  SIA_scenario_2_formation: "£GFX_palang_pracharath §BPalang Pracharath Party§!: [SIA_coalition_negotiation_status_1]\n£GFX_phua_thai §RPheu Thai Party§!: [SIA_coalition_negotiation_status_2]\n£GFX_orange_party_2 §OMove Forward Party§!: [SIA_coalition_negotiation_status_3]\n£GFX_democrat §CDemocrat Party§!: [SIA_coalition_negotiation_status_4]\n£GFX_bhumjaithai §1Bhumjaithai Party§!: [SIA_coalition_negotiation_status_6]\n§LMinor Parties§!: [SIA_coalition_negotiation_status_9] - [?SIA_minor_parties_coalitioned]/[?SIA_minor_parties_seats_var]\n" #2023 Elections UTN
+ SIA_scenario_3_formation: "£GFX_palang_pracharath §BPalang Pracharath Party§!: [SIA_coalition_negotiation_status_1]\n£GFX_phua_thai §RPheu Thai Party§!: [SIA_coalition_negotiation_status_2]\n£GFX_orange_party_2 §OMove Forward Party§!: [SIA_coalition_negotiation_status_3]\n£GFX_democrat §CDemocrat Party§!: [SIA_coalition_negotiation_status_4]\n£GFX_bhumjaithai §1Bhumjaithai Party§!: [SIA_coalition_negotiation_status_6]\n§GKla Tham§!: [SIA_coalition_negotiation_status_12]\n§LMinor Parties§!: [SIA_coalition_negotiation_status_9] - [?SIA_minor_parties_coalitioned]/[?SIA_minor_parties_seats_var]\n" #2027 Elections UTN
  
  
  SIA_change_1_votes: "£GFX_palang_pracharath §BPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
@@ -1603,7 +1708,7 @@
  SIA_deputy_minister: "Deputy Minister"
  #SIA
 
- SIA_ide_stratcon: "£GFX_palang_pracharath §PStrat. Conservative§!"
+ SIA_ide_pprp: "£GFX_palang_pracharath §PPPRP§!"
  SIA_ide_utn: "£GFX_united_thai_nation §BUTN§!"
  SIA_ide_independent: "£GFX_FRA_centrist_texticon §LIndependent§!"
  SIA_ide_neoliberal: "£GFX_chartpattana §BNeo§!§Rliberal§!"

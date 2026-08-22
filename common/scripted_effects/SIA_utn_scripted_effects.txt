@@ -1,0 +1,37 @@
+SIA_utn_start_tug_of_war = { #Doing this later
+	set_variable = { SIA_pirapan_influ = 50 }
+	set_variable = { SIA_suchart_influ = 50 }
+	
+	if = {
+		limit = {
+			check_variable = { SIA_pirapan_booster > 0 }
+		}
+	}
+	
+	if = {
+		limit = {
+			check_variable = { SIA_suchart_booster > 0 }
+		}
+	}
+}
+SIA_utn_tug_of_war_change_influence = {
+	if = {
+		limit = { #Pirapan
+			check_variable = { target = 1 }
+		}
+		add_to_variable = { SIA_pirapan_influ = influ_change }
+		custom_effect_tooltip = SIA_tug_of_war_pirapan_increase
+		multiply_temp_variable = { influ_change = -1 }
+		add_to_variable = { SIA_suchart_influ = influ_change }
+		
+	}
+	if = {
+		limit = { #Suchart
+			check_variable = { target = 2 }
+		}
+		add_to_variable = { SIA_suchart_influ = influ_change }
+		custom_effect_tooltip = SIA_tug_of_war_suchart_increase
+		multiply_temp_variable = { influ_change = -1 }
+		add_to_variable = { SIA_pirapan_influ = influ_change }
+	}
+}

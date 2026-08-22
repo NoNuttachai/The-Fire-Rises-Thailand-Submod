@@ -133,6 +133,14 @@ SIA_debug_prayut_terminal = {
 			set_country_flag = SIA_ongoing_elections
 		}
 	}
+	SIA_enable_friend_and_foe = {
+		visible = {
+			has_country_flag = show_mechanic_list
+		}
+		complete_effect = {
+			set_country_flag = SIA_forpol_unlocked
+		}
+	}
 	SIA_show_PM_change_decisions = {
 		visible = {
 			NOT = {

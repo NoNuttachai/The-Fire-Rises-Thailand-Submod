@@ -17,6 +17,47 @@ scripted_gui = {
 				has_idea = SIA_pirapan_salirathavibhaga_hog
 				has_country_flag = SIA_utn_party_mech_dispute
 			}
+			SIA_pirapan_picture_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_suchart_picture_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_pirapan_bar_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_white_outline_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_utn_tug_of_war_text_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_utn_tug_of_war_status_text_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_utn_tug_of_war_status_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_utn_tug_of_war_influence_breakdown_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_pirapan_name_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			SIA_suchart_name_visible = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			
 			
 		}
 
@@ -24,7 +65,9 @@ scripted_gui = {
 			
 		}
 		properties = {
-			
+			SIA_pirapan_bar = {
+				frame = SIA_pirapan_influ
+			}
 		}
 	}
 }

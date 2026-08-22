@@ -226,7 +226,6 @@ SIA_parliament_category = {
 		icon = generic_coronavirus
 		visible = { 
 			has_completed_focus = SIA_stop_the_decline 
-			has_idea = generic_world_wide_financial_crisis_1
 		}
 		cost = 60
 		ai_will_do = { factor = 1 }

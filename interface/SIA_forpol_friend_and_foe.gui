@@ -1,0 +1,194 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "SIA_friend_and_foe_container"
+		position = { x = 0 y = 0 }
+		size = { width = 470 height = 350 }
+		
+		iconType = {
+			name = "SIA_forpol_sea_outline_bg"
+			position = { x = 10 y = -10 }
+			quadTextureSprite = "GFX_SIA_countryoutlinebg"
+			alwaystransparent = yes
+		}
+		
+		containerWindowType = {
+			name = "SIA_forpol_bottom_toggle_left"
+			position = { x = 10 y = 279 }
+
+			buttonType = {
+				name = "SIA_forpol_interaction_button"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_country_interaction"
+			}
+			instantTextBoxType = {
+				name = "SIA_forpol_interaction_text"
+				position = { x = 25 y = 30 }
+				font = "VCR02_14"
+				maxwidth = 100
+				text = SIA_forpol_int_text
+				format = center
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "SIA_forpol_bottom_toggle_right"
+			position = { x = 162 y = 279 }
+			
+			buttonType = {
+				name = "SIA_forpol_alignment_button"
+				position = { x = 1 y = 29 }
+				quadTextureSprite = "GFX_SIA_faction_alignment"
+			}
+			instantTextBoxType = {
+				name = "SIA_forpol_alignment_text"
+				position = { x = 25 y = 30 }
+				font = "VCR02_14"
+				maxwidth = 100
+				text = SIA_forpol_ali_text
+				format = center
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "SIA_forpol_country_colors"
+			position = { x = 0 y = 0 }
+			
+			buttonType = {
+				name = "SIA_brm_interact"
+				position = { x = 12 y = -8 }
+				quadTextureSprite = "GFX_SIA_BRM_color"
+				pdx_tooltip = SIA_forpol_BRM_tt
+			}
+			iconType = {
+				name = "SIA_brm_alignment"
+				position = { x = 12 y = -8 }
+				pdx_tooltip = SIA_forpol_BRM_alignment_tt
+			}
+			
+			buttonType = {
+				name = "SIA_cam_interact"
+				position = { x = 169 y = 118 }
+				quadTextureSprite = "GFX_SIA_CAM_color"
+				pdx_tooltip = SIA_forpol_CAM_tt
+			}
+			iconType = {
+				name = "SIA_cam_alignment"
+				position = { x = 169 y = 118 }
+				pdx_tooltip = SIA_forpol_CAM_alignment_tt
+			}
+			
+			buttonType = {
+				name = "SIA_lao_interact"
+				position = { x = 126 y = -8 }
+				quadTextureSprite = "GFX_SIA_LAO_color"
+				pdx_tooltip = SIA_forpol_LAO_tt
+			}
+			iconType = {
+				name = "SIA_lao_alignment"
+				position = { x = 126 y = -8 }
+				pdx_tooltip = SIA_forpol_LAO_alignment_tt
+			}
+			buttonType = {
+				name = "SIA_vin_interact"
+				position = { x = 184 y = -8 }
+				quadTextureSprite = "GFX_SIA_VIN_color"
+				pdx_tooltip = SIA_forpol_VIN_tt
+			}
+			iconType = {
+				name = "SIA_vin_alignment"
+				position = { x = 184 y = -8 }
+				pdx_tooltip = SIA_forpol_VIN_alignment_tt
+			}
+			iconType = {
+				name = "SIA_sia_interact"
+				position = { x = 74 y = 1 }
+				quadTextureSprite = "GFX_SIA_SIA_color"
+				pdx_tooltip = SIA_forpol_SIA_tt
+			}
+			iconType = {
+				name = "SIA_sia_alignment"
+				position = { x = 74 y = 1 }
+				pdx_tooltip = SIA_forpol_SIA_alignment_tt
+			}
+			buttonType = {
+				name = "SIA_mal_interact"
+				position = { x = 126 y = 272 }
+				quadTextureSprite = "GFX_SIA_MAL_color"
+				pdx_tooltip = SIA_forpol_MAL_tt
+			}
+			iconType = {
+				name = "SIA_mal_alignment"
+				position = { x = 126 y = 272 }
+				pdx_tooltip = SIA_forpol_MAL_alignment_tt
+			}
+			buttonType = {
+				name = "SIA_ins_interact"
+				position = { x = 33 y = 294 }
+				quadTextureSprite = "GFX_SIA_INS_color"
+				pdx_tooltip = SIA_forpol_INS_tt
+			}
+			iconType = {
+				name = "SIA_ins_alignment"
+				position = { x = 33 y = 294 }
+				pdx_tooltip = SIA_forpol_INS_alignment_tt
+			}
+			iconType = {
+				name = "SIA_prc_icon"
+				position = { x = 291 y = -9 }
+				quadTextureSprite = "GFX_SIA_PRC_color"
+				pdx_tooltip = SIA_forpol_PRC_tt
+			}
+			
+			#Situation Ongoing
+			iconType = {
+				name = "SIA_forpol_myanmar_civil_war"
+				position = { x = 30 y = 15 }
+				quadTextureSprite = "GFX_SIA_situation_ongoing"
+				pdx_tooltip = SIA_forpol_situation_myanmar
+			}
+			iconType = {
+				name = "SIA_forpol_thai_cambodia_conflict"
+				position = { x = 200 y = 135 }
+				quadTextureSprite = "GFX_SIA_situation_ongoing"
+				pdx_tooltip = SIA_forpol_situation_thai_cambodia
+			}
+			iconType = {
+				name = "SIA_forpol_thai_time_of_trouble"
+				position = { x = 125 y = 80 }
+				quadTextureSprite = "GFX_SIA_situation_ongoing"
+				pdx_tooltip = SIA_forpol_situation_thai_time_of_trouble
+			}
+		}
+		instantTextBoxType = {
+			name = "SIA_forpol_desc"
+			position = { x = 320 y = -13 }
+			font = "VCR02_12"
+			maxwidth = 175
+			text = SIA_forpol_desc_text
+			format = left
+		}
+		iconType = {
+			name = "SIA_forpol_sea_outline"
+			position = { x = 10 y = -10 }
+			quadTextureSprite = "GFX_SIA_countryoutline"
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "SIA_neighbor_check"
+			position = { x = 350 y = 265 }
+			font = "VCR02_14"
+			maxwidth = 175
+			text = SIA_forpol_neighbor_text
+			format = left
+		}
+		instantTextBoxType = {
+			name = "SIA_neighbor_check_text"
+			position = { x = 320 y = 285 }
+			font = "VCR02_12"
+			maxwidth = 175
+			text = SIA_forpol_neighbor_status
+			format = left
+		}
+	}
+}

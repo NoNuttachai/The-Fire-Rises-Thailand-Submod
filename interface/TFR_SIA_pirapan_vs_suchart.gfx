@@ -8,4 +8,22 @@ spriteTypes = {
 		name = "GFX_SIA_pvs_bar"
 		texturefile = "gfx/interface/SIA/pirapanvssuchart/bar.png"
 	}
+	spriteType = {
+		name = "GFX_SIA_pvs_suchart"
+		texturefile = "gfx/interface/SIA/pirapanvssuchart/suchart.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_pvs_pirapan"
+		texturefile = "gfx/interface/SIA/pirapanvssuchart/pirapan.png"
+	}
+	
+	progressbartype = {
+		name = "GFX_SIA_pirapan_bar"
+		texturefile1 = "gfx/interface/SIA/pirapanvssuchart/pirapan_bar.png"
+		texturefile2 = "gfx/interface/SIA/pirapanvssuchart/suchart_bar.png"
+		size = { x = 293 y = 38 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
 }

@@ -1,6 +1,6 @@
 leader_traits = {
 	#SIA
-	SIA_ide_stratcon = {
+	SIA_ide_pprp = {
 		random = no
 	}
 	SIA_ide_utn = {

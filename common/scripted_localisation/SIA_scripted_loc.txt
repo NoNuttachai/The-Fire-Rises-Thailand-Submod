@@ -193,7 +193,7 @@ defined_text = {
 	name = SIA_UTN_PARTY_MECH_BANNER
 	text = { #Starting UTN party mech
 		trigger = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		localization_key = SIA_utn_banner_prayut
 	}
@@ -238,5 +238,42 @@ defined_text = {
 			has_country_flag = SIA_cambodia_war_stalemate
 		}
 		localization_key = SIA_utn_banner_suchat_stalemate
+	}
+}
+
+defined_text = {
+	name = SIA_utn_tug_of_war_winning
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ > 64  }
+		}
+		localization_key = SIA_tug_of_war_status_pirapan
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ < 36 }
+		}
+		localization_key = SIA_tug_of_war_status_suchart
+	}
+	text = {
+		localization_key = SIA_tug_of_war_status_tie
+	}
+}
+defined_text = {
+	name = SIA_utn_tug_of_war_winning_tt
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ > 64  }
+		}
+		localization_key = SIA_tug_of_war_status_pirapan_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ < 36 }
+		}
+		localization_key = SIA_tug_of_war_status_suchart_tt
+	}
+	text = {
+		localization_key = SIA_tug_of_war_status_tie_tt
 	}
 }

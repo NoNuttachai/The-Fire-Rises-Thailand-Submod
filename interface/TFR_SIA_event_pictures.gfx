@@ -312,6 +312,22 @@ spriteTypes = {
 		name = "GFX_report_third_motion_filing"
 		texturefile = "gfx/event_pictures/report_third_motion_filing.png"
 	}
+	spriteType = {
+		name = "GFX_report_pirapan_suchart"
+		texturefile = "gfx/event_pictures/report_pirapan_suchart.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut"
+		texturefile = "gfx/event_pictures/report_prayut.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_prawit_moment"
+		texturefile = "gfx/event_pictures/report_prayut_prawit_moment.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut2"
+		texturefile = "gfx/event_pictures/report_prayut2.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

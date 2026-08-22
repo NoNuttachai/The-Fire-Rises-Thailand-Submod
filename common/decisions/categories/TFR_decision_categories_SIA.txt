@@ -145,6 +145,19 @@ SIA_utn_party_mech = {
 	visible_when_empty = yes
 	scripted_gui = SIA_pirapan_vs_suchart_gui
 }
+SIA_forpol_category = {
+	icon = GFX_decision_cat_SIA_parliament
+
+	priority = 7
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_forpol_unlocked
+	}
+	visible_when_empty = yes
+	scripted_gui = SIA_friend_and_foe_gui
+}
 SIA_cambodia_war_category = {
 	icon = GFX_decision_cat_SIA_parliament
 

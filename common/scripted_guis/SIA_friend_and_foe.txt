@@ -1,0 +1,82 @@
+scripted_gui = {
+	SIA_friend_and_foe_gui = {
+		context_type = decision_category
+		window_name = "SIA_friend_and_foe_container"
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			original_tag = SIA
+		}
+		dynamic_lists = {
+		}
+		triggers = {
+			SIA_brm_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}
+			SIA_cam_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}
+			SIA_lao_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}
+			SIA_vin_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}
+			SIA_sia_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}
+			SIA_mal_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}
+			SIA_ins_alignment_visible = {
+				check_variable = { SIA_faf_mode = 2 }
+			}	
+			SIA_forpol_myanmar_civil_war_visible = {
+				BRM = {
+					has_war = yes
+				}
+			}
+			SIA_forpol_thai_cambodia_conflict_visible = {
+				has_country_flag = SIA_thai_cambodia_tension
+			}
+			SIA_forpol_thai_time_of_trouble_visible = {
+				has_idea = SIA_national_humiliation
+			}
+		}
+
+		effects = {
+			SIA_forpol_interaction_button_click = {
+				set_variable = { SIA_faf_mode = 1 }
+			}
+			SIA_forpol_alignment_button_click = {
+				set_variable = { SIA_faf_mode = 2 }
+			}
+		}
+		properties = {
+			SIA_brm_alignment = {
+				image = "[SIA_faf_brm_icon]"
+			}
+			SIA_cam_alignment = {
+				image = "[SIA_faf_cam_icon]"
+			}
+			SIA_lao_alignment = {
+				image = "[SIA_faf_lao_icon]"
+			}
+			SIA_vin_alignment = {
+				image = "[SIA_faf_vin_icon]"
+			}
+			SIA_sia_alignment = {
+				image = "[SIA_faf_sia_icon]"
+			}
+			SIA_mal_alignment = {
+				image = "[SIA_faf_mal_icon]"
+			}
+			SIA_ins_alignment = {
+				image = "[SIA_faf_ins_icon]"
+			}
+		}
+	}
+}

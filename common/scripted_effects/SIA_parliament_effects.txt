@@ -52,6 +52,7 @@ SIA_dissolve_parliament = {
 		set_variable = { SIA_minor_opp_seats_var = 0 }
 		set_variable = { SIA_minor_gov_seats_var = 0 }
 		set_variable = { SIA_utn_seats_var = 0 }
+		set_variable = { SIA_klatham_seats_var = 0 }
 		set_variable = { party_1_alignment = 2 }
 		set_variable = { party_2_alignment = 2 }
 		set_variable = { party_3_alignment = 2 }

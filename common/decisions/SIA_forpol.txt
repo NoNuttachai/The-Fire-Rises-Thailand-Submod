@@ -1,0 +1,22 @@
+SIA_forpol_category = {
+	SIA_join_eadi = {
+		visible = {
+			
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = SIA
+			}
+		}
+	}
+	SIA_join_pdto = {
+		visible = {
+			
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = SIA
+			}
+		}
+	}
+}

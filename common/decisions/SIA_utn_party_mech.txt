@@ -1,11 +1,42 @@
 SIA_utn_party_mech = {
+	SIA_tug_of_war_start = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_variable = { SIA_suchart_influence_constant = 100 }
+			set_variable = { SIA_pirapan_influ = 50 }
+			set_variable = { SIA_suchart_influ = 50 }
+			
+		}
+	}
+	SIA_tug_of_war_add_pirapan = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { influ_change = 5 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
+	SIA_tug_of_war_add_suchart = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { influ_change = 5 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
 	SIA_load_prayut = {
 		visible = {
 			is_debug = yes
 		}
 		complete_effect = {
 			hidden_effect = {
-				add_ideas = SIA_prayut_chan-o-cha_advisor
+				add_ideas = SIA_prayut_chan_o_cha_utn_hog
 			}
 		}
 	}
