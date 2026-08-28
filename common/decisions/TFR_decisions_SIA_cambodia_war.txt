@@ -280,7 +280,7 @@ SIA_cambodia_war_category = {
                         has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
-			clear_country_flag = debug_sorting_enabled
+			clr_country_flag = debug_sorting_enabled
 		}
 	}
 	SIA_increase_tensions = {
