@@ -45,9 +45,36 @@ SIA_selected_area = {
 		state = 1497
 	}
 }
-SIA_utn_in_charge = {
+SIA_utn_in_charge_prayut = {
 	custom_trigger_tooltip = {
 		has_idea = SIA_prayut_chan_o_cha_utn_hog
-		tooltip = SIA_utn_in_charge_tt
+		check_variable = { SIA_government_leader = 11 }
+		tooltip = SIA_utn_in_charge_prayut_tt
+	}
+}
+SIA_utn_in_charge_pirapan = {
+	custom_trigger_tooltip = {
+		has_idea = SIA_prayut_chan_o_cha_utn_hog
+		check_variable = { SIA_government_leader = 11 }
+		tooltip = SIA_utn_in_charge_pirapan_tt
+	}
+}
+SIA_utn_in_charge_suchart = {
+	custom_trigger_tooltip = {
+		has_idea = SIA_prayut_chan_o_cha_utn_hog
+		check_variable = { SIA_government_leader = 11 }
+		tooltip = SIA_utn_in_charge_suchart_tt
+	}
+}
+SIA_ptp_in_charge = {
+	custom_trigger_tooltip = {
+		check_variable = { SIA_government_leader = 2 }
+		tooltip = SIA_ptp_in_charge_tt
+	}
+}
+SIA_cambodia_tensions_lock = {
+	custom_trigger_tooltip = {
+		has_country_flag = SIA_thai_cambodia_tension
+		tooltip = SIA_cambodia_tensions_lock
 	}
 }

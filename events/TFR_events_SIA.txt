@@ -69,6 +69,13 @@ country_event = { #Start of border tensions
 				modifier = SIA_border_tensions
 			}
 		}
+		if = {
+			limit = {
+				has_idea = SIA_pirapan_salirathavibhaga_hog
+			}
+			set_variable = { SIA_utn_pirapan_fakeout = 2 }
+		}
+		focus_unlock = yes
     }
 }
 country_event = { #Thailand loses skirmish
@@ -198,6 +205,7 @@ country_event = { #War happens
 				add_idea = SIA_thai_cambodia_conflict_2
 			}
 		}
+		focus_unlock = yes
 		set_variable = { SIA_thai_cambodia_phase = 3 }
     }
 }
@@ -396,7 +404,19 @@ country_event = { #Cannabis
 
     option = {
         name = thai_prayut.4.a 
-
+		 add_country_leader_role = {
+			character = SIA_vacharaesorn_vivacharawongse_char
+			promote_leader = yes
+			country_leader = {
+				ideology = hybrid_regime
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		promote_character = {
+			character = SIA_vacharaesorn_vivacharawongse_char
+			ideology = hybrid_regime
+		}
     }
 }
 country_event = { #Brothers forever fakeout event
@@ -487,7 +507,7 @@ country_event = { #Prayut steps down and Pirapan takes over
     id = thai_prayut.9
     title = thai_prayut.9.t
     desc = thai_prayut.9.d
-	picture = GFX_report_prayut_pirapan
+	picture = GFX_report_prayut3
 	trigger = {
 		has_idea = SIA_prayut_chan-o-cha_advisor
 	}
@@ -505,6 +525,7 @@ country_event = { #Prayut steps down and Pirapan takes over
 		complete_national_focus = SIA_farewell
 		focus_unlock = yes
 		news_event = thai_newsevents.6
+		country_event = { id = thai_prayut.24 days = 5 }
     }
 }
 country_event = { #Prayut launches media campaign
@@ -620,7 +641,7 @@ country_event = { #UTN-PPRP Yapping part 3
     title = thai_prayut.19.t
     desc = thai_prayut.19.d
 	is_triggered_only = yes
-	picture = GFX_report_prayut_pirapan
+	picture = GFX_report_pirapan_and_trinuch
     option = {
         name = thai_prayut.19.a
 		
@@ -634,8 +655,78 @@ country_event = { #Support our heroes
 	picture = GFX_report_military_salute
     option = {
         name = thai_prayut.20.a
-		
+		add_war_support = 0.05
+		add_political_power = 30
+		set_temp_variable = {
+			var = military_development_var_temp
+			value = 0.15
+		}
+		add_military_development = yes
     }
+}
+country_event = { #Pirapan outinfluences and wins nomination
+    id = thai_prayut.21
+    title = thai_prayut.21.t
+    desc = thai_prayut.21.d
+	is_triggered_only = yes
+	picture = GFX_report_pirapan_nomination
+    option = {
+        name = thai_prayut.21.a
+		set_variable = { utn_candidate = 1 }
+		custom_effect_tooltip = thai_prayut_21_tt
+    }
+}
+country_event = { #Pirapan stalemates cambodia
+    id = thai_prayut.22
+    title = thai_prayut.22.t
+    desc = thai_prayut.22.d
+	is_triggered_only = yes
+	picture = GFX_report_pirapan_fall
+    option = {
+        name = thai_prayut.22.a
+		custom_effect_tooltip = thai_prayut_22_tt
+		set_temp_variable = { target = 1 }
+		set_temp_variable = { influ_change = -30 }
+		SIA_utn_tug_of_war_change_influence = yes
+		country_event = thai_prayut.23 
+    }
+}
+country_event = { #Suchart outinfluences and wins nomination
+    id = thai_prayut.23
+    title = thai_prayut.23.t
+    desc = thai_prayut.23.d
+	is_triggered_only = yes
+	picture = GFX_report_suchart_wins_nomination
+    option = {
+        name = thai_prayut.23.a
+		set_variable = { utn_candidate = 2 }
+		custom_effect_tooltip = thai_prayut_23_tt
+		add_ideas = SIA_suchat_chomklin_hog
+    }
+}
+country_event = {
+    id = thai_prayut.24 # Pirapan Cabinet Formation
+    title = thai_prayut.24.t
+    desc = thai_prayut.24.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.24.a
+		complete_national_focus = SIA_pirapan_cabinet
+		set_variable = { SIA_utn_pirapan_fakeout = 1 }
+		focus_unlock = yes
+	}
+}
+country_event = {
+    id = thai_prayut.25 # FAKEOUT - Patriots in Control
+    title = thai_prayut.25.t
+    desc = thai_prayut.25.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.25.a
+		
+	}
 }
 country_event = { #elections calculated
     id = thai_elections.1
@@ -867,6 +958,32 @@ country_event = { # 2027 Elections start
 		custom_effect_tooltip = generic_skip_one_line_tt
 	}
 }
+country_event = { # 2026/7 Yodchanan secures party nomination
+    id = thai_elections.8
+    title = thai_elections.8.t
+    desc = thai_elections.8.d
+    picture = GFX_report_yodchanan
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.8.a
+		set_variable = { ptp_candidate = 3 }
+		custom_effect_tooltip = thai_elections_8_tt
+    }
+}
+country_event = { #Thamanat Prompow joins Kla Tham
+    id = thai_elections.9
+    title = thai_elections.9.t
+    desc = thai_elections.9.d
+    picture = GFX_report_klatham
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.9.a
+		set_country_flag = SIA_klatham_active
+		custom_effect_tooltip = thai_elections_9_tt
+    }
+}
 country_event = { #Verdict on FFP
     id = thai_events.1
     title = thai_events.1.t
@@ -1029,6 +1146,7 @@ country_event = { #Oil Crisis Hits Thailand
 	}
     option = {
         name = thai_events.6.a
+		add_stability = -0.15
 		effect_tooltip = {
 			SIA_decrease_economic_engine = yes
 			add_ideas = SIA_oil_crisis
@@ -1062,6 +1180,7 @@ country_event = {
 	#}
 	option = {
         name = thai_events.7.b
+		add_war_support = -0.1
 		complete_national_focus = SIA_side_with_uncle_tuu
 		hidden_effect = {
 			set_variable = { SIA_protests_days = 40 }
@@ -1104,6 +1223,7 @@ country_event = { #Wanchalearm Abduction
 			value = -0.1
 			tooltip_side = SIA_loss_side
 		}
+		add_war_support = -0.05
 		activate_mission = SIA_the_protests_intensify
 		set_temp_variable = { increase = 1 }
 		SIA_increase_youth_status = yes
@@ -1124,6 +1244,7 @@ country_event = {
             target = USA
             modifier = SIA_joint_training
         }
+		add_war_support = 0.03
 		add_command_power = 15
         army_experience = 25
         navy_experience = 10
@@ -1142,6 +1263,7 @@ country_event = {
     option = {
         name = thai_events.10.a
 		custom_effect_tooltip = thai_events_10_texticon
+		add_stability = -0.05
 		add_days_mission_timeout = {
 			mission = SIA_the_pandemic_worsens_mission
 			days = -30
@@ -1297,6 +1419,7 @@ country_event = {
 	}
     option = {
         name = thai_events.17.a
+		add_stability = -0.05
 		effect_tooltip = {
 			set_country_flag = SIA_coronavirus_ongoing
 			add_ideas = SIA_covid_idea
@@ -1604,7 +1727,7 @@ country_event = {
 		1494 = {
 			add_core_of = SIA
 		}
-		add_stability = 0.05
+		add_stability = 0.03
 	}
 }
 country_event = {
@@ -1618,6 +1741,7 @@ country_event = {
 	
     option = {
         name = thai_events.32.a
+		add_stability = -0.03
 		1494 = {
 			remove_core_of = SIA
 			add_dynamic_modifier = { modifier = SIA_southern_fire_state_modifier }
@@ -1797,6 +1921,7 @@ country_event = {
 			id = SIA_power_balance
 			value = 0.15
 		}
+		add_war_support = 0.05
 	}
 }
 country_event = {
@@ -2023,7 +2148,7 @@ country_event = {
     id = thai_events.47 # congrats, your saudi faction won
     title = thai_events.47.t
     desc = thai_events.47.d
-	
+	picture = GFX_report_thailand_saudi
 	is_triggered_only = yes
 	
     option = {
@@ -2286,6 +2411,53 @@ country_event = {
 			id = SIA_power_balance
 			value = 0.1
 		}
+	}
+}
+country_event = {
+    id = thai_events.60 # Collapse of USA - Who to support?
+    title = thai_events.60.t
+    desc = thai_events.60.d
+	is_triggered_only = yes
+	picture = GFX_report_usa_thailand
+	
+    option = { #UoA
+        name = thai_events.60.a
+		country_event = thai_events.61
+	}
+	option = { #ACG
+        name = thai_events.60.a
+	}
+}
+country_event = {
+    id = thai_events.61 # Prayut meets with UoA guys
+    title = thai_events.61.t
+    desc = thai_events.61.d
+	is_triggered_only = yes
+	picture = GFX_report_prayut_uoa
+	
+    option = {
+        name = thai_events.61.a
+		
+		
+	}
+}
+country_event = {
+    id = thai_events.62 # Prayut Survives 4th Motion of No Confidence
+    title = thai_events.62.t
+    desc = thai_events.62.d
+	picture = GFX_report_prayut_mogged_opposition_4
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		has_idea = SIA_prayut_chan-o-cha_advisor
+	}
+    option = {
+        name = thai_events.62.a
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.03
+		}
+		add_political_power = 15
 	}
 }
 news_event = { #Thai Protests

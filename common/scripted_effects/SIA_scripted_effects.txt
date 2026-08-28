@@ -734,6 +734,8 @@ SIA_thai_cambodia_decide_mediation = {
 			custom_effect_tooltip = SIA_mediation_china_will_side_with_thailand
 			custom_effect_tooltip = SIA_mediation_japan_will_side_with_cambodia
 		}
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.35 }
+		SIA_change_thai_cambodia_tensions = yes
 	}
 	else_if = { #1 side sides with someone but other doesnt care
 		limit = {
@@ -784,6 +786,8 @@ SIA_thai_cambodia_decide_mediation = {
 				custom_effect_tooltip = SIA_mediation_japan_will_side_with_cambodia
 			}
 		}
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.35 }
+		SIA_change_thai_cambodia_tensions = yes
 	}
 	
 	else = { #both dont give a damn

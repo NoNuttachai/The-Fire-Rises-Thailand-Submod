@@ -200,6 +200,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_cambodia_war2"
+		texturefile = "gfx/texticons/banners/cambodia_war2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_economic_engine"
 		texturefile = "gfx/texticons/banners/SIA_economic_engine.png"
 		legacy_lazy_load = no
@@ -287,6 +292,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_coalition_forming_prayut"
 		texturefile = "gfx/texticons/banners/SIA_coalition_forming_prayut.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_saudi"
+		texturefile = "gfx/texticons/banners/banner_saudi.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {

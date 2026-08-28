@@ -1,9 +1,9 @@
 focus_tree = {
 	id = SIA_2023_utn_focus_tree
 	country = {
-		factor = 99999999999
+		factor = 0
 		modifier = {
-			add = 1
+			add = 99999999
 			tag = SIA
 		}
 	}
@@ -11,6 +11,8 @@ focus_tree = {
 	shared_focus = SIA_thailand_in_the_world_stage
 	shared_focus = SIA_marching_in_phnom_penh
 	shared_focus = SIA_neither_a_victory_nor_defeat
+	shared_focus = SIA_eastern_conundrum
+	shared_focus = SIA_eastern_showdown
 	
 	focus = {
 		id = SIA_third_prayut_cabinet
@@ -22,7 +24,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		
@@ -40,7 +42,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_third_prayut_cabinet
@@ -76,7 +78,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_tonight_in_bangkok
@@ -97,7 +99,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_our_probable_friends
@@ -118,7 +120,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_tonight_in_bangkok
@@ -148,7 +150,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_light_the_street
@@ -171,7 +173,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_tonight_in_bangkok
@@ -191,7 +193,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_our_opposition
@@ -227,7 +229,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friends_with_benefits
@@ -280,7 +282,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ev_revolution
@@ -329,7 +331,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ev_revolution
@@ -365,7 +367,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 			command_power > 30
 		}
 		available_if_capitulated = yes
@@ -389,7 +391,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
@@ -420,7 +422,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_ridin_with_the_dragon
@@ -456,7 +458,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 			has_completed_focus = SIA_presentation
 		}
 		available_if_capitulated = yes
@@ -486,7 +488,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_toward_a_greener_future
@@ -518,7 +520,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_toward_a_greener_future
@@ -538,7 +540,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_roll_the_carpets
@@ -584,7 +586,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_roll_the_carpets
@@ -607,7 +609,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 			
 		}
 		available_if_capitulated = yes
@@ -630,7 +632,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_hit_the_book
@@ -664,7 +666,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 			has_completed_focus = SIA_wonderful_thailand
 			has_completed_focus = SIA_show_of_forces
 			has_completed_focus = SIA_along_with_the_wind
@@ -674,7 +676,45 @@ focus_tree = {
 		prerequisite = { focus = SIA_hit_the_book }
 		
 		completion_reward = {
-			
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -687,7 +727,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_roll_the_carpets
@@ -725,7 +765,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_amazing_new_chapters
@@ -761,7 +801,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_shore_up_supports
@@ -790,7 +830,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_will_continue
@@ -824,7 +864,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_debunking_lies
@@ -847,7 +887,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friend_and_foes
@@ -867,7 +907,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_friend_and_foes
@@ -895,7 +935,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_partys_prince
@@ -915,7 +955,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_rekindling_spirit
@@ -936,13 +976,14 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_partys_prince
 		prerequisite = { focus = SIA_partys_prince }
 		
 		completion_reward = {
+			unlock_decision_tooltip = SIA_enforce_party_unity
 			country_event = thai_prayut.16
 		}
 	}
@@ -956,7 +997,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_not_the_same_as_before
@@ -985,7 +1026,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_not_the_same_as_before
@@ -1021,7 +1062,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_capital_of_yellow_shirts
@@ -1052,7 +1093,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_old_friendship
@@ -1074,7 +1115,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_respectfulness_for_elderly
@@ -1083,6 +1124,9 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 150
+			unlock_decision_tooltip = SIA_champion_conservative_values
+			set_temp_variable = { campaign_slot_total_var_temp = 1 }
+			add_total_campaign_slot = yes
 			add_to_variable = { SIA_conservative_revolution_party_popularity_stability_factor_var = 0.05 }
 			add_to_variable = { SIA_conservative_revolution_political_power_gain_var = 0.25 }
 			add_to_variable = { SIA_conservative_revolution_authoritarian_democrat_drift_var = 0.03 }
@@ -1104,7 +1148,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_same_old
@@ -1136,7 +1180,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_nation_of_patriot
@@ -1157,7 +1201,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			SIA_utn_in_charge = yes
+			SIA_utn_in_charge_prayut = yes
 		}
 		available_if_capitulated = yes
 		relative_position_id = SIA_conservative_revolution
@@ -1165,6 +1209,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_proud_citizens }
 		
 		completion_reward = {
+			unlock_decision_tooltip = SIA_honor_the_generals_legacy
 			set_temp_variable = { increase = 1 }
 			SIA_decrease_youth_status = yes
 			add_to_variable = { SIA_conservative_revolution_stability_factor_var = 0.1 }
@@ -1225,6 +1270,90 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = SIA_farewell_tt
+		}
+	}
+	focus = {
+		id = SIA_pirapan_cabinet
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			always = no
+		}
+		allow_branch = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			has_completed_focus = SIA_pirapan_cabinet
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_farewell
+		prerequisite = { focus = SIA_farewell }
+		
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = { #Fake Focus
+		id = SIA_patriots_in_control
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = SIA_thai_cambodia_tension
+				}
+				check_variable = { SIA_utn_pirapan_fakeout = 1 }
+			}
+		}
+		allow_branch = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			check_variable = { SIA_utn_pirapan_fakeout = 1 }
+		}
+		cancel_if_invalid = yes
+		available_if_capitulated = yes
+		relative_position_id = SIA_pirapan_cabinet
+		prerequisite = { focus = SIA_pirapan_cabinet }
+		
+		completion_reward = {
+			effect_tooltip = {
+				add_political_power = 100
+				country_event = thai_prayut.25
+			}
+		}
+	}
+	focus = { 
+		id = SIA_under_siege
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				always = no
+				tooltip = SIA_under_siege_available
+			}
+		}
+		allow_branch = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			check_variable = { SIA_utn_pirapan_fakeout = 2 }
+		}
+		available_if_capitulated = yes
+		relative_position_id = SIA_pirapan_cabinet
+		prerequisite = { focus = SIA_pirapan_cabinet }
+		
+		completion_reward = {
+			custom_effect_tooltip = SIA_under_siege_tt
 		}
 	}
 }

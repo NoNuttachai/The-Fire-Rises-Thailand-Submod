@@ -165,12 +165,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.2
-				army_speed_factor = 0.075
-				army_armor_attack_factor = 0.1
-				army_armor_defence_factor = 0.075
-				army_armor_speed_factor = 0.1
-				battalion_upkeep_factor = 0.125
+				conscription_factor = -0.1
+				army_speed_factor = 0.1
+				army_armor_attack_factor = 0.125
+				army_armor_defence_factor = 0.1
+				army_armor_speed_factor = 0.075
+				battalion_upkeep_factor = 0.1
 			}
 		}
 		SIA_royal_army_of_thailand_unleash_our_brightest = {
@@ -212,6 +212,281 @@ ideas = {
 				compliance_growth = 0.05
 				minimum_training_level = -0.1
 				battalion_upkeep_factor = 0.15
+			}
+		}
+		SIA_royal_airforce_of_thailand_dummy = {
+			name = SIA_royal_airforce_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+		SIA_royal_airforce_of_thailand_silent_and_waiting = {
+			name = SIA_royal_airforce_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				static_anti_air_damage_factor = 0.1
+                static_anti_air_hit_chance_factor = 0.05
+			}
+		}
+		SIA_royal_airforce_of_thailand_state_of_the_art = {
+			name = SIA_royal_airforce_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				air_attack_factor = 0.1
+                air_agility_factor = 0.05
+                air_defence_factor = 0.05
+			}
+		}
+		SIA_royal_airforce_of_thailand_thinking_smart = {
+			name = SIA_royal_airforce_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				air_range_factor = 0.15
+                air_night_penalty = -0.1
+			}
+		}
+		SIA_royal_airforce_of_thailand_raining_the_skies = {
+			name = SIA_royal_airforce_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				air_cas_efficiency = 0.15
+                ground_attack_factor = 0.1
+			}
+		}
+		SIA_royal_airforce_of_thailand_made_in_thailand_plane_boost = {
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				large_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				small_plane_airframe = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+		SIA_royal_airforce_of_thailand_thinking_smart_boost = {
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+		}
+		SIA_royal_navy_of_thailand_dummy = {
+			name = SIA_royal_navy_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+		SIA_royal_navy_of_thailand_enrich_its_presence = {
+			name = SIA_royal_navy_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.1
+				navy_org_factor = 0.05
+			}
+		}
+		SIA_royal_navy_of_thailand_expansion = {
+			name = SIA_royal_navy_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_dockyard = 0.15
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+		SIA_royal_navy_of_thailand_fleet_modernization = {
+			name = SIA_royal_navy_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				naval_damage_factor = 0.1
+				navy_org_factor = 0.1
+				naval_hit_chance = 0.05
+			}
+		}
+		SIA_royal_navy_of_thailand_with_striking_efficiency = {
+			name = SIA_royal_navy_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				screening_efficiency = 0.15
+				navy_weather_penalty = -0.15
+				navy_submarine_attack_factor = 0.1
+				navy_screen_defence_factor = 0.075
+			}
+		}
+		SIA_royal_navy_of_thailand_htms_placeholder = {
+			name = SIA_royal_navy_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				navy_org_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+			}
+		}
+		SIA_royal_navy_of_thailand_expansion_boost = {
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				submarine = {
+					build_cost_ic = -0.2 instant = yes
+				}
 			}
 		}
 		SIA_an_army_with_a_country_1 = {
@@ -1602,6 +1877,29 @@ ideas = {
 				theorist_minister_cost_factor = -0.8
 			}
 		}
+		SIA_sam_phraya = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = CAM
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.1
+			}
+			modifier = {
+				army_speed_factor = 0.075
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {
@@ -1782,6 +2080,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				for_appeaser
 			}
 		}
 		SIA_sihasak_phuangketkeow_for = {
@@ -1795,6 +2094,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				for_apologetic_clerk
 			}
 		}
 		SIA_maris_sangiampongsa_for = {
@@ -1808,6 +2108,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				for_great_compromiser
 			}
 		}
 		SIA_parnpree_bahiddha_nukara_for = {
@@ -1821,6 +2122,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				for_defensive_hawk
 			}
 		}
 		SIA_don_pramudwinai_advisor = {
@@ -1847,6 +2149,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				eco_experienced_capitalist
 			}
 		}
 		SIA_maris_sangiampongsa_advisor = {
@@ -1860,6 +2163,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				eco_economic_organizer
 			}
 		}
 		SIA_sihasak_phuangketkeow_advisor = {
@@ -1873,6 +2177,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				eco_balanced_budget_economy
 			}
 		}
 		SIA_predee_daocha_advisor = {
@@ -1901,7 +2206,7 @@ ideas = {
 			cost = 0
 			traits = {
 				SIA_ide_independent
-				eco_balanced_budget_economy
+				eco_construction_magnate
 			}
 		}
 		SIA_santi_promphat_advisor = {
@@ -1915,6 +2220,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_pprp
+				eco_industrialiser
 			}
 		}
 		SIA_srettha_thavisin_advisor = {
@@ -1928,6 +2234,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				eco_mixed_economy
 			}
 		}
 		SIA_pichai_chunhavajira_advisor = {
@@ -1941,6 +2248,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				eco_bank_president
 			}
 		}
 		SIA_ekniti_nitithanprapas_advisor = {
@@ -1954,6 +2262,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				eco_economic_silent_workhorse
 			}
 		}
 		SIA_uttama_saowanayon_advisor = {
@@ -1986,6 +2295,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_dp
+				eco_reformer
 			}
 		}
 		SIA_ml_chayotid_kridakon_advisor = {
@@ -1999,6 +2309,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
+				eco_labor_specialist
 			}
 		}
 		SIA_trairong_suwankiri_advisor = {
@@ -2012,6 +2323,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
+				eco_military_entrepreneur
 			}
 		}
 		SIA_korn_chatikavanij_advisor = {
@@ -2025,6 +2337,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_minor_party
+				eco_regretful_taxman
 			}
 		}
 		SIA_chatchai_payuhanaveechai_advisor = {
@@ -2038,6 +2351,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_minor_party
+				eco_steel_magnate
 			}
 		}
 		SIA_suphan_mongkolsuthee_advisor = {
@@ -2051,6 +2365,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_minor_party
+				eco_organized_racketeer
 			}
 		}
 	}
@@ -2078,6 +2393,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				sec_defensive_excavator
 			}
 		}
 		SIA_anutin_charnvirakul_advisor = {
@@ -2091,6 +2407,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				sec_political_architect
 			}
 		}
 		SIA_chatchai_phromlert_advisor = {
@@ -2104,6 +2421,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_independent
+				sec_internal_compromiser
 			}
 		}
 		SIA_songsak_thongsri_advisor = {
@@ -2117,6 +2435,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				sec_efficent_attorney
 			}
 		}
 		SIA_naris_khamnurak_advisor = {
@@ -2130,6 +2449,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_dp
+				sec_efficent_organizer
 			}
 		}
 		SIA_phumtham_wechayachai_inter = {
@@ -2143,6 +2463,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				sec_crime_fighter
 			}
 		}
 	}
@@ -2215,6 +2536,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				army_chief_political_protege
 			}
 		}
 		SIA_phumtham_wechayachai_advisor = {#PTP
@@ -2228,6 +2550,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				army_chief_unity_of_party_and_military
 			}
 		}
 		SIA_adul_boonthamcharoen_advisor = { #Indep to BJT
@@ -2241,6 +2564,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				army_chief_organizational_2
 			}
 		}
 		SIA_nattapol_nakphanit_advisor = { #Indep
@@ -2251,7 +2575,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_independent
-				
+				army_chief_reform_2
 			}
 		}
 		SIA_chaichan_changmongkol_advisor = { #minister if Prayut loses to protest, replaces prawit

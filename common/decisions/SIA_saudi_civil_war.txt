@@ -73,6 +73,7 @@ SIA_saudi_civil_war = {
 					mission = SIA_oil_in_reserves_mission
 					days = 25
 				}
+				add_to_variable = { SIA_total_oil_stockpiled_days = 25 }
 			}
 		}
 	}
@@ -150,6 +151,7 @@ SIA_saudi_civil_war = {
 					mission = SIA_oil_in_reserves_mission
 					days = 30
 				}
+				add_to_variable = { SIA_total_oil_stockpiled_days = 30 }
 			}
 		}
 	}
@@ -238,6 +240,7 @@ SIA_saudi_civil_war = {
 					mission = SIA_oil_in_reserves_mission
 					days = 35
 				}
+				add_to_variable = { SIA_total_oil_stockpiled_days = 35 }
 			}
 		}
 	}
@@ -363,6 +366,7 @@ SIA_saudi_civil_war = {
 					mission = SIA_oil_in_reserves_mission
 					days = 20
 				}
+				add_to_variable = { SIA_total_oil_stockpiled_days = 20 }
 			}
 		}
 	}

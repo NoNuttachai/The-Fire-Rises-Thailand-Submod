@@ -328,6 +328,50 @@ spriteTypes = {
 		name = "GFX_report_prayut2"
 		texturefile = "gfx/event_pictures/report_prayut2.png"
 	}
+	spriteType = {
+		name = "GFX_report_thailand_saudi"
+		texturefile = "gfx/event_pictures/report_thailand_saudi.png"
+	}
+	spriteType = {
+		name = "GFX_report_yodchanan"
+		texturefile = "gfx/event_pictures/report_yodchanan.png"
+	}
+	spriteType = {
+		name = "GFX_report_suchart_wins_nomination"
+		texturefile = "gfx/event_pictures/report_suchart_wins_nomination.png"
+	}
+	spriteType = {
+		name = "GFX_report_pirapan_fall"
+		texturefile = "gfx/event_pictures/report_pirapan_fall.png"
+	}
+	spriteType = {
+		name = "GFX_report_pirapan_nomination"
+		texturefile = "gfx/event_pictures/report_pirapan_nomination.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut3"
+		texturefile = "gfx/event_pictures/report_prayut3.png"
+	}
+	spriteType = {
+		name = "GFX_report_asean"
+		texturefile = "gfx/event_pictures/report_asean.png"
+	}
+	spriteType = {
+		name = "GFX_report_klatham"
+		texturefile = "gfx/event_pictures/report_klatham.png"
+	}
+	spriteType = {
+		name = "GFX_report_prayut_uoa"
+		texturefile = "gfx/event_pictures/report_prayut_uoa.png"
+	}
+	spriteType = {
+		name = "GFX_report_usa_thailand"
+		texturefile = "gfx/event_pictures/report_usa_thailand.png"
+	}
+	spriteType = {
+		name = "GFX_report_pirapan_and_trinuch"
+		texturefile = "gfx/event_pictures/report_pirapan_and_trinuch.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

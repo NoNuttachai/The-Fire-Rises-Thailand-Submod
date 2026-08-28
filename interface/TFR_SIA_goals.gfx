@@ -166,4 +166,8 @@ spriteTypes = {
         name = "GFX_goal_SIA_prayut_2021_khon_la_krueng"
         texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_prayut_2021_khon_la_krueng.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_dialbeijing"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_dialbeijing.png"
+    }
 }

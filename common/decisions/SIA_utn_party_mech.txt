@@ -114,6 +114,36 @@ SIA_utn_party_mech = {
 		complete_effect = {
 		}
 	}
+	SIA_enforce_party_unity = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			
+		}
+		complete_effect = {
+		}
+	}
+	SIA_champion_conservative_values = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			
+		}
+		complete_effect = {
+		}
+	}
 	SIA_bhumjaithai_agenda = {
 		icon = generic_crisis
 		allowed = {

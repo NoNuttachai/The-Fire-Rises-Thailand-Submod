@@ -104,7 +104,7 @@ SIA_cambodia_war_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 100
+		days_mission_timeout = 60
 		timeout_effect = {
 			SIA_thai_cambodia_decide_mediation = yes
 		}
@@ -128,7 +128,7 @@ SIA_cambodia_war_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 120
+		days_mission_timeout = 90
 		timeout_effect = {
 			country_event = thai_cambodia_tension.8
 		}
@@ -195,15 +195,7 @@ SIA_cambodia_war_category = {
 			SIA_change_thai_cambodia_tensions = yes
 		}
 	}
-	SIA_shinawatra_call_uncle_hun = {
-		visible = {
-			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
-		}
-		cost = 30
-		complete_effect = {
-			
-		}
-	}
+	
 	SIA_push_for_peace = {
 		visible = {
 			NOT = { check_variable = { SIA_thai_cambodia_phase = 3 } }
@@ -328,6 +320,53 @@ SIA_cambodia_war_category = {
 		complete_effect = {
 			set_temp_variable = { lean_change = 0.15 }
 			SIA_change_thai_cambodia_mediation_lean = yes
+		}
+	}
+	SIA_peace_sia_win = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = war_won
+			clr_global_flag = SIA_CAMBODIA_STALEMATE
+			SIA = {
+				save_global_event_target_as = winning_country
+			}
+			CAM = {
+				save_global_event_target_as = losing_country
+			}
+		}
+	}
+	SIA_peace_cam_win = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = war_won
+			CAM = {
+				save_global_event_target_as = winning_country
+			}
+			SIA = {
+				save_global_event_target_as = losing_country
+			}
+		}
+	}
+	SIA_peace_stalemate = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = war_won
+			set_global_flag = SIA_CAMBODIA_STALEMATE
+			SIA = {
+				save_global_event_target_as = winning_country
+			}
+			CAM = {
+				save_global_event_target_as = losing_country
+			}
 		}
 	}
 	SIA_set_puppet_cambodia = {

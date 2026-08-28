@@ -31,7 +31,7 @@ SIA_coronavirus_category = {
 		}
 	}
 	SIA_securing_vaccine_supply = {
-		icon = GFX_decision_generic_vaccine
+		icon = generic_vaccine
 		allowed = {
 			tag = SIA
 		}
@@ -60,7 +60,7 @@ SIA_coronavirus_category = {
 		}
 	}
 	SIA_nationwide_vaccinations = {
-		icon = GFX_decision_generic_vaccine
+		icon = generic_vaccine
 		allowed = {
 			tag = SIA
 		}
@@ -117,6 +117,10 @@ SIA_coronavirus_category = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 20
 			}
+			add_days_mission_timeout = {
+				mission = SIA_securing_vaccine_supply
+				days = -10
+			}
 		}
 		ai_will_do = {
 			base = 10
@@ -168,6 +172,10 @@ SIA_coronavirus_category = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 25
 			}
+			add_days_mission_timeout = {
+				mission = SIA_securing_vaccine_supply
+				days = -25
+			}
 			add_ideas = low_immigration
 		}
 		ai_will_do = {
@@ -206,6 +214,10 @@ SIA_coronavirus_category = {
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 30
+			}
+			add_days_mission_timeout = {
+				mission = SIA_securing_vaccine_supply
+				days = -30
 			}
 		}
 		ai_will_do = {
@@ -257,13 +269,17 @@ SIA_coronavirus_category = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 15
 			}
+			add_days_mission_timeout = {
+				mission = SIA_securing_vaccine_supply
+				days = -10
+			}
 		}
 		ai_will_do = {
 			base = 10
 		}
 	}
 	SIA_import_sinovac_vaccines = {
-		icon = generic_coronavirus
+		icon = generic_vaccine
 		allowed = {
 			tag = SIA
 		}
@@ -303,7 +319,7 @@ SIA_coronavirus_category = {
 		}
 	}
 	SIA_import_sputnik_vaccines = {
-		icon = generic_coronavirus
+		icon = generic_vaccine
 		allowed = {
 			tag = SIA
 		}
@@ -343,7 +359,7 @@ SIA_coronavirus_category = {
 		}
 	}
 	SIA_astrazeneca_and_siam_bioscience = {
-		icon = generic_coronavirus
+		icon = generic_vaccine
 		allowed = {
 			tag = SIA
 		}
@@ -399,7 +415,7 @@ SIA_coronavirus_category = {
 		}
 	}
 	SIA_expand_vaccination_centers = {
-		icon = generic_coronavirus
+		icon = generic_vaccine
 		allowed = {
 			tag = SIA
 		}

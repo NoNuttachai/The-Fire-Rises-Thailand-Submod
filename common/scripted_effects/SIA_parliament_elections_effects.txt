@@ -1128,7 +1128,6 @@ SIA_setup_elections_2027 = { #Cambodia Victory - Any Party
 	clear_array = SIA_party_election_array
 	SIA_reset_party_votes = yes
 	set_country_flag = SIA_2027_elections
-	set_variable = { ptp_candidate = 3 }
 	set_variable = { orange_candidate = 1 }
 	add_to_array = { SIA_party_election_array = 11 }
 	add_to_array = { SIA_party_election_array = 1 }

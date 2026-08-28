@@ -50,7 +50,7 @@ focus_tree = {
 			has_global_flag = USA_american_civil_war_global
 		}
 		allow_branch = {
-			#has_global_flag = USA_american_civil_war_global
+			has_global_flag = USA_american_civil_war_global
 		}
 		bypass = {
 			
@@ -60,6 +60,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			hidden_effect = {
+				country_event = thai_events.60
+			}
 			modify_timed_idea = {
 				idea = generic_world_wide_financial_crisis_1
 				days = -50
@@ -82,6 +85,9 @@ focus_tree = {
 			mark_focus_tree_layout_dirty = yes
 		}
 		bypass_effect = {
+			hidden_effect = {
+				country_event = thai_events.60
+			}
 			modify_timed_idea = {
 				idea = generic_world_wide_financial_crisis_1
 				days = -50
@@ -114,7 +120,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_dial_beijing
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_dialbeijing
 		x = -2
 		y = 1
 		cost = 4

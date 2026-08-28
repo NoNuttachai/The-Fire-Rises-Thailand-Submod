@@ -59,7 +59,15 @@ SIA_royal_airforce_of_thailand_dynamic_modifier = {
 			is_puppet = yes
 		}
 	}
-	
+	air_attack_factor = SIA_royal_airforce_of_thailand_air_attack_factor_var
+	air_agility_factor = SIA_royal_airforce_of_thailand_air_air_agility_factor_var
+	air_cas_efficiency = SIA_royal_airforce_of_thailand_air_air_cas_efficiency_var
+	ground_attack_factor = SIA_royal_airforce_of_thailand_air_ground_attack_factor_var
+	air_range_factor = SIA_royal_airforce_of_thailand_air_air_range_factor_var
+	air_night_penalty = SIA_royal_airforce_of_thailand_air_air_night_penalty_var
+	air_defence_factor = SIA_royal_airforce_of_thailand_air_defence_factor_var
+	static_anti_air_damage_factor = SIA_royal_airforce_of_thailand_static_anti_air_damage_factor_var
+	static_anti_air_hit_chance_factor = SIA_royal_airforce_of_thailand_static_anti_air_hit_chance_factor_var
 }
 SIA_royal_navy_of_thailand_dynamic_modifier = {
 	icon = "GFX_ETH_chinese_investments"
@@ -71,7 +79,17 @@ SIA_royal_navy_of_thailand_dynamic_modifier = {
 			is_puppet = yes
 		}
 	}
-	
+	industrial_capacity_dockyard = SIA_royal_navy_of_thailand_industrial_capacity_dockyard_var
+	production_speed_dockyard_factor = SIA_royal_navy_of_thailand_production_speed_dockyard_factor_var
+	naval_damage_factor = SIA_royal_navy_of_thailand_naval_damage_factor_var
+	naval_hit_chance = SIA_royal_navy_of_thailand_naval_hit_chance_var
+	navy_org_factor = SIA_royal_navy_of_thailand_navy_org_factor_var
+	navy_capital_ship_attack_factor = SIA_royal_navy_of_thailand_navy_capital_ship_attack_factor_var
+	navy_capital_ship_defence_factor = SIA_royal_navy_of_thailand_navy_capital_ship_defence_factor_var
+	navy_screen_defence_factor = SIA_royal_navy_of_thailand_navy_screen_defence_factor_var
+	navy_submarine_attack_factor = SIA_royal_navy_of_thailand_navy_submarine_attack_factor_var
+	screening_efficiency = SIA_royal_navy_of_thailand_screening_efficiency_var
+	navy_weather_penalty = SIA_royal_navy_of_thailand_navy_weather_penalty_var
 }
 SIA_flaming_youth_dynamic_modifier = {
 	icon = "GFX_ETH_chinese_investments"

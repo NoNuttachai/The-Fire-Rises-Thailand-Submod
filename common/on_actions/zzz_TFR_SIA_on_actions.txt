@@ -45,11 +45,13 @@ on_actions = {
 				country_event = { id = thai_events.53 days = 274 } # 01 October 2020 Thanakorn Buaratsat becomes Intelligence Minister
 				country_event = { id = thai_events.57 days = 209 } # July 28 Rama X birthday
 				country_event = { id = thai_events.58 days = 344 } # Dec 10 Constitutional Day
+				country_event = { id = thai_events.62 days = 934  } # July 23 2022 Prayut survives 4th motion of no confidence
 				
 				
 				
 				country_event = { id = thai_cambodia_tension.1 days = 1974 } # 28 May 2025 Cambodia Start
 				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM
+				country_event = { id = thai_elections.9 days = 1814 } # 19 December 2024 #Thamanat Prompow joins Kla Tham
 				
 				
 				
