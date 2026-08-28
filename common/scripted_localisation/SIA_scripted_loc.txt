@@ -190,6 +190,50 @@ defined_text = {
 	}
 }
 defined_text = {
+        name = Bangkok_status
+        text= {
+                    trigger = {
+			   CAM = {
+				controls_state = 1495
+			   }
+                    }
+                    localization_key = Bangkok_CAM 
+        }
+        text = { 
+                localization_key = Bangkok_SIA
+        }
+}
+
+defined_text = {
+        name = PhnomPenh_status
+        text= {
+                    trigger = {
+			   SIA = {
+				controls_state = 1506
+			   }                    
+                    }
+                    localization_key =  PhnomPenh_SIA
+        }
+        text = { 
+                localization_key = PhnomPenh_CAM
+        }
+}
+
+defined_text = {
+        name = Operation_status
+        text= {
+                    trigger = {
+                             has_idea = SIA_sam_phraya
+                    }
+                    localization_key =  operation_active
+        }
+        text = { 
+                localization_key = Operation_inactive
+        }
+}
+
+
+defined_text = {
 	name = SIA_UTN_PARTY_MECH_BANNER
 	text = { #Starting UTN party mech
 		trigger = {

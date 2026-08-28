@@ -1721,8 +1721,14 @@
  SIA_cambodia_war_category_desc: "\n\n\n\n\n£GFX_SIA_thai_cambodia_war_banner\n\n\n\n\n\n\n\nThailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
  SIA_cambodia_war_phase_1: "§OBorder Skirmishes§!"
  SIA_cambodia_war_phase_2: "§GMediation§!\n\n@JAP Japanese §gLean§!: [?SIA_thai_cambodia_jap_lean|%0]\n@PRC §RChinese§! §gLean§!: [?SIA_thai_cambodia_prc_lean|%0]"
- SIA_cambodia_war_phase_3: "§RFull-On War§!"
- 
+ SIA_cambodia_war_phase_3: "§RActive Conflict§!\n\nFollowing renewed fighting along the disputed border, both sides have ceased negotiations and entered into an active conflict, with both Tokyo and Beijing calling for an end to the fighting. The situation has galvanized nationalist sentiment throughout Bangkok, placing pressure on the government to secure a decisive victory.\nVictory must be achieved before Tokyo and Beijing intervene, §Rlest all of Thailand's sacrifices were for nothing.§!\n\n[Bangkok_status]\n\n[PhnomPenh_status]\n\n[Operation_status]\n\nEnding Outcomes\n§7Thailand Victory§!: Complete occupation of §PCambodia§!\n§LStalemate§!: Neither §7Thailand§! nor §PCambodia§! made substantive gain.\n§PCambodia Victory§!: Forced negotiation with §7Thailand§!\n"
+
+ Bangkok_SIA: "§GBangkok§! is controlled by §7Kingdom of Thailand§!"
+ Bangkok_CAM: "§GBangkok§! is §Runder siege§!\nThe cabinet is negotiating §Rpeace settlements§! with §PKingdom of Cambodia§!"
+ PhnomPenh_SIA: "§PPhnom Penh§! is controlled by §7Kingdom of Thailand§!"
+ PhnomPenh_CAM: "§PPhnom Penh§! is controlled by §PKingdom of Cambodia§!"
+ Operation_inactive: "Operation §YSam Phraya§!: §gINACTIVE§!"
+ operation_active: "Operation §YSam Phraya§!: §RACTIVE§!\n§LFollowing effects will be applied§!\n$MODIFIER_ARMY_SPEED_FACTOR$: §G7.5%§!\n£attack_texticon Attack bonus against §PCambodia§!: §G15%§!\n£breakthrough_texticon Breakthrough bonus against §PCambodia§!: §G10%§!"
  
  SIA_change_thai_cambodia_tensions_tt: "§YThai-Cambodian§! §RTensions§! will change by [?SIA_thai_cambodia_tensions_temp|+-0%]"
  
