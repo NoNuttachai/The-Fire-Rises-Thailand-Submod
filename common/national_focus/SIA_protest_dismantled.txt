@@ -36,7 +36,7 @@ focus_tree = {
 	#Post American Order Branch
 	focus = {
 		id = SIA_rupture
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_rupture
 		x = -10
 		y = 1
 		cost = 4
@@ -46,7 +46,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 			has_global_flag = USA_american_civil_war_global
 		}
 		allow_branch = {
@@ -131,7 +134,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -160,7 +166,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -189,7 +198,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -230,7 +242,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -258,7 +273,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -283,7 +301,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -312,7 +333,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -358,7 +382,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -383,7 +410,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -413,7 +443,10 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
 		}
 		available_if_capitulated = yes
 		
@@ -836,7 +869,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 			has_country_flag = SIA_prayut_split
 		}
 		available_if_capitulated = yes
@@ -859,7 +892,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 			has_country_flag = SIA_prayut_split
 			has_completed_focus = SIA_once_were_brothers
 			has_country_flag = SIA_ongoing_elections
@@ -897,7 +930,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		available_if_capitulated = yes
 		
@@ -933,7 +966,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		available_if_capitulated = yes
 		
@@ -955,7 +988,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		available_if_capitulated = yes
 		
@@ -998,7 +1031,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		available_if_capitulated = yes
 		
@@ -1026,7 +1059,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		available_if_capitulated = yes
 		
@@ -1051,7 +1084,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan-o-cha_advisor
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
 		}
 		available_if_capitulated = yes
 		

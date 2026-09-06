@@ -4,6 +4,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_outline.png"
 	}
 	spriteType = {
+		name = "GFX_SIA_parliament_elections_SIA_top_three_outline"
+		textureFile = "gfx/interface/SIA/parliament_elections/SIA_top_three_outline.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_parliament_elections_projected_winner_0"
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_projected_winner_blank.png"
 	}

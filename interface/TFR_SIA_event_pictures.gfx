@@ -345,8 +345,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_pirapan_fall.png"
 	}
 	spriteType = {
-		name = "GFX_report_pirapan_nomination"
-		texturefile = "gfx/event_pictures/report_pirapan_nomination.png"
+		name = "GFX_report_pirapan_working"
+		texturefile = "gfx/event_pictures/report_pirapan_working.png"
 	}
 	spriteType = {
 		name = "GFX_report_prayut3"
@@ -371,6 +371,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_pirapan_and_trinuch"
 		texturefile = "gfx/event_pictures/report_pirapan_and_trinuch.png"
+	}
+	spriteType = {
+		name = "GFX_report_pirapan1"
+		texturefile = "gfx/event_pictures/pirapan1.png"
+	}
+	spriteType = {
+		name = "GFX_report_Pirapan2"
+		texturefile = "gfx/event_pictures/Pirapan2.png"
+	}
+	spriteType = {
+		name = "GFX_report_pirapan3"
+		texturefile = "gfx/event_pictures/pirapan3.png"
+	}
+	spriteType = {
+		name = "GFX_report_trinuch"
+		texturefile = "gfx/event_pictures/trinuch.png"
+	}
+	spriteType = {
+		name = "GFX_report_utn_party_collapse"
+		texturefile = "gfx/event_pictures/utn_party_collapse.png"
 	}
 	#World News
 	spriteType = {

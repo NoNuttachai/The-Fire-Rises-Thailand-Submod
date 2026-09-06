@@ -1141,7 +1141,7 @@ SIA_setup_elections_2027 = { #Cambodia Victory - Any Party
 	set_variable = { undecided_votes = 100 }
 	# Party votes are in percentage out of 100
 	11 = {
-		set_variable = { party_votes = 58 }
+		set_variable = { party_votes = 8 }
 	}
 	1 = {
 		set_variable = { party_votes = 4 }
@@ -2371,12 +2371,17 @@ SIA_end_coalition_forming = { #Only run this after coalition formation lol
 	}
 	if = {
 		limit = {
-			check_variable = { SIA_party_12_attitude = 3 }
+			has_country_flag = SIA_klatham_active
 		}
-		set_variable = { party_12_alignment = 0 }
-	}
-	else = {
-		set_variable = { party_12_alignment = 1 }
+		if = {
+			limit = {
+				check_variable = { SIA_party_12_attitude = 3 }
+			}
+			set_variable = { party_12_alignment = 0 }
+		}
+		else = {
+			set_variable = { party_12_alignment = 1 }
+		}
 	}
 	
 	### NAMING CHANGES FOR PARTY ####

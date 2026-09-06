@@ -8,7 +8,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "undecided_votes"
-			position = { x = 300 y = -15 }
+			position = { x = 310 y = -15 }
 			font = "VCR02_14"
 			maxwidth = 460
 			text = SIA_election_undecided
@@ -34,6 +34,12 @@ guiTypes = {
 			quadTextureSprite = "GFX_SIA_parliament_elections_prayutreich"
 			scale = 0.6
 			pdx_tooltip = SIA_3rd_rank_tt
+		}
+		iconType = {
+			name = "SIA_top_three_outline"
+			position = { x = 58 y = 17 }
+			quadTextureSprite = "GFX_SIA_parliament_elections_SIA_top_three_outline"
+			alwaystransparent = yes
 		}
 		containerWindowType = {
 			name = "SIA_parliament_gui_bar_container"

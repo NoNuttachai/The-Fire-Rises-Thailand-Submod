@@ -130,6 +130,16 @@ SIA_cambodia_war_category = {
 		selectable_mission = no
 		days_mission_timeout = 90
 		timeout_effect = {
+			set_global_flag = show_peace_popup_alert
+			set_global_flag = war_won
+			set_global_flag = SIA_CAMBODIA_STALEMATE
+			SIA = {
+				save_global_event_target_as = winning_country
+			}
+			CAM = {
+				save_global_event_target_as = losing_country
+			}
+			white_peace = CAM
 			country_event = thai_cambodia_tension.8
 		}
 	}
@@ -271,13 +281,13 @@ SIA_cambodia_war_category = {
 			is_debug = yes
 		}
 		complete_effect = {
-                        set_country_flag = debug_sorting_enabled
+			set_country_flag = debug_sorting_enabled
 		}
 	}
 	SIA_debug_sorting2 = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			clr_country_flag = debug_sorting_enabled
@@ -286,7 +296,7 @@ SIA_cambodia_war_category = {
 	SIA_increase_tensions = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
@@ -296,7 +306,7 @@ SIA_cambodia_war_category = {
 	SIA_decrease_tensions = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_temp_variable = { SIA_thai_cambodia_tensions_temp = -0.15 }
@@ -306,7 +316,7 @@ SIA_cambodia_war_category = {
 	SIA_increase_jap_lean_to_cam = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_temp_variable = { lean_change = -0.15 }
@@ -317,7 +327,7 @@ SIA_cambodia_war_category = {
 	SIA_increase_jap_lean_to_sia = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_temp_variable = { lean_change = 0.15 }
@@ -328,7 +338,7 @@ SIA_cambodia_war_category = {
 	SIA_increase_prc_lean_to_cam = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_temp_variable = { lean_change = -0.15 }
@@ -338,7 +348,7 @@ SIA_cambodia_war_category = {
 	SIA_increase_prc_lean_to_sia = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_temp_variable = { lean_change = 0.15 }
@@ -348,7 +358,7 @@ SIA_cambodia_war_category = {
 	SIA_peace_sia_win = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_global_flag = show_peace_popup_alert
@@ -365,7 +375,7 @@ SIA_cambodia_war_category = {
 	SIA_peace_cam_win = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			set_global_flag = show_peace_popup_alert
@@ -398,7 +408,7 @@ SIA_cambodia_war_category = {
 	SIA_set_puppet_cambodia = {
 		visible = {
 			is_debug = yes
-                        has_country_flag = debug_sorting_enabled
+			has_country_flag = debug_sorting_enabled
 		}
 		complete_effect = {
 			puppet = CAM

@@ -48,6 +48,7 @@ SIA_utn_party_mech = {
 			hidden_effect = {
 				add_ideas = SIA_pirapan_salirathavibhaga_hog
 				set_country_flag = SIA_utn_party_mech_dispute
+				SIA_utn_start_tug_of_war = yes
 			}
 		}
 	}
@@ -130,6 +131,21 @@ SIA_utn_party_mech = {
 		}
 	}
 	SIA_champion_conservative_values = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			
+		}
+		complete_effect = {
+		}
+	}
+	SIA_attract_foreign_workers = {
 		icon = generic_crisis
 		priority = 10
 		allowed = {

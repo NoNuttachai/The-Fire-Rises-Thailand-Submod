@@ -917,7 +917,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
-		SIA_half_payment_policy = {
+		SIA_half_payment_policy_idea = {
 			picture = generic_covid
 			traits = {
 				ZZZ_blank_idea_trait
@@ -1856,6 +1856,39 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
+		SIA_renewable_economy_ev_blueprint = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				industrial_development_monthly = 0.01
+				local_resources_factor = 0.05
+				production_speed_energy_farm_factor = 0.1
+			}
+		}
+		SIA_renewable_economy_fill_the_hole = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				monthly_population = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 		SIA_cabinet_forming = {
 			picture = generic_parliament_idea
 		    traits = {
@@ -1969,6 +2002,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				hog_technocratic_businessman
 			}
 		}
 		SIA_paetongtarn_shinawatra_hog = {
@@ -1985,6 +2019,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				hog_smiling_serpent
 			}
 		}
 		SIA_pita_limjaroenrat_hog = {
@@ -2001,6 +2036,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_mfp
+				hog_committed_social_activist
 			}
 		}
 		SIA_anutin_charnvirakul_hog = {
@@ -2017,6 +2053,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_bhumjaithai
+				hog_silent_workhorse
 			}
 		}
 		SIA_yodchanan_wongsawat_hog = {
@@ -2033,6 +2070,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_ptp
+				hog_effective_manager
 			}
 		}
 		SIA_pirapan_salirathavibhaga_hog = {
@@ -2049,6 +2087,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
+				hog_pragmatic_statesman
 			}
 		}
 		SIA_suchat_chomklin_hog = {
@@ -2065,6 +2104,24 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
+				hog_controversial_politican
+			}
+		}
+		SIA_trinuch_thienthong_hog = {
+			name = SIA_trinuch_thienthong_char
+			picture = SIA_trinuch
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				has_idea = SIA_trinuch_thienthong_hog
+			}
+			traits = {
+				SIA_ide_utn
+				hog_pragmatic_statesman
 			}
 		}
 	}

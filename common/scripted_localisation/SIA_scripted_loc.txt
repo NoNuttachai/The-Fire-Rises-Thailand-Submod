@@ -252,29 +252,36 @@ defined_text = {
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			NOT = {
-				has_country_flag = SIA_utn_won_2027
+				has_country_flag = SIA_2027_elections_finished
 				has_country_flag = SIA_utn_party_mech_dispute
 			}
+			check_variable = { utn_candidate = 1 }
 		}
 		localization_key = SIA_utn_banner_pirapan
 	}
 	text = { #Suchat secured nomination
 		trigger = {
-			has_idea = SIA_suchat_chomklin_hog
+			has_idea = SIA_pirapan_salirathavibhaga_hog
 			NOT = {
-				has_country_flag = SIA_utn_won_2027
+				has_country_flag = SIA_2027_elections_finished
 				has_country_flag = SIA_utn_party_mech_dispute
-				has_country_flag = SIA_cambodia_war_stalemate
 			}
+			check_variable = { utn_candidate = 2 }
 		}
 		localization_key = SIA_utn_banner_suchat
 	}
 	text = { #Pirapan wins 2027
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
-			has_country_flag = SIA_utn_won_2027
+			has_country_flag = SIA_2027_elections_finished
 		}
 		localization_key = SIA_utn_banner_pirapan2
+	}
+	text = { #Trinuch Compromise
+		trigger = {
+			has_idea = SIA_trinuch_thienthong_hog
+		}
+		localization_key = SIA_utn_banner_trinuch_compromise
 	}
 	text = { #Stalemate
 		trigger = {
