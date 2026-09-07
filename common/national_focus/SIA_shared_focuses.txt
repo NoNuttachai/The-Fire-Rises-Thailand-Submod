@@ -1020,9 +1020,11 @@ shared_focus = {
 		
 	}
 	allow_branch = {
-		has_country_flag = SIA_2027_elections_finished
-		has_country_flag = SIA_2026_elections_finished
-		has_country_flag = SIA_auth_thailand
+		OR = {
+			has_country_flag = SIA_2027_elections_finished
+			has_country_flag = SIA_2026_elections_finished
+			has_country_flag = SIA_auth_thailand
+		}
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_guardian_of_asia
@@ -1186,12 +1188,7 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		if = {
-			limit = {
-				has_focus_tree = SIA_2023_utn_focus_tree
-			}
-			has_completed_focus = SIA_tonight_in_bangkok
-		}
+		
 	}
 	allow_branch = {
 		has_country_flag = SIA_forpol_focus_branch_unlocked

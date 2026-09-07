@@ -38,7 +38,7 @@
  
  ###National Focuses###
  SIA_future_forward_on_trial: "Future Forward on Trial"
- SIA_future_forward_on_trial_desc: "The Future Forward Party is a progressive political party founded by law professor and Marxist Piyabutr Saengkanokkul and businessman Thanathorn Juangroongruangkit. Its platform centered on amending the 2017 Constitution of Thailand and controversially abolishing the lèse-majesté law, while maintaining a hardline opposition to the government of Prime Minister General Prayut Chan-o-cha.\n\nThe party faced intense scrutiny from legal petitions seeking its dissolution, alleging that it is conspiring to overthrow Thailand’s constitutional monarchy. The party also faced allegations that a major financial loan provided by Thanathorn constituted an illegal act of political influence under the Organic Act on Political Parties. The Constitutional Court will be ultimately responsible for issuing the final judgment on the cases."
+ SIA_future_forward_on_trial_desc: "The Future Forward Party is a progressive political party founded by law professor and Marxist Piyabutr Saengkanokkul and businessman Thanathorn Juangroongruangkit. Its platform centered on amending the 2017 Constitution of Thailand and controversially abolishing the lèse-majesté law, while maintaining a hardline opposition to the government of Prime Minister General Prayut Chan-o-cha.\n\nThe party faced intense scrutiny from legal petitions seeking its dissolution, alleging that it is conspiring to overthrow Thailand's constitutional monarchy. The party also faced allegations that a major financial loan provided by Thanathorn constituted an illegal act of political influence under the Organic Act on Political Parties. The Constitutional Court will be ultimately responsible for issuing the final judgment on the cases."
  
  SIA_raise_our_three_fingers: "Raise our Three Fingers"
  SIA_raise_our_three_fingers_desc: "The government's decision to dissolve §Othe Future Forward Party§! opened the eyes of an entire generation of young Thais to the reality of authoritarian rule and a political system stacked against them. Unlike previous generations, they are not willing to accept things simply because "that is the way they have always been." These young people are standing up to challenge the status quo and demand real change. They will §Omove forward§! with the §Opeople§! in the pursuit of democracy. Our voices cannot be ignored, and our three fingers will be raised!."
@@ -139,8 +139,8 @@
  SIA_phuket_sandbox: "Phuket Sandbox"
  SIA_phuket_sandbox_desc: ""
  
- SIA_project_normality: "Project Normality"
- SIA_project_normality_desc: ""
+ SIA_quiet_before_down: "Quiet Before Dawn"
+ SIA_quiet_before_down_desc: ""
  
  SIA_covid_vaccine_drive: "Covid Vaccine Drive"
  SIA_covid_vaccine_drive_desc: ""
@@ -206,9 +206,6 @@
  
  SIA_period_of_recuperation: "Period of Recuperation"
  SIA_period_of_recuperation_desc: ""
- 
- SIA_quelling_agitators: "Quelling Agitators"
- SIA_quelling_agitators_desc: ""
  
  SIA_khon_la_khrueng: "Khon La Khrueng"
  SIA_khon_la_khrueng_desc: ""
@@ -459,8 +456,20 @@
  SIA_under_siege_available: "§RThe country is not engulfed in a crisis§!"
  SIA_under_siege_tt: "§YPirapan is unable to govern until the crisis has been resolved§!\n\n\n\n\n£GFX_SIA_cambodia_war2\n\n\n\n\n\n§RDon't you have better things to do Prime Minister?§!"
  
+ SIA_utn_triumphant: "UTN Triumphant"
+ SIA_utn_triumphant_tt: "§gNow that we have §Gtriumphed§! against @CAM §PCambodia§!, it's about time to wrap up the internal party issues we have§!"
  
- 
+ SIA_in_his_name: "In His Name"
+ SIA_negotiating_with_the_pprp: "Negotiating With The PPRP"
+ SIA_broadcast_our_success: "Broadcast Our Success"
+ SIA_standing_on_our_own_legs: "Standing On Our Own Legs"
+ SIA_the_ev_blueprint: "The EV Blueprint"
+ SIA_against_trafficking: "Against Trafficking"
+ SIA_fill_the_hole: "Fill The Hole"
+ SIA_discredit_the_opposition: "Discredit The Opposition"
+ SIA_hold_the_conservative_fort: "Hold The Conservative Fort"
+ SIA_the_party_gathers: "The Party Gathers"
+ SIA_the_party_gathers_tt: "§LThe one who is dominant in the §YTug Of War§! will become the leader of the £GFX_united_thai_nation §PUTN§!§!"
 
  SIA_reassure_the_nation_tt: "§gThe Court will make their final decision about Prayut's case§!"
  
@@ -516,6 +525,7 @@
  SIA_yodchanan_wongsawat_char: "Yodchanan Wongsawat"
  SIA_pirapan_salirathavibhaga_char: "Pirapan Salirathavibhaga"
  SIA_suchat_chomklin_char: "Suchart Chomklin"
+ SIA_trinuch_thienthong_char: "Trinuch Thienthong"
 
  SIA_adung_phan_iam_char: "Adung Phan-iam"
  SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
@@ -574,6 +584,8 @@
  SIA_triumph_in_saudi_arabia_desc: "\n\n\n\n\n£GFX_SIA_banner_saudi\n\n\n\n\n\n"
  
  SIA_iranian_oil_deal_idea: "Iranian Oil Deal"
+ SIA_iranian_oil_deal_idea_desc: "\n\n\n\n\n£GFX_SIA_banner_thai_iran_deal\n\n\n\n\n\n"
+ 
  SIA_truck_protests: "Truck Protests"
  SIA_thai_cambodia_conflict: "Thai-Cambodian Conflict"
  SIA_thai_cambodia_conflict_desc: "\n\n\n\n\n£GFX_SIA_cambodia_war\n\n\n\n\n\n"
@@ -595,16 +607,42 @@
  SIA_economic_engine_5: "Roaring Engine"
  SIA_economic_engine_5_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
  
+ SIA_half_payment_policy_idea: "Half Payment Policy"
+ SIA_half_payment_policy_idea_desc: "\n\n\n\n\n£GFX_SIA_banner_half_half\n\n\n\n\n\n"
+ 
  SIA_japanese_cooperation: "Japanese-Thai Cooperation"
+ SIA_japanese_cooperation_desc: "\n\n\n\n\n£GFX_SIA_banner_japan_cooperation\n\n\n\n\n\n"
+ 
  SIA_support_our_smes_idea: "Supporting Our SMEs"
+ SIA_support_our_smes_idea_desc: "\n\n\n\n\n£GFX_SIA_sme\n\n\n\n\n\n"
+ 
  SIA_khon_la_khrueng_idea: "Khon La Khrueng Program"
+ SIA_khon_la_khrueng_idea_desc: "\n\n\n\n\n£GFX_SIA_banner_khon\n\n\n\n\n\n"
+ 
  SIA_pushback_against_the_establishment: "Pushback Against the Establishment"
+ SIA_pushback_against_the_establishment_desc: "\n\n\n\n\n£GFX_SIA_banner_pm_bad\n\n\n\n\n\n"
+ 
  SIA_foreign_worker_program: "Foreign Labour Program"
+ SIA_foreign_worker_program_desc: "\n\n\n\n\n£GFX_SIA_foreignworker\n\n\n\n\n\n"
+ 
  SIA_SMILE_Strategy: "SMILE Initiative"
+ SIA_SMILE_Strategy_desc: "\n\n\n\n\n£GFX_SIA_smile\n\n\n\n\n\n"
+ 
  SIA_We_Travel_Together: "We Travel Together"
+ SIA_We_Travel_Together_desc: "\n\n\n\n\n£GFX_SIA_banner_we_travel\n\n\n\n\n\n"
+ 
  SIA_recuperation: "Grace Period"
+ SIA_recuperation_desc: "\n\n\n\n\n£GFX_SIA_banner_recuperation\n\n\n\n\n\n"
+ 
+ SIA_quelling_agitators: "Quelling Agitators"
+ SIA_quelling_agitators_desc: "\n\n\n\n\n£GFX_SIA_banner_quelling_the_agitators\n\n\n\n\n\n"
+ 
  SIA_cabinet_forming: "Cabinet Forming Period"
+ SIA_cabinet_forming_desc: "\n\n\n\n\n£GFX_SIA_cabinet_form\n\n\n\n\n\n"
+ 
  SIA_sam_phraya: "Operation: Sam Phraya"
+ SIA_sam_phraya_desc: "\n\n\n\n\n£GFX_SIA_sam_phraya\n\n\n\n\n\n"
+ 
  SIA_flaming_youth_dynamic_modifier: "Leftist Anti-Establishment Opposition"
  SIA_flaming_youth_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_leftist_opposition\n\n\n\n\n\n                       §RPerpetual Opposition§!"
  
@@ -895,9 +933,9 @@
  thai_events.58.d: ""
  thai_events.58.a: ""
  
- thai_events.59.t: "Thailand Now Covid Free"
- thai_events.59.d: ""
- thai_events.59.a: ""
+ thai_events.59.t: "A Return Back to Normalcy"
+ thai_events.59.d: "Somchai scrolled through his phone, bored and not knowing what to do. \n\nIt's been weeks since he went outside to buy essential supplies for ration. He has been jobless for years. the Covid pandemic has taken away his job as a manager at The Dhara Dhevi Resort in Chiang Mai, now he's barely scrapping by with his dwindling savings.\n\nHe thought to himself when will this pandemic end, he just hopes that he will survive for another day, his thoughts snap back to reality as he hears the familiar news intro sound with a familiar face of Buddha Apiwan on his old flat screen.\n\nAs Buddha reads the hot new topic for today a word caught his attention, Vaccines for COVID-19 is available now for everyone at their nearest health station and hospital. Additionally, the government has started slowly phasing out the lockdowns in an effort to bring the country back to pre-COVID conditions.\n\nSomchai felt something he hasn't felt in years, hope and joy, especially for his uncle. Somchai then sees the incense his uncle lit for him, he silently wishes his uncle to be safe and sound."
+ thai_events.59.a: "I survived..."
  
  thai_events.60.t: "The Eagle Falls"
  thai_events.60.d: ""
@@ -949,6 +987,11 @@
  thai_elections.6.t: "DP falls into chaos after leader resigns"
  thai_elections.6.d: "cant coalition LOL"
  thai_elections.6.a: "Oh noes"
+ 
+ thai_elections.7.t: "2027 Election Season"
+ thai_elections.7.d: "Imagine voting"
+ thai_elections.7.a: "£GFX_united_thai_nation §gUTN§!"
+ SIA_cambodia_victory_election_boost_tt: "§gDue to our §Gsuccessful§! victory over @CAM §1Cambodia§!, the incumbent party has gain a §Ysignificant boost§!§!"
  
  thai_elections.8.t: "Yodchanan Wongsawat becomes frontrunner for PTP nomination"
  thai_elections.8.d: "The political journey of the Pheu Thai Party (PTP) shifts into high gear today. Amidst red banners displaying the slogan "Pheu Thai Can Do It", Yodchanan Wongsawat has officially secured the party's nomination as its candidate for the upcoming elections.\n\nThe announcement was met with resounding applause from supporters, signaling a united front as the party prepares for the imminent electoral battle..."
@@ -1054,7 +1097,7 @@
  thai_prayut.23.t: "Suchart's Damage Control"
  thai_prayut.23.d: ""
  thai_prayut.23.a: "The UTN is in a freefall, will he save it?"
- thai_prayut_23_tt: "§g§BSuchart§! has triumphed against the so called §Rheir§! and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §BUTN§! §YCandidate§!§!§!"
+ thai_prayut_23_tt: "§g§BSuchart§! has taken over as damage control and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §BUTN§! §YCandidate§!§!§!"
  
  thai_prayut.24.t: "Formation of Pirapan's Cabinet"
  thai_prayut.24.d: ""
@@ -1063,6 +1106,45 @@
  thai_prayut.25.t: "Finishing What We Started"
  thai_prayut.25.d: ""
  thai_prayut.25.a: ""
+ 
+ thai_prayut.26.t: "A Talk With Fellow Conservatives"
+ thai_prayut.26.d: ""
+ thai_prayut.26.a: "Let's see how it goes"
+ 
+ thai_prayut.27.t: "PPRP refuses to cooperate"
+ thai_prayut.27.d: ""
+ thai_prayut.27.a: ""
+ 
+ thai_prayut.28.t: "PPRP agrees to an electoral coalition"
+ thai_prayut.28.d: ""
+ thai_prayut.28.a: ""
+ 
+ thai_prayut.29.t: "PPRP-UTN Merges"
+ thai_prayut.29.d: ""
+ thai_prayut.29.a: ""
+ thai_prayut_29_tt: "\n§gThe £GFX_palang_pracharath §BPPRP§! will be absorbed into the £GFX_united_thai_nation §PUTN§! and will become a §Yfaction§! inside it§!"
+ 
+ thai_prayut.30.t: "UTN Party Convention"
+ thai_prayut.30.d: ""
+ thai_prayut.30.a: ""
+ 
+ thai_prayut.31.t: "Suchart Wins Nomination"
+ thai_prayut.31.d: ""
+ thai_prayut.31.a: ""
+ thai_prayut_31_tt: "§g§BSuchart§! has triumphed against the so called §Rheir§! and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §BUTN§! §YCandidate§!§!§!"
+ 
+ thai_prayut.32.t: "The PPRP Kingmaker"
+ thai_prayut.32.d: ""
+ thai_prayut.32.a: "Trinuch Sides with Suchart"
+ thai_prayut.32.b: "The PPRP suggests Trinuch as a Compromise Candidate"
+ 
+ thai_prayut.33.t: "The UTN Collapses"
+ thai_prayut.33.d: ""
+ thai_prayut.33.a: ""
+ 
+ thai_prayut.34.t: "Trafficking Ring Exposed"
+ thai_prayut.34.d: ""
+ thai_prayut.34.a: ""
  
  thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
  thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
@@ -1116,6 +1198,50 @@
  thai_newsevents.1.t: "Major Protests in Thailand"
  thai_newsevents.1.d: "Protests erupted in Thailand against Prime Minister Prayut Chan-o-cha, who seized power in a 2014 military coup, following the Constitutional Court's dissolution of the Future Forward Party, the country's second-largest opposition group. Many supporters condemned the ruling as a state-sponsored attack on political opposition. Although the initial wave of demonstrations paused because of the COVID-19 pandemic, public outrage soon reignited the movement. This resurgence was fueled by the disappearance of activist Wanchalearm Satsaksit, economic strain from rising prices tied to the oil crisis, and deep-seated dissatisfaction with the ruling administration.\n\nThe decentralized movement, largely composed of liberal and leftist citizens, united behind several core demands. They pressed for an early general election, the resignation of Prime Minister Prayut, and a newly drafted constitution. Crucially, they also advocated for reforms to the Thai monarchy, a deeply polarizing issue given the institution's revered status among conservatives and the severe prison sentences enforced by the nation's strict lese-majeste laws. The government retaliated by declaring a state of emergency, enforcing stricter COVID-19 protocols, deploying riot police throughout Bangkok, and initiating legal proceedings against the participants of what it deemed an unlawful demonstration."
  thai_newsevents.1.a: "Interesting..."
+ 
+ thai_newsevents.2.t: "Thai PM survives motion of no confidence"
+ thai_newsevents.2.d: ""
+ thai_newsevents.2.a: ""
+ 
+ thai_newsevents.3.t: "Thai PM removed due to motion of no confidence"
+ thai_newsevents.3.d: ""
+ thai_newsevents.3.a: ""
+ 
+ thai_newsevents.4.t: "Utn wins 2023 Elections"
+ thai_newsevents.4.d: ""
+ thai_newsevents.4.a: ""
+ 
+ thai_newsevents.5.t: "PTP wins 2023 Elections"
+ thai_newsevents.5.d: ""
+ thai_newsevents.5.a: ""
+ 
+ thai_newsevents.6.t: "Prayut Steps down as PM 2025"
+ thai_newsevents.6.d: ""
+ thai_newsevents.6.a: ""
+ 
+ thai_newsevents.7.t: "Utn wins 2026 Elections"
+ thai_newsevents.7.d: "Note that this outcome is only possible if UTN wins in 2023 but stalemates the cambodian war thus resulting in Suchart becoming the PM candidate instead of Pirapan"
+ thai_newsevents.7.a: ""
+ 
+ thai_newsevents.8.t: "Utn wins 2027 Elections"
+ thai_newsevents.8.d: ""
+ thai_newsevents.8.a: ""
+ 
+ thai_newsevents.9.t: "PTP wins 2027 Elections"
+ thai_newsevents.9.d: ""
+ thai_newsevents.9.a: ""
+ 
+ thai_newsevents.10.t: "Bhumjaithai wins 2026 Elections"
+ thai_newsevents.10.d: ""
+ thai_newsevents.10.a: ""
+ 
+ thai_newsevents.13.t: "Skirmishes in Thai-Cambodia Border"
+ thai_newsevents.13.d: ""
+ thai_newsevents.13.a: ""
+ 
+ thai_newsevents.14.t: "Outbreak of War between Thailand and Cambodia"
+ thai_newsevents.14.d: ""
+ thai_newsevents.14.a: ""
     
  ###Tooltip###
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
@@ -1138,6 +1264,8 @@
  SIA_utn_pprp_relationship: "£GFX_united_thai_nation §PUTN§! and £GFX_palang_pracharath §BPPRP§! §Yrelations§! will §Gincrease§!"
  SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
  SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
+ 
+ SIA_forpol_unlocked_tt: "The §YForeign Policy§! Branch will be §Gunlocked§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -1192,7 +1320,6 @@
 
  SIA_government_coalition_leader: "§P- Government Coalition Leader§!"
  SIA_opposition_leader: "§R- Opposition Leader§!"
- # Party support lines
  
  # Party Detail Panels
  SIA_parliament_desc: "[SIA_party_description]"
@@ -1220,7 +1347,7 @@
  
  SIA_parliament_detail_klatham_desc: "§YKla Tham§! (Pak Ruam Thai Sang Chart) \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! erm\n\nKla tham."
  
- # Parliament GUI - new layout keys
+ # Parliament GUI
  SIA_parliament_speaker_label: "§YSpeaker§!"
  SIA_parliament_gov_header: "§GGovernment Coalition§!"
  SIA_parliament_opp_header: "§ROpposition§!"
@@ -1259,18 +1386,6 @@
  SIA_election_status_2023: "£GFX_palang_pracharath §BPalang Pracharath Party§! | §L[?SIA:1.party_votes|2]%§! - §W[?SIA:1.party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?SIA:2.party_votes|2]%§! - §W[?SIA:2.party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OMove Forward Party§! | §L[?SIA:3.party_votes|2]%§! - §W[?SIA:3.party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?SIA:4.party_votes|2]%§! - §W[?SIA:4.party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?SIA:6.party_votes|2]%§! - §W[?SIA:6.party_seats_elections]§! §YSeats§!\n£GFX_united_thai_nation §PUnited Thai Nation Party§! | §L[?SIA:11.party_votes|2]%§! - §W[?SIA:11.party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?SIA:9.party_votes|2]%§! - §W[?SIA:9.party_seats_elections]§! §YSeats§!\n" 
  SIA_election_status_2027: "£GFX_palang_pracharath §BPalang Pracharath Party§! | §L[?SIA:1.party_votes|2]%§! - §W[?SIA:1.party_seats_elections]§! §YSeats§!\n£GFX_phua_thai §RPheu Thai Party§! | §L[?SIA:2.party_votes|2]%§! - §W[?SIA:2.party_seats_elections]§! §YSeats§!\n£GFX_orange_party_2 §OPeople's Party§! | §L[?SIA:3.party_votes|2]%§! - §W[?SIA:3.party_seats_elections]§! §YSeats§!\n£GFX_democrat §CDemocrat Party§! | §L[?SIA:4.party_votes|2]%§! - §W[?SIA:4.party_seats_elections]§! §YSeats§!\n£GFX_bhumjaithai §1Bhumjaithai Party§! | §L[?SIA:6.party_votes|2]%§! - §W[?SIA:6.party_seats_elections]§! §YSeats§!\n£GFX_united_thai_nation §PUnited Thai Nation Party§! | §L[?SIA:11.party_votes|2]%§! - §W[?SIA:11.party_seats_elections]§! §YSeats§!\n§GKla Tham Party§! | §L[?SIA:12.party_votes|2]%§! - §W[?SIA:12.party_seats_elections]§! §YSeats§!\n§LMinor Parties | §L[?SIA:9.party_votes|2]%§! - §W[?SIA:9.party_seats_elections]§! §YSeats§!\n" 
  
- SIA_parliament_pprp_election: ""
- SIA_parliament_dp_election: ""
- SIA_parliament_bjt_election: ""
- SIA_parliament_ctpp_election: "£GFX_chartthaipattana §sChart Thai Pattana Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_ptp_election: ""
- SIA_parliament_ffp_election: "£GFX_orange_party_1 §OFuture Forward Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_mfp_election: ""
- SIA_parliament_tlp_election: "£GFX_thai_liberal_party §YThai Liberal Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_pcc_election: "£GFX_prachachat §YPrachachat Party§! | §L[?SIA_party_election:party_votes|2]%§! - §W[?SIA_party_election:party_seats_elections]§! §YSeats§!"
- SIA_parliament_utn_election: ""
- SIA_parliament_minor_parties_election: ""
- 
  SIA_change_1_votes: "£GFX_palang_pracharath §BPalang Pracharath Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_2_votes: "£GFX_phua_thai §RPheu Thai Party§! §LVote§! Change: [?vote_change|=+2]"
  SIA_change_3_votes: "£GFX_orange_party_2 §OMove Forward Party§! §LVote§! Change: [?vote_change|=+2]"
@@ -1282,7 +1397,6 @@
  
  
  SIA_change_undecided_votes: "§gUndecided§! §LVotes§! Change: [?vote_change|=+2]" #THIS FOR UNDECIDED VOTES ONLY
- 
  SIA_election_undecided: "§gUndecided Votes: [?undecided_votes|2]%§!"
  
  SIA_election_results_1: "£GFX_palang_pracharath §BPalang Pracharath Party§! is projected to §Gwin§!"
@@ -1315,6 +1429,7 @@
  SIA_parliament_elections_projected_winner_11.1: "£GFX_united_thai_nation Pirapan Salirathavibhaga"
  SIA_parliament_elections_projected_winner_11.2: "£GFX_united_thai_nation Suchart Chomklin"
  SIA_parliament_elections_projected_winner_12: "Thamanat Prompow"
+ 
  #Focus Tree Names
  thailand_focus_tfr_submod: "Thailand 2020 Focus Tree"
  SIA_prayut_focus_tree: "Prayut 2021 Victory Against Protests"
@@ -1328,10 +1443,10 @@
  SIA_hide_PM_change_decisions: "§RHide§! §YPM§! §GChange§! Decisions"
  
  SIA_parliament_elections: "[SIA_election_title]"
- SIA_parliament_elections_2023_title: "2023 Parliament Elections"
- SIA_parliament_elections_2027_title: "2027 Parliament Elections"
+ SIA_parliament_elections_2023_title: "2023 General Elections"
+ SIA_parliament_elections_2027_title: "2027 General Elections"
  SIA_parliament_elections_desc: "[SIA_election_desc]"
- SIA_parliament_elections_desc_2023: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent riots, Economic Recovery, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for: [SIA_elections_playing_as]"
+ SIA_parliament_elections_desc_2023: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The 2023 Elections will decide the future makeup of the ruling government and seat allocations for each party. Numerous issues such as the recent protests, economic stagnation, and the alignment of the nation after the collapse of the American world order will be the main issues in this cycle.\n\nCampaigning for:[SIA_elections_playing_as]"
  SIA_parliament_elections_desc_2027: "\n\n\n\n\n£GFX_SIA_election_banner\n\n\n\n\n\n\n\nElection season has come again for Thailand. The it's 2027\n\nCampaigning for: [SIA_elections_playing_as]"
  SIA_undecided_votes_available: "§YThere are still available§! §gUndecided Votes§!"
  SIA_2023_elections: "2023 Elections - §YElection Day§!"
@@ -1365,15 +1480,6 @@
  SIA_extent_travel_subsidy: "Extent Travel Subsidy"
  SIA_increase_funding_to_renewables: "Increase Funding to Renewables"
  SIA_fund_ev_industry: "Fund EV Industry"
-
-
-
-
-
-
-
-
-
 
  SIA_coronavirus_category: "COVID-19 Outbreak"
  SIA_coronavirus_category_desc: "\n\n\n\n\n£GFX_SIA_covid_banner\n\n\n\n\n\n\n\nThailand became the first country outside China to report a case of the COVID-19 virus on 13 January 2020, marking an early warning of the disease's global spread. \nIn light of this development, it is essential that we act decisively to contain the outbreak and ensure the safety and well-being of our citizens.\n\nThe Current Status of the Outbreak is: [SIA_covid_status]"
@@ -1648,17 +1754,18 @@
  SIA_public_perception_decisions: "                         §YPUBLIC PERCEPTION DECISIONS§!             "
  
  SIA_utn_party_mech: "£GFX_united_thai_nation UTN Party Machine"
- SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER]"
+ SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER]\n\n" #------------------------------------------\n§YFaction Influences§!\n\n§gHardliners§!\n§YInfluence§! Effect\n\n§BConservatives§!\n§YInfluence§! Effect\n   Stability: 0120414993\n  £GFX_palang_pracharath §PPPRP§!:\n   Pol power gain: 140141\n\n§OLoyalists§!\n§YInfluence§! Effect
  SIA_utn_banner_prayut: "£GFX_SIA_utn_party_mech_prayut\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §BUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nPast those loud praises for Prayut is the intricate political scheming in the background, within those closed doors will decide how the UTN will become and whether or not §Ran ambitious figure§! tries to secure control over the party for themselves.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
- SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §BUTN§! as the party remains divided on who to support for the future.\n\nOn one side is §YPirapan Salirathavibhaga§!, the successor of Prayut\n\nThe other is §YSuchart Chomklin§!, yap yap yap.\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §BUTN§! as the party remains divided on who to support for the future.\n\nOn the left side is §YPirapan Salirathavibhaga§!, the natural successor of Prayut with experience as Deputy PM to his belt. With his Technocratic vision, he aims to continue and expand the renewable program initiated by Prayut.\n\nOn the other side is §YSuchart Chomklin§!, the strongman of Chonburi and a dealmaker who has solidified his control over the eastern provinces of Thailand. He is known to be good at handling internal party affairs and able to whip the party into shape.\n\nWith a §Gvictory§! over @CAM §1Cambodia§! to his name, will §YPirapan§! stop his §Ochallenger§! or will his party §Rthrow him down under§! for the next general elections?\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
  SIA_utn_banner_pirapan: "£GFX_SIA_utn_party_mech_pirapan\n\n\n\n\n\n\n\nFresh from §YGeneral Prayut's§! stepping down as §YPrime Minister§! in 2025, the £GFX_united_thai_nation §BUTN§! has followed the will of §YPrayut§! and has chosen §BPirapan Salirathavibhaga§! as the next Prime Minister.\n\nNow, §BPirapan§! must §Gearn the trust§! and §Gsupport§! from within the party if he ever wants to win the §Ynext elections§!"
  SIA_utn_banner_pirapan2: "£GFX_SIA_party_mech_pirapan2\n\n\n\n\n\n\n\nAfter winning the §Y2027 Elections§!, §BPirapan§! has managed to rally the £GFX_united_thai_nation §BUTN§! behind him as the designated successor."
  SIA_utn_banner_suchat: "£GFX_SIA_utn_party_mech_suchat\n\n\n\n\n\n\n\nIt wasn't §RPirapan§! who came out on top but instead it was §BSuchart Chomklin§!. After dealing with internal opposition, Suchart now leads the £GFX_united_thai_nation §BUTN§! as the §Y2027 Elections§! draws near."
  SIA_utn_banner_suchat_stalemate: "£GFX_SIA_utn_party_mech_suchat2\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchart Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchart§! will now lead the way and guide the £GFX_united_thai_nation §BUTN§! forward and will not repeat the same mistakes as his predecessor"
+ SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §PPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
  SIA_honor_the_generals_legacy: "Honor The General's Legacy"
  SIA_enforce_party_unity: "Enforce Party Unity"
  SIA_champion_conservative_values: "Champion Conservative Values"
- 
+ SIA_attract_foreign_workers: "Attract Foreign Workers"
  
  
  
@@ -1721,14 +1828,14 @@
  SIA_cambodia_war_category_desc: "\n\n\n\n\n£GFX_SIA_thai_cambodia_war_banner\n\n\n\n\n\n\n\nThailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
  SIA_cambodia_war_phase_1: "§OBorder Skirmishes§!"
  SIA_cambodia_war_phase_2: "§GMediation§!\n\n@JAP Japanese §gLean§!: [?SIA_thai_cambodia_jap_lean|%0]\n@PRC §RChinese§! §gLean§!: [?SIA_thai_cambodia_prc_lean|%0]"
- SIA_cambodia_war_phase_3: "§RActive Conflict§!\n\nFollowing renewed fighting along the disputed border, both sides have ceased negotiations and entered into an active conflict, with both Tokyo and Beijing calling for an end to the fighting. The situation has galvanized nationalist sentiment throughout Bangkok, placing pressure on the government to secure a decisive victory.\nVictory must be achieved before Tokyo and Beijing intervene, §Rlest all of Thailand's sacrifices were for nothing.§!\n\n[Bangkok_status]\n\n[PhnomPenh_status]\n\n[Operation_status]\n\nEnding Outcomes\n§7Thailand Victory§!: Complete occupation of §PCambodia§!\n§LStalemate§!: Neither §7Thailand§! nor §PCambodia§! made substantive gain.\n§PCambodia Victory§!: Forced negotiation with §7Thailand§!\n"
+ SIA_cambodia_war_phase_3: "§RActive Conflict§!\n\nFollowing renewed fighting along the disputed border, both sides have ceased negotiations and entered into an active conflict, with both Tokyo and Beijing calling for an end to the fighting. The situation has galvanized nationalist sentiment throughout Bangkok, placing pressure on the government to secure a decisive victory.\n\nVictory must be achieved before Tokyo and Beijing intervene, §Rlest all of Thailand's sacrifices were for nothing.§!\n\n-------------------------------------------------------------------------------------------\n\n--§YSTATUS OF THE WAR§!--\n\n[Bangkok_status]\n\n[PhnomPenh_status]\n\n[Operation_status]\n\nEnding Outcomes\n§7Thailand Victory§!: Complete occupation of §PCambodia§!\n§LStalemate§!: Neither §7Thailand§! nor §PCambodia§! made substantive gain.\n§PCambodia Victory§!: Forced negotiation with §7Thailand§!\n"
 
- Bangkok_SIA: "§GBangkok§! is controlled by §7Kingdom of Thailand§!"
- Bangkok_CAM: "§GBangkok§! is §Runder siege§!\nThe cabinet is negotiating §Rpeace settlements§! with §PKingdom of Cambodia§!"
- PhnomPenh_SIA: "§PPhnom Penh§! is controlled by §7Kingdom of Thailand§!"
- PhnomPenh_CAM: "§PPhnom Penh§! is controlled by §PKingdom of Cambodia§!"
+ Bangkok_SIA: "§GBangkok§! is controlled by @SIA §7Kingdom of Thailand§!"
+ Bangkok_CAM: "§GBangkok§! is §Runder siege§!\nThe cabinet is negotiating §Rpeace settlements§! with @CAM §PKingdom of Cambodia§!"
+ PhnomPenh_SIA: "§PPhnom Penh§! is controlled by @SIA §7Kingdom of Thailand§!"
+ PhnomPenh_CAM: "§PPhnom Penh§! is controlled by @CAM §PKingdom of Cambodia§!"
  Operation_inactive: "Operation §YSam Phraya§!: §gINACTIVE§!"
- operation_active: "Operation §YSam Phraya§!: §RACTIVE§!\n§LFollowing effects will be applied§!\n$MODIFIER_ARMY_SPEED_FACTOR$: §G7.5%§!\n£attack_texticon Attack bonus against §PCambodia§!: §G15%§!\n£breakthrough_texticon Breakthrough bonus against §PCambodia§!: §G10%§!"
+ operation_active: "Operation §YSam Phraya§!: §RACTIVE§!\n§LFollowing effects will be applied§!\n$MODIFIER_ARMY_SPEED_FACTOR$: §G7.5%§!\n£attack_texticon Attack bonus against @CAM §PCambodia§!: §G15%§!\n£breakthrough_texticon Breakthrough bonus against @CAM §PCambodia§!: §G10%§!"
  
  SIA_change_thai_cambodia_tensions_tt: "§YThai-Cambodian§! §RTensions§! will change by [?SIA_thai_cambodia_tensions_temp|+-0%]"
  

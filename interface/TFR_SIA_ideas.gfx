@@ -180,6 +180,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_utn_party_mech_trinuchcompromise"
+		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_trinuchcompromise.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_royal_thai_army"
 		texturefile = "gfx/texticons/banners/SIA_royal_thai_army.png"
 		legacy_lazy_load = no
@@ -260,6 +265,31 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_cabinet_form"
+		texturefile = "gfx/texticons/banners/SIA_cabinet_form.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_foreignworker"
+		texturefile = "gfx/texticons/banners/SIA_foreignworker.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_sam_phraya"
+		texturefile = "gfx/texticons/banners/SIA_sam_phraya.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_sme"
+		texturefile = "gfx/texticons/banners/SIA_sme.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_smile"
+		texturefile = "gfx/texticons/banners/SIA_smile.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_combat_readiness"
 		texturefile = "gfx/texticons/banners/SIA_combat_readiness.png"
 		legacy_lazy_load = no
@@ -297,6 +327,46 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_banner_saudi"
 		texturefile = "gfx/texticons/banners/banner_saudi.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_japan_cooperation"
+		texturefile = "gfx/texticons/banners/japan_cooperation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_quelling_the_agitators"
+		texturefile = "gfx/texticons/banners/quelling_the_agitators.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_recuperation"
+		texturefile = "gfx/texticons/banners/recuperation.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_half_half"
+		texturefile = "gfx/texticons/banners/SIA_half_half.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_khon"
+		texturefile = "gfx/texticons/banners/SIA_khon.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_pm_bad"
+		texturefile = "gfx/texticons/banners/SIA_pm_bad.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_thai_iran_deal"
+		texturefile = "gfx/texticons/banners/thai_iran_deal.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_we_travel"
+		texturefile = "gfx/texticons/banners/we_travel.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -784,6 +854,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_SIA_chatchai_phromlert"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_chatchai_phromlert.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_trinuch"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_trinuch.png"
 		legacy_lazy_load = no
 	}
 	# Laws

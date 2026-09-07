@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 99999999
+			add = 1
 			tag = SIA
 		}
 	}
@@ -26,7 +26,9 @@ focus_tree = {
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		allow_branch = {
+			NOT = { has_country_flag = SIA_cambodia_war_victory }
+		}
 		
 		completion_reward = {
 			country_event = thai_prayut.15
@@ -37,14 +39,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_third_prayut_cabinet
 		prerequisite = { focus = SIA_third_prayut_cabinet }
 		
@@ -73,14 +75,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_tonight_in_bangkok
 		prerequisite = { focus = SIA_tonight_in_bangkok }
 		
@@ -94,14 +96,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_our_probable_friends
 		prerequisite = { focus = SIA_our_probable_friends }
 		
@@ -115,14 +117,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_tonight_in_bangkok
 		prerequisite = { focus = SIA_tonight_in_bangkok }
 		
@@ -145,14 +147,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_light_the_street
 		prerequisite = { focus = SIA_light_the_street }
 		
@@ -168,14 +170,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_tonight_in_bangkok
 		prerequisite = { focus = SIA_tonight_in_bangkok }
 		
@@ -188,14 +190,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_our_opposition
 		prerequisite = { focus = SIA_our_opposition }
 		
@@ -224,14 +226,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = -5
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_friends_with_benefits
 		prerequisite = { focus = SIA_friends_with_benefits }
 		prerequisite = { focus = SIA_rotten_streets }
@@ -277,14 +279,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = -1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_ev_revolution
 		prerequisite = { focus = SIA_ev_revolution }
 		
@@ -326,14 +328,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_ev_revolution
 		prerequisite = { focus = SIA_ev_revolution }
 		
@@ -370,7 +372,7 @@ focus_tree = {
 			SIA_utn_in_charge_prayut = yes
 			command_power > 30
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_ev_revolution
 		prerequisite = { focus = SIA_ev_revolution }
 		
@@ -386,14 +388,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_ridin_with_the_dragon
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
 		
@@ -417,14 +419,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_ridin_with_the_dragon
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
 		prerequisite = { focus = SIA_toward_a_greener_future }
@@ -453,7 +455,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -461,7 +463,7 @@ focus_tree = {
 			SIA_utn_in_charge_prayut = yes
 			has_completed_focus = SIA_presentation
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_ridin_with_the_dragon
 		prerequisite = { focus = SIA_ridin_with_the_dragon }
 		prerequisite = { focus = SIA_toward_a_greener_future }
@@ -483,14 +485,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_toward_a_greener_future
 		prerequisite = { focus = SIA_toward_a_greener_future }
 		
@@ -522,7 +524,7 @@ focus_tree = {
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_toward_a_greener_future
 		prerequisite = { focus = SIA_toward_a_greener_future }
 		
@@ -542,7 +544,7 @@ focus_tree = {
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_roll_the_carpets
 		prerequisite = { focus = SIA_roll_the_carpets }
 		
@@ -588,7 +590,7 @@ focus_tree = {
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_roll_the_carpets
 		prerequisite = { focus = SIA_roll_the_carpets }
 		
@@ -604,7 +606,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -612,7 +614,7 @@ focus_tree = {
 			SIA_utn_in_charge_prayut = yes
 			
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_against_chung_chart
 		prerequisite = { focus = SIA_against_chung_chart }
 		
@@ -627,14 +629,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_hit_the_book
 		prerequisite = { focus = SIA_against_chung_chart }
 		prerequisite = { focus = SIA_hit_the_book }
@@ -661,7 +663,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -671,7 +673,7 @@ focus_tree = {
 			has_completed_focus = SIA_show_of_forces
 			has_completed_focus = SIA_along_with_the_wind
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_hit_the_book
 		prerequisite = { focus = SIA_hit_the_book }
 		
@@ -722,14 +724,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 2
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_roll_the_carpets
 		prerequisite = { focus = SIA_value_over_volume }
 		prerequisite = { focus = SIA_amazing_new_chapters }
@@ -760,14 +762,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_amazing_new_chapters
 		prerequisite = { focus = SIA_shore_up_supports }
 		prerequisite = { focus = SIA_amazing_new_chapters }
@@ -796,14 +798,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_shore_up_supports
 		prerequisite = { focus = SIA_shore_up_supports }
 		prerequisite = { focus = SIA_smart_government }
@@ -825,14 +827,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_will_continue
 		prerequisite = { focus = SIA_will_continue }
 		
@@ -859,14 +861,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_debunking_lies
 		prerequisite = { focus = SIA_debunking_lies }
 		prerequisite = { focus = SIA_rotten_streets }
@@ -882,14 +884,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_friend_and_foes
 		prerequisite = { focus = SIA_friend_and_foes }
 		
@@ -902,14 +904,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_friend_and_foes
 		prerequisite = { focus = SIA_friend_and_foes }
 		
@@ -930,14 +932,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_partys_prince
 		prerequisite = { focus = SIA_partys_prince }
 		
@@ -950,14 +952,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_rekindling_spirit
 		prerequisite = { focus = SIA_rekindling_spirit }
 		
@@ -971,14 +973,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_partys_prince
 		prerequisite = { focus = SIA_partys_prince }
 		
@@ -992,14 +994,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_not_the_same_as_before
 		prerequisite = { focus = SIA_not_the_same_as_before }
 		
@@ -1021,14 +1023,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_not_the_same_as_before
 		prerequisite = { focus = SIA_not_the_same_as_before }
 		
@@ -1057,14 +1059,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_capital_of_yellow_shirts
 		prerequisite = { focus = SIA_capital_of_yellow_shirts }
 		prerequisite = { focus = SIA_respectfulness_for_elderly }
@@ -1088,14 +1090,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_old_friendship
 		prerequisite = { focus = SIA_old_friendship }
 		prerequisite = { focus = SIA_nation_of_patriot }
@@ -1110,14 +1112,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_respectfulness_for_elderly
 		prerequisite = { focus = SIA_capital_of_yellow_shirts }
 		prerequisite = { focus = SIA_respectfulness_for_elderly }
@@ -1143,14 +1145,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_same_old
 		prerequisite = { focus = SIA_same_old }
 		
@@ -1175,14 +1177,14 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_nation_of_patriot
 		prerequisite = { focus = SIA_nation_of_patriot }
 		prerequisite = { focus = SIA_conservative_revolution }
@@ -1196,20 +1198,19 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_conservative_revolution
 		prerequisite = { focus = SIA_conservative_revolution }
 		prerequisite = { focus = SIA_proud_citizens }
 		
 		completion_reward = {
-			unlock_decision_tooltip = SIA_honor_the_generals_legacy
 			set_temp_variable = { increase = 1 }
 			SIA_decrease_youth_status = yes
 			add_to_variable = { SIA_conservative_revolution_stability_factor_var = 0.1 }
@@ -1229,7 +1230,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 2
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1238,8 +1239,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = mfp_dismantled
+			NOT = { has_country_flag = SIA_cambodia_war_victory }
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_rotten_streets
 		prerequisite = { focus = SIA_rotten_streets }
 		
@@ -1252,7 +1254,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 3
-		cost = 4
+		cost = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -1263,8 +1265,9 @@ focus_tree = {
 			NOT = {
 				has_idea = SIA_prayut_chan_o_cha_utn_hog
 			}
+			NOT = { has_country_flag = SIA_cambodia_war_victory }
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_fallen_flat
 		prerequisite = { focus = SIA_fallen_flat }
 		
@@ -1287,8 +1290,9 @@ focus_tree = {
 		allow_branch = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			has_completed_focus = SIA_pirapan_cabinet
+			NOT = { has_country_flag = SIA_cambodia_war_victory }
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_farewell
 		prerequisite = { focus = SIA_farewell }
 		
@@ -1318,7 +1322,7 @@ focus_tree = {
 			check_variable = { SIA_utn_pirapan_fakeout = 1 }
 		}
 		cancel_if_invalid = yes
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_pirapan_cabinet
 		prerequisite = { focus = SIA_pirapan_cabinet }
 		
@@ -1347,13 +1351,381 @@ focus_tree = {
 		allow_branch = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			check_variable = { SIA_utn_pirapan_fakeout = 2 }
+			NOT = { has_country_flag = SIA_cambodia_war_victory }
 		}
-		available_if_capitulated = yes
+		
 		relative_position_id = SIA_pirapan_cabinet
 		prerequisite = { focus = SIA_pirapan_cabinet }
 		
 		completion_reward = {
 			custom_effect_tooltip = SIA_under_siege_tt
+		}
+	}
+	
+	focus = { 
+		id = SIA_utn_triumphant
+		icon = GFX_goal_SIA_information_operations
+		x = 22
+		y = 0
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		allow_branch = {
+			has_country_flag = SIA_cambodia_war_victory
+		}
+		
+		completion_reward = {
+			set_country_flag = SIA_utn_party_mech_dispute
+			custom_effect_tooltip = SIA_utn_triumphant_tt
+			SIA_utn_start_tug_of_war = yes
+		}
+	}
+	focus = { #Pirapan branch
+		id = SIA_in_his_name
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_utn_triumphant
+		mutually_exclusive = { focus = SIA_broadcast_our_success }
+		prerequisite = { focus = SIA_utn_triumphant }
+		
+		completion_reward = {
+			unlock_decision_tooltip = SIA_honor_the_generals_legacy
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { influ_change = 5 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
+	focus = { 
+		id = SIA_negotiating_with_the_pprp
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_utn_triumphant
+		prerequisite = { focus = SIA_utn_triumphant }
+		
+		completion_reward = {
+			country_event = thai_prayut.26
+		}
+	}
+	focus = { 
+		id = SIA_broadcast_our_success
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_utn_triumphant
+		mutually_exclusive = { focus = SIA_in_his_name }
+		prerequisite = { focus = SIA_utn_triumphant }
+		
+		completion_reward = {
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.025
+			}
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { influ_change = 5 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
+	focus = { 
+		id = SIA_standing_on_our_own_legs
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_in_his_name
+		prerequisite = { focus = SIA_in_his_name }
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				var = global.PRC_influence_SIA_var_temp
+				value = -0.15
+			}
+			PRC_add_SIA_influence = yes
+			set_temp_variable = {
+				var = global.JAP_influence_SIA_var_temp
+				value = -0.15
+			}
+			JAP_add_SIA_influence = yes
+		}
+	}
+	focus = { 
+		id = SIA_the_ev_blueprint
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_in_his_name
+		prerequisite = { focus = SIA_in_his_name }
+		
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					power_plant < 1
+					nuclear_reactor < 1
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_to_variable = { SIA_renewable_economy_drive_industrial_development_monthly = 0.01 }
+			add_to_variable = { SIA_renewable_economy_drive_local_resources_factor = 0.05 }
+			add_to_variable = { SIA_renewable_economy_drive_production_speed_energy_farm_factor = 0.1 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_ev_blueprint
+				}
+			}
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { influ_change = 3 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
+	focus = { 
+		id = SIA_against_trafficking
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_broadcast_our_success
+		prerequisite = { focus = SIA_broadcast_our_success }
+		
+		completion_reward = {
+			country_event = thai_prayut.34
+			add_stability = 0.05
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.075
+			}
+			add_society_development = yes
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { influ_change = 3 }
+			SIA_utn_tug_of_war_change_influence = yes
+			
+		}
+	}
+	focus = { 
+		id = SIA_fill_the_hole
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_broadcast_our_success
+		prerequisite = { focus = SIA_broadcast_our_success }
+		
+		completion_reward = {
+			unlock_decision_tooltip = SIA_attract_foreign_workers
+			add_stability = -0.05
+			add_to_variable = { SIA_renewable_economy_drive_monthly_population = 0.1 }
+			add_to_variable = { SIA_renewable_economy_drive_production_factory_max_efficiency_factor = 0.05 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_renewable_economy_drive_dummy
+					add_idea = SIA_renewable_economy_fill_the_hole
+				}
+			}
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.1
+			}
+			add_industrial_development = yes
+		}
+	}
+	focus = { 
+		id = SIA_discredit_the_opposition
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_the_ev_blueprint
+		prerequisite = { focus = SIA_the_ev_blueprint }
+		
+		completion_reward = {
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { influ_change = 10 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
+	focus = { 
+		id = SIA_hold_the_conservative_fort
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_against_trafficking
+		prerequisite = { focus = SIA_against_trafficking }
+		
+		completion_reward = {
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { influ_change = 10 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+	}
+	focus = { 
+		id = SIA_the_party_gathers
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_negotiating_with_the_pprp
+		prerequisite = { focus = SIA_negotiating_with_the_pprp }
+		prerequisite = { focus = SIA_discredit_the_opposition }
+		prerequisite = { focus = SIA_hold_the_conservative_fort }
+		
+		completion_reward = {
+			custom_effect_tooltip = SIA_the_party_gathers_tt
+			set_country_flag = SIA_forpol_focus_branch_unlocked
+			custom_effect_tooltip = SIA_forpol_unlocked_tt
+			hidden_effect = {
+				country_event = thai_prayut.30
+			}
+		}
+	}
+	
+	#Pirapan
+	focus = { 
+		id = SIA_the_natural_heir
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_the_party_gathers
+		allow_branch = { 
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			has_country_flag = SIA_2027_elections_finished
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	#Suchart
+	focus = { 
+		id = SIA_chonburi_kingpin
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 3
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		
+		relative_position_id = SIA_the_party_gathers
+		allow_branch = { 
+			has_idea = SIA_suchat_chomklin_hog
+			has_country_flag = SIA_2027_elections_finished
+		}
+		
+		completion_reward = {
+			
 		}
 	}
 }

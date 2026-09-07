@@ -161,6 +161,10 @@ spriteTypes = {
         name = "GFX_goal_SIA_organize_counter_protests"
         texturefile = "gfx/interface/goals/SIA/initial/SIA_organize_counter_protests.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_quietbefore_dawn"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_quietbefore_dawn.png"
+    }
 	### 3. Prayut 2021-2023 ###
 	SpriteType = {
         name = "GFX_goal_SIA_prayut_2021_khon_la_krueng"
@@ -169,5 +173,9 @@ spriteTypes = {
 	SpriteType = {
         name = "GFX_goal_SIA_prayut_2021_SIA_dialbeijing"
         texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_dialbeijing.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_rupture"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_rupture.png"
     }
 }

@@ -1,0 +1,42 @@
+SIA_standoff_at_the_border = {
+	allowed = { original_tag = SIA }
+	enable = { 
+		NOT = { has_war_with = CAM } 
+		has_country_flag = SIA_thai_cambodia_tension
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = CAM
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_control
+		tag = CAM
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+CAM_standoff_at_the_border = {
+	allowed = { original_tag = CAM }
+	enable = { 
+		NOT = { has_war_with = SIA } 
+		SIA = {
+			has_country_flag = SIA_thai_cambodia_tension
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = prepare_for_war
+		id = SIA
+		value = 1000
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SIA
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}

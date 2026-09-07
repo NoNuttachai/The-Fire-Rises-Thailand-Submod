@@ -23,6 +23,21 @@ SIA_debug_prayut_terminal = {
 			load_focus_tree = SIA_2023_utn_focus_tree
 		}
 	}
+	SIA_load_cambodia_victory_utn_tree = {
+		complete_effect = {
+			add_ideas = SIA_pirapan_salirathavibhaga_hog
+			set_country_flag = SIA_cambodia_war_victory
+			focus_unlock = yes
+		}
+	}
+	SIA_load_post_2027_elections_branches = {
+		complete_effect = {
+			set_country_flag = SIA_forpol_focus_branch_unlocked
+			custom_effect_tooltip = SIA_forpol_unlocked_tt
+			set_country_flag = SIA_2027_elections_finished
+			focus_unlock = yes
+		}
+	}
 	SIA_load_2023_pheu_thai_tree = {
 		complete_effect = {
 			load_focus_tree = SIA_2023_pheu_thai_focus_tree
