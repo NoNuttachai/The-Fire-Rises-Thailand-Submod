@@ -46,6 +46,7 @@ on_actions = {
 				country_event = { id = thai_events.57 days = 209 } # July 28 Rama X birthday
 				country_event = { id = thai_events.58 days = 344 } # Dec 10 Constitutional Day
 				country_event = { id = thai_events.62 days = 934  } # July 23 2022 Prayut survives 4th motion of no confidence
+				country_event = { id = thai_events.63 days = 1212  } # April 27 2023 Am Cyanide
 				
 				
 				

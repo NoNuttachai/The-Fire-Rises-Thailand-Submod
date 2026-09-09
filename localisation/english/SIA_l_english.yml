@@ -926,8 +926,8 @@
  thai_events.56.a: ""
  
  thai_events.57.t: "[GetYear] King Rama X Birthday"
- thai_events.57.d: ""
- thai_events.57.a: ""
+ thai_events.57.d: "Today honors the birthday of the reigning monarch of Thailand, King Maha Vajiralongkorn (Rama X). Government buildings, public spaces, and homes across the country are decorated with yellow flags and portraits to celebrate the occasion. Nationwide religious ceremonies, almsgiving to monks, and volunteer activities are held to commemorate the day.\n\nAt 8:00 PM, at the main stage at Sanam Luang, near the Grand Palace, [SIAGetCurrentPMName], the Prime Minister, accompanied by the President of the National Assembly, the President of the Supreme Court, the President of the Senate, heads of constitutional bodies, the Cabinet, senior civil servants, commanders of the armed forces, the Commissioner-General of the Royal Thai Police, private sector representatives, and members of the public, presided over the ceremony to offer royal tributes and light candles to offer well-wishes on the auspicious occasion of His Majesty the King's Birthday Anniversary. \n\nThe Prime Minister paid respects before the royal portrait, delivered a speech conveying royal well-wishes, led civil servants and state officials nationwide in taking the oath of allegiance, and then led them in singing the Royal Anthem."
+ thai_events.57.a: "Long live his Majesty!"
  
  thai_events.58.t: "[GetYear] Constitutional Day"
  thai_events.58.d: ""
@@ -948,6 +948,14 @@
  thai_events.62.t: "Prayut Survives 4th Motion of No Confidence"
  thai_events.62.d: ""
  thai_events.62.a: ""
+ 
+ thai_events.63.t: "Am Cyanide Murders"
+ thai_events.63.d: "Sararat Rangsiwuthaporn, widely known in the Thai media as "Am Cyanide," was arrested by police, who formally announced a series of murder charges against the 36-year-old suspect. The case has drawn nationwide attention, as authorities presented evidence from one of Thailand’s largest serial murder investigations in recent years.\n\nThe investigation began after the suspicious death of one victim prompted authorities to re-examine a number of unexplained deaths with similar circumstances. Investigators believe the killings were primarily motivated by severe financial problems linked to an extensive online gambling addiction.\n\nAs more evidence emerged, police connected multiple cases across several provinces, leading to additional charges against Sararat.\n\nSararat faces 14 counts of premeditated murder and one count of attempted murder after allegedly poisoning multiple victims with cyanide over several years. Most of the victims were friends or acquaintances involved in financial dealings with her.\n\nAm Cyanide is currently being held at the Central Women's Correctional Institution in Bangkok, awaiting her final sentence."
+ thai_events.63.a: "The most prolific serial killer in all Thai history"
+ 
+ thai_events.64.t: "The Great Asian War"
+ thai_events.64.d: ""
+ thai_events.64.a: "Let us triumph in our endeavour"
  
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
@@ -1120,8 +1128,8 @@
  thai_prayut.28.a: ""
  
  thai_prayut.29.t: "PPRP-UTN Merges"
- thai_prayut.29.d: ""
- thai_prayut.29.a: ""
+ thai_prayut.29.d: "News from someone told they merging and blah blah, question is to keep the name which will be fired by an event 3 days later"
+ thai_prayut.29.a: "Oh yeah, conservative snowballing"
  thai_prayut_29_tt: "\n§gThe £GFX_palang_pracharath §BPPRP§! will be absorbed into the £GFX_united_thai_nation §PUTN§! and will become a §Yfaction§! inside it§!"
  
  thai_prayut.30.t: "UTN Party Convention"
@@ -1152,12 +1160,12 @@
  thai_cambodia_tension_1_tt: "§YThai-Cambodian Tensions§! will now start at the §OBorder Skirmishes§! Phase"
  
  thai_cambodia_tension.2.t: "Thai Military Retreats in Disgrace"
- thai_cambodia_tension.2.d: "erm"
- thai_cambodia_tension.2.a: "oh noes"
+ thai_cambodia_tension.2.d: "In an unexpected twist of fate, the barbaric Khmer troops managed to crush a Thai garrison and force the Burapha Task Force into a organized retreat. Even the task force's senior commander was wounded in the leg by Khmer troops.\n\nNow, hundreds of videos are circulating on Twitter, allegedly showing Khmer troops killing Thai prisoners and civilians."
+ thai_cambodia_tension.2.a: "Goddamnit, call the army to step up now!"
  
- thai_cambodia_tension.3.t: "Cambodians Pushed Out"
- thai_cambodia_tension.3.d: "ezezezezez"
- thai_cambodia_tension.3.a: "oh noes"
+ thai_cambodia_tension.3.t: "Cambodians Repelled"
+ thai_cambodia_tension.3.d: "As expected by many, the border raid instigated by the Cambodian forces has been met with overwhelming fire and artillery from furious Thai forces. In just 24 hours, Cambodian losses have reportedly accumulated to 800 troops and 50 vehicles.\n\nWhile fighting has stopped, there are rumors that the Cambodian military is aiming for another skirmish in a future date."
+ thai_cambodia_tension.3.a: "That'll show em"
  
  thai_cambodia_tension.4.t: "China and Japan calling"
  thai_cambodia_tension.4.d: "They want us to calm the hell down"
@@ -1165,8 +1173,8 @@
  thai_cambodia_tension_4_tt: "§YThai-Cambodian Tensions§! will update to the §GMediation§! Phase"
  
  thai_cambodia_tension.5.t: "Point of No Return"
- thai_cambodia_tension.5.d: "Alright, let's punish them"
- thai_cambodia_tension.5.a: "Mobilize the Army"
+ thai_cambodia_tension.5.d: "After 48 hours of nonstop aerial bombardment along the entire border, including carpet bombing of Cambodian infrastructure, factories, and military installations across the country, the first Thai soldiers finally crossed the border. Reports said that they will shoot anyone who was not Thai on sight. This action is likely a retaliation for the Khmer raid.\n\nForeign observer Tom Andrews has sent a worrying report regarding the alleged brutality of the Thai Armed Forces. Bangkok responded to the public, stating that the deaths of Thai civilians during the Khmer raid would be avenged with blood.\n\nMeanwhile, Hanoi, Tokyo, and Beijing have remained completely silent and are observing the developing situation."
+ thai_cambodia_tension.5.a: "Let's bring the destruction to them"
  thai_cambodia_tension_5_tt: "§YThai-Cambodian Tensions§! will update to the §RFull-On War§! Phase"
  
  thai_cambodia_tension.6.t: "war won"
@@ -1175,11 +1183,36 @@
  
  thai_cambodia_tension.7.t: "war.... lost sad"
  thai_cambodia_tension.7.d: "I afked"
- thai_cambodia_tension.7.a: "death to thailand parliament"
+ thai_cambodia_tension.7.a: "try again"
  
  thai_cambodia_tension.8.t: "A Peace That Satisfies No One"
  thai_cambodia_tension.8.d: ""
  thai_cambodia_tension.8.a: "stop being so slow"
+ 
+ thai_cambodia_tension.9.t: "Tales From The Forest"
+ thai_cambodia_tension.9.d: "It's 5 minutes past midnight, Dang and Khiao were walking on the edge of the forest both armed with M-16 Rifles and a few grenades. \n\nThey have lost contact with their unit for an hour now but everything isn't that bad, their morale is very high considering that Thai forces have smashed through Cambodian lines with ease despite hearing rumors of high casualties, but that's not his concern, Khiao thought to himself.\n\nSuddenly, Dang signalled Khiao to stop, he pointed his finger at something on the ridge. Not far from them was moonlight shining on a large silhouette.\n\n"Is that a T-55?" Dang asked, "I think that is eh... a wreckage of it? We should go investigate" Khiao answered hesitantly then both of them walk toward the ridge "
+ thai_cambodia_tension.9.a: "Destiny Awaits..."
+ 
+ thai_cambodia_tension.10.t: "Emerald Triangle Border Skirmish"
+ thai_cambodia_tension.10.d: "A brief gunfight lasting 10 minutes broke out between Thai and Cambodian troops near the "Emerald Triangle." Thai troops had detected movements and site preparations by Cambodian soldiers within Thai territory and dispatched a unit from Task Force 1 of the Suranari Force to investigate.\n\nHowever, Cambodian soldiers, mistakenly believing this to be an incursion, opened fire on the Thai troops, triggering a reciprocal exchange of fire. The incident concluded after both sides coordinated to halt the hostilities. There were no casualties on the Thai side.\n\nThe government of Cambodia has issued a statement reporting the death of one soldier and accused Thai soldiers of opening fire first on a Cambodian military post that had long existed in the contested border zone. Our military spokesperson has disputed this allegation. "
+ thai_cambodia_tension.10.a: "More lies from Hun Manet!"
+ 
+ thai_cambodia_tension.11.t: "Battle of Phnom Penh"
+ thai_cambodia_tension.11.d: "Yesterday, thousands of Thai troops, supported by armored vehicles and overwhelming air support, entered the suburban areas of Phnom Penh from both the south and the north. Heavy fighting was reported, as Khmer troops fought tooth and nail. However, losses on the Thai side were reportedly minimal, while Thai forces inflicted devastating damage on their enemy.\n\nForeign observer Tom Andrews has voiced his concerns regarding the humanitarian situation and possible violations of the Geneva Conventions.\n\nAccording to the Thai Government and other military experts, they have predicted that Cambodia could capitulate in less than a week."
+ thai_cambodia_tension.11.a: "The Cambodian flag falls"
+ 
+ thai_cambodia_tension.12.t: "End of the Line"
+ thai_cambodia_tension.12.d: ""Sir, the Khmer are pouring in, they're breaking our line!" "We can't hold out anymore! they brought tan-" "Artillery positions are being overrun! We need reinforcements, I repe-"\n\nHe can't let this happen any longer. He must do something. As a company commander, his job is to protect his homeland and his subordinates. He shouts to his radio operator, "Prathep, come here. Give me the radio."\n\nHe then transmits a message to Field HQ near Pattaya, along Motorway Route 7. "This is Platoon 3, we need immediate reinforceme-"\n\n"No, that is not possible anymore. Khmer armored formations have bypassed your position and have now reached our Field HQ. God save the King."\n\nThen, there is a gunshot, followed by a scream and an explosion, before the radio goes silent forever. He knows the battle is coming to an end.\n\nSuddenly, Prathep shouts, "Khmer! Twelve o'clock! Seven o'clock! Five o'clock! They're everywhere!" He finally raises a white flag and shouts, "We surrender! Don't shoot! We surrender!"\n\nThe Khmer troops move closer. He looks into the eyes of one of the young Khmer soldiers. There is something deeply unsettling about them. Soon, he finds himself tied up alongside Prathep. The young Khmer soldier begins pouring an unknown liquid over both of them. He smells it, and suddenly, he understands what it is. He tries to stop them. He begs for mercy, but nothing works.\n\nThen, a Zippo lighter is lit. The young Khmer soldier takes a puff from his cigar and, amidst the screams, says in broken English, "The fire rises.""
+ thai_cambodia_tension.12.a: "§R--COMMUNICATION TERMINATED--§!"
+ 
+ thai_cambodia_tension.13.t: "Landmine Incidents at the Border"
+ thai_cambodia_tension.13.d: "Three Royal Thai Army soldiers suffered injuries during a patrol in the Emerald Triangle area when they accidentally stepped on a landmine. It was initially speculated that the mine was a leftover relic from the Cold War era. However, evidence following demining operations by the army revealed that it was a newly planted Russian PMN-2 mine. At least two additional PMN-2 mines were subsequently discovered near the original explosion site. One of the injured soldiers lost his left leg. The presence of these new mines represents a clear violation of Thailand's sovereignty and the Ottawa Treaty (Anti-Personnel Mine Ban Convention) to which Cambodia is a signatory.\n\nAnother Thai patrol group, consisting of five soldiers, was injured by a Cambodian-laid mine, with one soldier losing his right leg. [SIAGetCurrentPMName] has strongly condemned Cambodia's actions and called on the United Nations to address the issue. However, the Cambodian government has remained uncooperative. Our government is now considering taking further diplomatic and protest measures in response. "
+ thai_cambodia_tension.13.a: "This is a clear threat!"
+ 
+ thai_cambodia_tension.14.t: "Thailand’s Operation Wandering Soul"
+ thai_cambodia_tension.14.d: "Over the past four nights, loudspeakers mounted near the border villages of Ban Nong Chan and Ban Nong Ya Kaeo in Khok Sung District, Sa Kaeo Province, have been broadcasting disturbing audio, such as ghostly wails, screams, and creepy music. The operation was an initiative led by prominent Thai public figure and celebrity Kanthat Pongpaiboonwet, widely known as "Gun Jom Palang."  \n\nGun Jom Palang told the press that he used eerie sounds as a non-violent tactic to pressure Cambodian encroachers to leave Thai territory, claiming Cambodians feared ghost sounds. He said the tactic aimed to demonstrate Thai unity and defend national sovereignty without physical violence. Royal Thai Army spokesperson Maj. Gen. Winthai Suvari defended the broadcasts as a peaceful protest stemming from the long-running border dispute over Cambodian encroachment.\n\nThe operation has drawn sharp criticism from Cambodian authorities. Mali Socheata, spokesperson for the Cambodian military, condemned the broadcasts, stating that the high-decibel audio caused widespread panic among Cambodian border civilians, violated humanitarian norms, and constituted a form of psychological warfare.\n\nMany critics in Thailand also questioned the appropriateness and ethics of using noise harassment along the border, as well as the prominent role played by a civilian celebrity rather than official military personnel."
+ thai_cambodia_tension.14.a: "More speakers! Give the Khmers a freight!"
+ thai_cambodia_tension.14.b: "This is inappropriate actions, let ask him to stop"
  
  thai_shared_events.1.t: "Situation of the Royal Thai Airforce"
  thai_shared_events.1.d: "Text should be here"
@@ -1548,7 +1581,7 @@
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
 
  SIA_utilize_pegasus_against_key_agitators: "Utilize Pegasus Spyware Against Key Agitators"
- SIA_utilize_pegasus_against_key_agitators_desc: "\n\n\n\n£GFX_SIA_Pegasus_Spyware_Banner\n\n\n\n\n\nPegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor “those who pose a threat” to “national security” with Thailand being one of them."
+ SIA_utilize_pegasus_against_key_agitators_desc: "\n\n\n\n£GFX_SIA_Pegasus_Spyware_Banner\n\n\n\n\n\nPegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor "those who pose a threat" to "national security" with Thailand being one of them."
  
  SIA_cyber_warfare_with_the_three_hooves: "Cyber Warfare With The Three Hooves"
  SIA_cyber_warfare_with_the_three_hooves_desc: "Our agents will use sock puppet accounts on social media sites such as Twitter and Facebook to attack the opposition, revealing and disseminating negative information about the government opponents."

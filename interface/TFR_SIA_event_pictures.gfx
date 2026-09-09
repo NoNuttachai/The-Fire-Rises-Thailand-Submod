@@ -392,6 +392,38 @@ spriteTypes = {
 		name = "GFX_report_utn_party_collapse"
 		texturefile = "gfx/event_pictures/utn_party_collapse.png"
 	}
+	spriteType = {
+		name = "GFX_report_am_cyanide"
+		texturefile = "gfx/event_pictures/report_am_cyanide.png"
+	}
+	spriteType = {
+		name = "GFX_report_phnom_penh"
+		texturefile = "gfx/event_pictures/report_phnom_penh.png"
+	}
+	spriteType = {
+		name = "GFX_report_tank_night"
+		texturefile = "gfx/event_pictures/report_tank_night.png"
+	}
+	spriteType = {
+		name = "GFX_report_soldier_radio"
+		texturefile = "gfx/event_pictures/report_soldier_radio.png"
+	}
+	spriteType = {
+		name = "GFX_report_emerald"
+		texturefile = "gfx/event_pictures/report_emerald.png"
+	}
+	spriteType = {
+		name = "GFX_report_landmine"
+		texturefile = "gfx/event_pictures/report_landmine.png"
+	}
+	spriteType = {
+		name = "GFX_report_gun_jom_palang_operation_wandering_soul"
+		texturefile = "gfx/event_pictures/report_gun_jom_palang_operation_wandering_soul.png"
+	}
+	spriteType = {
+		name = "GFX_report_trinuch_pirapan"
+		texturefile = "gfx/event_pictures/report_trinuch_pirapan.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

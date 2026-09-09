@@ -1,0 +1,17 @@
+guiTypes = { 
+	containerWindowType = {
+		name = "TFR_head_of_gov_polview_tt_container"
+		position = { x = 148 y = 283 }
+		size = { width = 40 height = 40 }
+		margin = { top = 1 left = 1 right = 1 bottom = 1 }
+		clipping = yes
+		scale = 0.5
+		iconType = {
+			name = "TFR_head_of_gov_tt_icon"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_HoG_icon"
+			pdx_tooltip  = "TFR_HEAD_OF_GOV_TT1"
+			pdx_tooltip_delayed  = "TFR_HEAD_OF_GOV_TT"
+		}
+	}
+}

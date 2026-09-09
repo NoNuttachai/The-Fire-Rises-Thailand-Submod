@@ -2088,6 +2088,7 @@ ideas = {
 			traits = {
 				SIA_ide_utn
 				hog_pragmatic_statesman
+				eco_oil_baron
 			}
 		}
 		SIA_suchat_chomklin_hog = {

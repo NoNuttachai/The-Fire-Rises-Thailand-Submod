@@ -962,3 +962,677 @@ SIA_decrease_youth_status = {
 		}
 	}
 }
+PRC_gaw_start = {
+	every_state = {
+		limit = {
+			OR = {
+				state = 787
+				state = 1132
+				state = 440
+				state = 1380
+				state = 442
+				state = 443
+				state = 445
+				state = 1324
+				state = 441
+				state = 1131
+				state = 1373
+				state = 439
+				state = 1381
+				state = 437
+				state = 1397
+				state = 1398
+				state = 1370
+				state = 789
+				state = 432
+				state = 1367
+				state = 434
+				state = 1366
+				state = 1368
+				state = 1369
+				state = 430
+				state = 431
+				state = 424
+				state = 1418
+				state = 1413
+				state = 1417
+				state = 1414
+				state = 1415
+				state = 1416
+				state = 422
+				region = 146
+				region = 189
+				region = 142
+				region = 188
+				region = 160
+				region = 159
+				region = 187
+				region = 158
+				region = 93
+				region = 167
+				region = 193
+				region = 194
+				region = 195
+				region = 156
+				region = 76
+				region = 154
+				region = 165
+				region = 164
+				region = 143
+				region = 145
+				region = 220
+				region = 216
+				region = 219
+				region = 152
+				state = 428
+				state = 433
+				state = 1379
+				state = 438
+				state = 436
+				state = 1400
+				state = 1399
+				state = 435
+				state = 1371
+				state = 426
+				state = 1372
+				state = 427
+				state = 425
+				state = 423
+				state = 320
+				state = 429
+				state = 716
+				state = 1394
+				state = 328
+				state = 717
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = PRC_unplanned_offensive
+			days = 575
+		}
+	}
+	#every_state = {
+	#	limit = {
+	#		OR = {
+	#		}
+	#	}
+	#	add_dynamic_modifier = {
+	#		modifier = PRC_non_combat_area
+	#	}
+	#}
+	if = {
+		limit = {
+			CAM = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = CAM }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = CAM }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = CAM }
+				}
+				50 = {
+					JAP = { add_to_faction = CAM }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			INS = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = INS }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = INS }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = INS }
+				}
+				50 = {
+					JAP = { add_to_faction = INS }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			LAO = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = LAO }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = LAO }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = LAO }
+				}
+				50 = {
+					JAP = { add_to_faction = LAO }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			MAL = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = MAL }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = MAL }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = MAL }
+				}
+				50 = {
+					JAP = { add_to_faction = MAL }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			BRM = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = BRM }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = BRM }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = BRM }
+				}
+				50 = {
+					JAP = { add_to_faction = BRM }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			PHI = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = PHI }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = PHI }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = PHI }
+				}
+				50 = {
+					JAP = { add_to_faction = PHI }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			SIG = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = SIG }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = SIG }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = SIG }
+				}
+				50 = {
+					JAP = { add_to_faction = SIG }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			SIA = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = SIA }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = SIA }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = SIA }
+				}
+				50 = {
+					JAP = { add_to_faction = SIA }
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			VIN = {
+				is_in_faction = no
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+			}
+			PRC = { add_to_faction = VIN }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+			}
+			JAP = { add_to_faction = VIN }
+		}
+		else_if = {
+			limit = {
+				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+			}
+			random_list = {
+				50 = {
+					PRC = { add_to_faction = VIN }
+				}
+				50 = {
+					JAP = { add_to_faction = VIN }
+				}
+			}
+		}
+	}
+	JAP = {
+		country_event = {
+			id = jap.1002
+			hours = 6
+		}
+		activate_mission = JAP_GAW_war_exhaustion
+		PRC_GAW_check_faction_members = yes
+		add_dynamic_modifier = {
+			modifier = PRC_war_exhaustion_dynamic
+		}
+		load_oob = GAW_reserves_jap1
+	}
+	if = {
+		limit = {
+			JAP = {
+				is_ai = yes
+			}
+		}
+		JAP = {
+			load_oob = GAW_reserves_jap1_ai
+		}
+	}
+	news_event = news.415
+	set_global_flag = pan_asian_war_ongoing
+	clr_global_flag = GAW_soon
+	activate_mission = PRC_GAW_war_exhaustion
+	PRC_GAW_check_faction_members = yes
+	add_dynamic_modifier = {
+		modifier = PRC_war_exhaustion_dynamic
+	}
+	AST = {
+		country_event = {
+			id = Australia_gaw.1
+			hours = 6
+		}
+		activate_mission = JAP_GAW_war_exhaustion
+		PRC_GAW_check_faction_members = yes
+		add_dynamic_modifier = {
+			modifier = PRC_war_exhaustion_dynamic
+		}
+		load_oob = GAW_reserves_ast1_ai
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+				load_oob = "AST_2000_naval_mtg"
+				load_oob = "AST_2000_naval_mtg"
+				load_oob = "AST_2000_naval_mtg"
+			else = {
+				load_oob = "AST_2000_naval_legacy"
+				load_oob = "AST_2000_naval_legacy"
+				load_oob = "AST_2000_naval_legacy"
+			}
+		}
+	}
+	RAJ = {
+		country_event = {
+			id = RAJ.19
+			hours = 6
+		}
+		activate_mission = JAP_GAW_war_exhaustion
+		PRC_GAW_check_faction_members = yes
+		add_dynamic_modifier = {
+			modifier = PRC_war_exhaustion_dynamic
+		}
+		load_oob = GAW_militia_raj1
+		load_oob = GAW_templates_for_ai
+		if = {
+			limit = { has_dlc = "Man the Guns" }
+				load_oob = "RAJ_2000_naval_mtg"
+			else = {
+				load_oob = "RAJ_2000_naval_legacy"
+			}
+		}
+	}
+	CHI = {
+		country_event = {
+			id = taiwan.500
+			hours = 6
+		}
+		activate_mission = JAP_GAW_war_exhaustion
+		PRC_GAW_check_faction_members = yes
+		add_dynamic_modifier = {
+			modifier = PRC_war_exhaustion_dynamic
+		}
+	}
+	ZZZ = {
+		activate_mission = great_asian_war_mission
+	}
+	SIA = {
+		country_event = { id = thai_events.64 hours = 6 }
+	}
+	if = {
+		limit = {
+			PRC = {
+				is_ai = yes
+			}
+		}
+		INS = {
+			load_oob = GAW_militia_ins2
+		}
+	}
+	if = {
+		limit = {
+			PRC = {
+				is_ai = no
+			}
+		}
+		INS = {
+			load_oob = GAW_militia_ins1
+		}
+	}
+	if = {
+		limit = {
+			PRC = {
+				is_ai = yes
+			}
+		}
+		PAK = {
+			load_oob = GAW_militia_pak1
+		}
+	}
+	if = {
+		limit = {
+			JAP  = {
+				is_ai = yes
+			}
+			PRC  = {
+				is_ai = no
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = AST
+					tag = RAJ
+					tag = JAP
+				}
+			}
+			add_ideas = JAP_AST_RAJ_ai_buff_against_prc_player_gaw
+		}
+	}
+	if = {
+		limit = {
+			JAP  = {
+				is_ai = no
+			}
+			PRC  = {
+				is_ai = yes
+			}
+		}
+		PRC =  {
+			add_ideas = PRC_ai_buff_against_jap_player_gaw
+		}
+	}
+	every_country = {
+		limit = {
+			OR = {
+				tag = NEP
+				tag = SRL
+				tag = VIN
+				tag = LAO
+				tag = CAM
+				tag = SIA
+				tag = MAL
+				tag = SIG
+				tag = INS
+				tag = PHI
+				tag = PNG
+				tag = NZL
+				tag = BAN
+			}
+		}
+		load_oob = GAW_templates_for_ai
+		capital_scope = {
+			create_unit = {
+				division = "division_template = \"GAW Militia\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+				owner = PREV
+				count = 6
+			}
+			create_unit = {
+				division = "division_template = \"GAW Regular Infantry\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+				owner = PREV
+				count = 4
+			}
+		}
+	}
+	if = {
+		limit = {
+			PRC = {
+				has_completed_focus = PRC_towards_a_digital_world
+				is_ironman = yes
+				has_any_custom_difficulty_setting = no
+				game_rules_allow_achievements = yes
+				has_start_date < 2020.01.02
+				difficulty > 3
+				is_debug = no
+				is_ai = no
+				NOT = {
+					OR = {
+						is_in_faction_with = VIN
+						is_in_faction_with = BHU
+						is_in_faction_with = NEP
+						is_in_faction_with = LAO
+						is_in_faction_with = CAM
+						is_in_faction_with = SIA
+						is_in_faction_with = BRM
+						is_in_faction_with = MAL
+						is_in_faction_with = SIG
+						is_in_faction_with = INS
+						is_in_faction_with = SRL
+						is_in_faction_with = PAK
+					}
+				}
+			}
+		}
+		set_global_flag = PRC_big_sister_victory_conditions_fulfilled
+	}
+	if = {
+		limit = {
+			PRC = {
+				has_country_flag = PRC_nationalist_win
+			}
+		}
+		if = {
+			limit = {
+				PRC = {
+					is_ai = yes
+				}
+			}
+			every_country = {
+				limit = {
+					is_ally_with = JAP
+				}
+				add_ideas = PDTO_our_final_war_idea
+			}
+		}
+		else_if = {
+			limit = {
+				PRC = {
+					is_ai = no
+				}
+				JAP = {
+					is_ai = no
+				}
+			}
+			every_country = {
+				limit = {
+					is_ally_with = JAP
+				}
+				add_ideas = PDTO_our_final_war_idea
+			}
+		}
+		else_if = {
+			limit = {
+				PRC = {
+					is_ai = no
+				}
+				JAP = {
+					is_ai = yes
+				}
+			}
+			every_country = {
+				limit = {
+					is_ally_with = JAP
+				}
+				add_ideas = PDTO_our_final_war_idea_ai
+			}
+		}
+		every_country = {
+			limit = {
+				is_ally_with = JAP
+			}
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_manpower = 100000
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"GAW Militia\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+					owner = PREV
+					count = 8
+				}
+				create_unit = {
+					division = "division_template = \"GAW Regular Infantry\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+					owner = PREV
+					count = 6
+				}
+			}
+		}
+	}
+}

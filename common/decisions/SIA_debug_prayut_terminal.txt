@@ -244,4 +244,20 @@ SIA_debug_prayut_terminal = {
 			add_ideas = SIA_pirapan_salirathavibhaga_hog
 		}
 	}
+	SIA_PM_change_add_suchart = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
+		complete_effect = {
+			add_ideas = SIA_suchat_chomklin_hog
+		}
+	}
+	SIA_PM_change_add_trinuch = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
+		complete_effect = {
+			add_ideas = SIA_trinuch_thienthong_hog
+		}
+	}
 }

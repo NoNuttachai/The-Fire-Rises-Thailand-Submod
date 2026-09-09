@@ -2288,3 +2288,496 @@ shared_focus = {
 		
 	}
 }
+
+#GAW FOCUS TREE
+shared_focus = {
+	id = SIA_war_of_giants
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 6
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	allow_branch = {
+		has_completed_focus = SIA_war_of_giants
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_htms_placeholder
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_everything_we_got
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 1
+	cost = 2
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_war_of_giants
+	prerequisite = { focus = SIA_war_of_giants }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_rally_around_the_flag
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -7
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_innovating_warfare
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -5
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_everything_for_victory
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_rally_around_the_flag
+	prerequisite = { focus = SIA_rally_around_the_flag }
+	prerequisite = { focus = SIA_innovating_warfare }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_relax_the_standard
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -3
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_until_none_are_left
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_relax_the_standard
+	prerequisite = { focus = SIA_relax_the_standard }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_along_the_border
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_relax_the_standard
+	prerequisite = { focus = SIA_relax_the_standard }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_united_in_flesh_and_blood
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 2
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_relax_the_standard
+	prerequisite = { focus = SIA_relax_the_standard }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_every_drop_of_blood
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_for_our_nation
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 2
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_every_drop_of_blood
+	prerequisite = { focus = SIA_every_drop_of_blood }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_thai_peacekeepers
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 6
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+#JOINED EADI
+shared_focus = {
+	id = SIA_joint_operation_plans_eadi
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 3
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	allow_branch = {
+		is_in_faction_with = PRC
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_eadi_theatre_sea
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_joint_operation_plans_eadi
+	prerequisite = { focus = SIA_joint_operation_plans_eadi }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_eadi_theatre_india
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_joint_operation_plans_eadi
+	prerequisite = { focus = SIA_joint_operation_plans_eadi }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_eadi_aid_in_naval_invasions
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 2
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_joint_operation_plans_eadi
+	prerequisite = { focus = SIA_joint_operation_plans_eadi }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_eadi_theatre_oceania
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_eadi_aid_in_naval_invasions
+	prerequisite = { focus = SIA_eadi_aid_in_naval_invasions }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_eadi_theatre_japan
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_eadi_aid_in_naval_invasions
+	prerequisite = { focus = SIA_eadi_aid_in_naval_invasions }
+	completion_reward = {
+		
+	}
+}
+#Joined PDTO
+shared_focus = {
+	id = SIA_joint_operation_plans_pdto
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 3
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	allow_branch = {
+		OR = {
+			is_in_faction_with = JAP
+			has_war_with = PRC
+		}
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_everything_we_got
+	prerequisite = { focus = SIA_everything_we_got }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_pdto_theatre_sea
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_joint_operation_plans_pdto
+	prerequisite = { focus = SIA_joint_operation_plans_pdto }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_pdto_theatre_pakistan
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_joint_operation_plans_pdto
+	prerequisite = { focus = SIA_joint_operation_plans_pdto }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_pdto_theatre_in_the_belly_of_the_beast
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 2
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_joint_operation_plans_pdto
+	prerequisite = { focus = SIA_joint_operation_plans_pdto }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_pdto_theatre_south_china
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_pdto_theatre_in_the_belly_of_the_beast
+	prerequisite = { focus = SIA_pdto_theatre_in_the_belly_of_the_beast }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_pdto_theatre_korea
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	
+	available_if_capitulated = yes
+	relative_position_id = SIA_pdto_theatre_in_the_belly_of_the_beast
+	prerequisite = { focus = SIA_pdto_theatre_in_the_belly_of_the_beast }
+	completion_reward = {
+		
+	}
+}

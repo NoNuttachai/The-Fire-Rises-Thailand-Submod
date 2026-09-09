@@ -1,4 +1,10 @@
 spriteTypes = {
+	#HoG Icon
+	spriteType = {
+		name = "GFX_hog_icon_SIA"
+		textureFile = "gfx/interface/ideas/hog_icon_SIA.png"
+		legacy_lazy_load = no
+	}
 	#NatSpirit Texticon Banners
 	spriteType = {
 		name = "GFX_SIA_army_with_nation_cat"

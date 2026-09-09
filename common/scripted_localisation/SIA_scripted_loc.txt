@@ -328,3 +328,81 @@ defined_text = {
 		localization_key = SIA_tug_of_war_status_tie_tt
 	}
 }
+defined_text = {
+	name = GetHoGIconpolview
+	text = {
+		trigger = {
+			tag = SIA
+		}
+		localization_key = "GFX_hog_icon_SIA"
+	}
+	text = {
+		localization_key = "GFX_HoG_icon"
+	}
+}
+defined_text = {
+	name = SIAGetCurrentPMName
+	text = {
+		trigger = {
+			OR = {
+				has_idea = SIA_prayut_chan-o-cha_advisor
+				has_idea = SIA_prayut_chan_o_cha_utn_hog
+			}
+		}
+		localization_key = SIA_prayut_chan-o-cha_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_prawit_wongsuwan_hog
+		}
+		localization_key = SIA_prawit_wongsuwan_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_sretta_thavisin_hog
+		}
+		localization_key = SIA_sretta_thavisin_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_paetongtarn_shinawatra_hog
+		}
+		localization_key = SIA_paetongtarn_shinawatra_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_pita_limjaroenrat_hog
+		}
+		localization_key = SIA_pita_limjaroenrat_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_anutin_charnvirakul_hog
+		}
+		localization_key = SIA_anutin_charnvirakul_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_yodchanan_wongsawat_hog
+		}
+		localization_key = SIA_yodchanan_wongsawat_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+		}
+		localization_key = SIA_pirapan_salirathavibhaga_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_suchat_chomklin_hog
+		}
+		localization_key = SIA_suchat_chomklin_char
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_trinuch_thienthong_hog
+		}
+		localization_key = SIA_trinuch_thienthong_char
+	}
+}

@@ -13,6 +13,7 @@ focus_tree = {
 	shared_focus = SIA_neither_a_victory_nor_defeat
 	shared_focus = SIA_eastern_conundrum
 	shared_focus = SIA_eastern_showdown
+	shared_focus = SIA_war_of_giants
 	
 	focus = {
 		id = SIA_third_prayut_cabinet

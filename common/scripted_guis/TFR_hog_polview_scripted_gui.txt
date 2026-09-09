@@ -1,0 +1,17 @@
+scripted_gui = {
+	TFR_hog_pol_view = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "TFR_head_of_gov_polview_tt_container"
+
+		visible = {
+			has_country_flag = head_of_gov_ui_enabled
+		}
+
+		properties = {
+			TFR_head_of_gov_tt_icon = {
+				image = "[GetHoGIconpolview]"
+			}
+		}
+	}
+}
