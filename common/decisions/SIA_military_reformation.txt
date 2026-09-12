@@ -6,13 +6,20 @@ SIA_military_reformation = {
 			tag = SIA
 		}
 		available = {
-			always = no
+			hidden_trigger = {
+				has_completed_focus = SIA_rally_around_the_flag
+			}
 		}
 		visible = {
 			
 		}
 		activation = {
 			check_variable = { SIA_combat_readiness_var > 0.3 }
+			NOT = {
+				hidden_trigger = {
+					has_completed_focus = SIA_rally_around_the_flag
+				}
+			}
 		}
 		priority = 10
 		is_good = no
@@ -30,13 +37,20 @@ SIA_military_reformation = {
 			tag = SIA
 		}
 		available = {
-			always = no
+			hidden_trigger = {
+				has_completed_focus = SIA_rally_around_the_flag
+			}
 		}
 		visible = {
 			
 		}
 		activation = {
 			check_variable = { SIA_public_perception_var > 0.3 }
+			NOT = {
+				hidden_trigger = {
+					has_completed_focus = SIA_rally_around_the_flag
+				}
+			}
 		}
 		priority = 10
 		is_good = no

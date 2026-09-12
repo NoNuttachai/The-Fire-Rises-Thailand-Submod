@@ -265,16 +265,45 @@ characters={
 			ideology = military_junta
 		}
 		field_marshal={
-			skill=3
-			attack_skill=2
-			defense_skill=2
+			skill=4
+			attack_skill=4
+			defense_skill=3
 			planning_skill=3
-			logistics_skill=1
+			logistics_skill=3
 			traits={
 				old_guard
 				infantry_leader
 				guerilla_fighter
 				career_officer
+			}
+		}
+	}
+	SIA_chalermpol_srisawat_char = {
+		portraits={
+			army = {
+				large = "gfx/leaders/SIA/SIA_chalermpol_srisawat.png"
+			}
+			civilian = {
+				small = GFX_idea_SIA_Chalermpol
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SIA_chalermpol_srisawat_high_command
+			traits = { army_entrenchment_2 }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			traits={
+				organisational_leader
+				trait_cautious
+				cavalry_officer
 			}
 		}
 	}
@@ -298,42 +327,13 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=1
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			traits={
-				air_force_connections
-			}
-		}
-	}
-	SIA_chalermpol_srisawat_char = {
-		portraits={
-			army = {
-				large = "gfx/leaders/SIA/SIA_chalermpol_srisawat.png"
-			}
-			civilian = {
-				small = GFX_idea_SIA_Chalermpol
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = SIA_chalermpol_srisawat_high_command
-			traits = { army_entrenchment_2 }
-			cost = 100
-			ai_will_do = { factor = 1 }
-		}
-		field_marshal={
 			skill=2
-			attack_skill=1
+			attack_skill=3
 			defense_skill=2
 			planning_skill=2
-			logistics_skill=2
+			logistics_skill=1
 			traits={
-				organisational_leader
-				trait_cautious
-				cavalry_officer
+				air_force_connections
 			}
 		}
 	}
@@ -344,11 +344,11 @@ characters={
 			}
 		}
 		corps_commander={
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 			traits={
 				organizer
 			}
@@ -363,9 +363,9 @@ characters={
 		corps_commander={
 			skill=2
 			attack_skill=2
-			defense_skill=1
+			defense_skill=3
 			planning_skill=2
-			logistics_skill=1
+			logistics_skill=2
 			traits={
 				politically_connected
 				career_officer
@@ -380,10 +380,10 @@ characters={
 		}
 		corps_commander={
 			skill=2
-			attack_skill=1
+			attack_skill=2
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
+			planning_skill=3
+			logistics_skill=2
 			traits={
 				air_force_connections
 				organizer
@@ -413,8 +413,8 @@ characters={
 		}
 		corps_commander={
 			skill=1
-			attack_skill=2
-			defense_skill=2
+			attack_skill=3
+			defense_skill=1
 			planning_skill=1
 			logistics_skill=1
 			traits={
@@ -485,10 +485,10 @@ characters={
 		}
 		corps_commander={
 			skill=2
-			attack_skill=1
+			attack_skill=2
 			defense_skill=2
 			planning_skill=1
-			logistics_skill=1
+			logistics_skill=2
 			traits={
 				career_officer
 				politically_connected
@@ -506,7 +506,7 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=2
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 			traits={
 				old_guard
@@ -535,10 +535,10 @@ characters={
 		}
 		corps_commander={
 			skill=1
-			attack_skill=1
-			defense_skill=2
+			attack_skill=2
+			defense_skill=1
 			planning_skill=1
-			logistics_skill=1
+			logistics_skill=2
 			traits={
 				air_force_connections
 			}
@@ -554,7 +554,7 @@ characters={
 			skill=1
 			attack_skill=2
 			defense_skill=1
-			planning_skill=1
+			planning_skill=2
 			logistics_skill=1
 			traits={
 			}
@@ -571,7 +571,7 @@ characters={
 			attack_skill=2
 			defense_skill=2
 			planning_skill=1
-			logistics_skill=1
+			logistics_skill=2
 			traits={
 			}
 		}
@@ -597,11 +597,11 @@ characters={
 			}
 		}
 		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=2
+			skill=3
+			attack_skill=4
+			defense_skill=3
 			maneuvering_skill=2
-			coordination_skill=1
+			coordination_skill=2
 			traits={
 				superior_tactician
 				ironside
@@ -630,9 +630,9 @@ characters={
 		}
 		navy_leader={
 			skill=2
-			attack_skill=1
+			attack_skill=2
 			defense_skill=2
-			maneuvering_skill=1
+			maneuvering_skill=3
 			coordination_skill=2
 			traits={
 				seawolf

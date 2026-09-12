@@ -1,0 +1,102 @@
+SIA_gaw_category = {
+	SIA_rally_around_the_flag = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_counter_defeatist_propaganda = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_together_for_victory = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_hasten_training = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_call_up_the_reserves = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_not_an_inch_into_our_land = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_fortify_major_cities = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_awaken_the_war_machine = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_everyone_to_the_factories = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_enforce_rationing = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_march_to_victory = {
+		visible = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_operations_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			OR = {
+				has_completed_focus = SIA_joint_operation_plans_eadi
+				has_completed_focus = SIA_joint_operation_plans_pdto
+			}
+		}
+	}
+}

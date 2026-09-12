@@ -1940,6 +1940,10 @@ country_event = {
 			activate_mission = SIA_second_no_confidence_vote
 		}
        custom_effect_tooltip = thai_events_28_tt
+	   add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+		}
 	}
 }
 country_event = {
@@ -1960,6 +1964,10 @@ country_event = {
 			activate_mission = SIA_third_no_confidence_vote
 		}
        custom_effect_tooltip = thai_events_29_tt
+	   add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.05
+		}
 	}
 }
 country_event = {
@@ -2193,7 +2201,7 @@ country_event = {
         name = thai_events.39.a
 		add_power_balance_value = {
 			id = SIA_power_balance
-			value = 0.15
+			value = 0.1
 		}
 		add_war_support = 0.05
 	}
@@ -2758,6 +2766,20 @@ country_event = {
 		set_country_flag = SIA_gaw_ongoing
 		focus_unlock = yes
 		complete_national_focus = SIA_war_of_giants
+	}
+}
+country_event = {
+    id = thai_events.65 # Military Reformation unlocked
+    title = thai_events.65.t
+    desc = thai_events.65.d
+	is_triggered_only = yes
+	picture = GFX_report_china_japan
+	
+    option = {
+        name = thai_events.65.a
+		
+		complete_national_focus = SIA_presentation
+		focus_unlock = yes
 	}
 }
 news_event = { #Thai Protests

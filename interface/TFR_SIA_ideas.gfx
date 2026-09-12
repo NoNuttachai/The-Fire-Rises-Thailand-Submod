@@ -101,6 +101,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_great_asian_war_banner"
+		texturefile = "gfx/texticons/banners/SIA_gaw.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_Jae_Juk"
 		texturefile = "gfx/texticons/banners/Jae_Juk.png"
 		legacy_lazy_load = no
@@ -373,6 +378,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_banner_we_travel"
 		texturefile = "gfx/texticons/banners/we_travel.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_SIA_army1"
+		texturefile = "gfx/texticons/banners/SIA_army1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_SIA_army2"
+		texturefile = "gfx/texticons/banners/SIA_army2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_innovating_warfare"
+		texturefile = "gfx/texticons/banners/SIA_innovating_warfare.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_banner_peacekeeping"
+		texturefile = "gfx/texticons/banners/SIA_peacekeeping.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {

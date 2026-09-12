@@ -1933,6 +1933,102 @@ ideas = {
 				army_speed_factor = 0.075
 			}
 		}
+		SIA_rallying_call = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				
+			}
+		}
+		SIA_innovating_weapons_of_war = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.075
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SIA_fighting_to_the_last_man = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				has_war_support < 0.3
+			}
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 1
+				army_core_defence_factor = 0.15
+				recruitable_population_factor = 0.1
+				industrial_capacity_factory = -0.3
+				production_factory_efficiency_gain_factor = -0.2
+				war_support_weekly = -0.003
+				stability_weekly = -0.003
+			}
+		}
+		SIA_thai_peacekeeping_forces = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				compliance_growth = 0.2
+				resistance_activity = -0.2
+				resistance_target = -0.15
+				required_garrison_factor = -0.3
+				battalion_upkeep_factor = 0.1
+			}
+		}
 	}
 	head_minister = {
 		SIA_prayut_chan-o-cha_advisor = {

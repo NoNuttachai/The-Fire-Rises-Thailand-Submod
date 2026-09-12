@@ -333,6 +333,56 @@
  SIA_open_the_caches: "Open The Caches"
  SIA_operation_sam_phraya: "Operation Sam Phraya"
  
+ # GAW Tree
+ SIA_war_of_giants: "War Of Giants"
+ SIA_war_of_giants_tt: "\n§YIt seems diplomacy has failed and Asia falls into the flames of §Rwar§!. We shall overcome and we shall fight for the victory of our §7country!§!§!"
+ 
+ SIA_everything_we_got: "Everything We Got"
+ SIA_everything_we_got_desc: ""
+ SIA_everything_we_got_tt: "§gUntil the war is done, elections will be §Osuspended§!"
+ 
+ SIA_rally_around_the_flag: "Rally Around The Flag"
+ SIA_rally_around_the_flag_desc: ""
+ SIA_rally_around_the_flag_tt: "§RCombat Readiness§! and §YPublic Perception§! will §Cfreeze§! at §G100%§!"
+ 
+ SIA_innovating_warfare: "Innovating Warfare"
+ SIA_innovating_warfare_desc: ""
+ 
+ SIA_everything_for_victory: "Everything For Victory"
+ SIA_everything_for_victory_desc: ""
+ 
+ SIA_relax_the_standard: "Relax The Standard"
+ SIA_relax_the_standard_desc: ""
+ 
+ SIA_until_none_are_left: "Until None Are Left"
+ SIA_until_none_are_left_desc: ""
+ 
+ SIA_along_the_border: "Along The Border"
+ SIA_along_the_border_desc: ""
+ 
+ SIA_united_in_flesh_and_blood: "United In Flesh and Blood"
+ SIA_united_in_flesh_and_blood_desc: ""
+ 
+ SIA_every_drop_of_blood: "Every Drop Of Blood"
+ SIA_every_drop_of_blood_desc: ""
+ 
+ SIA_for_our_nation: "For Our Nation"
+ SIA_for_our_nation_desc: ""
+ SIA_for_our_nation_tt: "§YFor our country, we will §Rfight until the last man§!\n\nIf ever war support were to fall below 30%, this spirit will be §Rremoved§!§!"
+ 
+ SIA_thai_peacekeepers: "Thai Peacekeepers"
+ SIA_thai_peacekeepers_desc: ""
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  #2023-2027 UTN Tree
@@ -642,6 +692,18 @@
  
  SIA_sam_phraya: "Operation: Sam Phraya"
  SIA_sam_phraya_desc: "\n\n\n\n\n£GFX_SIA_sam_phraya\n\n\n\n\n\n"
+ 
+ SIA_rallying_call: "Rallying Call"
+ SIA_rallying_call_desc: "\n\n\n\n\n£GFX_SIA_sam_phraya\n\n\n\n\n\n"
+ 
+ SIA_innovating_weapons_of_war: "Innovating Weapons of War"
+ SIA_innovating_weapons_of_war_desc: "\n\n\n\n\n£GFX_SIA_banner_innovating_warfare\n\n\n\n\n\n"
+ 
+ SIA_fighting_to_the_last_man: "Fighting To The Last Man"
+ SIA_fighting_to_the_last_man_desc: "\n\n\n\n\n£GFX_SIA_banner_SIA_army2\n\n\n\n\n\n"
+ 
+ SIA_thai_peacekeeping_forces: "Thai Peacekeeping Forces"
+ SIA_thai_peacekeeping_forces_desc: "\n\n\n\n\n£GFX_SIA_banner_peacekeeping\n\n\n\n\n\n"
  
  SIA_flaming_youth_dynamic_modifier: "Leftist Anti-Establishment Opposition"
  SIA_flaming_youth_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_leftist_opposition\n\n\n\n\n\n                       §RPerpetual Opposition§!"
@@ -1886,6 +1948,27 @@
  
  SIA_mediation_china_apathy: "@PRC §RChina§! §gwill leave the region to its own devices§!"
  SIA_mediation_japan_apathy: "@JAP Japan §gwill leave the region to its own devices§!"
+ 
+ SIA_gaw_category: "The Struggle For Victory"
+ SIA_gaw_category_desc: "\n\n\n\n\n£GFX_SIA_great_asian_war_banner\n\n\n\n\n\n\n\n§RIt happened.§!\n\nThe decades long peace of Asia has been shattered with the clashes of the PDTO and §READI§!.\n\nWith it comes us, a mandatory participant in such conflict. Alongside our allies, we shall contribute our fullest to the war effort to triumph against our adversaries and, as a result, either sit on the negotiation tables as §Gvictors§!, or as §Rlosers§!"
+ SIA_rally_around_the_flag: "Rally Around The Flag"
+ SIA_counter_defeatist_propaganda: "Counter Defeatist Propaganda"
+ SIA_together_for_victory: "Together For Victory"
+ SIA_hasten_training: "Hasten Training"
+ SIA_call_up_the_reserves: "Call Up The Reserves"
+ SIA_not_an_inch_into_our_land: "Not An Inch Into Our Land"
+ SIA_fortify_major_cities: "Fortify Major Cities"
+ SIA_awaken_the_war_machine: "Awaken The War Machine"
+ SIA_everyone_to_the_factories: "Everyone To The Factories"
+ SIA_enforce_rationing: "Enforce Rationing"
+ SIA_march_to_victory: "March To Victory"
+ SIA_operations_decisions: "                          §RWARTIME§! §COPERATIONS§!             "
+ 
+ 
+ 
+ 
+ 
+ 
  
  SIA_government_coalition_formation: "Coalition Negotiations"
  SIA_government_coalition_formation_desc: "[SIACoalitionFormationBanner]With the Thai general election now over, no single party secured a clear parliamentary majority due to the large number of parties competing in the election.\n\nConsequently, the winning party must negotiate with other parties to form a governing coalition capable of commanding a majority in the House of Representatives.\n\nThese coalition talks typically involve bargaining over cabinet positions, policy priorities, and the terms of cooperation needed to establish a stable government.\n\n[SIACoalitionFormationScenario]\n\nProjected Government Coalition Seats: [?SIA_projected_gov_seats]/500"

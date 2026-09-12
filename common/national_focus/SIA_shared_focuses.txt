@@ -30,6 +30,9 @@ shared_focus = {
 			SIA_cambodia_tensions_lock = yes
 		}
 	}
+	allow_branch = {
+		has_country_flag = SIA_active_military_mech
+	}
 	available_if_capitulated = yes
 	
 	completion_reward = {
@@ -39,9 +42,12 @@ shared_focus = {
 			
 			activate_mission = SIA_readiness_falters
 			activate_mission = SIA_perception_decreases
-			set_variable = { SIA_military_resource_var = 1 }
-			set_variable = { SIA_combat_readiness_var = 0.2406}
-			set_variable = { SIA_public_perception_var = 0.4276}
+			set_temp_variable = { SIA_military_resource_var_temp = 1 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.2406}
+			set_temp_variable = { SIA_public_perception_var_temp = 0.4276}
+			SIA_mil_mech_combat_readiness_change = yes
+			SIA_mil_mech_public_perception_change = yes
 			SIA_mil_mech_update_modifiers = yes
 			add_dynamic_modifier = { modifier = SIA_military_mech_dynamic_modifier }
 		}
@@ -1323,7 +1329,7 @@ shared_focus = {
 	relative_position_id = SIA_asian_house_of_cards
 	prerequisite = { focus = SIA_asian_house_of_cards }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_apply_for_eadi_membership
 	}
 }
 shared_focus = {
@@ -1350,7 +1356,7 @@ shared_focus = {
 	relative_position_id = SIA_asian_house_of_cards
 	prerequisite = { focus = SIA_asian_house_of_cards }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_apply_for_pdto_membership
 	}
 }
 shared_focus = {
@@ -2303,11 +2309,14 @@ shared_focus = {
 		
 	}
 	allow_branch = {
-		has_completed_focus = SIA_war_of_giants
+		#has_completed_focus = SIA_war_of_giants
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_htms_placeholder
 	completion_reward = {
+		add_war_support = 0.05
+		unlock_decision_category_tooltip = SIA_gaw_category
+		custom_effect_tooltip = SIA_war_of_giants_tt
 		
 	}
 }
@@ -2328,7 +2337,16 @@ shared_focus = {
 	relative_position_id = SIA_war_of_giants
 	prerequisite = { focus = SIA_war_of_giants }
 	completion_reward = {
-		
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_political_power = 100
+		custom_effect_tooltip = SIA_everything_we_got_tt
+		hidden_effect = {
+			set_politics = {
+				ruling_party = ROOT
+				elections_allowed = no
+			}
+		}
 	}
 }
 shared_focus = {
@@ -2348,7 +2366,17 @@ shared_focus = {
 	relative_position_id = SIA_everything_we_got
 	prerequisite = { focus = SIA_everything_we_got }
 	completion_reward = {
-		
+		add_war_support = 0.05
+		add_stability = 0.1
+		hidden_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 1 }
+			set_temp_variable = { SIA_combat_readiness_var_temp = 1 }
+			SIA_mil_mech_combat_readiness_change = yes
+			SIA_mil_mech_public_perception_change = yes
+		}
+		unlock_decision_tooltip = SIA_rally_around_the_flag
+		unlock_decision_tooltip = SIA_counter_defeatist_propaganda
+		custom_effect_tooltip = SIA_rally_around_the_flag_tt
 	}
 }
 shared_focus = {
@@ -2368,6 +2396,26 @@ shared_focus = {
 	relative_position_id = SIA_everything_we_got
 	prerequisite = { focus = SIA_everything_we_got }
 	completion_reward = {
+		add_research_slot = 1
+		add_timed_idea = {
+			idea = SIA_innovating_weapons_of_war
+			days = 100
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = armor
+		}
 		
 	}
 }
@@ -2389,7 +2437,10 @@ shared_focus = {
 	prerequisite = { focus = SIA_rally_around_the_flag }
 	prerequisite = { focus = SIA_innovating_warfare }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_together_for_victory
+		unlock_decision_tooltip = SIA_hasten_training
+		set_temp_variable = { campaign_slot_total_var_temp = 1 }
+		add_total_campaign_slot = yes
 	}
 }
 shared_focus = {
@@ -2409,7 +2460,9 @@ shared_focus = {
 	relative_position_id = SIA_everything_we_got
 	prerequisite = { focus = SIA_everything_we_got }
 	completion_reward = {
-		
+		add_ideas = medium_conscription
+		decrease_training = yes
+		add_manpower = 150000
 	}
 }
 shared_focus = {
@@ -2429,7 +2482,8 @@ shared_focus = {
 	relative_position_id = SIA_relax_the_standard
 	prerequisite = { focus = SIA_relax_the_standard }
 	completion_reward = {
-		
+		increase_conscription = yes
+		unlock_decision_tooltip = SIA_call_up_the_reserves
 	}
 }
 shared_focus = {
@@ -2449,7 +2503,8 @@ shared_focus = {
 	relative_position_id = SIA_relax_the_standard
 	prerequisite = { focus = SIA_relax_the_standard }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_not_an_inch_into_our_land
+		unlock_decision_tooltip = SIA_fortify_major_cities
 	}
 }
 shared_focus = {
@@ -2469,7 +2524,10 @@ shared_focus = {
 	relative_position_id = SIA_relax_the_standard
 	prerequisite = { focus = SIA_relax_the_standard }
 	completion_reward = {
-		
+		add_war_support = 0.1
+		set_temp_variable = { campaign_slot_total_var_temp = 1 }
+		add_total_campaign_slot = yes
+		unlock_decision_tooltip = SIA_march_to_victory
 	}
 }
 shared_focus = {
@@ -2489,7 +2547,33 @@ shared_focus = {
 	relative_position_id = SIA_everything_we_got
 	prerequisite = { focus = SIA_everything_we_got }
 	completion_reward = {
-		
+		add_ideas = war_mobilization
+		unlock_decision_tooltip = SIA_awaken_the_war_machine
+		unlock_decision_tooltip = SIA_everyone_to_the_factories
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 shared_focus = {
@@ -2502,14 +2586,41 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		surrender_progress > 0.4
 	}
 	
 	available_if_capitulated = yes
 	relative_position_id = SIA_every_drop_of_blood
 	prerequisite = { focus = SIA_every_drop_of_blood }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_enforce_rationing
+		add_ideas = SIA_fighting_to_the_last_man
+		custom_effect_tooltip = SIA_for_our_nation_tt
+		add_ideas = total_mobilization
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 shared_focus = {
@@ -2529,7 +2640,7 @@ shared_focus = {
 	relative_position_id = SIA_everything_we_got
 	prerequisite = { focus = SIA_everything_we_got }
 	completion_reward = {
-		
+		add_ideas = SIA_thai_peacekeeping_forces
 	}
 }
 #JOINED EADI

@@ -27,9 +27,9 @@ focus_tree = {
 				ideology = authoritarian_democrat
 				popularity = 0.05
 			}
-			
 			hidden_effect = {
 				country_event = { id = thai_prayut.1 days = 355 } # Prawit caretaker
+				country_event = { id = thai_prayut.6 days = 30 }
 			}
 		}
 	}
@@ -155,7 +155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_dial_tokyo
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_dial_tokyo
 		x = 2
 		y = 1
 		cost = 4
@@ -232,7 +232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_our_shared_future
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_our_shared_future
 		x = 0
 		y = 1
 		cost = 4
@@ -490,9 +490,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_political_power = 25
-			hidden_effect = {
-				country_event = { id = thai_prayut.6 days = 15 }
-			}
+			
 		}
 	}
 	focus = {
@@ -882,7 +880,7 @@ focus_tree = {
 	#Right Side Focus
 	focus = {
 		id = SIA_riding_with_uncle_tuu
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_riding_with
 		x = 9
 		y = 1
 		cost = 4

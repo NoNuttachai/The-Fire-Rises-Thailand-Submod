@@ -103,11 +103,27 @@ SIA_saudi_civil_war = {
 	priority = 6
 	allowed = {
 		original_tag = SIA
+		
+		
 	}
 	visible = {
 		original_tag = SIA
 		has_country_flag = SIA_intervene_in_the_saudi_civil_war
 		has_global_flag = saudi_civil_war_flag
+		OR = {
+			AND = {
+				check_variable = { SIA_saudi_civil_war_support = 1 }
+				country_exists = SAU
+			}
+			AND = {
+				check_variable = { SIA_saudi_civil_war_support = 2 }
+				country_exists = ROC
+			}
+			AND = {
+				check_variable = { SIA_saudi_civil_war_support = 3 }
+				country_exists = ARR
+			}
+		}
 	}
 	visible_when_empty = yes
 }
@@ -167,6 +183,22 @@ SIA_cambodia_war_category = {
 	}
 	visible = {
 		has_country_flag = SIA_thai_cambodia_tension
+	}
+	visible_when_empty = yes
+}
+SIA_gaw_category = {
+	icon = GFX_decision_cat_SIA_parliament
+
+	priority = 7
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_completed_focus = SIA_war_of_giants
+		#OR = {
+		#	is_in_faction_with = PRC
+		#	has_war_with = PRC
+		#}
 	}
 	visible_when_empty = yes
 }

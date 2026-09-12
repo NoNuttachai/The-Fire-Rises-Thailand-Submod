@@ -44,7 +44,7 @@ SIA_protests_category = {
 			}
 			else = {
 				set_temp_variable = { increase = 1 }
-			SIA_decrease_youth_status = yes
+				SIA_decrease_youth_status = yes
 			}
 			hidden_effect = {
 				remove_ideas = {
@@ -331,6 +331,10 @@ SIA_protests_category = {
 				mission = SIA_the_protests_intensify
 				days = 25
 			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.03
+			}
 		}
 		ai_will_do = {
 			base = 10
@@ -352,7 +356,13 @@ SIA_protests_category = {
 				mission = SIA_the_protests_intensify
 				days = 20
 			}
-			country_event = { id = thai_events.46 hours = 6 }
+			if = {
+				limit = {
+					check_variable = { SIA_organize_counter_protests_event = 0 }
+				}
+				country_event = { id = thai_events.46 hours = 6 }
+				set_variable = { SIA_organize_counter_protests_event = 1 }
+			}
 		}
 		ai_will_do = {
 			base = 10

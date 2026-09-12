@@ -201,6 +201,9 @@ on_actions = {
 			if = {
 				# Thailand kills Cambodia
 				limit = {
+					SIA = {
+						has_country_flag = SIA_thai_cambodia_tension
+					}
 					FROM = {
 						original_tag = SIA
 					}
@@ -234,6 +237,237 @@ on_actions = {
 					country_event = thai_cambodia_tension.6
 				}	
 			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+			set_global_flag = show_peace_popup_alert
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+			#Annexation block
+			# this will only trigger ROOT (the loser) is in a faction and is NOT the only survivor of said faction
+			# if ROOT is the only survivor then it will trigger the proper effects below
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							is_in_faction = yes
+							any_other_country = {
+								is_in_faction_with = PREV
+								has_capitulated = no
+							}
+						}
+					}
+				}
+				set_global_flag = war_won
+				
+				set_global_flag = war_continuing
+			}
+			else = {
+				
+				#							  #
+				# G R E A T  A S I A N  W A R # gaw
+				#							  #
+				if = {
+					# THE PACIFIC WAR - THAILAND HIJACKS PEACE TREATY EDITION
+					limit = {
+						has_global_flag = pan_asian_war_ongoing
+						FROM = {
+							OR = {
+								original_tag = SIA
+								is_ally_with = SIA
+								
+							}
+						}
+						ROOT = {
+							OR = {
+								# DEM THAILAND
+								original_tag = LAO
+								original_tag = CAM
+								
+								#AUTH THAILAND
+								original_tag = VIN
+								original_tag = MAL
+								original_tag = BRM
+							}
+						}
+					}
+					FROM = {
+						white_peace = ROOT
+					}
+					if = {
+						limit = {
+							SIA = {
+								is_in_faction_with = PRC
+							}
+						}
+						ROOT = {
+							load_focus_tree = generic_focus
+							add_ideas = PRC_unwilling_ally
+							clr_country_flag = pdto_member
+							set_country_flag = eadi_member
+							add_popularity = {
+								ideology = nationalist
+								popularity = 0.3
+							}
+							set_politics = {
+								ruling_party = nationalist
+								elections_allowed = no 
+							}
+							JAP_leave_PEC = yes
+							every_country = {
+								limit = {
+									is_in_faction_with = ROOT
+									any_controlled_state = {
+										NOT = { is_controlled_by = ROOT }
+										is_core_of = ROOT
+										NOT = { is_core_of = PREV }
+									}
+								}
+								every_controlled_state = {
+									limit = {
+										NOT = { is_controlled_by = ROOT }
+										is_core_of = ROOT
+										NOT = { is_core_of = PREV }
+									}
+									transfer_state_to = ROOT
+									set_state_owner_to = ROOT
+									set_state_controller_to = ROOT
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							has_global_flag = pan_asian_war_ongoing
+							NOT = {
+								SIA = {
+									is_ally_with = PRC
+								}
+							}
+							FROM = {
+								OR = {
+									is_ally_with = SIA
+									has_country_flag = pdto_member
+								}
+							}
+							ROOT = {
+								OR = {
+									original_tag = PRC
+									is_ally_with = PRC
+								}
+							}
+						}
+						ROOT = {
+							load_focus_tree = generic_focus
+							clr_country_flag = eadi_member
+							set_country_flag = pdto_member
+							if = {
+								limit = {	
+									NOT = {
+										JAP = {
+											is_ally_with = PRC
+										}
+									}
+								}
+								drop_cosmetic_tag = yes
+								remove_ideas = PRC_unwilling_ally
+							}
+							every_country = {
+								limit = {
+									is_in_faction_with = ROOT
+									any_controlled_state = {
+										NOT = { is_controlled_by = ROOT }
+										is_core_of = ROOT
+										NOT = { is_core_of = PREV }
+									}
+								}
+								every_controlled_state = { 
+									limit = {
+										NOT = { is_controlled_by = ROOT }
+										is_core_of = ROOT
+										NOT = { is_core_of = PREV }
+									}
+									transfer_state_to = ROOT
+									set_state_owner_to = ROOT
+									set_state_controller_to = ROOT
+								}
+							}
+						}
+					}
+					
+					if = {
+						limit = {
+							ROOT = {
+								original_tag = LAO
+							}
+						}
+						SIA = {
+							puppet = LAO
+						}
+						LAO = {
+							set_politics = {
+								ruling_party = nationalist
+								long_name = LAO_khun_lo_dynasty
+								name = LAO_khun_lo_dynasty
+							}
+							create_country_leader = {
+								name = LAO_soulivong_savang_char
+								picture = "gfx/leaders/LAO/LAO_soulivong_savang.png"
+								ideology = absolute_monarchist
+								traits = {
+								}
+							}
+							LAO_soulivong_savang_char = {
+								promote_character = { ideology = absolute_monarchist }
+							}
+							set_popularities = {
+								nationalist = 100
+							}
+							drop_cosmetic_tag = yes
+							set_cosmetic_tag = LAO_monarchist
+						}
+					}
+					if = {
+						limit = {
+							ROOT = {
+								original_tag = CAM
+							}
+						}
+						SIA = {
+							puppet = CAM
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}
+			}
+			clr_global_flag = skip_default_capitulation
 		}
 	}
 }

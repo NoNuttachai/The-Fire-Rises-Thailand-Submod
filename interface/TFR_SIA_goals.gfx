@@ -178,4 +178,16 @@ spriteTypes = {
         name = "GFX_goal_SIA_prayut_2021_SIA_rupture"
         texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_rupture.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_riding_with"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_riding_with.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_dial_tokyo"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_dial_tokyo.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_our_shared_future"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_our_shared_future.png"
+    }
 }
