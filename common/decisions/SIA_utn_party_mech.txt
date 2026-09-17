@@ -110,9 +110,19 @@ SIA_utn_party_mech = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			
+			#has_completed_focus = SIA_in_his_name
 		}
-		complete_effect = {
+		cost = 50
+		days_remove = 50
+		days_re_enable = 50
+		modifier = {
+			authoritarian_democrat_drift = 0.03
+			political_power_factor = 0.15
+			war_support_factor = 0.075
+		}
+		remove_effect = {
+			add_political_power = 50
+			
 		}
 	}
 	SIA_enforce_party_unity = {
@@ -125,9 +135,19 @@ SIA_utn_party_mech = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			
+			has_completed_focus = SIA_capital_of_yellow_shirts
 		}
-		complete_effect = {
+		cost = 50
+		days_remove = 50
+		days_re_enable = 50
+		modifier = {
+			party_popularity_stability_factor = -0.1
+			political_power_gain = 0.15
+		}
+		remove_effect = {
+			add_political_power = 75
+			add_stability = -0.02
+			
 		}
 	}
 	SIA_champion_conservative_values = {
@@ -140,9 +160,28 @@ SIA_utn_party_mech = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			
+			has_completed_focus = SIA_conservative_revolution
 		}
-		complete_effect = {
+		cost = 50
+		days_remove = 60
+		days_re_enable = 50
+		modifier = {
+			stability_factor = 0.05
+			society_development_monthly = 0.01
+			training_time_army_factor = -0.1
+			conscription_factor = 0.05
+			industrial_capacity_factory = 0.1
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.01
+			}
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.03
+			}
+			add_society_development = yes
 		}
 	}
 	SIA_attract_foreign_workers = {
@@ -155,9 +194,25 @@ SIA_utn_party_mech = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			
+			has_completed_focus = SIA_fill_the_hole
 		}
-		complete_effect = {
+		cost = 50
+		days_remove = 80
+		days_re_enable = 50
+		modifier = {
+			monthly_population = 0.05
+			production_speed_buildings_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+			industrial_development_monthly = 0.01
+			income_growth_factor = -0.05
+		}
+		remove_effect = {
+			add_stability = -0.03
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.02
+			}
+			add_industrial_development = yes
 		}
 	}
 	SIA_bhumjaithai_agenda = {
@@ -171,7 +226,19 @@ SIA_utn_party_mech = {
 		visible = {
 			has_completed_focus = SIA_friends_with_benefits
 		}
-		complete_effect = {
+		cost = 100
+		days_remove = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			personal_expense_factor = 0.15
+			poverty_development_monthly = 0.02
+		}
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = SIA_low_income_only_welfare
+				add_idea = SIA_low_income_only_welfare_2
+			}
 		}
 	}
 	SIA_pprp_agenda = {
@@ -185,7 +252,25 @@ SIA_utn_party_mech = {
 		visible = {
 			has_completed_focus = SIA_friends_with_benefits
 		}
-		complete_effect = {
+		cost = 75
+		days_remove = 50
+		fire_only_once = yes
+		modifier = {
+			authoritarian_democrat_drift = 0.02
+			conservative_drift = 0.03
+			political_power_factor = -0.1
+			society_development_monthly = 0.02
+		}
+		remove_effect = {
+			add_to_variable = { SIA_conservative_revolution_political_power_gain_var = 0.1 }
+			add_to_variable = { SIA_conservative_revolution_stability_factor_var = 0.05 }
+			add_to_variable = { SIA_conservative_revolution_society_development_monthly_var = 0.01 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_conservative_revolution_dummy
+					add_idea = SIA_conservative_revolution_pprp_agenda
+				}
+			}
 		}
 	}
 }

@@ -191,7 +191,8 @@ SIA_Economy_category = {
 		visible = {
 			check_variable = { SIA_map_var = 8 } 
 		}
-		cost = 50
+		cost = 75
+		days_remove = 100
 		complete_effect = {
 			724 = {
 			

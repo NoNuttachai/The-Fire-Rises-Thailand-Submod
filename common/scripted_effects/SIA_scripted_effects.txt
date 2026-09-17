@@ -661,6 +661,16 @@ SIA_change_thai_cambodia_tensions = {
 		}
 		country_event = thai_cambodia_tension.5
 	}
+	if = {
+		limit = {
+			check_variable = { SIA_thai_cambodia_tensions > 0.45 }
+			NOT = { check_variable = { SIA_thai_cambodia_tensions_events = 1 } }
+		}
+		hidden_effect = {
+			country_event = thai_cambodia_tension.14 #Wandering Soul
+		}
+		set_variable = { SIA_thai_cambodia_tensions_events = 1 }
+	}
 }
 SIA_change_thai_cambodia_mediation_lean = {
 	if = {

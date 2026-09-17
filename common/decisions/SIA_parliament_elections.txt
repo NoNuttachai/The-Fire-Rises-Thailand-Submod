@@ -54,7 +54,7 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 5
+		days_mission_timeout = 9
 		fixed_random_seed = no
 		timeout_effect = {
 			if = {
@@ -135,8 +135,8 @@ SIA_parliament_elections = {
 			has_country_flag = SIA_ongoing_elections
 			has_completed_focus = SIA_riding_with_uncle_tuu
 		}
-		cost = 25
-		days_remove = 14
+		cost = 20
+		days_remove = 6
 		complete_effect = {
 			set_temp_variable = { target = 11 }
 			set_temp_variable = { vote_change = 2 }
@@ -160,7 +160,7 @@ SIA_parliament_elections = {
 			check_variable = { SIA_election_playing_as = 11 }
 		}
 		cost = 50
-		days_remove = 20
+		days_remove = 8
 		fixed_random_seed = no
 		complete_effect = {
 			random_list = {
@@ -275,7 +275,7 @@ SIA_parliament_elections = {
 			has_completed_focus = SIA_riding_with_uncle_tuu
 		}
 		cost = 50
-		days_remove = 25
+		days_remove = 10
 		fire_only_once = yes
 		complete_effect = {
 			set_temp_variable = { target = 1 }
@@ -315,7 +315,7 @@ SIA_parliament_elections = {
 		}
 		days_remove = 15
 		complete_effect = {
-			add_political_power = 50
+			add_political_power = 85
 			set_temp_variable = { target = SIA_election_playing_as }
 			set_temp_variable = { vote_change = -3 }
 			SIA_elections_increase_votes_by_undecided = yes
@@ -339,7 +339,7 @@ SIA_parliament_elections = {
 			has_completed_focus = SIA_riding_with_uncle_tuu
 		}
 		cost = 30
-		days_remove = 20
+		days_remove = 15
 		fire_only_once = yes
 		complete_effect = {
 			set_country_flag = SIA_active_election_decision

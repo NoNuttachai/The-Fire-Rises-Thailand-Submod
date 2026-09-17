@@ -54,6 +54,28 @@ scripted_gui = {
 			SIA_forpol_alignment_button_click = {
 				set_variable = { SIA_faf_mode = 2 }
 			}
+			
+			SIA_brm_interact_click = {
+				set_variable = { SIA_faf_nation = BRM }
+			}
+			SIA_cam_interact_click = {
+				set_variable = { SIA_faf_nation = CAM }
+			}
+			SIA_lao_interact_click = {
+				set_variable = { SIA_faf_nation = LAO }
+			}
+			SIA_vin_interact_click = {
+				set_variable = { SIA_faf_nation = VIN }
+			}
+			SIA_sia_interact_click = {
+				set_variable = { SIA_faf_nation = SIA }
+			}
+			SIA_mal_interact_click = {
+				set_variable = { SIA_faf_nation = MAL }
+			}
+			SIA_ins_interact_click = {
+				set_variable = { SIA_faf_nation = INS }
+			}		
 		}
 		properties = {
 			SIA_brm_alignment = {

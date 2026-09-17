@@ -14,11 +14,7 @@ country_event = { #Start of border tensions
 	immediate = {
 		hidden_effect = {
 			### RANDOM EVENTS DURING CAMBODIA TENSIONS ###
-			country_event = { id = thai_cambodia_tension.9 days = 10 random_days = 15 } #Tales of the Forest
-			country_event = { id = thai_cambodia_tension.10 days = 20 random_days = 10 } #Emerald Triangle Border Skirmish
-			country_event = { id = thai_cambodia_tension.13 days = 35 random_days = 15 } #Landmine Incidents at the Border
-			country_event = { id = thai_cambodia_tension.14 days = 25 random_days = 10 } #Thailand’s Operation Wandering Soul
-			
+			country_event = { id = thai_cambodia_tension.9 days = 10 random_days = 15 } #Tales of the Forest			
 			country_event = { id = thai_cambodia_tension.4 days = 30 }
 			add_ideas = SIA_thai_cambodia_conflict
 			CAM = {
@@ -50,13 +46,14 @@ country_event = { #Start of border tensions
 					}
 				}
 			}
+			news_event = thai_newsevents.13
 			news_event = { id = news.421 days = 15 }
 		}
 	}
     option = {
         name = thai_cambodia_tension.1.a 
 		custom_effect_tooltip = thai_cambodia_tension_1_tt
-		add_to_variable = { SIA_thai_cambodia_tensions = 0.45 }
+		add_to_variable = { SIA_thai_cambodia_tensions = 0.1 }
 		set_variable = { SIA_thai_cambodia_phase = 1 }
 		set_country_flag = SIA_thai_cambodia_tension
 		activate_mission = SIA_situation_escalates
@@ -85,69 +82,42 @@ country_event = { #Start of border tensions
 		focus_unlock = yes
     }
 }
-country_event = { #Thailand loses skirmish
+country_event = { #Saber rattle - Skirmish won
     id = thai_cambodia_tension.2
     title = thai_cambodia_tension.2.t
     desc = thai_cambodia_tension.2.d
 	picture = GFX_report_cambodia_skirmish_lost
 	is_triggered_only = yes
-	
+	hidden = yes
     option = {
         name = thai_cambodia_tension.2.a 
-		SIA = {
-			add_stability = -0.1
-			add_political_power = -50
-			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
-			SIA_change_thai_cambodia_tensions = yes
-			activate_mission = SIA_situation_escalates
-			if = {
-				limit = {
-					check_variable = { SIA_skirmish_area = 1 }
-				}
-				set_variable = { SIA_skirmish_area = 2 }
+		add_to_variable = { SIA_saber_rattle_battle = 1 }
+		add_to_variable = { SIA_saber_rattle_victory = 1 }
+		if = {
+			limit = {
+				check_variable = { SIA_saber_rattle_battle = 3 }
 			}
-			else_if = {
-				limit = {
-					check_variable = { SIA_skirmish_area = 2 }
-				}
-				set_variable = { SIA_skirmish_area = 0 }
-			}
-			else = {
-				set_variable = { SIA_skirmish_area = 1 }
-			}
+			country_event =  thai_cambodia_tension.16
 		}
     }
 }
 
-country_event = { #Skirmish held off
+country_event = { #Saber rattle - Skirmish Defeat
     id = thai_cambodia_tension.3
     title = thai_cambodia_tension.3.t
     desc = thai_cambodia_tension.3.d
 	picture = GFX_report_cambodia_skirmish_repelled
 	is_triggered_only = yes
-	
+	hidden = yes
     option = {
         name = thai_cambodia_tension.3.a 
-		SIA = {
-			set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
-			army_experience = 15
-			SIA_change_thai_cambodia_tensions = yes
-			activate_mission = SIA_situation_escalates
-			if = {
-				limit = {
-					check_variable = { SIA_skirmish_area = 1 }
-				}
-				set_variable = { SIA_skirmish_area = 2 }
+		add_to_variable = { SIA_saber_rattle_battle = 1 }
+		add_to_variable = { SIA_saber_rattle_victory = -1 }
+		if = {
+			limit = {
+				check_variable = { SIA_saber_rattle_battle = 3 }
 			}
-			else_if = {
-				limit = {
-					check_variable = { SIA_skirmish_area = 2 }
-				}
-				set_variable = { SIA_skirmish_area = 0 }
-			}
-			else = {
-				set_variable = { SIA_skirmish_area = 1 }
-			}
+			country_event =  thai_cambodia_tension.16
 		}
     }
 }
@@ -200,6 +170,7 @@ country_event = { #War happens
 					add_idea = SIA_thai_cambodia_conflict_3
 				}
 			}
+			news_event = thai_newsevents.14
 		}
 	}
     option = {
@@ -225,9 +196,6 @@ country_event = { #War won
 	
     option = {
         name = thai_cambodia_tension.6.a 
-		CAM = {
-			add_stability = 0.1
-		}
 		add_political_power = 200
 		add_war_support = 0.15
 		remove_ideas = SIA_thai_cambodia_conflict_2
@@ -235,6 +203,13 @@ country_event = { #War won
 		SIA_decrease_youth_status = yes
 		set_country_flag = SIA_cambodia_war_victory
 		focus_unlock = yes
+		
+		CAM = {
+			add_stability = 0.1
+			remove_ideas = SIA_thai_cambodia_conflict_3
+		}
+		
+		
     }
 }
 country_event = { #thai century of humiliation
@@ -318,9 +293,15 @@ country_event = { #Emerald Triangle Border Skirmish
 	picture = GFX_report_emerald
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_cambodia_tension.1 days = 8 }
+		}
+	}
+	
     option = {
         name = thai_cambodia_tension.10.a 
-		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.1 }
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.075 }
 		SIA_change_thai_cambodia_tensions = yes
 		CAM = {
 			add_manpower = -1
@@ -356,14 +337,20 @@ country_event = { #Landmine Incidents at the Border
 	picture = GFX_report_landmine
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_cambodia_tension.10 days = 7 }
+		}
+	}
     option = {
         name = thai_cambodia_tension.13.a 
-		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.1 }
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.05 }
 		SIA_change_thai_cambodia_tensions = yes
 		add_opinion_modifier = {
 			target = CAM
 			modifier = decreased_relations
 		}
+		
     }
 }
 country_event = { #Thailand’s Operation Wandering Soul
@@ -375,7 +362,7 @@ country_event = { #Thailand’s Operation Wandering Soul
 	
     option = {
         name = thai_cambodia_tension.14.a 
-		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.1 }
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.05 }
 		SIA_change_thai_cambodia_tensions = yes
 		add_war_support = 0.03
 		CAM = {
@@ -388,6 +375,147 @@ country_event = { #Thailand’s Operation Wandering Soul
 		SIA_change_thai_cambodia_tensions = yes
 		CAM = {
 			add_war_support = -0.02
+		}
+    }
+}
+country_event = { #Shutting of the Cambodia Border
+    id = thai_cambodia_tension.15
+    title = thai_cambodia_tension.15.t
+    desc = thai_cambodia_tension.15.d
+	picture = GFX_report_border_closed
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.15.a 
+		
+    }
+}
+country_event = { #Saber rattle calculate victories
+    id = thai_cambodia_tension.16
+    title = thai_cambodia_tension.16.t
+    desc = thai_cambodia_tension.16.d
+	picture = GFX_report_border_closed
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.16.a 
+		if = { #Victory 2-1
+			limit = {
+				check_variable = { SIA_saber_rattle_victory = 1 }
+			}
+			hidden_effect = {
+				country_event = thai_cambodia_tension.17
+			}
+		}
+		else_if = { #Overwhelming Victory 3-0
+			limit = {
+				check_variable = { SIA_saber_rattle_victory = 3 }
+			}
+			hidden_effect = {
+				country_event = thai_cambodia_tension.18
+			}
+		}
+		else_if = { #Defeat 1-2
+			limit = {
+				check_variable = { SIA_saber_rattle_victory = -1 }
+			}
+			hidden_effect = {
+				country_event = thai_cambodia_tension.19
+			}
+		}
+		else = { #Overwhelming Defeat 0-3
+			hidden_effect = {
+				country_event = thai_cambodia_tension.20
+			}
+		}
+    }
+}
+country_event = { #Saber Rattle - Victory
+    id = thai_cambodia_tension.17
+    title = thai_cambodia_tension.17.t
+    desc = thai_cambodia_tension.17.d
+	picture = GFX_report_cambodia_skirmish_repelled
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.17.a 
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.05 }
+		SIA_change_thai_cambodia_tensions = yes
+		add_war_support = 0.025
+		army_experience = 10
+		add_political_power = 30
+		CAM = {
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+    }
+}
+country_event = { #Saber Rattle - Overwhelming Victory
+    id = thai_cambodia_tension.18
+    title = thai_cambodia_tension.18.t
+    desc = thai_cambodia_tension.18.d
+	picture = GFX_report_cambodia_skirmish_repelled
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.18.a 
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.075 }
+		SIA_change_thai_cambodia_tensions = yes
+		add_war_support = 0.05
+		army_experience = 30
+		add_political_power = 75
+		CAM = {
+			add_war_support = -0.1
+			add_stability = -0.1
+		}
+    }
+}
+country_event = { #Saber Rattle - Defeat
+    id = thai_cambodia_tension.19
+    title = thai_cambodia_tension.19.t
+    desc = thai_cambodia_tension.19.d
+	picture = GFX_report_cambodia_skirmish_lost
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.19.a 
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.05 }
+		SIA_change_thai_cambodia_tensions = yes
+		army_experience = -10
+		add_command_power = -15
+		add_war_support = -0.05
+		add_stability = -0.05
+		add_political_power = -25
+    }
+}
+country_event = { #Saber Rattle - Overwhelming Defeat
+    id = thai_cambodia_tension.20
+    title = thai_cambodia_tension.20.t
+    desc = thai_cambodia_tension.20.d
+	picture = GFX_report_cambodia_skirmish_lost
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.20.a 
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.075 }
+		SIA_change_thai_cambodia_tensions = yes
+		army_experience = -20
+		add_command_power = -30
+		add_war_support = -0.1
+		add_stability = -0.1
+    }
+}
+country_event = { #End of Cambodian Occupational Authority
+    id = thai_cambodia_tension.21
+    title = thai_cambodia_tension.21.t
+    desc = thai_cambodia_tension.21.d
+	picture = GFX_report_cambodia_skirmish_lost
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_cambodia_tension.21.a 
+		CAM = {
+			drop_cosmetic_tag = yes
 		}
     }
 }
@@ -502,6 +630,11 @@ country_event = { #Cannabis
 
     option = {
         name = thai_prayut.4.a 
+		set_temp_variable = {
+			var = debt_var_temp
+			value = -1
+		}
+		add_debt = yes
     }
 }
 country_event = { #Brothers forever fakeout event
@@ -671,7 +804,7 @@ country_event = { #Pirapan introduction
     option = {
         name = thai_prayut.14.a
 		add_to_variable = { SIA_pirapan_booster = 1 }
-		custom_effect_tooltip = SIA_tug_of_war_pirapan_booster
+		
     }
 }
 country_event = { #Third Prayut Cabinet formed
@@ -1265,7 +1398,14 @@ country_event = { #Verdict on FFP
     picture = GFX_report_constitutional_court
 	
 	is_triggered_only = yes
-
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = { increase = 2 }
+			SIA_increase_youth_status = yes
+			set_temp_variable = { increase = 2 }
+			SIA_increase_youth_status = yes
+		}
+	}
     option = {
         name = thai_events.1.a 
         
@@ -1292,8 +1432,8 @@ country_event = { #Verdict on FFP
         hidden_effect = {
             retire_character = SIA_thanathorn_juangroongruangkit_char
         }
-		set_temp_variable = { increase = 2 }
-		SIA_increase_youth_status = yes
+		add_dynamic_modifier = { modifier = SIA_flaming_youth_dynamic_modifier }
+		
     }
 }
 
@@ -1919,8 +2059,14 @@ country_event = {
 	
     option = {
         name = thai_events.27.a
-       
-       
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.02
+		}
+		add_days_mission_timeout = {
+			mission = SIA_the_protests_intensify
+			days = -20
+		}
 	}
 }
 country_event = {
@@ -2707,7 +2853,7 @@ country_event = {
 		country_event = thai_events.61
 	}
 	option = { #ACG
-        name = thai_events.60.a
+        name = thai_events.60.b
 	}
 }
 country_event = {
@@ -2759,7 +2905,7 @@ country_event = {
     title = thai_events.64.t
     desc = thai_events.64.d
 	is_triggered_only = yes
-	picture = GFX_report_china_japan
+	picture = GFX_report_sia_gaw
 	
     option = {
         name = thai_events.64.a
@@ -2773,7 +2919,7 @@ country_event = {
     title = thai_events.65.t
     desc = thai_events.65.d
 	is_triggered_only = yes
-	picture = GFX_report_china_japan
+	picture = GFX_report_showcase
 	
     option = {
         name = thai_events.65.a
@@ -2782,12 +2928,84 @@ country_event = {
 		focus_unlock = yes
 	}
 }
+country_event = {
+    id = thai_events.66 # GAW occupation government
+    title = thai_events.66.t
+    desc = thai_events.66.d
+	is_triggered_only = yes
+	picture = GFX_report_china_japan
+	
+    option = {
+        name = thai_events.66.a
+		
+		
+	}
+	option = {
+        name = thai_events.66.b
+		
+		
+	}
+	option = {
+        name = thai_events.66.c
+		
+		
+	}
+}
+country_event = {
+    id = thai_events.67 # Collapse of the State Audit Office building
+    title = thai_events.67.t
+    desc = thai_events.67.d
+	is_triggered_only = yes
+	picture = GFX_report_state_audit_collapse
+	
+    option = {
+        name = thai_events.67.a
+		add_stability = -0.05
+		1495 = {
+			add_manpower = -96
+		}
+	}
+}
+country_event = {
+    id = thai_events.68 # Royalist Counterprotests at the German Embassy
+    title = thai_events.68.t
+    desc = thai_events.68.d
+	is_triggered_only = yes
+	picture = GFX_report_german_larpers
+	
+    option = {
+        name = thai_events.68.a
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = 0.03
+		}
+		hidden_effect = {
+			country_event = thai_events.27
+		}
+	}
+}
+country_event = {
+    id = thai_events.69 #Free YOUTH's post march
+    title = thai_events.69.t
+    desc = thai_events.69.d
+	is_triggered_only = yes
+	picture = GFX_report_freeyouth_three_demands
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_events.68 days = 2 }
+		}
+	}
+    option = {
+        name = thai_events.69.a
+		
+		
+	}
+}
 news_event = { #Thai Protests
     id = thai_newsevents.1
     title = thai_newsevents.1.t
     desc = thai_newsevents.1.d
     picture = GFX_global_event_2020_thai_protests
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2801,7 +3019,6 @@ news_event = { #Thai PM survives motion of no confidence
     title = thai_newsevents.2.t
     desc = thai_newsevents.2.d
     picture = GFX_global_event_prayut_survives_motion_of_no_confidence
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2815,7 +3032,6 @@ news_event = { #Thai PM removed due to motion of no confidence
     title = thai_newsevents.3.t
     desc = thai_newsevents.3.d
     picture = GFX_global_event_prayut_removed_from_office
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2829,7 +3045,6 @@ news_event = { #Utn wins 2023 Elections
     title = thai_newsevents.4.t
     desc = thai_newsevents.4.d
     picture = GFX_global_event_utn_wins_2023
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2843,7 +3058,6 @@ news_event = { #PTP wins 2023 Elections
     title = thai_newsevents.5.t
     desc = thai_newsevents.5.d
     picture = GFX_global_event_ptp_wins_2023_elections
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2857,7 +3071,6 @@ news_event = { #Prayut Steps down as PM 2025
     title = thai_newsevents.6.t
     desc = thai_newsevents.6.d
     picture = GFX_global_event_prayut_steps_down
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2871,7 +3084,6 @@ news_event = { #Utn wins 2026 Elections
     title = thai_newsevents.7.t
     desc = thai_newsevents.7.d
     picture = GFX_global_event_utn_wins_2026
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2885,7 +3097,6 @@ news_event = { #Utn wins 2027 Elections
     title = thai_newsevents.8.t
     desc = thai_newsevents.8.d
     picture = GFX_global_event_utn_wins_2027
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2899,7 +3110,6 @@ news_event = { #PTP wins 2027 Elections
     title = thai_newsevents.9.t
     desc = thai_newsevents.9.d
     picture = GFX_global_event_ptp_wins_2027_elections
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2913,7 +3123,6 @@ news_event = { #Bhumjaithai wins 2026 Elections
     title = thai_newsevents.10.t
     desc = thai_newsevents.10.d
     picture = GFX_global_event_bhumjaithai_wins_elections
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2927,7 +3136,6 @@ news_event = { #Thailand joins EADI
     title = thai_newsevents.11.t
     desc = thai_newsevents.11.d
     picture = GFX_global_event_thailand_joins_eadi
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2941,7 +3149,6 @@ news_event = { #Thailand joins PDTO
     title = thai_newsevents.12.t
     desc = thai_newsevents.12.d
     picture = GFX_global_event_thailand_joins_pdto
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2955,7 +3162,6 @@ news_event = { #Skirmishes in Thai-Cambodia Border
     title = thai_newsevents.13.t
     desc = thai_newsevents.13.d
     picture = GFX_global_event_thailand_joins_pdto
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
@@ -2969,12 +3175,112 @@ news_event = { #Outbreak of War between Thailand and Cambodia
     title = thai_newsevents.14.t
     desc = thai_newsevents.14.d
     picture = GFX_global_event_thailand_joins_pdto
-	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 
     option = {
         name = thai_newsevents.14.a 
         
+    }
+}
+news_event = { #Magnitude 7.9 Earthquake hits Myanmar and Thailand
+    id = thai_newsevents.15
+    title = thai_newsevents.15.t
+    desc = thai_newsevents.15.d
+    picture = GFX_global_event_myanmar_thailand_earthquake_2025
+	is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = thai_newsevents.15.a 
+        if = {
+			limit = {
+				OR = {
+					tag = BRM
+					tag = MND
+					tag = KNU
+					tag = CNF
+					tag = WAT
+					tag = SSA
+					tag = MOA
+					tag = KLA
+					tag = PDF
+				}
+			}
+			every_owned_state = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 3
+				}
+				if = {
+					limit = {
+						office_park > 0
+					}
+					damage_building = {
+					  type = office_park
+					  damage = 1
+					}
+				}
+				if = {
+					limit = {
+						industrial_complex > 0
+					}
+					damage_building = {
+					  type = industrial_complex
+					  damage = 1
+					}
+				}
+				if = {
+					limit = {
+						arms_factory > 0
+					}
+					damage_building = {
+					  type = arms_factory
+					  damage = 1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SIA
+			}
+			1495 = {
+				damage_building = {
+				  type = office_park
+				  damage = 1
+				}
+				damage_building = {
+				  type = infrastructure
+				  damage = 1
+				}
+			}
+			hidden_effect = {
+				country_event =  thai_events.67
+			}
+		}
+		if = {
+			limit = {
+				tag = PRC
+			}
+			1196 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 1
+				}
+			}
+			1195 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 1
+				}
+			}
+			325 = {
+				damage_building = {
+				  type = infrastructure
+				  damage = 1
+				}
+			}
+		}
     }
 }

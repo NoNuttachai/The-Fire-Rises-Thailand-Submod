@@ -299,8 +299,13 @@
  SIA_talks_with_the_russians: "Talks With The Russians"
  SIA_off_continent_diplomacy: "Off-Continent Diplomacy"
  SIA_asian_house_of_cards: "House Of Cards"
+ 
  SIA_riding_the_shoulders_of_the_chinese_dragon: "Riding The Shoulders Of The Chinese Dragon"
+ SIA_riding_the_shoulders_of_the_chinese_dragon_tt: "§gWe will unlock §Ydecisions§! related to §Osabotaging§! @JAP §WPDTO§! influence in Southeast Asian countries§!"
+ 
  SIA_pdtos_sea_gateway: "PDTO's SEA Gateway"
+ SIA_pdtos_sea_gateway_tt: "§gWe will unlock §Ydecisions§! related to §Osabotaging§! @PRC §READI§! influence in Southeast Asian countries§!"
+ 
  SIA_integrate_our_militaries: "Integrate Our Militaries"
  SIA_attract_chinese_investment: "Attract Chinese Investment"
  SIA_joint_sino_thai_training: "Joint Sino-Thai Training"
@@ -320,10 +325,12 @@
  SIA_cook_the_engine: "Cook The Engine"
  SIA_gesture_of_peace: "Gesture Of Peace"
  SIA_saber_rattling: "Saber Rattling"
+ SIA_saber_rattling_tt: "We will §Ylaunch several border wars§! against @CAM §PCambodia§! to demonstrate our §Rmight§!"
  SIA_criticize_cambodia: "Criticize Cambodia"
  SIA_stand_firm_against_kouprey: "Stand Firm Against Kouprey"
  SIA_you_win_some_you_lose_some: "You Win Some, You Lose Some"
  SIA_awaiting_judgement: "Awaiting Judgement"
+ SIA_awaiting_judgement_tt: "§gThe Clock ticks closer... Whether a §Wpeaceful§! or §Rviolent§! outcome comes out of it remains to be seen...§!"
  
  SIA_eastern_showdown: "Eastern Showdown"
  SIA_safeguard_our_people: "Safeguard Our People"
@@ -333,9 +340,20 @@
  SIA_open_the_caches: "Open The Caches"
  SIA_operation_sam_phraya: "Operation Sam Phraya"
  
+ SIA_marching_in_phnom_penh: "Marching In Phnom Penh"
+ SIA_under_our_bootstraps: "Under Our Boostraps"
+ SIA_under_our_bootstraps_tt: "§gWe will make sure the future @CAM §PCambodian§! administration §Rstrictly§! follows @SIA §7Thai interests§!.\n\nA §Oguided§! §Cdemocracy§! will be installed with a list of leaders to choose after doing the last focus§!"
+ 
+ SIA_path_to_forgiving: "Path To Forgiving"
+ SIA_path_to_forgiving_tt: "§gThough we have won, we will give the @CAM §PCambodians§! the §Gright to govern themselves§!.\n\nParties are free to run so long as they are §7Pro-Thai§! and §YElections§! will be held after the last focus is completed."
+ SIA_after_the_ruins: "After The Ruins"
+ SIA_settling_disputes: "Settling Disputes"
+ SIA_a_new_relationship: "A New Relationship"
+ SIA_under_our_bootstraps_completed_tt: "If Completed §CUnder Our Boostraps§! Focus:"
+ SIA_path_to_forgiving_completed_tt: "\nIf Completed §CPath To Forgiving§! Focus:"
  # GAW Tree
  SIA_war_of_giants: "War Of Giants"
- SIA_war_of_giants_tt: "\n§YIt seems diplomacy has failed and Asia falls into the flames of §Rwar§!. We shall overcome and we shall fight for the victory of our §7country!§!§!"
+ SIA_war_of_giants_tt: "\n§YIt seems diplomacy has failed and Asia falls into the flames of §Rwar§!. We shall overcome and we shall fight for the victory of our @SIA §7country!§!§!"
  
  SIA_everything_we_got: "Everything We Got"
  SIA_everything_we_got_desc: ""
@@ -526,7 +544,7 @@
  SIA_no_hard_feelings: "No Hard Feelings"
  SIA_no_hard_feelings_tt: "£GFX_united_thai_nation §PPrayut§! and £GFX_palang_pracharath §BPrawit§! will §Rbreak off§! and the £GFX_palang_pracharath §BPalang Pracharath Party§! §Rwill no longer be the same§!"
  ###Characters###
- SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at Royal Military College, Duntroon in Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircraft and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nAs Crown Prince, he took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
+ SIA_rama_x_char_desc: "King Vajiralongkorn (Rama X) is the tenth monarch of the Chakri Dynasty and the Supreme Commander of the Royal Thai Armed Forces. Born on July 28, 1952, to King Bhumibol Adulyadej (Rama IX) and Queen Sirikit, he is the only son among four children and was declared heir to the throne in 1972.\n\nHe received his early education in Thailand before enrolling at the Royal Military College in Duntroon, Australia. There, he trained as a fighter pilot and military tactician, becoming qualified to fly both civilian Boeing aircrafts and military fighter jets. As Crown Prince, he served as an officer in the Royal Thai Army, gaining direct experience in various military operations. \n\nHe took part in royal duties both domestically and abroad. Before his ascension to the throne, his military role had become increasingly ceremonial. As his father grew older, Vajiralongkorn took a more prominent role in royal ceremonies and public appearances, such as the charity events "Bike for Dad" and "Bike for Mom." He ascended to the throne in 2016 following the passing of his father and was formally crowned in 2019."
  SIA_don_pramudwinai_char: "Don Pramudwinai"
  
  SIA_anupong_paochinda_char: "Anupong Paochina"
@@ -642,6 +660,14 @@
  
  SIA_national_humiliation: "National Humiliation"
  SIA_thai_military_occupation: "Thai Military Occupation"
+ SIA_victory_over_cambodia: "Victory Over Cambodia"
+ SIA_cambodia_relief_program: "Cambodia Relief Program"
+ SIA_thai_cambodia_close_partnership: "Close Partnership With Thailand"
+ SIA_thai_cambodia_close_partnership_thailand: "Close Partnership With Cambodia"
+ SIA_thai_cambodia_a_guiding_hand: "A 'Guiding' Hand"
+ SIA_thai_cambodia_a_guiding_hand_thailand: "The Cambodian Fruits"
+ 
+ 
  SIA_economic_engine_1: "Catastrophic Engine"
  SIA_economic_engine_1_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
  
@@ -732,8 +758,8 @@
  thai_events.1.a: "It's over"
 
  thai_events.2.t: "A New Year, With Nothing New"
- thai_events.2.d: "Somboon was sitting in his apartment, well, his mother's rented apartment, to be exact, at the start of a new year. \n\nHe had just been denied a job application on the grounds of 'inexperience' and 'not matching skill needs.', even though his classmate, who coincidentally had family ties to the company, was accepted without a problem.\n\nAs he scrolled through television channels, the prime minister`s speech aired on the screen. While the speech played, his mind wandered. Why isn`t our economy growing? What happened to freedom of speech? Was the restoration of 'democracy' even democratic??\n\nWhen the broadcast ended, a single question lingered in his mind:"
- thai_events.2.a: "How long will this §Rlast§!?"
+ thai_events.2.d: "Somboon was sitting in his apartment, well, his mother's rented apartment, to be exact, at the start of a new year. \n\nHe had just been denied a job application on the grounds of 'inexperience' and 'not matching skill needs.', even though his classmate, who coincidentally had family ties to the company, was accepted without a question.\n\nAs he scrolled through television channels, the prime minister`s speech aired on the screen. While the speech played, his mind wandered. Why isn`t our economy growing? What happened to freedom of speech? Was the restoration of 'democracy' even democratic??\n\nWhen the broadcast ended, a single question lingered in his mind:"
+ thai_events.2.a: "How §Rlong§! will this §Rlast§!?"
 
  thai_events.3.t: "Budget Bill Passed"
  thai_events.3.d: "The Budget Bill (B.E. 2563/2020), introduced by the government in October last year, outlines total expenditures of 3.2 trillion baht, an increase of 200 billion baht from the previous fiscal year, and projects a deficit of 469 billion baht. After four days of debate between government and opposition MPs, the bill passed with 253 votes in favor, while 196 opposition MPs abstained."
@@ -767,7 +793,7 @@
  SIA_joint_training: "Joint Training"
  
  thai_events.10.t: "COVID-19 case involving an Egyptian soldier in Rayong"
- thai_events.10.d: "An Egyptian soldier, along with 30 others, including the aircraft crew, traveled from Egypt on a military diplomatic mission to China, with stops in Pakistan and the United Arab Emirates before arriving at U-Tapao Airport in Rayong. The group stayed at a hotel in Rayong and later visited a nearby shopping mall. The Egyptian military crew members who entered Thailand tested positive for COVID-19 and did not comply with prevention measures. The soldier was subsequently confirmed to have tested positive for COVID-19.\n\nThe incident prompted authorities to deploy an investigation team to Rayong Province to trace the soldier's movements. It also sparked public criticism of Prayut Chan-o-cha government, especially on social media, for allowing potentially infected foreign visitors to enter the country without adequate screening, as well as criticism of the Egyptian government after a video resurfaced showing the Egyptian soldier refusing to comply with COVID-19 testing by Thai authorities.\n\nThe Ambassador of the Arab Republic of Egypt to Thailand expressed regret for the incident and pledged that such an event would not happen again."
+ thai_events.10.d: "An Egyptian soldier, along with 30 others, including the aircraft crew, traveled from Egypt on a military diplomatic mission to China, with stops in Pakistan and the United Arab Emirates before arriving at U-Tapao Airport in Rayong. The group stayed at a hotel in Rayong and later visited a nearby shopping mall. The Egyptian military crew members who entered Thailand tested positive for COVID-19 and did not comply with prevention measures. The soldier was subsequently confirmed to have tested positive for COVID-19.\n\nThe incident prompted authorities to deploy an investigation team to Rayong Province to trace the soldier's movements. It also sparked public criticism of Prayut Chan-o-cha government, especially on social media, for allowing potentially infected foreign visitors to enter the country without adequate screening, as well as criticism of the Egyptian government after a video resurfaced showing the Egyptian soldier refusing to comply with COVID-19 testing by Thai authorities.\n\nThe Ambassador of the Arab Republic of Egypt to Thailand expressed regret for the incident and pledged that such an event would not happen again. Though the Facebook page of the Egyptian embassy to Bangkok was heavily brigaded by negative comments from angry Thai citizens"
  thai_events.10.a: "What Egyptian soldier would be so brash as to act this way?"
  thai_events_10_texticon: ".\n\n\n\n\n£GFX_egyptian_soldier_video\n\n\n\n\n\n"
 
@@ -799,8 +825,8 @@
  thai_events.16.a: "PTT is already state owned!"
  
  thai_events.17.t: "First Covid-19 Infection Case in Thailand"
- thai_events.17.d: "TNN 16 CHANNEL REPORT\n\nToday, Deputy Prime Minister and Minister of Health Anutin Charnvirakul held a press conference with a World Health Organization Representative, confirming the first COVID-19 case in Thailand and the first infection case reported outside of China. The patient, who was a tourist from China, has been hospitalized and so far recovered. Other family members close to the patient have so far not been infected.\n\nPrime Minister Prayut Chan-o-cha has been notified of the first infection case of COVID-19. The Government has confidence that the Health Agencies can detect and contain the COVID-19 situation in Thailand."
- thai_events.17.a: "Prepare for the Worse..."
+ thai_events.17.d: "TNN 16 CHANNEL REPORT\n\nToday, Deputy Prime Minister and Minister of Health Anutin Charnvirakul held a press conference with a World Health Organization Representative, confirming the first COVID-19 case in Thailand and the first infection case reported outside of China. The patient, who was a tourist from China, has been hospitalized and so far recovered. Other family members close to the patient have so far not been infected.\n\nPrime Minister Prayut Chan-o-cha has been notified of the first infection case of COVID-19. The Government has confidence that the health agencies can detect and contain the COVID-19 situation in Thailand."
+ thai_events.17.a: "Prepare for the Worst..."
  
  thai_events.18.t: "Soldier Goes Rogue, Unleashes Massacre in Korat"
  thai_events.18.d: "A horrific massacre has just occurred in Korat, Nakhon Ratchasima, when a Thai Army sergeant, enraged by a property dispute, shot and killed his commanding officer. After raiding his military base's armory, the gunman stole a Humvee and went on a rampage through the streets, firing hundreds of rounds at motorists and pedestrians. In a particularly brutal act, he fired at schoolchildren riding motorcycles, then approached to shoot them again at close range. Two responding police officers were also killed before they could even exit their vehicles.\n\nThe attacker later arrived at Terminal 21 Korat, where he opened fire on shoppers, killing 12 people. He also triggered an explosion outside the mall by shooting a gas cylinder. During the attack, he livestreamed portions of the shooting on Facebook Live and posted remorseless messages before his account was removed.\n\nPolice and soldiers eventually stormed the mall, ordering him to surrender after he took hostages on the fourth floor. Instead, he continued firing, killing additional civilians and law enforcement personnel. He remained barricaded inside for several hours while authorities secured the perimeter and brought in his mother in an attempt to persuade him to surrender peacefully.\n\nFinally, after a nearly 18-hour standoff, elite Thai police and army commandos killed the shooter, ending the rampage. The tragedy left 29 people dead and 57 others wounded, marking the deadliest mass shooting by a single individual in Thai history."
@@ -978,6 +1004,14 @@
  thai_events.52.d: "Hundreds of trucks from the Federation of Thai Land Transport, which represents more than 400,000 truck operators nationwide, staged a convoy protest against the government of Prayut Chan-o-cha and the Ministry of Energy over their failure to address soaring fuel prices and the economic impact of the government's COVID-19 lockdown measures on truckers' incomes and livelihoods. Police were mobilized to ensure road safety and minimize public disruption.\n\nThe federation's president said the demonstration was intended to highlight the impact of soaring fuel prices on the transport industry following the Saudi Arabian conflict, which disrupted global oil markets. He said the federation had already submitted proposals to the government and warned that, if its demands continued to be ignored, it would meet to discuss escalating its campaign.\n\nHe warned that if the government failed to take meaningful action to provide relief and improve conditions for the transport sector, the federation would organize a nationwide truckers' strike. In an interview with the media, he warned that a halt in freight transport would severely disrupt fuel distribution and supply chains, saying..."
  thai_events.52.a: "Watch what happens if the trucks stop running."
  
+ thai_events.53.t: "Thanakorn Buaratsat becomes Intelligence Minister"
+ thai_events.53.d: ""
+ thai_events.53.a: ""
+ 
+ thai_events.54.t: "Thanat Suwannanon becomes Intelligence Minister"
+ thai_events.54.d: ""
+ thai_events.54.a: ""
+ 
  thai_events.55.t: "Constitutional Court Dissolves Move Forward Party"
  thai_events.55.d: "womp womp"
  thai_events.55.a: "okay"
@@ -1001,7 +1035,8 @@
  
  thai_events.60.t: "The Eagle Falls"
  thai_events.60.d: ""
- thai_events.60.a: ""
+ thai_events.60.a: "We shall only recognize the government in D.C."
+ thai_events.60.b: "Perhaps the government in Denver is right..."
  
  thai_events.61.t: "Prayut Visits D.C."
  thai_events.61.d: ""
@@ -1012,12 +1047,34 @@
  thai_events.62.a: ""
  
  thai_events.63.t: "Am Cyanide Murders"
- thai_events.63.d: "Sararat Rangsiwuthaporn, widely known in the Thai media as "Am Cyanide," was arrested by police, who formally announced a series of murder charges against the 36-year-old suspect. The case has drawn nationwide attention, as authorities presented evidence from one of Thailand’s largest serial murder investigations in recent years.\n\nThe investigation began after the suspicious death of one victim prompted authorities to re-examine a number of unexplained deaths with similar circumstances. Investigators believe the killings were primarily motivated by severe financial problems linked to an extensive online gambling addiction.\n\nAs more evidence emerged, police connected multiple cases across several provinces, leading to additional charges against Sararat.\n\nSararat faces 14 counts of premeditated murder and one count of attempted murder after allegedly poisoning multiple victims with cyanide over several years. Most of the victims were friends or acquaintances involved in financial dealings with her.\n\nAm Cyanide is currently being held at the Central Women's Correctional Institution in Bangkok, awaiting her final sentence."
+ thai_events.63.d: "Sararat Rangsiwuthaporn, widely known in the Thai media as "Am Cyanide," was arrested by police, who formally announced a series of murder charges against the 36-year-old suspect. The case has drawn nationwide attention, as authorities presented evidence from one of Thailand's largest serial murder investigations in recent years.\n\nThe investigation began after the suspicious death of one victim prompted authorities to re-examine a number of unexplained deaths with similar circumstances. Investigators believe the killings were primarily motivated by severe financial problems linked to an extensive online gambling addiction.\n\nAs more evidence emerged, police connected multiple cases across several provinces, leading to additional charges against Sararat.\n\nSararat faces 14 counts of premeditated murder and one count of attempted murder after allegedly poisoning multiple victims with cyanide over several years. Most of the victims were friends or acquaintances involved in financial dealings with her.\n\nAm Cyanide is currently being held at the Central Women's Correctional Institution in Bangkok, awaiting her final sentence."
  thai_events.63.a: "The most prolific serial killer in all Thai history"
  
  thai_events.64.t: "The Great Asian War"
  thai_events.64.d: ""
  thai_events.64.a: "Let us triumph in our endeavour"
+ 
+ thai_events.65.t: "Military Shortcomings"
+ thai_events.65.d: "Are we prepared for a future war?\n\nhell nah, we gotta do some reforming"
+ thai_events.65.a: "Thank you for the mechanic kind devs"
+ 
+ thai_events.66.t: "The Future of Laos"
+ thai_events.66.d: "With the occupation of Laos during the GAW, the choice has fallen to us on how to setup their government."
+ thai_events.66.a: "Setup Monarchy"
+ thai_events.66.b: "Bring back le democracy"
+ thai_events.66.c: "Let's decide later"
+ 
+ thai_events.67.t: "Collapse of the State Audit Office building"
+ thai_events.67.d: "Horrifying videos captured by bystanders showed the 30-storey State Audit Office headquarters, still under construction, completely collapsing within seconds as the earthquake struck. As the floors pancaked on top of one another, dozens of construction workers were trapped beneath massive piles of concrete, twisted steel, and rubble. The Bangkok tower's sudden destruction shocked viewers worldwide as the devastating aftermath of Myanmar's powerful earthquake unfolded across the region.\n\nRescue teams immediately began a massive search-and-rescue operation. Heavy excavators were deployed to carefully remove layers of debris while cranes were used to lift large sections of concrete and twisted metal. Rescue workers, firefighters, engineers and search dogs combed through the wreckage in an effort to locate survivors and recover victims.\n\nPrime Minister [SIAGetCurrentPMName] visited the collapse site as rescue operations continued, receiving briefings from officials and emergency personnel.\n\nThe collapse drew intense scrutiny because nearby high-rises in Bangkok largely remained standing despite experiencing the same seismic forces. Consequently, investigators probed whether flaws in the tower's structural design, construction practices, or materials caused its failure. The project was being built by a joint venture between Italian-Thai Development and China Railway No. 10, a local subsidiary of China's state-owned China Railway Group."
+ thai_events.67.a: "Prioritize rescue efforts and later, an investigation"
+ 
+ thai_events.68.t: "Royalist Counterprotests at the German Embassy"
+ thai_events.68.d: "Around 13 o clock on the 26th of October A few hundred pro-royalist citizens rallied outside the German Embassy, led by Nitithorn Lamluea (also known as Lawyer Nok Khao) and Pichit Chaimongkol. The group planned to submit a letter to the embassy explaining "the true facts" of the current political situation in Thailand before the planned demonstrations by FreeYOUTH and Khana Ratsadon 2563\n\nThe rally organizer stated that they would return after submitting the letter and confirmed that there won't stay to face off the planned protests on 17:00 They said they were are friendly to  Germany and is there to present another perspective on the situation. They added that when another group came later, it is their right and freedom.\n\nA large number of demonstrators dressed in yellow shirts gathered alongside a sound truck, occupying two lanes of traffic and causing congestion on Sathorn Road in front of the embassy. Police officers erected metal barriers around the area, while Border Patrol Police and other security personnel were deployed to maintain order during the rally.\n\nRoyalist supporters waved Thai flags, displayed photographs of the Royal Family, and held signs expressing support for the monarchy while condemning the protests.\n\nBizarrely, one man in the rally with a yellow shirt raised the three-finger salute, explaining that although he opposed the government of Prayut Chan-o-cha, he also opposed the protesters because of what he viewed as their anti-monarchist stance."
+ thai_events.68.a: "Support both sides so he always on top LMAO"
+ 
+ thai_events.69.t: "£GFX_facebook_logo  Free YOUTH's post"
+ thai_events.69.d: "After October 21st, lovers of democracy gave Prayut three days to sign his resignation. Now, three days have passed, and Prayut shows no sign of resigning. Since talking to the dog is pointless, we'll talk to the "dog's owner."\n\nVery brave, very good, to disregard the people!\nVery brave, very good. to refuse to return to the path of democracy! Since he's shown his true colors, there's nothing left to lose but the shackles that hold this country back.\n\nThis Monday, October 26th, at 5:00 PM! Please be prepared. We will march from Samyan Intersection to the German Embassy. More details to follow. Thank you, and see you there"
+ thai_events.69.a: "Worrying..."
  
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
@@ -1061,7 +1118,7 @@
  thai_elections.7.t: "2027 Election Season"
  thai_elections.7.d: "Imagine voting"
  thai_elections.7.a: "£GFX_united_thai_nation §gUTN§!"
- SIA_cambodia_victory_election_boost_tt: "§gDue to our §Gsuccessful§! victory over @CAM §1Cambodia§!, the incumbent party has gain a §Ysignificant boost§!§!"
+ SIA_cambodia_victory_election_boost_tt: "§gDue to our §Gsuccessful§! victory over @CAM §PCambodia§!, the incumbent party has gain a §Ysignificant boost§!§!"
  
  thai_elections.8.t: "Yodchanan Wongsawat becomes frontrunner for PTP nomination"
  thai_elections.8.d: "The political journey of the Pheu Thai Party (PTP) shifts into high gear today. Amidst red banners displaying the slogan "Pheu Thai Can Do It", Yodchanan Wongsawat has officially secured the party's nomination as its candidate for the upcoming elections.\n\nThe announcement was met with resounding applause from supporters, signaling a united front as the party prepares for the imminent electoral battle..."
@@ -1082,13 +1139,13 @@
  thai_prayut.2.a: "oh noes"
  
  thai_prayut.3.t: "Prayut transfers to UTN"
- thai_prayut.3.d: "Dark Prayut"
- thai_prayut.3.a: "more evl coding needed"
+ thai_prayut.3.d: "No longer running under the banner of Palang Pracharath Party as his political vehicle, Prayut Chan-o-cha has formally joined the United Thai Nation Party ahead of Thailand's next general election. The move comes after a growing political rift between Prayut and Deputy Prime Minister Prawit Wongsuwan, his longtime military ally and the leader of Palang Pracharath. Rather than continue under a party increasingly associated with Prawit, Prayut has chosen to establish his own political base through the newly formed United Thai Nation Party, which has presented itself as a conservative force committed to stability, national security, and Thailand's traditional institutions.\n\nFor Prayut, the decision is ultimately about securing a path back to the premiership, but he now faces an increasingly competitive political environment, declining popularity, and a fragmented conservative camp. United Thai Nation will attempt to turn his personal political following into an electoral organization capable of keeping him in power, even as opposition parties and former allies prepare to challenge his decade-long dominance of Thai politics."
+ thai_prayut.3.a: "Off to greener pastures"
  thai_prayut_3_tt: "§YPrayut Chan-o-cha§! has transferred to the £GFX_united_thai_nation §PUnited Thai Nation Party§!"
  
  thai_prayut.4.t: "Cannabis Legalized"
- thai_prayut.4.d: ""
- thai_prayut.4.a: "crazy"
+ thai_prayut.4.d: "A major shift in Thai social policy as taken place, the government of Prime Minister [SIAGetCurrentPMName] moved to effectively decriminalize cannabis by removing the plant from its Category 5 national narcotics list, making Thailand the first nation in Asia to take this step. As a direct result of this reform, around 4,200 prisoners serving sentences for cannabis-related offenses were released.\n\nAnutin Charnvirakul, leader of the Bhumjaithai Party and Minister of Public Health, campaigned heavily for the legalization of cannabis and its domestic cultivation. Because of this, he was dubbed Thailand's "cannabis king" for championing the decriminalization initiative.\n\nProponents hailed cannabis legalization as a lucrative economic opportunity centered around agriculture, and attracting tourism. The move opened the door for, businesses, and farmers to grow and sell cannabis under government regulations, causing thousands of dispensaries to quickly emerge across the country.\n\nHowever, dispensaries generally did not require prescriptions, creating a legal gray area and sparking debate over clearer rules for recreational use. Meanwhile, various treats and drinks that contain cannabis leaves flooded shelves at supermarkets and convenience stores, further normalizing the plant in everyday retail.\n\nOpponents criticized the sudden liberalization, arguing that loose regulations accelerated recreational consumption and raised concerns over youth access, public smoking, and addiction."
+ thai_prayut.4.a: "420 BLAZE IT"
  
  thai_prayut.5.t: "Applause All Around"
  thai_prayut.5.d: "The room was filled with joy as General Prawit Wongsuwan and General Prayut shook hands and for the first time have together agreed that the direction of the party shall follow General Prayut... Wait wrong loc, if you're reading this, stop cheating. You aren't supposed to get this"
@@ -1216,18 +1273,10 @@
  thai_prayut.34.d: ""
  thai_prayut.34.a: ""
  
- thai_cambodia_tension.1.t: "Thai-Cambodia Border Incident"
- thai_cambodia_tension.1.d: "It was a fine morning until Logi said\n\n"Let the larp begin""
- thai_cambodia_tension.1.a: "What is this idiot doing!"
+ thai_cambodia_tension.1.t: "Rising Seriousness of the Recent Border Conflict"
+ thai_cambodia_tension.1.d: "Our national sovereignty is under threat by Cambodia.\n\nWe have received reports that Cambodian drones (UAVs) and infantry opened fire approximately 200 meters east of the Thai-administered Prasat Ta Muen Thom temple. Cambodian forces subsequently launched BM-21 multiple rocket launchers toward Prasat Don Tuan near residential areas, while an attempted infantry advance near Ta Kwai Temple was repelled by Thai artillery counter-fire. \n\nCivilian areas have been severely impacted. A BM-21 rocket struck a PTT gas station and convenience store in Sisaket province, killing eight civilians including children and injuring thirteen others. Furthermore, Phanom Dong Rak Hospital in Surin was hit by rocket fire, damaging the grounds, injuring personnel, and forcing an emergency evacuation of patients to underground bunkers. Directing artillery strikes at hospitals is a direct violation of the Geneva Conventions.  A war crime.\n\nAs a result of ongoing bombardment, more than 100,000 residents across border provinces are being evacuated. \n\nOur troops shall retaliate and defend our territory."
+ thai_cambodia_tension.1.a: "Mobilize against the Khmer warmongers!"
  thai_cambodia_tension_1_tt: "§YThai-Cambodian Tensions§! will now start at the §OBorder Skirmishes§! Phase"
- 
- thai_cambodia_tension.2.t: "Thai Military Retreats in Disgrace"
- thai_cambodia_tension.2.d: "In an unexpected twist of fate, the barbaric Khmer troops managed to crush a Thai garrison and force the Burapha Task Force into a organized retreat. Even the task force's senior commander was wounded in the leg by Khmer troops.\n\nNow, hundreds of videos are circulating on Twitter, allegedly showing Khmer troops killing Thai prisoners and civilians."
- thai_cambodia_tension.2.a: "Goddamnit, call the army to step up now!"
- 
- thai_cambodia_tension.3.t: "Cambodians Repelled"
- thai_cambodia_tension.3.d: "As expected by many, the border raid instigated by the Cambodian forces has been met with overwhelming fire and artillery from furious Thai forces. In just 24 hours, Cambodian losses have reportedly accumulated to 800 troops and 50 vehicles.\n\nWhile fighting has stopped, there are rumors that the Cambodian military is aiming for another skirmish in a future date."
- thai_cambodia_tension.3.a: "That'll show em"
  
  thai_cambodia_tension.4.t: "China and Japan calling"
  thai_cambodia_tension.4.d: "They want us to calm the hell down"
@@ -1271,10 +1320,36 @@
  thai_cambodia_tension.13.d: "Three Royal Thai Army soldiers suffered injuries during a patrol in the Emerald Triangle area when they accidentally stepped on a landmine. It was initially speculated that the mine was a leftover relic from the Cold War era. However, evidence following demining operations by the army revealed that it was a newly planted Russian PMN-2 mine. At least two additional PMN-2 mines were subsequently discovered near the original explosion site. One of the injured soldiers lost his left leg. The presence of these new mines represents a clear violation of Thailand's sovereignty and the Ottawa Treaty (Anti-Personnel Mine Ban Convention) to which Cambodia is a signatory.\n\nAnother Thai patrol group, consisting of five soldiers, was injured by a Cambodian-laid mine, with one soldier losing his right leg. [SIAGetCurrentPMName] has strongly condemned Cambodia's actions and called on the United Nations to address the issue. However, the Cambodian government has remained uncooperative. Our government is now considering taking further diplomatic and protest measures in response. "
  thai_cambodia_tension.13.a: "This is a clear threat!"
  
- thai_cambodia_tension.14.t: "Thailand’s Operation Wandering Soul"
+ thai_cambodia_tension.14.t: "Thailand's Operation Wandering Soul"
  thai_cambodia_tension.14.d: "Over the past four nights, loudspeakers mounted near the border villages of Ban Nong Chan and Ban Nong Ya Kaeo in Khok Sung District, Sa Kaeo Province, have been broadcasting disturbing audio, such as ghostly wails, screams, and creepy music. The operation was an initiative led by prominent Thai public figure and celebrity Kanthat Pongpaiboonwet, widely known as "Gun Jom Palang."  \n\nGun Jom Palang told the press that he used eerie sounds as a non-violent tactic to pressure Cambodian encroachers to leave Thai territory, claiming Cambodians feared ghost sounds. He said the tactic aimed to demonstrate Thai unity and defend national sovereignty without physical violence. Royal Thai Army spokesperson Maj. Gen. Winthai Suvari defended the broadcasts as a peaceful protest stemming from the long-running border dispute over Cambodian encroachment.\n\nThe operation has drawn sharp criticism from Cambodian authorities. Mali Socheata, spokesperson for the Cambodian military, condemned the broadcasts, stating that the high-decibel audio caused widespread panic among Cambodian border civilians, violated humanitarian norms, and constituted a form of psychological warfare.\n\nMany critics in Thailand also questioned the appropriateness and ethics of using noise harassment along the border, as well as the prominent role played by a civilian celebrity rather than official military personnel."
  thai_cambodia_tension.14.a: "More speakers! Give the Khmers a freight!"
  thai_cambodia_tension.14.b: "This is inappropriate actions, let ask him to stop"
+ 
+ thai_cambodia_tension.15.t: "Shutting of the Cambodia Border"
+ thai_cambodia_tension.15.d: "Recent border clashes, the killing of a Cambodian soldier near the Emerald Triangle, and a subsequent landmine incident have pushed Thai-Cambodian relations to a breaking point. Our government has responded by imposing increasingly severe border restrictions.\n\nWe have taken the step of closing the border with Cambodia, citing national security and the need to prevent further incidents, while the military has moved to restrict crossings across several provinces. This decision has consequences far beyond the disputed frontier: thousands of traders, workers, tourists, and families who depend on regular cross-border movement have suddenly found themselves cut off. Cambodia has responded with its own retaliatory restrictions, banning Thai TV soap operas and Thai fruit imports.\n\nIt is clear that further Cambodian provocations could occur, even at the cost of disrupting local border communities and trade. Yet the longer the crossings remain closed, the greater the risk that a confrontation develops into a much wider crisis between the two countries."
+ thai_cambodia_tension.15.a: "We shall strike back, if you strike us..."
+ 
+ thai_cambodia_tension.17.t: "Skirmish Report - Victory"
+ thai_cambodia_tension.17.d: "Despite Thai casualties, we were able to inflict damages across Cambodia"
+ thai_cambodia_tension.17.a: "A victory nonetheless"
+ 
+ thai_cambodia_tension.18.t: "Skirmish Report - Overwhelming Victory"
+ thai_cambodia_tension.18.d: "It's a report received with applauses. The recent skirmishes has resulted in the destruction of several key Cambodian bases and several casualties on their side"
+ thai_cambodia_tension.18.a: "Go run to Phnom Penh"
+ 
+ thai_cambodia_tension.19.t: "Skirmish Report - Defeat"
+ thai_cambodia_tension.19.d: "Despite Thai casualties, we were able to inflict damages across Cambodia"
+ thai_cambodia_tension.19.a: "Perhaps we got too overconfident?"
+ 
+ thai_cambodia_tension.20.t: "Skirmish Report - Overwhelming Defeat"
+ thai_cambodia_tension.20.d: "It's a catastrophe, all the skirmishes we initiated have returned as humiliating retreats as Cambodian soldiers storm the area"
+ thai_cambodia_tension.20.a: "This is not the end of it."
+ 
+ thai_cambodia_tension.21.t: "End of the Occupational Authority"
+ 
+ thai_cambodia_tension.22.t: "Cambodians Repelled"
+ thai_cambodia_tension.22.d: "As expected by many, the border raid instigated by the Cambodian forces has been met with overwhelming fire and artillery from furious Thai forces. In just 24 hours, Cambodian losses have reportedly accumulated to 800 troops and 50 vehicles.\n\nWhile fighting has stopped, there are rumors that the Cambodian military is aiming for another skirmish in a future date."
+ thai_cambodia_tension.22.a: "That'll show em"
  
  thai_shared_events.1.t: "Situation of the Royal Thai Airforce"
  thai_shared_events.1.d: "Text should be here"
@@ -1337,6 +1412,10 @@
  thai_newsevents.14.t: "Outbreak of War between Thailand and Cambodia"
  thai_newsevents.14.d: ""
  thai_newsevents.14.a: ""
+ 
+ thai_newsevents.15.t: "Magnitude 7.9 Earthquake hits Myanmar and Thailand"
+ thai_newsevents.15.d: "A powerful 7.9-magnitude earthquake has devastated central Myanmar, leaving thousands dead and causing widespread destruction across the country. The earthquake originated in Myanmar's Sagaing Region, with its epicenter near Mandalay along the major Sagaing Fault, producing violent ground shaking along an approximately 460-kilometer rupture and becoming the country's strongest earthquake in more than a century.\n\nAcross Myanmar, thousands of people were killed and injured, while homes, hospitals, schools, historical and religious sites, bridges, and major roads were severely damaged or destroyed. The historic Ava Bridge was among the major pieces of infrastructure affected, while highways and other transport links were also damaged. The ongoing civil war in Myanmar exacerbated the difficulties of disaster relief.\n\nThe tremors also struck neighboring Thailand, causing skyscrapers in Bangkok to sway and forcing people to flee buildings and gather in the streets. The under-construction State Audit Office building in Bangkok completely collapsed, trapping and killing several workers beneath the rubble. Shockwaves reached Cambodia, Vietnam, and southern China, damaging over 400 apartments in Ho Chi Minh City and hundreds of homes in Yunnan."
+ thai_newsevents.15.a: "When the earth shakes, the state shakes..."
     
  ###Tooltip###
  SIA_ban_future_tt: "§OThanathorn Juangroongruangkit§! along with §O16 party executive§! have been barred from Public office for §R10 years.§!"
@@ -1391,7 +1470,7 @@
  
  SIA_parliament_total_seats_header: "§Y--- Parliamentary Breakdown ---§!"
  SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
- SIA_parliament_speaker_desc: "§YSpeaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\n§YCurrent Speaker§!: Chuan Leekpai\n\n§YSpeaker Political Party§!: £GFX_democrat §CDemocrat Party§!"
+ SIA_parliament_speaker_desc: "§YThe Speaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\n§YCurrent Speaker§!: Chuan Leekpai\n\n§YSpeaker Political Party§!: £GFX_democrat §CDemocrat Party§!"
 
  SIA_parliament_gov_support_loc: "Total §PGovernment§! support: §P[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
  SIA_parliament_opp_support_loc: "Total §ROpposition§! support: §R[?SIA_opp_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
@@ -1420,23 +1499,23 @@
  SIA_parliament_desc: "[SIA_party_description]"
  SIA_parliament_detail_pprp_header1: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP\n\n\n\n\n\n\n\n§YParty Leader:§! Uttama Savanayana"
  SIA_parliament_detail_pprp_header2: "£GFX_palang_pracharath §YPalang Pracharath Party§! (Phak Palang Pracharath)\n\n\n\n\n\n£GFX_SIA_intro_PPRP1\n\n\n\n\n\n\n\n§YParty Leader:§! General Prawit Wongsuwan"
- SIA_parliament_detail_pprp_desc: "[PPRPPartyStatus]\n\n§YPalang Pracharath Party§! is a Thai political party founded in 2018 to support the continuation of General Prayut Chan-o-cha's tenure as prime minister following the planned 2019 elections. Widely regarded as the political arm of the military establishment, the party drew its core support from right wing voters, and supporters of the junta.\n\nThe party's core platform focuses on §Ynational stability, economic development under strong leadership, and continuity§! of the policies enacted under the NCPO. Despite criticism that the party served as a political vehicle for the junta, Palang Pracharath emerged as the largest party by popular vote in the 2019 election and formed a coalition government that enabled Prayut Chan-o-cha to continue his premiership.."
+ SIA_parliament_detail_pprp_desc: "[PPRPPartyStatus]\n\n§YThe Palang Pracharath Party§! is a Thai political party founded in 2018 to support the continuation of General Prayut Chan-o-cha's tenure as prime minister following the planned 2019 elections. Widely regarded as the political arm of the military establishment, the party drew its core support from right wing voters, and supporters of the junta.\n\nThe party's core platform focuses on §Ynational stability, economic development under strong leadership, and continuity§! of the policies enacted under the NCPO. Despite criticism that the party served as a political vehicle for the junta, Palang Pracharath emerged as the largest party by popular vote in the 2019 election and formed a coalition government that enabled Prayut Chan-o-cha to continue his premiership.."
  
- SIA_parliament_detail_ptp_desc: "£GFX_phua_thai §YPheu Thai Party§! (Phak Pheu Thai)\n\n\n\n\n\n£GFX_SIA_intro_PTP\n\n\n\n\n\n\n\n§YParty Leader:§! Sompong Amornvivat\n\n§YPheu Thai Party§! was founded in 2007 and is considered the third incarnation of the Thai Rak Thai Party, a political party founded by former prime minister §YThaksin Shinawatra§! in 1998. Following the dissolution of its predecessor parties by court rulings, Pheu Thai emerged as the main political base of the Shinawatra family. The party is generally associated with §Ypopulist and liberal conservative policies§!, with strong support from rural voters in northern and northeastern Thailand. \n\nPheu Thai has remained one of the most influential political parties in contemporary Thailand and has won multiple general elections despite repeated political crises, military coups, and judicial interventions against parties linked to the Shinawatra family."
+ SIA_parliament_detail_ptp_desc: "£GFX_phua_thai §YPheu Thai Party§! (Phak Pheu Thai)\n\n\n\n\n\n£GFX_SIA_intro_PTP\n\n\n\n\n\n\n\n§YParty Leader:§! Sompong Amornvivat\n\n§YThe Pheu Thai Party§! was founded in 2007 and is considered the third incarnation of the Thai Rak Thai Party, a political party founded by former prime minister §YThaksin Shinawatra§! in 1998. Following the dissolution of its predecessor parties by court rulings, Pheu Thai emerged as the main political base of the Shinawatra family. The party is generally associated with §Ypopulist and liberal conservative policies§!, with strong support from rural voters in northern and northeastern Thailand. \n\nPheu Thai has remained one of the most influential political parties in contemporary Thailand and has won multiple general elections despite repeated political crises, military coups, and judicial interventions against parties linked to the Shinawatra family."
 
- SIA_parliament_detail_ffp_desc: "£GFX_orange_party_1 §YFuture Forward Party§! (Phak Anakhot Mai)\n\n\n\n\n\n£GFX_SIA_intro_FFP\n\n\n\n\n\n\n\n§YParty Leader:§! Thanathorn Juangroongruangkit\n\n§YFuture Forward Party§! is a left wing Thai political party founded by §YThanathorn Juangroongruangkit§!, vice president of Thai Summit Group, Thailand's largest auto parts manufacturer, and §YPiyabutr Saengkanokkul§!, a Marxist legal scholar. The party has strong support among liberals, progressives, and leftists especially Thai youth who have grown disillusioned with the right-wing establishment.\n\nThe party campaigns on §Ydemocratic reform, opposition to military intervention in politics, the development of a welfare state to reduce social inequality, progressive social values, and the abolition of lèse-majesté laws (Section 112).§!\n\n§RThe party is currently facing charges before the Constitutional Court over alleged violations of election laws, including accusations that it sought to undermine the monarchy and breached regulations concerning political donations. If found guilty, the party could face dissolution. Supporters of the party argue that the case is politically motivated and intended by the government to suppress the opposition.§!"
+ SIA_parliament_detail_ffp_desc: "£GFX_orange_party_1 §YFuture Forward Party§! (Phak Anakhot Mai)\n\n\n\n\n\n£GFX_SIA_intro_FFP\n\n\n\n\n\n\n\n§YParty Leader:§! Thanathorn Juangroongruangkit\n\n§YThe Future Forward Party§! is a left wing Thai political party founded by §YThanathorn Juangroongruangkit§!, vice president of Thai Summit Group, Thailand's largest auto parts manufacturer, and §YPiyabutr Saengkanokkul§!, a Marxist legal scholar. The party has strong support among liberals, progressives, and leftists especially Thai youth who have grown disillusioned with the right-wing establishment.\n\nThe party campaigns on §Ydemocratic reform, opposition to military intervention in politics, the development of a welfare state to reduce social inequality, progressive social values, and the abolition of lèse-majesté laws (Section 112).§!\n\n§RThe party is currently facing charges before the Constitutional Court over alleged violations of election laws, including accusations that it sought to undermine the monarchy and breached regulations concerning political donations. If found guilty, the party could face dissolution. Supporters of the party argue that the case is politically motivated and intended by the government to suppress the opposition.§!"
  SIA_parliament_detail_mfp_desc: "£GFX_orange_party_2 §YMove Forward Party§! \n\n\n\n\n\n£GFX_SIA_intro_MFP\n\n\n\n\n\n\n\n§YParty Leader:§! Pita Limjaroenrat\n\nThe Move Forward Party (MFP) is the successor to the progressive Future Forward Party following its dissolution by the Constitutional Court in 2020. Originally founded in 2014 as the Ruam Pattana Chart Thai Party, it was renamed the Move Forward Party on 21 February 2020 and became the de facto continuation of Future Forward.\n\nFollowing Future Forward's dissolution, the group elected Pita as its party leader and Viroj Lakkhanaadisorn as its spokesperson, while also unveiling a new logo closely resembling that of Future Forward.\n\nThe party largely inherited Future Forward's ideology, advocating democratic reforms, opposition to military influence in politics, the expansion of the welfare state to reduce social inequality, progressive social policies, and reform of Thailand's lèse-majesté law (Section 112). The party quickly emerged as the primary opposition force representing the former Future Forward movement and its supporters."
  SIA_parliament_detail_pp_desc: "£GFX_orange_party_2 §YPeople's Party§! \n\n\n\n\n\n£GFX_SIA_intro_MFP\n\n\n\n\n\n\n\n§YParty Leader:§! Natthaphong Ruengpanyawut\n\nWe are not dead, 3rd times the charm."
 
  SIA_parliament_detail_dp_desc: "£GFX_democrat §YDemocrat Party§! (Phak Prachathipat)\n\n\n\n\n\n£GFX_SIA_intro_DP\n\n\n\n\n\n\n\n§YParty Leader:§! Jurin Laksanawisit\n\n§YThe Democrat Party§! is Thailand's oldest active political party, founded in 1946. §YIt has long positioned itself as a defender of conservatism, constitutional monarchism, and liberal democratic values.§! Historically, the party has drawn much of its electoral support from southern Thailand and Bangkok. Several of Thailand's prime ministers have emerged from the party, including §YKhuang Aphaiwong, Seni Pramoj, Chuan Leekpai,§! and §YAbhisit Vejjajiva.§! \n\nDespite its historical prominence, the party's influence has declined significantly in recent elections, especially in Bangkok, where its support base has rapidly eroded.\n\nIn the 2019 general election, the party won 53 seats in parliament and later joined the Palang Pracharath-led coalition government.\nThe decision proved controversial and cost the party support among many of its more liberal and anti-junta supporters."
 
- SIA_parliament_detail_bjt_desc: "£GFX_bhumjaithai §YBhumjaithai Party§! (Phak Phumchai Thai)\n\n\n\n\n\n£GFX_SIA_intro_BJT\n\n\n\n\n\n\n\n§YParty Leader:§! Anutin Charnvirakul\n\n§YBhumjaithai Party§! is a Thai political party founded in 2008. Under the leadership of §YAnutin Charnvirakul§!, the party has carved out a niche focusing on §Ypragmatic populism, rural development, and public health reform§!.\n\nNotably, Bhumjaithai became the first party in Thailand to champion §Gthe legalization of cannabis for medical and economic purposes.§! The party joined the government coalition after the 2019 election, securing key cabinet positions including the Ministry of Public Health."
+ SIA_parliament_detail_bjt_desc: "£GFX_bhumjaithai §YBhumjaithai Party§! (Phak Phumchai Thai)\n\n\n\n\n\n£GFX_SIA_intro_BJT\n\n\n\n\n\n\n\n§YParty Leader:§! Anutin Charnvirakul\n\n§YThe Bhumjaithai Party§! is a Thai political party founded in 2008. Under the leadership of §YAnutin Charnvirakul§!, the party has carved out a niche focusing on §Ypragmatic populism, rural development, and public health reform§!.\n\nNotably, Bhumjaithai became the first party in Thailand to champion §Gthe legalization of cannabis for medical and economic purposes.§! The party joined the government coalition after the 2019 election, securing key cabinet positions including the Ministry of Public Health."
 
- SIA_parliament_detail_tlp_desc: "£GFX_thai_liberal_party §YThai Liberal Party§! (Phak Seri Ruam Thai)\n\n\n\n\n\n£GFX_SIA_intro_TLP\n\n\n\n\n\n\n\n§YParty Leader:§! Sereepisuth Temeeyaves\n\n§YThai Liberal Party§! is a minor Thai political party led by former national police chief §YSereepisuth Temeeyaves§!. The party positions itself as a §Yliberal, reformist party§! advocating for police reform, anti-corruption measures, and civil liberties.\n\nIn the 2019 election, the party won 10 seats and aligned with the opposition bloc."
+ SIA_parliament_detail_tlp_desc: "£GFX_thai_liberal_party §YThai Liberal Party§! (Phak Seri Ruam Thai)\n\n\n\n\n\n£GFX_SIA_intro_TLP\n\n\n\n\n\n\n\n§YParty Leader:§! Sereepisuth Temeeyaves\n\n§YThe Thai Liberal Party§! is a minor Thai political party led by former national police chief §YSereepisuth Temeeyaves§!. The party positions itself as a §Yliberal, reformist party§! advocating for police reform, anti-corruption measures, and civil liberties.\n\nIn the 2019 election, the party won 10 seats and aligned with the opposition bloc."
  
- SIA_parliament_detail_ctpp_desc: "£GFX_chartthaipattana §YChart Thai Pattana Party§! (Phak Chart Thai Pattana)\n\n\n\n\n\n£GFX_SIA_intro_CTPP\n\n\n\n\n\n\n\n§YParty Leader:§! Kanchana Silpa-archa\n\n§YChart Thai Pattana Party§! is a Thai political party that emerged from the dissolution of the original Chart Thai Party. Led by the Silpa-archa political family, the party maintains a §Yconservative, business-oriented platform§! with strong support in central Thailand.\n\nThe party joined the government coalition after the 2019 election, contributing 10 seats to the ruling majority."
+ SIA_parliament_detail_ctpp_desc: "£GFX_chartthaipattana §YChart Thai Pattana Party§! (Phak Chart Thai Pattana)\n\n\n\n\n\n£GFX_SIA_intro_CTPP\n\n\n\n\n\n\n\n§YParty Leader:§! Kanchana Silpa-archa\n\n§YThe Chart Thai Pattana Party§! is a Thai political party that emerged from the dissolution of the original Chart Thai Party. Led by the Silpa-archa political family, the party maintains a §Yconservative, business-oriented platform§! with strong support in central Thailand.\n\nThe party joined the government coalition after the 2019 election, contributing 10 seats to the ruling majority."
  
- SIA_parliament_detail_pcc_desc: "£GFX_prachachat §YPrachachat Party§! (Phak Prachachat)\n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Wan Muhamad Noor Matha\n\n§YPrachachat Party§! is a Thai political party founded in 2018, primarily representing the §YMuslim-majority provinces in southern Thailand§!. Led by veteran politician §YWan Muhamad Noor Matha§!, the party focuses on issues affecting the southern border provinces near Malaysia, including §Ypeace and reconciliation, Muslim cultural rights, decentralization, and economic development.§!.\n\nIn the 2019 election, the party won 7 seats, all from southern constituencies, and aligned with the opposition."
+ SIA_parliament_detail_pcc_desc: "£GFX_prachachat §YPrachachat Party§! (Phak Prachachat)\n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Wan Muhamad Noor Matha\n\n§YThe Prachachat Party§! is a Thai political party founded in 2018, primarily representing the §YMuslim-majority provinces in southern Thailand§!. Led by veteran politician §YWan Muhamad Noor Matha§!, the party focuses on issues affecting the southern border provinces near Malaysia, including §Ypeace and reconciliation, Muslim cultural rights, decentralization, and economic development.§!.\n\nIn the 2019 election, the party won 7 seats, all from southern constituencies, and aligned with the opposition."
  
  SIA_parliament_detail_utn_desc: "£GFX_united_thai_nation §YUnited Thai Nation Party§! (Pak Ruam Thai Sang Chart) \n\n\n\n\n\n£GFX_SIA_intro_PCC\n\n\n\n\n\n\n\n§YParty Leader:§! Prayut Chan-O-Cha\n\n§YThe United Thai Nation Party§! (Ruam Thai Sang Chart) was founded on March 31, 2021, by Seksakon Atthawong, a former deputy minister to Prime Minister Prayut Chan-o-cha. The party takes its name from a phrase originally coined by General Prayut.\n\nIn late 2022, ahead of the 2023 general election,§Y a rift emerged between General Prayut Chan-o-cha and General Prawit Wongsuwan§!, leader of the Palang Pracharath Party. As a result of the conflict, the Palang Pracharath Party dropped Prayut from its list of prime ministerial candidates and instead nominated Prawit as its candidate for the office. Consequently, Prayut announced his decision to join the United Thai Nation Party and seek its nomination for another term as Prime Minister. \n\nThe party's spokesperson, Akkradech Wongpitakroj, has stated that the party espouses "modern conservatism." Ideologically, the party has been described by its left-wing opponents as §Yultra-conservative, pro-military, monarchist, and far-right§!."
  
@@ -1841,17 +1920,58 @@
  
  SIA_military_reformation: "Royal Thai Armed Forces"
  SIA_military_reformation_desc: "\n\n\n\n\n£GFX_SIA_royal_thai_army\n\n\n\n\n\n\n\nWith the end of the previous world order and an ever increasing §Yrise of tensions in Asia§!, the necessity of the armed forces grows stronger.\n\nHowever, its current form is severely lacking and a program of modernization, restructuring, and brand new projects can bring about our military to stand toe to toe against anyone who dares to invade us.\n\n§GMilitary Resources§! are stockpiled funding that we are able to §Ginvest§! on §Yequipment, research, reform, and retrofitting of our armed forces§!.\n\n§RCombat Readiness§! is the effectiveness of our §Yarmed forces§! when at war. §RWe will face severe reprecussions if we are at war with low readiness§!.\n\n§YPublic Perception§! is the mood of the overall population of our country and how they currently view the armed forces in their eyes. High public perception will give us more leeway to enact actions that involves the military whether that's §Yincrease conscription, more investment on MICs or conversion of civilian factories to military factories§!.\n\n£GFX_royal_thai_armed_forces §GMilitary Resources§!: [?SIA_military_resource_var]\n                                                   §RCombat Readiness§!: §L[?SIA_combat_readiness_var|2%]§!/100%\n                                                   §gEffects§!:\n                                                   $war_support_modifier$: §Y[?SIA_military_mech_war_support_factor_var|-+2%]§!\n£GFX_SIA_combat_readiness  $MODIFIERS_ARMY_ATTACK_FACTOR$: §Y[?SIA_military_mech_army_attack_factor_var|-+2%]§!\n                                                   $MODIFIERS_ARMY_DEFENCE_FACTOR$: §Y[?SIA_military_mech_army_defence_factor_var|-+2%]§!\n                                                   $battalion_upkeep_factor$: §Y[?SIA_military_mech_battalion_upkeep_factor_var|+-2%]§!\n\n---------------------------------------------------------------------------------------------\n\n§YPublic Perception§!: §L[?SIA_public_perception_var|2%]§!/100%\n§gEffects§!:\n$MODIFIER_STABILITY_FACTOR$: §Y[?SIA_military_mech_stability_factor_var|-+2%]§!                                    £GFX_SIA_public_perception \n$MODIFIER_POLITICAL_POWER_GAIN$: §Y[?SIA_military_mech_political_power_gain_var|-+2]§!\n$MODIFIER_CONSCRIPTION_TOTAL_FACTOR$: §Y[?SIA_military_mech_conscription_factor_var|-+1%]§!"
- SIA_military_resource_change_tt: "§GMilitary Resources§! will change by [?SIA_military_resource_var_temp|-+0]"
+ SIA_military_resource_change_tt: "£GFX_royal_thai_armed_forces §GMilitary Resources§! will change by [?SIA_military_resource_var_temp|-+0]"
  SIA_combat_readiness_change_tt: "§RCombat Readiness§! will change by [?SIA_combat_readiness_var_temp|-+2%]"
- SIA_public_perception_change_tt: "§YPublic Perception§! will change by [?SIA_public_perception_var_temp|-+2%]"       
- SIA_military_resources_decisions: "                          §GMILITARY RESOURCES§! §YDECISIONS§!             "
+ SIA_public_perception_change_tt: "§YPublic Perception§! will change by [?SIA_public_perception_var_temp|-+2%]"      
+ SIA_readiness_falters: "Readiness Falters"
+ SIA_perception_decreases: "Perception Decreases"
+ SIA_military_resources_available_tt: "Has at least §Y1§! £GFX_royal_thai_armed_forces §GMilitary Resources§!"
+ SIA_military_resources_available_2_tt: "Has at least §Y2§! £GFX_royal_thai_armed_forces §GMilitary Resources§!"
+ SIA_military_resources_decisions: "                       £GFX_royal_thai_armed_forces §GMILITARY RESOURCES§! §YDECISIONS§!             "
+ SIA_invest_funding: "Invest Funding"
+ SIA_promote_pro_military_policies: "Promote Pro-Military Policies"
+ SIA_slightly_invest_on_the_military: "Slightly Invest On The Military"
+ SIA_acquire_funding_from_the_populace: "Acquire Funding From The Populace"
  SIA_combat_readiness_decisions: "                          §RCOMBAT READINESS§! §YDECISIONS§!             "
+ SIA_conduct_drills: "Conduct Land Drills"
+ SIA_conduct_naval_drills: "Conduct Naval Drills"
+ SIA_conduct_air_drills: "Conduct Aerial Drills"
+ SIA_conduct_land_wargames: "Conduct Land Wargames"
+ SIA_conduct_naval_wargames: "Conduct Naval Wargames"
+ SIA_revise_outdated_tactics: "Revise Outdated Tactics"
+ SIA_update_naval_tactics: "Update Naval Tactics"
+ SIA_heavily_invest_on_the_military_industry: "Heavily Invest On The Military Industry"
+ SIA_heavily_invest_on_the_naval_industry: "Heavily Invest On The Naval Industry"
+ SIA_purchase_foreign_equipment: "Purchase Foreign Equipment"
+ SIA_tighten_standards: "Tighten Standards"
+ SIA_modernize_rotc_program: "Modernize ROTC Program"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  SIA_public_perception_decisions: "                         §YPUBLIC PERCEPTION DECISIONS§!             "
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  SIA_utn_party_mech: "£GFX_united_thai_nation UTN Party Machine"
  SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER]\n\n" #------------------------------------------\n§YFaction Influences§!\n\n§gHardliners§!\n§YInfluence§! Effect\n\n§BConservatives§!\n§YInfluence§! Effect\n   Stability: 0120414993\n  £GFX_palang_pracharath §PPPRP§!:\n   Pol power gain: 140141\n\n§OLoyalists§!\n§YInfluence§! Effect
  SIA_utn_banner_prayut: "£GFX_SIA_utn_party_mech_prayut\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §BUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nPast those loud praises for Prayut is the intricate political scheming in the background, within those closed doors will decide how the UTN will become and whether or not §Ran ambitious figure§! tries to secure control over the party for themselves.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
- SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §BUTN§! as the party remains divided on who to support for the future.\n\nOn the left side is §YPirapan Salirathavibhaga§!, the natural successor of Prayut with experience as Deputy PM to his belt. With his Technocratic vision, he aims to continue and expand the renewable program initiated by Prayut.\n\nOn the other side is §YSuchart Chomklin§!, the strongman of Chonburi and a dealmaker who has solidified his control over the eastern provinces of Thailand. He is known to be good at handling internal party affairs and able to whip the party into shape.\n\nWith a §Gvictory§! over @CAM §1Cambodia§! to his name, will §YPirapan§! stop his §Ochallenger§! or will his party §Rthrow him down under§! for the next general elections?\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §BUTN§! as the party remains divided on who to support for the future.\n\nOn the left side is §YPirapan Salirathavibhaga§!, the natural successor of Prayut with experience as Deputy PM to his belt. With his Technocratic vision, he aims to continue and expand the renewable program initiated by Prayut.\n\nOn the other side is §YSuchart Chomklin§!, the strongman of Chonburi and a dealmaker who has solidified his control over the eastern provinces of Thailand. He is known to be good at handling internal party affairs and able to whip the party into shape.\n\nWith a §Gvictory§! over @CAM §PCambodia§! to his name, will §YPirapan§! stop his §Ochallenger§! or will his party §Rthrow him down under§! for the next general elections?\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
  SIA_utn_banner_pirapan: "£GFX_SIA_utn_party_mech_pirapan\n\n\n\n\n\n\n\nFresh from §YGeneral Prayut's§! stepping down as §YPrime Minister§! in 2025, the £GFX_united_thai_nation §BUTN§! has followed the will of §YPrayut§! and has chosen §BPirapan Salirathavibhaga§! as the next Prime Minister.\n\nNow, §BPirapan§! must §Gearn the trust§! and §Gsupport§! from within the party if he ever wants to win the §Ynext elections§!"
  SIA_utn_banner_pirapan2: "£GFX_SIA_party_mech_pirapan2\n\n\n\n\n\n\n\nAfter winning the §Y2027 Elections§!, §BPirapan§! has managed to rally the £GFX_united_thai_nation §BUTN§! behind him as the designated successor."
  SIA_utn_banner_suchat: "£GFX_SIA_utn_party_mech_suchat\n\n\n\n\n\n\n\nIt wasn't §RPirapan§! who came out on top but instead it was §BSuchart Chomklin§!. After dealing with internal opposition, Suchart now leads the £GFX_united_thai_nation §BUTN§! as the §Y2027 Elections§! draws near."
@@ -1861,8 +1981,8 @@
  SIA_enforce_party_unity: "Enforce Party Unity"
  SIA_champion_conservative_values: "Champion Conservative Values"
  SIA_attract_foreign_workers: "Attract Foreign Workers"
- 
- 
+ SIA_bhumjaithai_agenda: "£GFX_bhumjaithai §1BJT§!: Expand Welfare Programs"
+ SIA_pprp_agenda: "£GFX_palang_pracharath §BPPRP§!: Strengthen Conservative Traditions"
  
  
  
@@ -1889,13 +2009,13 @@
  SIA_forpol_int_text: "§WCountry Interaction§!"
  SIA_forpol_ali_text: "§YFaction§! §RAlign§!ment"
  SIA_forpol_desc_text: "The §Rfall§! of the §CAmerican Hegemon§! has left §YSoutheast Asia§! into a §Rprecarious state of alignment.§!\n\nAs tensions grow between §WJapan§! and §RChina§!, there is an increasing certainty that a §YGreat Asian War§! is coming.\n\nWe must §Ychoose our cards§! right and make sure our direct neighbors are §Galigned to our side§! lest we suffer later."
- SIA_forpol_BRM_tt: "§Y[BRM.GetNameWithFlag]§!"
- SIA_forpol_CAM_tt: "§Y[CAM.GetNameWithFlag]§!"
- SIA_forpol_LAO_tt: "§Y[LAO.GetNameWithFlag]§!"
- SIA_forpol_VIN_tt: "§Y[VIN.GetNameWithFlag]§!"
- SIA_forpol_SIA_tt: "§Y[SIA.GetNameWithFlag]§!"
- SIA_forpol_MAL_tt: "§Y[MAL.GetNameWithFlag]§!"
- SIA_forpol_INS_tt: "§Y[INS.GetNameWithFlag]§!"
+ SIA_forpol_BRM_tt: "§Y[BRM.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_BRM_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_BRM_var|%2]§!"
+ SIA_forpol_CAM_tt: "§Y[CAM.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_CAM_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_CAM_var|%2]§!"
+ SIA_forpol_LAO_tt: "§Y[LAO.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_LAO_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_LAO_var|%2]§!"
+ SIA_forpol_VIN_tt: "§Y[VIN.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_VIN_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_VIN_var|%2]§!"
+ SIA_forpol_SIA_tt: "§Y[SIA.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_SIA_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_SIA_var|%2]§!"
+ SIA_forpol_MAL_tt: "§Y[MAL.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_MAL_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_MAL_var|%2]§!"
+ SIA_forpol_INS_tt: "§Y[INS.GetNameWithFlag]§!\n---------------------\nFaction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_INS_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_INS_var|%2]§!"
  SIA_forpol_PRC_tt: "§Y[PRC.GetNameWithFlag]§! - §READI Leader§!"
  
  SIA_forpol_BRM_alignment_tt: "§Y[BRM.GetNameWithFlag]§! - [SIA_faf_brm_tooltip]"
@@ -1918,13 +2038,31 @@
  SIA_forpol_neighbor_text: "§YBorder Security§!"
  SIA_forpol_neighbor_status: "[LAO.GetFlag]: [SIA_faf_lao_tooltip]\n[CAM.GetFlag]: [SIA_faf_cam_tooltip]\n[MAL.GetFlag]: [SIA_faf_mal_tooltip]\n[BRM.GetFlag]: [SIA_faf_brm_tooltip]"
  
+ SIA_forpol_selected_nation: "§YSelected Nation§!: §Y[?SIA_faf_nation.GetNameWithFlag]§!"
+ SIA_apply_for_eadi_membership: "Apply for @PRC §READI§! Membership"
+ SIA_apply_for_eadi_membership_trigger: "@PRC §READI§! §YInfluence§! must be §Ggreater§! than §Y70%§!"
+ SIA_apply_for_pdto_membership: "Apply for @JAP §WPDTO§! Membership"
+ SIA_apply_for_pdto_membership_trigger: "@JAP §WPDTO§! §YInfluence§! must be §Ggreater§! than §Y70%§!"
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
  SIA_cambodia_war_category_desc: "\n\n\n\n\n£GFX_SIA_thai_cambodia_war_banner\n\n\n\n\n\n\n\nThailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
  SIA_cambodia_war_phase_1: "§OBorder Skirmishes§!"
  SIA_cambodia_war_phase_2: "§GMediation§!\n\n@JAP Japanese §gLean§!: [?SIA_thai_cambodia_jap_lean|%0]\n@PRC §RChinese§! §gLean§!: [?SIA_thai_cambodia_prc_lean|%0]"
  SIA_cambodia_war_phase_3: "§RActive Conflict§!\n\nFollowing renewed fighting along the disputed border, both sides have ceased negotiations and entered into an active conflict, with both Tokyo and Beijing calling for an end to the fighting. The situation has galvanized nationalist sentiment throughout Bangkok, placing pressure on the government to secure a decisive victory.\n\nVictory must be achieved before Tokyo and Beijing intervene, §Rlest all of Thailand's sacrifices were for nothing.§!\n\n-------------------------------------------------------------------------------------------\n\n--§YSTATUS OF THE WAR§!--\n\n[Bangkok_status]\n\n[PhnomPenh_status]\n\n[Operation_status]\n\nEnding Outcomes\n§7Thailand Victory§!: Complete occupation of §PCambodia§!\n§LStalemate§!: Neither §7Thailand§! nor §PCambodia§! made substantive gain.\n§PCambodia Victory§!: Forced negotiation with §7Thailand§!\n"
-
+ SIA_situation_escalates: "The Situation Escalates"
+ SIA_mediation_settles_in: "Mediation Settles In"
+ SIA_the_war_turns_into_a_slog: "The War Turns Into A Slog"
+ SIA_cambodia_demonstrates_their_case: "Cambodia Demonstrates Their Case"
+ SIA_increase_military_alertness: "Increase Military Alertness"
+ SIA_close_the_border: "Close The Border"
+ SIA_exert_diplomatic_efforts: "Exert Diplomatic Efforts"
+ SIA_order_restraint_from_the_military: "Order Restraint From The Military"
+ SIA_send_out_diplomats: "Send Out Diplomats"
+ SIA_appeal_our_case: "Appeal Our Case"
+ SIA_persuade_japan: "Persuade Japan"
+ SIA_persuade_china: "Persuade China"
+ 
+ 
  Bangkok_SIA: "§GBangkok§! is controlled by @SIA §7Kingdom of Thailand§!"
  Bangkok_CAM: "§GBangkok§! is §Runder siege§!\nThe cabinet is negotiating §Rpeace settlements§! with @CAM §PKingdom of Cambodia§!"
  PhnomPenh_SIA: "§PPhnom Penh§! is controlled by @SIA §7Kingdom of Thailand§!"
@@ -1932,13 +2070,13 @@
  Operation_inactive: "Operation §YSam Phraya§!: §gINACTIVE§!"
  operation_active: "Operation §YSam Phraya§!: §RACTIVE§!\n§LFollowing effects will be applied§!\n$MODIFIER_ARMY_SPEED_FACTOR$: §G7.5%§!\n£attack_texticon Attack bonus against @CAM §PCambodia§!: §G15%§!\n£breakthrough_texticon Breakthrough bonus against @CAM §PCambodia§!: §G10%§!"
  
- SIA_change_thai_cambodia_tensions_tt: "§YThai-Cambodian§! §RTensions§! will change by [?SIA_thai_cambodia_tensions_temp|+-0%]"
+ SIA_change_thai_cambodia_tensions_tt: "§YThai-Cambodian§! §RTensions§! will change by [?SIA_thai_cambodia_tensions_temp|+-1%]"
  
- SIA_change_jap_lean_cam_tt: "@JAP Japanese §gLean§! will drift closer to §Y[CAM.GetNameWithFlag]§! by §R[?lean_change|%]§!"
- SIA_change_jap_lean_sia_tt: "@JAP Japanese §gLean§! will drift closer to §Y[SIA.GetNameWithFlag]§! by §G[?lean_change|%]§!"
+ SIA_change_jap_lean_cam_tt: "@JAP Japanese §gLean§! will drift closer to §Y[CAM.GetNameWithFlag]§! by §R[?lean_change|%1]§!"
+ SIA_change_jap_lean_sia_tt: "@JAP Japanese §gLean§! will drift closer to §Y[SIA.GetNameWithFlag]§! by §G[?lean_change|%1]§!"
  
- SIA_change_prc_lean_cam_tt: "@PRC §RChinese§! §gLean§! will drift closer to §Y[CAM.GetNameWithFlag]§! by §R[?lean_change|%]§!"
- SIA_change_prc_lean_sia_tt: "@PRC §RChinese§! §gLean§! will drift closer to §Y[SIA.GetNameWithFlag]§! by §G[?lean_change|%]§!"
+ SIA_change_prc_lean_cam_tt: "@PRC §RChinese§! §gLean§! will drift closer to §Y[CAM.GetNameWithFlag]§! by §R[?lean_change|%1]§!"
+ SIA_change_prc_lean_sia_tt: "@PRC §RChinese§! §gLean§! will drift closer to §Y[SIA.GetNameWithFlag]§! by §G[?lean_change|%1]§!"
  
  SIA_mediation_china_will_side_with_thailand: "@PRC §RChina§! will §Yside in favor§! of §L@SIA Thailand§!"
  SIA_mediation_japan_will_side_with_thailand: "@JAP Japan will §Yside in favor§! of §L@SIA Thailand§!"
@@ -2055,7 +2193,10 @@
  #Decision cost tooltip for this mod that uses
  dx_more_than_25B_and_15pp: "£dx  §H25B§! £pol_power  §H15§!"
  dx_more_than_25B_and_15pp_blocked: "£dx  §R25B§! £pol_power  §R15§!"
- 
+ more_than_1_military_resource: "£GFX_royal_thai_armed_forces  §H1§!"
+ more_than_1_military_resource_blocked: "£GFX_royal_thai_armed_forces  §R1§!"
+ more_than_2_military_resource: "£GFX_royal_thai_armed_forces  §H2§!"
+ more_than_2_military_resource_blocked: "£GFX_royal_thai_armed_forces  §R2§!"
  #Cosmetic Names
  CAM_thai_occupation_government: "Thai Occupational Authority of Cambodia"
  

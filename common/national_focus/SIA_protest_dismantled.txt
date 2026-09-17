@@ -146,6 +146,12 @@ focus_tree = {
 				target = PRC
 				modifier = SIA_diplomatic_efforts
 			}
+			PRC = {
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_diplomatic_efforts
+				}
+			}
 			set_temp_variable = {
 				var = global.PRC_influence_SIA_var_temp
 				value = 0.10
@@ -177,6 +183,12 @@ focus_tree = {
 			add_opinion_modifier = {
 				target = JAP
 				modifier = SIA_diplomatic_efforts
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = SIA
+					modifier = SIA_diplomatic_efforts
+				}
 			}
 			set_temp_variable = {
 				var = global.JAP_influence_SIA_var_temp
@@ -906,7 +918,7 @@ focus_tree = {
 					has_country_flag = SIA_ongoing_elections
 				}
 				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 2.5 }
+				set_temp_variable = { vote_change = 5 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
 			add_political_power = 50
@@ -998,7 +1010,7 @@ focus_tree = {
 					has_country_flag = SIA_ongoing_elections
 				}
 				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 3 }
+				set_temp_variable = { vote_change = 5 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
 			289 = {
@@ -1039,7 +1051,7 @@ focus_tree = {
 					has_country_flag = SIA_ongoing_elections
 				}
 				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 1.5 }
+				set_temp_variable = { vote_change = 4 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
 			
@@ -1092,11 +1104,11 @@ focus_tree = {
 					has_country_flag = SIA_ongoing_elections
 				}
 				set_temp_variable = { 1st_target = 11 }
-				set_temp_variable = { vote_change = 2 }
+				set_temp_variable = { vote_change = 4 }
 				set_temp_variable = { 2nd_target = 2 }
 				SIA_elections_targeted_vote_increase = yes
 				set_temp_variable = { 1st_target = 11 }
-				set_temp_variable = { vote_change = 2 }
+				set_temp_variable = { vote_change = 3 }
 				set_temp_variable = { 2nd_target = 3 }
 				SIA_elections_targeted_vote_increase = yes
 			}

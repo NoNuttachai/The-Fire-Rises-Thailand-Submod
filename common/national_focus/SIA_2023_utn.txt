@@ -901,6 +901,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = thai_prayut.14
+			custom_effect_tooltip = SIA_tug_of_war_pirapan_booster
 		}
 	}
 	focus = {
@@ -1670,8 +1671,7 @@ focus_tree = {
 		
 		relative_position_id = SIA_negotiating_with_the_pprp
 		prerequisite = { focus = SIA_negotiating_with_the_pprp }
-		prerequisite = { focus = SIA_discredit_the_opposition }
-		prerequisite = { focus = SIA_hold_the_conservative_fort }
+		prerequisite = { focus = SIA_discredit_the_opposition focus = SIA_hold_the_conservative_fort }
 		
 		completion_reward = {
 			custom_effect_tooltip = SIA_the_party_gathers_tt

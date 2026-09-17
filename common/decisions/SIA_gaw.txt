@@ -87,6 +87,14 @@ SIA_gaw_category = {
 			
 		}
 	}
+	SIA_occupation_laos = {
+		visible = {
+			is_puppet_of = SIA
+		}
+		complete_effect = {
+			
+		}
+	}
 	SIA_operations_decisions = {
 		icon = GFX_decision_SIA_decision_head
 		available = {

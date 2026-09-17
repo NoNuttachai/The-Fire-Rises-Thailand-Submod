@@ -7,7 +7,10 @@ SIA_military_reformation = {
 		}
 		available = {
 			hidden_trigger = {
-				has_completed_focus = SIA_rally_around_the_flag
+				OR = {
+					has_completed_focus = SIA_rally_around_the_flag
+					check_variable = { SIA_combat_readiness_var < 0.3 }
+				}
 			}
 		}
 		visible = {
@@ -38,7 +41,10 @@ SIA_military_reformation = {
 		}
 		available = {
 			hidden_trigger = {
-				has_completed_focus = SIA_rally_around_the_flag
+				OR = {
+					has_completed_focus = SIA_rally_around_the_flag
+					check_variable = { SIA_public_perception_var < 0.3 }
+				}
 			}
 		}
 		visible = {
@@ -105,11 +111,106 @@ SIA_military_reformation = {
 		visible = {
 			
 		}
-		cost = 75
-		days_remove = 80
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 45
+			}
+		}
+		custom_cost_text = dx_more_than_45B
+		days_remove = 35
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -45
+			}
+			add_income = yes
+		}
 		remove_effect = {
 			set_temp_variable = { SIA_military_resource_var_temp = 2 }
 			SIA_mil_mech_resource_change = yes
+		}
+	}
+	SIA_promote_pro_military_policies = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 75
+		days_remove = 60
+		remove_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = 2 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = -0.1 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+	}
+	SIA_slightly_invest_on_the_military = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_25B
+		days_remove = 25
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = 1 }
+			SIA_mil_mech_resource_change = yes
+		}
+	}
+	SIA_acquire_funding_from_the_populace = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		cost = 50
+		days_remove = 25
+		complete_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = -0.075 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+		modifier = {
+			personal_value_factor = -0.1
+			stability_factor = -0.05
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = 1 }
+			SIA_mil_mech_resource_change = yes
+			add_stability = -0.025
 		}
 	}
 	SIA_combat_readiness_decisions = {
@@ -126,17 +227,184 @@ SIA_military_reformation = {
 		
 		allowed = {
 			tag = SIA
+			
 		}
 		available = {
 			
 		}
 		visible = {
+			has_completed_focus = SIA_praetorian_guard
+		}
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		custom_cost_text = 15cp_cost
+		days_remove = 30
+		days_re_enable = 50
+		modifier = {
+			experience_gain_army = 0.25
+			command_power_gain_mult = -0.5
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_conduct_naval_drills = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
 			
 		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SIA_the_royal_thai_navy
+		}
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		custom_cost_text = 15cp_cost
 		days_remove = 30
+		days_re_enable = 50
+		modifier = {
+			experience_gain_navy = 0.25
+			command_power_gain_mult = -0.5
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
 		remove_effect = {
-			set_temp_variable = { SIA_combat_readiness_var_temp = 0.025 }
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
 			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_conduct_air_drills = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+			
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SIA_bangkoks_sky
+		}
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		custom_cost_text = 15cp_cost
+		days_remove = 30
+		days_re_enable = 50
+		modifier = {
+			experience_gain_air = 0.25
+			command_power_gain_mult = -0.5
+		}
+		complete_effect = {
+			add_command_power = -15
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_conduct_land_wargames = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 0 }
+				tooltip = SIA_military_resources_available_tt
+			}
+		}
+		visible = {
+			has_completed_focus = SIA_unleash_our_brightest
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 0 }
+		}
+		custom_cost_text = more_than_1_military_resource
+		days_remove = 50
+		days_re_enable = 30
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -1 }
+			SIA_mil_mech_resource_change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
+			SIA_mil_mech_combat_readiness_change = yes
+			random_army_leader = {
+				limit = {
+					attack_skill_level < 7
+					defense_skill_level < 6
+				}
+				add_attack = 1
+				add_defense = 1
+			}
+			random_army_leader = {
+				limit = {
+					attack_skill_level < 7
+					defense_skill_level < 6
+				}
+				add_attack = 1
+				add_defense = 1
+			}
+		}
+	}
+	SIA_conduct_naval_wargames = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 0 }
+				tooltip = SIA_military_resources_available_tt
+			}
+		}
+		visible = {
+			has_completed_focus = SIA_enrich_its_presence
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 0 }
+		}
+		custom_cost_text = more_than_1_military_resource
+		days_remove = 50
+		days_re_enable = 30
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -1 }
+			SIA_mil_mech_resource_change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
+			SIA_mil_mech_combat_readiness_change = yes
+			random_navy_leader = {
+				limit = {
+					attack_skill_level < 7
+					defense_skill_level < 6
+				}
+				add_attack = 1
+				add_defense = 1
+			}
+			random_navy_leader = {
+				limit = {
+					attack_skill_level < 7
+					defense_skill_level < 6
+				}
+				add_attack = 1
+				add_defense = 1
+			}
 		}
 	}
 	SIA_revise_outdated_tactics = {
@@ -146,15 +414,205 @@ SIA_military_reformation = {
 			tag = SIA
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 0 }
+				tooltip = SIA_military_resources_available_tt
+			}
 		}
 		visible = {
-			
+			has_completed_focus = SIA_improve_officer_training
 		}
-		days_remove = 30
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 0 }
+		}
+		custom_cost_text = more_than_1_military_resource
+		days_remove = 60
+		days_re_enable = 50
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -1 }
+			SIA_mil_mech_resource_change = yes
+		}
 		remove_effect = {
-			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
 			SIA_mil_mech_combat_readiness_change = yes
+			random_army_leader = {
+				limit = {
+					logistics_skill_level < 7
+					planning_skill_level < 6
+				}
+				add_logistics = 1
+				add_planning = 1
+			}
+			random_army_leader = {
+				limit = {
+					logistics_skill_level < 7
+					planning_skill_level < 6
+				}
+				add_logistics = 1
+				add_planning = 1
+			}
+		}
+	}
+	SIA_update_naval_tactics = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 0 }
+				tooltip = SIA_military_resources_available_tt
+			}
+		}
+		visible = {
+			has_completed_focus = SIA_with_striking_efficiency
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 0 }
+		}
+		custom_cost_text = more_than_1_military_resource
+		days_remove = 60
+		days_re_enable = 50
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -1 }
+			SIA_mil_mech_resource_change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
+			SIA_mil_mech_combat_readiness_change = yes
+			random_navy_leader = {
+				
+				add_coordination = 1
+				add_maneuver = 1
+			}
+			random_navy_leader = {
+				
+				add_coordination = 1
+				add_maneuver = 1
+			}
+		}
+	}
+	SIA_heavily_invest_on_the_military_industry = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 1 }
+				tooltip = SIA_military_resources_available_2_tt
+			}
+		}
+		visible = {
+			has_completed_focus = SIA_weapons_of_war
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 1 }
+		}
+		custom_cost_text = more_than_2_military_resource
+		days_remove = 100
+		days_re_enable = 75
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -2 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = -0.1 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+		modifier = {
+			production_speed_arms_factory_factor = 0.3
+			production_speed_buildings_factor = -0.15
+			industrial_capacity_factory = 0.2
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.15 }
+			SIA_mil_mech_combat_readiness_change = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				var = military_development_var_temp
+				value = 0.075
+			}
+			add_military_development = yes
+		}
+	}
+	SIA_heavily_invest_on_the_naval_industry = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 1 }
+				tooltip = SIA_military_resources_available_2_tt
+			}
+		}
+		visible = {
+			has_completed_focus = SIA_enrich_its_presence
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 1 }
+		}
+		custom_cost_text = more_than_2_military_resource
+		days_remove = 100
+		days_re_enable = 75
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -2 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
+			SIA_mil_mech_public_perception_change = yes
+		}
+		modifier = {
+			production_speed_dockyard_factor = 0.3
+			production_speed_buildings_factor = -0.1
+			industrial_capacity_dockyard = 0.25
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.15 }
+			SIA_mil_mech_combat_readiness_change = yes
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = {
+				var = military_development_var_temp
+				value = 0.075
+			}
+			add_military_development = yes
 		}
 	}
 	SIA_purchase_foreign_equipment = {
@@ -167,11 +625,20 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_foreign_arms
 		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+			has_political_power > 15
+		}
+		custom_cost_text = dx_more_than_25B_and_15pp
 		days_remove = 30
 		remove_effect = {
-			set_temp_variable = { SIA_combat_readiness_var_temp = 0.03 }
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
 			SIA_mil_mech_combat_readiness_change = yes
 		}
 	}
@@ -182,15 +649,43 @@ SIA_military_reformation = {
 			tag = SIA
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 0 }
+				tooltip = SIA_military_resources_available_tt
+			}
 		}
 		visible = {
-			
+			has_completed_focus = SIA_unleash_our_brightest
 		}
-		days_remove = 30
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 0 }
+		}
+		custom_cost_text = more_than_1_military_resource
+		days_remove = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -1 }
+			SIA_mil_mech_resource_change = yes
+		}
 		remove_effect = {
-			set_temp_variable = { SIA_combat_readiness_var_temp = 0.025 }
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.075 }
 			SIA_mil_mech_combat_readiness_change = yes
+			set_temp_variable = {
+				var = military_development_var_temp
+				value = 0.05
+			}
+			add_military_development = yes
+			increase_training = yes
+			add_to_variable = { SIA_royal_army_of_thailand_army_morale_factor_var = 0.075 }
+			add_to_variable = { SIA_royal_army_of_thailand_army_org_factor_var = 0.05 }
+			add_to_variable = { SIA_royal_army_of_thailand_military_development_monthly = 0.01 }
+			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_royal_army_of_thailand_dummy
+					add_idea = SIA_royal_army_of_thailand_tighten_standards
+				}
+			}
 		}
 	}
 	SIA_modernize_rotc_program = {
@@ -200,15 +695,44 @@ SIA_military_reformation = {
 			tag = SIA
 		}
 		available = {
-			
+			custom_trigger_tooltip = {
+				check_variable = { SIA_military_resource_var > 0 }
+				tooltip = SIA_military_resources_available_tt
+			}
 		}
 		visible = {
-			
+			has_completed_focus = SIA_one_of_many
 		}
-		days_remove = 30
+		custom_cost_trigger = {
+			check_variable = { SIA_military_resource_var > 0 }
+		}
+		custom_cost_text = more_than_1_military_resource
+		days_remove = 50
+		fire_only_once = yes
+		complete_effect = {
+			set_temp_variable = { SIA_military_resource_var_temp = -1 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
+			SIA_mil_mech_public_perception_change = yes
+		}
 		remove_effect = {
-			set_temp_variable = { SIA_combat_readiness_var_temp = 0.045 }
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.15 }
 			SIA_mil_mech_combat_readiness_change = yes
+			set_temp_variable = {
+				var = military_development_var_temp
+				value = 0.15
+			}
+			add_military_development = yes
+			add_to_variable = { SIA_royal_army_of_thailand_army_attack_factor_var = 0.075 }
+			add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = 0.05 }
+			add_to_variable = { SIA_royal_army_of_thailand_military_development_monthly = 0.01 }
+			
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_royal_army_of_thailand_dummy
+					add_idea = SIA_royal_army_of_thailand_modernize_rotc_program
+				}
+			}
 		}
 	}
 	SIA_public_perception_decisions = {
@@ -230,12 +754,20 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_with_human_face
 		}
+		custom_cost_trigger = {
+			command_power > 9.9
+		}
+		custom_cost_text = 10cp_cost
 		days_remove = 30
+		complete_effect = { 
+			add_command_power = -10
+		}
 		remove_effect = {
 			set_temp_variable = { SIA_public_perception_var_temp = 0.025 }
 			SIA_mil_mech_public_perception_change = yes
+			army_experience = 25
 		}
 	}
 	SIA_stage_a_large_parade = {
@@ -248,12 +780,20 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_with_human_face
 		}
+		custom_cost_trigger = {
+			command_power > 19.9
+		}
+		custom_cost_text = 20cp_cost
 		days_remove = 30
+		complete_effect = { 
+			add_command_power = -20
+		}
 		remove_effect = {
 			set_temp_variable = { SIA_public_perception_var_temp = 0.065 }
 			SIA_mil_mech_public_perception_change = yes
+			army_experience = 50
 		}
 	}
 	SIA_make_a_public_showcase = {
@@ -266,12 +806,22 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_showcase
 		}
-		days_remove = 30
+		days_remove = 60
+		custom_cost_trigger = {
+			command_power > 14.9
+		}
+		custom_cost_text = 15cp_cost
+		days_re_enable = 40
+		complete_effect = { 
+			add_command_power = -15
+		}
 		remove_effect = {
 			set_temp_variable = { SIA_public_perception_var_temp = 0.03 }
 			SIA_mil_mech_public_perception_change = yes
+			add_stability = 0.005
+			add_war_support = 0.005
 		}
 	}
 	SIA_expand_conscription_program = {
@@ -284,13 +834,40 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_one_of_many
 		}
-		days_remove = 30
+		days_remove = 60
+		cost = 40
+		days_re_enable = 40
 		remove_effect = {
-			set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
+			set_temp_variable = { SIA_public_perception_var_temp = -0.075 }
 			SIA_mil_mech_public_perception_change = yes
 			add_manpower = 50000
+			add_stability = -0.01
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.025 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+	}
+	SIA_rollback_conscription = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SIA_one_of_many
+		}
+		days_remove = 60
+		cost = 40
+		days_re_enable = 40
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.1 }
+			SIA_mil_mech_public_perception_change = yes
+			add_manpower = -60000
+			add_stability = 0.03
 		}
 	}
 	SIA_expand_military_presence = {
@@ -303,12 +880,16 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_on_a_rescue
 		}
-		days_remove = 30
+		days_remove = 20
+		cost = 30
+		days_re_enable = 40
 		remove_effect = {
-			set_temp_variable = { SIA_public_perception_var_temp = 0.025 }
+			set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
 			SIA_mil_mech_public_perception_change = yes
+			add_stability = 0.02
+			add_command_power = 25
 		}
 	}
 	SIA_crackdown_on_the_underworld = {
@@ -321,13 +902,55 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			has_completed_focus = SIA_on_a_rescue
 		}
 		days_remove = 30
+		cost = 50
+		days_re_enable = 50
 		remove_effect = {
 			set_temp_variable = { SIA_public_perception_var_temp = 0.05 }
 			SIA_mil_mech_public_perception_change = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = -0.075 }
+			SIA_mil_mech_combat_readiness_change = yes
 			add_stability = 0.03
+			set_temp_variable = {
+				var = income_var_temp
+				value = 10
+			}
+			add_income = yes
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.02
+			}
+			add_society_development = yes
+		}
+	}
+	SIA_road_and_rail_Construction = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			
+		}
+		days_remove = 60
+		cost = 20
+		days_re_enable = 40
+		modifier = {
+		    production_speed_infrastructure_factor = 0.1
+			production_speed_rail_way_factor = 0.1
+	    }
+		complete_effect = {
+			set_temp_variable = { SIA_combat_readiness_var_temp = -0.05 }
+			SIA_mil_mech_combat_readiness_change = yes
+		}
+		remove_effect = {
+			set_temp_variable = { SIA_public_perception_var_temp = 0.025 }
+			SIA_mil_mech_public_perception_change = yes
 		}
 	}
 }

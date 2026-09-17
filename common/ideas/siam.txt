@@ -214,6 +214,46 @@ ideas = {
 				battalion_upkeep_factor = 0.15
 			}
 		}
+		SIA_royal_army_of_thailand_tighten_standards = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.075
+				army_org_factor = 0.05
+				military_development_monthly = 0.01
+			}
+		}
+		SIA_royal_army_of_thailand_modernize_rotc_program = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.075
+				conscription_factor = 0.05
+				military_development_monthly = 0.01
+			}
+		}
 		SIA_royal_airforce_of_thailand_dummy = {
 			name = SIA_royal_airforce_of_thailand_dynamic_modifier
 			picture = SIA_an_army_with_a_country
@@ -1062,6 +1102,40 @@ ideas = {
 				stability_weekly = -0.05
 			}
 		}
+		SIA_victory_over_cambodia = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_factor = 0.2
+				income_growth_factor = 0.1
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.3
+			}
+		}
+		SIA_cambodia_relief_program = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_infrastructure_factor = 0.05
+				society_development_monthly = 0.02
+			}
+		}
 		SIA_thai_military_occupation = {
 			picture = GER_victory_in_arabia
 			traits = {
@@ -1080,6 +1154,120 @@ ideas = {
 				stability_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				political_power_factor = -0.3
+			}
+		}
+		SIA_thai_military_occupation_1 = {
+			name = SIA_thai_military_occupation
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = SIA
+				cic_to_target_factor = 0.3
+				mic_to_target_factor = 0.3
+			}
+			modifier = {
+				stability_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.05
+				political_power_factor = -0.15
+			}
+		}
+		SIA_thai_military_occupation_2 = {
+			name = SIA_thai_military_occupation
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = SIA
+				cic_to_target_factor = 0.65
+				mic_to_target_factor = 0.65
+			}
+			modifier = {
+				stability_factor = -0.03
+				production_factory_efficiency_gain_factor = -0.06
+				political_power_factor = -0.4
+			}
+		}
+		SIA_thai_cambodia_close_partnership = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = SIA
+				cic_to_target_factor = 0.15
+				mic_to_target_factor = 0.15
+			}
+			modifier = {
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.06
+				society_development_monthly = 0.015
+				political_power_factor = -0.1
+			}
+		}
+		SIA_thai_cambodia_close_partnership_thailand = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.075
+				society_development_monthly = 0.015
+				income_growth_factor = 0.2
+				personal_expense_factor = -0.15
+			}
+		}
+		SIA_thai_cambodia_a_guiding_hand = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = SIA
+				cic_to_target_factor = 0.75
+				mic_to_target_factor = 0.75
+			}
+			modifier = {
+				stability_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.06
+				political_power_factor = -0.075
+			}
+		}
+		SIA_thai_cambodia_a_guiding_hand_thailand = {
+			picture = GER_victory_in_arabia
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				industrial_development_monthly = 0.015
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.1
 			}
 		}
 		SIA_economic_engine_1 = {
@@ -1680,6 +1868,23 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}
+		SIA_conservative_revolution_pprp_agenda = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				society_development_monthly = 0.01
+			}
+		}
 		SIA_renewable_economy_drive_dummy = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
@@ -2027,6 +2232,33 @@ ideas = {
 				resistance_target = -0.15
 				required_garrison_factor = -0.3
 				battalion_upkeep_factor = 0.1
+			}
+		}
+		SIA_joint_allied_command = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning_factor = 0.05
+				army_org_factor = 0.1
+				experience_gain_army = 0.15
+				experience_gain_navy = 0.05
+				experience_gain_air = 0.1
+				military_development_monthly = 0.005
+				max_command_power = -25
 			}
 		}
 	}
@@ -2629,7 +2861,10 @@ ideas = {
 				original_tag = SIA
 			}
 			visible = {
-				has_idea = SIA_anukul_jaimongkol_advisor
+				
+			}
+			available = {
+				always = no
 			}
 			traits = {
 				int_balanced_cryptographer
@@ -2642,9 +2877,12 @@ ideas = {
 				original_tag = SIA
 			}
 			visible = {
-				has_idea = SIA_thanakorn_buaratsat_advisor
+				
 			}
 			cost = 0
+			available = {
+				always = no
+			}
 			traits = {
 				int_decryptor
 			}
@@ -2656,9 +2894,12 @@ ideas = {
 				original_tag = SIA
 			}
 			visible = {
-				has_idea = SIA_thanat_suwannanon_advisor
+				
 			}
 			cost = 0
+			available = {
+				always = no
+			}
 			traits = {
 				int_resistance_crusher
 			}
@@ -2752,10 +2993,13 @@ ideas = {
 		SIA_lottery_conscription = {
 			cost = 100
 			removal_cost = -1
-			picture = idea_SIA_lottery_conscription
+			picture = SIA_lottery_conscription
 			level = 5
 			allowed = {
 				tag = SIA
+			}
+			visible = {
+				has_idea = SIA_lottery_conscription
 			}
 			allowed_to_remove = { always = no }
 			modifier = {
@@ -2773,10 +3017,13 @@ ideas = {
 		SIA_low_income_only_welfare = {
 			cost = 100
 			removal_cost = -1
-			picture = idea_SIA_low_income_only_welfare
+			picture = SIA_low_income_only_welfare
 			level = 5
 			allowed = {
 				tag = SIA
+			}
+			visible = {
+				has_idea = SIA_low_income_only_welfare
 			}
 			allowed_to_remove = { always = no }
 			modifier = {
@@ -2789,6 +3036,31 @@ ideas = {
 				base = 1
 			}
 			cancel_if_invalid = no
-		}		
+		}
+		SIA_low_income_only_welfare_2 = {
+			cost = 100
+			name = SIA_low_income_only_welfare
+			removal_cost = -1
+			picture = SIA_low_income_only_welfare
+			level = 5
+			allowed = {
+				tag = SIA
+			}
+			visible = {
+				has_idea = SIA_low_income_only_welfare_2
+			}
+			allowed_to_remove = { always = no }
+			modifier = {
+				personal_expense = 0.3
+				stability_factor = 0.02
+				production_speed_infrastructure_factor = 0.05
+				society_development_monthly = 0.008
+				poverty_development_monthly = 0.008
+			}
+			ai_will_do = {
+				base = 1
+			}
+			cancel_if_invalid = no
+		}
 	}
 }

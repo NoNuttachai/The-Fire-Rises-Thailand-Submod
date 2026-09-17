@@ -192,6 +192,7 @@ SIA_parliament_category = {
 		icon = generic_coronavirus
 		visible = { 
 			has_completed_focus = SIA_once_were_brothers
+			has_country_flag = SIA_ongoing_elections
 			check_variable = { SIA_election_playing_as = 11 }
 		}
 		cost = 30
@@ -254,6 +255,8 @@ SIA_parliament_category = {
 		days_remove = 120
 		modifier = {
 			income_growth_factor = 0.10
+			business_value_factor = 0.075
+			production_speed_buildings_factor = 0.05
 		}
 		remove_effect = {
   
@@ -270,6 +273,11 @@ SIA_parliament_category = {
 		days_remove = 14
 		remove_effect = {
 			add_ideas = SIA_SMILE_Strategy	
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.05
+			}
+			add_society_development = yes
 		}
 	}
 	SIA_extent_travel_subsidy = {
@@ -282,9 +290,25 @@ SIA_parliament_category = {
 		fire_only_once = yes
 		
 		complete_effect = {
+			set_temp_variable = { debt_var_temp = 7.472 }
+			add_debt = yes
 			add_timed_idea = {
 				idea = SIA_We_Travel_Together
 				days = 120
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}

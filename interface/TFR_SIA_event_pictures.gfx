@@ -424,6 +424,26 @@ spriteTypes = {
 		name = "GFX_report_trinuch_pirapan"
 		texturefile = "gfx/event_pictures/report_trinuch_pirapan.png"
 	}
+	spriteType = {
+		name = "GFX_report_sia_gaw"
+		texturefile = "gfx/event_pictures/report_sia_gaw.png"
+	}
+	spriteType = {
+		name = "GFX_report_showcase"
+		texturefile = "gfx/event_pictures/report_showcase.png"
+	}
+	spriteType = {
+		name = "GFX_report_border_closed"
+		texturefile = "gfx/event_pictures/report_border_closed.png"
+	}
+	spriteType = {
+		name = "GFX_report_state_audit_collapse"
+		texturefile = "gfx/event_pictures/report_state_audit_collapse.png"
+	}
+	spriteType = {
+		name = "GFX_report_german_larpers"
+		texturefile = "gfx/event_pictures/report_german_larpers.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"
@@ -472,5 +492,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_global_event_thailand_joins_pdto"
 		texturefile = "gfx/event_pictures/newsevent_thailand_joins_pdto.png"
+	}
+	spriteType = {
+		name = "GFX_global_event_myanmar_thailand_earthquake_2025"
+		texturefile = "gfx/event_pictures/newsevent_myanmar_thailand_earthquake_2025.png"
 	}
 }

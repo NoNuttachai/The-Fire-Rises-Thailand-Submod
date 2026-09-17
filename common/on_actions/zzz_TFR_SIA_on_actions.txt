@@ -22,6 +22,7 @@ on_actions = {
 				country_event = { id = thai_events.10 days = 192 } #COVID-19 case involving an Egyptian soldier in Rayong
 				country_event = { id = thai_events.11 days = 218 } #Palang Pracharat Fallout and Cabinet Reshuffle
 				country_event = { id = thai_events.12 days = 20 } #The Constitutional Court drops "illuminati Case" against FFP
+				country_event = { id = thai_events.14 days = 207 } #26 July 2020 Hamtaro
 				country_event = { id = thai_events.15 days = 214 } #Harry Potter Mob
 				country_event = { id = thai_events.17 days = 12 } #First Covid-19 Infection Case in Thailand
 				country_event = { id = thai_events.18 days = 36 } #Soldier Goes Rogue, Unleashes Massacre in Korat
@@ -31,7 +32,7 @@ on_actions = {
 				country_event = { id = thai_events.22 days = 871 } #2022 Bangkok Mayoral Elections
 				country_event = { id = thai_events.23 days = 244 } #1 September 2020  - Predee Resigns
 				country_event = { id = thai_events.26 days = 590 } # Cobra Gold 2021
-				country_event = { id = thai_events.27 days = 298 } #March to the German Embassy: 26th October Mob
+				country_event = { id = thai_events.69 days = 297 } #October 24 Free YOUTH's post march
 				country_event = { id = thai_events.28 days = 240 } #Warning that a 2nd motion of no confidence is coming
 				country_event = { id = thai_events.31 days = 19 } #Pattani Peace
 				country_event = { id = thai_events.32 days = 285 random_days = 20 } #Pattani chaos
@@ -43,6 +44,7 @@ on_actions = {
 				country_event = { id = thai_events.49 days = 2093 } #24 Sep 2025 Massive Sinkhole in Dusit District, Bangkok
 				country_event = { id = thai_events.50 days = 110 } # 20 April 2020 #MilkTeaAlliance
 				country_event = { id = thai_events.53 days = 274 } # 01 October 2020 Thanakorn Buaratsat becomes Intelligence Minister
+				country_event = { id = thai_events.55 days = 1680 } # 07 August 2024 MFP DIES
 				country_event = { id = thai_events.57 days = 209 } # July 28 Rama X birthday
 				country_event = { id = thai_events.58 days = 344 } # Dec 10 Constitutional Day
 				country_event = { id = thai_events.62 days = 934  } # July 23 2022 Prayut survives 4th motion of no confidence
@@ -50,17 +52,15 @@ on_actions = {
 				
 				
 				
-				country_event = { id = thai_cambodia_tension.1 days = 1974 } # 28 May 2025 Cambodia Start
+				country_event = { id = thai_cambodia_tension.13 days = 1974 } # 28 May 2025 Cambodia Start
 				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM
 				country_event = { id = thai_elections.9 days = 1814 } # 19 December 2024 #Thamanat Prompow joins Kla Tham
 				
-				
+				news_event = { id = thai_newsevents.15 days = 1913  } # March 28 2025 Magnitude 7.9 Earthquake hits Myanmar and Thailand
 				
 				
 				1495 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
-				add_dynamic_modifier = { modifier = SIA_flaming_youth_dynamic_modifier }
-				set_temp_variable = { increase = 2 }
-				SIA_increase_youth_status = yes
+				
 				
 				set_variable = { bangkok_mayor = 0 }
 				activate_mission = SIA_first_no_confidence_vote

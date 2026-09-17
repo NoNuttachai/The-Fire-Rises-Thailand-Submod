@@ -86,6 +86,7 @@ shared_focus = {
 		set_temp_variable = { SIA_combat_readiness_var_temp = 0.03 }
 		SIA_mil_mech_combat_readiness_change = yes
 		air_experience = 10
+		unlock_decision_tooltip = SIA_conduct_air_drills
 		country_event = thai_shared_events.1
 	}
 }
@@ -390,6 +391,7 @@ shared_focus = {
 		SIA_mil_mech_combat_readiness_change = yes
 		country_event = thai_shared_events.2
 		army_experience = 10
+		unlock_decision_tooltip = SIA_conduct_drills
 	}
 }
 shared_focus = {
@@ -424,6 +426,7 @@ shared_focus = {
 				add_idea = SIA_royal_army_of_thailand_improve_officer_training
 			}
 		}
+		unlock_decision_tooltip = SIA_revise_outdated_tactics
 	}
 }
 shared_focus = {
@@ -483,6 +486,8 @@ shared_focus = {
 		set_temp_variable = { SIA_combat_readiness_var_temp = -0.03 }
 		SIA_mil_mech_combat_readiness_change = yes
 		SIA_mil_mech_public_perception_change = yes
+		unlock_decision_tooltip = SIA_stage_a_small_parade
+		unlock_decision_tooltip = SIA_stage_a_large_parade
 	}
 }
 shared_focus = {
@@ -517,6 +522,9 @@ shared_focus = {
 				add_idea = SIA_royal_army_of_thailand_one_of_many
 			}
 		}
+		unlock_decision_tooltip = SIA_modernize_rotc_program
+		unlock_decision_tooltip = SIA_expand_conscription_program
+		unlock_decision_tooltip = SIA_rollback_conscription
 	}
 }
 shared_focus = {
@@ -644,6 +652,7 @@ shared_focus = {
 		army_experience = 20
 		air_experience = 20
 		navy_experience = 20
+		unlock_decision_tooltip = SIA_make_a_public_showcase
 	}
 }
 shared_focus = {
@@ -682,6 +691,7 @@ shared_focus = {
 				add_idea = SIA_royal_army_of_thailand_weapons_of_war
 			}
 		}
+		unlock_decision_tooltip = SIA_heavily_invest_on_the_military_industry
 	}
 }
 shared_focus = {
@@ -713,6 +723,8 @@ shared_focus = {
 				add_idea = SIA_royal_army_of_thailand_unleash_our_brightest
 			}
 		}
+		unlock_decision_tooltip = SIA_tighten_standards
+		unlock_decision_tooltip = SIA_conduct_land_wargames
 	}
 }
 shared_focus = {
@@ -739,6 +751,8 @@ shared_focus = {
 		set_temp_variable = { SIA_combat_readiness_var_temp = -0.05 }
 		SIA_mil_mech_combat_readiness_change = yes
 		add_stability = 0.05
+		unlock_decision_tooltip = SIA_expand_military_presence
+		unlock_decision_tooltip = SIA_crackdown_on_the_underworld
 	}
 }
 shared_focus = {
@@ -809,6 +823,7 @@ shared_focus = {
 			add_dynamic_modifier = { modifier = SIA_royal_navy_of_thailand_dynamic_modifier }
 		}
 		navy_experience = 10
+		unlock_decision_tooltip = SIA_conduct_naval_drills
 		country_event = thai_shared_events.3
 	}
 }
@@ -850,6 +865,8 @@ shared_focus = {
 				add_idea = SIA_royal_navy_of_thailand_enrich_its_presence
 			}
 		}
+		unlock_decision_tooltip = SIA_heavily_invest_on_the_naval_industry
+		unlock_decision_tooltip = SIA_conduct_naval_wargames
 	}
 }
 shared_focus = {
@@ -981,6 +998,7 @@ shared_focus = {
 				add_idea = SIA_royal_navy_of_thailand_with_striking_efficiency
 			}
 		}
+		unlock_decision_tooltip = SIA_update_naval_tactics
 	}
 }
 shared_focus = {
@@ -1203,6 +1221,8 @@ shared_focus = {
 	
 	completion_reward = {
 		add_political_power = 75
+		unlock_decision_category_tooltip = SIA_forpol_category
+		set_country_flag = SIA_forpol_unlocked
 	}
 }
 shared_focus = {
@@ -1301,8 +1321,8 @@ shared_focus = {
 	relative_position_id = SIA_thailand_in_the_world_stage
 	prerequisite = { focus = SIA_thailand_in_the_world_stage }
 	completion_reward = {
-		unlock_decision_category_tooltip = SIA_forpol_category
-		set_country_flag = SIA_forpol_unlocked
+		unlock_decision_tooltip = SIA_lean_alignment_towards_eadi
+		unlock_decision_tooltip = SIA_lean_alignment_towards_pdto
 	}
 }
 shared_focus = {
@@ -1329,7 +1349,18 @@ shared_focus = {
 	relative_position_id = SIA_asian_house_of_cards
 	prerequisite = { focus = SIA_asian_house_of_cards }
 	completion_reward = {
+		set_temp_variable = {
+			var = global.PRC_influence_SIA_var_temp
+			value = 0.15
+		}
+		PRC_add_SIA_influence = yes
+		set_temp_variable = {
+			var = global.JAP_influence_SIA_var_temp
+			value = -0.15
+		}
+		JAP_add_SIA_influence = yes
 		unlock_decision_tooltip = SIA_apply_for_eadi_membership
+		custom_effect_tooltip = SIA_riding_the_shoulders_of_the_chinese_dragon_tt
 	}
 }
 shared_focus = {
@@ -1356,7 +1387,18 @@ shared_focus = {
 	relative_position_id = SIA_asian_house_of_cards
 	prerequisite = { focus = SIA_asian_house_of_cards }
 	completion_reward = {
+		set_temp_variable = {
+			var = global.JAP_influence_SIA_var_temp
+			value = 0.15
+		}
+		JAP_add_SIA_influence = yes
+		set_temp_variable = {
+			var = global.PRC_influence_SIA_var_temp
+			value = -0.15
+		}
+		PRC_add_SIA_influence = yes
 		unlock_decision_tooltip = SIA_apply_for_pdto_membership
+		custom_effect_tooltip = SIA_pdtos_sea_gateway_tt
 	}
 }
 shared_focus = {
@@ -1378,7 +1420,7 @@ shared_focus = {
 	relative_position_id = SIA_asian_house_of_cards
 	prerequisite = { focus = SIA_riding_the_shoulders_of_the_chinese_dragon focus = SIA_pdtos_sea_gateway }
 	completion_reward = {
-		
+		add_ideas = SIA_joint_allied_command
 	}
 }
 shared_focus = {
@@ -1493,7 +1535,10 @@ shared_focus = {
 	relative_position_id = SIA_pdtos_sea_gateway
 	prerequisite = { focus = SIA_pdtos_sea_gateway }
 	completion_reward = {
-		
+		add_ideas = JAP_PEC_member
+		unlock_decision_tooltip = SIA_ask_for_pec_technological_experts
+		unlock_decision_tooltip = SIA_request_pec_industrial_investments
+		unlock_decision_tooltip = SIA_secure_pec_military_investments
 	}
 }
 shared_focus = {
@@ -1693,6 +1738,8 @@ shared_focus = {
 		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.05 }
 		SIA_change_thai_cambodia_tensions = yes
 		add_war_support = 0.05
+		unlock_decision_tooltip = SIA_increase_military_alertness
+		unlock_decision_tooltip = SIA_close_the_border
 	}
 }
 shared_focus = {
@@ -1722,6 +1769,7 @@ shared_focus = {
 		SIA_change_thai_cambodia_tensions = yes
 		add_war_support = -0.05
 		add_political_power = 20
+		unlock_decision_tooltip = SIA_exert_diplomatic_efforts
 	}
 }
 shared_focus = {
@@ -1747,7 +1795,63 @@ shared_focus = {
 	prerequisite = { focus = SIA_cook_the_engine }
 	mutually_exclusive = { focus = SIA_criticize_cambodia }
 	completion_reward = {
+		custom_effect_tooltip = SIA_saber_rattling_tt
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.15 }
+		SIA_change_thai_cambodia_tensions = yes
+		hidden_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 1502
+					num_provinces = 1
+					on_win = thai_cambodia_tension.2
+					on_lose = thai_cambodia_tension.3
+					modifier = 0.5
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 1498
+					num_provinces = 1
+					
+				}
+			}
 		
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 1499
+					num_provinces = 1
+					on_win = thai_cambodia_tension.3
+					on_lose = thai_cambodia_tension.2
+					modifier = 0.5
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 1503
+					num_provinces = 1
+					
+				}
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 286
+					num_provinces = 1
+					on_win = thai_cambodia_tension.2
+					on_lose = thai_cambodia_tension.3
+					modifier = 0.5
+					dig_in_factor = 0
+					terrain_factor = 0
+				}	
+				defender = {
+					state = 1509
+					num_provinces = 1
+					
+				}
+			}
+		}
 	}
 }
 shared_focus = {
@@ -1773,7 +1877,7 @@ shared_focus = {
 	prerequisite = { focus = SIA_cook_the_engine }
 	mutually_exclusive = { focus = SIA_saber_rattling }
 	completion_reward = {
-		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.1 }
+		set_temp_variable = { SIA_thai_cambodia_tensions_temp = 0.075 }
 		SIA_change_thai_cambodia_tensions = yes
 		set_temp_variable = { lean_change = 0.1 }
 		set_temp_variable = { target = 1 }
@@ -1782,6 +1886,8 @@ shared_focus = {
 		set_temp_variable = { lean_change = 0.1 }
 		set_temp_variable = { target = 0 }
 		SIA_change_thai_cambodia_mediation_lean = yes
+		
+		unlock_decision_tooltip = SIA_appeal_our_case
 	}
 }
 shared_focus = {
@@ -1814,6 +1920,7 @@ shared_focus = {
 		set_temp_variable = { lean_change = 0.075 }
 		set_temp_variable = { target = 0 }
 		SIA_change_thai_cambodia_mediation_lean = yes
+		unlock_decision_tooltip = SIA_send_out_diplomats
 	}
 }
 shared_focus = {
@@ -1848,6 +1955,8 @@ shared_focus = {
 		set_temp_variable = { lean_change = -0.05 }
 		set_temp_variable = { target = 0 }
 		SIA_change_thai_cambodia_mediation_lean = yes
+		
+		unlock_decision_tooltip = SIA_order_restraint_from_the_military
 	}
 }
 shared_focus = {
@@ -1872,7 +1981,9 @@ shared_focus = {
 	relative_position_id = SIA_eastern_conundrum
 	prerequisite = { focus = SIA_saber_rattling focus = SIA_criticize_cambodia focus = SIA_stand_firm_against_kouprey focus = SIA_you_win_some_you_lose_some }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_persuade_japan
+		unlock_decision_tooltip = SIA_persuade_china
+		custom_effect_tooltip = SIA_awaiting_judgement_tt
 	}
 }
 
@@ -2072,7 +2183,17 @@ shared_focus = {
 	available_if_capitulated = yes
 	relative_position_id = SIA_integrate_our_militaries
 	completion_reward = {
-		
+		add_political_power = 75
+		army_experience = 25
+		set_temp_variable = {
+			var = income_var_temp
+			value = 15
+		}
+		add_income = yes
+		add_timed_idea = {
+			idea = SIA_victory_over_cambodia
+			days = 250
+		}
 	}
 }
 shared_focus = {
@@ -2093,6 +2214,13 @@ shared_focus = {
 	prerequisite = { focus = SIA_marching_in_phnom_penh }
 	completion_reward = {
 		
+		CAM = {
+			swap_ideas = {
+				remove_idea = SIA_thai_military_occupation
+				add_idea = SIA_thai_military_occupation_2
+			}
+		}
+		custom_effect_tooltip = SIA_under_our_bootstraps_tt
 	}
 }
 shared_focus = {
@@ -2112,7 +2240,13 @@ shared_focus = {
 	mutually_exclusive = { focus = SIA_under_our_bootstraps }
 	prerequisite = { focus = SIA_marching_in_phnom_penh }
 	completion_reward = {
-		
+		CAM = {
+			swap_ideas = {
+				remove_idea = SIA_thai_military_occupation
+				add_idea = SIA_thai_military_occupation_1
+			}
+		}
+		custom_effect_tooltip = SIA_path_to_forgiving_tt
 	}
 }
 shared_focus = {
@@ -2131,7 +2265,67 @@ shared_focus = {
 	relative_position_id = SIA_under_our_bootstraps
 	prerequisite = { focus = SIA_under_our_bootstraps focus = SIA_path_to_forgiving }
 	completion_reward = {
-		
+		1498 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		1499 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		1508 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		CAM = {
+			add_timed_idea = {
+				idea = SIA_cambodia_relief_program
+				days = 200
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+			1506 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
 	}
 }
 shared_focus = {
@@ -2150,7 +2344,18 @@ shared_focus = {
 	relative_position_id = SIA_path_to_forgiving
 	prerequisite = { focus = SIA_under_our_bootstraps focus = SIA_path_to_forgiving }
 	completion_reward = {
-		
+		add_stability = 0.075
+		add_political_power = 50
+		CAM = {
+			add_opinion_modifier = {
+				target = SIA
+				modifier = SIA_diplomatic_efforts
+			}
+		}
+		add_opinion_modifier = {
+			target = CAM
+			modifier = SIA_diplomatic_efforts
+		}
 	}
 }
 shared_focus = {
@@ -2170,7 +2375,52 @@ shared_focus = {
 	prerequisite = { focus = SIA_after_the_ruins }
 	prerequisite = { focus = SIA_settling_disputes }
 	completion_reward = {
-		
+		country_event = thai_cambodia_tension.21
+		custom_effect_tooltip = SIA_under_our_bootstraps_completed_tt
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = SIA_thai_cambodia_a_guiding_hand_thailand
+				days = 350
+			}
+			CAM = {
+				add_ideas = SIA_thai_cambodia_a_guiding_hand
+			}
+			
+		}
+		custom_effect_tooltip = SIA_path_to_forgiving_completed_tt
+		effect_tooltip = {
+			add_timed_idea = {
+				idea = SIA_thai_cambodia_close_partnership_thailand
+				days = 350
+			}
+			CAM = {
+				add_ideas = SIA_thai_cambodia_close_partnership
+			}
+			
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_completed_focus = SIA_under_our_bootstraps
+				}
+				add_timed_idea = {
+					idea = SIA_thai_cambodia_a_guiding_hand_thailand
+					days = 350
+				}
+				CAM = {
+					add_ideas = SIA_thai_cambodia_a_guiding_hand
+				}
+			}
+			else = {
+				add_timed_idea = {
+					idea = SIA_thai_cambodia_close_partnership_thailand
+					days = 350
+				}
+				CAM = {
+					add_ideas = SIA_thai_cambodia_close_partnership
+				}
+			}
+		}
 	}
 }
 
@@ -2309,7 +2559,7 @@ shared_focus = {
 		
 	}
 	allow_branch = {
-		#has_completed_focus = SIA_war_of_giants
+		has_completed_focus = SIA_war_of_giants
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_htms_placeholder
@@ -2482,6 +2732,16 @@ shared_focus = {
 	relative_position_id = SIA_relax_the_standard
 	prerequisite = { focus = SIA_relax_the_standard }
 	completion_reward = {
+		every_owned_state = {
+			limit = {
+				is_core_of = SIA
+			}
+			add_building_construction = {
+				type = anti_air_building
+				level = 2
+				instant_build = yes
+			}
+		}
 		increase_conscription = yes
 		unlock_decision_tooltip = SIA_call_up_the_reserves
 	}

@@ -1,4 +1,101 @@
 SIA_forpol_category = {
+	SIA_forpol_selected_nation = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			always = yes
+		}
+	}
+	SIA_invite_lao_to_pdto = {
+
+		visible = {
+			LAO = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = LAO }
+		}
+		available = {
+			LAO = {
+				is_in_faction = no
+			}
+			is_in_faction_with = JAP
+			has_war = no
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = LAO
+			}
+		}
+		
+	}
+	SIA_invite_vin_to_pdto = {
+
+		visible = {
+			VIN = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = VIN }
+		}
+		available = {
+			VIN = {
+				is_in_faction = no
+			}
+			is_in_faction_with = JAP
+			has_war = no
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = VIN
+			}
+		}
+		
+	}
+	SIA_invite_cam_to_pdto = {
+
+		visible = {
+			CAM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = CAM }
+		}
+		available = {
+			CAM = {
+				is_in_faction = no
+			}
+			is_in_faction_with = JAP
+			has_war = no
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = CAM
+			}
+		}
+		
+	}
+	SIA_invite_brm_to_pdto = {
+
+		visible = {
+			BRM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = BRM }
+		}
+		available = {
+			BRM = {
+				is_in_faction = no
+			}
+			is_in_faction_with = JAP
+			has_war = no
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = BRM
+			}
+		}
+		
+	}
 	SIA_apply_for_eadi_membership = {
 		fire_only_once = yes
 		cost = 50
@@ -15,6 +112,10 @@ SIA_forpol_category = {
 			NOT = {
 				has_country_flag = SIA_joined_faction
 			}
+			custom_trigger_tooltip = {
+				check_variable = { global.PRC_influence_SIA_var > 0.7 }
+				tooltip = SIA_apply_for_eadi_membership_trigger
+			}
 		}
 		complete_effect = {
 			set_country_flag = SIA_joined_faction
@@ -26,6 +127,78 @@ SIA_forpol_category = {
 			hidden_effect = {
 				news_event = thai_newsevents.11
 			}
+		}
+	}
+	#THAILAND SELECTED DECISIONS
+	SIA_lean_alignment_towards_eadi = {
+
+		visible = {
+			
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_lean_alignment_towards_pdto = {
+
+		visible = {
+			
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_ask_for_pec_technological_experts = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_request_pec_industrial_investments = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_secure_pec_military_investments = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
 		}
 	}
 	SIA_apply_for_pdto_membership = {
@@ -44,6 +217,10 @@ SIA_forpol_category = {
 			NOT = {
 				has_country_flag = SIA_joined_faction
 			}
+			custom_trigger_tooltip = {
+				check_variable = { global.JAP_influence_SIA_var > 0.7 }
+				tooltip = SIA_apply_for_pdto_membership_trigger
+			}
 		}
 		complete_effect = {
 			set_country_flag = SIA_joined_faction
@@ -54,6 +231,38 @@ SIA_forpol_category = {
 			}
 			hidden_effect = {
 				news_event = thai_newsevents.12
+			}
+		}
+	}
+	SIA_debug_join_pdto = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = SIA
+			}
+			hidden_effect = {
+				news_event = thai_newsevents.12
+			}
+		}
+	}
+	SIA_debug_join_eadi = {
+		visible = {
+			is_debug = yes
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = SIA
+			}
+			hidden_effect = {
+				news_event = thai_newsevents.11
 			}
 		}
 	}
