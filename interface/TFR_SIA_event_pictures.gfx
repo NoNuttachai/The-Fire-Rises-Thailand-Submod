@@ -461,8 +461,12 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_thai_myanmar_border.png"
 	}
 	spriteType = {
-		name = "GFX_report_report_us_senator_thailand"
+		name = "GFX_report_us_senator_thailand"
 		texturefile = "gfx/event_pictures/report_us_senator_thailand.png"
+	}
+	spriteType = {
+		name = "GFX_report_double_disabled"
+		texturefile = "gfx/event_pictures/report_double_disabled.png"
 	}
 	#World News
 	spriteType = {
