@@ -150,10 +150,11 @@
  
  SIA_smother_the_flames: "Smother the Flames"
  SIA_smother_the_flames_desc: ""
+ SIA_smother_the_flames_tt: "§gWhen the national spirit expires, The §OProtests§! will finally stop§!"
  
  SIA_deploy_the_army: "Deploy the Army"
  SIA_deploy_the_army_desc: ""
- SIA_deploy_the_army_tt: "§RWith Riots all across the country, the situation has gotten out of hand§!"
+ SIA_deploy_the_army_tt: "§g§RThese agitators and mobs are out of control!§!\n\nWith §Rriots§! across the streets, the §Yarmy§! will be sent to §Rlock up the people threatening the stability of our country§!.§!\n\n§gWhen the national spirit expires, The §OProtests§! will finally stop§!"
  
  #2021 Prayut tree
  SIA_prayut_triumphant: "Prayut Triumphant"
@@ -298,6 +299,7 @@
  SIA_deals_with_the_europeans: "Deals With The Europeans"
  SIA_talks_with_the_russians: "Talks With The Russians"
  SIA_off_continent_diplomacy: "Off-Continent Diplomacy"
+ SIA_off_continent_diplomacy_saudi_tt: "\n§gSince Saudi Arabia currently has a §Gfriendly regime§!, we are able to do deals with them§!"
  SIA_asian_house_of_cards: "House Of Cards"
  
  SIA_riding_the_shoulders_of_the_chinese_dragon: "Riding The Shoulders Of The Chinese Dragon"
@@ -406,8 +408,9 @@
  #2023-2027 UTN Tree
  SIA_third_prayut_cabinet: "Third Prayut Cabinet"
  SIA_tonight_in_bangkok: "Tonight In Bangkok"
+ SIA_tonight_in_bangkok_tt: "§gThough §YGeneral Prayut§! won reelection, he will have to unfortunately §Rstep down§! on the §Y7th of April, 2025§! due to the law.\n\nIt is §Grecommended§! to plan ahead and focus on §Yspecific agendas§! as §RPrayut cannot do everything within 2 years§!.§!"
  SIA_our_probable_friends: "Our Probable Friends"
- SIA_friends_with_benefits: "Friends With Benefits"
+ SIA_frenemy: "Frenemy"
  SIA_light_the_street: "Light The Street"
  SIA_rotten_streets: "Rotten Streets"
  SIA_our_opposition: "Our Opposition"
@@ -624,11 +627,11 @@
  
  ###Idea###
  SIA_lack_of_the_political_legitimacy: "Lack of the Political Legitimacy"
- SIA_lack_of_the_political_legitimacy_desc: "\n\n\n\n\n£GFX_SIA_prayut_coa_cat\n\n\n\n\n\nThailand`s political legitimacy has been repeatedly questioned due to the unelected Senate, which plays a decisive role in selecting the Prime Minister and influencing governance despite lacking democratic representation. This has created a widespread perception that the Senate serves as a safeguard for certain political groups rather than the public interest. Likewise, the Election Commission has been criticized for alleged bias and lack of transparency, with accusations of manipulating electoral processes to favor particular parties. These factors have significantly eroded public trust in elections as a true reflection of the people's will.\n\nThe slim majority in the House of Representatives further weakens the government`s stability, forcing it to engage in behind-the-scenes bargaining with smaller parties or independents. This dependency on undemocratic mechanisms—along with the influence of appointed institutions—reinforces the view that political power in Thailand is disconnected from genuine democratic choice. Consequently, public confidence in the legitimacy of the political system continues to deteriorate."
+ SIA_lack_of_the_political_legitimacy_desc: "\n\n\n\n\n£GFX_SIA_prayut_coa_cat\n\n\n\n\n\nThe political legitimacy of Prayut Chan-o-cha has been repeatedly questioned by the opposition and those opposed to his regime due to the unelected Senate, which plays a decisive role in selecting the Prime Minister and influencing governance, creating perceptions that it benefits certain political groups rather than the public interest. The Election Commission also faced criticism over alleged bias, lack of transparency, and electoral manipulation favoring particular parties.\n\nThe slim majority in the House of Representatives further weakens the government's stability, forcing it to engage in behind-the-scenes bargaining with smaller parties or independents to maintain its majority, while public confidence in the legitimacy of the political system continues to deteriorate.\n\nThis dependency on undemocratic mechanisms, along with the influence of appointed institutions, reinforces to many of those who oppose Prayut Chan-o-cha: the view that political power in Thailand is disconnected from genuine democracy."
  SIA_an_army_with_a_country_1: "An Army with a Country"
- SIA_an_army_with_a_country_1_desc: "\n\n\n\n\n£GFX_SIA_army_with_nation_cat\n\n\n\n\n\nThe Royal Thai Army is regarded as the nation`s protective shield and a pillar of internal security. Despite facing challenges in adapting to modern warfare, the army continues to rely on traditional strategies and weaponry supported by foreign allies. Training remains rigorous, with an emphasis on discipline over tactical flexibility, resulting in a strong defensive capability but limited expertise in contemporary maneuver warfare. The army also maintains significant influence over national politics and governance, often ensuring that strategic decisions reflect its own interests.\n\nAlthough the Royal Thai Army possesses well-prepared personnel and a stable organizational structure, its reliance on imported weapons and technological limitations prevent it from achieving full effectiveness in modern combat. A centralized command structure and the prioritization of internal power dynamics have hindered the development of long-term strategic planning. Nevertheless, its expertise in domestic operations and its ability to maintain internal order continue to make the Royal Thai Army a force that cannot be underestimated in Southeast Asia."
+ SIA_an_army_with_a_country_1_desc: "\n\n\n\n\n£GFX_SIA_army_with_nation_cat\n\n\n\n\n\nThe famous quote about Prussia, that it was not a state with an army, but an army with a state can also be applied to Thailand.\n\nSince the abolition of absolute monarchy in 1932, the Royal Thai Armed Forces have exerted immense influence over the nation's political landscape. Staging over a dozen successful coups and regularly drafting new constitutions, the military leadership has positioned itself not merely as a guardian of national security, but as an entrenched institution at the core of governance and state power.\n\nDubbed the "fence of the nation," the military has long portrayed itself as the defender of Thailand's sovereignty, national stability, and traditional institutions. The Royal Thai Armed Forces are ranked among the most powerful militaries in Southeast Asia, cementing Thailand's status as a key regional power."
  SIA_constitution_60: "The Constitution of Thailand (2017)"
- SIA_constitution_60_desc: "\n\n\n\n\n£GFX_SIA_the_constitution_of_thailand_cat\n\n\n\n\n\nThe Constitution of the Kingdom of Thailand (2017), the Highest law of the land have been proclaimed as the Constitution on the 6th of April 2017. However, the Process of the drafting of the Constitution have been controversial ever since. In, 2015 the Constitutional Drafting Committee submitted their Draft of the Constitution into the National Reform assembly, Of which the draft failed to passed. Extended the Length of the NCPO. Before in 2016 the New Constitutional Drafting Committee lead by Meechai Ruchuphan's draft passed the National Reform Steering Assembly and then passed the nationwide referendum.\n\nThe Controversies around the Constitution included, the \"Temporary\" 250-Military appointed Senators and their exclusive power to voted on the Prime Ministerial Nomination during their time as Senators, The \"Special\" requirement of the Constitutional Amendment that the Majority of the National Assembly shall included 1/3 of the Senators and the \"Independent Organizations\" which were subjected and appointed by the Senators."
+ SIA_constitution_60_desc: "\n\n\n\n\n£GFX_SIA_the_constitution_of_thailand_cat\n\n\n\n\n\nThe Constitution of the Kingdom of Thailand (2017) was promulgated on April 6, 2017. An initial draft submitted to the National Reform Council in September 2015 failed to pass, extending the NCPO's tenure. A second draft, prepared by a committee led by Meechai Ruchuphan, passed the National Reform Steering Assembly and was approved in a nationwide referendum on August 7, 2016, with 61% voting in favor and 59% turnout. Opposition groups were barred from formally campaigning against it, while the military government promoted its adoption.\n\nDrafters hailed the constitution as an "anti-corruption constitution"; however, critics argued it allowed the National Council for Peace and Order (NCPO) to perpetuate its power through 250 military-appointed senators with power to vote on prime ministerial nominations, strict amendment requirements, and influence over "independent organizations" whose members were vetted and appointed by the Senate."
  SIA_oil_crisis: "Oil Crisis"
  SIA_oil_crisis_desc: "\n\n\n\n\n£GFX_SIA_oil_crisis\n\n\n\n\n\n"
  SIA_lottery_conscription: "Lottery Conscription"
@@ -731,6 +734,13 @@
  SIA_thai_peacekeeping_forces: "Thai Peacekeeping Forces"
  SIA_thai_peacekeeping_forces_desc: "\n\n\n\n\n£GFX_SIA_banner_peacekeeping\n\n\n\n\n\n"
  
+ SIA_joint_allied_command: "Joint Allied Theater Command"
+ SIA_thai_european_business_partnership: "Thai-European Business Partnership"
+ SIA_thai_russian_economic_agreement: "Thai-Russian Economic Agreement"
+ 
+ SIA_dispersing_the_protests: "Dispersing The Protests"
+ SIA_striking_the_rioters: "Striking The Rioters"
+ 
  SIA_flaming_youth_dynamic_modifier: "Leftist Anti-Establishment Opposition"
  SIA_flaming_youth_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_leftist_opposition\n\n\n\n\n\n                       §RPerpetual Opposition§!"
  
@@ -758,7 +768,7 @@
  thai_events.1.a: "It's over"
 
  thai_events.2.t: "A New Year, With Nothing New"
- thai_events.2.d: "Somboon was sitting in his apartment, well, his mother's rented apartment, to be exact, at the start of a new year. \n\nHe had just been denied a job application on the grounds of 'inexperience' and 'not matching skill needs, even though his classmate, who coincidentally had family ties to the company, was accepted without a question.\n\nAs the clock struck midnight on New Year's Eve, the Prime Minister's speech aired on the screen. While the speech played, his mind wandered. Why isn't our economy growing? What happened to freedom of speech? Was the restoration of 'democracy' even democratic???\n\nWhen the broadcast ended, a single question lingered in his mind..."
+ thai_events.2.d: "Somboon was sitting in his apartment, well, his mother's rented apartment, to be exact, at the start of a new year. \n\nHe had just been denied a job application on the grounds of 'inexperience' and 'not matching skill needs.', even though his classmate, who coincidentally had family ties to the company, was accepted without a question.\n\nAs he scrolled through television channels, the prime minister`s speech aired on the screen. While the speech played, his mind wandered. Why isn`t our economy growing? What happened to freedom of speech? Was the restoration of 'democracy' even democratic??\n\nWhen the broadcast ended, a single question lingered in his mind:"
  thai_events.2.a: "How §Rlong§! will this §Rlast§!?"
 
  thai_events.3.t: "Budget Bill Passed"
@@ -875,7 +885,7 @@
  thai_events.25.a: "Bruh"
  
  thai_events.26.t: "Cobra Gold 2021"
- thai_events.26.d: "The 40th Cobra Gold exercise in 2021 marked another installment of the long-running multinational military drills co-hosted by Thailand and the United States. However, the exercise was conducted under significant restrictions due to the COVID-19 pandemic and U.S. political instability following the November 2020 election and ongoing riots. To minimize transmission risks, the exercise was dramatically scaled down, with activities modified, moved online, or canceled. Troop deployments reached historic lows, with the U.S. sending just 400 soldiers and Thailand deploying 1,000. The exercise was held in a scaled-back hybrid format from August 3 to August 13, 2021.\n\nFor the first time, the annual Humanitarian Assistance and Disaster Relief (HADR) Tabletop Exercise was conducted entirely in a virtual format, bringing together 54 participants from nine nations, as well as representatives from international organizations including the United Nations and the Red Cross. In its third consecutive year, the cyberspace exercise focused on cyber warfare, enabling nations to collaborate online on defending critical networks."
+ thai_events.26.d: "The 40th Cobra Gold exercise, of 2021, marked another installment of the long-running multinational military drills co-hosted by Thailand and the United States. However, the exercise was conducted under significant restrictions due to the COVID-19 pandemic. To minimize transmission risks, the exercise was dramatically scaled down, with activities modified, shifted online, or canceled. Troop footprints reached historic lows: the U.S. sent just 400 soldiers and Thailand deployed 1,000. Additionally, U.S. political instability following the November 2020 election and ongoing riots further reduced America's commitment. The exercise was held on a scaled-back, hybrid format from August 3 to August 13, 2021\n\nFor the first time, the annual Humanitarian Assistance and Disaster Relief (HADR) Tabletop Exercise was conducted entirely in a virtual format, bringing together 54 participants from nine nations, as well as representatives from international organizations including the United Nations and the Red Cross.\n\nFocus shifted to Cyber Warfare as the cyberspace field training exercise returned for its third consecutive year, enabling participating nations to collaborate securely online and exchange best practices for defending critical networks against cyber threats."
  thai_events.26.a: "When borne by the red, white and blue!"
  
  thai_events.27.t: "March to the German Embassy: 26th October Mob"
@@ -1038,9 +1048,9 @@
  thai_events.60.a: "We shall only recognize the government in D.C."
  thai_events.60.b: "Perhaps the government in Denver is right..."
  
- thai_events.61.t: "Famous Lookmaxxer drowns in Samut Prakan"
- thai_events.61.d: "In Samut Prakan, police responded to reports of a foreign man behaving erratically at a luxury residential property in Bang Phli District. Witnesses reported that the man became increasingly agitated and paranoid before fleeing toward a nearby lake and entering the water. When officers arrived, he continued swimming farther into the lake until he appeared exhausted and disappeared beneath the surface.\n\nRescue divers were deployed and searched the lake for approximately 30 minutes before recovering his body. He was subsequently identified as 32-year-old Connor Murphy, a looksmaxxing YouTuber with over 2.3 million followers. Initially known worldwide for his fitness videos and absurd stunts, he later was viewed as a lolcow by many after he began using drugs, acting bizarrely, and preaching about starting a cult.\n\nUpon searching his vehicle, police reportedly found two unused syringes along with unidentified white pills inside a waist bag. Furthermore, police discovered that his rented luxury residence had been left in a severely deteriorated condition, with paint splashed everywhere. Murphy had previously spoken openly about his history of drug use and experiences with mind-altering substances, including ayahuasca and DMT."
- thai_events.61.a: "Don’t do drugs, kids, especially ayahuasca."
+ thai_events.61.t: "Prayut Visits D.C."
+ thai_events.61.d: ""
+ thai_events.61.a: ""
  
  thai_events.62.t: "Prayut Survives 4th Motion of No Confidence"
  thai_events.62.d: ""
@@ -1075,6 +1085,32 @@
  thai_events.69.t: "£GFX_facebook_logo  Free YOUTH's post"
  thai_events.69.d: "After October 21st, lovers of democracy gave Prayut three days to sign his resignation. Now, three days have passed, and Prayut shows no sign of resigning. Since talking to the dog is pointless, we'll talk to the "dog's owner."\n\nVery brave, very good, to disregard the people!\nVery brave, very good. to refuse to return to the path of democracy! Since he's shown his true colors, there's nothing left to lose but the shackles that hold this country back.\n\nThis Monday, October 26th, at 5:00 PM! Please be prepared. We will march from Samyan Intersection to the German Embassy. More details to follow. Thank you, and see you there"
  thai_events.69.a: "Worrying..."
+ 
+ thai_events.70.t: "Abbot shagged woman, stole millions, get arrested"
+ thai_events.70.d: "Police raided Wat Phutthaisawan in Ayutthaya following accusations that its abbot, Phra Ajarn Chote, had embezzled more than 750 million baht in temple funds. The operation was also prompted by leaked security footage provided by a group of former followers who said they "could no longer tolerate his behavior." Investigators accused him of diverting proceeds from amulet and religious-object sales through a foundation into personal accounts while issuing donation receipts in the temple's name. Phra Ajarn Chote was known for his popular amulets, one of which was famously owned by Anutin Charnvirakul.\n\nThe leaked security videos showed the 66-year-old abbot, engaging in various sexual acts with Punyawee "Ae" Rungrueang, a 47-year-old businesswoman and longtime temple supporter, with the most explicit footage showing them having oral sex and later fucking each other on a round wooden table in his quarters. \n\nBoth were arrested. Officers read out the arrest warrant while the abbot was eating a massive feast at the exact table where which he have sex on. He was formally defrocked, stripped of his robes, and reverted to his lay name, Atichote, before being taken to the police station.\n\nThere have been previous high-profile corruption, degeneracy, and misconduct scandals in Thai Buddhism. However, this case provoked greater public outrage due to explicit security footage that appeared to resemble a Pornhub video. Under Buddhist monastic rules, sexual relations constitute a Parajika offense, requiring expulsion from the monastic order. The scandal has further damaged the public image of Buddhism, Thailand's de facto religion."
+ thai_events.70.a: "Where can I buy that table?"
+ 
+ thai_events.71.t: "A Flag Lowered"
+ thai_events.71.d: "The air inside the ASEAN Secretariat Building in Jakarta felt heavier than the humid rain pouring down outside. For over half a century, the blue emblem of ten stalks of rice bound together within a red circle had symbolized the unity of Southeast Asia. However, as the United States disintegrated into civil war, the regional order collapsed. During the emergency summit, ideological divides shattered what remained of the bloc, with pro-Beijing faction directly clashing with pro-Tokyo coalitions. The scramble between China and Japan for political domination in Southeast Asia had slowly chipped away at that unity. Now, with ASEAN members at war with one another, Cambodia and Thailand had withdrawn their representatives, while delegates from each remaining nation sat in silence, awaiting the final decision.\n\n"In accordance with the consensus of the remaining member states," Lim read, his voice trembling slightly, "and recognizing the irreversible breakdown of regional security, the Association of Southeast Asian Nations is hereby declared dissolved."\n\nOutside, the downpour raged as the men slowly lowered the ASEAN banner for the final time. As the blue flag touched the wet asphalt, the men carefully folded it, marking the end of an institution that had endured for more than half a century."
+ thai_events.71.a: "ASEAN is now the past..."
+ 
+ thai_events.72.t: "Famous Lookmaxxer drowns in Samut Prakan"
+ thai_events.72.d: "In Samut Prakan, police responded to reports of a foreign man behaving erratically at a luxury residential property in Bang Phli District. Witnesses reported that the man became increasingly agitated and paranoid before fleeing toward a nearby lake and entering the water. When officers arrived, he continued swimming farther into the lake until he appeared exhausted and disappeared beneath the surface.\n\nRescue divers were deployed and searched the lake for approximately 30 minutes before recovering his body. He was subsequently identified as 32-year-old Connor Murphy, a looksmaxxing YouTuber with over 2.3 million followers. Initially known worldwide for his fitness videos and absurd stunts, he later was viewed as a lolcow by many after he began using drugs, acting bizarrely, and preaching about starting a cult.\n\nUpon searching his vehicle, police reportedly found two unused syringes along with unidentified white pills inside a waist bag. Furthermore, police discovered that his rented luxury residence had been left in a severely deteriorated condition, with paint splashed everywhere. Murphy had previously spoken openly about his history of drug use and experiences with mind-altering substances, including ayahuasca and DMT."
+ thai_events.72.a: "Don't do drugs, kids, especially ayahuasca."
+ 
+ thai_events.73.t: "Crisis at the Western Border"
+ thai_events.73.d: "The coup d'état in Naypyidaw and Myanmar's rapid descent into armed conflict have thrown the border region into turmoil. Along border areas near Mae Sot and Mae Hong Son, thousands of civilians continue to flee the fighting. In response, Royal Thai Army units reinforce border checkpoints and establish temporary reception areas, where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe Thai government emphasizes the need to keep diplomatic channels between Bangkok and Naypyidaw open to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. Meanwhile, the Ministry of Foreign Affairs announces that it is closely monitoring the situation daily and maintaining contingency plans to evacuate Thai nationals. The Ministry calls for restraint, dialogue, and a peaceful resolution while working through ASEAN mechanisms. However, ASEAN's response remains constrained by its longstanding principle of non-interference in the internal affairs of member states, despite its efforts to facilitate dialogue and a regional diplomatic resolution.\n\nOpponents of the government draw parallels between General Min Aung Hlaing's power grab and former Prime Minister Prayut Chan-o-cha, himself also a military general who seized power in Thailand's 2014 coup. The Move Forward Party condemns the diplomatic stance under the Prayut administration, which preferred informal engagement over public condemnation of the junta."
+ thai_events.73.a: "Looks like this is our problem now..."
+ 
+ thai_events.74.t: "U.S. Congress Resolution in Support of The Three Fingers Movement"
+ thai_events.74.d: "In the United States, Democrat Party members of the U.S Senate have introduced a resolution in support of democratic principles, human rights, and freedom of assembly in Thailand.\n\n"At a time when democracy is under assault here domestically in the United States and around the world, it is critical that the United States Senate stand with the democracy movement in Thailand," said Bob Menendez, a Democratic senator from New Jersey. Joining Menendez in introducing the resolution was Duckworth, a Thai-American war veteran and Democratic senator from Illinois. Duckworth called on Thai leaders to listen to the people and respect democratic principles.\n\n"As a Thai-American who fought to protect the right to peacefully protest here at home, I know that both the long-standing, strong relationship between the U.S. and Thailand, as well as every individual's inalienable democratic rights, are critically important to uphold and defend…"\n\nThe resolution drew support from many liberal-leaning protesters who viewed the United States as supportive of democracy in Thailand. At the same time, it faced pushback from conservative and royalist commentators such as Sondhi Limthongkul, who argued that U.S. politicians did not fully understand the situation, which was more complex than portrayed by foreign lawmakers, and were interfering in the country's domestic affairs.\n\nThe Ministry of Foreign Affairs under Prayut Chan-o-cha has hit back. In its statement, it says that Thailand has always respected the rights to freedom of expression and peaceful assembly. It goes on to claim that the U.S. resolution, introduced by Senator Tammy Duckworth, is not an official statement by the U.S. government and has only received the backing of a handful of senators."
+ thai_events.74.a: "Double disabled..."
+ thai_events.74.b: "And the right to speak your mind out... That's America to me!"
+ 
+ thai_events.75.t: "Senator Tammy - Took Janjira Internet Drama"
+ thai_events.75.d: "A heated debate has erupted on social media following a Facebook post by Mr. Techa "Tae" Thapthong, a representative of the "One Hundred Representatives Doing Good for the King" group, regarding Senator Tammy Duckworth. He wrote: "As for that Senator Tammy from America, just let her ramble on. The more she voices her opinions, the more foolish she looks. The facts are clear; despite holding such a high-ranking position, she fails to digest the actual facts." After Mr. Techa posted the message, famous former actress and model Took Janjira Jujang commented in reply, "Double disabled." (Senator Duckworth is a war veteran who lost both of her legs and partial use of her right arm in 2004 when her UH-60 Black Hawk helicopter was hit by a RPG fired by Iraqi insurgents during the Iraq War.)\n\nInternet users widely condemned the comment as an ableist remark that should never have been made, arguing that it amounted to discrimination against people with disabilities. As a result, many social media users began brigading her accounts."
+ thai_events.75.a: "LMAO YOU HAVE NO LEGS AND NO BRAIN, FUCK YOU."
+ thai_events.75.b: "The truly mentality disabled are Salim boomers"
  
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
@@ -1439,6 +1475,7 @@
  SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
  SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
  
+ 
  SIA_forpol_unlocked_tt: "The §YForeign Policy§! Branch will be §Gunlocked§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
@@ -1795,8 +1832,7 @@
  SIA_decision_deploy_the_army: "Dismantle the Protests"
  SIA_decision_deploy_the_army_tt: "The §RRiots§! will be stopped §Rviolently§!, §YProtests§! will §Ggreatly decay§!"
  
- SIA_disperse_the_protests: "Calm the Protests"
- SIA_disperse_the_protests_tt: "The §RRiots§! will be stopped §Gdiplomatically§!, Protests will §Oslowly decay§!"
+ 
  
  SIA_secure_support_from_ned: "Secure Support from NED"
  SIA_secure_support_from_ned_desc: "\n\n\n\n\n£GFX_SIA_National_Endowment_for_Democracy\n\n\n\n\n\nThe National Endowment for Democracy (NED) is a quasi-autonomous, non-governmental organization established by the United States Congress in 1983. Its stated mission is to promote democracy worldwide by supporting democratic institutions and civil society organizations, including political associations.\n\nThe NED did not fund or organize Thailand's student-led protests, but it supported projects related to human rights and civic participationsuch as iLaw. Some conservative and right-wing commentators, such as Sondhi Limthongkul, have alleged that the NED indirectly interfered in Thailand's domestic affairs by funding organizations whose objectives aligned with those of the protest movement. Supporters of the NED reject these claims, arguing that it merely supported civil society initiatives rather than influencing Thai politics.\n\n"—and that government of the people, by the people, for the people, shall not perish from the earth."\n-Abraham Lincoln"
@@ -1848,7 +1884,7 @@
  SIA_russian_oil_deal_desc: "\n\n\n\n\n£GFX_SIA_Prayut_Putin\n\n\n\n\n\nThailand currently does not import oil from Russia due to complex logistical challenges and financial payment hurdles. However, the escalating global energy crisis and skyrocketing domestic fuel prices have pushed the government to reconsider importing Russian oil as a viable economic alternative.\n\nThe Ministry of Energy is prepared to enter talks to buy crude oil from Russia to make up for potential supply shortages."
  
  SIA_african_oil_deal: "PTT Exploration and Production in @ALG @MZBAfrica"
- SIA_african_oil_deal_desc: ""
+ SIA_african_oil_deal_desc: "PTT Exploration and Production (PTTEP), the upstream exploration and production arm of PTT Public Company Limited, will expand into Africa through oil and gas projects in Algeria and Mozambique. Its operations will include crude oil production in Algeria and the large-scale Mozambique Area 1 LNG project, strengthening Thailand's presence in Africa's energy sector."
  
  SIA_african_oil_deal_2: "Further PTT Exploration and Production in @ALG @MZBAfrica"
  SIA_african_oil_deal_2_desc: ""
@@ -1902,7 +1938,42 @@
  SIA_saudi_civil_war_oil_tt: "§GIn exchange for aid, we will be provided oil§!"
  
  SIA_Economy_category: "Fueling the Engine"
- SIA_Economy_category_desc: "The Thai economy kinda needs upgrading"
+ SIA_Economy_category_desc: "The Thai economy kinda needs upgrading "Quote here""
+ SIA_environment_current_progress: "§YCurrent §LEnvironment Progress§!§!: §G[?SIA_environment_current_progress]§!/100%"
+ SIA_environment_target_progress: "§OMonthly§! §LEnvironment Progress§!:\n§Y[?SIA_environment_monthly_progress]%§!"
+ SIA_environment_lastyear_progress: "§gLast Year's Performance§!: [SIA_environment_last_year_status] §g([?SIA_environment_previous_year_progress]%)§!"
+ SIA_last_year_status_0: "§7A Report Has Yet To Be Made§!"
+ SIA_last_year_status_1: "§RCatastrophic§!"
+ SIA_last_year_status_2: "§tBad§!"
+ SIA_last_year_status_3: "§OMiddling§!"
+ SIA_last_year_status_4: "§7Great§!"
+ SIA_last_year_status_5: "§GPerfect§!"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ SIA_economy_help_tt: "[SIA_economy_help_tt_dyn]"
+ SIA_economy_help_1: "§GThe Environmental Project§!\n---------------------------\nThailand is home to grrrrrrrrrrr I hate writing tooltip"
+ SIA_economy_help_2: "§YEconomic Engine§!\n---------------------------\n"
+ SIA_economy_help_3: "§OCentralization Vs Decentralization§!\n---------------------------\n"
+ SIA_change_environment_progress_tt: "§LEnvironment Progress§! will change by [?change_temp|-+]"
+ SIA_change_environment_monthly_tt: "§OMonthly§! §LEnvironment Progress§! will change by [?change_temp|-+]"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  SIA_utn_promote_green_energy: "£GFX_united_thai_nation §BUTN§!: Promote Green Energy"
  SIA_utn_enhance_vocational_training: "£GFX_united_thai_nation §BUTN§!: Enhance Vocational Training"
  SIA_utn_encourage_tourism: "£GFX_united_thai_nation §BUTN§!: Encourage Tourism"
@@ -2044,6 +2115,9 @@
  SIA_apply_for_pdto_membership: "Apply for @JAP §WPDTO§! Membership"
  SIA_apply_for_pdto_membership_trigger: "@JAP §WPDTO§! §YInfluence§! must be §Ggreater§! than §Y70%§!"
  
+ SIA_negotiate_with_saudi_arabia: "Negotiate With Saudi Arabia"
+ SIA_negotiate_with_saudi_arabia_tt: "§GThis decision is more effective due to our prior support during the Saudi Civil war§!"
+ 
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
  SIA_cambodia_war_category_desc: "\n\n\n\n\n£GFX_SIA_thai_cambodia_war_banner\n\n\n\n\n\n\n\nThailand and Cambodia had border disputes since blah blah blah but recently the conflict has escalated blah blah.\n\n§RTensions§!: §O[?SIA_thai_cambodia_tensions|0%]§!\n§YCurrent Phase§!: [SIA_thai_cambodia_get_phase]"
  SIA_cambodia_war_phase_1: "§OBorder Skirmishes§!"
@@ -2149,12 +2223,15 @@
  SIA_milktea_chi: "Milk Tea Alliance"
  SIA_diplomatic_efforts: "Diplomatic Efforts"
  SIA_border_tensions: "Border Tensions"
+ SIA_foreign_meddlers: "Foreign Meddlers"
  #Other Modifiers
  volunteer_cap_modification_2: "Intensify Volunteers"
  volunteer_cap_modification_4: "Intensify Volunteers"
  #State Modifiers
  SIA_southern_fire_state_modifier: "Southern Fire"
  SIA_southern_fire_state_modifier_desc: "Southern Fire Description"
+ 
+ SIA_myanmar_refugees_state_modifier: "Myanmar Refugees"
  
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n[SIAGetBangkokMayor]"
@@ -2209,15 +2286,14 @@
 
  #Economic gui 
  SIA_selected_state: "Selected Area: [SIA_selected_econ_area]"
- SIA_BK_gui_tt: "§GBangkok Province§!"
- SIA_CM_gui_tt: "§CChiang Mai Province§!"
- SIA_CB_gui_tt: "§RChonburi Province§!"
- SIA_IS_gui_tt: "§nEastern Thailand§!"
- SIA_NB_gui_tt: "§PCentral Thailand§!"
- SIA_PT_gui_tt: "§7Pattani Province§!"
- SIA_ST1_gui_tt: "§YKek Province 1 (Merge with ST2)§!"
- SIA_ST2_gui_tt: "§OPak Tai§!"
- SIA_WB_gui_tt: "§VWestern Thailand§!"
+ SIA_BK_gui_tt: "§GBangkok Metropolitan§!"
+ SIA_North_gui_tt: "§7North§!"
+ SIA_Central_gui_tt: "§CCentral§!"
+ SIA_Northeast_gui_tt: "§9Northeast§!"
+ SIA_East_tt: "§LEast§!"
+ SIA_West_tt: "§pWest§!"
+ SIA_South_tt: "§OSouth§!"
+ SIA_Pattani_tt: "§RPattani§!"
 
  #decision tooltip
  SIA_stabilize_Baht_tt: "This Will §GRemove§! §G50§! Days From §RWorldwide Financial Crisis!§!"

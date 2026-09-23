@@ -955,6 +955,9 @@ ideas = {
 				stability_weekly = -0.005
 				society_development_monthly = -0.01
 				consumer_goods_factor = 0.15
+				totalitarian_socialist_drift = 0.01
+				communist_drift = 0.02
+				libertarian_socialist_drift = 0.02
 			}
 		}
 		SIA_half_payment_policy_idea = {
@@ -2259,6 +2262,166 @@ ideas = {
 				experience_gain_air = 0.1
 				military_development_monthly = 0.005
 				max_command_power = -25
+			}
+		}
+		SIA_thai_european_business_partnership = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.065
+				income_growth_factor = 0.075
+				business_value_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		SIA_thai_european_business_partnership_others = {
+			name = SIA_thai_european_business_partnership
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.04
+				income_growth_factor = 0.04
+				business_value_factor = 0.04
+				production_factory_efficiency_gain_factor = 0.035
+			}
+		}
+		SIA_thai_russian_economic_agreement = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.075
+				consumer_goods_factor = -0.05
+				income_growth_factor = 0.065
+				business_value_factor = 0.065
+			}
+		}
+		SIA_thai_russian_economic_agreement_others = {
+			name = SIA_thai_russian_economic_agreement
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.03
+				income_growth_factor = 0.05
+				business_value_factor = 0.05
+			}
+		}
+		SIA_dispersing_the_protests = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			on_remove = {
+				clr_country_flag = SIA_anti_government_protests
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				society_development_monthly = -0.005
+				stability_factor = -0.05
+				command_power_gain_mult = -0.25
+				social_democrat_drift = -0.02
+				totalitarian_socialist_drift = -0.01
+				libertarian_socialist_drift = -0.03
+				authoritarian_democrat_drift = 0.01
+			}
+		}
+		SIA_striking_the_rioters = {
+			picture = generic_parliament_idea
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			cancel = {
+				is_subject = yes
+			}
+			on_remove = {
+				clr_country_flag = SIA_anti_government_protests
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.004
+				war_support_factor = 0.075
+				command_power_gain_mult = -0.5
+				society_development_monthly = -0.01
+				social_democrat_drift = 0.02
+				libertarian_socialist_drift = 0.01
+				totalitarian_socialist_drift = 0.01
+				authoritarian_democrat_drift = -0.02
 			}
 		}
 	}

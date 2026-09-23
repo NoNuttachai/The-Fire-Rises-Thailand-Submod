@@ -2,94 +2,184 @@ guiTypes = {
 	containerWindowType = {
 		name = "SIA_Eco_map_container"
 		clipping = no
-		size = { width = 470 height = 800 }
+		size = { width = 470 height = 500 }
 		position = { x = 500 y = 500 }
 		
 		
-		iconType = {
-			name = "SIA_Eco_state_image"
-			position = { x = 201 y = 20 }
-		}
-		iconType = {
-			name = "SIA_Eco_state_image_outline"
-			position = { x = 200 y = 20 }
-			spriteType = "GFX_SIA_state_image_outline"
-		}
-		buttonType = {
-			name = "SIA_Eco_Bangkok_button"
-			position = { x = 82 y = 119 }
-			spriteType = "GFX_SIA_Eco_Bangkok"
-			pdx_tooltip = "SIA_BK_gui_tt"
-		}
 		
-		buttonType = {
-			name = "SIA_Eco_ChiangMai_button"
-			position = { x = 45 y = 16 }
-			spriteType = "GFX_SIA_Eco_Chiangmai"
-			pdx_tooltip = "SIA_CM_gui_tt"
+		containerWindowType = {
+			name = "SIA_top_bars_row"
+			position = { x = -8 y = 0 }
+			
+			buttonType = {
+				name = "SIA_environment_box"
+				position = { x = 30 y = 80 }
+				spriteType = "GFX_SIA_box_outline"
+			}
+			buttonType = {
+				name = "SIA_engine_box"
+				position = { x = 184 y = 80 }
+				spriteType = "GFX_SIA_box_outline"
+			}
+			buttonType = {
+				name = "SIA_bangkok_box"
+				position = { x = 338 y = 80 }
+				spriteType = "GFX_SIA_box_outline"
+			}
+			instantTextBoxType = {
+				name = "SIA_environment_box_text"
+				position = { x = 55 y = 100 }
+				font = "VCR02_14"
+				maxwidth = 460
+				text = "Environment"
+				format = left
+			}
+			instantTextBoxType = {
+				name = "SIA_engine_box_text"
+				position = { x = 225 y = 100 }
+				font = "VCR02_14"
+				maxwidth = 460
+				text = "Engine"
+				format = left
+			}
+			instantTextBoxType = {
+				name = "SIA_bangkok_box_text"
+				position = { x = 345 y = 100 }
+				font = "VCR02_14"
+				maxwidth = 460
+				text = "Bangkok and friends"
+				format = left
+			}
 		}
-		
-		buttonType = {
-			name = "SIA_Eco_Chonburi_button"
-			position = { x = 101 y = 109 }
-			spriteType = "GFX_SIA_Eco_Chonburi"
-			pdx_tooltip = "SIA_CB_gui_tt"
-
+		containerWindowType = {
+			name = "SIA_environment_container"
+			position = { x = -171 y = 130 }
+			
+			iconType = {
+				name = "SIA_environment_map_fill"
+				position = { x = 215 y = 33 }
+				spriteType = "GFX_SIA_environment_fill"
+			}
+			iconType = {
+				name = "SIA_environment_map_outline"
+				position = { x = 201 y = 20 }
+				spriteType = "GFX_SIA_environment_map_outline"
+			}
+			
+			instantTextBoxType = {
+				name = "SIA_environment_current_progress"
+				position = { x = 345 y = 100 }
+				font = "VCR02_12"
+				maxwidth = 250
+				text = SIA_environment_current_progress
+				format = center
+			}
+			instantTextBoxType = {
+				name = "SIA_environment_target_progress"
+				position = { x = 345 y = 200 }
+				font = "VCR02_12"
+				maxwidth = 300
+				text = SIA_environment_target_progress
+				format = center
+			}
+			instantTextBoxType = {
+				name = "SIA_environment_lastyear_progress"
+				position = { x = 345 y = 300 }
+				font = "VCR02_12"
+				maxwidth = 200
+				text = SIA_environment_lastyear_progress
+				format = center
+			}
 		}
-
-		buttonType = {
-			name = "SIA_Eco_Isan_button"
-			position = { x = 100 y = 50 }
-			spriteType = "GFX_SIA_Eco_Isan"
-			pdx_tooltip = "SIA_IS_gui_tt"
-
+		containerWindowType = {
+			name = "SIA_centralization_container"
+			position = { x = 0 y = 150 }
+			
 		}
-
-		buttonType = {
-			name = "SIA_Eco_Nonthaburi_button"
-			position = { x = 70 y = 69 }
-			spriteType = "GFX_SIA_Eco_Nonthaburi"
-			pdx_tooltip = "SIA_NB_gui_tt"
-
+		containerWindowType = {
+			name = "SIA_engine_container"
+			position = { x = 0 y = 150 }
+			
+			iconType = {
+				name = "SIA_Eco_state_image"
+				position = { x = 201 y = 20 }
+			}
+			
+			iconType = {
+				name = "SIA_Eco_state_image_outline"
+				position = { x = 200 y = 20 }
+				spriteType = "GFX_SIA_state_image_outline"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_north_button"
+				position = { x = 42 y = 13 }
+				spriteType = "GFX_SIA_engine_map_north"
+				pdx_tooltip = "SIA_North_gui_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_central_button"
+				position = { x = 66 y = 58 }
+				spriteType = "GFX_SIA_engine_map_central"
+				pdx_tooltip = "SIA_Central_gui_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_bangkok_button"
+				position = { x = 79 y = 116 }
+				spriteType = "GFX_SIA_engine_map_bangkok"
+				pdx_tooltip = "SIA_BK_gui_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_east_button"
+				position = { x = 94 y = 113 }
+				spriteType = "GFX_SIA_engine_map_east"
+				pdx_tooltip = "SIA_East_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_northeast_button"
+				position = { x = 95 y = 48 }
+				spriteType = "GFX_SIA_engine_map_northeast"
+				pdx_tooltip = "SIA_Northeast_gui_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_west_button"
+				position = { x = 54 y = 60 }
+				spriteType = "GFX_SIA_engine_map_west"
+				pdx_tooltip = "SIA_West_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_south_button"
+				position = { x = 51 y = 170 }
+				spriteType = "GFX_SIA_engine_map_south"
+				pdx_tooltip = "SIA_South_tt"
+			}
+			buttonType = {
+				name = "SIA_Eco_area_pattani_button"
+				position = { x = 96 y = 240 }
+				spriteType = "GFX_SIA_engine_map_pattani"
+				pdx_tooltip = "SIA_Pattani_tt"
+			}
+			iconType = {
+				name = "SIA_engine_map_outline"
+				position = { x = 28 y = 10 }
+				spriteType = "GFX_SIA_engine_map_outline"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "selected_area"
+				position = { x = 200 y = 100 }
+				font = "VCR02_14"
+				maxwidth = 300
+				text = SIA_selected_state
+				format = left
+			}
 		}
-		buttonType = {
-			name = "SIA_Eco_Pattani_button"
-			position = { x = 98 y = 239 }
-			spriteType = "GFX_SIA_Eco_Pattani"
-			pdx_tooltip = "SIA_PT_gui_tt"
-
-		}
-
-		buttonType = {
-			name = "SIA_Eco_ST1_button"
-			position = { x = 61 y = 130 }
-			spriteType = "GFX_SIA_Eco_ST1"
-			pdx_tooltip = "SIA_ST1_gui_tt"
-
-		}
-
-		buttonType = {
-			name = "SIA_Eco_ST2_button"
-			position = { x = 60 y = 199 }
-			spriteType = "GFX_SIA_Eco_ST2"
-			pdx_tooltip = "SIA_ST2_gui_tt"
-
-		}
-
-		buttonType = {
-			name = "SIA_Eco_WB_button"
-			position = { x = 55 y = 62 }
-			spriteType = "GFX_SIA_Eco_WB"
-			pdx_tooltip = "SIA_WB_gui_tt"
-
-		}
-		instantTextBoxType = {
-			name = "selected_area"
-			position = { x = 200 y = 100 }
-			font = "VCR02_14"
-			maxwidth = 460
-			text = SIA_selected_state
-			format = left
+		iconType = {
+			name = "economy_help_icon"
+			spriteType = "GFX_icon_question_mark"
+			pdx_tooltip  = "SIA_economy_help_tt"
+			position = { x = 450 y = 450 }
+			scale = 0.7
 		}
 	}
+	
 }

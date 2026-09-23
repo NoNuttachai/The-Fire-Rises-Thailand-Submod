@@ -6,149 +6,116 @@ scripted_gui = {
 			original_tag = SIA
 		}
 		triggers = {
+			#### ENVIRONMENT TAB ####
+			SIA_environment_map_fill_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			SIA_environment_map_outline_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			SIA_environment_current_progress_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			SIA_environment_target_progress_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			SIA_environment_lastyear_progress_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			
+			#### ENGINE TAB ####
+			SIA_engine_map_outline_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_state_image_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_state_image_outline_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			selected_area_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_north_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_central_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_bangkok_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_east_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_northeast_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_west_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_south_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_area_pattani_button_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			#### CENTRALIZATION TAB ####
+			
 		}
 		effects = {
-			SIA_Eco_Bangkok_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 1 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 1 }
-				}
-
-				SIA_update_frame = yes
+			SIA_environment_box_click = {
+				set_variable = { SIA_econ_tab = 1 }
 			}
-			SIA_Eco_ChiangMai_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 2 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 2 }
-				}
-				SIA_update_frame = yes
+			SIA_engine_box_click = {
+				set_variable = { SIA_econ_tab = 2 }
 			}
-			SIA_Eco_Chonburi_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 3 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 3 }
-				}
-				SIA_update_frame = yes
+			SIA_bangkok_box_click = {
+				set_variable = { SIA_econ_tab = 3 }
 			}
-			SIA_Eco_Isan_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 4 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 4 }
-				}
-				SIA_update_frame = yes
+			
+			SIA_Eco_area_bangkok_button_click = {
+				set_variable = { SIA_map_var = 1 }
 			}
-			SIA_Eco_Nonthaburi_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 5 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 5 }
-				}
-				SIA_update_frame = yes
+			SIA_Eco_area_north_button_click = {
+				set_variable = { SIA_map_var = 2 }
 			}
-			SIA_Eco_Pattani_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 6 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 6 }
-				}
-				SIA_update_frame = yes
+			SIA_Eco_area_central_button_click = {
+				set_variable = { SIA_map_var = 3 }
 			}
-			SIA_Eco_ST1_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 7 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 7 }
-				}
-				SIA_update_frame = yes
+			SIA_Eco_area_east_button_click = {
+				set_variable = { SIA_map_var = 4 }
 			}
-			SIA_Eco_ST2_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 8 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 8 }
-				}
-				SIA_update_frame = yes
+			SIA_Eco_area_northeast_button_click = {
+				set_variable = { SIA_map_var = 5 }
 			}
-			SIA_Eco_WB_button_click = {
-				if = {
-					limit = {
-						check_variable = { SIA_map_var = 9 }
-					}
-					set_variable = { SIA_map_var = 0 }
-				}
-				else = {
-					set_variable = { SIA_map_var = 9 }
-				}
-				SIA_update_frame = yes
+			SIA_Eco_area_west_button_click = {
+				set_variable = { SIA_map_var = 6 }
+			}
+			SIA_Eco_area_south_button_click = {
+				set_variable = { SIA_map_var = 7 }
+			}
+			SIA_Eco_area_pattani_button_click = {
+				set_variable = { SIA_map_var = 8 }
 			}
 		}
 		properties = {
 			SIA_Eco_state_image = {
 				image = "GFX_SIA_state_image_[?SIA_map_var]"
 			}
-			SIA_Eco_Bangkok_button = {
-				frame = SIA_Eco_Bangkok_frame
+			SIA_environment_map_fill = {
+				frame = SIA_environment_current_progress
 			}
-			SIA_Eco_ChiangMai_button = {
-				frame = SIA_Eco_ChiangMai_frame
-			}
-			SIA_Eco_Chonburi_button = {
-				frame = SIA_Eco_Chonburi_frame
-			}
-			SIA_Eco_Isan_button = {
-				frame = SIA_Eco_Isan_frame
-			}
-			SIA_Eco_Nonthaburi_button = {
-				frame = SIA_Eco_Nonthaburi_frame
-			}
-			SIA_Eco_Pattani_button = {
-				frame = SIA_Eco_Pattani_frame
-			}
-			SIA_Eco_ST1_button = {
-				frame = SIA_Eco_ST1_frame
-			}
-			SIA_Eco_ST2_button = {
-				frame = SIA_Eco_ST2_frame
-			}
-			SIA_Eco_WB_button = {
-				frame = SIA_Eco_WB_frame
-			}
+			
 		}
 	}
 }

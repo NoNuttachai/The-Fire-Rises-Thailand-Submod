@@ -10,52 +10,57 @@ defined_text = {
 		trigger = {
 			check_variable = { SIA_map_var = 2 }
 		}
-		localization_key = SIA_CM_gui_tt
+		localization_key = SIA_North_gui_tt
 	}
 	text = {
 		trigger = {
 			check_variable = { SIA_map_var = 3 }
 		}
-		localization_key = SIA_CB_gui_tt
+		localization_key = SIA_Central_gui_tt
 	}
 	text = {
 		trigger = {
 			check_variable = { SIA_map_var = 4 }
 		}
-		localization_key = SIA_IS_gui_tt
+		localization_key = SIA_East_tt
 	}
 	text = {
 		trigger = {
 			check_variable = { SIA_map_var = 5 }
 		}
-		localization_key = SIA_NB_gui_tt
+		localization_key = SIA_Northeast_gui_tt
 	}
 	text = {
 		trigger = {
 			check_variable = { SIA_map_var = 6 }
 		}
-		localization_key = SIA_PT_gui_tt
+		localization_key = SIA_West_tt
 	}
 	text = {
 		trigger = {
 			check_variable = { SIA_map_var = 7 }
 		}
-		localization_key = SIA_ST1_gui_tt
+		localization_key = SIA_South_tt
 	}
 	text = {
 		trigger = {
 			check_variable = { SIA_map_var = 8 }
 		}
-		localization_key = SIA_ST2_gui_tt
-	}
-	text = {
-		trigger = {
-			check_variable = { SIA_map_var = 9 }
-		}
-		localization_key = SIA_WB_gui_tt
+		localization_key = SIA_Pattani_tt
 	}
 }
-
+defined_text = {
+	name = SIA_environment_last_year_status
+	text = {
+		localization_key = SIA_last_year_status_[?SIA_environment_prev_year_status]
+	}
+}
+defined_text = {
+	name = SIA_economy_help_tt_dyn
+	text = {
+		localization_key = SIA_economy_help_[?SIA_econ_tab]
+	}
+}
 defined_text = {
 	name = SIA_covid_status
 	text = {

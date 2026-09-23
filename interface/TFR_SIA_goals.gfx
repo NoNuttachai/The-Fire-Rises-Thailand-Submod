@@ -190,4 +190,8 @@ spriteTypes = {
         name = "GFX_goal_SIA_prayut_2021_SIA_our_shared_future"
         texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_our_shared_future.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_stop_the_decline"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_stop_the_decline.png"
+    }
 }

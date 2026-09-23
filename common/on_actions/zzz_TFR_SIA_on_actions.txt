@@ -49,7 +49,9 @@ on_actions = {
 				country_event = { id = thai_events.58 days = 344 } # Dec 10 Constitutional Day
 				country_event = { id = thai_events.62 days = 934  } # July 23 2022 Prayut survives 4th motion of no confidence
 				country_event = { id = thai_events.63 days = 1212  } # April 27 2023 Am Cyanide
-				
+				country_event = { id = thai_events.70 days = 2444 } # September 10 2026 Abbot shagged woman, stole millions, get arrested
+				country_event = { id = thai_events.72 days = 2379 } # July 7 2026 Famous Lookmaxxer drowns in Samut Prakan
+				country_event = { id = thai_events.74 days = 337 } # December 3 2020 U.S. Congress Resolution in Support of The Three Fingers Movement
 				
 				
 				country_event = { id = thai_cambodia_tension.13 days = 1974 } # 28 May 2025 Cambodia Start

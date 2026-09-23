@@ -1241,7 +1241,25 @@ shared_focus = {
 	relative_position_id = SIA_thailand_in_the_world_stage
 	prerequisite = { focus = SIA_thailand_in_the_world_stage }
 	completion_reward = {
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+		}
 		
+		set_temp_variable = { income_var_temp = 15 }
+		add_income = yes
 	}
 }
 shared_focus = {
@@ -1261,7 +1279,58 @@ shared_focus = {
 	mutually_exclusive = { focus = SIA_talks_with_the_russians }
 	prerequisite = { focus = SIA_ventures_in_europe }
 	completion_reward = {
-		
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_timed_idea = {
+			idea = SIA_thai_european_business_partnership
+			days = 350
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = GER
+					tag = FRA
+					tag = ENG
+					tag = ITA
+					tag = SPR
+					tag = POL
+				}
+			}
+			add_timed_idea = {
+				idea = SIA_thai_european_business_partnership_others
+				days = 350
+			}
+			add_opinion_modifier = {
+				target = SIA
+				modifier = SIA_trade_negotiations
+			}
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = SIA_trade_negotiations
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = SIA_trade_negotiations
+		}
+		add_opinion_modifier = {
+			target = ENG
+			modifier = SIA_trade_negotiations
+		}
 	}
 }
 shared_focus = {
@@ -1281,7 +1350,40 @@ shared_focus = {
 	mutually_exclusive = { focus = SIA_deals_with_the_europeans }
 	prerequisite = { focus = SIA_ventures_in_europe }
 	completion_reward = {
-		
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 1
+				instant_build = yes
+			}
+		}
+		add_timed_idea = {
+			idea = SIA_thai_russian_economic_agreement
+			days = 350
+		}
+		SOV = {
+			add_timed_idea = {
+				idea = SIA_thai_russian_economic_agreement_others
+				days = 350
+			}
+			add_opinion_modifier = {
+				target = SIA
+				modifier = SIA_trade_negotiations
+			}
+		}
+		add_opinion_modifier = {
+			target = SOV
+			modifier = SIA_trade_negotiations
+		}
 	}
 }
 shared_focus = {
@@ -1300,7 +1402,24 @@ shared_focus = {
 	relative_position_id = SIA_talks_with_the_russians
 	prerequisite = { focus = SIA_talks_with_the_russians focus = SIA_deals_with_the_europeans }
 	completion_reward = {
+		unlock_decision_tooltip = SIA_negotiate_with_argentina
+		unlock_decision_tooltip = SIA_negotiate_with_brazil
+		unlock_decision_tooltip = SIA_negotiate_with_iran
 		
+		
+		unlock_decision_tooltip = SIA_negotiate_with_israel
+		unlock_decision_tooltip = SIA_african_ventures
+		if = {
+			limit = {
+				OR = {
+					country_exists = SAU
+					country_exists = ROC
+					country_exists = ARR
+				}
+			}
+			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt
+			unlock_decision_tooltip = SIA_negotiate_with_saudi_arabia
+		}
 	}
 }
 

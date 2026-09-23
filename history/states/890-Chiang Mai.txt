@@ -24,6 +24,7 @@ state={
 		victory_points = { 1990 5 }
 		victory_points = { 7492 5 }
 		victory_points = { 8045 2 }
+		victory_points = { 7353 2 }
 	}
 	state_category = large_town
 	manpower=6500250

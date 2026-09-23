@@ -24,7 +24,10 @@
  STATE_1509: "Sa Kaeo"
  #Victory Points
  VICTORY_POINTS_7601: "Sisaket"
+ VICTORY_POINTS_7353: "Sukhothai"
  VICTORY_POINTS_12264: "Surin"
+ VICTORY_POINTS_10221: "Ayutthaya"
+ VICTORY_POINTS_10250: "Nonthaburi"
   #Technology
  SIA_infantry_equipment_1: "M16A1"
  SIA_infantry_equipment_1_short: "M16A1"

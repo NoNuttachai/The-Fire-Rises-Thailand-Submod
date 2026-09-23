@@ -23,4 +23,42 @@ spriteTypes = {
         name = "GFX_decision_cat_SIA_prayut_terminal_picture"
         texturefile = "gfx/interface/decision_pictures/SIA_prayut_terminal.png"
     }
+	#Terrains
+	spriteType = {
+		name = "GFX_terrain_bangkok_thai_submod"
+		textureFile = "gfx/interface/terrains/bangkok.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_pattaya"
+		textureFile = "gfx/interface/terrains/Pattaya.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_ayutthaya"
+		textureFile = "gfx/interface/terrains/ayutthaya.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_nonthaburi"
+		textureFile = "gfx/interface/terrains/Nonthaburi.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_sukhothai"
+		textureFile = "gfx/interface/terrains/sukhothai.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_chiang_mai"
+		textureFile = "gfx/interface/terrains/chiang_mai.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_khon_kaen"
+		textureFile = "gfx/interface/terrains/khon_kaen.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_khorat"
+		textureFile = "gfx/interface/terrains/khorat.png"
+	}
+	spriteType = {
+		name = "GFX_terrain_hat_yai"
+		textureFile = "gfx/interface/terrains/hat_yai.png"
+	}
+	
 }	

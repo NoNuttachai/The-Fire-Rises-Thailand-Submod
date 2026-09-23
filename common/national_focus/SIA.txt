@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 1
 			tag = SIA
 		}
 	}
@@ -970,7 +970,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			unlock_decision_tooltip = SIA_disperse_the_protests
+			custom_effect_tooltip = SIA_smother_the_flames_tt
+			add_timed_idea = {
+				idea = SIA_dispersing_the_protests
+				days = 100
+			}
+			
+			
 		}
 	}
 	focus = {
@@ -993,7 +999,10 @@ focus_tree = {
 		
 		completion_reward = {
 			custom_effect_tooltip = SIA_deploy_the_army_tt
-			unlock_decision_tooltip = SIA_decision_deploy_the_army
+			add_timed_idea = {
+				idea = SIA_striking_the_rioters
+				days = 75
+			}
 			set_temp_variable = {
 				var = society_development_var_temp
 				value = -0.15

@@ -1,66 +1,54 @@
-SIA_update_frame = {
-	set_variable = { SIA_eco_bangkok_frame = 1 } 
-        set_variable = { SIA_eco_ChiangMai_frame = 1 }
-        set_variable = { SIA_eco_Chonburi_frame = 1 }
-        set_variable = { SIA_eco_Isan_frame = 1 }
-        set_variable = { SIA_eco_Nonthaburi_frame = 1 }
-        set_variable = { SIA_eco_Pattani_frame = 1 }
-        set_variable = { SIA_eco_ST1_frame = 1 }
-        set_variable = { SIA_eco_ST2_frame = 1 }
-        set_variable = { SIA_eco_WB_frame = 1 }
+SIA_change_environment_progress = { #Directly change the variable
+	add_to_variable = { SIA_environment_current_progress = change_temp }
+	custom_effect_tooltip = SIA_change_environment_progress_tt
 	
-	if = { #Bangkok
-		limit = { 
-			check_variable = { SIA_map_var = 1 }
-		}
-		set_variable = { SIA_eco_bangkok_frame = 2 } 
+}
+SIA_change_environment_monthly = { #Directly change the monthly variable
+	add_to_variable = { SIA_environment_monthly_progress = change_temp }
+	custom_effect_tooltip = SIA_change_environment_monthly_tt
+}
+SIA_change_environment_progress_monthly = { ##Add monthly to current year var it's 0-100
+	add_to_variable = { SIA_environment_current_progress = SIA_environment_monthly_progress }
+	
+	clamp_variable = {
+		var = SIA_environment_current_progress
+		min = 0
+		max = 100
 	}
-	else_if = { #Chiang Mai
-		limit = { 
-			check_variable = { SIA_map_var = 2 }
+}
+SIA_check_yearly_performance = {
+	set_temp_variable = { current_year_net_gain = SIA_environment_current_progress }
+	subtract_from_temp_variable = { current_year_net_gain = SIA_environment_previous_year_progress }
+	
+	#giant list to see how well you did
+	if = { #excellent
+		limit = {
+			check_variable = { current_year_net_gain > 12 }
 		}
-		set_variable = { SIA_Eco_ChiangMai_frame = 2 } 
+		set_variable = { SIA_environment_prev_year_status = 5 }
 	}
-	else_if = { #Chonburi
-		limit = { 
-			check_variable = { SIA_map_var = 3 }
+	else_if = { #good
+		limit = {
+			check_variable = { current_year_net_gain > 8 }
 		}
-		set_variable = { SIA_Eco_Chonburi_frame = 2 } 
+		set_variable = { SIA_environment_prev_year_status = 4 }
 	}
-	else_if = { #Isan
-		limit = { 
-			check_variable = { SIA_map_var = 4 }
+	else_if = { #okay
+		limit = {
+			check_variable = { current_year_net_gain > 4 }
 		}
-		set_variable = { SIA_Eco_Isan_frame = 2 } 
+		set_variable = { SIA_environment_prev_year_status = 3 }
 	}
-	else_if = { #Nonthaburi
-		limit = { 
-			check_variable = { SIA_map_var = 5 }
+	else_if = { #bad
+		limit = {
+			check_variable = { current_year_net_gain > 2 }
 		}
-		set_variable = { SIA_Eco_Nonthaburi_frame = 2 } 
+		set_variable = { SIA_environment_prev_year_status = 2 }
 	}
-	else_if = { #Pattani
-		limit = { 
-			check_variable = { SIA_map_var = 6 }
-		}
-		set_variable = { SIA_Eco_Pattani_frame = 2 } 
+	else = { #Ministry of Environment goes sad
+		
+		set_variable = { SIA_environment_prev_year_status = 1 }
 	}
-	else_if = { #South Thailand 1
-		limit = { 
-			check_variable = { SIA_map_var = 7 }
-		}
-		set_variable = { SIA_Eco_ST1_frame = 2 } 
-	}
-	else_if = { #South Thailand 2
-		limit = { 
-			check_variable = { SIA_map_var = 8 }
-		}
-		set_variable = { SIA_Eco_ST2_frame = 2 } 
-	}
-	else_if = { #West Bangkok
-		limit = { 
-			check_variable = { SIA_map_var = 9 }
-		}
-		set_variable = { SIA_Eco_WB_frame = 2 } 
-	}
+	#use this for standard in next year tick
+	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
 }

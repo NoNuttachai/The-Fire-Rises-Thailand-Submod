@@ -41,7 +41,27 @@ SIA_southern_fire_state_modifier = {
 	local_resources = -0.2
 	local_building_slots_factor = -0.3
 }
-
+SIA_myanmar_refugees_state_modifier = {
+	icon = "GFX_idea_SIA_SouthernFire"
+	enable = { 
+		SIA = {
+			controls_state = 1497
+			
+		}
+		1497 = {
+			NOT = {
+				is_core_of = SIA
+			}
+		}
+	}
+	remove_trigger = {
+		BRM = {
+			has_war = no
+		}
+	}
+	mobilization_speed = -0.2
+	local_supplies = -0.1
+}
 
 #ECON STATE MODIFIERS
 SIA_construction_boost = { 

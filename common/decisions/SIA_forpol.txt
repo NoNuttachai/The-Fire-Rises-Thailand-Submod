@@ -130,6 +130,93 @@ SIA_forpol_category = {
 		}
 	}
 	#THAILAND SELECTED DECISIONS
+	SIA_negotiate_with_argentina = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_negotiate_with_brazil = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_negotiate_with_iran = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_negotiate_with_saudi_arabia = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			OR = {
+				country_exists = SAU
+				country_exists = ROC
+				country_exists = ARR
+				
+				
+			}
+		}
+		available = {
+		}
+		complete_effect = {
+			custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
+		}
+	}
+	SIA_negotiate_with_israel = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			country_exists = ISR
+			ISR = {
+				has_war = no
+			}
+		}
+		available = {
+		}
+		complete_effect = {
+			custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
+			if = {
+				OR = {
+					AND = {
+						check_variable = { SIA_saudi_civil_war_support = 1 }
+						country_exists = SAU
+					}
+					AND = {
+						check_variable = { SIA_saudi_civil_war_support = 2 }
+						country_exists = ROC
+					}
+					AND = {
+						check_variable = { SIA_saudi_civil_war_support = 3 }
+						country_exists = ARR
+					}
+				}
+			}
+		}
+	}
+	SIA_african_ventures = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+		}
+		complete_effect = {
+			
+		}
+	}
 	SIA_lean_alignment_towards_eadi = {
 
 		visible = {

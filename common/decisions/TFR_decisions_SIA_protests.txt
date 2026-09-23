@@ -421,52 +421,6 @@ SIA_protests_category = {
 			base = 10
 		}
 	}
-	SIA_decision_deploy_the_army = {
-		icon = GFX_decision_generic_tank
-		allowed = {
-			tag = SIA
-		}
-		visible = {
-			has_completed_focus = SIA_deploy_the_army
-		}
-		days_remove = 25
-		custom_cost_trigger = {
-			command_power > 39.9
-		}
-		custom_cost_text = 40cp_cost
-		complete_effect = {
-			add_command_power = -40
-			add_stability = -0.25
-			
-		}
-		modifier = {
-			command_power_gain_mult = -0.8
-		}
-		remove_effect = {
-			clr_country_flag = SIA_anti_government_protests
-			custom_effect_tooltip = SIA_decision_deploy_the_army_tt
-		}
-		ai_will_do = {
-			base = 10
-		}
-	}
-	SIA_disperse_the_protests = {
-		icon = GFX_decision_generic_peace
-		allowed = {
-			tag = SIA
-		}
-		visible = {
-			has_completed_focus = SIA_smother_the_flames
-		}
-		days_remove = 100
-		remove_effect = {
-			clr_country_flag = SIA_anti_government_protests
-			custom_effect_tooltip = SIA_disperse_the_protests_tt
-		}
-		ai_will_do = {
-			base = 10
-		}
-	}
 	SIA_secure_support_from_ned = {
 		icon = GFX_decision_SIA_NED
 		allowed = {

@@ -275,7 +275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_stop_the_decline
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_stop_the_decline
 		x = 0
 		y = 2
 		cost = 4

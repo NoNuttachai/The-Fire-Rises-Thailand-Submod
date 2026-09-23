@@ -137,6 +137,7 @@ SIA_Economy_category = {
 	visible = {
 		has_country_flag = SIA_economy_mechanic_on
 	}
+	visible_when_empty = yes
 }
 SIA_military_reformation = {
 	icon = GFX_decision_cat_SIA_parliament

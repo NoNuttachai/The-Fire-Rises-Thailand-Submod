@@ -12,4 +12,11 @@ opinion_modifiers = {
 	SIA_milktea_prc = { value = -5 }
 	SIA_diplomatic_efforts = { value = 10 }
 	SIA_border_tensions = { value = -60 }
+	SIA_foreign_meddlers = { value = -25 }
+	
+	#Trade
+	SIA_trade_negotiations = { 
+		trade = yes
+		value = 20
+	}
 }

@@ -48,6 +48,7 @@ country_event = { #Start of border tensions
 			}
 			news_event = thai_newsevents.13
 			news_event = { id = news.421 days = 15 }
+			country_event = { id = thai_events.71 days = 18 }
 		}
 	}
     option = {
@@ -2850,20 +2851,23 @@ country_event = {
 	
     option = { #UoA
         name = thai_events.60.a
+		#country_event = thai_events.61
 	}
 	option = { #ACG
         name = thai_events.60.b
 	}
 }
 country_event = {
-    id = thai_events.61 # Famous Lookmaxxer drowns in Samut Prakan
+    id = thai_events.61 # Prayut meets with UoA guys - REDUNDANT UNTIL CHANGED FOR POST CIVIL WAR FLAVOR
     title = thai_events.61.t
     desc = thai_events.61.d
 	is_triggered_only = yes
-	picture = GFX_report_looksmaxxer_fucking_dies_lmao
+	picture = GFX_report_prayut_uoa
 	
     option = {
         name = thai_events.61.a
+		
+		
 	}
 }
 country_event = {
@@ -2996,6 +3000,129 @@ country_event = {
         name = thai_events.69.a
 		
 		
+	}
+}
+country_event = {
+    id = thai_events.70 #Abbot shagged woman, stole millions, get arrested
+    title = thai_events.70.t
+    desc = thai_events.70.d
+	is_triggered_only = yes
+	picture = GFX_report_luang_pho_atichoti_sex
+	
+    option = {
+        name = thai_events.70.a
+		set_temp_variable = { society_development_var_temp = -0.03 }
+		add_society_development = yes
+		add_stability = -0.01
+	}
+}
+country_event = {
+    id = thai_events.71 #A Flag Lowered - Rip asean
+    title = thai_events.71.t
+    desc = thai_events.71.d
+	is_triggered_only = yes
+	picture = GFX_report_rip_asean
+	
+    option = {
+        name = thai_events.71.a
+		
+	}
+}
+country_event = {
+    id = thai_events.72 #Famous Lookmaxxer drowns in Samut Prakan
+    title = thai_events.72.t
+    desc = thai_events.72.d
+	is_triggered_only = yes
+	picture = GFX_report_looksmaxxer_fucking_dies_lmao
+	
+    option = {
+        name = thai_events.72.a
+		
+	}
+}
+country_event = {
+    id = thai_events.73 #Crisis at the Western Border
+    title = thai_events.73.t
+    desc = thai_events.73.d
+	trigger = {
+		BRM = {
+			has_war = yes
+		}
+	}
+	fire_only_once = yes
+	picture = GFX_report_thai_myanmar_border
+	
+    option = {
+        name = thai_events.73.a
+		add_stability = -0.05
+		1497 = {
+			add_manpower = 50000
+			add_dynamic_modifier = { modifier = SIA_myanmar_refugees_state_modifier }
+		}
+	}
+}
+country_event = {
+    id = thai_events.74 #U.S. Congress Resolution in Support of The Three Fingers Movement
+    title = thai_events.74.t
+    desc = thai_events.74.d
+	is_triggered_only = yes
+	picture = GFX_report_report_us_senator_thailand
+	
+    option = {
+        name = thai_events.74.a
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+	}
+	option = {
+        name = thai_events.74.b
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+	}
+	after = {
+		add_opinion_modifier = {
+			target = USA
+			modifier = SIA_foreign_meddlers
+		}
+		add_power_balance_value = {
+			id = SIA_power_balance
+			value = -0.005
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		country_event = { id = thai_events.75 days = 4 }
+	}
+}
+country_event = {
+    id = thai_events.75 #Senator Tammy - Took Janjira Internet Drama
+    title = thai_events.75.t
+    desc = thai_events.75.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.75.a
+		trigger = {
+			has_completed_focus = SIA_side_with_uncle_tuu
+		}
+	}
+	option = {
+        name = thai_events.75.b
+		trigger = {
+			has_completed_focus = SIA_raise_our_three_fingers
+		}
+	}
+	after = {
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = -0.02
+		}
 	}
 }
 news_event = { #Thai Protests

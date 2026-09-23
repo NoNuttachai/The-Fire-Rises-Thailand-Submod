@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 9999999999
 			tag = SIA
 		}
 	}
@@ -72,10 +72,11 @@ focus_tree = {
 			hidden_effect = {
 				country_event = { id = thai_events.65 days = 150 }
 			}
+			custom_effect_tooltip = SIA_tonight_in_bangkok_tt
 		}
 	}
 	focus = {
-		id = SIA_our_probable_friends
+		id = SIA_frenemy
 		icon = GFX_goal_SIA_information_operations
 		x = -2
 		y = 1
@@ -93,25 +94,6 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			country_event = thai_prayut.12
-		}
-	}
-	focus = {
-		id = SIA_friends_with_benefits
-		icon = GFX_goal_SIA_information_operations
-		x = 0
-		y = 1
-		cost = 3
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			SIA_utn_in_charge_prayut = yes
-		}
-		
-		relative_position_id = SIA_our_probable_friends
-		prerequisite = { focus = SIA_our_probable_friends }
-		
-		completion_reward = {
 			unlock_decision_tooltip = SIA_bhumjaithai_agenda
 			unlock_decision_tooltip = SIA_pprp_agenda
 		}
@@ -134,6 +116,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_stability = -0.05
+			add_timed_idea = {
+				idea = SIA_quelling_agitators
+				days = 100
+			}
 			add_to_variable = { SIA_flaming_youth_party_popularity_stability_var = 0.02 }
 			add_to_variable = { SIA_flaming_youth_stability_factor_var = 0.02 }
 			effect_tooltip = {
@@ -144,29 +130,7 @@ focus_tree = {
 			}
 			set_temp_variable = { academic_development_var_temp = -0.05 }
 			add_academic_development = yes
-		}
-	}
-	focus = {
-		id = SIA_rotten_streets
-		icon = GFX_goal_SIA_information_operations
-		x = 0
-		y = 1
-		cost = 3
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			SIA_utn_in_charge_prayut = yes
-		}
-		
-		relative_position_id = SIA_light_the_street
-		prerequisite = { focus = SIA_light_the_street }
-		
-		completion_reward = {
-			add_timed_idea = {
-				idea = SIA_quelling_agitators
-				days = 100
-			}
+			
 		}
 	}
 	focus = {
@@ -187,28 +151,8 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = thai_prayut.11
-		}
-	}
-	focus = {
-		id = SIA_debunking_lies
-		icon = GFX_goal_SIA_information_operations
-		x = 0
-		y = 1
-		cost = 3
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			SIA_utn_in_charge_prayut = yes
-		}
-		
-		relative_position_id = SIA_our_opposition
-		prerequisite = { focus = SIA_our_opposition }
-		
-		completion_reward = {
-			add_political_power = 30
-			
 			country_event = thai_prayut.10
+			add_political_power = 30
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.025
@@ -238,9 +182,9 @@ focus_tree = {
 			SIA_utn_in_charge_prayut = yes
 		}
 		
-		relative_position_id = SIA_friends_with_benefits
-		prerequisite = { focus = SIA_friends_with_benefits }
-		prerequisite = { focus = SIA_rotten_streets }
+		relative_position_id = SIA_frenemy
+		prerequisite = { focus = SIA_frenemy }
+		prerequisite = { focus = SIA_light_the_street }
 		
 		completion_reward = {
 			unlock_decision_category_tooltip = SIA_Economy_category
@@ -873,9 +817,9 @@ focus_tree = {
 			SIA_utn_in_charge_prayut = yes
 		}
 		
-		relative_position_id = SIA_debunking_lies
-		prerequisite = { focus = SIA_debunking_lies }
-		prerequisite = { focus = SIA_rotten_streets }
+		relative_position_id = SIA_our_opposition
+		prerequisite = { focus = SIA_our_opposition }
+		prerequisite = { focus = SIA_light_the_street }
 		
 		completion_reward = {
 			add_political_power = 30
@@ -1247,8 +1191,8 @@ focus_tree = {
 			NOT = { has_country_flag = SIA_cambodia_war_victory }
 		}
 		
-		relative_position_id = SIA_rotten_streets
-		prerequisite = { focus = SIA_rotten_streets }
+		relative_position_id = SIA_light_the_street
+		prerequisite = { focus = SIA_light_the_street }
 		
 		completion_reward = {
 			custom_effect_tooltip = thai_events_55_tt

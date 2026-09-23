@@ -1,4 +1,64 @@
 SIA_Economy_category = {
+	#ENVIRONMENT#
+	SIA_add_five_to_current_progress = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		complete_effect = {
+			set_temp_variable = { change_temp = 5 }
+			SIA_change_environment_progress = yes
+		}
+	}
+	SIA_add_point_fifty_to_monthly_progress = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		complete_effect = {
+			set_temp_variable = { change_temp = 0.50 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_yearly_tick = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		complete_effect = {
+			SIA_check_yearly_performance = yes
+		}
+	}
+
+
+	#ENGINE MECHANIC#
 	SIA_utn_promote_green_energy = {
 		icon = generic_crisis
 		
@@ -132,7 +192,7 @@ SIA_Economy_category = {
 			always = no
 		}
 		visible = {
-			always = yes
+			check_variable = { SIA_econ_tab = 2 }
 		}
 	}
 	SIA_isan_revitalization_program = {
@@ -145,7 +205,7 @@ SIA_Economy_category = {
 			
 		}
 		visible = {
-			check_variable = { SIA_map_var = 4 } 
+			check_variable = { SIA_map_var = 5 } 
 			has_completed_focus = SIA_beautiful_east
 		}
 		cost = 100
@@ -189,7 +249,7 @@ SIA_Economy_category = {
 		}
 		
 		visible = {
-			check_variable = { SIA_map_var = 8 } 
+			check_variable = { SIA_map_var = 7 } 
 		}
 		cost = 75
 		days_remove = 100

@@ -417,10 +417,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_landmine.png"
 	}
 	spriteType = {
-		name = "GFX_report_looksmaxxer_fucking_dies_lmao"
-		texturefile = "gfx/event_pictures/report_looksmaxxer_fucking_dies_lmao.png"
-	}
-	spriteType = {
 		name = "GFX_report_gun_jom_palang_operation_wandering_soul"
 		texturefile = "gfx/event_pictures/report_gun_jom_palang_operation_wandering_soul.png"
 	}
@@ -447,6 +443,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_german_larpers"
 		texturefile = "gfx/event_pictures/report_german_larpers.png"
+	}
+	spriteType = {
+		name = "GFX_report_luang_pho_atichoti_sex"
+		texturefile = "gfx/event_pictures/report_luang_pho_atichoti_sex.png"
+	}
+	spriteType = {
+		name = "GFX_report_rip_asean"
+		texturefile = "gfx/event_pictures/report_rip_asean.png"
+	}
+	spriteType = {
+		name = "GFX_report_looksmaxxer_fucking_dies_lmao"
+		texturefile = "gfx/event_pictures/report_looksmaxxer_fucking_dies_lmao.png"
+	}
+	spriteType = {
+		name = "GFX_report_thai_myanmar_border"
+		texturefile = "gfx/event_pictures/report_thai_myanmar_border.png"
+	}
+	spriteType = {
+		name = "GFX_report_report_us_senator_thailand"
+		texturefile = "gfx/event_pictures/report_us_senator_thailand.png"
 	}
 	#World News
 	spriteType = {
