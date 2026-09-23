@@ -417,6 +417,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_landmine.png"
 	}
 	spriteType = {
+		name = "GFX_report_looksmaxxer_fucking_dies_lmao"
+		texturefile = "gfx/event_pictures/report_looksmaxxer_fucking_dies_lmao.png"
+	}
+	spriteType = {
 		name = "GFX_report_gun_jom_palang_operation_wandering_soul"
 		texturefile = "gfx/event_pictures/report_gun_jom_palang_operation_wandering_soul.png"
 	}

@@ -3,7 +3,7 @@ dependencies = {
     "The Fire Rises"   
     "The Fire Rises Music Addon"	
 }			
-supported_version="1.17.*"
+supported_version="1.19.*"
 tags={
 	"National Focuses"
 	"Gameplay"

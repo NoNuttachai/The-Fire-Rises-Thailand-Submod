@@ -127,7 +127,7 @@ guiTypes = {
 	### country entry
 	containerWindowType = {
 		name = "country_entry"
-		position = { x = 0 y = 170 }
+		position = { x = -5 y = 240 }
 		buttonType = {
 			name = "country_leader"
 			quadTextureSprite = "GFX_leader_unknown"
@@ -651,7 +651,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "backdrop_0"
-			position = { x = 502 y = 30 }
+			position = { x = 315 y = 30 }
 			size = { width = 175  height = 300 }
 			
 
@@ -668,7 +668,7 @@ guiTypes = {
 	### PATH FLAGS FOR MAJOR
 		containerWindowType = {
 			name = highlight_paths
-			position = { x = 500 y = 50 }
+			position = { x = 500 y = 120 }
 			## x: ± 172 to move one slot left or right
 			## y: ± 95 to move one slot up or down
 

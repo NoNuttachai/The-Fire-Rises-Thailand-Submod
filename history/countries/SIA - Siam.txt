@@ -275,6 +275,7 @@ if = {
 	create_intelligence_agency = yes
 }
 
+country_event = { id = thai_events.61 days = 2379 } # Jul 7, 2026
 add_ideas = {
 	SIA_lottery_conscription
 	SIA_low_income_only_welfare
