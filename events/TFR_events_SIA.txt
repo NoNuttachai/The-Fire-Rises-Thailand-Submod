@@ -3107,7 +3107,7 @@ country_event = {
     id = thai_events.75 #Senator Tammy - Took Janjira Internet Drama
     title = thai_events.75.t
     desc = thai_events.75.d
-	GFX_report_double_disabled
+	picture = GFX_report_double_disabled
 	is_triggered_only = yes
 	
     option = {
@@ -3130,15 +3130,32 @@ country_event = {
 	}
 }
 country_event = { 
-    id = thai_events.76
+    id = thai_events.76 # Nonstop Heavy Rainfall
     title = thai_events.76.t
     desc = thai_events.76.d
+	picture = GFX_report_nonstop_rain
 	is_triggered_only = yes
-	major = yes
 
     option = {
-        name = thai_events.76.a 
-        
+        name = thai_events.76.a
+		289 = {
+			damage_building = {
+			  type = infrastructure
+			  damage = 1
+			}
+		}
+        1495 = {
+			damage_building = {
+			  type = infrastructure
+			  damage = 1
+			}
+		}
+		1496 = {
+			damage_building = {
+			  type = infrastructure
+			  damage = 1
+			}
+		}
     }
 }
 news_event = { #Thai Protests

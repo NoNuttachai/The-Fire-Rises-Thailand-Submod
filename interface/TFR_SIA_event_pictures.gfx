@@ -468,6 +468,10 @@ spriteTypes = {
 		name = "GFX_report_double_disabled"
 		texturefile = "gfx/event_pictures/report_double_disabled.png"
 	}
+	spriteType = {
+		name = "GFX_report_nonstop_rain"
+		texturefile = "gfx/event_pictures/report_nonstop_rain.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

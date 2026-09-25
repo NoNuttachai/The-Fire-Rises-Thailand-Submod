@@ -1110,11 +1110,12 @@
  thai_events.75.t: "Senator Tammy - Took Janjira Internet Drama"
  thai_events.75.d: "A heated debate has erupted on social media following a Facebook post by Mr. Techa "Tae" Thapthong, a representative of the "One Hundred Representatives Doing Good for the King" group, regarding Senator Tammy Duckworth. He wrote: "As for that Senator Tammy from America, just let her ramble on. The more she voices her opinions, the more foolish she looks. The facts are clear; despite holding such a high-ranking position, she fails to digest the actual facts."\n\nAfter Mr. Techa posted the message, famous former actress and model Took Janjira Jujang commented in reply, "Double disabled."\n\nSenator Duckworth is a war veteran who lost both of her legs and partial use of her right arm in 2004 when her UH-60 Black Hawk helicopter was hit by a RPG fired by Iraqi insurgents during the Iraq War.\n\nInternet users widely condemned the comment as an ableist remark, arguing that it amounted to discrimination against people with disabilities and should never have been made. Many users made posts and replies denouncing her comment, with some calling for her to apologize for the remark.\n\nThanyawat Kamolwongwat, a list MP from the Move Forward Party, commented on the case, saying, "People with disabilities are human beings with dignity and worth that we must respect and honor for their diversity and differences. Do not use physical conditions to insult others because that is insulting to yourself." as reported by Matichon."
  thai_events.75.a: "LMAO"
- thai_events.75.b: "The truly mentality disabled are Salim boomers"
+ thai_events.75.b: "The truly mentality disabled are Salim boomers."
 
- thai_events.76.t: "Thairath Front Page"
- thai_events.76.d: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_thairath_newspaper_test"
- 
+ thai_events.76.t: "Nonstop Heavy Rainfall"
+ thai_events.76.d: "t seems to be raining without end across Thailand, day and night. Rain continues to batter large swaths of the country.\nThe Thai Meteorological Department stated that this relentless, torrential rain is driven by an active low-pressure cell moving along the monsoon trough. These conditions are bringing heavy to very heavy rain across several provinces in the Central, Northern, Northeastern, and Southern regions, with persistent rainfall causing urban flooding across various parts of Bangkok, Nonthaburi, and Pattaya. In Bangkok, municipal authorities have deployed high-capacity water pumps to prevent major inundation in vulnerable districts along the Chao Phraya basin.\n\nTraveling has become difficult. Even equipped with an umbrella and a raincoat, many people are deciding to stay at home as persistent rainfall continues."
+ thai_events.76.a: "I like sleeping to the sound of rain."
+
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
  thai_elections.1.a: "new gov"
