@@ -24,10 +24,10 @@
  SIA_rubbish_collect_long: "Rubbish Collection Organization"
  SIA_thai_people_are_aryans: "-"
  SIA_thai_people_are_aryans_from_the_depth_of_agatha: "-"
-
-
+ 
  SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
  SIA_speed_up_thing_2: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!\n§GOR§!\n£training_speed_texticon  §Y$THING2$§! by §H$NUMBER2$§!\nDepending on which one is active."
+
  SIA_mfp: "MFP"
  SIA_mfp_long: "£GFX_orange_party_2 Move Forward Party"
  SIA_progressive_movement: "PM"
@@ -302,7 +302,10 @@
  SIA_deals_with_the_europeans: "Deals With The Europeans"
  SIA_talks_with_the_russians: "Talks With The Russians"
  SIA_off_continent_diplomacy: "Off-Continent Diplomacy"
+ SIA_off_continent_diplomacy_israel_tt: "§gSince Israel exists, we are able to conduct deals with them§!"
+ SIA_off_continent_diplomacy_israel_tt_locked: "§gWe could had conduct trade deals with Israel... But it seems that has been §Rlong gone§!§!"
  SIA_off_continent_diplomacy_saudi_tt: "\n§gSince Saudi Arabia currently has a §Gfriendly regime§!, we are able to do deals with them§!"
+ SIA_off_continent_diplomacy_saudi_tt_locked: "\n§gThere is an opportunity to conduct a §Cbusiness deal§! in §YArabia§! if the victor of the §YArabian Civil War§! is @SAU @ROC @ARR §Oapproachable§!, it will be even more §Ceffective§! if it's someone we had §Gsupported§! during the civil war§!"
  SIA_asian_house_of_cards: "House Of Cards"
  
  SIA_riding_the_shoulders_of_the_chinese_dragon: "Riding The Shoulders Of The Chinese Dragon"
@@ -318,13 +321,18 @@
  SIA_eadi_business_deals: "EADI Business Deals"
  SIA_containing_the_chinese_threat: "Containing The Chinese Threat"
  SIA_attract_japanese_business: "Attract Japanese Business"
- SIA_increase_production_output: "Increase Production Output"
+ SIA_promoting_innovation_programs: "Promoting Innovation Programs"
+ SIA_promoting_innovation_programs_tt: "§CWhen the §Ynational spirit§! §Rexpires§!§!:"
  SIA_marching_alongside_the_rising_sun: "Marching Alongside The Rising Sun"
  SIA_post_asean_cooperation: "Post ASEAN Cooperation"
  SIA_fortress_thailand: "Fortress Thailand"
+ SIA_fortress_thailand_tt: "§gWe will receive §Gmore benefits§! the more §Your neighbors§! are on the §Ropposing§! faction\n\nThe effects will be military oriented§!"
  SIA_alongside_our_brothers: "Alongside Our Brothers"
+ SIA_alongside_our_brothers_tt: "§gWe will receive §Gmore benefits§! the more §Your neighbors§! are on the §Gsame§! faction as us\n\nThe effects will be industry oriented§!"
  SIA_investing_on_our_allies: "Investing On Our Allies"
+ SIA_investing_on_our_allies_tt: "§CWe will be able to §Yinvest§! into the economy of our Southeast Asian allies§!§!"
  SIA_thailand_land_of_the_free: "Thailand, Land Of The Free"
+ SIA_thailand_land_of_the_free_tt: "§gPolitical Power will scale with how many §Yneighbors§! we are §Callied§! with§!"
  
  SIA_eastern_conundrum: "Eastern Conundrum"
  SIA_cook_the_engine: "Cook The Engine"
@@ -620,7 +628,7 @@
  
 
  ###Startup Menu###
- SIA_country_summary: "§YCountry Summary§!:\nThailand, the "Land of Smiles," is renowned for its culture, cuisine, and tropical beauty. But behind this globally admired image, persistent structural problems that have shaped the country`s modern history. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval, alternating between military rule and civilian government. From World War II and the Cold War to the aftermath of the 1997 Asian financial crisis the nation has faced various instability and political upheaval \nThese tensions have intensified since the 2014 coup, with Thailand remaining under General Prayut Chan-o-cha even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. \nThe new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
+ SIA_country_summary: "§YCountry Summary§!:\nThailand, often called the "Land of Smiles," is renowned worldwide for its culture, cuisine, and tropical beauty. However, the country's modern era has been characterized by significant internal conflict. Since the 1932 transition to a constitutional monarchy, Thailand has endured repeated cycles of political upheaval alternating between military rule and civilian government through World War II, the Cold War, and the aftermath of the 1997 Asian financial crisis, including over a dozen military coups.\n\nFollowing the 2014 coup, General Prayut Chan-o-cha assumed power as prime minister and retained his post following the controversial 2019 general election, remaining in office even after the official dissolution of the military junta. Political polarization has deepened, with many becoming increasingly disillusioned with the junta-backed establishment. The new decade will be a challenge for the Thai people. Will they break the cycle and progress toward a brighter future? Only time will tell." 
  SIA_country_paths: "\n\n\n§YCountry Paths§!:\n§g - United Thai Nation Party§!\n§B - Bhumjaithai Party§!\n§R - Pheu Thai Party§!\n§O - Move Forward / People's Party§!"
  SIA_country_other: "§YTips and Tricks:§!\n "...Though we Thais love peace, we will fight without fear, for none shall ever trample our freedom. We'll sacrifice every drop of our blood with every might. Glory and victory to the nation of Thailand, §RC§!h§Bai§!y§Ro!§!" \n§g - Final Stanza of the National Anthem of Thailand, Luang Saranupraphan§!"
 
@@ -743,6 +751,11 @@
  
  SIA_dispersing_the_protests: "Dispersing The Protests"
  SIA_striking_the_rioters: "Striking The Rioters"
+ SIA_tokyo_bangkok_sino_containment_strategy: "Tokyo-Bangkok Chinese Containment Strategy"
+ SIA_pdto_scientific_cooperative: ""PDTO Scientific Cooperative"
+ SIA_eadi_industry_stimulus: "EADI Industry Stimulus"
+ SIA_sino_thai_military_training: "Joint Sino-Thai Training"
+ SIA_renewed_sea_diplomatic_efforts: "Renewed SEA Diplomatic Efforts"
  
  SIA_flaming_youth_dynamic_modifier: "Leftist Anti-Establishment Opposition"
  SIA_flaming_youth_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_leftist_opposition\n\n\n\n\n\n                       §RPerpetual Opposition§!"
@@ -1090,11 +1103,11 @@
  thai_events.69.a: "Worrying..."
  
  thai_events.70.t: "Abbot shagged woman, stole millions, get arrested"
- thai_events.70.d: "Police raided Wat Phutthaisawan in Ayutthaya following accusations that its abbot, Phra Ajarn Chote, had embezzled more than 750 million baht in temple funds. The operation was prompted by leaked security footage provided by a group of former followers who said they "could no longer tolerate his behavior." The leaked security videos showed the 66-year-old abbot, engaging in various sexual acts with Punyawee "Ae" Rungrueang, a 47-year-old businesswoman and longtime temple supporter, with the most explicit footage showing them having oral sex and later fucking each other on a round wooden table in his quarters.\n\nBoth Phra Ajarn Chote and his female aide, Ms. Punyavee, were arrested. Officers read out the arrest warrant while the abbot was eating a massive feast at the exact table where he had sex on. He was formally defrocked, stripped of his robes, and reverted to his lay name, Atichote, before being taken to the police station. Police charged him with diverting proceeds from amulet and religious-object sales through a foundation into personal accounts while issuing donation receipts in the temple's name. Phra Ajarn Chote was known for his popular amulets, one of which was famously owned by Anutin Charnvirakul.\n\nThere have been previous high-profile corruption, degeneracy, and misconduct scandals in Thai Buddhism. However, this case provoked greater public outrage due to explicit security footage that appeared to resemble a Pornhub video. Under Buddhist monastic rules, sexual relations constitute a Parajika offense, requiring expulsion from the monastic order. The scandal has further damaged the public image of Buddhism, Thailand's de facto religion."
+ thai_events.70.d: "Police raided Wat Phutthaisawan in Ayutthaya following accusations that its abbot, Phra Ajarn Chote, had embezzled more than 750 million baht in temple funds. The operation was also prompted by leaked security footage provided by a group of former followers who said they "could no longer tolerate his behavior." Investigators accused him of diverting proceeds from amulet and religious-object sales through a foundation into personal accounts while issuing donation receipts in the temple's name. Phra Ajarn Chote was known for his popular amulets, one of which was famously owned by Anutin Charnvirakul.\n\nThe leaked security videos showed the 66-year-old abbot, engaging in various sexual acts with Punyawee "Ae" Rungrueang, a 47-year-old businesswoman and longtime temple supporter, with the most explicit footage showing them having oral sex and later fucking each other on a round wooden table in his quarters. \n\nBoth were arrested. Officers read out the arrest warrant while the abbot was eating a massive feast at the exact table where which he have sex on. He was formally defrocked, stripped of his robes, and reverted to his lay name, Atichote, before being taken to the police station.\n\nThere have been previous high-profile corruption, degeneracy, and misconduct scandals in Thai Buddhism. However, this case provoked greater public outrage due to explicit security footage that appeared to resemble a Pornhub video. Under Buddhist monastic rules, sexual relations constitute a Parajika offense, requiring expulsion from the monastic order. The scandal has further damaged the public image of Buddhism, Thailand's de facto religion."
  thai_events.70.a: "Where can I buy that table?"
  
  thai_events.71.t: "A Flag Lowered"
- thai_events.71.d: "The air inside the ASEAN Secretariat Building in Jakarta felt heavier than the humid rain pouring down outside. For over half a century, the blue emblem of ten stalks of rice bound together within a red circle had symbolized the unity of Southeast Asia. However, as the United States disintegrated into civil war, the regional order collapsed.\n\nThe rivalry between China and Japan for political dominance in Southeast Asia had slowly chipped away at that unity. Ideological divides shattered what remained of the bloc, with pro-Beijing and pro-Tokyo factions clashing with one another. Now, with ASEAN members at war with one another, Cambodia and Thailand had withdrawn their representatives, while delegates from each remaining nation sat in silence, awaiting the final decision.\n\n"In accordance with the consensus of the remaining member states," Secretary-General of ASEAN, Lim Jock Hoi read, his voice trembling slightly, "and recognizing the irreversible breakdown of regional security, the Association of Southeast Asian Nations is hereby declared dissolved."\n\nOutside, the downpour raged as the men slowly lowered the ASEAN banner for the final time. As the blue flag touched the wet asphalt, the men carefully folded it, marking the end of an institution that had endured for more than half a century."
+ thai_events.71.d: "The air inside the ASEAN Secretariat Building in Jakarta felt heavier than the humid rain pouring down outside. For over half a century, the blue emblem of ten stalks of rice bound together within a red circle had symbolized the unity of Southeast Asia. However, as the United States disintegrated into civil war, the regional order collapsed. During the emergency summit, ideological divides shattered what remained of the bloc, with pro-Beijing faction directly clashing with pro-Tokyo coalitions. The scramble between China and Japan for political domination in Southeast Asia had slowly chipped away at that unity. Now, with ASEAN members at war with one another, Cambodia and Thailand had withdrawn their representatives, while delegates from each remaining nation sat in silence, awaiting the final decision.\n\n"In accordance with the consensus of the remaining member states," Lim read, his voice trembling slightly, "and recognizing the irreversible breakdown of regional security, the Association of Southeast Asian Nations is hereby declared dissolved."\n\nOutside, the downpour raged as the men slowly lowered the ASEAN banner for the final time. As the blue flag touched the wet asphalt, the men carefully folded it, marking the end of an institution that had endured for more than half a century."
  thai_events.71.a: "ASEAN is now the past..."
  
  thai_events.72.t: "Famous Lookmaxxer drowns in Samut Prakan"
@@ -1102,28 +1115,32 @@
  thai_events.72.a: "Don't do drugs, kids, especially ayahuasca."
  
  thai_events.73.t: "Crisis at the Western Border"
- thai_events.73.d: "Following the coup d'état in Naypyidaw and Myanmar's rapid descent into civil war, thousands of civilians along border areas near Mae Sot and Mae Hong Son continue to flee the fighting. In response, the Royal Thai Army has reinforced border checkpoints and established temporary reception areas where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe Ministry of Foreign Affairs announces that it is closely monitoring the situation daily and maintaining contingency plans to evacuate Thai nationals. The Ministry calls for a peaceful resolution in collaboration with ASEAN. However, ASEAN's response remains constrained by its longstanding principle of non-interference in the internal affairs of member states, despite its efforts to facilitate dialogue and reach a diplomatic solution.\n\nThe government emphasizes the need to keep diplomatic channels open between Thailand and the Myanmar junta to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. The Move Forward Party and opponents of the government condemned the diplomatic stance of the Prayut administration, which prioritized maintaining diplomatic relations over publicly condemning the junta. Critics drew parallels between General Min Aung Hlaing's seizure of power and that of Prime Minister Prayut Chan-o-cha, himself a military general who seized power in Thailand's 2014 coup."
+ thai_events.73.d: "Following the coup d'état in Naypyidaw and Myanmar's rapid descent into civil war, thousands of civilians along border areas near Mae Sot and Mae Hong Son continue to flee the fighting. In response, the Royal Thai Army has reinforced border checkpoints and established temporary reception areas where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe Ministry of Foreign Affairs announces that it is closely monitoring the situation daily and maintaining contingency plans to evacuate Thai nationals. The Ministry calls for a peaceful resolution in collaboration with ASEAN. However, ASEAN's response remains constrained by its longstanding principle of non-interference in the internal affairs of member states, despite its efforts to facilitate dialogue and reach a diplomatic solution.\n\nThe government emphasizes the need to keep diplomatic channels open between Thailand and the Myanmar junta to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. The Move Forward Party condemned the diplomatic stance under the Prayut administration, which prioritized maintaining diplomatic relations over publicly condemning the junta. Opponents of the government drew parallels between General Min Aung Hlaing's seizure of power and that of former Prime Minister Prayut Chan-o-cha, himself a military general who seized power in Thailand's 2014 coup."
  thai_events.73.a: "Looks like this is our problem now..."
  
- thai_events.74.t: "U.S. Senators Backed Three Fingers Protests"
- thai_events.74.d: "In the United States, 9 Democrats of the U.S. Senate introduced a resolution supporting freedom of speech and freedom of assembly in Thailand amid ongoing anti-government protests. "At a time when democracy is under assault here domestically in the United States and around the world, it is critical that the United States Senate stand with the democracy movement in Thailand," said Bob Menendez (D-NJ). Joining Menendez in introducing the resolution is Tammy Duckworth (D-IL), a Thailand-born Thai-American war veteran. She said, "As a Thai-American who fought to protect the right to peacefully protest here at home, I know that both the long-standing, strong relationship between the U.S. and Thailand, as well as every individual's inalienable democratic rights, are critically important to uphold and defend..." Duckworth also called on Thai leaders to listen to the people and respect democratic principles.\n\nThe resolution drew support from many liberal-leaning protesters who welcomed the United States support for democracy in Thailand. At the same time, it faced pushback from conservatives and royalists, who argued that U.S. politicians did not fully understand the situation, which was more complex than they portrayed, and were interfering in the country's domestic affairs.\n\nThe Ministry of Foreign Affairs under Prayut Chan-o-cha has hit back. In its statement, it says that Thailand has always respected the rights to freedom of expression and peaceful assembly. It goes on to say that the U.S. resolution is not an official statement by the U.S. government and has only received the backing of a handful of senators."
- thai_events.74.a: "Double disabled"
+ thai_events.74.t: "U.S. Congress Resolution in Support of The Three Fingers Movement"
+ thai_events.74.d: "In the United States, nine Democratic U.S. senators introduced a resolution to support freedom of speech and freedom of assembly in Thailand in the face of ongoing anti-government protests.\n"At a time when democracy is under assault here domestically in the United States and around the world, it is critical that the United States Senate stand with the democracy movement in Thailand," said Bob Menendez, a Democratic senator from New Jersey.\nJoining Menendez in introducing the resolution was Tammy Duckworth, a Thai-American war veteran and Democratic senator from Illinois. Duckworth called on Thai leaders to listen to the people and respect democratic principles.\n\n"As a Thai-American who fought to protect the right to peacefully protest here at home, I know that both the long-standing, strong relationship between the U.S. and Thailand, as well as every individual's inalienable democratic rights, are critically important to uphold and defend…"\n\nThe resolution drew support from many liberal-leaning protesters who welcomed the United States support for democracy in Thailand. At the same time, it faced pushback from conservative and royalist commentators such as Sondhi Limthongkul, who argued that U.S. politicians did not fully understand the situation, which was more complex than they portrayed, and were interfering in the country's domestic affairs.\n\nThe Ministry of Foreign Affairs under Prayut Chan-o-cha has hit back. In its statement, it says that Thailand has always respected the rights to freedom of expression and peaceful assembly. It goes on to claim that the U.S. resolution, introduced by Senator Tammy Duckworth, is not an official statement by the U.S. government and has only received the backing of a handful of senators."
+ thai_events.74.a: "Double disabled..."
  thai_events.74.b: "And the right to speak your mind out... That's America to me!"
  
  thai_events.75.t: "Senator Tammy - Took Janjira Internet Drama"
  thai_events.75.d: "A heated debate has erupted on social media following a Facebook post by Mr. Techa "Tae" Thapthong, a representative of the "One Hundred Representatives Doing Good for the King" group, regarding Senator Tammy Duckworth. He wrote: "As for that Senator Tammy from America, just let her ramble on. The more she voices her opinions, the more foolish she looks. The facts are clear; despite holding such a high-ranking position, she fails to digest the actual facts."\n\nAfter Mr. Techa posted the message, famous former actress and model Took Janjira Jujang commented in reply, "Double disabled."\n\nSenator Duckworth is a war veteran who lost both of her legs and partial use of her right arm in 2004 when her UH-60 Black Hawk helicopter was hit by a RPG fired by Iraqi insurgents during the Iraq War.\n\nInternet users widely condemned the comment as an ableist remark, arguing that it amounted to discrimination against people with disabilities and should never have been made. Many users made posts and replies denouncing her comment, with some calling for her to apologize for the remark.\n\nThanyawat Kamolwongwat, a list MP from the Move Forward Party, commented on the case, saying, "People with disabilities are human beings with dignity and worth that we must respect and honor for their diversity and differences. Do not use physical conditions to insult others because that is insulting to yourself." as reported by Matichon."
  thai_events.75.a: "LMAO"
- thai_events.75.b: "The truly mentality disabled are Salim boomers."
-
- thai_events.76.t: "Nonstop Heavy Rainfall"
- thai_events.76.d: "It seems to be raining without end across Thailand, day and night. Rain continues to batter large swaths of the country.\n\nThe Thai Meteorological Department stated that this relentless, torrential rain is being driven by an active low-pressure cell moving along the monsoon trough. These conditions are bringing heavy to very heavy rain across several provinces in the Central, Northern, Northeastern, and Southern regions, with persistent rainfall causing urban flooding across various parts of Bangkok, Nonthaburi, and Pattaya. In Bangkok, municipal authorities have deployed high-capacity water pumps to prevent major inundation in vulnerable districts along the Chao Phraya basin.\n\nTraveling has become difficult. Even with umbrellas and raincoats, many people are choosing to stay home due to flooding and hazardous road conditions as persistent rainfall continues. Several roads have become waterlogged, causing traffic congestion and making travel increasingly difficult. The public is advised to beware of heavy to very heavy rain, which may cause flash floods, landslides, and mudslides."
- thai_events.76.a: "I like sleeping to the sound of rain"
-
- thai_events.77.t: "Winter with Rain"
- thai_events.77.d: "The rain has been pouring down for three days straight. Winter's home is still safe from the flood, but the water is dangerously high. If the rain doesn't stop over the next few days, the house will surely flood. Winter has seen on social media that some people are saying this year's downpours might cause major flooding as severe as in 2011.\n\nLast night, Winter and his mom had plans to visit his relatives at Panyapiwat and take him to eat at Mo-Mo Paradise. Winter was very happy and looking forward to the trip the next day. However, upon waking up, Winter was met with the harsh truth from his parents: the rain hadn't stopped, and the water kept rising. Due to concerns about flooded roads, they couldn't go visit their relatives. Instead, he and his parents had to mop the wet floor as rainwater continued to seep into the house.\n\nFrustrated, Winter later went on his phone, posted a picture of his three cats on the wet floor, and complained about the flooding on r/oksahaipunyaon, where his post received many upvotes and an overwhelming number of responses from people in different provinces. Redditors empathized with his situation, with responses ranging from reports of flooded homes to descriptions of houses being barricaded against the rising water.\n\nWinter is now sad and bored. He went to pet his cats and give them food, and then later, Winter plans to spend his days grinding War Thunder Mobile and Hearts of Iron IV."
- thai_events.77.a: "I am playing HOI4 rn aswell!"
-
-
+ thai_events.75.b: "The truly mentality disabled are Salim boomers"
+ 
+ thai_events.76.t: "Thairath Front Page"
+ thai_events.76.d: "CHINA INVADES TAIWAN - WAR IN THE PACIFIC\n\nApocalypse in the Pacific! While Americans slaughter each other in their homeland, Xi Jinping has unleashed the dragon. The PLA has launched a full-scale invasion of Taiwan, and Japanese warships are firing back. More on Page 5\n\nThe unimaginable has happened. With America completely paralyzed by its own devastating civil war, Beijing has seized the ultimate geopolitical window. The Ministry of Foreign Affairs has expressed concern over the safety and evacuation of around 68,000 Thai residents in Taiwan as fighting intensifies across the island. The crisis also dominated the emergency ASEAN summit in Jakarta, where member states are deeply divided over the invasion. Governments sympathetic to Beijing called for restraint and opposed foreign intervention, while others demanded that China halt its offensive."
+ thai_events.76.a: "We have to evacuate our people!"
+ thai_events_76_tt: ".\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_thairath_newspaper_test"
+ 
+ thai_events.77.t: "Nonstop Heavy Rainfall"
+ thai_events.77.d: "It seems to be raining without end across Thailand, day and night. Rain continues to batter large swaths of the country.\n\nThe Thai Meteorological Department stated that this relentless, torrential rain is being driven by an active low-pressure cell moving along the monsoon trough. These conditions are bringing heavy to very heavy rain across several provinces in the Central, Northern, Northeastern, and Southern regions, with persistent rainfall causing urban flooding across various parts of Bangkok, Nonthaburi, and Pattaya. In Bangkok, municipal authorities have deployed high-capacity water pumps to prevent major inundation in vulnerable districts along the Chao Phraya basin.\n\nTraveling has become difficult. Even with umbrellas and raincoats, many people are choosing to stay home due to flooding and hazardous road conditions as persistent rainfall continues. Several roads have become waterlogged, causing traffic congestion and making travel increasingly difficult. The public is advised to beware of heavy to very heavy rain, which may cause flash floods, landslides, and mudslides."
+ thai_events.77.a: "I like sleeping to the sound of rain"
+ 
+ thai_events.78.t: "Winter with Rain"
+ thai_events.78.d: "The rain has been pouring down for three days straight. Winter's home is still safe from the flood, but the water is dangerously high. If the rain doesn't stop over the next few days, the house will surely flood. Winter has seen on social media that some people are saying this year's downpours might cause major flooding as severe as in 2011.\n\nLast night, Winter and his mom had plans to visit his relatives at Panyapiwat and take him to eat at Mo-Mo Paradise. Winter was very happy and looking forward to the trip the next day. However, upon waking up, Winter was met with the harsh truth from his parents: the rain hadn't stopped, and the water kept rising. Due to concerns about flooded roads, they couldn't go visit their relatives. Instead, he and his parents had to mop the wet floor as rainwater continued to seep into the house.\n\nFrustrated, Winter later went on his phone, posted a picture of his three cats on the wet floor, and complained about the flooding on r/oksahaipunyaon, where his post received many upvotes and an overwhelming number of responses from people in different provinces. Redditors empathized with his situation, with responses ranging from reports of flooded homes to descriptions of houses being barricaded against the rising water.\n\nWinter is now sad and bored. He went to pet his cats and give them food, and then later, Winter plans to spend his days grinding War Thunder Mobile and Hearts of Iron IV."
+ thai_events.78.a: "I am playing HOI4 rn aswell!"
+ 
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
  thai_elections.1.a: "new gov"
@@ -1182,9 +1199,9 @@
  thai_prayut.1.d: "Big Tu noooooo"
  thai_prayut.1.a: "new pm for now lol"
  
- thai_prayut.2.t: "Prayut comes back"
- thai_prayut.2.d: "he now hates prawit maybe"
- thai_prayut.2.a: "oh noes"
+ thai_prayut.2.t: "Constitutional Court Verdict on Prayut's Case"
+ thai_prayut.2.d: "The Constitutional Court's long-awaited ruling on the tenure of Prime Minister Prayut Chan-o-cha has drawn a sharp line through the country's political horizon.\n\nPetitioned by opposition lawmakers who argued that the 2014 coup leader had reached his constitutional eight-year limit in August 2022, the nine-member bench delivered a 6-3 majority verdict that Prayut's tenure must be calculated not from his initial seizure of power, but from the April 2017 promulgation of the current constitution.\n\nThe decision clears Prayut to retain the premiership, but it places a strict expiration date on his political longevity: under no legal interpretation can he remain Prime Minister past April 2025.\n\nFor the ruling conservative coalition, the verdict is a double-edged sword. While it averts an immediate succession crisis and preserves Prayut's control heading into the upcoming general election, it leaves the pro-military establishment with a severely diminished candidate. Voters and coalition partners alike are forced to confront the reality that any prospective government under Prayut can only last two years before a disruptive mid-term power transfer becomes legally mandatory.\n\nMeanwhile, anti-government activists and opposition parties have condemned the court's decision as yet another display of judicial shield-bearing for the ruling junta. As pro-democracy movements rally across Bangkok under black banners to protest the verdict, the countdown to 2025 has officially begun, accelerating the desperate scramble within conservative circles to find a viable successor to head off an impending opposition landslide."
+ thai_prayut.2.a: "Time is running short..."
  
  thai_prayut.3.t: "Prayut transfers to UTN"
  thai_prayut.3.d: "No longer running under the banner of Palang Pracharath Party as his political vehicle, Prayut Chan-o-cha has formally joined the United Thai Nation Party ahead of Thailand's next general election. The move comes after a growing political rift between Prayut and Deputy Prime Minister Prawit Wongsuwan, his longtime military ally and the leader of Palang Pracharath. Rather than continue under a party increasingly associated with Prawit, Prayut has chosen to establish his own political base through the newly formed United Thai Nation Party, which has presented itself as a conservative force committed to stability, national security, and Thailand's traditional institutions.\n\nFor Prayut, the decision is ultimately about securing a path back to the premiership, but he now faces an increasingly competitive political environment, declining popularity, and a fragmented conservative camp. United Thai Nation will attempt to turn his personal political following into an electoral organization capable of keeping him in power, even as opposition parties and former allies prepare to challenge his decade-long dominance of Thai politics."
@@ -1953,7 +1970,7 @@
  SIA_Economy_category_desc: "The Thai economy kinda needs upgrading "Quote here""
  SIA_environment_current_progress: "§YCurrent §LEnvironment Progress§!§!: §G[?SIA_environment_current_progress]§!/100%"
  SIA_environment_target_progress: "§OMonthly§! §LEnvironment Progress§!:\n§Y[?SIA_environment_monthly_progress]%§!"
- SIA_environment_lastyear_progress: "§gLast Year's Performance§!: [SIA_environment_last_year_status] §g([?SIA_environment_previous_year_progress]%)§!"
+ SIA_environment_lastyear_progress: "§gLast Year's Performance§!: [SIA_environment_last_year_status] (§Y[?SIA_environment_previous_year_progress_net_change|2]%§!) §W(§g[?SIA_environment_previous_previous_year_progress]%§!->§G[?SIA_environment_previous_year_progress]%§!)§! "
  SIA_last_year_status_0: "§7A Report Has Yet To Be Made§!"
  SIA_last_year_status_1: "§RCatastrophic§!"
  SIA_last_year_status_2: "§tBad§!"
@@ -2123,11 +2140,91 @@
  
  SIA_forpol_selected_nation: "§YSelected Nation§!: §Y[?SIA_faf_nation.GetNameWithFlag]§!"
  SIA_apply_for_eadi_membership: "Apply for @PRC §READI§! Membership"
+ SIA_apply_for_eadi_membership_tt: "§gWe will unlock §Ydecisions§! related to §Gincreasing§! @PRC §READI§! influence in Southeast Asian countries and the ability to §Cinvite§! them into our faction§!"
  SIA_apply_for_eadi_membership_trigger: "@PRC §READI§! §YInfluence§! must be §Ggreater§! than §Y70%§!"
  SIA_apply_for_pdto_membership: "Apply for @JAP §WPDTO§! Membership"
+ SIA_apply_for_pdto_membership_tt: "§gWe will unlock §Ydecisions§! related to §Gincreasing§! @JAP §WPDTO§! influence in Southeast Asian countries and the ability to §Cinvite§! them into our faction§!"
  SIA_apply_for_pdto_membership_trigger: "@JAP §WPDTO§! §YInfluence§! must be §Ggreater§! than §Y70%§!"
  
- SIA_negotiate_with_saudi_arabia: "Negotiate With Saudi Arabia"
+ SIA_negotiate_with_argentina: "Business Deal With Argentina"
+ SIA_negotiate_with_brazil: "Business Deal With Brazil"
+ SIA_negotiate_with_iran: "Business Deal With Iran"
+ SIA_negotiate_with_israel: "Business Deal With Israel"
+ SIA_african_ventures: "African Ventures"
+ SIA_invest_in_allies: "Invest in Southeast Asian Ally"
+ 
+ SIA_invite_lao_to_pdto: "@LAO §YLaos§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_vin_to_pdto: "@VIN §YVietnam§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_cam_to_pdto: "@CAM §YCambodia§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_brm_to_pdto: "@BRM §YMyanmar§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_mal_to_pdto: "@MAL §YMalaysia§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_ins_to_pdto: "@INS §YIndonesia§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_phi_to_pdto: "@PHI §YPhilippines§!: §CInvite§! to the §WPDTO§!"
+ 
+ SIA_invite_lao_to_eadi: "@LAO §YLaos§!: §CInvite§! to the §READI§!"
+ SIA_invite_vin_to_eadi: "@VIN §YVietnam§!: §CInvite§! to the §READI§!"
+ SIA_invite_cam_to_eadi: "@CAM §YCambodia§!: §CInvite§! to the §READI§!"
+ SIA_invite_brm_to_eadi: "@BRM §YMyanmar§!: §CInvite§! to the §READI§!"
+ SIA_invite_mal_to_eadi: "@MAL §YMalaysia§!: §CInvite§! to the §READI§!"
+ SIA_invite_ins_to_eadi: "@INS §YIndonesia§!: §CInvite§! to the §READI§!"
+ SIA_invite_phi_to_eadi: "@PHI §YPhilippines§!: §CInvite§! to the §READI§!"
+ 
+ SIA_lean_alignment_towards_eadi: "Lean Alignment Towards the @PRC §READI§!"
+ SIA_lean_alignment_towards_pdto: "Lean Alignment Towards the @JAP §WPDTO§!"
+ SIA_partner_with_japanese_military_industry: "Partner With Japanese Military Industry"
+ SIA_partner_with_japanese_commercial_industry: "Partner With Japanese Commercial Sector"
+ SIA_partner_with_japanese_industrial_companies: "Partner With Japanese Industrial Companies"
+ SIA_partner_with_japanese_electronics_industry: "Partner With Japanese Electronic Manufacturers"
+ 
+ SIA_partner_with_chinese_military_industry: "Partner With Chinese Military Industry"
+ SIA_partner_with_chinese_commercial_businesses: "Partner With Chinese Commercial Businesses"
+ SIA_partner_with_chinese_automobile_sector: "Partner With Chinese Automobile Sector"
+ SIA_partner_with_chinese_renewables_industry: "Partner With Chinese Renewable Energy Industry"
+ 
+ 
+ 
+ SIA_laos_promote_pdto_influence: "@LAO §YLaos§!: §GPromote§! §WPDTO§! Influence"
+ SIA_cam_promote_pdto_influence: "@CAM §YCambodia§!: §GPromote§! §WPDTO§! Influence"
+ SIA_vin_promote_pdto_influence: "@VIN §YVietnam§!: §GPromote§! §WPDTO§! Influence"
+ SIA_brm_promote_pdto_influence: "@BRM §YMyanmar§!: §GPromote§! §WPDTO§! Influence"
+ SIA_ins_promote_pdto_influence: "@INS §YIndonesia§!: §GPromote§! §WPDTO§! Influence"
+ SIA_phi_promote_pdto_influence: "@PHI §YPhilippines§!: §GPromote§! §WPDTO§! Influence"
+ SIA_mal_promote_pdto_influence: "@MAL §YMalaysia§!: §GPromote§! §WPDTO§! Influence"
+ 
+ SIA_laos_sabotage_pdto_influence: "@LAO §YLaos§!: §RSabotage§! §WPDTO§! Influence"
+ SIA_cam_sabotage_pdto_influence: "@CAM §YCambodia§!: §RSabotage§! §WPDTO§! Influence"
+ SIA_vin_sabotage_pdto_influence: "@VIN §YVietnam§!: §RSabotage§! §WPDTO§! Influence"
+ SIA_brm_sabotage_pdto_influence: "@BRM §YMyanmar§!: §RSabotage§! §WPDTO§! Influence"
+ SIA_ins_sabotage_pdto_influence: "@INS §YIndonesia§!: §RSabotage§! §WPDTO§! Influence"
+ SIA_phi_sabotage_pdto_influence: "@PHI §YPhilippines§!: §RSabotage§! §WPDTO§! Influence"
+ SIA_mal_sabotage_pdto_influence: "@MAL §YMalaysia§!: §RSabotage§! §WPDTO§! Influence"
+ 
+ SIA_laos_promote_eadi_influence: "@LAO §YLaos§!: §GPromote§! §READI§! Influence"
+ SIA_cam_promote_eadi_influence: "@CAM §YCambodia§!: §GPromote§! §READI§! Influence"
+ SIA_vin_promote_eadi_influence: "@VIN §YVietnam§!: §GPromote§! §READI§! Influence"
+ SIA_brm_promote_eadi_influence: "@BRM §YMyanmar§!: §GPromote§! §READI§! Influence"
+ SIA_ins_promote_eadi_influence: "@INS §YIndonesia§!: §GPromote§! §READI§! Influence"
+ SIA_phi_promote_eadi_influence: "@PHI §YPhilippines§!: §GPromote§! §READI§! Influence"
+ SIA_mal_promote_eadi_influence: "@MAL §YMalaysia§!: §GPromote§! §READI§! Influence"
+ 
+ SIA_laos_sabotage_eadi_influence: "@LAO §YLaos§!: §RSabotage§! §READI§! Influence"
+ SIA_cam_sabotage_eadi_influence: "@CAM §YCambodia§!: §RSabotage§! §READI§! Influence"
+ SIA_vin_sabotage_eadi_influence: "@VIN §YVietnam§!: §RSabotage§! §READI§! Influence"
+ SIA_brm_sabotage_eadi_influence: "@BRM §YMyanmar§!: §RSabotage§! §READI§! Influence"
+ SIA_ins_sabotage_eadi_influence: "@INS §YIndonesia§!: §RSabotage§! §READI§! Influence"
+ SIA_phi_sabotage_eadi_influence: "@PHI §YPhilippines§!: §RSabotage§! §READI§! Influence"
+ SIA_mal_sabotage_eadi_influence: "@MAL §YMalaysia§!: §RSabotage§! §READI§! Influence"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ SIA_negotiate_with_saudi_arabia: "Negotiate With [SIA_saudi_faction_alive]"
+ SIA_negotiate_with_saudi_arabia_1: "[SAU.GetName]"
+ SIA_negotiate_with_saudi_arabia_2: "[ROC.GetName]"
+ SIA_negotiate_with_saudi_arabia_3: "[ARR.GetName]"
  SIA_negotiate_with_saudi_arabia_tt: "§GThis decision is more effective due to our prior support during the Saudi Civil war§!"
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"

@@ -50,5 +50,7 @@ SIA_check_yearly_performance = {
 		set_variable = { SIA_environment_prev_year_status = 1 }
 	}
 	#use this for standard in next year tick
+	set_variable = { SIA_environment_previous_previous_year_progress = SIA_environment_previous_year_progress }
 	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
+	set_variable = { SIA_environment_previous_year_progress_net_change = current_year_net_gain }
 }

@@ -1207,7 +1207,7 @@ shared_focus = {
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 36
 	y = 0
-	cost = 4
+	cost = 3
 	ai_will_do = {
 		factor = 10
 	}
@@ -1230,7 +1230,7 @@ shared_focus = {
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -5
 	y = 1
-	cost = 4
+	cost = 2
 	ai_will_do = {
 		factor = 10
 	}
@@ -1391,7 +1391,7 @@ shared_focus = {
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -1
 	y = 1
-	cost = 4
+	cost = 3
 	ai_will_do = {
 		factor = 10
 	}
@@ -1405,10 +1405,20 @@ shared_focus = {
 		unlock_decision_tooltip = SIA_negotiate_with_argentina
 		unlock_decision_tooltip = SIA_negotiate_with_brazil
 		unlock_decision_tooltip = SIA_negotiate_with_iran
-		
-		
-		unlock_decision_tooltip = SIA_negotiate_with_israel
 		unlock_decision_tooltip = SIA_african_ventures
+		custom_effect_tooltip = generic_skip_one_line_tt
+		if = {
+			limit = {
+				country_exists = ISR
+			}
+			custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt
+			unlock_decision_tooltip = SIA_negotiate_with_israel
+		}
+		else = {
+			custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt_locked
+		}
+		
+		
 		if = {
 			limit = {
 				OR = {
@@ -1416,9 +1426,15 @@ shared_focus = {
 					country_exists = ROC
 					country_exists = ARR
 				}
+				NOT = {
+					has_global_flag = saudi_civil_war_flag
+				}
 			}
 			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt
 			unlock_decision_tooltip = SIA_negotiate_with_saudi_arabia
+		}
+		else = {
+			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt_locked
 		}
 	}
 }
@@ -1429,7 +1445,7 @@ shared_focus = {
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 0
 	y = 1
-	cost = 4
+	cost = 2
 	ai_will_do = {
 		factor = 10
 	}
@@ -1440,6 +1456,7 @@ shared_focus = {
 	relative_position_id = SIA_thailand_in_the_world_stage
 	prerequisite = { focus = SIA_thailand_in_the_world_stage }
 	completion_reward = {
+		add_political_power = 100
 		unlock_decision_tooltip = SIA_lean_alignment_towards_eadi
 		unlock_decision_tooltip = SIA_lean_alignment_towards_pdto
 	}
@@ -1539,6 +1556,10 @@ shared_focus = {
 	relative_position_id = SIA_asian_house_of_cards
 	prerequisite = { focus = SIA_riding_the_shoulders_of_the_chinese_dragon focus = SIA_pdtos_sea_gateway }
 	completion_reward = {
+		set_temp_variable = { SIA_military_resource_var_temp = 2 }
+		SIA_mil_mech_resource_change = yes
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
+		SIA_mil_mech_combat_readiness_change = yes
 		add_ideas = SIA_joint_allied_command
 	}
 }
@@ -1558,7 +1579,12 @@ shared_focus = {
 	relative_position_id = SIA_riding_the_shoulders_of_the_chinese_dragon
 	prerequisite = { focus = SIA_riding_the_shoulders_of_the_chinese_dragon }
 	completion_reward = {
-		
+		set_temp_variable = { income_var_temp = 20 }
+		add_income = yes
+		unlock_decision_tooltip = SIA_partner_with_chinese_military_industry
+		unlock_decision_tooltip = SIA_partner_with_chinese_commercial_businesses
+		unlock_decision_tooltip = SIA_partner_with_chinese_automobile_sector
+		unlock_decision_tooltip = SIA_partner_with_chinese_renewables_industry
 	}
 }
 shared_focus = {
@@ -1571,12 +1597,25 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = PRC
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_riding_the_shoulders_of_the_chinese_dragon
 	prerequisite = { focus = SIA_riding_the_shoulders_of_the_chinese_dragon }
 	completion_reward = {
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.2 }
+		SIA_mil_mech_combat_readiness_change = yes
+		set_temp_variable = { SIA_military_resource_var_temp = 2 }
+		SIA_mil_mech_resource_change = yes
+		every_country = {
+			limit = {
+				OR = {
+					tag = PRC
+					tag = SIA
+				}
+			}
+			add_ideas = SIA_sino_thai_military_training
+		}
 		
 	}
 }
@@ -1596,7 +1635,50 @@ shared_focus = {
 	relative_position_id = SIA_riding_the_shoulders_of_the_chinese_dragon
 	prerequisite = { focus = SIA_riding_the_shoulders_of_the_chinese_dragon }
 	completion_reward = {
-		
+		add_ideas = PRC_BRI_member
+		add_timed_idea = {
+			idea = SIA_eadi_industry_stimulus
+			days = 400
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 shared_focus = {
@@ -1616,7 +1698,11 @@ shared_focus = {
 	prerequisite = { focus = SIA_bri_integration }
 	prerequisite = { focus = SIA_attract_chinese_investment }
 	completion_reward = {
-		
+		unlock_decision_tooltip = SIA_deals_with_pakistan
+		swap_ideas = {
+			remove_idea = SIA_chinese_investments
+			add_idea = SIA_chinese_investments_2
+		}
 	}
 }
 shared_focus = {
@@ -1629,12 +1715,37 @@ shared_focus = {
 		factor = 10
 	}
 	available = {
-		
+		is_in_faction_with = JAP
 	}
 	available_if_capitulated = yes
 	relative_position_id = SIA_pdtos_sea_gateway
 	prerequisite = { focus = SIA_pdtos_sea_gateway }
 	completion_reward = {
+		set_temp_variable = { SIA_combat_readiness_var_temp = 0.15 }
+		SIA_mil_mech_combat_readiness_change = yes
+		set_temp_variable = { SIA_public_perception_var_temp = 0.15 }
+		SIA_mil_mech_public_perception_change = yes
+		set_temp_variable = { SIA_military_resource_var_temp = 1 }
+		SIA_mil_mech_resource_change = yes
+		PRC = {
+			add_opinion_modifier = {
+				target = SIA
+				modifier = decreased_relations
+			}
+			add_opinion_modifier = {
+				target = JAP
+				modifier = decreased_relations
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = JAP
+					tag = SIA
+				}
+			}
+			add_ideas = SIA_tokyo_bangkok_sino_containment_strategy
+		}
 		
 	}
 }
@@ -1655,13 +1766,14 @@ shared_focus = {
 	prerequisite = { focus = SIA_pdtos_sea_gateway }
 	completion_reward = {
 		add_ideas = JAP_PEC_member
-		unlock_decision_tooltip = SIA_ask_for_pec_technological_experts
-		unlock_decision_tooltip = SIA_request_pec_industrial_investments
-		unlock_decision_tooltip = SIA_secure_pec_military_investments
+		unlock_decision_tooltip = SIA_partner_with_japanese_military_industry
+		unlock_decision_tooltip = SIA_partner_with_japanese_commercial_industry
+		unlock_decision_tooltip = SIA_partner_with_japanese_industrial_companies
+		unlock_decision_tooltip = SIA_partner_with_japanese_electronics_industry
 	}
 }
 shared_focus = {
-	id = SIA_increase_production_output
+	id = SIA_promoting_innovation_programs
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 2
@@ -1676,7 +1788,26 @@ shared_focus = {
 	relative_position_id = SIA_pdtos_sea_gateway
 	prerequisite = { focus = SIA_pdtos_sea_gateway }
 	completion_reward = {
-		
+		set_temp_variable = { debt_var_temp = 35 }
+		add_debt = yes
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = industry
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = electronics
+		}
+		add_timed_idea = {
+			idea = SIA_pdto_scientific_cooperative
+			days = 400
+		}
+		custom_effect_tooltip = SIA_promoting_innovation_programs_tt
+		effect_tooltip = {
+			add_research_slot = 1
+		}
 	}
 }
 shared_focus = {
@@ -1692,11 +1823,39 @@ shared_focus = {
 		is_in_faction_with = JAP
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_increase_production_output
-	prerequisite = { focus = SIA_increase_production_output }
+	relative_position_id = SIA_promoting_innovation_programs
+	prerequisite = { focus = SIA_promoting_innovation_programs }
 	prerequisite = { focus = SIA_attract_japanese_business }
 	completion_reward = {
-		
+		set_temp_variable = { income_var_temp = 25 }
+		add_income = yes
+		unlock_decision_tooltip = SIA_deals_with_india
+		unlock_decision_tooltip = SIA_deals_with_australia
+		unlock_decision_tooltip = SIA_deals_with_south_korea
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = office_park
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 #Post-Asean
@@ -1705,7 +1864,7 @@ shared_focus = {
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 6
 	y = 1
-	cost = 4
+	cost = 2
 	ai_will_do = {
 		factor = 10
 	}
@@ -1716,7 +1875,10 @@ shared_focus = {
 	relative_position_id = SIA_thailand_in_the_world_stage
 	prerequisite = { focus = SIA_thailand_in_the_world_stage }
 	completion_reward = {
-		
+		add_timed_idea = {
+			idea = SIA_renewed_sea_diplomatic_efforts
+			days = 250
+		}
 	}
 }
 shared_focus = {
@@ -1736,7 +1898,15 @@ shared_focus = {
 	mutually_exclusive = { focus = SIA_alongside_our_brothers }
 	prerequisite = { focus = SIA_post_asean_cooperation }
 	completion_reward = {
-		
+		custom_effect_tooltip = SIA_fortress_thailand_tt
+		add_to_variable = { SIA_royal_army_of_thailand_army_defence_factor_var = 0.075 }
+		add_to_variable = { SIA_royal_army_of_thailand_training_time_factor_var = -0.05 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_fortress_thailand
+			}
+		}
 	}
 }
 shared_focus = {
@@ -1756,7 +1926,15 @@ shared_focus = {
 	mutually_exclusive = { focus = SIA_fortress_thailand }
 	prerequisite = { focus = SIA_post_asean_cooperation }
 	completion_reward = {
-		
+		custom_effect_tooltip = SIA_alongside_our_brothers_tt
+		add_to_variable = { SIA_royal_army_of_thailand_industrial_capacity_factory_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_max_planning_factor_var = 0.075 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_royal_army_of_thailand_dummy
+				add_idea = SIA_royal_army_of_thailand_alongside_our_brothers
+			}
+		}
 	}
 }
 shared_focus = {
@@ -1764,7 +1942,7 @@ shared_focus = {
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 1
 	y = 1
-	cost = 4
+	cost = 2
 	ai_will_do = {
 		factor = 10
 	}
@@ -1775,7 +1953,9 @@ shared_focus = {
 	relative_position_id = SIA_fortress_thailand
 	prerequisite = { focus = SIA_fortress_thailand }
 	completion_reward = {
-		
+		add_political_power = 50
+		custom_effect_tooltip = SIA_investing_on_our_allies_tt
+		unlock_decision_tooltip = SIA_invest_in_allies
 	}
 }
 shared_focus = {
@@ -1794,7 +1974,50 @@ shared_focus = {
 	relative_position_id = SIA_investing_on_our_allies
 	prerequisite = { focus = SIA_investing_on_our_allies }
 	completion_reward = {
-		
+		custom_effect_tooltip = SIA_thailand_land_of_the_free_tt
+		set_temp_variable = { base = 50 }
+		set_temp_variable = { multi = 1 }
+		if = {
+			limit = {
+				is_in_faction_with = LAO
+			}
+			add_to_temp_variable = { multi = 1 }
+		}
+		if = {
+			limit = {
+				is_in_faction_with = BRM
+			}
+			add_to_temp_variable = { multi = 1 }
+		}
+		if = {
+			limit = {
+				is_in_faction_with = CAM
+			}
+			add_to_temp_variable = { multi = 1 }
+		}
+		if = {
+			limit = {
+				is_in_faction_with = MAL
+			}
+			add_to_temp_variable = { multi = 1 }
+		}
+		multiply_temp_variable = { base = multi }
+		add_political_power = base
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_stability = 0.075
+		add_war_support = 0.05
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.15
+		}
+		add_society_development = yes
+		set_temp_variable = {
+			var = poverty_development_var_temp
+			value = 0.1
+		}
+		add_poverty_development = yes
+		set_temp_variable = { SIA_public_perception_var_temp = 0.2 }
+		SIA_mil_mech_public_perception_change = yes
 	}
 }
 
