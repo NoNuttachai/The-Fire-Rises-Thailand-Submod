@@ -25,6 +25,9 @@
  SIA_thai_people_are_aryans: "-"
  SIA_thai_people_are_aryans_from_the_depth_of_agatha: "-"
 
+
+ SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
+ SIA_speed_up_thing_2: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!\n§GOR§!\n£training_speed_texticon  §Y$THING2$§! by §H$NUMBER2$§!\nDepending on which one is active."
  SIA_mfp: "MFP"
  SIA_mfp_long: "£GFX_orange_party_2 Move Forward Party"
  SIA_progressive_movement: "PM"
@@ -87,7 +90,7 @@
  SIA_thalu_gaz: "Thalu Gaz"
  SIA_thalu_gaz_desc: ""
  
- SIA_fight_the_arrests: "Fight the Arrests"
+ SIA_fight_the_arrests: "Charting Our Own Path"
  SIA_fight_the_arrests_desc: ""
  
  SIA_the_people_wrath: "The People's Wrath"

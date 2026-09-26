@@ -427,7 +427,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			has_completed_focus = SIA_approach_foreign_media_and_advocacy_groups
+			has_completed_focus = SIA_social_media_activism
 		}
 		cost = 50
 		fire_only_once = yes
@@ -451,7 +451,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			has_completed_focus = SIA_approach_foreign_media_and_advocacy_groups
+			has_completed_focus = SIA_social_media_activism
 			check_variable = { SIA_bbc_protests = 0 }
 		}
 		cost = 20
@@ -532,7 +532,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			has_completed_focus = SIA_approach_foreign_media_and_advocacy_groups
+			has_completed_focus = SIA_social_media_activism
 			check_variable = { SIA_amnesty = 0 }
 		}
 		cost = 20
