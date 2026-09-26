@@ -472,6 +472,10 @@ spriteTypes = {
 		name = "GFX_report_nonstop_rain"
 		texturefile = "gfx/event_pictures/report_nonstop_rain.png"
 	}
+	spriteType = {
+		name = "GFX_report_gunter_winter_rain_flavor_event"
+		texturefile = "gfx/event_pictures/report_gunter_winter_rain_flavor_event.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"
