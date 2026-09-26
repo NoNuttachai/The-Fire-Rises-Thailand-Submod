@@ -13,15 +13,22 @@ SIA_forpol_category = {
 		visible = {
 			LAO = {
 				is_in_faction = no
+				is_subject = no
+				has_war = no
 			}
 			check_variable = { SIA_faf_nation = LAO }
+			is_in_faction_with = JAP
 		}
 		available = {
-			LAO = {
-				is_in_faction = no
-			}
-			is_in_faction_with = JAP
+			
+			
 			has_war = no
+			LAO = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_LAO_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
 		}
 		complete_effect = {
 			JAP = {
@@ -35,15 +42,22 @@ SIA_forpol_category = {
 		visible = {
 			VIN = {
 				is_in_faction = no
+				is_subject = no
+				has_war = no
 			}
 			check_variable = { SIA_faf_nation = VIN }
+			is_in_faction_with = JAP
 		}
 		available = {
-			VIN = {
-				is_in_faction = no
-			}
-			is_in_faction_with = JAP
+			
+			
 			has_war = no
+			VIN = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_VIN_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
 		}
 		complete_effect = {
 			JAP = {
@@ -57,15 +71,21 @@ SIA_forpol_category = {
 		visible = {
 			CAM = {
 				is_in_faction = no
+				is_subject = no
 			}
 			check_variable = { SIA_faf_nation = CAM }
+			is_in_faction_with = JAP
 		}
 		available = {
-			CAM = {
-				is_in_faction = no
-			}
-			is_in_faction_with = JAP
+			
+			
 			has_war = no
+			CAM = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_CAM_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
 		}
 		complete_effect = {
 			JAP = {
@@ -79,19 +99,304 @@ SIA_forpol_category = {
 		visible = {
 			BRM = {
 				is_in_faction = no
+				is_subject = no
 			}
 			check_variable = { SIA_faf_nation = BRM }
+			is_in_faction_with = JAP
 		}
 		available = {
-			BRM = {
-				is_in_faction = no
-			}
-			is_in_faction_with = JAP
+			
+			
 			has_war = no
+			BRM = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_BRM_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
 		}
 		complete_effect = {
 			JAP = {
 				add_to_faction = BRM
+			}
+		}
+		
+	}
+	SIA_invite_mal_to_pdto = {
+
+		visible = {
+			MAL = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = MAL }
+			is_in_faction_with = JAP
+		}
+		available = {
+			
+			
+			has_war = no
+			MAL = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_MAL_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = MAL
+			}
+		}
+		
+	}
+	SIA_invite_ins_to_pdto = {
+
+		visible = {
+			INS = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = INS }
+			is_in_faction_with = JAP
+		}
+		available = {
+			
+			
+			has_war = no
+			INS = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_INS_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = INS
+			}
+		}
+		
+	}
+	SIA_invite_phi_to_pdto = {
+
+		visible = {
+			PHI = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = SIA }
+			is_in_faction_with = JAP
+		}
+		available = {
+			
+			
+			has_war = no
+			PHI = {
+				custom_trigger_tooltip = {
+					check_variable = { global.JAP_influence_PHI_var > 0.7 }
+					tooltip = SIA_apply_for_pdto_membership_trigger
+				}
+			}
+		}
+		complete_effect = {
+			JAP = {
+				add_to_faction = PHI
+			}
+		}
+		
+	}
+	SIA_invite_lao_to_eadi = {
+
+		visible = {
+			LAO = {
+				is_in_faction = no
+				is_subject = no
+				has_war = no
+			}
+			check_variable = { SIA_faf_nation = LAO }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			
+			has_war = no
+			LAO = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_LAO_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+			}
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = LAO
+			}
+		}
+		
+	}
+	SIA_invite_vin_to_eadi = {
+
+		visible = {
+			VIN = {
+				is_in_faction = no
+				is_subject = no
+				has_war = no
+			}
+			check_variable = { SIA_faf_nation = VIN }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			has_war = no
+			VIN = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_VIN_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+			}
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = VIN
+			}
+		}
+		
+	}
+	SIA_invite_cam_to_eadi = {
+
+		visible = {
+			CAM = {
+				is_in_faction = no
+				is_subject = no
+			}
+			check_variable = { SIA_faf_nation = CAM }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			
+			has_war = no
+			CAM = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_CAM_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+			}
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = CAM
+			}
+		}
+		
+	}
+	SIA_invite_brm_to_eadi = {
+
+		visible = {
+			BRM = {
+				is_in_faction = no
+				is_subject = no
+			}
+			check_variable = { SIA_faf_nation = BRM }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			has_war = no
+			BRM = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_BRM_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+				has_war = no
+				
+			}
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = BRM
+			}
+		}
+		
+	}
+	SIA_invite_mal_to_eadi = {
+
+		visible = {
+			MAL = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = MAL }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			has_war = no
+			MAL = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_MAL_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+			}
+			
+			
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = MAL
+			}
+		}
+		
+	}
+	SIA_invite_ins_to_eadi = {
+
+		visible = {
+			INS = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = INS }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			has_war = no
+			INS = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_MAL_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+			}
+			
+			
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = INS
+			}
+		}
+		
+	}
+	SIA_invite_phi_to_eadi = {
+
+		visible = {
+			PHI = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = SIA }
+			is_in_faction_with = PRC
+		}
+		available = {
+			
+			has_war = no
+			PHI = {
+				custom_trigger_tooltip = {
+					check_variable = { global.PRC_influence_PHI_var > 0.7 }
+					tooltip = SIA_apply_for_eadi_membership_trigger
+				}
+			}
+			
+			
+		}
+		complete_effect = {
+			PRC = {
+				add_to_faction = PHI
 			}
 		}
 		
@@ -124,168 +429,10 @@ SIA_forpol_category = {
 			PRC = {
 				add_to_faction = SIA
 			}
+			custom_effect_tooltip = SIA_apply_for_eadi_membership_tt
 			hidden_effect = {
 				news_event = thai_newsevents.11
 			}
-		}
-	}
-	#THAILAND SELECTED DECISIONS
-	SIA_negotiate_with_argentina = {
-		visible = {
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_negotiate_with_brazil = {
-		visible = {
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_negotiate_with_iran = {
-		visible = {
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_negotiate_with_saudi_arabia = {
-		visible = {
-			check_variable = { SIA_faf_nation = SIA }
-			OR = {
-				country_exists = SAU
-				country_exists = ROC
-				country_exists = ARR
-				
-				
-			}
-		}
-		available = {
-		}
-		complete_effect = {
-			custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
-		}
-	}
-	SIA_negotiate_with_israel = {
-		visible = {
-			check_variable = { SIA_faf_nation = SIA }
-			country_exists = ISR
-			ISR = {
-				has_war = no
-			}
-		}
-		available = {
-		}
-		complete_effect = {
-			custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
-			if = {
-				OR = {
-					AND = {
-						check_variable = { SIA_saudi_civil_war_support = 1 }
-						country_exists = SAU
-					}
-					AND = {
-						check_variable = { SIA_saudi_civil_war_support = 2 }
-						country_exists = ROC
-					}
-					AND = {
-						check_variable = { SIA_saudi_civil_war_support = 3 }
-						country_exists = ARR
-					}
-				}
-			}
-		}
-	}
-	SIA_african_ventures = {
-		visible = {
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_lean_alignment_towards_eadi = {
-
-		visible = {
-			
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-			
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_lean_alignment_towards_pdto = {
-
-		visible = {
-			
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-			
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_ask_for_pec_technological_experts = {
-
-		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-			is_in_faction_with = JAP
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_request_pec_industrial_investments = {
-
-		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-			is_in_faction_with = JAP
-		}
-		complete_effect = {
-			
-		}
-	}
-	SIA_secure_pec_military_investments = {
-
-		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
-			check_variable = { SIA_faf_nation = SIA }
-		}
-		available = {
-			is_in_faction_with = JAP
-		}
-		complete_effect = {
-			
 		}
 	}
 	SIA_apply_for_pdto_membership = {
@@ -316,11 +463,1478 @@ SIA_forpol_category = {
 			JAP = {
 				add_to_faction = SIA
 			}
+			custom_effect_tooltip = SIA_apply_for_pdto_membership_tt
 			hidden_effect = {
 				news_event = thai_newsevents.12
 			}
 		}
 	}
+	#Country_interactions - decrease and increase influence
+	SIA_laos_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			LAO = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = LAO }
+		}
+		available = {
+			NOT = {
+				LAO = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			LAO = {
+				set_temp_variable = {
+					var = global.JAP_influence_LAO_var_temp
+					value = 0.05
+				}
+				JAP_add_LAO_influence = yes
+			}
+		}
+	}
+	SIA_cam_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			NOT = {
+				CAM = {
+					is_puppet_of = SIA
+				}
+			}
+			CAM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = CAM }
+		}
+		available = {
+			NOT = {
+				CAM = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			CAM = {
+				set_temp_variable = {
+					var = global.JAP_influence_CAM_var_temp
+					value = 0.05
+				}
+				JAP_add_CAM_influence = yes
+			}
+		}
+	}
+	SIA_vin_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			VIN = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = VIN }
+		}
+		available = {
+			NOT = {
+				VIN = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			VIN = {
+				set_temp_variable = {
+					var = global.JAP_influence_VIN_var_temp
+					value = 0.05
+				}
+				JAP_add_VIN_influence = yes
+			}
+		}
+	}
+	SIA_brm_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			BRM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = BRM }
+		}
+		available = {
+			NOT = {
+				BRM = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			BRM = {
+				set_temp_variable = {
+					var = global.JAP_influence_BRM_var_temp
+					value = 0.05
+				}
+				JAP_add_BRM_influence = yes
+			}
+		}
+	}
+	SIA_ins_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			INS = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = INS }
+		}
+		available = {
+			NOT = {
+				INS = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			INS = {
+				set_temp_variable = {
+					var = global.JAP_influence_INS_var_temp
+					value = 0.05
+				}
+				JAP_add_INS_influence = yes
+			}
+		}
+	}
+	SIA_phi_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			PHI = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			NOT = {
+				PHI = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			PHI = {
+				set_temp_variable = {
+					var = global.JAP_influence_PHI_var_temp
+					value = 0.05
+				}
+				JAP_add_PHI_influence = yes
+			}
+		}
+	}
+	SIA_mal_promote_pdto_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			MAL = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = MAL }
+		}
+		available = {
+			NOT = {
+				MAL = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			MAL = {
+				set_temp_variable = {
+					var = global.JAP_influence_MAL_var_temp
+					value = 0.05
+				}
+				JAP_add_MAL_influence = yes
+			}
+		}
+	}
+	SIA_laos_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			LAO = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = LAO }
+		}
+		available = {
+			NOT = {
+				LAO = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			LAO = {
+				set_temp_variable = {
+					var = global.JAP_influence_LAO_var_temp
+					value = -0.075
+				}
+				JAP_add_LAO_influence = yes
+			}
+		}
+	}
+	SIA_cam_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			CAM = {
+				is_in_faction = no
+			}
+			NOT = {
+				CAM = {
+					is_puppet_of = SIA
+				}
+			}
+			check_variable = { SIA_faf_nation = CAM }
+		}
+		available = {
+			NOT = {
+				CAM = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			CAM = {
+				set_temp_variable = {
+					var = global.JAP_influence_CAM_var_temp
+					value = -0.075
+				}
+				JAP_add_CAM_influence = yes
+			}
+		}
+	}
+	SIA_vin_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			VIN = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = VIN }
+		}
+		available = {
+			NOT = {
+				VIN = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			VIN = {
+				set_temp_variable = {
+					var = global.JAP_influence_VIN_var_temp
+					value = -0.075
+				}
+				JAP_add_VIN_influence = yes
+			}
+		}
+	}
+	SIA_brm_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			BRM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = BRM }
+		}
+		available = {
+			NOT = {
+				BRM = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			BRM = {
+				set_temp_variable = {
+					var = global.JAP_influence_BRM_var_temp
+					value = -0.075
+				}
+				JAP_add_BRM_influence = yes
+			}
+		}
+	}
+	SIA_ins_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			INS = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = INS }
+		}
+		available = {
+			NOT = {
+				INS = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			INS = {
+				set_temp_variable = {
+					var = global.JAP_influence_INS_var_temp
+					value = -0.075
+				}
+				JAP_add_INS_influence = yes
+			}
+		}
+	}
+	SIA_phi_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			PHI = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			NOT = {
+				PHI = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			PHI = {
+				set_temp_variable = {
+					var = global.JAP_influence_PHI_var_temp
+					value = -0.075
+				}
+				JAP_add_PHI_influence = yes
+			}
+		}
+	}
+	SIA_mal_sabotage_pdto_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+				has_completed_focus = SIA_riding_the_shoulders_of_the_chinese_dragon
+			}
+			MAL = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = MAL }
+		}
+		available = {
+			NOT = {
+				MAL = {
+					is_in_faction_with = JAP
+				}
+			}
+		}
+		complete_effect = {
+			MAL = {
+				set_temp_variable = {
+					var = global.JAP_influence_MAL_var_temp
+					value = -0.075
+				}
+				JAP_add_MAL_influence = yes
+			}
+		}
+	}
+	SIA_laos_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				
+			}
+			LAO = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = LAO }
+		}
+		available = {
+			NOT = {
+				LAO = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			LAO = {
+				set_temp_variable = {
+					var = global.PRC_influence_LAO_var_temp
+					value = 0.05
+				}
+				PRC_add_LAO_influence = yes
+			}
+		}
+	}
+	SIA_cam_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			NOT = {
+				CAM = {
+					is_puppet_of = SIA
+				}
+			}
+			CAM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = CAM }
+		}
+		available = {
+			NOT = {
+				CAM = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			CAM = {
+				set_temp_variable = {
+					var = global.PRC_influence_CAM_var_temp
+					value = 0.05
+				}
+				PRC_add_CAM_influence = yes
+			}
+		}
+	}
+	SIA_vin_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			VIN = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = VIN }
+		}
+		available = {
+			NOT = {
+				VIN = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			VIN = {
+				set_temp_variable = {
+					var = global.PRC_influence_VIN_var_temp
+					value = 0.05
+				}
+				PRC_add_VIN_influence = yes
+			}
+		}
+	}
+	SIA_brm_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			BRM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = BRM }
+		}
+		available = {
+			NOT = {
+				BRM = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			BRM = {
+				set_temp_variable = {
+					var = global.PRC_influence_BRM_var_temp
+					value = 0.05
+				}
+				PRC_add_BRM_influence = yes
+			}
+		}
+	}
+	SIA_ins_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			INS = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = INS }
+		}
+		available = {
+			NOT = {
+				INS = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			INS = {
+				set_temp_variable = {
+					var = global.PRC_influence_INS_var_temp
+					value = 0.05
+				}
+				PRC_add_INS_influence = yes
+			}
+		}
+	}
+	SIA_phi_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			PHI = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			NOT = {
+				PHI = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			PHI = {
+				set_temp_variable = {
+					var = global.PRC_influence_PHI_var_temp
+					value = 0.05
+				}
+				PRC_add_PHI_influence = yes
+			}
+		}
+	}
+	SIA_mal_promote_eadi_influence = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = PRC
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			MAL = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = MAL }
+		}
+		available = {
+			NOT = {
+				MAL = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			MAL = {
+				set_temp_variable = {
+					var = global.PRC_influence_MAL_var_temp
+					value = 0.05
+				}
+				PRC_add_MAL_influence = yes
+			}
+		}
+	}
+	SIA_laos_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			LAO = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = LAO }
+		}
+		available = {
+			NOT = {
+				LAO = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			LAO = {
+				set_temp_variable = {
+					var = global.PRC_influence_LAO_var_temp
+					value = -0.075
+				}
+				PRC_add_LAO_influence = yes
+			}
+		}
+	}
+	SIA_cam_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			NOT = {
+				CAM = {
+					is_puppet_of = SIA
+				}
+			}
+			CAM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = CAM }
+		}
+		available = {
+			NOT = {
+				CAM = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			CAM = {
+				set_temp_variable = {
+					var = global.PRC_influence_CAM_var_temp
+					value = -0.075
+				}
+				PRC_add_CAM_influence = yes
+			}
+		}
+	}
+	SIA_vin_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			VIN = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = VIN }
+		}
+		available = {
+			NOT = {
+				VIN = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			VIN = {
+				set_temp_variable = {
+					var = global.PRC_influence_VIN_var_temp
+					value = -0.075
+				}
+				PRC_add_VIN_influence = yes
+			}
+		}
+	}
+	SIA_brm_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			BRM = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = BRM }
+		}
+		available = {
+			NOT = {
+				BRM = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			BRM = {
+				set_temp_variable = {
+					var = global.PRC_influence_BRM_var_temp
+					value = -0.075
+				}
+				PRC_add_BRM_influence = yes
+			}
+		}
+	}
+	SIA_ins_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			INS = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = INS }
+		}
+		available = {
+			NOT = {
+				INS = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			INS = {
+				set_temp_variable = {
+					var = global.PRC_influence_INS_var_temp
+					value = -0.075
+				}
+				PRC_add_INS_influence = yes
+			}
+		}
+	}
+	SIA_phi_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			PHI = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			NOT = {
+				PHI = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			PHI = {
+				set_temp_variable = {
+					var = global.PRC_influence_PHI_var_temp
+					value = -0.075
+				}
+				PRC_add_PHI_influence = yes
+			}
+		}
+	}
+	SIA_mal_sabotage_eadi_influence = {
+
+		visible = {
+			SIA = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+				has_completed_focus = SIA_pdtos_sea_gateway
+			}
+			MAL = {
+				is_in_faction = no
+			}
+			check_variable = { SIA_faf_nation = MAL }
+		}
+		available = {
+			NOT = {
+				MAL = {
+					is_in_faction_with = PRC
+				}
+			}
+		}
+		complete_effect = {
+			MAL = {
+				set_temp_variable = {
+					var = global.PRC_influence_MAL_var_temp
+					value = -0.075
+				}
+				PRC_add_MAL_influence = yes
+			}
+		}
+	}
+	#THAILAND SELECTED DECISIONS
+	SIA_negotiate_with_argentina = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			has_completed_focus = SIA_off_continent_diplomacy
+		}
+		available = {
+		}
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_temp_variable = {
+				debt_var_temp = ARG.max_manpower_k
+			}
+			divide_temp_variable = {
+				debt_var_temp = -4500
+			}
+			multiply_temp_variable = {
+				debt_var_temp = ARG.num_of_factories
+			}
+			divide_temp_variable = {
+				debt_var_temp = SIA.num_of_factories
+			}
+			add_debt = yes
+			add_offsite_building = { type = industrial_complex level = 1 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_negotiate_with_brazil = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			has_completed_focus = SIA_off_continent_diplomacy
+		}
+		available = {
+		}
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_temp_variable = {
+				debt_var_temp = BRA.max_manpower_k
+			}
+			divide_temp_variable = {
+				debt_var_temp = -10000
+			}
+			multiply_temp_variable = {
+				debt_var_temp = BRA.num_of_factories
+			}
+			divide_temp_variable = {
+				debt_var_temp = SIA.num_of_factories
+			}
+			add_debt = yes
+			add_offsite_building = { type = industrial_complex level = 2 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_negotiate_with_iran = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			has_completed_focus = SIA_off_continent_diplomacy
+		}
+		available = {
+		}
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_temp_variable = {
+				debt_var_temp = PER.max_manpower_k
+			}
+			divide_temp_variable = {
+				debt_var_temp = -7500
+			}
+			multiply_temp_variable = {
+				debt_var_temp = PER.num_of_factories
+			}
+			divide_temp_variable = {
+				debt_var_temp = SIA.num_of_factories
+			}
+			add_debt = yes
+			add_offsite_building = { type = industrial_complex level = 1 }
+			add_offsite_building = { type = fuel_silo level = 1 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_negotiate_with_saudi_arabia = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			NOT = {
+				has_global_flag = saudi_civil_war_flag
+			}
+			has_completed_focus = SIA_off_continent_diplomacy
+		}
+		available = {
+		}
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 1 }
+					country_exists = SAU
+				}
+				custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
+				set_temp_variable = {
+					debt_var_temp = SAU.max_manpower_k
+				}
+				divide_temp_variable = {
+					debt_var_temp = -7500
+				}
+				multiply_temp_variable = {
+					debt_var_temp = SAU.num_of_factories
+				}
+				divide_temp_variable = {
+					debt_var_temp = SIA.num_of_factories
+				}
+				add_debt = yes
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = arms_factory level = 1 }
+				add_offsite_building = { type = fuel_silo level = 1 }
+				random_owned_state = {
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 2 }
+					country_exists = ROC
+				}
+				custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
+				set_temp_variable = {
+					debt_var_temp = ROC.max_manpower_k
+				}
+				divide_temp_variable = {
+					debt_var_temp = -7500
+				}
+				multiply_temp_variable = {
+					debt_var_temp = ROC.num_of_factories
+				}
+				divide_temp_variable = {
+					debt_var_temp = SIA.num_of_factories
+				}
+				add_debt = yes
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = arms_factory level = 1 }
+				add_offsite_building = { type = fuel_silo level = 1 }
+				random_owned_state = {
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_saudi_civil_war_support = 3 }
+					country_exists = ARR
+				}
+				custom_effect_tooltip = SIA_negotiate_with_saudi_arabia_tt
+				set_temp_variable = {
+					debt_var_temp = ARR.max_manpower_k
+				}
+				divide_temp_variable = {
+					debt_var_temp = -7500
+				}
+				multiply_temp_variable = {
+					debt_var_temp = ARR.num_of_factories
+				}
+				divide_temp_variable = {
+					debt_var_temp = SIA.num_of_factories
+				}
+				add_debt = yes
+				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = { type = arms_factory level = 1 }
+				add_offsite_building = { type = fuel_silo level = 1 }
+				random_owned_state = {
+					add_building_construction = {
+						type = synthetic_refinery
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			else = {
+				add_offsite_building = { type = industrial_complex level = 1 }
+				add_offsite_building = { type = fuel_silo level = 1 }
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	SIA_negotiate_with_israel = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			country_exists = ISR
+			ISR = {
+				has_war = no
+			}
+			has_completed_focus = SIA_off_continent_diplomacy
+		}
+		available = {
+		}
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_temp_variable = {
+				debt_var_temp = ISR.max_manpower_k
+			}
+			divide_temp_variable = {
+				debt_var_temp = -700
+			}
+			multiply_temp_variable = {
+				debt_var_temp = ISR.num_of_factories
+			}
+			divide_temp_variable = {
+				debt_var_temp = SIA.num_of_factories
+			}
+			add_debt = yes
+			add_offsite_building = { type = arms_factory level = 2 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_african_ventures = {
+		visible = {
+			check_variable = { SIA_faf_nation = SIA }
+			has_completed_focus = SIA_off_continent_diplomacy
+		}
+		available = {
+		}
+		days_remove = 75
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_temp_variable = {
+				debt_var_temp = -2.53
+			}
+			add_debt = yes
+			add_offsite_building = { type = industrial_complex level = 1 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_invest_in_allies = {
+		target_root_trigger = {
+			has_completed_focus = SIA_investing_on_our_allies
+		}
+		visible = {
+			FROM = {
+				is_in_faction_with = SIA
+			}
+		}
+		targets = {
+			BRM
+			VIN
+			LAO
+			CAM
+			INS
+			MAL
+			PHI
+			SIG
+		}
+		cost = 75
+		days_remove = 100
+		days_re_enable = 50
+		modifier = {
+			consumer_goods_factor = 0.025
+			income_growth_factor = 0.05
+			custom_modifier_tooltip = JAP_PEC_decision_tooltip
+		}
+		targeted_modifier = {
+			tag = FROM
+			consumer_goods_factor = -0.05
+			poverty_development_monthly = 0.02
+		}
+		remove_effect = {
+			set_temp_variable = {
+				debt_var_temp = FROM.max_manpower_k
+			}
+			divide_temp_variable = {
+				debt_var_temp = -700
+			}
+			multiply_temp_variable = {
+				debt_var_temp = FROM.num_of_factories
+			}
+			divide_temp_variable = {
+				debt_var_temp = JAP.num_of_factories
+			}
+			add_debt = yes
+			FROM = {
+				add_political_power = 50
+				add_stability = 0.015
+				set_temp_variable = {
+					var = poverty_development_var_temp
+					value = 0.1
+				}
+				add_poverty_development = yes
+			}
+		}
+		ai_will_do = {
+			base = 20
+		}
+	}
+	### EADI DECISIONS ###
+	SIA_lean_alignment_towards_eadi = {
+
+		visible = {
+			
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = global.PRC_influence_SIA_var_temp
+				value = 0.075
+			}
+			PRC_add_SIA_influence = yes
+		}
+	}
+	SIA_partner_with_chinese_military_industry = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_partner_with_chinese_commercial_businesses = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_partner_with_chinese_automobile_sector = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_partner_with_chinese_renewables_industry = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_deals_with_pakistan = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	### PDTO DECISIONS ###
+	SIA_lean_alignment_towards_pdto = {
+
+		visible = {
+			
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = global.JAP_influence_SIA_var_temp
+				value = 0.075
+			}
+			JAP_add_SIA_influence = yes
+		}
+	}
+	SIA_partner_with_japanese_military_industry = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_partner_with_japanese_commercial_industry = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_partner_with_japanese_industrial_companies = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_partner_with_japanese_electronics_industry = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_deals_with_india = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_deals_with_australia = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_deals_with_south_korea = {
+
+		visible = {
+			SIA = {
+				is_in_faction_with = JAP
+			}
+			check_variable = { SIA_faf_nation = SIA }
+		}
+		available = {
+			is_in_faction_with = JAP
+		}
+		complete_effect = {
+			
+		}
+	}
+	
 	SIA_debug_join_pdto = {
 		visible = {
 			is_debug = yes
@@ -353,4 +1967,5 @@ SIA_forpol_category = {
 			}
 		}
 	}
+	
 }

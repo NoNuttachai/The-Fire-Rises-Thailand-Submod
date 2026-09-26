@@ -254,6 +254,44 @@ ideas = {
 				military_development_monthly = 0.01
 			}
 		}
+		SIA_royal_army_of_thailand_fortress_thailand = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.075
+				training_time_factor = -0.05
+			}
+		}
+		SIA_royal_army_of_thailand_alongside_our_brothers = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				max_planning_factor = 0.075
+			}
+		}
 		SIA_royal_airforce_of_thailand_dummy = {
 			name = SIA_royal_airforce_of_thailand_dynamic_modifier
 			picture = SIA_an_army_with_a_country
@@ -1427,6 +1465,37 @@ ideas = {
 				income_growth_factor = 0.15
 			}
 		}
+		SIA_chinese_investments_2 = {
+			name = ETH_chinese_investments
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			cancel = {
+				is_in_faction_with = JAP
+				has_war_with = PRC
+			}
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				is_in_faction_with = JAP
+				has_war_with = PRC
+			}
+				
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = -0.3
+				production_speed_buildings_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				income_growth_factor = 0.3
+			}
+		}
 		SIA_japanese_cooperation = {
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2422,6 +2491,120 @@ ideas = {
 				libertarian_socialist_drift = 0.01
 				totalitarian_socialist_drift = 0.01
 				authoritarian_democrat_drift = -0.02
+			}
+		}
+		SIA_tokyo_bangkok_sino_containment_strategy = {
+			picture = GER_victory_in_arabia
+			cancel = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+			}
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+				trade_cost_for_target_factor = 0.25
+			}
+			modifier = {
+				spotting_chance = 0.1
+				naval_speed_factor = 0.15
+				max_planning_factor = 0.1
+				military_development_monthly = 0.0075
+				business_value_factor = -0.1
+			}
+		}
+		SIA_pdto_scientific_cooperative = {
+			picture = GER_victory_in_arabia
+			cancel = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+			}
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			on_remove = {
+				add_research_slot = 1
+			}
+			modifier = {
+				research_speed_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.125
+				academic_development_monthly = 0.015
+				expense_growth_factor = 0.15
+			}
+		}
+		SIA_eadi_industry_stimulus = {
+			picture = GER_victory_in_arabia
+			cancel = {
+				NOT = {
+					is_in_faction_with = JAP
+				}
+			}
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			on_remove = {
+				add_research_slot = -1
+			}
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.25
+				industrial_development_monthly = 0.015
+				expense_growth_factor = 0.15
+			}
+		}
+		SIA_sino_thai_military_training = {
+			picture = GER_victory_in_arabia
+			cancel = {
+				NOT = {
+					is_in_faction_with = PRC
+				}
+			}
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				max_planning_factor = 0.15
+				military_development_monthly = 0.005
+				air_superiority_efficiency = 0.05
+			}
+		}
+		SIA_renewed_sea_diplomatic_efforts = {
+			picture = GER_victory_in_arabia
+			
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.1
+				business_value_factor = 0.05
 			}
 		}
 	}

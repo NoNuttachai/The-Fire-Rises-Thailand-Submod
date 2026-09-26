@@ -52,9 +52,9 @@ on_actions = {
 				country_event = { id = thai_events.70 days = 2444 } # September 10 2026 Abbot shagged woman, stole millions, get arrested
 				country_event = { id = thai_events.72 days = 2379 } # July 7 2026 Famous Lookmaxxer drowns in Samut Prakan
 				country_event = { id = thai_events.74 days = 337 } # December 3 2020 U.S. Congress Resolution in Support of The Three Fingers Movement
-				country_event = { id = thai_events.76 days = 2458 } # September 24 2026 Nonstop Heavy Rainfall
-				country_event = { id = thai_events.77 days = 2459 random_days = 3 } # Gunter's Winter rain flavor_event
-
+				country_event = { id = thai_events.76 days = 2459 } # September 25 2026 Nonstop Heavy Rainfall
+				
+				
 				country_event = { id = thai_cambodia_tension.13 days = 1974 } # 28 May 2025 Cambodia Start
 				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM
 				country_event = { id = thai_elections.9 days = 1814 } # 19 December 2024 #Thamanat Prompow joins Kla Tham

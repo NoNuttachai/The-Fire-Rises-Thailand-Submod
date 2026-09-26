@@ -410,13 +410,7 @@ spriteTypes = {
 		textureFile = "gfx/texticons/thai_communist_youth_league_fb_post.png"
 		legacy_lazy_load = no
 	}
-	#Newspaper
-	spriteType = {
-		name = "GFX_thairath_newspaper_test"
-		textureFile = "gfx/texticons/thairath_newspaper_test.png"
-		legacy_lazy_load = no
-	}
-
+	
 	spriteType = {
 		name = "GFX_idea_SIA_bma"
 		textureFile = "gfx/interface/ideas/SIA/BMA.png"
@@ -1028,6 +1022,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_bhum_path"
 		texturefile = "gfx/texticons/bhum_path.png"
+		legacy_lazy_load = no
+	}
+	#Newspaper
+	spriteType = {
+		name = "GFX_thairath_newspaper_test"
+		textureFile = "gfx/texticons/thairath_newspaper_test.png"
 		legacy_lazy_load = no
 	}
 }

@@ -350,3 +350,21 @@ defined_text = {
 		localization_key = SIA_forpol_unaligned_aligned
 	}
 }
+defined_text = {
+	name = SIA_saudi_faction_alive
+	text = {
+		trigger = {
+			country_exists = SAU
+		}
+		localization_key = SIA_negotiate_with_saudi_arabia_1
+	}
+	text = {
+		trigger = {
+			country_exists = ROC
+		}
+		localization_key = SIA_negotiate_with_saudi_arabia_2
+	}
+	text = {
+		localization_key = SIA_negotiate_with_saudi_arabia_3
+	}
+}
