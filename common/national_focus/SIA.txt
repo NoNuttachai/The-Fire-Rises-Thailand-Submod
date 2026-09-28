@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 20
 			tag = SIA
 		}
 	}
@@ -50,6 +50,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			custom_effect_tooltip = SIA_three_fingers_texticon
 			custom_effect_tooltip = SIA_raise_our_three_fingers_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = thai_events.4
@@ -63,17 +64,13 @@ focus_tree = {
 	focus = {
 		id = SIA_begin_student_activism
 		icon = GFX_goal_SIA_begin_student_activism
-		x = -2
-		y = 1
+		x = -2 y = 1
 		cost = 5
 		prerequisite = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_raise_our_three_fingers
 		
 		ai_will_do = {
 			factor = 10
-		}
-		available = {
-			
 		}
 		available_if_capitulated = yes
 		

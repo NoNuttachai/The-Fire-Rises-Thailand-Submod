@@ -61,4 +61,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/terrains/hat_yai.png"
 	}
 	
+	# Texticons
+	spriteType = {
+		name = "GFX_SIA_THREE_FINGERS_MOVEMENT"
+		texturefile = "gfx/texticons/SIA_THREE_FINGERS_MOVEMENT.dds"
+		legacy_lazy_load = no
+	}
 }	

@@ -24,7 +24,9 @@
  SIA_rubbish_collect_long: "Rubbish Collection Organization"
  SIA_thai_people_are_aryans: "-"
  SIA_thai_people_are_aryans_from_the_depth_of_agatha: "-"
- 
+ SIA_three_fingers_texticon: "£SIA_THREE_FINGERS_MOVEMENT \n\n"
+
+
  SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
  SIA_speed_up_thing_2: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!\n§GOR§!\n£training_speed_texticon  §Y$THING2$§! by §H$NUMBER2$§!\nDepending on which one is active."
 
