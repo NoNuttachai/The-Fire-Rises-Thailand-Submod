@@ -3304,19 +3304,9 @@ country_event = {
 	
     option = {
         name = thai_events.84.a
-		add_manpower = -276
 		army_experience = 20
 		724 = {
-			damage_building = {
-				type = infrastructure
-				damage = 1
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 1
-			}
-		}
-		1494 = {
+			add_manpower = -276
 			damage_building = {
 				type = infrastructure
 				damage = 1
