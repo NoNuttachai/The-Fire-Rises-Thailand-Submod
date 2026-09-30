@@ -224,7 +224,7 @@ SIA_utn_party_mech = {
 			
 		}
 		visible = {
-			has_completed_focus = SIA_friends_with_benefits
+			has_completed_focus = SIA_frenemy
 		}
 		cost = 100
 		days_remove = 75
@@ -250,7 +250,7 @@ SIA_utn_party_mech = {
 		
 		}
 		visible = {
-			has_completed_focus = SIA_friends_with_benefits
+			has_completed_focus = SIA_frenemy
 		}
 		cost = 75
 		days_remove = 50

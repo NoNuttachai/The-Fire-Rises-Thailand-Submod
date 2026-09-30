@@ -60,11 +60,10 @@ spriteTypes = {
 		name = "GFX_terrain_hat_yai"
 		textureFile = "gfx/interface/terrains/hat_yai.png"
 	}
-	
 	# Texticons
 	spriteType = {
 		name = "GFX_SIA_THREE_FINGERS_MOVEMENT"
-		texturefile = "gfx/texticons/SIA_THREE_FINGERS_MOVEMENT.dds"
+		texturefile = "gfx/texticons/SIA_THREE_FINGERS_MOVEMENT.png"
 		legacy_lazy_load = no
 	}
 }	

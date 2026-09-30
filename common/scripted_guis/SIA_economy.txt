@@ -13,16 +13,21 @@ scripted_gui = {
 			SIA_environment_map_outline_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 			}
-			SIA_environment_current_progress_visible = {
+			SIA_environment_progress_image_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 			}
-			SIA_environment_target_progress_visible = {
+			SIA_environment_monthly_progress_text_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 			}
 			SIA_environment_lastyear_progress_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 			}
-			
+			SIA_environment_outline_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			SIA_environment_monthly_progress_arrow_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
 			#### ENGINE TAB ####
 			SIA_engine_map_outline_visible = {
 				check_variable = { SIA_econ_tab = 2 }
@@ -60,15 +65,50 @@ scripted_gui = {
 			SIA_Eco_area_pattani_button_visible = {
 				check_variable = { SIA_econ_tab = 2 }
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
+			SIA_Eco_fuel_increase_specialists_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_fuel_decrease_specialists_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			selected_area_economic_level_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			selected_area_economic_level_value_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			national_specialists_text_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Engine_fuel_outline_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Engine_fuel_fill_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Engine_outline_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			national_specialists_amount_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			national_engine_text_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			national_engine_value_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
+			SIA_Eco_fuel_increase_specialists_click_enabled = {
+				check_variable = { SIA_specialists_var > 0 }
+			}
+			SIA_Eco_fuel_decrease_specialists_click_enabled = {
+				check_variable = { SIA_map_var:SIA_specialists_in_state > 0 }
+			}
+			SIA_engine_locked_box_visible = {
+				NOT = {
+					has_country_flag = SIA_activate_rest_of_engine
+				}
+			}
 			#### CENTRALIZATION TAB ####
 			
 		}
@@ -107,6 +147,16 @@ scripted_gui = {
 			SIA_Eco_area_pattani_button_click = {
 				set_variable = { SIA_map_var = 8 }
 			}
+			SIA_Eco_fuel_increase_specialists_click = {
+				add_to_variable = { SIA_map_var:SIA_specialists_in_state = 1 }
+				add_to_variable = { SIA_specialists_var = -1 }
+				SIA_add_specialists_effect = yes
+			}
+			SIA_Eco_fuel_decrease_specialists_click = {
+				add_to_variable = { SIA_map_var:SIA_specialists_in_state = -1 }
+				add_to_variable = { SIA_specialists_var = 1 }
+				SIA_add_specialists_effect = yes
+			}
 		}
 		properties = {
 			SIA_Eco_state_image = {
@@ -115,7 +165,15 @@ scripted_gui = {
 			SIA_environment_map_fill = {
 				frame = SIA_environment_current_progress
 			}
-			
+			SIA_Engine_fuel_fill = {
+				frame = SIA_map_var:SIA_fuel_value
+			}
+			SIA_environment_progress_image = {
+				image = "[SIA_environment_get_image]"
+			}
+			SIA_environment_monthly_progress_arrow = {
+				image = "[SIA_environment_arrow_change]"
+			}
 		}
 	}
 }

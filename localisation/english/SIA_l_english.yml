@@ -24,11 +24,8 @@
  SIA_rubbish_collect_long: "Rubbish Collection Organization"
  SIA_thai_people_are_aryans: "-"
  SIA_thai_people_are_aryans_from_the_depth_of_agatha: "-"
- SIA_three_fingers_texticon: "£SIA_THREE_FINGERS_MOVEMENT \n\n"
-
-
- SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
- SIA_speed_up_thing_2: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!\n§GOR§!\n£training_speed_texticon  §Y$THING2$§! by §H$NUMBER2$§!\nDepending on which one is active."
+ 
+ 
 
  SIA_mfp: "MFP"
  SIA_mfp_long: "£GFX_orange_party_2 Move Forward Party"
@@ -1066,8 +1063,8 @@
  thai_events.60.a: "We shall only recognize the government in D.C."
  thai_events.60.b: "Perhaps the government in Denver is right..."
  
- thai_events.61.t: "Prayut Visits D.C."
- thai_events.61.d: ""
+ thai_events.61.t: "Prime Minister Visits D.C."
+ thai_events.61.d: "After the 2ACW war, UoA won blah blah"
  thai_events.61.a: ""
  
  thai_events.62.t: "Prayut Survives 4th Motion of No Confidence"
@@ -1097,7 +1094,7 @@
  thai_events.67.a: "Prioritize rescue efforts and later, an investigation"
  
  thai_events.68.t: "Royalist Counterprotests at the German Embassy"
- thai_events.68.d: "Around 13 o clock on the 26th of October A few hundred pro-royalist citizens rallied outside the German Embassy, led by Nitithorn Lamluea (also known as Lawyer Nok Khao) and Pichit Chaimongkol. The group planned to submit a letter to the embassy explaining "the true facts" of the current political situation in Thailand before the planned demonstrations by FreeYOUTH and Khana Ratsadon 2563\n\nThe rally organizer stated that they would return after submitting the letter and confirmed that there won't stay to face off the planned protests on 17:00 They said they were are friendly to  Germany and is there to present another perspective on the situation. They added that when another group came later, it is their right and freedom.\n\nA large number of demonstrators dressed in yellow shirts gathered alongside a sound truck, occupying two lanes of traffic and causing congestion on Sathorn Road in front of the embassy. Police officers erected metal barriers around the area, while Border Patrol Police and other security personnel were deployed to maintain order during the rally.\n\nRoyalist supporters waved Thai flags, displayed photographs of the Royal Family, and held signs expressing support for the monarchy while condemning the protests.\n\nBizarrely, one man in the rally with a yellow shirt raised the three-finger salute, explaining that although he opposed the government of Prayut Chan-o-cha, he also opposed the protesters because of what he viewed as their anti-monarchist stance."
+ thai_events.68.d: "Around 1 p.m. today (October 26), a few hundred pro-royalist citizens rallied outside the German Embassy, led by Nitithorn Lamluea (also known as "Lawyer Nok Khao") and Pichit Chaimongkol. A large number of demonstrators dressed in yellow shirts gathered alongside a sound truck, occupying two lanes of traffic and causing congestion on Sathorn Road in front of the embassy. Police officers erected metal barriers around the area, while Border Patrol Police and other security personnel were deployed to maintain order during the rally. The group planned to submit a letter to the embassy explaining "the true facts" of the current political situation in Thailand before the scheduled demonstrations by FreeYOUTH and Khana Ratsadon 2563 at 5 p.m. Royalist supporters waved Thai flags, displayed photographs of the Royal Family, and held signs expressing support for the monarchy while condemning the protests.\n\nThe rally organizers stated that they would return after submitting the letter and confirmed that they would not stay to face off against the protesters at 5 p.m. They said they are friendly towards Germany and were there to present another perspective on the situation to the German government. They added that they respected the protesters rights and freedom to demonstrate.\n\nBizarrely, one man at the rally wearing a yellow shirt raised the three-finger salute, explaining that although he opposed the government of Prayut Chan-o-cha, he also opposed the protesters because of what he viewed as their anti-monarchist stance."
  thai_events.68.a: "Support both sides so he always on top LMAO"
  
  thai_events.69.t: "£GFX_facebook_logo  Free YOUTH's post"
@@ -1105,7 +1102,7 @@
  thai_events.69.a: "Worrying..."
  
  thai_events.70.t: "Abbot shagged woman, stole millions, get arrested"
- thai_events.70.d: "Police raided Wat Phutthaisawan in Ayutthaya following accusations that its abbot, Phra Ajarn Chote, had embezzled more than 750 million baht in temple funds. The operation was also prompted by leaked security footage provided by a group of former followers who said they "could no longer tolerate his behavior." Investigators accused him of diverting proceeds from amulet and religious-object sales through a foundation into personal accounts while issuing donation receipts in the temple's name. Phra Ajarn Chote was known for his popular amulets, one of which was famously owned by Anutin Charnvirakul.\n\nThe leaked security videos showed the 66-year-old abbot, engaging in various sexual acts with Punyawee "Ae" Rungrueang, a 47-year-old businesswoman and longtime temple supporter, with the most explicit footage showing them having oral sex and later fucking each other on a round wooden table in his quarters. \n\nBoth were arrested. Officers read out the arrest warrant while the abbot was eating a massive feast at the exact table where which he have sex on. He was formally defrocked, stripped of his robes, and reverted to his lay name, Atichote, before being taken to the police station.\n\nThere have been previous high-profile corruption, degeneracy, and misconduct scandals in Thai Buddhism. However, this case provoked greater public outrage due to explicit security footage that appeared to resemble a Pornhub video. Under Buddhist monastic rules, sexual relations constitute a Parajika offense, requiring expulsion from the monastic order. The scandal has further damaged the public image of Buddhism, Thailand's de facto religion."
+ thai_events.70.d: "Police raided Wat Phutthaisawan in Ayutthaya following accusations that its abbot, Phra Ajarn Chote, had embezzled more than 750 million baht in temple funds. The operation was also prompted by leaked security footage provided by a group of former followers who said they "could no longer tolerate his behavior." \n\nThe leaked security videos showed the 66-year-old abbot, engaging in various sexual acts with Punyawee "Ae" Rungrueang, a 47-year-old businesswoman and longtime temple supporter, with the most explicit footage showing him eating her pussy and later fucking each other raw on a round wooden table in his quarters. \n\nBoth were arrested during the raid, with officers reading out the arrest warrant for Phra Ajarn Chote while the abbot was eating a massive feast at the exact table where which he have sex on. He was formally defrocked, stripped of his robes, and reverted to his lay name, Atichote, before being taken to the police station. Investigators accused him of diverting proceeds from amulet and religious-object sales through a foundation into personal accounts while issuing donation receipts in the temple's name. Phra Ajarn Chote was known for his popular amulets, one of which was famously owned by Anutin Charnvirakul.\n\nThere have been previous high-profile corruption, degeneracy, and misconduct scandals in Thai Buddhism. However, this case provoked greater public outrage due to explicit security footage that appeared to resemble a Pornhub video. Under Buddhist monastic rules, sexual relations constitute a Parajika offense, requiring expulsion from the monastic order. The scandal has further damaged the public image of Buddhism, Thailand's de facto religion."
  thai_events.70.a: "Where can I buy that table?"
  
  thai_events.71.t: "A Flag Lowered"
@@ -1113,15 +1110,15 @@
  thai_events.71.a: "ASEAN is now the past..."
  
  thai_events.72.t: "Famous Lookmaxxer drowns in Samut Prakan"
- thai_events.72.d: "In Samut Prakan, police responded to reports of a foreign man behaving erratically at a luxury residential property in Bang Phli District. Witnesses reported that the man became increasingly agitated and paranoid before fleeing toward a nearby lake and entering the water. When officers arrived, he continued swimming farther into the lake until he appeared exhausted and disappeared beneath the surface.\n\nRescue divers were deployed and searched the lake for approximately 30 minutes before recovering his body. He was subsequently identified as 32-year-old Connor Murphy, a looksmaxxing YouTuber with over 2.3 million followers. Initially known worldwide for his fitness videos and absurd stunts, he was later viewed by many as a lolcow after he began using drugs, acting bizarrely, claiming to be God, and attempting to start a cult.\n\nUpon searching his vehicle, police reportedly found two unused syringes along with unidentified white pills inside a waist bag. Furthermore, police discovered that his rented luxury residence had been left in a severely deteriorated condition, with paint splashed everywhere. Murphy had previously spoken openly about his history of drug use and experiences with mind-altering substances, including ayahuasca and DMT."
+ thai_events.72.d: "In Samut Prakan, police responded to reports of a foreign man behaving erratically at a luxury residential property in Bang Phli District. When officers arrived, the man became increasingly agitated and paranoid before fleeing toward a nearby lake and entering the water. He continued swimming farther into the lake until he appeared exhausted and disappeared beneath the surface.\n\nRescue divers were deployed and searched the lake for approximately 30 minutes before recovering his body. He was subsequently identified as 32-year-old Connor Murphy, a looksmaxxing YouTuber with over 2.3 million followers. Initially known worldwide for his fitness videos and absurd stunts, he was later viewed by many as a lolcow after he began using drugs, acting bizarrely, claiming to be God, and attempting to start a cult.\n\nUpon searching his vehicle, police reportedly found two unused syringes along with unidentified white pills inside a waist bag. Furthermore, police discovered that his rented luxury residence had been left in a severely deteriorated condition, with paint splashed everywhere. Murphy had previously spoken openly about his history of drug use and experiences with mind-altering substances, including ayahuasca and DMT."
  thai_events.72.a: "Don't do drugs, kids, especially ayahuasca."
  
  thai_events.73.t: "Crisis at the Western Border"
- thai_events.73.d: "Following the coup d'état in Naypyidaw and Myanmar's rapid descent into civil war, thousands of civilians along border areas near Mae Sot and Mae Hong Son continue to flee the fighting. In response, the Royal Thai Army has reinforced border checkpoints and established temporary reception areas where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe Ministry of Foreign Affairs announces that it is closely monitoring the situation daily and maintaining contingency plans to evacuate Thai nationals. The Ministry calls for a peaceful resolution in collaboration with ASEAN. However, ASEAN's response remains constrained by its longstanding principle of non-interference in the internal affairs of member states, despite its efforts to facilitate dialogue and reach a diplomatic solution.\n\nThe government emphasizes the need to keep diplomatic channels open between Thailand and the Myanmar junta to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. The Move Forward Party condemned the diplomatic stance under the Prayut administration, which prioritized maintaining diplomatic relations over publicly condemning the junta. Opponents of the government drew parallels between General Min Aung Hlaing's seizure of power and that of former Prime Minister Prayut Chan-o-cha, himself a military general who seized power in Thailand's 2014 coup."
+ thai_events.73.d: "Following the coup d'état and descent into civil war in Myanmar, thousands of civilians along border areas near Mae Sot and Mae Hong Son continue to flee the fighting. In response, the Royal Thai Army has reinforced border checkpoints and established temporary reception areas where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe Ministry of Foreign Affairs calls for a peaceful resolution in collaboration with ASEAN. However, ASEAN's response remains constrained by its long-standing principle of non-interference in the internal affairs of member states, despite its efforts to facilitate dialogue and reach a diplomatic solution. The government emphasizes the need to keep diplomatic channels open between Thailand and the Myanmar junta to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. The Move Forward Party condemns this diplomatic stance under the Prayut administration, which prioritizes maintaining ties over publicly condemning the junta. Opponents of the government draw parallels between General Min Aung Hlaing's seizure of power and that of former Prime Minister Prayut Chan-o-cha, himself a military general who seized power in Thailand's 2014 coup."
  thai_events.73.a: "Looks like this is our problem now..."
  
  thai_events.74.t: "U.S. Congress Resolution in Support of The Three Fingers Movement"
- thai_events.74.d: "In the United States, nine Democratic U.S. senators introduced a resolution to support freedom of speech and freedom of assembly in Thailand in the face of ongoing anti-government protests.\n"At a time when democracy is under assault here domestically in the United States and around the world, it is critical that the United States Senate stand with the democracy movement in Thailand," said Bob Menendez, a Democratic senator from New Jersey.\nJoining Menendez in introducing the resolution was Tammy Duckworth, a Thai-American war veteran and Democratic senator from Illinois. Duckworth called on Thai leaders to listen to the people and respect democratic principles.\n\n"As a Thai-American who fought to protect the right to peacefully protest here at home, I know that both the long-standing, strong relationship between the U.S. and Thailand, as well as every individual's inalienable democratic rights, are critically important to uphold and defend…"\n\nThe resolution drew support from many liberal-leaning protesters who welcomed the United States support for democracy in Thailand. At the same time, it faced pushback from conservative and royalist commentators such as Sondhi Limthongkul, who argued that U.S. politicians did not fully understand the situation, which was more complex than they portrayed, and were interfering in the country's domestic affairs.\n\nThe Ministry of Foreign Affairs under Prayut Chan-o-cha has hit back. In its statement, it says that Thailand has always respected the rights to freedom of expression and peaceful assembly. It goes on to claim that the U.S. resolution, introduced by Senator Tammy Duckworth, is not an official statement by the U.S. government and has only received the backing of a handful of senators."
+ thai_events.74.d: "Nine Democrat Party members of the United States Senate have introduced a resolution in support of democratic principles, human rights, and freedom of assembly in Thailand in the face of ongoing anti-government protests.\n"At a time when democracy is under assault here domestically in the United States and around the world, it is critical that the United States Senate stand with the democracy movement in Thailand," said Bob Menendez, a Democratic senator from New Jersey.\nJoining Menendez in introducing the resolution was Tammy Duckworth, a Thai-American war veteran and Democrat Party senator from Illinois. \n\n"As a Thai-American who fought to protect the right to peacefully protest here at home, I know that both the long-standing, strong relationship between the U.S. and Thailand, as well as every individual's inalienable democratic rights, are critically important to uphold and defend…"\n\n: The resolution drew support from many liberal-leaning protesters who welcomed the United States support for democracy in Thailand. Conversely, conservatives and royalists opposed it, arguing U.S. politicians oversimplified the situation and were interfering in Thailand's domestic affairs.\n\nThe Ministry of Foreign Affairs under Prayut Chan-o-cha hit back, stating that Thailand has always respected freedom of expression and peaceful assembly. It added that the U.S. resolution is not an official statement by the U.S. government and has only received the backing of a handful of senators."
  thai_events.74.a: "Double disabled..."
  thai_events.74.b: "And the right to speak your mind out... That's America to me!"
  
@@ -1136,12 +1133,49 @@
  thai_events_76_tt: ".\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n£GFX_thairath_newspaper_test"
  
  thai_events.77.t: "Nonstop Heavy Rainfall"
- thai_events.77.d: "It seems to be raining without end across Thailand, day and night. Rain continues to batter large swaths of the country.\n\nThe Thai Meteorological Department stated that this relentless, torrential rain is being driven by an active low-pressure cell moving along the monsoon trough. These conditions are bringing heavy to very heavy rain across several provinces in the Central, Northern, Northeastern, and Southern regions, with persistent rainfall causing urban flooding across various parts of Bangkok, Nonthaburi, and Pattaya. In Bangkok, municipal authorities have deployed high-capacity water pumps to prevent major inundation in vulnerable districts along the Chao Phraya basin.\n\nTraveling has become difficult. Even with umbrellas and raincoats, many people are choosing to stay home due to flooding and hazardous road conditions as persistent rainfall continues. Several roads have become waterlogged, causing traffic congestion and making travel increasingly difficult. The public is advised to beware of heavy to very heavy rain, which may cause flash floods, landslides, and mudslides."
+ thai_events.77.d: "It seems to be raining without end across Thailand, day and night any pause. Rain continues to batter large swaths of the country.\n\nTraveling has become difficult. Even with umbrellas and raincoats, many people are choosing to stay home as the relentless rainfall continues. Waterlogged roads have created hazardous driving conditions and severe traffic congestion.\n\nUrban flooding have been reported across various parts of Bangkok, Nonthaburi, and Pattaya. In Bangkok, municipal authorities have deployed high-capacity water pumps to prevent major inundation in vulnerable districts along the Chao Phraya basin.\n\nThe Thai Meteorological Department stated that this relentless, torrential rain is being driven by an active low-pressure cell moving along the monsoon trough. These conditions are bringing heavy to very heavy rain across several provinces in the Central, Northern, Northeastern, and Southern regions, with persistent rainfall expected to continue through the remainder of the week. The department has issued critical warnings for low-lying communities and mountain slopes susceptible to sudden flash floods and landslides."
  thai_events.77.a: "I like sleeping to the sound of rain"
  
  thai_events.78.t: "Winter with Rain"
  thai_events.78.d: "The rain has been pouring down for three days straight. Winter's home is still safe from the flood, but the water is dangerously high. If the rain doesn't stop over the next few days, the house will surely flood. Winter has seen on social media that some people are saying this year's downpours might cause major flooding as severe as in 2011.\n\nLast night, Winter and his mom had plans to visit his relatives at Panyapiwat and take him to eat at Mo-Mo Paradise. Winter was very happy and looking forward to the trip the next day. However, upon waking up, Winter was met with the harsh truth from his parents: the rain hadn't stopped, and the water kept rising. Due to concerns about flooded roads, they couldn't go visit their relatives. Instead, he and his parents had to mop the wet floor as rainwater continued to seep into the house.\n\nFrustrated, Winter later went on his phone, posted a picture of his three cats on the wet floor, and complained about the flooding on r/oksahaipunyaon, where his post received many upvotes and an overwhelming number of responses from people in different provinces. Redditors empathized with his situation, with responses ranging from reports of flooded homes to descriptions of houses being barricaded against the rising water.\n\nWinter is now sad and bored. He went to pet his cats and give them food, and then later, Winter plans to spend his days grinding War Thunder Mobile and Hearts of Iron IV."
  thai_events.78.a: "I am playing HOI4 rn aswell!"
+ 
+ thai_events.79.t: "The Ming Dih Chemical Factory Explosion"
+ thai_events.79.d: "Around 3:00 AM on July 5, an explosion was reported at the Ming Dih Chemical factory, located in Soi King Kaew, Bang Phli District, Samut Prakan Province, after a massive storage tank containing styrene monomer ignited. The blast was heard kilometers away, with the shockwave shattering the windows and doors of nearby homes and triggering a massive fire that sent plumes of toxic smoke into the surrounding area. Authorities ordered an evacuation within a 5-kilometer (3-mile) radius of the plant while warning residents of toxic and potentially carcinogenic fumes. Thousands of residents were forced to evacuate their homes as emergency crews battled the blaze.\n\nFirefighters continuously doused the site with water and foam to stabilize the volatile styrene monomer. Controlling the initial blaze took over 24 hours, though flames briefly reignited Tuesday afternoon. The multi-day disaster killed an 18-year-old volunteer firefighter and injured over 60 people, including a dozen emergency responders, with more than 30 requiring hospitalization.\n\nBuilt in 1989 near Suvarnabhumi Airport, the Taiwanese-owned Ming Dih Chemical plant was gradually surrounded by suburban housing as rapid urban expansion encroached on the facility, leaving little separation between the plant and nearby communities. The disaster sparked renewed criticism of urban planning regulations and legacy zoning loopholes that allowed hazardous chemical facilities to remain within densely populated residential areas. It remains one of the worst industrial accidents in modern Thai history."
+ thai_events.79.a: "Thailand's Freeport disaster"
+ 
+ thai_events.80.t: "Preparing For The Future"
+ thai_events.80.d: ""
+ thai_events.80.a: "Before it's too late..."
+ thai_events_80_tt: "We will initiate a §Ydecade long project§! to ensure the §Genvironment§! of §7Thailand§! remains at §Ghealthy levels§!\n\n§GThe Environmental Project§! will activate in the £decision_icon_small §YFueling the Engine Decision Category§!\n\nAdditionally, we can change our §Yyearly strategy§! by choosing any of the three decisions available. These §Rreset§! after §gthe end of each year§!."
+ 
+ thai_events.81.t: "Major Flooding Across Central Thailand"
+ thai_events.81.d: "Central Thailand is currently experiencing severe flooding, described as the region's worst deluge since 2011. Nationally, more than 2.6 million people across 21 provinces have been impacted.\n\nMultiple fatalities have been reported across several provinces, with thousands of households affected nationwide. Continuous heavy rainfall since September 25, including nearly 300 mm (12 inches) of rain within 48 hours, has triggered widespread flooding. Active flooding has been reported in 25 provinces, as well as all 50 districts of Bangkok, where authorities have declared a state of disaster across the city.\n\nRoadways, homes, and vehicles have been partially or completely submerged, forcing commuters to wade through waist-deep water. Supermarkets are crowded with people stocking up on supplies, while convenience stores have been left with empty shelves as residents rush to buy essentials. Relief operations led by the government involve the Bangkok Metropolitan Administration, military units, police, local authorities, civil defense volunteers, and non-profit foundations. Teams are assisting residents, managing traffic, and accelerating water drainage from flooded areas."
+ thai_events.81.a: "I HATE the sound of rain now"
+ 
+ thai_events.82.t: "PM2.5 Air Pollution in Bangkok"
+ thai_events.82.d: "If you wake up early and look across Bangkok's skyline, you may see the city covered in a thick gray haze. This is not fog, it is air pollution. The city frequently ranks between 3rd and 10th among the world's most polluted major cities on live Air Quality Index (AQI) rankings, with the air often containing dangerous levels of fine PM2.5 particles. These microscopic particles can penetrate deep into the lungs and enter the bloodstream, contributing to respiratory problems, cardiovascular disease, and increased long-term health risks.\n\nJust one month into 2020, Bangkok saw one of its most severe PM2.5 episodes, with pollution peaking in early January and again around January 19–22. Today, January 22, more than 300,000 students from 437 schools across Bangkok are having the day off after the Bangkok governor announced that they could stay home to avoid the city's smog. The school closures, affecting more than 280,000 students, are intended to reduce the number of cars on Bangkok's streets and help ease the PM2.5 problem. City Hall is also distributing 450,000 free face masks to people across Bangkok.\n\nSince last year, in 2019, the crisis has been a major national concern under the government of Prime Minister Prayut Chan-o-cha. Authorities deployed fire trucks, water cannons, and agricultural drones to spray water, while Royal Rainmaking operations were conducted in an attempt to reduce airborne pollution. N95 respirator masks and home air purifiers completely sold out across the capital. Critics of the government argued that these measures were superficial and failed to address the underlying causes of the problem."
+ thai_events.82.a: "Good thing I have a facemask on!"
+ 
+ thai_events.83.t: "Jet Ski Drifting on a Flooded Road"
+ thai_events.83.d: "On social media, multiple videos taken by bystanders and a cameraman show a man riding a jet ski through floodwaters on Bangkok's flooded New Phetchaburi Road. A widely circulated video showed the rider accelerating and making sharp turns, sending waves toward homes and roadside structures. The jet ski rider also posted footage on his personal Facebook account with the caption "B K K D R I F T." The incident sparked widespread online criticism regarding the appropriateness of the behavior.\n\nPolice successfully located and arrested the jet ski rider, identified as Mr. Sorn, 28, a son of a popular female actor and the person who filmed the content, identified as Mr. Prao. Both admitted to being the individuals in the video, claiming they acted without considering the consequences. They stated their intention was to bring smiles to flood victims and claimed that, having studied abroad, they were unfamiliar with Thai cultural norms. Police have charged them with causing a public nuisance and unauthorized traffic obstruction. Mr. Prao was charged as an accomplice, and police requested that the court consider confiscating the jet ski."
+ thai_events.83.a: "I should have done that as well!"
+ 
+ thai_events.84.t: "Southern Thailand Flood Crisis"
+ thai_events.84.d: "Southern Thailand experienced one of its most severe flood disasters in decades. Triggered by an intense monsoon trough amplified by La Niña, torrential downpours battered the region, causing widespread flooding across Songkhla and neighboring southern provinces. Meteorological analysis and reports from the Royal Irrigation Department confirmed that the region experienced a "once-in-300-years" rainfall event. Cumulative three-day precipitation exceeded 630 mm, punctuated by a single-day downpour of more than 335 mm that far surpassed previous records set during major floods in 2000 and 2010.\n\nHat Yai District in Songkhla Province, the primary commercial hub of southern Thailand and a key trade and transit point near the Malaysian border was among the hardest-hit urban areas. An estimated 80% to 90% of the city was submerged in murky floodwaters several feet high. Residents were trapped on roofs or forced to cling to electrical wires to stay above the water, and regional economic losses are estimated in the hundreds of millions of dollars."
+ thai_events.84.a: "Send in the military to assist people"
+ 
+ thai_events.86.t: "Lopburi Monkey Gang War"
+ thai_events.86.d: "Video footage shared online shows rival gangs of monkeys in Lopburi (located north of Bangkok) taking to the streets and fighting each other over food after a decline in foreign tourists left them unfed. The street fight held up traffic for around 10 minutes. Normally, thousands of monkeys living in Lopburi are well-fed by foreign tourists who buy bananas and sugary treats at local shrines. However, as COVID-19 travel restrictions ground global tourism to a halt in early 2020, the animals were left without their primary food source.\n\nThe clash was between the two main factions: the temple monkeys forces and the city monkeys forces with each side fielding approximately 500 soldiers. Reports from the frontlines indicate that the temple monkeys have suffered casualties, although the extent of their losses remains unclear. Fighting between the two factions continues, with both sides maintaining several hundred troops in the area.\n\nBoth factions continue to maintain high operational readiness along the contested sector as commanders assess the tactical outcome of the clash. Each side deploys roving troops that frequently roam the city and snatch items like food from humans to replenish their logistics.\n\nLocal authorities intervened with food supplies to ease tensions between the warring troops and have launched an operation to end the gang war and relocate the monkeys."
+ thai_events.86.a: "Ape alone weak. Apes together strong..."
+ 
+ thai_events.100.t: "Moo Deng"
+ thai_events.100.d: "As nations around the world descend into chaos and the world seems to edge closer to the brink of annihilation, Americans slaughtering each other in a civil war that shows no sign of ending. Central America and Mexico descend into chaos and war. Across Asia, the flames of war spread as China clashes with Taiwan and Japan. What remains of NATO and [tag SOV] brace themselves for total war. Amid the chaos, people around the world seem to find an unexpected source of comfort and laughter in Moo Deng.\n\nMoo Deng, whose name means "bouncy pork" in Thai, is a pygmy hippopotamus residing at Khao Kheow Open Zoo in Si Racha, Chonburi. She gained widespread attention at just two months old after photos of her went viral online. Her popularity quickly spread worldwide, making her an international internet sensation and meme.\n\nMoo Deng is more playful and energetic than other hippopotamuses. In response to her popularity, the zoo began selling clothing and other merchandise featuring designs based on her. Due to Moo Deng's viral online fame, daily visitor numbers to the zoo doubled. Additionally, the zoo director announced that the zoo had begun the process of copyrighting and trademarking "Moo Deng the hippo" to protect her image and raise funds for the zoo."
+ thai_events.100.a: "SHUT UP!!! I WANT MOO DENG!!!"
+ 
+ thai_events.101.t: "Become Ungovernable"
+ thai_events.101.d: "It seems that Moo Deng's popularity has crossed over into the frontlines of the Second American Civil War. Photos have emerged showing Anarcho-Communist members of the American People's Liberation Army (APLA) using images of Moo Deng on patches, flags, and propaganda posters, pairing her chaotic personality with the slogan "Become Ungovernable." Many of the images feature Moo Deng biting an arm or depicted alongside an AK-47.\n\nThe APLA did not receive permission from Thailand's Khao Kheow Open Zoo to use her likeness, but it is not as though they believe in international copyright law anyway."
+ thai_events.101.a: "Mother Anarchy Loves Moo Deng"
  
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
@@ -1197,9 +1231,9 @@
  thai_elections.9.a: ""
  thai_elections_9_tt: "§GKla Tham§! will §Yactivate§! and run in the next §Ygeneral elections§!"
  
- thai_prayut.1.t: "Prayut temporarily suspended"
- thai_prayut.1.d: "Big Tu noooooo"
- thai_prayut.1.a: "new pm for now lol"
+ thai_prayut.1.t: "Constitutional Court Temporarily Suspended Prayut"
+ thai_prayut.1.d: "The Constitutional Court judges convened for their weekly meeting to deliberate on the facts presented in the petition. The meeting followed a submission from the Speaker of the House of Representatives requesting a ruling on whether Prime Minister Prayut Chan-o-cha's ministerial status should be terminated. The petition, initiated by opposition lawmakers, challenged Prayut's eligibility to remain prime minister under Section 158 of the Constitution, which limits an individual to a total of eight years in office as prime minister. Prayut first assumed the position of prime minister in August 2014 following a military coup.\n\nThe decision was announced via a press release from the Office of the Constitutional Court this afternoon. No press conference was held, despite the Office's earlier notification to the media that a briefing would take place following the conclusion of the judges' meeting.\n\nFor the duration of his suspension as prime minister, Deputy Prime Minister Prawit Wongsuwan will serve as Thailand's acting prime minister."
+ thai_prayut.1.a: "And the waiting begins..."
  
  thai_prayut.2.t: "Constitutional Court Verdict on Prayut's Case"
  thai_prayut.2.d: "The Constitutional Court's long-awaited ruling on the tenure of Prime Minister Prayut Chan-o-cha has drawn a sharp line through the country's political horizon.\n\nPetitioned by opposition lawmakers who argued that the 2014 coup leader had reached his constitutional eight-year limit in August 2022, the nine-member bench delivered a 6-3 majority verdict that Prayut's tenure must be calculated not from his initial seizure of power, but from the April 2017 promulgation of the current constitution.\n\nThe decision clears Prayut to retain the premiership, but it places a strict expiration date on his political longevity: under no legal interpretation can he remain Prime Minister past April 2025.\n\nFor the ruling conservative coalition, the verdict is a double-edged sword. While it averts an immediate succession crisis and preserves Prayut's control heading into the upcoming general election, it leaves the pro-military establishment with a severely diminished candidate. Voters and coalition partners alike are forced to confront the reality that any prospective government under Prayut can only last two years before a disruptive mid-term power transfer becomes legally mandatory.\n\nMeanwhile, anti-government activists and opposition parties have condemned the court's decision as yet another display of judicial shield-bearing for the ruling junta. As pro-democracy movements rally across Bangkok under black banners to protest the verdict, the countdown to 2025 has officially begun, accelerating the desperate scramble within conservative circles to find a viable successor to head off an impending opposition landslide."
@@ -1505,7 +1539,9 @@
  SIA_utn_pprp_relationship: "£GFX_united_thai_nation §PUTN§! and £GFX_palang_pracharath §BPPRP§! §Yrelations§! will §Gincrease§!"
  SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
  SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
- 
+ SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
+ SIA_speed_up_thing_2: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!\n§GOR§!\n£training_speed_texticon  §Y$THING2$§! by §H$NUMBER2$§!\nDepending on which one is active."
+ SIA_three_fingers_texticon: "£SIA_THREE_FINGERS_MOVEMENT \n\n"
  
  SIA_forpol_unlocked_tt: "The §YForeign Policy§! Branch will be §Gunlocked§!"
 #MIO's
@@ -1970,30 +2006,17 @@
  
  SIA_Economy_category: "Fueling the Engine"
  SIA_Economy_category_desc: "The Thai economy kinda needs upgrading "Quote here""
- SIA_environment_current_progress: "§YCurrent §LEnvironment Progress§!§!: §G[?SIA_environment_current_progress]§!/100%"
- SIA_environment_target_progress: "§OMonthly§! §LEnvironment Progress§!:\n§Y[?SIA_environment_monthly_progress]%§!"
- SIA_environment_lastyear_progress: "§gLast Year's Performance§!: [SIA_environment_last_year_status] (§Y[?SIA_environment_previous_year_progress_net_change|2]%§!) §W(§g[?SIA_environment_previous_previous_year_progress]%§!->§G[?SIA_environment_previous_year_progress]%§!)§! "
- SIA_last_year_status_0: "§7A Report Has Yet To Be Made§!"
- SIA_last_year_status_1: "§RCatastrophic§!"
- SIA_last_year_status_2: "§tBad§!"
- SIA_last_year_status_3: "§OMiddling§!"
- SIA_last_year_status_4: "§7Great§!"
- SIA_last_year_status_5: "§GPerfect§!"
  
  
  
  
  
- 
- 
- 
- 
- SIA_economy_help_tt: "[SIA_economy_help_tt_dyn]"
- SIA_economy_help_1: "§GThe Environmental Project§!\n---------------------------\nThailand is home to grrrrrrrrrrr I hate writing tooltip"
- SIA_economy_help_2: "§YEconomic Engine§!\n---------------------------\n"
- SIA_economy_help_3: "§OCentralization Vs Decentralization§!\n---------------------------\n"
- SIA_change_environment_progress_tt: "§LEnvironment Progress§! will change by [?change_temp|-+]"
- SIA_change_environment_monthly_tt: "§OMonthly§! §LEnvironment Progress§! will change by [?change_temp|-+]"
+ SIA_environment_yearly_report: "§GEnvironment§! - Yearly Report"
+ SIA_yearly_plan_growth: "§YYearly Plan§! - Prioritize Economic Growth"
+ SIA_yearly_plan_growth_fuel_temp_tt: "§YTemporary Fuel Growth for all §YAreas§! will §Lchange§! by §Y[?change_temp|-+2]§!"
+ SIA_yearly_plan_balanced: "§YYearly Plan§! - Balanced Approach"
+ SIA_yearly_plan_promote_environmentalism: "§YYearly Plan§! - Focus on Environmentalism"
+
  
  
  
@@ -2148,10 +2171,10 @@
  SIA_apply_for_pdto_membership_tt: "§gWe will unlock §Ydecisions§! related to §Gincreasing§! @JAP §WPDTO§! influence in Southeast Asian countries and the ability to §Cinvite§! them into our faction§!"
  SIA_apply_for_pdto_membership_trigger: "@JAP §WPDTO§! §YInfluence§! must be §Ggreater§! than §Y70%§!"
  
- SIA_negotiate_with_argentina: "Business Deal With Argentina"
- SIA_negotiate_with_brazil: "Business Deal With Brazil"
- SIA_negotiate_with_iran: "Business Deal With Iran"
- SIA_negotiate_with_israel: "Business Deal With Israel"
+ SIA_negotiate_with_argentina: "Business Deal With @ARG Argentina"
+ SIA_negotiate_with_brazil: "Business Deal With @BRA Brazil"
+ SIA_negotiate_with_iran: "Business Deal With @PER Iran"
+ SIA_negotiate_with_israel: "Business Deal With @ISR Israel"
  SIA_african_ventures: "African Ventures"
  SIA_invest_in_allies: "Invest in Southeast Asian Ally"
  
@@ -2162,6 +2185,7 @@
  SIA_invite_mal_to_pdto: "@MAL §YMalaysia§!: §CInvite§! to the §WPDTO§!"
  SIA_invite_ins_to_pdto: "@INS §YIndonesia§!: §CInvite§! to the §WPDTO§!"
  SIA_invite_phi_to_pdto: "@PHI §YPhilippines§!: §CInvite§! to the §WPDTO§!"
+ SIA_invite_phi_to_pdto_desc: "Faction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_PHI_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_PHI_var|%2]§!"
  
  SIA_invite_lao_to_eadi: "@LAO §YLaos§!: §CInvite§! to the §READI§!"
  SIA_invite_vin_to_eadi: "@VIN §YVietnam§!: §CInvite§! to the §READI§!"
@@ -2170,19 +2194,23 @@
  SIA_invite_mal_to_eadi: "@MAL §YMalaysia§!: §CInvite§! to the §READI§!"
  SIA_invite_ins_to_eadi: "@INS §YIndonesia§!: §CInvite§! to the §READI§!"
  SIA_invite_phi_to_eadi: "@PHI §YPhilippines§!: §CInvite§! to the §READI§!"
+ SIA_invite_phi_to_eadi_desc: "Faction Influence:\n@PRC §READI§!: §R[?global.PRC_influence_PHI_var|%2]§!\n@JAP §WPDTO§!: §W[?global.JAP_influence_PHI_var|%2]§!"
  
  SIA_lean_alignment_towards_eadi: "Lean Alignment Towards the @PRC §READI§!"
  SIA_lean_alignment_towards_pdto: "Lean Alignment Towards the @JAP §WPDTO§!"
- SIA_partner_with_japanese_military_industry: "Partner With Japanese Military Industry"
- SIA_partner_with_japanese_commercial_industry: "Partner With Japanese Commercial Sector"
- SIA_partner_with_japanese_industrial_companies: "Partner With Japanese Industrial Companies"
- SIA_partner_with_japanese_electronics_industry: "Partner With Japanese Electronic Manufacturers"
+ SIA_partner_with_japanese_military_industry: "Partner With @JAP Japanese Military Industry"
+ SIA_partner_with_japanese_commercial_industry: "Partner With @JAP Japanese Commercial Sector"
+ SIA_partner_with_japanese_industrial_companies: "Partner With @JAP Japanese Industrial Companies"
+ SIA_partner_with_japanese_electronics_industry: "Partner With @JAP Japanese Electronic Manufacturers"
+ SIA_deals_with_india: "Deals With @RAJ India"
+ SIA_deals_with_australia: "Deals With @AST Australia"
+ SIA_deals_with_south_korea: "Deals With @KOR South Korea"
  
- SIA_partner_with_chinese_military_industry: "Partner With Chinese Military Industry"
- SIA_partner_with_chinese_commercial_businesses: "Partner With Chinese Commercial Businesses"
- SIA_partner_with_chinese_automobile_sector: "Partner With Chinese Automobile Sector"
- SIA_partner_with_chinese_renewables_industry: "Partner With Chinese Renewable Energy Industry"
- 
+ SIA_partner_with_chinese_military_industry: "Partner With @PRC Chinese Military Industry"
+ SIA_partner_with_chinese_commercial_businesses: "Partner With @PRC Chinese Commercial Businesses"
+ SIA_partner_with_chinese_automobile_sector: "Partner With @PRC Chinese Automobile Sector"
+ SIA_partner_with_chinese_renewables_industry: "Partner With @PRC Chinese Renewable Energy Industry"
+ SIA_deals_with_pakistan: "Deals With @PAK Pakistan"
  
  
  SIA_laos_promote_pdto_influence: "@LAO §YLaos§!: §GPromote§! §WPDTO§! Influence"
@@ -2224,9 +2252,9 @@
  
  
  SIA_negotiate_with_saudi_arabia: "Negotiate With [SIA_saudi_faction_alive]"
- SIA_negotiate_with_saudi_arabia_1: "[SAU.GetName]"
- SIA_negotiate_with_saudi_arabia_2: "[ROC.GetName]"
- SIA_negotiate_with_saudi_arabia_3: "[ARR.GetName]"
+ SIA_negotiate_with_saudi_arabia_1: "[SAU.GetNameWithFlag]"
+ SIA_negotiate_with_saudi_arabia_2: "[ROC.GetNameWithFlag]"
+ SIA_negotiate_with_saudi_arabia_3: "[ARR.GetNameWithFlag]"
  SIA_negotiate_with_saudi_arabia_tt: "§GThis decision is more effective due to our prior support during the Saudi Civil war§!"
  
  SIA_cambodia_war_category: "Thai-Cambodian Tensions"
@@ -2346,6 +2374,7 @@
  
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n[SIAGetBangkokMayor]"
+ SIA_pattaya_state_modifier: "Pattaya Special Administrative Area"
  SIA_bangkok_mayor0: "£GFX_idea_SIA_Aswin_Kwanmuang1_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gIndependent (Appointed by the NCPO)§!"
  SIA_bangkok_mayor1: "£GFX_idea_SIA_Aswin_Kwanmuang2_portrait\n\n\n\n\n\n\n\n§W       Aswin Kwanmuang§!\n\n\n§YRuling Party:§! §gRak Krung Thep§!"
  SIA_bangkok_mayor2: "£GFX_idea_SIA_Chadchart_Sittipunt_portrait\n\n\n\n\n\n\n\n§W       Chadchart Sittipunt§!\n\n\n§YRuling Party:§! §gIndependent§!"
@@ -2396,7 +2425,47 @@
  SIA_bhum_path_tt: "£GFX_bhumjaithai §1Bhumjaithai Party§!\n\n\n\n\n£GFX_bhum_path\n\n\n\n\n\nDread it, run from it, Anutin is destined."
 
  #Economic gui 
+ SIA_economy_help_tt: "[SIA_economy_help_tt_dyn]"
+ SIA_economy_help_1: "§GThe Environmental Project§!\n---------------------------\nOne of the most §Oimminent danger§! of our society is the §Rdeterioration of our environment§!. Hence, we will start a decade long project spanning §Yfrom 2021 up until 2030§! to contain such danger.\n\n§YDecisions and Projects§! will be available to raise the §YCurrent §LEnvironment Progress§!§! through the §OMonthly§! §LProgress§! as government agencies enforce the policies enacted.\n\nFurthermore, the §YMinistry of Natural Resources and Environment§! will conduct a §YYearly Report§! that'll analyze §gLast Year's Performance§! once §Ythe New Year starts§!, this will provide us §Gseveral benefits§! if we manage to do §Gwell§!.\n\n§YMay our efforts of today secure a better future for tomorrow!§!"
+ SIA_economy_help_2: "§YEconomic Engine§!\n---------------------------\nThe §Geconomy§! is another area we need to pay attention to. The quest for §Gsustainable economic development and prosperity§! will be soon achieved with the §gright plans and policies§! that are implemented by the §7Thai Government§!.\n\nEach §YArea§! will contain an §YEconomic Level§! that contributes to the §CNational Engine Level§! of the §7country§!. Furthermore, each §YArea§! has their own §YFuel and Monthly Fuel Growth§!, §Lwhich represents economic development and activity§!, that can be increased by adding more §gSpecialists§! or by decisions and focuses\n\nThe higher our §CNational Engine Level§! is, the §Gmore§! we §Gbenefit§!"
+ SIA_economy_help_3: "§OCentralization Vs Decentralization§!\n---------------------------\n"
+ SIA_engine_locked_box_tt: "§RINACCESSIBLE§!\n-------------------------\n§gI am sorry Prime Minister but current circumstances prevent us from checking the other tabs. Maybe it'll open up soon §Yafter the elections§!?"
+ 
+ SIA_environment_icon_tt: "§GThe Environmental Project§!\n-------------\nThere is no greater threat than pollution"
+ SIA_environment_current_progress: "§YCurrent §LEnvironment Progress§!§!: §G[?SIA_environment_current_progress]§!/100%"
+ SIA_environment_monthly_progress_text: "§OMonthly§! §LProgress§!:\n§Y[?SIA_environment_monthly_progress]%§!"
+ SIA_environment_lastyear_progress: "§gLast Year's Performance§!: [SIA_environment_last_year_status] (§Y[?SIA_environment_previous_year_progress_net_change|2]%§!) §W(§g[?SIA_environment_previous_previous_year_progress]%§!->§G[?SIA_environment_previous_year_progress]%§!)§! "
+ SIA_last_year_status_0: "§7A Report Has Yet To Be Made§!"
+ SIA_last_year_status_1: "§RCatastrophic§!"
+ SIA_last_year_status_2: "§tBad§!"
+ SIA_last_year_status_3: "§OMiddling§!"
+ SIA_last_year_status_4: "§7Great§!"
+ SIA_last_year_status_5: "§GPerfect§!"
+ SIA_environment_image_tt: "[SIA_environment_get_image_tt]"
+ SIA_environment_image_1: "§R"Don't worry, the air isn't that bad. You'll get used to it""
+ SIA_environment_image_2: "§R"And Mother Nature weeps as it bleeds""
+ SIA_environment_image_3: "§O"It's going somewhere at least, of course there's still more to be done""
+ SIA_environment_image_4: "§G"You know, I'm in the mood for a walk outside""
+ SIA_environment_image_5: "§G"Come visit Thailand and see its wonderful nature!""
+
+ SIA_change_environment_progress_tt: "§LEnvironment Progress§! will change by [?change_temp|-+]"
+ 
+ SIA_change_environment_monthly_tt: "§OMonthly§! §LEnvironment Progress§! will change by [?change_temp|-+]"
+ 
+
  SIA_selected_state: "Selected Area: [SIA_selected_econ_area]"
+ SIA_selected_state_fuel: "§GFuel§!: §Y[?SIA_map_var:SIA_fuel_value|2]/100%§!\nSpecialists In Area: [?SIA_map_var:SIA_specialists_in_state]\n\n§OMonthly Fuel Growth§!: §g[?SIA_map_var:SIA_fuel_value_monthly]§!"
+ SIA_selected_state_fuel_tt_delayed: "§LMonthly Fuel Breakdown§!\n---------------------------\nBase Growth: §Y[?SIA_map_var:SIA_fuel_value_monthly_base]§!\nGain from Specialists: §Y[?SIA_map_var:SIA_fuel_value_specialists]§!\nTemporary Modifiers: §Y[?SIA.modifier@SIA_fuel_value_temporary_modifier]§!"
+ SIA_selected_area_economic_level: "§YArea Economic Level§!"
+ SIA_selected_area_economic_level_value: "[?SIA_map_var:SIA_economic_level]/10"
+ SIA_national_specialists_text: "§gSpecialists§!"
+ SIA_national_specialists_add_specialist_tt: "§GAdd§! §Y1§! §gSpecialist§! to this §YArea§!"
+ SIA_national_specialists_remove_specialist_tt: "§RRemove§! §Y1§! §gSpecialist§! from this §YArea§!"
+ SIA_national_specialists_amount: "[?SIA_specialists_var]"
+ SIA_national_specialists_tt: "The engineers, entrepreneurs, and experts of the business world. These specialists increase the §OMonthly Fuel Growth§! of an Area by §Y0.15§!\n\nWe can freely assign them to any area that we deem requires more attention for §Geconomic development§!\n---------------------\nSpecialists In Each State:\n§GBangkok§!: [?1:SIA_specialists_in_state]\n§7North§!: [?2:SIA_specialists_in_state]\n§CCentral§!: [?3:SIA_specialists_in_state]\n§9East§!: [?4:SIA_specialists_in_state]\n§LNortheast§!: [?5:SIA_specialists_in_state]\n§pWest§!: [?6:SIA_specialists_in_state]\n§OSouth§!: [?7:SIA_specialists_in_state]\n§RPattani§!: [?8:SIA_specialists_in_state]\n\nMaintaining and funding these groups will be §Rexpensive§!. As we §Lrecruit more§!, the §Rheavier our expenses§! we'll accumulate\n\n£GFX_dx §YMonthly Expense Growth§!: [?SIA_specialist_upkeep_expense_growth_factor_var|+-2%]"
+ SIA_national_engine_text: "National Engine Level"
+ SIA_national_engine_value: "§C[?SIA_national_engine_level_var]/80§!"
+ SIA_national_engine_tt: "Representing the overall §GEconomic Health§! of the country. This measures the growth of the §7Thai§! §Geconomy§! and will affect the §YEconomic Engine§! §gNational Spirit§!\n\nThis is calculated by the §gtotal sum§! of all §YArea Economic Level§!"
  SIA_BK_gui_tt: "§GBangkok Metropolitan§!"
  SIA_North_gui_tt: "§7North§!"
  SIA_Central_gui_tt: "§CCentral§!"
@@ -2405,6 +2474,12 @@
  SIA_West_tt: "§pWest§!"
  SIA_South_tt: "§OSouth§!"
  SIA_Pattani_tt: "§RPattani§!"
+ 
+ 
+ SIA_change_specialist_amount_tt: "§gSpecialist§! Amount will change by [?change_temp|-+0]\n\n"
+ SIA_change_specialist_amount_tt_reduce: "§gSpecialist§! Amount will change by [?change_temp|-+0]\n\nThe §gSpecialists§! in §Yreserve§! do not match the change, §gSpecialists§! in an §YArea§! will be §Rremoved§! if §Yavailable§!"
+ SIA_change_fuel_monthly_base_amount_tt: "§YMonthly Fuel Base Growth§! will change by [?change_temp|-+]"
+ SIA_change_fuel_monthly_temporary_modifier_amount_tt: "§YTemporary Fuel Growth§! will change by [?change_temp|-+]"
 
  #decision tooltip
  SIA_stabilize_Baht_tt: "This Will §GRemove§! §G50§! Days From §RWorldwide Financial Crisis!§!"
@@ -2418,3 +2493,6 @@
  TFR_PEACE_POPUP_FLAVOR_CAMBODIA_SIA_CAM: "Kuey Hun Sen was never to be seen again." #SIA WINS
  TFR_PEACE_POPUP_FLAVOR_CAMBODIA_CAM_SIA: "Thailand goes into a freefall." #CAM WINS
  TFR_PEACE_POPUP_FLAVOR_CAMBODIA_STALEMATE: "All of that for nothing." #STALEMATE
+ 
+ #Modifiers
+ SIA_fuel_value_temporary_modifier: "Fuel Temporary Growth"

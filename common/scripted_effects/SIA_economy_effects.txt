@@ -54,3 +54,198 @@ SIA_check_yearly_performance = {
 	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
 	set_variable = { SIA_environment_previous_year_progress_net_change = current_year_net_gain }
 }
+
+
+
+
+
+### ENGINE MECH ###
+SIA_initiate_area_vars = { #Killing myself since array usage guh
+	clear_array = SIA_map_var #stop duplication technique
+	add_to_array = { SIA_map_var = 1 } #bangkok
+	add_to_array = { SIA_map_var = 2 } #north
+	add_to_array = { SIA_map_var = 3 } #central
+	add_to_array = { SIA_map_var = 4 } #east
+	add_to_array = { SIA_map_var = 5 } #northeast
+	add_to_array = { SIA_map_var = 6 } #west
+	add_to_array = { SIA_map_var = 7 } #south
+	add_to_array = { SIA_map_var = 8 } #pattani
+	
+	set_variable = { SIA_specialists_var = 4 }
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+
+		var:v = {
+			if = {
+				limit = {
+					check_variable = { v = 1 } 
+				}
+				set_variable = { SIA_fuel_value = 80 } 
+				set_variable = { SIA_economic_level = 5 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { v = 4 } 
+				}
+				set_variable = { SIA_fuel_value = 45 } 
+				set_variable = { SIA_economic_level = 3 }
+			}
+			else = {
+				set_variable = { SIA_fuel_value = 22 } 
+				set_variable = { SIA_economic_level = 2 }
+			}
+			set_variable = { SIA_fuel_value_monthly_base = 0.15 }
+		}
+	}
+	SIA_calculate_national_engine_level = yes
+}
+SIA_change_specialist_amount = { 
+	set_temp_variable = { nat_spec_check = change_temp }
+	add_to_temp_variable = { nat_spec_check = SIA_specialists_var }
+	
+	if = {
+		limit = { #Anti Cheat that kills a specialist in a state if national pool is zero
+			check_variable = { change_temp < 0 }
+			check_variable = { SIA_specialists_var = 0 }
+		}
+		custom_effect_tooltip = SIA_change_specialist_amount_tt_reduce
+		SIA_for_loop_reduce_specialist_in_state = yes
+	}
+	else_if = {
+		limit = {#there's a value in national var but it's less than the change
+			check_variable = { nat_spec_check < 0 }
+		}
+		custom_effect_tooltip = SIA_change_specialist_amount_tt_reduce
+		add_to_variable = { SIA_specialists_var = change_temp }
+		set_temp_variable = { change_temp = SIA_specialists_var } #After adding, grab specialists since it'll be most likely negative and then do loop check
+		
+		SIA_for_loop_reduce_specialist_in_state = yes
+	}
+	else = { #normal adding
+		add_to_variable = { SIA_specialists_var = change_temp }
+		custom_effect_tooltip = SIA_change_specialist_amount_tt
+	}
+	clamp_variable = { #Specialists should never go to negative level
+		var = SIA_specialists_var
+		min = 0
+	}
+	SIA_calculate_total_montly_fuel_growth = yes
+}
+SIA_for_loop_reduce_specialist_in_state = {
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+		
+		var:v = {
+			if = {
+				limit = { #if there's a specialist and the change var is not 0, find and subtract
+					check_variable = { SIA_specialists_in_state > 0 }
+					NOT = {
+						check_variable = { change_temp = 0 }
+					}
+				}
+				subtract_from_variable = { SIA_specialists_in_state = 1 }
+				add_to_temp_variable = { SIA.change_temp = 1 }
+				add_to_variable = { SIA.SIA_specialists_var_temp = SIA_specialists_in_state }
+			}
+		}
+	}
+	if = {
+		limit = { #if somehow the change var is alive and there's still a specialist somewhere, continue, if not then go to next effect
+			NOT = {
+				check_variable = { change_temp = 0 }
+			}
+			check_variable = { SIA_specialists_var_temp > 0 }
+		}
+		set_temp_variable = { SIA_specialists_var_temp = 0 }
+		SIA_for_loop_reduce_specialist_in_state = yes
+	}
+	else = {
+		#stop, just continue ahead
+	}
+}
+SIA_change_fuel_monthly_base_amount = { 
+	add_to_variable = { SIA_fuel_value_monthly_base = change_temp }
+	custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_tt
+	SIA_calculate_total_montly_fuel_growth = yes
+}
+SIA_change_fuel_monthly_temporary_modifier_amount = { #FOR VISUAL PURPOSES ONLY, ACTUAL CHANGE WILL BE USING HIDDEN IDEAS
+	add_to_variable = { SIA_fuel_value_temporary_modifiers = change_temp }
+	custom_effect_tooltip = SIA_change_fuel_monthly_temporary_modifier_amount_tt
+	SIA_calculate_total_montly_fuel_growth = yes
+}
+SIA_add_specialists_effect = {
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+		
+		var:v = {
+			set_temp_variable = { SIA_fuel_value_monthly_temp = 0.15 }
+			multiply_temp_variable = { SIA_fuel_value_monthly_temp = SIA_specialists_in_state }
+			set_variable = { SIA_fuel_value_specialists = SIA_fuel_value_monthly_temp }
+			
+		}
+	}
+	SIA_calculate_total_montly_fuel_growth = yes
+}
+SIA_calculate_specialist_dynamic_modifier = { 
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+		
+		var:v = {
+			if = {
+				limit = {
+					check_variable = { SIA_specialists_in_state > 0 }
+				}
+				add_to_temp_variable = { SIA.total = SIA_specialists_in_state }
+			}
+		}
+	}
+	add_to_temp_variable = { total = SIA_specialists_var }
+	multiply_temp_variable = { total = 0.015 }
+	set_variable = { SIA_specialist_upkeep_expense_growth_factor_var = total }
+}
+SIA_calculate_total_montly_fuel_growth = { #Updates vars for all states, doesn't add fuel
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+		
+		var:v = {
+			set_variable = { SIA_fuel_value_monthly = 0 }
+			add_to_variable = { SIA_fuel_value_monthly = SIA_fuel_value_monthly_base }
+			add_to_variable = { SIA_fuel_value_monthly = SIA_fuel_value_specialists }
+			add_to_variable = { SIA_fuel_value_monthly = SIA.modifier@SIA_fuel_value_temporary_modifier }
+		}
+	}
+}
+SIA_monthly_tick_engine = {
+	SIA_calculate_specialist_dynamic_modifier = yes
+	SIA_calculate_total_montly_fuel_growth = yes 
+	SIA_calculate_national_engine_level = yes
+}
+SIA_calculate_national_engine_level = {
+	set_variable = { SIA_national_engine_level_var = 0 }
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+		
+		var:v = {
+			add_to_variable = { SIA_fuel_value = SIA_fuel_value_monthly }
+			if = {
+				limit = {
+					check_variable = { SIA_fuel_value > 99.99 }
+				}
+				add_to_variable = { SIA_economic_level = 1 }
+				add_to_variable = { SIA_fuel_value = -100 }
+			}
+			clamp_variable = {
+				var = SIA_economic_level
+				min = 0
+				max = 10
+			}
+			add_to_variable = { SIA.SIA_national_engine_level_var = SIA_economic_level }
+		}
+	}
+}

@@ -109,6 +109,7 @@ SIA_forpol_category = {
 			
 			has_war = no
 			BRM = {
+				has_war = no
 				custom_trigger_tooltip = {
 					check_variable = { global.JAP_influence_BRM_var > 0.7 }
 					tooltip = SIA_apply_for_pdto_membership_trigger
@@ -488,6 +489,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			LAO = {
 				set_temp_variable = {
@@ -521,6 +525,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			CAM = {
 				set_temp_variable = {
@@ -549,6 +556,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			VIN = {
 				set_temp_variable = {
@@ -576,7 +586,13 @@ SIA_forpol_category = {
 					is_in_faction_with = JAP
 				}
 			}
+			BRM = {
+				has_war = no
+			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			BRM = {
 				set_temp_variable = {
@@ -605,6 +621,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			INS = {
 				set_temp_variable = {
@@ -633,6 +652,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			PHI = {
 				set_temp_variable = {
@@ -661,6 +683,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			MAL = {
 				set_temp_variable = {
@@ -692,6 +717,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			LAO = {
 				set_temp_variable = {
@@ -728,6 +756,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			CAM = {
 				set_temp_variable = {
@@ -759,6 +790,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			VIN = {
 				set_temp_variable = {
@@ -789,7 +823,13 @@ SIA_forpol_category = {
 					is_in_faction_with = JAP
 				}
 			}
+			BRM = {
+				has_war = no
+			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			BRM = {
 				set_temp_variable = {
@@ -821,6 +861,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			INS = {
 				set_temp_variable = {
@@ -852,6 +895,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			PHI = {
 				set_temp_variable = {
@@ -883,6 +929,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			MAL = {
 				set_temp_variable = {
@@ -912,6 +961,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			LAO = {
 				set_temp_variable = {
@@ -946,6 +998,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			CAM = {
 				set_temp_variable = {
@@ -975,6 +1030,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			VIN = {
 				set_temp_variable = {
@@ -1003,7 +1061,13 @@ SIA_forpol_category = {
 					is_in_faction_with = PRC
 				}
 			}
+			BRM = {
+				has_war = no
+			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			BRM = {
 				set_temp_variable = {
@@ -1033,6 +1097,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			INS = {
 				set_temp_variable = {
@@ -1062,6 +1129,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			PHI = {
 				set_temp_variable = {
@@ -1091,6 +1161,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			MAL = {
 				set_temp_variable = {
@@ -1122,6 +1195,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			LAO = {
 				set_temp_variable = {
@@ -1158,6 +1234,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			CAM = {
 				set_temp_variable = {
@@ -1189,6 +1268,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			VIN = {
 				set_temp_variable = {
@@ -1219,7 +1301,13 @@ SIA_forpol_category = {
 					is_in_faction_with = PRC
 				}
 			}
+			BRM = {
+				has_war = no
+			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			BRM = {
 				set_temp_variable = {
@@ -1251,6 +1339,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			INS = {
 				set_temp_variable = {
@@ -1282,6 +1373,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			PHI = {
 				set_temp_variable = {
@@ -1313,6 +1407,9 @@ SIA_forpol_category = {
 				}
 			}
 		}
+		cost = 40
+		days_remove = 30
+		days_re_enable = 25
 		complete_effect = {
 			MAL = {
 				set_temp_variable = {
@@ -1691,19 +1788,6 @@ SIA_forpol_category = {
 			poverty_development_monthly = 0.02
 		}
 		remove_effect = {
-			set_temp_variable = {
-				debt_var_temp = FROM.max_manpower_k
-			}
-			divide_temp_variable = {
-				debt_var_temp = -700
-			}
-			multiply_temp_variable = {
-				debt_var_temp = FROM.num_of_factories
-			}
-			divide_temp_variable = {
-				debt_var_temp = JAP.num_of_factories
-			}
-			add_debt = yes
 			FROM = {
 				add_political_power = 50
 				add_stability = 0.015
@@ -1712,6 +1796,20 @@ SIA_forpol_category = {
 					value = 0.1
 				}
 				add_poverty_development = yes
+				random_owned_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_state = {
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
 			}
 		}
 		ai_will_do = {
@@ -1720,15 +1818,16 @@ SIA_forpol_category = {
 	}
 	### EADI DECISIONS ###
 	SIA_lean_alignment_towards_eadi = {
-
 		visible = {
-			
 			check_variable = { SIA_faf_nation = SIA }
+			is_in_faction = no
 		}
 		available = {
 			
 		}
-		complete_effect = {
+		cost = 30
+		days_remove = 14
+		remove_effect = {
 			set_temp_variable = {
 				var = global.PRC_influence_SIA_var_temp
 				value = 0.075
@@ -1737,91 +1836,152 @@ SIA_forpol_category = {
 		}
 	}
 	SIA_partner_with_chinese_military_industry = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_chinese_investment
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = PRC
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			production_speed_arms_factory_factor = 0.075
+			industrial_capacity_factory = 0.1
+			military_development_monthly = 0.005
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_partner_with_chinese_commercial_businesses = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_chinese_investment
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = PRC
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			income_growth_factor = 0.1
+			business_value_factor = 0.15
+			poverty_development_monthly = 0.005
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_partner_with_chinese_automobile_sector = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_chinese_investment
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = PRC
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			production_speed_infrastructure_factor = 0.125
+			consumer_goods_factor = -0.1
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_partner_with_chinese_renewables_industry = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_chinese_investment
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = PRC
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			factory_energy_consumption = -0.15
+			production_factory_max_efficiency_factor = 0.1
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_deals_with_pakistan = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_eadi_business_deals
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = PAK
 		}
-		complete_effect = {
-			
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 1 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	### PDTO DECISIONS ###
 	SIA_lean_alignment_towards_pdto = {
-
 		visible = {
-			
 			check_variable = { SIA_faf_nation = SIA }
+			is_in_faction = no
 		}
 		available = {
 			
 		}
-		complete_effect = {
+		cost = 30
+		days_remove = 14
+		remove_effect = {
 			set_temp_variable = {
 				var = global.JAP_influence_SIA_var_temp
 				value = 0.075
@@ -1830,108 +1990,219 @@ SIA_forpol_category = {
 		}
 	}
 	SIA_partner_with_japanese_military_industry = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_japanese_business
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
 			is_in_faction_with = JAP
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			production_speed_arms_factory_factor = 0.075
+			industrial_capacity_factory = 0.1
+			military_development_monthly = 0.005
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_partner_with_japanese_commercial_industry = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_japanese_business
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
 			is_in_faction_with = JAP
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			income_growth_factor = 0.1
+			business_value_factor = 0.15
+			poverty_development_monthly = 0.005
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_partner_with_japanese_industrial_companies = {
-
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_japanese_business
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
 			is_in_faction_with = JAP
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			production_speed_buildings_factor = 0.125
+			consumer_goods_factor = -0.1
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_partner_with_japanese_electronics_industry = {
 
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_attract_japanese_business
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
 			is_in_faction_with = JAP
 		}
-		complete_effect = {
-			
+		cost = 75
+		days_remove = 50
+		days_re_enable = 30
+		modifier = {
+			research_speed_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.05
+			academic_development_monthly = 0.005
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { academic_development_var_temp = 0.05 }
+			add_academic_development = yes
 		}
 	}
 	SIA_deals_with_india = {
 
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_marching_alongside_the_rising_sun
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = RAJ
 		}
-		complete_effect = {
-			
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 2 }
+			add_offsite_building = { type = industrial_complex level = 2 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_deals_with_australia = {
 
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_marching_alongside_the_rising_sun
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = AST
 		}
-		complete_effect = {
-			
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_offsite_building = { type = industrial_complex level = 2 }
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	SIA_deals_with_south_korea = {
 
 		visible = {
-			SIA = {
-				is_in_faction_with = JAP
-			}
+			has_completed_focus = SIA_marching_alongside_the_rising_sun
 			check_variable = { SIA_faf_nation = SIA }
 		}
 		available = {
-			is_in_faction_with = JAP
+			is_in_faction_with = KOR
 		}
-		complete_effect = {
-			
+		days_remove = 75
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			expense_growth_factor = 0.1
+			consumer_goods_factor = 0.1
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 3 }
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	

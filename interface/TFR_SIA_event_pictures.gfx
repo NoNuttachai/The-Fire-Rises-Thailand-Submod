@@ -480,6 +480,42 @@ spriteTypes = {
 		name = "GFX_report_gunter_winter_rain_flavor_event"
 		texturefile = "gfx/event_pictures/report_gunter_winter_rain_flavor_event.png"
 	}
+	spriteType = {
+		name = "GFX_report_ming_dih_chemical_factory"
+		texturefile = "gfx/event_pictures/report_ming_dih_chemical_factory.png"
+	}
+	spriteType = {
+		name = "GFX_report_environment_conference"
+		texturefile = "gfx/event_pictures/report_environment_conference.png"
+	}
+	spriteType = {
+		name = "GFX_report_2026_flooding"
+		texturefile = "gfx/event_pictures/report_2026_flooding.png"
+	}
+	spriteType = {
+		name = "GFX_report_bangkok_air_pollution"
+		texturefile = "gfx/event_pictures/report_bangkok_air_pollution.png"
+	}
+	spriteType = {
+		name = "GFX_report_2025_southern_flooding"
+		texturefile = "gfx/event_pictures/report_2025_southern_flooding.png"
+	}
+	spriteType = {
+		name = "GFX_report_2026_flood_jet_ski"
+		texturefile = "gfx/event_pictures/report_2026_flood_jet_ski.png"
+	}
+	spriteType = {
+		name = "GFX_report_moo_deng"
+		texturefile = "gfx/event_pictures/report_moo_deng.png"
+	}
+	spriteType = {
+		name = "GFX_report_moo_deng_anarchist_larp"
+		texturefile = "gfx/event_pictures/report_moo_deng_anarchist_larp.png"
+	}
+	spriteType = {
+		name = "GFX_report_planet_of_the_apes"
+		texturefile = "gfx/event_pictures/report_planet_of_the_apes.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

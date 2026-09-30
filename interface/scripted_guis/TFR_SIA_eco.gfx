@@ -45,12 +45,112 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_SIA_engine_plus"
+		texturefile = "gfx/interface/SIA/Economy/engine_plus.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_econ_locked_box"
+		texturefile = "gfx/interface/SIA/Economy/econ_locked_box.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_engine_red"
+		texturefile = "gfx/interface/SIA/Economy/engine_red.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_engine_outline_box"
+		texturefile = "gfx/interface/SIA/Economy/engine_outline_box.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_SIA_engine_fuel_can"
+		texturefile = "gfx/interface/SIA/Economy/envgine_fuel_can.png"
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = "GFX_SIA_engine_fuel_can_fill"
+		texturefile1 = "gfx/interface/SIA/Economy/engine_fuel_can_fill.png"
+		texturefile2 = "gfx/interface/SIA/Economy/engine_fuel_can_fill_empty.png"
+		size = { x = 73 y = 104 }
+		steps = 100 
+		horizontal = no
+		effectfile = "gfx/FX/progress.shader"
+		
+	}
+	spriteType = {
 		name = "GFX_SIA_box_outline"
 		texturefile = "gfx/interface/SIA/Economy/box_outline.png"
 	}
 	spriteType = {
+		name = "GFX_SIA_environment_icon"
+		texturefile = "gfx/interface/SIA/Economy/environment_icon.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_environment_map_outline"
 		texturefile = "gfx/interface/SIA/Economy/SIA_environment_map_outline.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_outline"
+		texturefile = "gfx/interface/SIA/Economy/environment_outline.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_image_1"
+		texturefile = "gfx/interface/SIA/Economy/environment_image_1.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_image_2"
+		texturefile = "gfx/interface/SIA/Economy/environment_image_2.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_image_3"
+		texturefile = "gfx/interface/SIA/Economy/environment_image_3.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_image_4"
+		texturefile = "gfx/interface/SIA/Economy/environment_image_4.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_image_5"
+		texturefile = "gfx/interface/SIA/Economy/environment_image_5.png"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_SIA_environment_neutral"
+		texturefile = "gfx/interface/SIA/Economy/environment_neutral.png"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes  
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_SIA_environment_green_up"
+		texturefile = "gfx/interface/SIA/Economy/environment_green_up.png"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes  
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_SIA_environment_green_up_double"
+		texturefile = "gfx/interface/SIA/Economy/environment_green_up_double.png"
+		noOfFrames = 3
+		animation_rate_fps = 3
+		looping = yes
+		play_on_show = yes  
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_SIA_environment_red_down"
+		texturefile = "gfx/interface/SIA/Economy/environment_red_down.png"
+		noOfFrames = 2
+		animation_rate_fps = 1
+		looping = yes
+		play_on_show = yes  
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_SIA_environment_red_down_double"
+		texturefile = "gfx/interface/SIA/Economy/environment_red_down_double.png"
+		noOfFrames = 3
+		animation_rate_fps = 3
+		looping = yes
+		play_on_show = yes  
 	}
 	progressbartype = {
 		name = "GFX_SIA_environment_fill"

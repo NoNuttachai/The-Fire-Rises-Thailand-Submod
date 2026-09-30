@@ -3,8 +3,16 @@ ideas = {
 	# traits = {
 	#     ZZZ_blank_idea_trait
 	# }	
-	hidden_ideas = { #This is to stop 2Trillion GDP Thailand
-		SIA_gdp_fix_new = {
+	hidden_ideas = {
+		SIA_yearly_plan_growth_idea = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				SIA_fuel_value_temporary_modifier = 0.25
+			}
+		}
+		SIA_gdp_fix_new = { #This is to stop 2Trillion GDP Thailand
 			allowed = {
 				always = no
 			}
@@ -30,6 +38,7 @@ ideas = {
 		}
 	}
 	country = {
+		
 		#GOD, please save me from this
 		SIA_royal_army_of_thailand_dummy = {
 			name = SIA_royal_army_of_thailand_dynamic_modifier

@@ -1,5 +1,97 @@
 SIA_Economy_category = {
 	#ENVIRONMENT#
+	SIA_environment_yearly_report = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 364
+		timeout_effect = {
+			country_event = thai_events.40
+			hidden_effect = {
+				activate_mission = SIA_environment_yearly_report
+				SIA_check_yearly_performance = yes
+			}
+		}
+		complete_effect = {
+		}
+	}
+	SIA_yearly_plan_growth = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		complete_effect = {
+			set_country_flag = SIA_selected_yearly_environment_plan
+			set_temp_variable = { change_temp = -0.1 }
+			SIA_change_environment_monthly = yes
+			set_temp_variable = { change_temp = 2 }
+			SIA_change_specialist_amount = yes
+			
+			hidden_effect = { add_ideas = SIA_yearly_plan_growth_idea }
+			set_temp_variable = { change_temp = 0.25 }
+			custom_effect_tooltip = SIA_yearly_plan_growth_fuel_temp_tt
+		}
+	}
+	SIA_yearly_plan_balanced = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		complete_effect = {
+			set_temp_variable = { change_temp = 1 }
+			SIA_change_specialist_amount = yes
+		}
+	}
+	SIA_yearly_plan_promote_environmentalism = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		complete_effect = {
+			set_temp_variable = { change_temp = -2 }
+			SIA_change_specialist_amount = yes
+		}
+	}
 	SIA_add_five_to_current_progress = {
 		icon = generic_crisis 
 		
@@ -53,12 +145,71 @@ SIA_Economy_category = {
 			check_variable = { SIA_econ_tab = 1 } 
 		}
 		complete_effect = {
-			SIA_check_yearly_performance = yes
+			
+		}
+	}
+	SIA_activate_other_two_mechs = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_country_flag = SIA_activate_rest_of_engine
+			SIA_initiate_area_vars = yes
+			add_dynamic_modifier = {
+				modifier = SIA_specialist_upkeep_dynamic_modifier
+			}
 		}
 	}
 
-
 	#ENGINE MECHANIC#
+	SIA_add_specialist_2 = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		complete_effect = {
+			set_temp_variable = { change_temp = 2 }
+			SIA_change_specialist_amount = yes
+		}
+	}
+	SIA_remove_specialist_2 = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		complete_effect = {
+			set_temp_variable = { change_temp = -2 }
+			SIA_change_specialist_amount = yes
+		}
+	}
 	SIA_utn_promote_green_energy = {
 		icon = generic_crisis
 		
