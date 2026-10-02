@@ -15,10 +15,10 @@ SIA_oil_crisis_cat = {
 			}
 		}
 		visible = {
-			
 			hidden_trigger = {
 				has_country_flag = SIA_oil_crisis_ongoing
 			}
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
 		}
 		cancel_if_not_visible = yes
 		activation = {
@@ -69,10 +69,10 @@ SIA_oil_crisis_cat = {
 			}
 		}
 		visible = {
-			
 			hidden_trigger = {
 				has_country_flag = SIA_oil_crisis_ongoing
 			}
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
 		}
 		cancel_if_not_visible = yes
 		activation = {
@@ -106,7 +106,7 @@ SIA_oil_crisis_cat = {
 			}
 		}
 		visible = {
-			
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
 			hidden_trigger = {
 				has_country_flag = SIA_oil_crisis_ongoing
 			}
@@ -150,6 +150,7 @@ SIA_oil_crisis_cat = {
 			hidden_trigger = {
 				has_country_flag = SIA_oil_crisis_ongoing
 			}
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
 		}
 		cancel_if_not_visible = yes
 		activation = {
@@ -178,7 +179,10 @@ SIA_oil_crisis_cat = {
 	SIA_activate_the_asean_petroleum_security_agreement = {
 		icon = GFX_decision_SIA_ASEAN_Petrol_Agreement
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_oil_diplomacy }
+		visible = {
+			has_country_flag = SIA_oil_diplomacy
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
@@ -221,7 +225,10 @@ SIA_oil_crisis_cat = {
 	SIA_russian_oil_deal = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_oil_diplomacy }
+		visible = {
+			has_country_flag = SIA_oil_diplomacy
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		targets = {
 			SOV
 		}
@@ -255,7 +262,10 @@ SIA_oil_crisis_cat = {
 	SIA_african_oil_deal = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_oil_diplomacy }
+		visible = {
+			has_country_flag = SIA_oil_diplomacy
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		targets = {
 			ALG
 		}
@@ -332,7 +342,10 @@ SIA_oil_crisis_cat = {
 	SIA_african_oil_deal_2 = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { check_variable = { SIA_african_oil_deal = 1 } }
+		visible = {
+			check_variable = { SIA_african_oil_deal = 1 }
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		targets = {
 			ALG
 		}
@@ -385,7 +398,10 @@ SIA_oil_crisis_cat = {
 	SIA_increase_american_oil_imports = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_oil_diplomacy country_exists = USA}
+		visible = {
+			has_country_flag = SIA_oil_diplomacy country_exists = US
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		targets = {
 			USA
 		}
@@ -424,7 +440,10 @@ SIA_oil_crisis_cat = {
 			has_country_flag = SIA_oil_crisis_ongoing 
 			date > 2020.11.03 
 		}
-		visible = { has_country_flag = SIA_saudi_civil_war_no_intervention }
+		visible = {
+			has_country_flag = SIA_saudi_civil_war_no_intervention
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		targets = {
 			PER
 		}
@@ -474,7 +493,10 @@ SIA_oil_crisis_cat = {
 	SIA_enact_oil_rationing_measures = {
 		icon = GFX_decision_SIA_Enact_Oil_Rationing
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
+		visible = {
+			has_country_flag = SIA_deal_with_the_oil_crisis
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 
 		ai_will_do = { factor = 1 }
 		
@@ -513,7 +535,10 @@ SIA_oil_crisis_cat = {
 	SIA_expand_fuel_storage_facilities = {
 		icon = GFX_decision_SIA_Expand_Fuel_Storage
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
+		visible = {
+			has_country_flag = SIA_deal_with_the_oil_crisis
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 
 		ai_will_do = { factor = 1 }
 		days_remove = 35
@@ -572,7 +597,10 @@ SIA_oil_crisis_cat = {
 	SIA_increase_domestic_refining_capacity = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
+		visible = {
+			has_country_flag = SIA_deal_with_the_oil_crisis
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 
 		ai_will_do = { factor = 1 }
 		
@@ -628,7 +656,10 @@ SIA_oil_crisis_cat = {
 	SIA_synthetic_gas_initiative = {
 		icon = GFX_decision_generic_research
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
+		visible = {
+			has_country_flag = SIA_deal_with_the_oil_crisis
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 
 		ai_will_do = { factor = 1 }
 		
@@ -689,7 +720,10 @@ SIA_oil_crisis_cat = {
 	SIA_accelerate_biofuel_integration = {
 		icon = GFX_decision_SIA_Biofuel_Integration
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_synthetic_gas_initiative }
+		visible = {
+			has_country_flag = SIA_synthetic_gas_initiative
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 
 		ai_will_do = { factor = 1 }
 		
@@ -742,7 +776,10 @@ SIA_oil_crisis_cat = {
 	SIA_subsidize_solar_energy = {
 		icon = GFX_decision_SIA_solar_farm_decision_icon
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_deal_with_the_oil_crisis }
+		visible = {
+			has_country_flag = SIA_deal_with_the_oil_crisis
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 
 		ai_will_do = { factor = 1 }
 		
@@ -809,7 +846,10 @@ SIA_oil_crisis_cat = {
 	SIA_oil_cooperation_with_singapore = {
 		icon = GFX_decision_generic_oil
 		available = { has_country_flag = SIA_oil_crisis_ongoing }
-		visible = { has_country_flag = SIA_oil_diplomacy }
+		visible = {
+			has_country_flag = SIA_oil_diplomacy
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
 		fire_only_once = yes
 		targets = {
 			SIG
@@ -831,6 +871,50 @@ SIA_oil_crisis_cat = {
 				days = 40
 			}
 			add_to_variable = { SIA_total_oil_stockpiled_days = 40 }
+		}
+	}
+
+	# Protestor stuff
+	SIA_demonstrate_infront_of_the_ministry_of_energy = {
+		available = { has_completed_focus = SIA_petrol_demonstrations }
+		visible = { has_completed_focus = SIA_petrol_demonstrations }
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_demonstrate_event = 0 }
+				}
+				country_event = thai_events.13
+				set_variable = { SIA_demonstrate_event = 1 }
+			}
+			country_event = thai_events.13
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
+		}
+	}
+	SIA_demonstrate_infront_of_the_ptt_headquarters = {
+		available = { has_completed_focus = SIA_petrol_demonstrations }
+		visible = { has_completed_focus = SIA_petrol_demonstrations }
+		cost = 20
+		fire_only_once = yes
+		ai_will_do = { factor = 1 }
+		complete_effect = {
+			if = {
+				limit = {
+					check_variable = { SIA_demonstrate_event = 0 }
+				}
+				country_event = thai_events.13
+				set_variable = { SIA_demonstrate_event = 1 }
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = -0.05
+			}
 		}
 	}
 }

@@ -36,8 +36,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -65,8 +68,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -100,8 +106,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -137,8 +146,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -164,8 +176,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -195,8 +210,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -226,8 +244,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -259,8 +280,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -297,8 +321,11 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		
 		activation = {
@@ -328,9 +355,6 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
@@ -338,11 +362,28 @@ SIA_bop_prayut = {
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
+		}
+		
 		timeout_effect = {
 			activate_mission = SIA_government_action_9
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1.437
+			}
+			add_debt = yes
+			add_timed_idea = {
+				idea = SIA_half_payment_policy_idea
+				days = 160
+			}
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = 0.1
+				value = 0.15
 			}
 		}
 	}
@@ -355,12 +396,15 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			OR = {
+				has_completed_focus = SIA_denouced_the_extremists
+				has_completed_focus = SIA_the_people_wrath
+			}
 		}
 		is_good = no
 		selectable_mission = no
@@ -391,9 +435,6 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
@@ -401,12 +442,16 @@ SIA_bop_prayut = {
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
+		}
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_2
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.1
 			}
+			add_political_power = -25
 		}
 	}
 	SIA_protestor_action_2 = {
@@ -418,9 +463,6 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
@@ -428,11 +470,14 @@ SIA_bop_prayut = {
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
+		}
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_3
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.1
 			}
 		}
 	}
@@ -445,9 +490,6 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
@@ -455,6 +497,10 @@ SIA_bop_prayut = {
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
+		}
+		
 		timeout_effect = {
 			activate_mission = SIA_protestor_action_4
 			add_power_balance_value = {
@@ -472,18 +518,23 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = SIA_protestor_action_6
+			activate_mission = SIA_protestor_action_5
+			custom_effect_tooltip = generic_skip_one_line_tt
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = -30
+			}
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = -0.05
@@ -499,18 +550,18 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = SIA_protestor_action_8
+			activate_mission = SIA_protestor_action_6
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = -0.05
@@ -526,12 +577,12 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
@@ -553,18 +604,18 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = SIA_protestor_action_5
+			activate_mission = SIA_protestor_action_8
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = -0.05
@@ -580,18 +631,17 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = SIA_protestor_action_9
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = -0.05
@@ -607,21 +657,21 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = SIA_protestor_action_10
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.05
+			custom_effect_tooltip = SIA_the_people_wrath_tt
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.025
 			}
 		}
 	}
@@ -634,49 +684,26 @@ SIA_bop_prayut = {
 		available = {
 			always = no
 		}
-		visible = {
-			always = no
-		}
 		
 		activation = {
 			always = no
+		}
+		cancel_trigger = {
+			has_completed_focus = SIA_quiet_before_down
 		}
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 35
 		timeout_effect = {
-			activate_mission = SIA_protestor_action_11
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.05
+			custom_effect_tooltip = SIA_denouced_the_extremists_tt
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.025
 			}
-		}
-	}
-	SIA_protestor_action_11 = {
-		icon = generic_crisis
-		priority = 10
-		allowed = {
-			tag = SIA
-		}
-		available = {
-			always = no
-		}
-		visible = {
-			always = no
-		}
-		
-		activation = {
-			always = no
-		}
-		is_good = no
-		selectable_mission = no
-		days_mission_timeout = 35
-		timeout_effect = {
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.05
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.025
 			}
-			
 		}
 	}
 	SIA_found_top_news = {
@@ -756,48 +783,6 @@ SIA_bop_prayut = {
 			 add_popularity = {
 				ideology = fascist
 				popularity = 0.01
-			}
-		}
-	}
-	SIA_demonstrate_infront_of_the_ministry_of_energy = {
-		available = { has_completed_focus = SIA_petrol_demonstrations }
-		visible = { has_completed_focus = SIA_petrol_demonstrations }
-		cost = 20
-		fire_only_once = yes
-		ai_will_do = { factor = 1 }
-		
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = { SIA_demonstrate_event = 0 }
-				}
-				country_event = thai_events.13
-				set_variable = { SIA_demonstrate_event = 1 }
-			}
-			country_event = thai_events.13
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.025
-			}
-		}
-	}
-	SIA_demonstrate_infront_of_the_ptt_headquarters = {
-		available = { has_completed_focus = SIA_petrol_demonstrations }
-		visible = { has_completed_focus = SIA_petrol_demonstrations }
-		cost = 20
-		fire_only_once = yes
-		ai_will_do = { factor = 1 }
-		complete_effect = {
-			if = {
-				limit = {
-					check_variable = { SIA_demonstrate_event = 0 }
-				}
-				country_event = thai_events.13
-				set_variable = { SIA_demonstrate_event = 1 }
-			}
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.025
 			}
 		}
 	}

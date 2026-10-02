@@ -59,15 +59,10 @@ focus_tree = {
 				id = SIA_power_balance
 				value = -0.05
 			}
-			clr_country_flag = SIA_oil_crisis_ongoing
 			hidden_effect = {
 				increase_poverty = yes
 				SIA_increase_economic_engine = yes
 				remove_ideas = {
-					SIA_oil_crisis
-					SIA_oil_crisis_1
-					SIA_oil_crisis_2
-					SIA_oil_crisis_3
 					SIA_covid_idea
 				}
 				clr_country_flag = SIA_coronavirus_ongoing
@@ -78,7 +73,7 @@ focus_tree = {
 		id = SIA_begin_student_activism
 		icon = GFX_goal_SIA_begin_student_activism
 		x = -2 y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_raise_our_three_fingers
 		
@@ -105,7 +100,7 @@ focus_tree = {
 		id = SIA_a_leftist_united_front
 		icon = GFX_goal_SIA_a_leftist_united_front
 		x = 0 y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_social_media_activism }
 		relative_position_id = SIA_social_media_activism
 		
@@ -133,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 2
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_raise_our_three_fingers
 		
@@ -174,7 +169,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_ally_with_workers_union
 		x = -1
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_petrol_demonstrations }
 		relative_position_id = SIA_petrol_demonstrations
 		
@@ -215,59 +210,13 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_coordinate_with_workers_union
 		}
 	}
-	focus = {
-		id = SIA_move_forward_with_the_protestors
-		icon = GFX_goal_SIA_move_forward_with_the_protestors
-		x = 0
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_workers_union_strikes }
-		relative_position_id = SIA_workers_union_strikes
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_days_mission_timeout = {
-				mission = SIA_the_protests_intensify
-				days = -10
-			}
-			if = {
-				limit = {
-					has_active_mission = SIA_oil_distribution_to_stations
-				}
-				add_days_mission_timeout = {
-					mission = SIA_oil_distribution_to_stations
-					days = -15
-				}
-			}
-			else_if = {
-				limit = {
-					has_active_mission = SIA_truckers_start_protesting
-				}
-				add_days_mission_timeout = {
-					mission = SIA_truckers_start_protesting
-					days = -10
-				}
-			}
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.05
-			}
-		}
-	}
 
 	focus = {
 		id = SIA_khana_ratsadon_reborn
 		icon = GFX_goal_SIA_khana_ratsadon_reborn
 		x = 0
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_workers_union_strikes }
 		relative_position_id = SIA_workers_union_strikes
 		
@@ -289,15 +238,12 @@ focus_tree = {
 		icon = GFX_goal_SIA_social_media_campaigning
 		x = 1
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_begin_student_activism focus = SIA_petrol_demonstrations }
 		relative_position_id = SIA_begin_student_activism
 		
 		ai_will_do = {
 			factor = 10
-		}
-		available = {
-			
 		}
 		available_if_capitulated = yes
 		
@@ -318,7 +264,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -1
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_a_leftist_united_front }
 		prerequisite = { focus = SIA_khana_ratsadon_reborn }
 		relative_position_id = SIA_khana_ratsadon_reborn
@@ -357,7 +303,7 @@ focus_tree = {
 		icon = GFX_goal_SIA_fight_the_arrests
 		x = 0
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_long_march_through_the_institutions }
 		
 		relative_position_id = SIA_long_march_through_the_institutions
@@ -378,7 +324,7 @@ focus_tree = {
 		id = SIA_the_people_wrath
 		icon = GFX_goal_SIA_make_them_face_our_wrath
 		x = 2 y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_fight_the_arrests }
 		mutually_exclusive = { focus = SIA_denouced_the_extremists }
 		relative_position_id = SIA_fight_the_arrests
@@ -405,7 +351,7 @@ focus_tree = {
 		id = SIA_denouced_the_extremists
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = -2 y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = SIA_fight_the_arrests }
 		mutually_exclusive = { focus = SIA_the_people_wrath }
 		relative_position_id = SIA_fight_the_arrests
@@ -709,17 +655,13 @@ focus_tree = {
 	focus = {
 		id = SIA_half_payment_policy
 		icon = GFX_goal_SIA_Subsidize_Government_Business
-		x = -1
-		y = 2
+		x = -1 y = 2
 		cost = 5
 		prerequisite = { focus = SIA_thailand_petrol_diplomacy }
 		relative_position_id = SIA_thailand_petrol_diplomacy
 		
 		ai_will_do = {
 			factor = 10
-		}
-		available = {
-		
 		}
 		available_if_capitulated = yes
 		
