@@ -266,8 +266,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 5
-		prerequisite = { focus = SIA_a_leftist_united_front }
-		prerequisite = { focus = SIA_move_forward_with_the_protestors }
+		prerequisite = { focus = SIA_workers_union_strikes }
 		relative_position_id = SIA_workers_union_strikes
 		
 		ai_will_do = {
