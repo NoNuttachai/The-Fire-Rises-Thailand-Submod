@@ -1586,14 +1586,14 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-    #option = {
-    #    name = thai_events.7.a
-	#	complete_national_focus = SIA_raise_our_three_fingers
-	#	hidden_effect = {
-	#		activate_mission = SIA_government_action_1
-	#		activate_mission = SIA_oil_distribution_to_stations
-	#	}
-	#}
+    option = {
+        name = thai_events.7.a
+		complete_national_focus = SIA_raise_our_three_fingers
+		hidden_effect = {
+			activate_mission = SIA_government_action_1
+			activate_mission = SIA_oil_distribution_to_stations
+		}
+	}
 	option = {
         name = thai_events.7.b
 		add_war_support = -0.1
