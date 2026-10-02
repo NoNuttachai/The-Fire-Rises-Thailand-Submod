@@ -377,8 +377,7 @@ focus_tree = {
 	focus = {
 		id = SIA_the_people_wrath
 		icon = GFX_goal_SIA_make_them_face_our_wrath
-		x = 2
-		y = 1
+		x = 2 y = 1
 		cost = 5
 		prerequisite = { focus = SIA_fight_the_arrests }
 		mutually_exclusive = { focus = SIA_denouced_the_extremists }
@@ -386,36 +385,6 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			custom_effect_tooltip = SIA_the_people_wrath_tt
-			add_popularity = {
-				ideology = social_democrat
-				popularity = 0.025
-			}
-		}
-	}
-	
-	focus = {
-		id = SIA_denouced_the_extremists
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = -2
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_fight_the_arrests }
-		mutually_exclusive = { focus = SIA_the_people_wrath }
-		relative_position_id = SIA_fight_the_arrests
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
 		}
 		available_if_capitulated = yes
 		
@@ -427,6 +396,29 @@ focus_tree = {
 			}
 			add_popularity = {
 				ideology = conservative
+				popularity = 0.025
+			}
+		}
+	}
+	
+	focus = {
+		id = SIA_denouced_the_extremists
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -2 y = 1
+		cost = 5
+		prerequisite = { focus = SIA_fight_the_arrests }
+		mutually_exclusive = { focus = SIA_the_people_wrath }
+		relative_position_id = SIA_fight_the_arrests
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			custom_effect_tooltip = SIA_the_people_wrath_tt
+			add_popularity = {
+				ideology = social_democrat
 				popularity = 0.025
 			}
 		}
