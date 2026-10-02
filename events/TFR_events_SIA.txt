@@ -1837,7 +1837,6 @@ country_event = {
         name = thai_events.17.a
 		add_stability = -0.05
 		effect_tooltip = {
-			set_country_flag = SIA_coronavirus_ongoing
 			add_ideas = SIA_covid_idea
 			activate_mission = SIA_the_pandemic_worsens_mission
 		}

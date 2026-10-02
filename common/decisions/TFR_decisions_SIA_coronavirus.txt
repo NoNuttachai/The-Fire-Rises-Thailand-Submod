@@ -4,18 +4,17 @@ SIA_coronavirus_category = {
 		allowed = {
 			tag = SIA
 		}
-		visible = {
-			has_country_flag = SIA_coronavirus_ongoing
-		}
 		available = {
 			has_country_flag = SIA_dealt_with_coronavirus
 		}
 		activation = {
 			always = no
 		}
+
 		is_good = no
 		selectable_mission = no
 		days_mission_timeout = 60
+
 		timeout_effect = {
 			SIA_increase_coronavirus = yes
 			add_to_variable = { SIA_prayut_check_covid = 1 }
@@ -29,14 +28,16 @@ SIA_coronavirus_category = {
 				}
 			}
 		}
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SIA_coronavirus_ongoing }
+			}
+		}
 	}
 	SIA_securing_vaccine_supply = {
 		icon = generic_vaccine
 		allowed = {
 			tag = SIA
-		}
-		visible = {
-			has_country_flag = SIA_coronavirus_ongoing
 		}
 		available = {
 			hidden_trigger = {
@@ -58,14 +59,16 @@ SIA_coronavirus_category = {
 				remove_mission = SIA_the_pandemic_worsens_mission
 			}
 		}
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SIA_coronavirus_ongoing }
+			}
+		}
 	}
 	SIA_nationwide_vaccinations = {
 		icon = generic_vaccine
 		allowed = {
 			tag = SIA
-		}
-		visible = {
-			has_country_flag = SIA_coronavirus_ongoing
 		}
 		available = {
 			hidden_trigger = {
@@ -96,6 +99,11 @@ SIA_coronavirus_category = {
 			set_temp_variable = { increase = 1 }
 			SIA_decrease_youth_status = yes
 		}
+		cancel_trigger = {
+			hidden_trigger = {
+				NOT = { has_country_flag = SIA_coronavirus_ongoing }
+			}
+		}
 	}
 	SIA_mask_distribution = {
 		icon = GFX_decision_generic_mask
@@ -107,6 +115,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_the_pandemic_worsens_mission
 			has_completed_focus = SIA_establish_ccsa
 		}
+		cancel_if_not_visible = yes
 
 		days_remove = 30
 		days_re_enable = 20
@@ -136,6 +145,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_the_pandemic_worsens_mission
 			has_completed_focus = SIA_establish_ccsa
 		}
+		cancel_if_not_visible = yes
 
 		days_remove = 30
 		days_re_enable = 15
@@ -162,6 +172,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_the_pandemic_worsens_mission
 			has_completed_focus = SIA_establish_ccsa
 		}
+		cancel_if_not_visible = yes
 		fire_only_once = yes
 		days_remove = 90
 		cost = 30
@@ -192,6 +203,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_the_pandemic_worsens_mission
 			has_completed_focus = SIA_establish_ccsa
 		}
+		cancel_if_not_visible = yes
 		fire_only_once = yes
 		days_remove = 25
 		custom_cost_trigger = {
@@ -234,6 +246,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_the_pandemic_worsens_mission
 			has_completed_focus = SIA_declare_state_of_emergency
 		}
+		cancel_if_not_visible = yes
 
 		days_remove = 30
 		days_re_enable = 25
@@ -259,6 +272,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_the_pandemic_worsens_mission
 			has_completed_focus = SIA_establish_ccsa
 		}
+		cancel_if_not_visible = yes
 		
 		days_remove = 30
 		days_re_enable = 25
@@ -288,6 +302,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_nationwide_vaccinations
 			has_completed_focus = SIA_covid_vaccine_drive
 		}
+		cancel_if_not_visible = yes
 		custom_cost_trigger = {
 			check_variable = {
 				var = income_var
@@ -328,6 +343,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_nationwide_vaccinations
 			has_completed_focus = SIA_covid_vaccine_drive
 		}
+		cancel_if_not_visible = yes
 		custom_cost_trigger = {
 			check_variable = {
 				var = income_var
@@ -368,6 +384,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_nationwide_vaccinations
 			has_completed_focus = SIA_covid_vaccine_drive
 		}
+		cancel_if_not_visible = yes
 		custom_cost_trigger = {
 			has_political_power > 24.9
 			num_of_available_civilian_factories > 4
@@ -424,6 +441,7 @@ SIA_coronavirus_category = {
 			has_active_mission = SIA_nationwide_vaccinations
 			has_completed_focus = SIA_covid_vaccine_drive
 		}
+		cancel_if_not_visible = yes
 		days_remove = 30
 		days_re_enable = 75
 		modifier = {

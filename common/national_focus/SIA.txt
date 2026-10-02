@@ -68,7 +68,9 @@ focus_tree = {
 					SIA_oil_crisis_1
 					SIA_oil_crisis_2
 					SIA_oil_crisis_3
+					SIA_covid_idea
 				}
+				clr_country_flag = SIA_coronavirus_ongoing
 			}
 		}
 	}
