@@ -59,6 +59,17 @@ focus_tree = {
 				id = SIA_power_balance
 				value = -0.05
 			}
+			clr_country_flag = SIA_oil_crisis_ongoing
+			hidden_effect = {
+				increase_poverty = yes
+				SIA_increase_economic_engine = yes
+				remove_ideas = {
+					SIA_oil_crisis
+					SIA_oil_crisis_1
+					SIA_oil_crisis_2
+					SIA_oil_crisis_3
+				}
+			}
 		}
 	}
 	focus = {
