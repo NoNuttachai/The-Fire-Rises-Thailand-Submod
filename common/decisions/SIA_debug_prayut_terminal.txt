@@ -16,7 +16,16 @@ SIA_debug_prayut_terminal = {
 				days = 356 
 			}
 		}
-		
+	}
+	SIA_side_with_opposition = {
+		name = "(DEBUG) Side with Opposition"
+		complete_effect = {
+			complete_national_focus = SIA_raise_our_three_fingers
+			hidden_effect = {
+				activate_mission = SIA_government_action_1
+				activate_mission = SIA_oil_distribution_to_stations
+			}
+		}
 	}
 	SIA_load_2023_utn_tree = {
 		complete_effect = {
