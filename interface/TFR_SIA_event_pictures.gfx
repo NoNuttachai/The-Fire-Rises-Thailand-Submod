@@ -516,6 +516,10 @@ spriteTypes = {
 		name = "GFX_report_planet_of_the_apes"
 		texturefile = "gfx/event_pictures/report_planet_of_the_apes.png"
 	}
+	spriteType = {
+		name = "GFX_report_upscale_emergency"
+		texturefile = "gfx/event_pictures/report_upscale_emergency.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

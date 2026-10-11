@@ -13,19 +13,13 @@
 shared_focus = {
 	id = SIA_presentation
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
-	x = 3
+	x = -5
 	y = 0
 	cost = 4
 	ai_will_do = {
 		factor = 10
 	}
 	available = {
-		if = {
-			limit = {
-				has_focus_tree = SIA_2023_utn_focus_tree
-			}
-			has_completed_focus = SIA_tonight_in_bangkok
-		}
 		NOT = {
 			SIA_cambodia_tensions_lock = yes
 		}
@@ -1205,7 +1199,7 @@ shared_focus = {
 shared_focus = {
 	id = SIA_thailand_in_the_world_stage
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
-	x = 36
+	x = 44
 	y = 0
 	cost = 3
 	ai_will_do = {

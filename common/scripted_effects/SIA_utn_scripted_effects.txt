@@ -1,3 +1,100 @@
+## LEGACY MECHANIC
+SIA_change_prayut_legacy = {
+	add_to_variable = { SIA_prayut_legacy_var = change_temp }
+	SIA_change_legacy_frame = yes
+	custom_effect_tooltip = SIA_change_prayut_legacy_tt
+	clamp_variable = {
+		var = SIA_prayut_legacy_var
+		min = 0
+		max = 100
+	}
+}
+SIA_change_legacy_frame = {
+	set_variable = { total = SIA_prayut_legacy_var }
+	set_variable = { SIA_prayut_legacy_frame_1 = 0 }
+	set_variable = { SIA_prayut_legacy_frame_2 = 0 }
+	set_variable = { SIA_prayut_legacy_frame_3 = 0 }
+	set_variable = { SIA_prayut_legacy_frame_4 = 0 }
+	set_variable = { SIA_prayut_legacy_frame_5 = 0 }
+
+	add_to_variable = { SIA_prayut_legacy_frame_5 = total }
+	clamp_variable = {
+		var = SIA_prayut_legacy_frame_5
+		min = 0
+		max = 20
+	}
+	subtract_from_variable = { total = SIA_prayut_legacy_frame_5 }
+
+	if = {
+		limit = {
+			check_variable = { SIA_prayut_legacy_frame_5 = 20 }
+			check_variable = { total > 0 }
+		}
+		add_to_variable = { SIA_prayut_legacy_frame_4 = total }
+		clamp_variable = {
+			var = SIA_prayut_legacy_frame_4
+			min = 0
+			max = 20
+		}
+		subtract_from_variable = { total = SIA_prayut_legacy_frame_4 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { SIA_prayut_legacy_frame_4 = 20 }
+			check_variable = { total > 0 }
+		}
+		add_to_variable = { SIA_prayut_legacy_frame_3 = total }
+		clamp_variable = {
+			var = SIA_prayut_legacy_frame_3
+			min = 0
+			max = 20
+		}
+		subtract_from_variable = { total = SIA_prayut_legacy_frame_3 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { SIA_prayut_legacy_frame_3 = 20 }
+			check_variable = { total > 0 }
+		}
+		add_to_variable = { SIA_prayut_legacy_frame_2 = total }
+		clamp_variable = {
+			var = SIA_prayut_legacy_frame_2
+			min = 0
+			max = 20
+		}
+		subtract_from_variable = { total = SIA_prayut_legacy_frame_2 }
+	}
+
+	if = {
+		limit = {
+			check_variable = { SIA_prayut_legacy_frame_2 = 20 }
+			check_variable = { total > 0 }
+		}
+		add_to_variable = { SIA_prayut_legacy_frame_1 = total }
+		clamp_variable = {
+			var = SIA_prayut_legacy_frame_1
+			min = 0
+			max = 20
+		}
+	}
+}
+SIA_increase_utn_pprp_relations = {
+	add_to_variable = { SIA_utn_pprp_relations = 1 }
+	custom_effect_tooltip = SIA_utn_pprp_relationship
+	if = {
+		limit = {
+			check_variable = { SIA_utn_pprp_relations = 1 }
+		}
+		custom_effect_tooltip = SIA_utn_pprp_relationship_merging_possible
+	}
+	else = {
+		custom_effect_tooltip = SIA_utn_pprp_relationship_electoral_alliance_possible
+	}
+}
+##POST PRAYUT
+
 SIA_utn_start_tug_of_war = { #Doing this later
 	set_variable = { SIA_pirapan_influ = 50 }
 	set_variable = { SIA_suchart_influ = 50 }

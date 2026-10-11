@@ -19,10 +19,48 @@ SIA_Economy_category = {
 		selectable_mission = no
 		days_mission_timeout = 364
 		timeout_effect = {
-			country_event = thai_events.40
+			country_event = thai_events.85
 			hidden_effect = {
 				activate_mission = SIA_environment_yearly_report
+				activate_mission = SIA_yearly_plan_deadline
 				SIA_check_yearly_performance = yes
+			}
+		}
+		complete_effect = {
+		}
+	}
+	SIA_yearly_plan_deadline = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			check_variable = { SIA_environment_yearly_plan > 0 }
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 14
+		timeout_effect = {
+			custom_effect_tooltip = SIA_yearly_plan_deadline_tt
+			
+			hidden_effect = {
+				set_variable = { SIA_environment_yearly_plan = 2 }
+				set_variable = { SIA_environment_yearly_plan = 10 }
+				set_temp_variable = { change_temp = 0.05 }
+				SIA_change_environment_monthly = yes
+				set_temp_variable = { change_temp = 1 }
+				SIA_change_specialist_amount = yes
+				
+				hidden_effect = { add_ideas = SIA_yearly_plan_balanced_idea }
+				set_temp_variable = { change_temp = 0.1 }
+				SIA_change_fuel_monthly_temporary_modifier_amount = yes
 			}
 		}
 		complete_effect = {
@@ -41,17 +79,30 @@ SIA_Economy_category = {
 		
 		visible = {
 			check_variable = { SIA_econ_tab = 1 } 
+			NOT = {
+				check_variable = { SIA_environment_yearly_plan > 0 }
+			}
 		}
+		
 		complete_effect = {
-			set_country_flag = SIA_selected_yearly_environment_plan
+			custom_effect_tooltip = SIA_yearly_plan_expire
+			set_variable = { SIA_environment_yearly_plan = 1 }
 			set_temp_variable = { change_temp = -0.1 }
 			SIA_change_environment_monthly = yes
-			set_temp_variable = { change_temp = 2 }
-			SIA_change_specialist_amount = yes
+			if = {
+				limit = {
+					has_country_flag = SIA_activate_other_two_mechs
+				}
+				set_temp_variable = { change_temp = 2 }
+				SIA_change_specialist_amount = yes
+				
+				hidden_effect = { add_ideas = SIA_yearly_plan_growth_idea }
+				set_temp_variable = { change_temp = 0.25 }
+				SIA_change_fuel_monthly_temporary_modifier_amount = yes
+			}
+			else = {
 			
-			hidden_effect = { add_ideas = SIA_yearly_plan_growth_idea }
-			set_temp_variable = { change_temp = 0.25 }
-			custom_effect_tooltip = SIA_yearly_plan_growth_fuel_temp_tt
+			}
 		}
 	}
 	SIA_yearly_plan_balanced = {
@@ -67,10 +118,30 @@ SIA_Economy_category = {
 		
 		visible = {
 			check_variable = { SIA_econ_tab = 1 } 
+			NOT = {
+				check_variable = { SIA_environment_yearly_plan > 0 }
+			}
 		}
+		
 		complete_effect = {
-			set_temp_variable = { change_temp = 1 }
-			SIA_change_specialist_amount = yes
+			custom_effect_tooltip = SIA_yearly_plan_expire
+			set_variable = { SIA_environment_yearly_plan = 2 }
+			set_temp_variable = { change_temp = 0.05 }
+			SIA_change_environment_monthly = yes
+			if = {
+				limit = {
+					has_country_flag = SIA_activate_other_two_mechs
+				}
+				set_temp_variable = { change_temp = 1 }
+				SIA_change_specialist_amount = yes
+				
+				hidden_effect = { add_ideas = SIA_yearly_plan_balanced_idea }
+				set_temp_variable = { change_temp = 0.1 }
+				SIA_change_fuel_monthly_temporary_modifier_amount = yes
+			}
+			else = {
+			
+			}
 		}
 	}
 	SIA_yearly_plan_promote_environmentalism = {
@@ -86,13 +157,42 @@ SIA_Economy_category = {
 		
 		visible = {
 			check_variable = { SIA_econ_tab = 1 } 
+			NOT = {
+				check_variable = { SIA_environment_yearly_plan > 0 }
+			}
 		}
+		
 		complete_effect = {
-			set_temp_variable = { change_temp = -2 }
-			SIA_change_specialist_amount = yes
+			custom_effect_tooltip = SIA_yearly_plan_expire
+			set_variable = { SIA_environment_yearly_plan = 3 }
+			set_temp_variable = { change_temp = 0.5 }
+			SIA_change_environment_monthly = yes
+			if = {
+				limit = {
+					has_country_flag = SIA_activate_other_two_mechs
+				}
+				set_temp_variable = { change_temp = -2 }
+				SIA_change_specialist_amount = yes
+				
+				hidden_effect = { add_ideas = SIA_yearly_plan_environmentalism_idea }
+				set_temp_variable = { change_temp = -0.075 }
+				SIA_change_fuel_monthly_temporary_modifier_amount = yes
+			}
+			else = {
+			
+			}
 		}
 	}
-	SIA_add_five_to_current_progress = {
+	SIA_pro_environment_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 1 }
+		}
+	}
+	SIA_vehicle_and_traffic_regulations = {
 		icon = generic_crisis 
 		
 		allowed = {
@@ -106,31 +206,19 @@ SIA_Economy_category = {
 		visible = {
 			check_variable = { SIA_econ_tab = 1 } 
 		}
-		complete_effect = {
-			set_temp_variable = { change_temp = 5 }
-			SIA_change_environment_progress = yes
+		days_remove = 75
+		cost = 65
+		modifier = {
+			expense_growth_factor = 0.1
+			business_value_factor = -0.075
+			production_speed_infrastructure_factor = 0.025
 		}
-	}
-	SIA_add_point_fifty_to_monthly_progress = {
-		icon = generic_crisis 
-		
-		allowed = {
-			tag = SIA
-		}
-		
-	    available = {
-	   
-		}
-		
-		visible = {
-			check_variable = { SIA_econ_tab = 1 } 
-		}
-		complete_effect = {
-			set_temp_variable = { change_temp = 0.50 }
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.125 }
 			SIA_change_environment_monthly = yes
 		}
 	}
-	SIA_yearly_tick = {
+	SIA_campaign_against_crop_residue_burning = {
 		icon = generic_crisis 
 		
 		allowed = {
@@ -144,8 +232,237 @@ SIA_Economy_category = {
 		visible = {
 			check_variable = { SIA_econ_tab = 1 } 
 		}
+		days_remove = 65
+		cost = 50
+		modifier = {
+			income_growth_factor = -0.1
+			farming_development_monthly = -0.003
+			political_power_factor = -0.05
+		}
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.1 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_implement_environmental_policies = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 50
+		cost = 50
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.075 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_enforce_industry_regulations = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 75
+		cost = 30
+		modifier = {
+			business_value_factor = -0.1
+			industrial_capacity_factory = -0.075
+		}
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.15 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_expand_government_conservation_zones = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 50
+		cost = 75
+		modifier = {
+			political_power_factor = -0.1
+		}
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.125 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_commit_to_reforestation_program = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 90
+		cost = 35
+		modifier = {
+			production_speed_buildings_factor = -0.1
+		}
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.15 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_innovate_efficient_conservation_methods = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 85
+		cost = 50
+		modifier = {
+			research_speed_factor = -0.075
+		}
+		remove_effect = {
+			set_temp_variable = { change_temp = 0.125 }
+			SIA_change_environment_monthly = yes
+		}
+	}
+	SIA_anti_environment_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 1 }
+		}
+	}
+	SIA_promote_corporate_expansion = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 75
+		cost = 25
 		complete_effect = {
-			
+			set_temp_variable = { change_temp = -0.15 }
+			SIA_change_environment_monthly = yes
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	SIA_rollback_regulations = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 95
+		cost = 50
+		complete_effect = {
+			set_temp_variable = { change_temp = -0.1 }
+			SIA_change_environment_monthly = yes
+		}
+		modifier = {
+			consumer_goods_factor = -0.1
+			production_speed_buildings_factor = 0.075
+		}
+		remove_effect = {
+			add_political_power = 30
+		}
+	}
+	SIA_sell_land_to_businesses = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 1 } 
+		}
+		days_remove = 100
+		cost = 45
+		complete_effect = {
+			set_temp_variable = { change_temp = -0.15 }
+			SIA_change_environment_monthly = yes
+		}
+		modifier = {
+			income_growth_factor = 0.05
+			business_value_factor = 0.075
+		}
+		remove_effect = {
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_temp_variable = { income_var_temp = 10 }
+			add_income = yes
 		}
 	}
 	SIA_activate_other_two_mechs = {
@@ -170,46 +487,9 @@ SIA_Economy_category = {
 			}
 		}
 	}
-
+	
 	#ENGINE MECHANIC#
-	SIA_add_specialist_2 = {
-		icon = generic_crisis 
-		
-		allowed = {
-			tag = SIA
-		}
-		
-	    available = {
-	   
-		}
-		
-		visible = {
-			check_variable = { SIA_econ_tab = 2 } 
-		}
-		complete_effect = {
-			set_temp_variable = { change_temp = 2 }
-			SIA_change_specialist_amount = yes
-		}
-	}
-	SIA_remove_specialist_2 = {
-		icon = generic_crisis 
-		
-		allowed = {
-			tag = SIA
-		}
-		
-	    available = {
-	   
-		}
-		
-		visible = {
-			check_variable = { SIA_econ_tab = 2 } 
-		}
-		complete_effect = {
-			set_temp_variable = { change_temp = -2 }
-			SIA_change_specialist_amount = yes
-		}
-	}
+	
 	SIA_utn_promote_green_energy = {
 		icon = generic_crisis
 		
@@ -220,7 +500,7 @@ SIA_Economy_category = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			has_completed_focus = SIA_toward_a_greener_future
+			has_completed_focus = SIA_evs_revolution
 		}
 		modifier = {
 			consumer_goods_factor = -0.1
@@ -251,7 +531,7 @@ SIA_Economy_category = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			has_completed_focus = SIA_hit_the_book
+			has_completed_focus = SIA_tools_on_your_hand
 		}
 		
 		modifier = {
@@ -273,6 +553,45 @@ SIA_Economy_category = {
 			add_academic_development = yes
 		}
 	}
+	SIA_utn_invest_on_ai_technology = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_promote_ai
+		}
+		
+		modifier = {
+			academic_development_monthly = 0.02
+			research_speed_factor = 0.15
+			expense_growth_factor = 0.25
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 35
+				compare = greater_than_or_equals
+			}
+			has_political_power > 50
+		}
+		custom_cost_text = dx_more_than_35B_and_50pp
+		days_remove = 125
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			set_temp_variable = { academic_development_var_temp = 0.05 }
+			add_academic_development = yes
+			set_temp_variable = { change_temp = 1 }
+			SIA_change_specialist_effectiveness = yes
+		}
+	}
 	SIA_utn_encourage_tourism = {
 		icon = generic_crisis
 		
@@ -283,7 +602,7 @@ SIA_Economy_category = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			has_completed_focus = SIA_roll_the_carpets
+			has_completed_focus = SIA_wide_circulation
 		}
 		
 		modifier = {
@@ -315,7 +634,7 @@ SIA_Economy_category = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			has_completed_focus = SIA_against_chung_chart
+			has_completed_focus = SIA_land_and_blood
 		}
 		
 		modifier = {
@@ -337,6 +656,155 @@ SIA_Economy_category = {
 			add_farming_development = yes
 		}
 	}
+	SIA_utn_establish_recreational_centers = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_elder_pensions
+		}
+		
+		modifier = {
+			stability_factor = 0.1
+			monthly_population = 0.075
+			society_development_monthly = 0.02
+			expense_growth_factor = 0.15
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 35
+				compare = greater_than_or_equals
+			}
+			has_political_power > 50
+		}
+		custom_cost_text = dx_more_than_35B_and_50pp
+		days_remove = 125
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			add_political_power = 75
+		}
+	}
+	SIA_specialist_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 2 }
+		}
+	}
+	SIA_train_specialists = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+	   
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		days_remove = 120
+		cost = 75
+		remove_effect = {
+			set_temp_variable = { change_temp = 1 }
+			SIA_change_specialist_amount = yes
+		}
+	}
+	SIA_tighten_standards = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_specialists_var > 1 }
+				tooltip = SIA_req_available_nationwide_specialist_2
+			}
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		cost = 30
+		days_remove = 85
+		days_re_enable = 50
+		remove_effect = {
+			set_temp_variable = { change_temp = -2 }
+			SIA_change_specialist_amount = yes
+			set_temp_variable = { change_temp = 2 }
+			SIA_change_specialist_effectiveness = yes
+		}
+	}
+	SIA_cut_agencies = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_specialists_var > 0 }
+				tooltip = SIA_req_available_nationwide_specialist
+			}
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		cost = 35
+		days_remove = 65
+		days_re_enable = 45
+		remove_effect = {
+			set_temp_variable = { change_temp = -1 }
+			SIA_change_specialist_amount = yes
+			add_political_power = 75
+			set_temp_variable = { income_var_temp = 10 }
+			add_income = yes
+		}
+	}
+	SIA_relax_the_quota = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_specialist_effectiveness_level > 0 }
+				tooltip = SIA_req_available_specialist_level
+			}
+		}
+		
+		visible = {
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		cost = 50
+		days_remove = 100
+		days_re_enable = 45
+		remove_effect = {
+			set_temp_variable = { change_temp = 1 }
+			SIA_change_specialist_amount = yes
+			set_temp_variable = { change_temp = -1 }
+			SIA_change_specialist_effectiveness = yes
+		}
+	}
 	SIA_economy_area_focused_decisions = {
 		icon = GFX_decision_SIA_decision_head
 		available = {
@@ -344,6 +812,32 @@ SIA_Economy_category = {
 		}
 		visible = {
 			check_variable = { SIA_econ_tab = 2 }
+		}
+	}
+	SIA_area_increase_state_investment = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 2 }
+		}
+		cost = 50
+		complete_effect = {
+			hidden_effect = {
+				var:SIA_map_var = {
+					set_temp_variable = { change_temp = 0.15 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
+			}
 		}
 	}
 	SIA_isan_revitalization_program = {
@@ -357,10 +851,23 @@ SIA_Economy_category = {
 		}
 		visible = {
 			check_variable = { SIA_map_var = 5 } 
-			has_completed_focus = SIA_beautiful_east
+			check_variable = { SIA_econ_tab = 2 } 
+			#has_completed_focus = SIA_beautiful_east
 		}
 		cost = 100
 		days_remove = 200
+		complete_effect = {
+			hidden_effect = {
+				5 = {
+					set_temp_variable = { change_temp = 0.3 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
+			}
+		}
 		remove_effect = {
 			891 = {
 				add_extra_state_shared_building_slots = 5
@@ -386,6 +893,7 @@ SIA_Economy_category = {
 				}
 				increase_state_category = yes
 			}
+			
 		}
 	}
 	SIA_generic_Phuket_Medicare_Program = {
@@ -401,12 +909,20 @@ SIA_Economy_category = {
 		
 		visible = {
 			check_variable = { SIA_map_var = 7 } 
+			check_variable = { SIA_econ_tab = 2 } 
 		}
 		cost = 75
 		days_remove = 100
 		complete_effect = {
-			724 = {
-			
+			hidden_effect = {
+				7 = {
+					set_temp_variable = { change_temp = 0.1 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
 			}
 		}
 	}
@@ -421,9 +937,20 @@ SIA_Economy_category = {
 		}
 		visible = {
 			has_country_flag = SIA_econ_activate_generic_construction
+			check_variable = { SIA_econ_tab = 2 } 
 		}
 		cost = 50
 		complete_effect = {
+			hidden_effect = {
+				var:SIA_map_var = {
+					set_temp_variable = { change_temp = 0.1 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
+			}
 			random_owned_state = {
 				limit = {
 					SIA_selected_area = yes
@@ -444,9 +971,20 @@ SIA_Economy_category = {
 		}
 		visible = {
 			has_country_flag = SIA_econ_activate_generic_infrastructure
+			check_variable = { SIA_econ_tab = 2 } 
 		}
 		cost = 50
 		complete_effect = {
+			hidden_effect = {
+				var:SIA_map_var = {
+					set_temp_variable = { change_temp = 0.1 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
+			}
 			random_owned_state = {
 				limit = {
 					SIA_selected_area = yes
@@ -473,15 +1011,67 @@ SIA_Economy_category = {
 		}
 		visible = {
 			has_country_flag = SIA_econ_activate_generic_extraction
+			check_variable = { SIA_econ_tab = 2 } 
 		}
 		cost = 50
 		complete_effect = {
+			hidden_effect = {
+				var:SIA_map_var = {
+					set_temp_variable = { change_temp = 0.1 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
+			}
 			random_owned_state = {
 				limit = {
 					SIA_selected_area = yes
 					NOT = { has_dynamic_modifier = { modifier = SIA_increased_resource_extraction } }
 				}
 				add_dynamic_modifier = { modifier = SIA_increased_resource_extraction days = 150 }
+			}
+		}
+	}
+	SIA_utn_incentivize_foreign_investment = {
+		icon = generic_crisis
+		
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_amazing_new_chapters
+			check_variable = { SIA_econ_tab = 2 } 
+		}
+		
+		modifier = {
+			personal_value_factor = 0.1
+		    income_growth_factor = 0.125
+			business_value_factor = 0.1
+			stability_factor = -0.05
+			production_speed_office_park_factor = 0.1
+		    poverty_development_monthly = 0.01
+		}
+		cost = 75
+		days_remove = 60
+		complete_effect = {
+			remove_campaign_slot = yes
+		}
+		remove_effect = {
+			add_campaign_slot = yes
+			hidden_effect = {
+				var:SIA_map_var = {
+					set_temp_variable = { change_temp = 0.35 }
+					SIA_change_fuel_monthly_base_amount = yes
+					
+				}
+			}
+			effect_tooltip = {
+				SIA_change_fuel_monthly_base_amount = yes
 			}
 		}
 	}

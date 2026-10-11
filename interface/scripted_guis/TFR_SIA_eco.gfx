@@ -4,6 +4,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/SIA/Economy/engine_map_outline.png"
 	}
 	spriteType = {
+		name = "GFX_SIA_background_environment"
+		texturefile = "gfx/interface/SIA/Economy/background_environment.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_background_engine"
+		texturefile = "gfx/interface/SIA/Economy/background_engine.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_yearly_plan_icons"
+		texturefile = "gfx/interface/SIA/Economy/environment_yearly_plan_icons.png"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_yearly_plan_icons_unknown"
+		texturefile = "gfx/interface/SIA/Economy/environment_yearly_plan_icons_unknown.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_engine_map_north"
 		texturefile = "gfx/interface/SIA/Economy/engine_map_north.png"
 		transparencecheck = yes

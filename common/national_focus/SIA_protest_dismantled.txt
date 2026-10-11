@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 9999999
 			tag = SIA
 		}
 	}
@@ -501,6 +501,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			country_event = thai_prayut.6
 			add_political_power = 25
 			
 		}
@@ -522,20 +523,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			if = {
-				limit = {
-					has_idea = SIA_pushback_against_the_establishment
-				}
-				swap_ideas = {
-					remove_idea = SIA_pushback_against_the_establishment
-					add_idea = SIA_pushback_against_the_establishment_1
-				}
-				add_war_support = 0.05
-			}
-			else = {
-				add_political_power = 50
-				add_stability = 0.05
-			}
+			
+			set_temp_variable = { increase = 1 }
+			SIA_decrease_youth_status = yes
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 	focus = {

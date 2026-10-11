@@ -115,7 +115,7 @@
  
  SIA_persecute_the_agitators: "Persecute the Agitators"
  SIA_persecute_the_agitators_desc: "Our crosshairs must be focused on the agitators riling up and manipulating the youth to riot, as they threaten the very fabric of the nation. We must halt these evil acts by enforcing the law to prosecute and jail those responsible, doing whatever is necessary to stop them."
-
+ 
  SIA_deal_with_the_oil_crisis: "Deal with the Oil Crisis"
  SIA_deal_with_the_oil_crisis_desc: "Our nation is feeling the full impact of the global oil crisis. Instability and conflict in Saudi Arabia have caused worldwide oil prices to surge. While the Ministry of Energy has confirmed that current reserves are sufficient to cover essential needs, supplies are dwindling, and global disruptions continue to threaten the economy. Immediate action is necessary to keep the situation from spiraling out of control."
  
@@ -136,16 +136,16 @@
  SIA_establish_ccsa_tt: "§GWe will begin the process of importing and manufacturing vaccines to vaccinate our population.§!"
  
  SIA_deploy_the_riot_police: "Deploy the Riot Police"
- SIA_deploy_the_riot_police_desc: ""
+ SIA_deploy_the_riot_police_desc: "Our patience has run thin. These protests have become a grave threat to the nation. More and more young people are being drawn into the streets, blindly following agitators who seek to tear down our nation and plunge the country into chaos. We will not stand by and allow these agitators to paralyze the nation. The anarchists and communist bastards will be crushed, and their riots reduced to nothing. Enough is enough."
  
  SIA_phuket_sandbox: "Phuket Sandbox"
- SIA_phuket_sandbox_desc: ""
+ SIA_phuket_sandbox_desc: "Due to the COVID-19 pandemic, our tourism sector has been hit hard by nearly non-existent tourism and the stagnation of local businesses. So, in order to revive tourism, we will launch the Phuket Sandbox Program, which will allow international visitors to enter Phuket without undergoing mandatory quarantine, provided they are fully vaccinated and meet the program’s health requirements."
  
  SIA_quiet_before_down: "Quiet Before Dawn"
- SIA_quiet_before_down_desc: ""
+ SIA_quiet_before_down_desc: "Finally, everything is beginning to calm down. The economy is on the path to recovery, and the protests are no more. But still, one cannot let their guard down because our government is infested with wolves in sheep’s clothing. This is only the calm before the storm, but our nation will prevail amidst the turmoil, with the army as its vanguard."
  
  SIA_covid_vaccine_drive: "Covid Vaccine Drive"
- SIA_covid_vaccine_drive_desc: ""
+ SIA_covid_vaccine_drive_desc: "Our country needs to secure vaccines through both domestic production by Siam Bioscience and Oxford/AstraZeneca. Through local technology transfer, Thailand will become a primary regional manufacturing hub for COVID-19 vaccines, supplying millions of doses domestically and across Southeast Asia. At the same time, we must continue procuring recognized COVID-19 vaccines such as Pfizer, AstraZeneca, Sputnik, and Sinovac, so that the virus can finally be quelled."
  
  SIA_further_crackdowns: "Further Crackdowns"
  SIA_further_crackdowns_desc: ""
@@ -155,7 +155,7 @@
  SIA_smother_the_flames_tt: "§gWhen the national spirit expires, The §OProtests§! will finally stop§!"
  
  SIA_deploy_the_army: "Deploy the Army"
- SIA_deploy_the_army_desc: ""
+ SIA_deploy_the_army_desc: "We tried our best to reason with these protesters, but they stubbornly refused to disperse, resorting instead to burning and looting. As a last resort, we are deploying the army to end this insurrection and will do everything in our power to safeguard this nation against political turmoil."
  SIA_deploy_the_army_tt: "§g§RThese agitators and mobs are out of control!§!\n\nWith §Rriots§! across the streets, the §Yarmy§! will be sent to §Rlock up the people threatening the stability of our country§!.§!\n\n§gWhen the national spirit expires, The §OProtests§! will finally stop§!"
  
  #2021 Prayut tree
@@ -417,110 +417,60 @@
  
  #2023-2027 UTN Tree
  SIA_third_prayut_cabinet: "Third Prayut Cabinet"
- SIA_tonight_in_bangkok: "Tonight In Bangkok"
- SIA_tonight_in_bangkok_tt: "§gThough §YGeneral Prayut§! won reelection, he will have to unfortunately §Rstep down§! on the §Y7th of April, 2025§! due to the law.\n\nIt is §Grecommended§! to plan ahead and focus on §Yspecific agendas§! as §RPrayut cannot do everything within 2 years§!.§!"
+ SIA_third_prayut_cabinet_tt: "§gThough §YGeneral Prayut§! won reelection, he will have to unfortunately §Rstep down§! on the §Y7th of April, 2025§! due to the law.\n\nIt is §Grecommended§! to plan ahead and focus on §Yspecific agendas§! as §RPrayut cannot do everything within 2 years§!.§!"
+ 
  SIA_our_probable_friends: "Our Probable Friends"
- SIA_frenemy: "Frenemy"
- SIA_light_the_street: "Light The Street"
- SIA_rotten_streets: "Rotten Streets"
- SIA_our_opposition: "Our Opposition"
- SIA_debunking_lies: "Debunking Lies"
- SIA_ev_revolution: "EV Revolution"
- SIA_ev_revolution_desc: ""
+ SIA_conservative_revolution_focus: "Coservative Revolution"
+ SIA_take_it_to_commission: "Take It To Commission"
+ SIA_flood_the_messages: "Flood The Messages"
  
- SIA_ridin_with_the_dragon: "Ridin With The Dragon"
- SIA_ridin_with_the_dragon_desc: ""
  
- SIA_toward_a_greener_future: "Toward A Greener Future"
- SIA_toward_a_greener_future_desc: ""
  
- SIA_troubled_south: "Troubled South"
- SIA_troubled_south_desc: ""
- 
- SIA_roll_the_carpets: "Roll The Carpets"
- SIA_roll_the_carpets_desc: ""
- 
- SIA_beautiful_east: "Beautiful East"
- SIA_beautiful_east_desc: ""
- 
- SIA_against_chung_chart: "Against Chung Chart"
- SIA_against_chung_chart_desc: ""
- 
- SIA_hit_the_book: "Hit The Book"
- SIA_hit_the_book_desc: ""
- 
- SIA_value_over_volume: "Value Over Volume"
- SIA_value_over_volume_desc: ""
- 
+ SIA_finish_the_work: "Finish the Work"
+ SIA_evs_revolution: "EVs Revolution"
+ SIA_align_with_the_five_stars: "Align With The Five Stars"
+ SIA_in_house: "In House"
  SIA_amazing_new_chapters: "Amazing New Chapters"
- SIA_amazing_new_chapters_desc: ""
- 
- SIA_shore_up_supports: "Shore Up Supports"
- SIA_shore_up_supports_desc: ""
- 
- SIA_smart_government: "Smart Government"
- SIA_smart_government_desc: ""
- 
- SIA_will_continue: "Will Continue"
- SIA_will_continue_desc: ""
- 
- SIA_wonderful_thailand: "Wonderful Thailand"
- SIA_wonderful_thailand_desc: ""
- 
+ SIA_wide_circulation: "Wide Circulation"
+ SIA_tools_on_your_hand: "Tools On Your Hand"
+ SIA_king_of_cannabis: "King of Cannabis"
+ SIA_flex_our_might: "Flex Our Might"
+ SIA_streamline_bureaucracy: "Streamline Our Bureaucracy"
+ SIA_take_the_fight_south: "Take The Fight South"
+ SIA_reinforce_the_eec: "Reinforce The EEC"
+ SIA_promote_ai: "Promote AI"
+ SIA_digitalize_the_government: "Digitalize The Government"
+ SIA_land_and_blood: "Land And Blood"
+ SIA_our_moral_obligations: "Our Moral Obligations"
  SIA_along_with_the_wind: "Along With The Wind"
- SIA_along_with_the_wind_desc: ""
- 
- SIA_show_of_forces: "Show Of Forces"
- SIA_show_of_forces_desc: ""
- 
- SIA_farm_to_market: "Farm To Market"
- SIA_farm_to_market_desc: ""
- 
- SIA_friend_and_foes: "Friend And Foes"
- SIA_friend_and_foes_desc: ""
- 
- SIA_partys_prince: "Party's Prince"
- SIA_partys_prince_desc: ""
+ SIA_care_for_our_owns: "Care For Our Own"
+ SIA_beautify_the_east: "Beautify The East"
  
  SIA_not_the_same_as_before: "Not The Same As Before"
- SIA_not_the_same_as_before_desc: ""
+ SIA_prepare_succession: "Prepare Succession"
+ SIA_by_his_order: "By His Order"
+ SIA_shaking_hands: "Shaking Hands"
+ SIA_true_to_form: "True To Form"
+ SIA_valiant_warriors: "Valiant Warriors"
+ SIA_reform_education: "Reform Education"
+ SIA_support_next_gens: "Support Next Gens"
+ SIA_elder_pensions: "Elder Pensions"
+ SIA_strengthen_the_police: "Strengthen The Police"
+ SIA_retain_current_structure: "Retain Current Structure"
+ SIA_greater_local_participation: "Greater Local Participation"
+ SIA_establishing_consensus: "Establishing Consensus"
+ SIA_crack_down_on_corruption: "Crackdown On Corruption"
+ SIA_defender_on_the_street: "Defender On The Street"
  
- SIA_capital_of_yellow_shirts: "Capital Of Yellow Shirts"
- SIA_capital_of_yellow_shirts_desc: ""
  
- SIA_respectfulness_for_elderly: "Respectfulness For Elderly"
- SIA_respectfulness_for_elderly_desc: ""
  
- SIA_same_old: "Same Old"
- SIA_same_old_desc: ""
  
- SIA_nation_of_patriot: "Nation Of Patriot"
- SIA_nation_of_patriot_desc: ""
  
- SIA_conservative_revolution: "Conservative Revolution"
- SIA_conservative_revolution_desc: ""
  
- SIA_proud_citizens: "Proud Citizens"
- SIA_proud_citizens_desc: ""
  
- SIA_support_our_heroes: "Support Our Heroes"
- SIA_support_our_heroes_desc: ""
- 
- SIA_we_will_not_change: "We Will Not Change"
- SIA_we_will_not_change_desc: ""
- 
- SIA_rekindling_spirit: "Rekindling Spirit"
- SIA_rekindling_spirit_desc: ""
- 
- SIA_old_friendship: "Old Friendship"
- SIA_old_friendship_desc: ""
 
- SIA_next_time: "Next Time"
- SIA_next_time_desc: ""
- 
- SIA_fallen_flat: "Fallen Flat"
- SIA_fallen_flat_desc: ""
- 
+ SIA_the_world_goes_on: "The World Goes On"
+ SIA_the_world_goes_on_desc: ""
  
  SIA_farewell: "Farewell"
  SIA_farewell_tt: "§g£GFX_united_thai_nation §PPrayut§! will step down and £GFX_united_thai_nation §PPirapan§! will replace him as §YPrime Minister§!§!"
@@ -639,7 +589,7 @@
  SIA_lack_of_the_political_legitimacy: "Lack of the Political Legitimacy"
  SIA_lack_of_the_political_legitimacy_desc: "\n\n\n\n\n£GFX_SIA_prayut_coa_cat\n\n\n\n\n\nThe political legitimacy of Prayut Chan-o-cha has been repeatedly questioned by the opposition and those opposed to his regime due to the unelected Senate, which plays a decisive role in selecting the Prime Minister and influencing governance, creating perceptions that it benefits certain political groups rather than the public interest. The Election Commission also faced criticism over alleged bias, lack of transparency, and electoral manipulation favoring particular parties.\n\nThe slim majority in the House of Representatives further weakens the government's stability, forcing it to engage in behind-the-scenes bargaining with smaller parties or independents to maintain its majority, while public confidence in the legitimacy of the political system continues to deteriorate.\n\nThis dependency on undemocratic mechanisms, along with the influence of appointed institutions, reinforces to many of those who oppose Prayut Chan-o-cha: the view that political power in Thailand is disconnected from genuine democracy."
  SIA_an_army_with_a_country_1: "An Army with a Country"
- SIA_an_army_with_a_country_1_desc: "\n\n\n\n\n£GFX_SIA_army_with_nation_cat\n\n\n\n\n\nThe famous quote about Prussia, that it was not a state with an army, but an army with a state can also be applied to Thailand.\n\nSince the abolition of absolute monarchy in 1932, the Royal Thai Armed Forces have exerted immense influence over the nation's political landscape. Staging over a dozen successful coups and regularly drafting new constitutions, the military leadership has positioned itself not merely as a guardian of national security, but as an entrenched institution at the core of governance and state power.\n\nDubbed the "fence of the nation," the military has long portrayed itself as the defender of Thailand's sovereignty, national stability, and traditional institutions. The Royal Thai Armed Forces are ranked among the most powerful militaries in Southeast Asia, cementing Thailand's status as a key regional power."
+ SIA_an_army_with_a_country_1_desc: "\n\n\n\n\n£GFX_SIA_army_with_nation_cat\n\n\n\n\n\nDubbed the "fence of the nation," the Royal Thai Armed Forces have exerted immense influence over Thailand’s political landscape since the abolition of the absolute monarchy in 1932.\n\nHaving staged over a dozen successful coups, regularly drafted new constitutions, and produced numerous military leaders, such as Phraya Phahon, Plaek Phibunsongkhram, Thanom Kittikachorn, Suchinda Kraprayoon, and, more recently, Prayut Chan-o-cha, who have assumed the prime ministership, the military has entrenched itself at the core of governance and state power. By portraying itself as the guardian of national sovereignty and traditional institutions, the armed forces have maintained a central role in Thai politics and government.\n\nToday, the Royal Thai Armed Forces remain among the most powerful forces in Southeast Asia, cementing Thailand's status as a key regional power."
  SIA_constitution_60: "The Constitution of Thailand (2017)"
  SIA_constitution_60_desc: "\n\n\n\n\n£GFX_SIA_the_constitution_of_thailand_cat\n\n\n\n\n\nThe Constitution of the Kingdom of Thailand (2017) was promulgated on April 6, 2017. An initial draft submitted to the National Reform Council in September 2015 failed to pass, extending the NCPO's tenure. A second draft, prepared by a committee led by Meechai Ruchuphan, passed the National Reform Steering Assembly and was approved in a nationwide referendum on August 7, 2016, with 61% voting in favor and 59% turnout. Opposition groups were barred from formally campaigning against it, while the military government promoted its adoption.\n\nDrafters hailed the constitution as an "anti-corruption constitution"; however, critics argued it allowed the National Council for Peace and Order (NCPO) to perpetuate its power through 250 military-appointed senators with power to vote on prime ministerial nominations, strict amendment requirements, and influence over "independent organizations" whose members were vetted and appointed by the Senate."
  SIA_oil_crisis: "Oil Crisis"
@@ -689,12 +639,6 @@
  
  SIA_economic_engine_3: "Stagnating Engine"
  SIA_economic_engine_3_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
- 
- SIA_economic_engine_4: "Revitalizing Engine"
- SIA_economic_engine_4_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
- 
- SIA_economic_engine_5: "Roaring Engine"
- SIA_economic_engine_5_desc: "\n\n\n\n\n£GFX_SIA_economic_engine\n\n\n\n\n\n"
  
  SIA_half_payment_policy_idea: "Half Payment Policy"
  SIA_half_payment_policy_idea_desc: "\n\n\n\n\n£GFX_SIA_banner_half_half\n\n\n\n\n\n"
@@ -772,11 +716,19 @@
  SIA_royal_airforce_of_thailand_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_airforce\n\n\n\n\n\nRoyal Airforce of Thailand"
  SIA_royal_navy_of_thailand_dynamic_modifier: "Royal Navy of Thailand"
  SIA_royal_navy_of_thailand_dynamic_modifier_desc: "\n\n\n\n\n£GFX_SIA_navy\n\n\n\n\n\nRoyal Navy of Thailand"
+ SIA_monthly_environment_upkeep_dynamic_modifier: "Monthly Environment Progress Upkeep"
+ SIA_specialist_upkeep_dynamic_modifier: "Specialist Upkeep"
+ SIA_economic_engine_dynamic_modifier: "Economic Engine"
  
  SIA_royal_airforce_of_thailand_made_in_thailand_plane_boost: "Domestic Airforce Production Boost"
  SIA_royal_airforce_of_thailand_thinking_smart_boost: "Rapid Drone Production"
  SIA_royal_navy_of_thailand_expansion_boost: "Massive Naval Expansion Funding"
- 
+ SIA_finish_the_work_fuel_growth: "Finishing The Work"
+ SIA_streamlined_bureaucracy: "Streamlined Bureaucracy"
+ SIA_support_next_gens: "Supporting The Next Generation"
+ SIA_cut_cut_cut: "Debt Cleanup Strategy"
+ SIA_advancing_environmental_progress: "Advancing Environmental Progress"
+ SIA_pollution_woes: "Pollution Woes"
  ###Event###
  thai_events.1.t: "Constitutional Court's Verdict on the Future Foward Party"
  thai_events.1.d: "The Constitutional Court ruled to dissolve the Future Forward Party (FFP) and bar its executive committee members from holding office. The Court pointed out that regarding the case of Thanathorn giving a loan to the FFP, even though partial loan repayment had been made, the nature of the loan agreement was intended to provide special assistance to the FFP and did not align with normal commercial or financial practices, thus constituting a prohibited de facto benefit under the law.\n\nThe Court also stated that although the loan was not considered income, it was deemed a political receipt. Furthermore, the Court ruled to revoke the right to run for election for the executive committee members for 10 years."
@@ -1154,7 +1106,7 @@
  thai_events.81.a: "I HATE the sound of rain now"
  
  thai_events.82.t: "PM2.5 Air Pollution in Bangkok"
- thai_events.82.d: "If you wake up early and look across Bangkok's skyline, you may see the city covered in a thick gray haze. This is not fog, but air pollution. Bangkok frequently ranks among the world's 3rd to 10th most polluted major cities on live Air Quality Index (AQI) rankings, with dangerous levels of fine PM2.5 particles. These microscopic particles can penetrate deep into the lungs and bloodstream, contributing to respiratory and cardiovascular problems and long-term health risks.\n\nJust one month into 2020, Bangkok experienced one of its most severe PM2.5 episodes, with pollution peaking in early January and again around January 19 to 22. More than 280,000 students from 437 schools across Bangkok stayed home after the governor announced school closures to protect them from the smog. The closures also aimed to reduce traffic and ease pollution, and City Hall distributed 450,000 free face masks across the capital.\n\nThe crisis has been a major national concern since 2019 under Prime Minister Prayut Chan-o-cha. Authorities deployed fire trucks, water cannons, and agricultural drones to spray water, while Royal Rainmaking operations attempted to reduce airborne pollution. N95 masks and air purifiers sold out across the capital. Critics argued that these measures were superficial and failed to address the underlying causes of the crisis."
+ thai_events.82.d: "If you wake up early and look across Bangkok's skyline, you may see the city covered in a thick gray haze. This is not fog, but air pollution. Bangkok frequently ranks among the world's 3rd to 10th most polluted major cities on live Air Quality Index (AQI) rankings, with dangerous levels of fine PM2.5 particles. These microscopic particles can penetrate deep into the lungs and bloodstream, contributing to respiratory and cardiovascular problems and long-term health risks.\n\nJust one month into 2020, Bangkok experienced one of its most severe PM2.5 episodes, with pollution peaking in early January and again around January 19 to 22. Today, January 22, more than 280,000 students from 437 schools across Bangkok are staying home after the Bangkok governor announced school closures to protect them from the smog. The closures also aim to reduce traffic and ease pollution. City Hall is distributing 450,000 free face masks across the capital.\n\nThe crisis has been a major national concern since 2019 under Prime Minister Prayut Chan-o-cha. Authorities deployed fire trucks, water cannons, and agricultural drones to spray water, while Royal Rainmaking operations attempted to reduce airborne pollution. N95 masks and air purifiers sold out across the capital. Critics argued that these measures were superficial and failed to address the underlying causes of the crisis."
  thai_events.82.a: "Good thing I have a facemask on!"
  
  thai_events.83.t: "Jet Ski Drifting on a Flooded Road"
@@ -1164,6 +1116,10 @@
  thai_events.84.t: "Southern Thailand Flood Crisis"
  thai_events.84.d: "Southern Thailand experienced one of its worst flood disasters in decades. Driven by an intense La Niña-amplified monsoon, torrential downpours caused widespread flooding across Songkhla and neighboring southern provinces. Official reports confirmed a 'once-in-300-years' rainfall event, with three-day precipitation exceeding 630 mm and a single-day downpour surpassing major flood records from 2000 and 2010.\n\nHat Yai, the region's primary commercial and transit hub near the Malaysian border, was hardest hit, leaving 80% to 90% of the city submerged in murky floodwaters. Trapped residents fled to rooftops, while regional economic losses are estimated in the hundreds of millions of dollars."
  thai_events.84.a: "Send in the military to assist people"
+ 
+ thai_events.85.t: "Environmental Yearly Report Released"
+ thai_events.85.d: "With the celebration of the new year comes the environmental check of last year. The Ministry of..."
+ thai_events.85.a: "Let's see the report"
  
  thai_events.86.t: "Lopburi Monkey Gang War"
  thai_events.86.d: "Recently, a widely shared video circulating on social media and in the press shows gangs of monkeys in Lopburi (located north of Bangkok) taking to the streets and fighting each other over food after a decline in foreign tourism leaves them without a food source. Thousands of monkeys in Lopburi typically rely on food given to them by tourists, but COVID-19 travel restrictions in early 2020 sharply reduced tourism, leaving the animals without their primary source of food. The clash halts traffic for around 10 minutes.\n\nThe war is being fought between two main factions: the Temple Monkey Gang and the City Monkey Gang, with each side fielding approximately 500 soldiers. Reports from the front lines indicate that both factions have suffered casualties, though the full extent of losses remains unclear.\n\nHeavy fighting continues with both sides utilizing guerrilla warfare. A recent territorial intrusion triggered a vicious response from the City Monkeys, who, led by their commander, managed to force the invaders back into their own domain. Meanwhile, leaders on both sides have deployed special forces to patrol the city, frequently snatching food from humans to replenish their logistical supplies.\n\n(Human) Authorities have announced that they plan to mediate the war with food supplies to ease tensions between the warring troops, and have launched an operation to end the gang war and relocate or cage the monkeys."
@@ -1176,6 +1132,10 @@
  thai_events.101.t: "Become Ungovernable"
  thai_events.101.d: "It seems that Moo Deng's popularity has crossed over into the frontlines of the Second American Civil War. Photos have emerged showing Anarcho-Communist members of the American People's Liberation Army (APLA) using images of Moo Deng on patches, flags, and propaganda posters, pairing her chaotic personality with the slogan "Become Ungovernable." Many of the images feature Moo Deng biting an arm or depicted alongside an AK-47.\n\nThe APLA did not receive permission from Khao Kheow Open Zoo or the Thai government to use her likeness, but it is not as though they respect international copyright law anyway."
  thai_events.101.a: "Mother Anarchy Loves Moo Deng"
+ 
+ thai_events.102.t: "A Gray Silver Lining"
+ thai_events.102.d: "The COVID-19 pandemic contributed to a reduction in air pollution as travel, industrial production, and economic activity declined. However, this improvement did not eliminate the underlying causes of Thailand's PM2.5 problem. As a silver lining, prior exposure to hazardous air quality meant that the Thai public was already accustomed to routine mask-wearing, a practice that provided a familiar form of protection during the pandemic and may have helped reduce the spread of the virus."
+ thai_events.102.a: "No Mask, No Entry"
  
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
@@ -1252,9 +1212,9 @@
  thai_prayut.5.d: "The room was filled with joy as General Prawit Wongsuwan and General Prayut shook hands and for the first time have together agreed that the direction of the party shall follow General Prayut... Wait wrong loc, if you're reading this, stop cheating. You aren't supposed to get this"
  thai_prayut.5.a: ""Someone call Logi to fix the timeline""
  
- thai_prayut.6.t: "I Gently open the Autopsy"
- thai_prayut.6.d: "I see a big debuff"
- thai_prayut.6.a: "evil devs"
+ thai_prayut.6.t: "For Your Eyes Only"
+ thai_prayut.6.d: "Despite getting beaten up a year ago, these kids are still riling up and doing nothing better but protest.\n\nMeanwhile, there are still issues to be addressed such as the stagnating economy, environmental probem, and the shifting alliances in Asia.\n\nWith the elections nearing, it's recommended to rally conservative support and hope that our prior performance throughout the crisis was sufficient enough that the people will continue to trust us to remain in power"
+ thai_prayut.6.a: "Just give us more time..."
  
  thai_prayut.7.t: "A Session in Parliament"
  thai_prayut.7.d: "hater: erm your policies suck\n\nPrayut: We'll bomb cambodia"
@@ -1276,15 +1236,15 @@
  thai_prayut.11.d: ""
  thai_prayut.11.a: "Of course they are"
  
- thai_prayut.12.t: "An Awkward Reunion"
- thai_prayut.12.d: "PPRP actually coalition with UTN and stuff"
- thai_prayut.12.a: "I guess all is forgiven?"
+ thai_prayut.12.t: "The Conservative Coalition"
+ thai_prayut.12.d: "We gonna conservative everywhere"
+ thai_prayut.12.a: "Thank you Prawit"
  
  thai_prayut.13.t: "Bhumjaithai Applauds Regulations For Cannabis"
  thai_prayut.13.d: ""
  thai_prayut.13.a: ""
  
- thai_prayut.14.t: "Just Who Is Pirapan Salirathavibhaga?"
+ thai_prayut.14.t: "The Heir Apparent of the UTN"
  thai_prayut.14.d: ""
  thai_prayut.14.a: ""
  
@@ -1296,7 +1256,7 @@
  thai_prayut.16.d: ""
  thai_prayut.16.a: ""
  
- thai_prayut.17.t: "Prayut and Prawit Holds Talks"
+ thai_prayut.17.t: "Standing Alongside The General"
  thai_prayut.17.d: ""
  thai_prayut.17.a: ""
  
@@ -1537,6 +1497,8 @@
  SIA_ptp_in_charge_tt_NOT: "There is currently §RNOT§! a £GFX_phua_thai §RPTP§! §YGovernment§!"
  SIA_cambodia_tensions_NOT: "Currently §RNOT§! in a §YCrisis§!"
  SIA_utn_pprp_relationship: "£GFX_united_thai_nation §PUTN§! and £GFX_palang_pracharath §BPPRP§! §Yrelations§! will §Gincrease§!"
+ SIA_utn_pprp_relationship_electoral_alliance_possible: "   §g-£GFX_united_thai_nation §PUTN§! and £GFX_palang_pracharath will have the ability to form an §YElectoral Coalition§!§!"
+ SIA_utn_pprp_relationship_merging_possible: "   §g-£GFX_united_thai_nation §PUTN§! and £GFX_palang_pracharath §BPPRP§! will §Ymerge§Y into one party after Prayut steps down§!"
  SIA_unaligned_or_eadi_tt: "§YWe are in the @PRC §READI§! or §gwe have not sided with anyone§! for now§!"
  SIA_unaligned_or_pdto_tt: "§YWe are in the @JAP §WPDTO§! or §gwe have not sided with anyone§! for now§!"
  SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
@@ -1544,6 +1506,7 @@
  SIA_three_fingers_texticon: "£SIA_THREE_FINGERS_MOVEMENT \n\n"
  
  SIA_forpol_unlocked_tt: "The §YForeign Policy§! Branch will be §Gunlocked§!"
+ SIA_environmental_malus_tt: "§gDue to §Rexcessive regulations and measures§!, several groups has §Rlobbied and pushed back§! §Genvironmental policies§! and has §Yreduced§! §OMonthly Progress§! to §Y[?mult_temp|0%]§! of its original value§!"
 #MIO's
  SIA_bangkok_dock_company: "Bangkok Dock Company"
  SIA_chaiseri_organisation: "Chaiseri"
@@ -1932,7 +1895,7 @@
  
  
  SIA_oil_crisis_cat: "The Oil Crisis"
- SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability and conflict in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control.\n\n§YTotal Accumulated Days§!: §g[?SIA_total_oil_stockpiled_days]§!"
+ SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control.\n\n§YTotal Accumulated Days§!: §g[?SIA_total_oil_stockpiled_days]§!"
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
  SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y600 days§! of §YTotal Accumulated Days§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
@@ -2011,33 +1974,46 @@
  
  
  SIA_environment_yearly_report: "§GEnvironment§! - Yearly Report"
+ SIA_yearly_plan_expire: "--§RThis plan will expire at the next Yearly Report§!--"
+ SIA_yearly_plan_deadline: "§YYearly Plan§! §RDeadline§!"
+ SIA_yearly_plan_deadline_desc: "If no plan is decided within two weeks, we will automatically pick a §YBalanced Approach§! for this §Yyear§!"
+ SIA_yearly_plan_deadline_tt: "§LA §YBalanced Approach§! is chosen for this year§!"
  SIA_yearly_plan_growth: "§YYearly Plan§! - Prioritize Economic Growth"
- SIA_yearly_plan_growth_fuel_temp_tt: "§YTemporary Fuel Growth for all §YAreas§! will §Lchange§! by §Y[?change_temp|-+2]§!"
  SIA_yearly_plan_balanced: "§YYearly Plan§! - Balanced Approach"
  SIA_yearly_plan_promote_environmentalism: "§YYearly Plan§! - Focus on Environmentalism"
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ SIA_vehicle_and_traffic_regulations: "§GEnvironment§! - Vehicle and Traffic Regulations"
+ SIA_campaign_against_crop_residue_burning: "§GEnvironment§! - Campaign Against Crop Residue Burning"
+ SIA_implement_environmental_policies: "§GEnvironment§! - Implement Environmental Policies"
+ SIA_enforce_industry_regulations: "§GEnvironment§! - Enforce Industry Regulations"
+ SIA_expand_government_conservation_zones: "§GEnvironment§! - Expand Government Conservation Zones"
+ SIA_commit_to_reforestation_program: "§GEnvironment§! - Commit to Reforestation Program"
+ SIA_innovate_efficient_conservation_methods: "§GEnvironment§! - Innovate Efficient Conservation Methods"
+ SIA_promote_corporate_expansion: "§RGrowth§! - Promote Corporate Expansion"
+ SIA_rollback_regulations: "§RGrowth§! - Rollback Regulations"
+ SIA_sell_land_to_businesses: "§RGrowth§! - Sell Land to Businesses"
+ SIA_pro_environment_decisions: "                          §YENVIRONMENT§! §YDECISIONS§!             "
+ SIA_anti_environment_decisions: "                          §YGROWTH§! §YDECISIONS§!             "
+ SIA_specialist_decisions: "                          §YSPECIALIST§! §YDECISIONS§!             "
+ SIA_train_specialists: "§gSpecialist§! - Train Specialists"
+ SIA_tighten_standards: "§gSpecialist§! - Tighten Standards"
+ SIA_cut_agencies: "§gSpecialist§! - Cut Agencies"
+ SIA_relax_the_quota: "§gSpecialist§! - Relax the Quota"
  
  SIA_utn_promote_green_energy: "£GFX_united_thai_nation §BUTN§!: Promote Green Energy"
  SIA_utn_enhance_vocational_training: "£GFX_united_thai_nation §BUTN§!: Enhance Vocational Training"
+ SIA_utn_invest_on_ai_technology: "£GFX_united_thai_nation §BUTN§!: Invest On AI Technology"
  SIA_utn_encourage_tourism: "£GFX_united_thai_nation §BUTN§!: Encourage Tourism"
  SIA_utn_subsidize_agriculture: "£GFX_united_thai_nation §BUTN§!: Subsidize Agriculture"
+ SIA_utn_establish_recreational_centers: "£GFX_united_thai_nation §BUTN§!: Establish Recreational Centers"
  
  SIA_economy_area_focused_decisions: "                          §YAREA FOCUSED§! §YDECISIONS§!             "
+ SIA_area_increase_state_investment: "§YArea§! - Increase State Investment"
  SIA_generic_initiate_construction_program: "§YGENERIC§!: Initiate Construction Program"
  SIA_isan_revitalization_program: "§nEastern Thailand§!: Isan Revitalization Program"
  SIA_generic_Phuket_Medicare_Program: "§YPhuket§!: Medicare Program"
  SIA_generic_subsidize_area_infrastructure: "§YGENERIC§!: Subsidize Area Infrastructure"
  SIA_generic_increase_resource_extraction: "§YGENERIC§!: Increase Extraction Rates"
+ SIA_utn_incentivize_foreign_investment: "£GFX_united_thai_nation §BUTN§!: Incentivize Foreign Investment"
  
  SIA_unlock_generic_fueling_the_engine_decision: "§gUnlocks above §Ygeneric decision§! for the §YFueling the Engine§! mechanic§!"
  SIA_unlock_isan_decisions_tt: "Decision will unlock in the §nEastern Thailand§! Area in the §YFueling the Engine§! mechanic"
@@ -2094,7 +2070,7 @@
  
  SIA_utn_party_mech: "£GFX_united_thai_nation UTN Party Machine"
  SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER]\n\n" #------------------------------------------\n§YFaction Influences§!\n\n§gHardliners§!\n§YInfluence§! Effect\n\n§BConservatives§!\n§YInfluence§! Effect\n   Stability: 0120414993\n  £GFX_palang_pracharath §PPPRP§!:\n   Pol power gain: 140141\n\n§OLoyalists§!\n§YInfluence§! Effect
- SIA_utn_banner_prayut: "£GFX_SIA_utn_party_mech_prayut\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §BUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nPast those loud praises for Prayut is the intricate political scheming in the background, within those closed doors will decide how the UTN will become and whether or not §Ran ambitious figure§! tries to secure control over the party for themselves.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
+ SIA_utn_banner_prayut: "\n\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §BUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nFor it to be achieved however, Prayut needs to prove that change will come if they just give him some time. His legacy will be cemented if his plans are successful, with Pirapan benefitting and the party remaining united even after his time.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
  SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §BUTN§! as the party remains divided on who to support for the future.\n\nOn the left side is §YPirapan Salirathavibhaga§!, the natural successor of Prayut with experience as Deputy PM to his belt. With his Technocratic vision, he aims to continue and expand the renewable program initiated by Prayut.\n\nOn the other side is §YSuchart Chomklin§!, the strongman of Chonburi and a dealmaker who has solidified his control over the eastern provinces of Thailand. He is known to be good at handling internal party affairs and able to whip the party into shape.\n\nWith a §Gvictory§! over @CAM §PCambodia§! to his name, will §YPirapan§! stop his §Ochallenger§! or will his party §Rthrow him down under§! for the next general elections?\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
  SIA_utn_banner_pirapan: "£GFX_SIA_utn_party_mech_pirapan\n\n\n\n\n\n\n\nFresh from §YGeneral Prayut's§! stepping down as §YPrime Minister§! in 2025, the £GFX_united_thai_nation §BUTN§! has followed the will of §YPrayut§! and has chosen §BPirapan Salirathavibhaga§! as the next Prime Minister.\n\nNow, §BPirapan§! must §Gearn the trust§! and §Gsupport§! from within the party if he ever wants to win the §Ynext elections§!"
  SIA_utn_banner_pirapan2: "£GFX_SIA_party_mech_pirapan2\n\n\n\n\n\n\n\nAfter winning the §Y2027 Elections§!, §BPirapan§! has managed to rally the £GFX_united_thai_nation §BUTN§! behind him as the designated successor."
@@ -2102,14 +2078,23 @@
  SIA_utn_banner_suchat_stalemate: "£GFX_SIA_utn_party_mech_suchat2\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchart Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchart§! will now lead the way and guide the £GFX_united_thai_nation §BUTN§! forward and will not repeat the same mistakes as his predecessor"
  SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §PPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
  SIA_honor_the_generals_legacy: "Honor The General's Legacy"
+ SIA_launch_media_advertisements: "Launch Media Advertisements"
+ SIA_show_our_success: "Show Our Success"
+ SIA_a_safer_thailand: "A Safer Thailand"
  SIA_enforce_party_unity: "Enforce Party Unity"
  SIA_champion_conservative_values: "Champion Conservative Values"
  SIA_attract_foreign_workers: "Attract Foreign Workers"
  SIA_bhumjaithai_agenda: "£GFX_bhumjaithai §1BJT§!: Expand Welfare Programs"
  SIA_pprp_agenda: "£GFX_palang_pracharath §BPPRP§!: Strengthen Conservative Traditions"
- 
- 
- 
+ SIA_prayut_title: "Leader"
+ SIA_pirapan_title: "Co-Leader"
+ SIA_prayut_legacy_bottom_text: "£GFX_united_thai_nation §LPrayut's Legacy§!:\n§Y[?SIA_prayut_legacy_var]%§!"
+ SIA_change_prayut_legacy_tt: "£GFX_united_thai_nation §LPrayut's Legacy§! will change by [?change_temp|-+2]"
+ SIA_UTN_logo_outline_tt: "§LPrayut's Legacy§! is viewed with [SIA_utn_prayut_legacy_viewed]"
+ SIA_prayut_legacy_view_1: "§RScrutiny§!"
+ SIA_prayut_legacy_view_2: "§OApathy§!"
+ SIA_prayut_legacy_view_3: "§GAdmiration§!"
+ SIA_prayut_legacy_view_4: "§CReverence§!"
  
  SIA_tug_of_war_top_text: "§gTug Of War§!"
  SIA_tug_of_war_pirapan_text: "§YPirapan Salirathavibhaga§!"
@@ -2367,9 +2352,10 @@
  volunteer_cap_modification_4: "Intensify Volunteers"
  #State Modifiers
  SIA_southern_fire_state_modifier: "Southern Fire"
- SIA_southern_fire_state_modifier_desc: "Southern Fire Description"
+ SIA_southern_fire_state_modifier_desc: "\n\n\n\n£GFX_SIA_banner_southern_fire_banner\n\n\n\n\n"
  
  SIA_myanmar_refugees_state_modifier: "Myanmar Refugees"
+ SIA_myanmar_refugees_state_modifier_desc: "Myanmar has descended into a brutal, prolonged ethnic and political conflict. Thousands of people have been killed, and hundreds of thousands more have fled the war to our borders. The spillover from the ongoing fighting has created a compound humanitarian and security crisis along the frontier. Cross-border trade routes have been severely disrupted, vital supply lines remain paralyzed, and border communities frequently face the threat of stray artillery and aerial strikes."
  
  SIA_bangkok_metropolitan_administration_state_modifier: "§YKrungthep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit§!"
  SIA_bangkok_metropolitan_administration_state_modifier_desc: "§GBangkok Metropolitan Administration§!\n§YGovernor of Bangkok: §!\n\n\n\n\n\n\n\n\n\n[SIAGetBangkokMayor]"
@@ -2413,6 +2399,8 @@
  more_than_1_military_resource_blocked: "£GFX_royal_thai_armed_forces  §R1§!"
  more_than_2_military_resource: "£GFX_royal_thai_armed_forces  §H2§!"
  more_than_2_military_resource_blocked: "£GFX_royal_thai_armed_forces  §R2§!"
+ dx_more_than_35B_and_50pp: "£dx  §H35B§! £pol_power  §H50§!"
+ dx_more_than_35B_and_50pp_blocked: "£dx  §R35B§! £pol_power  §R50§!"
  #Cosmetic Names
  CAM_thai_occupation_government: "Thai Occupational Authority of Cambodia"
  
@@ -2431,7 +2419,8 @@
  SIA_engine_locked_box_tt: "§RINACCESSIBLE§!\n-------------------------\n§gI am sorry Prime Minister but current circumstances prevent us from checking the other tabs. Maybe it'll open up soon §Yafter the elections§!?"
  
  SIA_environment_icon_tt: "§GThe Environmental Project§!\n-------------\nThere is no greater threat than pollution"
- SIA_environment_current_progress: "§YCurrent §LEnvironment Progress§!§!: §G[?SIA_environment_current_progress]§!/100%"
+ SIA_environment_current_progress: "[GrabEnvCurProgTT]"
+ SIA_environment_current_progress_actual: "§YCurrent §LEnvironment Progress§!§!: §G[?SIA_environment_current_progress|2]§!/100%\n\n§gDespite our noble goal, the reality is that it's §Rvery expensive and costly to businesses§! when conserving the environment.§!\n\n---§YEffects of Current Monthly Progress ([?SIA_environment_monthly_progress])§!---\n$business_value_factor$: [?SIA_monthly_environment_business_value_factor|-+2%]\n$income_growth_factor$: [?SIA_monthly_environment_income_growth_factor|-+2%]\n$expense_growth_factor$: [?SIA_monthly_environment_expense_growth_factor|+-2%]\n$farming_development_monthly$: [?SIA_monthly_environment_farming_development_monthly|-+1%]\n$society_development_monthly$: [?SIA_monthly_environment_society_development_monthly|-+1%]"
  SIA_environment_monthly_progress_text: "§OMonthly§! §LProgress§!:\n§Y[?SIA_environment_monthly_progress]%§!"
  SIA_environment_lastyear_progress: "§gLast Year's Performance§!: [SIA_environment_last_year_status] (§Y[?SIA_environment_previous_year_progress_net_change|2]%§!) §W(§g[?SIA_environment_previous_previous_year_progress]%§!->§G[?SIA_environment_previous_year_progress]%§!)§! "
  SIA_last_year_status_0: "§7A Report Has Yet To Be Made§!"
@@ -2442,16 +2431,21 @@
  SIA_last_year_status_5: "§GPerfect§!"
  SIA_environment_image_tt: "[SIA_environment_get_image_tt]"
  SIA_environment_image_1: "§R"Don't worry, the air isn't that bad. You'll get used to it""
- SIA_environment_image_2: "§R"And Mother Nature weeps as it bleeds""
+ SIA_environment_image_2: "§R"Going somewhere at a snail's pace""
  SIA_environment_image_3: "§O"It's going somewhere at least, of course there's still more to be done""
  SIA_environment_image_4: "§G"You know, I'm in the mood for a walk outside""
  SIA_environment_image_5: "§G"Come visit Thailand and see its wonderful nature!""
+ SIA_yearly_plan_icon_tt: "[SIA_environment_active_plan]"
+ SIA_yearly_plan_0: "A Plan hasn't been finalized yet"
+ SIA_yearly_plan_1: "§YEnacted Plan§!: Prioritize Economic Growth"
+ SIA_yearly_plan_2: "§YEnacted Plan§!: Balanced Approach"
+ SIA_yearly_plan_3: "§YEnacted Plan§!: Focus On Environmentalism"
 
  SIA_change_environment_progress_tt: "§LEnvironment Progress§! will change by [?change_temp|-+]"
  
- SIA_change_environment_monthly_tt: "§OMonthly§! §LEnvironment Progress§! will change by [?change_temp|-+]"
+ SIA_change_environment_monthly_tt: "§OMonthly§! §LEnvironment Progress§! will change by [?change_temp|-+3]"
  
-
+ SIA_engine_unlock_tt: "§gIt's time to look at our country and monitor its development, the §YEngine§! §CNational Spirit§! will now change §Ydynamically§! as §YEngine Level§! improves across the country§!"
  SIA_selected_state: "Selected Area: [SIA_selected_econ_area]"
  SIA_selected_state_fuel: "§GFuel§!: §Y[?SIA_map_var:SIA_fuel_value|2]/100%§!\nSpecialists In Area: [?SIA_map_var:SIA_specialists_in_state]\n\n§OMonthly Fuel Growth§!: §g[?SIA_map_var:SIA_fuel_value_monthly]§!"
  SIA_selected_state_fuel_tt_delayed: "§LMonthly Fuel Breakdown§!\n---------------------------\nBase Growth: §Y[?SIA_map_var:SIA_fuel_value_monthly_base]§!\nGain from Specialists: §Y[?SIA_map_var:SIA_fuel_value_specialists]§!\nTemporary Modifiers: §Y[?SIA.modifier@SIA_fuel_value_temporary_modifier]§!"
@@ -2461,10 +2455,10 @@
  SIA_national_specialists_add_specialist_tt: "§GAdd§! §Y1§! §gSpecialist§! to this §YArea§!"
  SIA_national_specialists_remove_specialist_tt: "§RRemove§! §Y1§! §gSpecialist§! from this §YArea§!"
  SIA_national_specialists_amount: "[?SIA_specialists_var]"
- SIA_national_specialists_tt: "The engineers, entrepreneurs, and experts of the business world. These specialists increase the §OMonthly Fuel Growth§! of an Area by §Y0.15§!\n\nWe can freely assign them to any area that we deem requires more attention for §Geconomic development§!\n---------------------\nSpecialists In Each State:\n§GBangkok§!: [?1:SIA_specialists_in_state]\n§7North§!: [?2:SIA_specialists_in_state]\n§CCentral§!: [?3:SIA_specialists_in_state]\n§9East§!: [?4:SIA_specialists_in_state]\n§LNortheast§!: [?5:SIA_specialists_in_state]\n§pWest§!: [?6:SIA_specialists_in_state]\n§OSouth§!: [?7:SIA_specialists_in_state]\n§RPattani§!: [?8:SIA_specialists_in_state]\n\nMaintaining and funding these groups will be §Rexpensive§!. As we §Lrecruit more§!, the §Rheavier our expenses§! we'll accumulate\n\n£GFX_dx §YMonthly Expense Growth§!: [?SIA_specialist_upkeep_expense_growth_factor_var|+-2%]"
+ SIA_national_specialists_tt: "The engineers, entrepreneurs, and experts of the business world. These specialists increase the §OMonthly Fuel Growth§! of an Area by §Y0.15§!\n\nWe can freely assign them to any area that we deem requires more attention for §Geconomic development§!\n---------------------\nSpecialists In Each Area:\n§GBangkok§!: [?1:SIA_specialists_in_state]\n§7North§!: [?2:SIA_specialists_in_state]\n§CCentral§!: [?3:SIA_specialists_in_state]\n§9East§!: [?4:SIA_specialists_in_state]\n§LNortheast§!: [?5:SIA_specialists_in_state]\n§pWest§!: [?6:SIA_specialists_in_state]\n§OSouth§!: [?7:SIA_specialists_in_state]\n§RPattani§!: [?8:SIA_specialists_in_state]\n\nAs policies are enacted, §gSpecialists§! have the ability to §Glevel up§! and gain an additional §Y0.05§! boost with §Yeach level§!.\n\n§YCurrent Specialist Level§!: [?SIA_specialist_effectiveness_level|-+0]\n\nMaintaining and funding these groups will be §Rexpensive§!. As we §Lrecruit more§!, the §Rheavier our expenses§! we'll accumulate\n\n£GFX_dx §YMonthly Expense Growth§!: [?SIA_specialist_upkeep_expense_growth_factor_var|+-2%]"
  SIA_national_engine_text: "National Engine Level"
  SIA_national_engine_value: "§C[?SIA_national_engine_level_var]/80§!"
- SIA_national_engine_tt: "Representing the overall §GEconomic Health§! of the country. This measures the growth of the §7Thai§! §Geconomy§! and will affect the §YEconomic Engine§! §gNational Spirit§!\n\nThis is calculated by the §gtotal sum§! of all §YArea Economic Level§!"
+ SIA_national_engine_tt: "Representing the overall §GEconomic Health§! of the country. This measures the growth of the §7Thai§! §Geconomy§! and will affect the §YEconomic Engine§! §gNational Spirit§!\n\nThis is calculated by the §gtotal sum§! of all §YArea Economic Level§!\n---------------------\nEconomic Level of Each Area:\n§GBangkok§!: [?1:SIA_economic_level]\n§7North§!: [?2:SIA_economic_level]\n§CCentral§!: [?3:SIA_economic_level]\n§9East§!: [?4:SIA_economic_level]\n§LNortheast§!: [?5:SIA_economic_level]\n§pWest§!: [?6:SIA_economic_level]\n§OSouth§!: [?7:SIA_economic_level]\n§RPattani§!: [?8:SIA_economic_level]"
  SIA_BK_gui_tt: "§GBangkok Metropolitan§!"
  SIA_North_gui_tt: "§7North§!"
  SIA_Central_gui_tt: "§CCentral§!"
@@ -2474,11 +2468,21 @@
  SIA_South_tt: "§OSouth§!"
  SIA_Pattani_tt: "§RPattani§!"
  
- 
+ SIA_req_available_specialist_level: "§YSpecialist Level§! is at least §Y1§!"
+ SIA_req_available_nationwide_specialist: "There must be at least §Y1§! §YSpecialist§! in reserve"
+ SIA_req_available_nationwide_specialist_2: "There must be at least §Y2§! §YSpecialist§! in reserve"
  SIA_change_specialist_amount_tt: "§gSpecialist§! Amount will change by [?change_temp|-+0]\n\n"
+ SIA_change_specialist_effectiveness_tt: "§gSpecialist§! §GEffectiveness§! will change by [?change_temp|-+0] §Ylevel§!\n\n"
  SIA_change_specialist_amount_tt_reduce: "§gSpecialist§! Amount will change by [?change_temp|-+0]\n\nThe §gSpecialists§! in §Yreserve§! do not match the change, §gSpecialists§! in an §YArea§! will be §Rremoved§! if §Yavailable§!"
- SIA_change_fuel_monthly_base_amount_tt: "§YMonthly Fuel Base Growth§! will change by [?change_temp|-+]"
- SIA_change_fuel_monthly_temporary_modifier_amount_tt: "§YTemporary Fuel Growth§! will change by [?change_temp|-+]"
+ SIA_change_fuel_monthly_base_amount_tt: "§YMonthly Fuel Base Growth§! will change by [?change_temp|-+] in [SIA_selected_econ_area]"
+ SIA_change_fuel_monthly_base_amount_all_areas_tt: "§YMonthly Fuel Base Growth§! will change by [?change_temp|-+] in all §YAreas§!"
+ SIA_change_fuel_monthly_temporary_modifier_amount_tt: "§YTemporary Fuel Growth§! will change by [?change_temp|-+] in all §YAreas§!"
+ 
+ SIA_environment_report_tt_1: "§gThe §YReport§! is out, last year has been a §GPerfect Success§!, reaching more than §Y12%§! progress and §Gsurpassing§! expectations§!"
+ SIA_environment_report_tt_2: "§gThe §YReport§! is out, last year has been a §7Great Year§!, reaching more than §Y8%§! progress and §7passing§! several targets§!"
+ SIA_environment_report_tt_3: "§gThe §YReport§! is out, last year has been §OMiddling§!, reaching more than §Y4%§! progress but §Owasn't sufficient§! enough§!"
+ SIA_environment_report_tt_4: "§gThe §YReport§! is out, last year has been a §tBad Year§!, reaching more than §Y2%§! progress and §tmissing§! several targets§!"
+ SIA_environment_report_tt_5: "§gThe §YReport§! is out, last year has been a §RCatastrophic Failure§!, reaching below §Y2%§! progress§!"
 
  #decision tooltip
  SIA_stabilize_Baht_tt: "This Will §GRemove§! §G50§! Days From §RWorldwide Financial Crisis!§!"

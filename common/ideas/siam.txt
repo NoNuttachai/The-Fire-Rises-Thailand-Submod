@@ -5,11 +5,30 @@ ideas = {
 	# }	
 	hidden_ideas = {
 		SIA_yearly_plan_growth_idea = {
+			name = SIA_yearly_plan_growth
 			allowed = {
 				original_tag = SIA
 			}
 			modifier = {
 				SIA_fuel_value_temporary_modifier = 0.25
+			}
+		}
+		SIA_yearly_plan_balanced_idea = {
+			name = SIA_yearly_plan_balanced
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				SIA_fuel_value_temporary_modifier = 0.1
+			}
+		}
+		SIA_yearly_plan_environmentalism_idea = {
+			name = SIA_yearly_plan_promote_environmentalism
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				SIA_fuel_value_temporary_modifier = -0.075
 			}
 		}
 		SIA_gdp_fix_new = { #This is to stop 2Trillion GDP Thailand
@@ -1393,59 +1412,6 @@ ideas = {
 				inflation_monthly_factor = 0.01			
 			}
 		}
-		SIA_economic_engine_4 = {
-			picture = GER_victory_in_arabia
-			traits = {
-				ZZZ_blank_idea_trait
-			}
-			
-			allowed = {
-				always = no
-			}
-			
-			modifier = {
-				stability_factor = 0.075
-				poverty_development_monthly = 0.005	
-				industrial_development_monthly = 0.005
-				consumer_goods_factor = -0.1
-				industrial_capacity_factory = 0.075
-				income_growth_factor = 0.1
-				production_speed_buildings_factor = 0.1
-				factory_energy_consumption = -0.1
-				business_value_factor = 0.05
-				local_resources_factor = 0.075
-				global_building_slots_factor = 0.05
-				production_speed_office_park_factor = 0.1
-			}
-		}
-		SIA_economic_engine_5 = {
-			picture = GER_victory_in_arabia
-			traits = {
-				ZZZ_blank_idea_trait
-			}
-			
-			allowed = {
-				always = no
-			}
-			
-			modifier = {
-				stability_factor = 0.15
-				poverty_development_monthly = 0.01
-				industrial_development_monthly = 0.01
-				consumer_goods_factor = -0.2
-				industrial_capacity_factory = 0.15
-				income_growth_factor = 0.2
-				production_speed_buildings_factor = 0.2
-				factory_energy_consumption = -0.2
-				business_value_factor = 0.1
-				local_resources_factor = 0.15
-				global_building_slots_factor = 0.1
-				production_speed_office_park_factor = 0.2
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.1
-				society_development_monthly = 0.01
-			}
-		}
 		SIA_chinese_investments = {
 			name = ETH_chinese_investments
 			picture = "GFX_ETH_chinese_investments" 
@@ -1794,7 +1760,7 @@ ideas = {
 				
 			}
 		}
-		SIA_conservative_revolution_SIA_tonight_in_bangkok = {
+		SIA_conservative_revolution_SIA_third_prayut_cabinet = {
 			name = SIA_conservative_revolution_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -1878,7 +1844,7 @@ ideas = {
 				inflation_monthly_factor = 0.05
 			}
 		}
-		SIA_conservative_revolution_proud_citizens = {
+		SIA_conservative_revolution_reform_education = {
 			name = SIA_conservative_revolution_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -1890,14 +1856,13 @@ ideas = {
 			}
 				
 			modifier = {
-				production_speed_buildings_factor = 0.15
-				production_factory_efficiency_gain_factor = 0.075
-				academic_development_monthly = 0.015
-				income_growth_factor = -0.05
-				business_value_factor = 0.1
+				war_support_weekly = 0.0025
+				authoritarian_democrat_drift = 0.02
+				production_factory_efficiency_gain_factor = 0.05
+				party_popularity_stability_factor = 0.05
 			}
 		}
-		SIA_conservative_revolution_nation_of_patriot = {
+		SIA_conservative_revolution_valiant_warriors = {
 			name = SIA_conservative_revolution_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -1915,7 +1880,7 @@ ideas = {
 				income_growth_factor = -0.05
 			}
 		}
-		SIA_conservative_revolution_conservative_revolution = {
+		SIA_conservative_revolution_establishing_consensus = {
 			name = SIA_conservative_revolution_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -1927,9 +1892,25 @@ ideas = {
 			}
 				
 			modifier = {
-				party_popularity_stability_factor = 0.05
-				political_power_gain = 0.25
+				party_popularity_stability_factor = 0.1
+				political_power_gain = 0.02
+			}
+		}
+		SIA_conservative_revolution_true_to_form = {
+			name = SIA_conservative_revolution_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
 				authoritarian_democrat_drift = 0.03
+				political_power_gain = 0.15
+				party_popularity_stability_factor = -0.02
 			}
 		}
 		SIA_conservative_revolution_we_will_not_change = {
@@ -1997,7 +1978,7 @@ ideas = {
 				production_speed_energy_farm_factor = 0.1
 			}
 		}
-		SIA_renewable_economy_drive_ridin_with_the_dragon = {
+		SIA_renewable_economy_drive_align_with_the_five_stars = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2011,7 +1992,24 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.075
 				industrial_development_monthly = 0.01
-				production_speed_buildings_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		SIA_renewable_economy_drive_in_house = {
+			name = SIA_renewable_economy_drive_dynamic_modifier
+			picture = "GFX_ETH_chinese_investments" 
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+
+			allowed = {
+				always = no
+			}
+				
+			modifier = {
+				farming_development_monthly = 0.01
+				monthly_population = 0.1
+				expense_growth_factor = 0.1
 			}
 		}
 		SIA_renewable_economy_drive_toward_a_greener_future = {
@@ -2031,7 +2029,7 @@ ideas = {
 				expense_growth_factor = 0.1
 			}
 		}
-		SIA_renewable_economy_drive_roll_the_carpets = {
+		SIA_renewable_economy_drive_wide_circulation = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2048,7 +2046,7 @@ ideas = {
 				personal_expense_factor = 0.075
 			}
 		}
-		SIA_renewable_economy_drive_hit_the_book = {
+		SIA_renewable_economy_drive_tools_on_your_hand = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2065,7 +2063,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
-		SIA_renewable_economy_wonderful_thailand = {
+		SIA_renewable_economy_amazing_new_chapters = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2077,12 +2075,9 @@ ideas = {
 			}
 				
 			modifier = {
-				personal_value_factor = 0.1
-				farming_development_monthly = 0.015
-				poverty_development_monthly = 0.02
-				monthly_population = 0.15
-				business_value_factor = 0.10
-				
+				business_value_factor = 0.1
+				monthly_population = 0.075
+				production_speed_buildings_factor = 0.15
 			}
 		}
 		SIA_renewable_economy_drive_along_with_the_wind = {
@@ -2097,15 +2092,16 @@ ideas = {
 			}
 				
 			modifier = {
-				production_speed_buildings_factor = 0.15
-				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.075
+				consumer_goods_factor = -0.15
 				industrial_development_monthly = 0.02
 				business_value_factor = 0.1
 				global_building_slots_factor = 0.1
-				industrial_capacity_factory = 0.1
+				factory_energy_consumption = -0.15
+				expense_growth_factor = 0.2
 			}
 		}
-		SIA_renewable_economy_drive_smart_government = {
+		SIA_renewable_economy_drive_reinforce_the_eec = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2117,15 +2113,16 @@ ideas = {
 			}
 				
 			modifier = {
-				consumer_goods_factor = -0.1
-				production_factory_max_efficiency_factor = 0.075
+				consumer_goods_factor = 0.075
+				production_factory_max_efficiency_factor = 0.05
 				industrial_development_monthly = 0.015
 				production_speed_buildings_factor = 0.1
-				expense_growth_factor = 0.1
+				expense_growth_factor = 0.15
 				research_speed_factor = 0.05
+				farming_development_monthly = -0.01
 			}
 		}
-		SIA_renewable_economy_drive_farm_to_market = {
+		SIA_renewable_economy_drive_land_and_blood = {
 			name = SIA_renewable_economy_drive_dynamic_modifier
 			picture = "GFX_ETH_chinese_investments" 
 		    traits = {
@@ -2614,6 +2611,73 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.1
 				business_value_factor = 0.05
+			}
+		}
+		SIA_finish_the_work_fuel_growth = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				SIA_fuel_value_temporary_modifier = 0.15
+				consumer_goods_factor = -0.075
+			}
+		}
+		SIA_streamlined_bureaucracy = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				political_power_gain = 0.2
+				production_factory_efficiency_gain_factor = 0.05
+				society_development_monthly = 0.01
+				expense_growth_factor = 0.075
+				SIA_fuel_value_temporary_modifier = 0.1
+			}
+		}
+		SIA_support_next_gens = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				academic_development_monthly = 0.01
+				expense_growth_factor = 0.1
+				research_speed_factor = 0.075
+				stability_weekly = 0.002
+			}
+		}
+		SIA_cut_cut_cut = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				income_growth_factor = 0.1
+				expense_growth_factor = -0.1
+				production_speed_buildings_factor = -0.15
+				stability_factor = -0.075
+			}
+		}
+		SIA_advancing_environmental_progress = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				farming_development_monthly = 0.02
+				society_development_monthly = 0.02
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				consumer_goods_factor = -0.15
+			}
+		}
+		SIA_pollution_woes = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				farming_development_monthly = -0.03
+				society_development_monthly = -0.03
+				political_power_factor = -0.075
+				stability_factor = -0.15
+				consumer_goods_factor = 0.35
 			}
 		}
 	}
@@ -3219,7 +3283,7 @@ ideas = {
 				
 			}
 			available = {
-				always = no
+				
 			}
 			traits = {
 				int_balanced_cryptographer
@@ -3234,9 +3298,8 @@ ideas = {
 			visible = {
 				
 			}
-			cost = 0
 			available = {
-				always = no
+				
 			}
 			traits = {
 				int_decryptor
@@ -3251,9 +3314,8 @@ ideas = {
 			visible = {
 				
 			}
-			cost = 0
 			available = {
-				always = no
+				
 			}
 			traits = {
 				int_resistance_crusher
@@ -3411,6 +3473,31 @@ ideas = {
 				production_speed_infrastructure_factor = 0.05
 				society_development_monthly = 0.008
 				poverty_development_monthly = 0.008
+			}
+			ai_will_do = {
+				base = 1
+			}
+			cancel_if_invalid = no
+		}
+		SIA_low_income_only_welfare_3 = {
+			cost = 100
+			name = SIA_low_income_only_welfare
+			removal_cost = -1
+			picture = SIA_low_income_only_welfare
+			level = 5
+			allowed = {
+				tag = SIA
+			}
+			visible = {
+				has_idea = SIA_low_income_only_welfare_2
+			}
+			allowed_to_remove = { always = no }
+			modifier = {
+				personal_expense = 0.4
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.08
+				society_development_monthly = 0.014
+				poverty_development_monthly = 0.014
 			}
 			ai_will_do = {
 				base = 1

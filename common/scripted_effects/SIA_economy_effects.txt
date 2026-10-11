@@ -5,7 +5,58 @@ SIA_change_environment_progress = { #Directly change the variable
 }
 SIA_change_environment_monthly = { #Directly change the monthly variable
 	add_to_variable = { SIA_environment_monthly_progress = change_temp }
+	clamp_variable = {
+		var = SIA_environment_monthly_progress
+		min = 0
+		max = 100
+	}
 	custom_effect_tooltip = SIA_change_environment_monthly_tt
+	SIA_change_environment_monthly_upkeep = yes
+}
+SIA_change_environment_monthly_upkeep = { #Adjust dynamic modifier as monthly progress changes	
+	#starting values if progress at 0%
+	set_temp_variable = { bus_val_temp = 0.10 }
+	set_temp_variable = { inc_gro_temp = 0.05 }
+	set_temp_variable = { exp_gro_temp = -0.075 }
+	set_temp_variable = { far_dev_temp = -0.01 }
+	set_temp_variable = { soc_dev_temp = -0.005 }
+	
+	#Bus
+	set_temp_variable = { value_1 = SIA_environment_monthly_progress }
+	multiply_temp_variable = { value_1 = 10 }
+	divide_temp_variable = { value_1 = 100 } #turn to decimal
+	subtract_from_temp_variable = { bus_val_temp = value_1 } #subtract starting value with the thing
+	set_variable = { SIA_monthly_environment_business_value_factor = bus_val_temp }
+	
+	#inc
+	set_temp_variable = { value_2 = SIA_environment_monthly_progress }
+	multiply_temp_variable = { value_2 = 5 }
+	divide_temp_variable = { value_2 = 100 } #turn to decimal
+	subtract_from_temp_variable = { inc_gro_temp = value_2 } #subtract starting value with the thing
+	set_variable = { SIA_monthly_environment_income_growth_factor = inc_gro_temp }
+	
+	#exp
+	set_temp_variable = { value_3 = SIA_environment_monthly_progress }
+	multiply_temp_variable = { value_3 = 1 }
+	divide_temp_variable = { value_3 = 100 } #turn to decimal
+	add_to_temp_variable = { exp_gro_temp = value_3 } #add starting value with the thing
+	set_variable = { SIA_monthly_environment_expense_growth_factor = exp_gro_temp }
+	
+	#far
+	set_temp_variable = { value_4 = SIA_environment_monthly_progress }
+	multiply_temp_variable = { value_4 = 1 }
+	divide_temp_variable = { value_4 = 100 } #turn to decimal
+	add_to_temp_variable = { far_dev_temp = value_4 } #add starting value with the thing
+	set_variable = { SIA_monthly_environment_farming_development_monthly = far_dev_temp }
+	
+	#soc
+	set_temp_variable = { value_5 = SIA_environment_monthly_progress }
+	multiply_temp_variable = { value_5 = 0.5 }
+	divide_temp_variable = { value_5 = 100 } #turn to decimal
+	add_to_temp_variable = { soc_dev_temp = value_5 } #add starting value with the thing
+	set_variable = { SIA_monthly_environment_society_development_monthly = soc_dev_temp }
+	
+	force_update_dynamic_modifier = yes
 }
 SIA_change_environment_progress_monthly = { ##Add monthly to current year var it's 0-100
 	add_to_variable = { SIA_environment_current_progress = SIA_environment_monthly_progress }
@@ -25,34 +76,119 @@ SIA_check_yearly_performance = {
 		limit = {
 			check_variable = { current_year_net_gain > 12 }
 		}
+		custom_effect_tooltip = SIA_environment_report_tt_1
+		add_timed_idea = {
+			idea = SIA_advancing_environmental_progress
+			days = 160
+		}
 		set_variable = { SIA_environment_prev_year_status = 5 }
+		set_temp_variable = { farming_development_var_temp = 0.1 }
+		add_farming_development = yes
+		set_temp_variable = { society_development_var_temp = 0.1 }
+		add_society_development = yes
+		set_temp_variable = { change_temp = 0.15 }
+		for_each_loop = { 
+			array = SIA_map_var 
+			value = v 
+			
+			var:v = {
+				
+				SIA_change_fuel_monthly_base_amount = yes
+			}
+		}
+		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
 	}
 	else_if = { #good
 		limit = {
 			check_variable = { current_year_net_gain > 8 }
 		}
 		set_variable = { SIA_environment_prev_year_status = 4 }
+		custom_effect_tooltip = SIA_environment_report_tt_2
+		add_stability = 0.025
+		add_political_power = 35
+		set_temp_variable = { farming_development_var_temp = 0.05 }
+		add_farming_development = yes
+		set_temp_variable = { society_development_var_temp = 0.05 }
+		add_society_development = yes
+		set_temp_variable = { change_temp = 0.05 }
+		for_each_loop = { 
+			array = SIA_map_var 
+			value = v 
+			
+			var:v = {
+				
+				SIA_change_fuel_monthly_base_amount = yes
+			}
+		}
+		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
 	}
 	else_if = { #okay
 		limit = {
 			check_variable = { current_year_net_gain > 4 }
 		}
 		set_variable = { SIA_environment_prev_year_status = 3 }
+		custom_effect_tooltip = SIA_environment_report_tt_3
+		add_stability = 0.01
+		add_political_power = 15
+		set_temp_variable = { farming_development_var_temp = 0.025 }
+		add_farming_development = yes
+		set_temp_variable = { society_development_var_temp = 0.025 }
+		add_society_development = yes
 	}
 	else_if = { #bad
 		limit = {
 			check_variable = { current_year_net_gain > 2 }
 		}
 		set_variable = { SIA_environment_prev_year_status = 2 }
+		custom_effect_tooltip = SIA_environment_report_tt_4
+		add_stability = -0.075
+		add_political_power = -75
+		set_temp_variable = { farming_development_var_temp = -0.075 }
+		add_farming_development = yes
+		set_temp_variable = { society_development_var_temp = -0.075 }
+		add_society_development = yes
+		set_temp_variable = { change_temp = -0.05 }
+		for_each_loop = { 
+			array = SIA_map_var 
+			value = v 
+			
+			var:v = {
+				
+				SIA_change_fuel_monthly_base_amount = yes
+			}
+		}
+		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
 	}
 	else = { #Ministry of Environment goes sad
-		
 		set_variable = { SIA_environment_prev_year_status = 1 }
+		custom_effect_tooltip = SIA_environment_report_tt_5
+		add_timed_idea = {
+			idea = SIA_pollution_woes
+			days = 160
+		}
+		add_stability = -0.15
+		add_political_power = -150
+		set_temp_variable = { farming_development_var_temp = -0.15 }
+		add_farming_development = yes
+		set_temp_variable = { society_development_var_temp = -0.15 }
+		add_society_development = yes
+		set_temp_variable = { change_temp = -0.1 }
+		for_each_loop = { 
+			array = SIA_map_var 
+			value = v 
+			
+			var:v = {
+				
+				SIA_change_fuel_monthly_base_amount = yes
+			}
+		}
+		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
 	}
 	#use this for standard in next year tick
 	set_variable = { SIA_environment_previous_previous_year_progress = SIA_environment_previous_year_progress }
 	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
 	set_variable = { SIA_environment_previous_year_progress_net_change = current_year_net_gain }
+	
 }
 
 
@@ -71,7 +207,7 @@ SIA_initiate_area_vars = { #Killing myself since array usage guh
 	add_to_array = { SIA_map_var = 7 } #south
 	add_to_array = { SIA_map_var = 8 } #pattani
 	
-	set_variable = { SIA_specialists_var = 4 }
+	set_variable = { SIA_specialists_var = 3 }
 	for_each_loop = { 
 		array = SIA_map_var 
 		value = v 
@@ -83,6 +219,7 @@ SIA_initiate_area_vars = { #Killing myself since array usage guh
 				}
 				set_variable = { SIA_fuel_value = 80 } 
 				set_variable = { SIA_economic_level = 5 }
+				set_variable = { SIA_fuel_value_monthly_base = 0.3 }
 			}
 			else_if = {
 				limit = {
@@ -90,14 +227,22 @@ SIA_initiate_area_vars = { #Killing myself since array usage guh
 				}
 				set_variable = { SIA_fuel_value = 45 } 
 				set_variable = { SIA_economic_level = 3 }
+				set_variable = { SIA_fuel_value_monthly_base = 0.2 }
 			}
 			else = {
 				set_variable = { SIA_fuel_value = 22 } 
 				set_variable = { SIA_economic_level = 2 }
+				set_variable = { SIA_fuel_value_monthly_base = 0.10 }
 			}
-			set_variable = { SIA_fuel_value_monthly_base = 0.15 }
+			
 		}
 	}
+	remove_ideas = {
+		SIA_economic_engine_1
+		SIA_economic_engine_2
+		SIA_economic_engine_3
+	}
+	hidden_effect = { add_dynamic_modifier = { modifier = SIA_economic_engine_dynamic_modifier } }
 	SIA_calculate_national_engine_level = yes
 }
 SIA_change_specialist_amount = { 
@@ -165,7 +310,7 @@ SIA_for_loop_reduce_specialist_in_state = {
 		#stop, just continue ahead
 	}
 }
-SIA_change_fuel_monthly_base_amount = { 
+SIA_change_fuel_monthly_base_amount = {
 	add_to_variable = { SIA_fuel_value_monthly_base = change_temp }
 	custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_tt
 	SIA_calculate_total_montly_fuel_growth = yes
@@ -175,6 +320,16 @@ SIA_change_fuel_monthly_temporary_modifier_amount = { #FOR VISUAL PURPOSES ONLY,
 	custom_effect_tooltip = SIA_change_fuel_monthly_temporary_modifier_amount_tt
 	SIA_calculate_total_montly_fuel_growth = yes
 }
+SIA_change_specialist_effectiveness = { #This shouldn't go negative
+	add_to_variable = { SIA_specialist_effectiveness_level = change_temp }
+	custom_effect_tooltip = SIA_change_specialist_effectiveness_tt
+	SIA_add_specialists_effect = yes
+	clamp_variable = {
+		var = SIA_specialist_effectiveness_level
+		min = 0
+		max = 100
+	}
+}
 SIA_add_specialists_effect = {
 	for_each_loop = { 
 		array = SIA_map_var 
@@ -182,6 +337,14 @@ SIA_add_specialists_effect = {
 		
 		var:v = {
 			set_temp_variable = { SIA_fuel_value_monthly_temp = 0.15 }
+			if = {
+				limit = {
+					check_variable = { SIA.SIA_specialist_effectiveness_level > 1 }
+				}
+				set_temp_variable = { SIA_specialist_level_temp = 0.05 }
+				multiply_temp_variable = { SIA_specialist_level_temp = SIA.SIA_specialist_effectiveness_level }
+				add_to_temp_variable = { SIA_fuel_value_monthly_temp = SIA_specialist_level_temp }
+			}
 			multiply_temp_variable = { SIA_fuel_value_monthly_temp = SIA_specialists_in_state }
 			set_variable = { SIA_fuel_value_specialists = SIA_fuel_value_monthly_temp }
 			
@@ -206,6 +369,7 @@ SIA_calculate_specialist_dynamic_modifier = {
 	add_to_temp_variable = { total = SIA_specialists_var }
 	multiply_temp_variable = { total = 0.015 }
 	set_variable = { SIA_specialist_upkeep_expense_growth_factor_var = total }
+	force_update_dynamic_modifier = yes
 }
 SIA_calculate_total_montly_fuel_growth = { #Updates vars for all states, doesn't add fuel
 	for_each_loop = { 
@@ -248,4 +412,34 @@ SIA_calculate_national_engine_level = {
 			add_to_variable = { SIA.SIA_national_engine_level_var = SIA_economic_level }
 		}
 	}
+	#stability_factor = SIA_economic_engine_stability_factor
+	#poverty_development_monthly = SIA_economic_engine_poverty_development_monthly
+	#society_development_monthly = SIA_economic_engine_society_development_monthly
+	#industrial_development_monthly = SIA_economic_engine_industrial_development_monthly
+	#consumer_goods_factor = SIA_economic_engine_consumer_goods_factor
+	#industrial_capacity_factory = SIA_economic_engine_industrial_capacity_factory
+	#production_factory_efficiency_gain_factor = SIA_economic_engine_production_factory_efficiency_gain_factor
+	#production_factory_max_efficiency_factor = SIA_economic_engine_production_factory_max_efficiency_factor
+	#income_growth_factor = SIA_economic_engine_income_growth_factor
+	#personal_expense_factor = SIA_economic_engine_personal_expense_factor
+	#production_speed_buildings_factor = SIA_economic_engine_production_speed_buildings_factor
+	
+	#Stability
+	set_variable = { SIA_economic_engine_stability_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_stability_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_stability_factor = -40 }
+		multiply_variable = { SIA_economic_engine_stability_factor = 0.5 }
+	}
+	else = {
+		set_temp_variable = { forty = -40 }
+		add_to_variable = { SIA_economic_engine_stability_factor = forty }
+		multiply_variable = { SIA_economic_engine_stability_factor = 0.5 }
+	}
+	
+	
+	
+	force_update_dynamic_modifier = yes
 }

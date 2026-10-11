@@ -671,9 +671,8 @@ country_event = { #review the autopsy
 	}
     option = {
         name = thai_prayut.6.a 
-		effect_tooltip = {
-			add_ideas = SIA_pushback_against_the_establishment
-		}
+		set_temp_variable = { increase = 2 }
+		SIA_increase_youth_status = yes
 		add_popularity = {
 			ideology = social_democrat
 			popularity = 0.05
@@ -794,7 +793,12 @@ country_event = { #King of Cannabis
 	picture = GFX_report_cannabis_regulated
     option = {
         name = thai_prayut.13.a
-		
+		add_political_power = 50
+		set_temp_variable = {
+			var = society_development_var_temp
+			value = 0.1
+		}
+		add_society_development = yes
     }
 }
 country_event = { #Pirapan introduction
@@ -823,7 +827,7 @@ country_event = { #Third Prayut Cabinet formed
 		}
     }
 }
-country_event = { #UTN party talks
+country_event = { #Suchart asks for concessions
     id = thai_prayut.16
     title = thai_prayut.16.t
     desc = thai_prayut.16.d
@@ -834,7 +838,7 @@ country_event = { #UTN party talks
 		
     }
 }
-country_event = { #UTN-PPRP Yapping
+country_event = { #Standing Alongside the general
     id = thai_prayut.17
     title = thai_prayut.17.t
     desc = thai_prayut.17.d
@@ -845,7 +849,7 @@ country_event = { #UTN-PPRP Yapping
 		
     }
 }
-country_event = { #UTN-PPRP Yapping part 2
+country_event = { #UTN-PPRP Yapping part 2 - DEFUNCT
     id = thai_prayut.18
     title = thai_prayut.18.t
     desc = thai_prayut.18.d
@@ -856,7 +860,7 @@ country_event = { #UTN-PPRP Yapping part 2
 		
     }
 }
-country_event = { #UTN-PPRP Yapping part 3
+country_event = { #UTN-PPRP Yapping part 3 - DEFUNCT
     id = thai_prayut.19
     title = thai_prayut.19.t
     desc = thai_prayut.19.d
@@ -1586,14 +1590,14 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-#    option = {
-#        name = thai_events.7.a
-#		complete_national_focus = SIA_raise_our_three_fingers
-#		hidden_effect = {
-#			activate_mission = SIA_government_action_1
-#			activate_mission = SIA_oil_distribution_to_stations
-#		}
-#	}
+    #option = {
+    #    name = thai_events.7.a
+	#	complete_national_focus = SIA_raise_our_three_fingers
+	#	hidden_effect = {
+	#		activate_mission = SIA_government_action_1
+	#		activate_mission = SIA_oil_distribution_to_stations
+	#	}
+	#}
 	option = {
         name = thai_events.7.b
 		add_war_support = -0.1
@@ -2532,7 +2536,7 @@ country_event = {
     id = thai_events.45 # State of Emergency upscaled
     title = thai_events.45.t
     desc = thai_events.45.d
-	
+	picture = GFX_report_upscale_emergency
 	is_triggered_only = yes
 	
     option = {
@@ -2762,7 +2766,7 @@ country_event = {
 			limit = {
 				has_focus_tree = SIA_2023_utn_focus_tree
 			}
-			complete_national_focus = SIA_fallen_flat
+			complete_national_focus = SIA_the_world_goes_on
 			focus_unlock = yes
 		}
 		set_country_flag = mfp_dismantled
@@ -2839,9 +2843,16 @@ country_event = {
 			value = 0.1
 		}
 		add_society_development = yes
-		add_power_balance_value = {
-			id = SIA_power_balance
-			value = 0.1
+		if = {
+			limit = {
+				has_power_balance = {
+					id = SIA_power_balance
+				}
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.1
+			}
 		}
 	}
 }
@@ -2981,7 +2992,7 @@ country_event = {
         name = thai_events.68.a
 		add_power_balance_value = {
 			id = SIA_power_balance
-			value = 0.03
+			value = 0.05
 		}
 		hidden_effect = {
 			country_event = thai_events.27
@@ -3231,6 +3242,8 @@ country_event = {
 		set_country_flag = SIA_economy_mechanic_on
 		set_country_flag = SIA_environment_mechanic_on
 		activate_mission = SIA_environment_yearly_report
+		activate_mission = SIA_yearly_plan_deadline
+		hidden_effect = { add_dynamic_modifier = { modifier = SIA_monthly_environment_upkeep_dynamic_modifier } }
 		
 	}
 }
@@ -3317,7 +3330,7 @@ country_event = {
 		}
 	}
 }
-country_event = { # CODE LATER THIS THING DOESN'T WORK
+country_event = { 
     id = thai_events.85 #Yearly Environment Report
     title = thai_events.85.t
     desc = thai_events.85.d
@@ -3326,12 +3339,62 @@ country_event = { # CODE LATER THIS THING DOESN'T WORK
 	immediate = {
 		hidden_effect = {
 			country_event = { id = thai_events.85 days = 365 }
+			remove_ideas = {
+				SIA_yearly_plan_growth_idea
+				SIA_yearly_plan_balanced_idea
+				SIA_yearly_plan_environmentalism_idea
+			}
+			activate_mission = SIA_yearly_plan_deadline
 		}
-		clr_country_flag = SIA_selected_yearly_environment_plan
+		
 	}
     option = {
         name = thai_events.85.a
+		SIA_check_yearly_performance = yes
+		custom_effect_tooltip = generic_skip_one_line_tt
+		if = {
+			limit = { #Anti-Snowball Measure, You are not getting your 5% monthly progress
+				check_variable = { SIA_environment_monthly_progress > 1 }
+			}
+			if = {
+				limit = { #below 2% greater or equal to 1.5%
+					check_variable = { SIA_environment_monthly_progress > 1.49 }
+					check_variable = { SIA_environment_monthly_progress < 2 }
+				}
+				set_temp_variable = { mult_temp = 0.7 }
+				multiply_variable = { SIA_environment_monthly_progress = mult_temp }
+			}
+			else_if = {
+				limit = { #greater than 2% less than 3%
+					check_variable = { SIA_environment_monthly_progress > 1.99 }
+					check_variable = { SIA_environment_monthly_progress < 3 }
+				}
+				set_temp_variable = { mult_temp = 0.5 }
+				multiply_variable = { SIA_environment_monthly_progress = mult_temp }
+			}
+			else_if = {
+				limit = { #greater than or equal to 3% - HOW DID YOU REACH THIS, STOP SNOWBALLINGGGGGGG
+					check_variable = { SIA_environment_monthly_progress > 2.9 }
+				}
+				set_temp_variable = { mult_temp = 0.45 }
+				multiply_variable = { SIA_environment_monthly_progress = mult_temp }
+			}
+			else = { #Greater than 1%, lesser than 1.5
+				set_temp_variable = { mult_temp = 0.9 }
+				multiply_variable = { SIA_environment_monthly_progress = mult_temp }
+			}
+			custom_effect_tooltip = SIA_environmental_malus_tt
+		}
+		else = { #The Government gives you small aid to actually do the mechanic
+			add_political_power = 75
+			add_stability = -0.03
+			set_temp_variable = { income_var_temp = 15 }
+			add_income = yes
+		}
 		
+		set_variable = { SIA_environment_yearly_plan = 0 }
+		
+		SIA_change_environment_monthly_upkeep = yes
 	}
 }
 country_event = { 
@@ -3367,6 +3430,7 @@ country_event = {
     title = thai_events.101.t
     desc = thai_events.101.d
 	fire_only_once = yes
+	is_triggered_only = yes
 	trigger = {
 		tag = SIA
 		country_exists = APA
@@ -3378,6 +3442,20 @@ country_event = {
 		add_popularity = {
 			ideology = libertarian_socialist
 			popularity = 0.005
+		}
+	}
+}
+country_event = { 
+    id = thai_events.102 #A Gray Silver Lining
+    title = thai_events.102.t
+    desc = thai_events.102.d
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_events.102.a
+		add_days_mission_timeout = {
+			mission = SIA_the_pandemic_worsens_mission
+			days = 20
 		}
 	}
 }

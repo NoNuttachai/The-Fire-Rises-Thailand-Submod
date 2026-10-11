@@ -28,7 +28,21 @@ scripted_gui = {
 			SIA_environment_monthly_progress_arrow_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 			}
+			SIA_background_environment_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
+			SIA_environment_yearly_plan_icons_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+				check_variable = { SIA_environment_yearly_plan > 0 }
+			}
+			SIA_environment_yearly_plan_icons_unknown_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+				check_variable = { SIA_environment_yearly_plan = 0 }
+			}
 			#### ENGINE TAB ####
+			SIA_background_engine_visible = {
+				check_variable = { SIA_econ_tab = 2 }
+			}
 			SIA_engine_map_outline_visible = {
 				check_variable = { SIA_econ_tab = 2 }
 			}
@@ -100,6 +114,7 @@ scripted_gui = {
 			}
 			SIA_Eco_fuel_increase_specialists_click_enabled = {
 				check_variable = { SIA_specialists_var > 0 }
+				check_variable = { SIA_map_var > 0 }
 			}
 			SIA_Eco_fuel_decrease_specialists_click_enabled = {
 				check_variable = { SIA_map_var:SIA_specialists_in_state > 0 }
@@ -159,6 +174,9 @@ scripted_gui = {
 			}
 		}
 		properties = {
+			SIA_environment_yearly_plan_icons = {
+				frame = SIA_environment_yearly_plan
+			}
 			SIA_Eco_state_image = {
 				image = "GFX_SIA_state_image_[?SIA_map_var]"
 			}
