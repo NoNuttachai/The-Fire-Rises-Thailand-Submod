@@ -412,34 +412,177 @@ SIA_calculate_national_engine_level = {
 			add_to_variable = { SIA.SIA_national_engine_level_var = SIA_economic_level }
 		}
 	}
-	#stability_factor = SIA_economic_engine_stability_factor
-	#poverty_development_monthly = SIA_economic_engine_poverty_development_monthly
-	#society_development_monthly = SIA_economic_engine_society_development_monthly
-	#industrial_development_monthly = SIA_economic_engine_industrial_development_monthly
-	#consumer_goods_factor = SIA_economic_engine_consumer_goods_factor
-	#industrial_capacity_factory = SIA_economic_engine_industrial_capacity_factory
-	#production_factory_efficiency_gain_factor = SIA_economic_engine_production_factory_efficiency_gain_factor
-	#production_factory_max_efficiency_factor = SIA_economic_engine_production_factory_max_efficiency_factor
-	#income_growth_factor = SIA_economic_engine_income_growth_factor
-	#personal_expense_factor = SIA_economic_engine_personal_expense_factor
-	#production_speed_buildings_factor = SIA_economic_engine_production_speed_buildings_factor
-	
-	#Stability
+	#Stability -30 to 20
 	set_variable = { SIA_economic_engine_stability_factor = SIA_national_engine_level_var }
 	if = { 
 		limit = {
 			check_variable = { SIA_economic_engine_stability_factor > 40 }
 		}
-		subtract_from_variable = { SIA_economic_engine_stability_factor = -40 }
+		subtract_from_variable = { SIA_economic_engine_stability_factor = 40 }
 		multiply_variable = { SIA_economic_engine_stability_factor = 0.5 }
+		divide_variable = { SIA_economic_engine_stability_factor = 100 }
 	}
 	else = {
-		set_temp_variable = { forty = -40 }
-		add_to_variable = { SIA_economic_engine_stability_factor = forty }
-		multiply_variable = { SIA_economic_engine_stability_factor = 0.5 }
+		add_to_variable = { SIA_economic_engine_stability_factor = -40 }
+		multiply_variable = { SIA_economic_engine_stability_factor = 0.75 }
+		divide_variable = { SIA_economic_engine_stability_factor = 100 }
 	}
 	
+	#Poverty monthly -2.5 to 2.5
+	set_variable = { SIA_economic_engine_poverty_development_monthly = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_poverty_development_monthly > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_poverty_development_monthly = 40 }
+		multiply_variable = { SIA_economic_engine_poverty_development_monthly = 0.0625 }
+		divide_variable = { SIA_economic_engine_poverty_development_monthly = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_poverty_development_monthly = -40 }
+		multiply_variable = { SIA_economic_engine_poverty_development_monthly = 0.0625 }
+		divide_variable = { SIA_economic_engine_poverty_development_monthly = 100 }
+	}
 	
+	#Society monthly -2.5 to 2.5
+	set_variable = { SIA_economic_engine_society_development_monthly = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_society_development_monthly > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_society_development_monthly = 40 }
+		multiply_variable = { SIA_economic_engine_society_development_monthly = 0.0625 }
+		divide_variable = { SIA_economic_engine_society_development_monthly = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_society_development_monthly = -40 }
+		multiply_variable = { SIA_economic_engine_society_development_monthly = 0.0625 }
+		divide_variable = { SIA_economic_engine_society_development_monthly = 100 }
+	}
 	
+	#Industry monthly -2.5 to 2.5
+	set_variable = { SIA_economic_engine_industrial_development_monthly = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_industrial_development_monthly > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_industrial_development_monthly = 40 }
+		multiply_variable = { SIA_economic_engine_industrial_development_monthly = 0.0625 }
+		divide_variable = { SIA_economic_engine_industrial_development_monthly = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_industrial_development_monthly = -40 }
+		multiply_variable = { SIA_economic_engine_industrial_development_monthly = 0.0625 }
+		divide_variable = { SIA_economic_engine_industrial_development_monthly = 100 }
+	}
+	
+	#Consumer Goods monthly 40 to -30
+	set_variable = { SIA_economic_engine_consumer_goods_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_consumer_goods_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_consumer_goods_factor = 40 }
+		multiply_variable = { SIA_economic_engine_consumer_goods_factor = -0.75 }
+		divide_variable = { SIA_economic_engine_consumer_goods_factor = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_consumer_goods_factor = -40 }
+		multiply_variable = { SIA_economic_engine_consumer_goods_factor = -1 }
+		divide_variable = { SIA_economic_engine_consumer_goods_factor = 100 }
+	}
+	
+	#Factory Output -40 to 30
+	set_variable = { SIA_economic_engine_industrial_capacity_factory = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_industrial_capacity_factory > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_industrial_capacity_factory = 40 }
+		multiply_variable = { SIA_economic_engine_industrial_capacity_factory = 0.75 }
+		divide_variable = { SIA_economic_engine_industrial_capacity_factory = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_industrial_capacity_factory = -40 }
+		divide_variable = { SIA_economic_engine_industrial_capacity_factory = 100 }
+	}
+	
+	#Efficiency Gain -30 to 25
+	set_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = 40 }
+		multiply_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = 0.625 }
+		divide_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = -40 }
+		multiply_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = 0.75 }
+		divide_variable = { SIA_economic_engine_production_factory_efficiency_gain_factor = 100 }
+	}
+	
+	#Max Efficiency -30 to 30
+	set_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_production_factory_max_efficiency_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = 40 }
+		multiply_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = 0.75 }
+		divide_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = -40 }
+		multiply_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = 0.75 }
+		divide_variable = { SIA_economic_engine_production_factory_max_efficiency_factor = 100 }
+	}
+	
+	#Income Growth -30 to 25
+	set_variable = { SIA_economic_engine_income_growth_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_income_growth_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_income_growth_factor = 40 }
+		multiply_variable = { SIA_economic_engine_income_growth_factor = 0.625 }
+		divide_variable = { SIA_economic_engine_income_growth_factor = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_income_growth_factor = -40 }
+		multiply_variable = { SIA_economic_engine_income_growth_factor = 0.75 }
+		divide_variable = { SIA_economic_engine_income_growth_factor = 100 }
+	}
+	
+	#Personal Expense Factor 25 to -25
+	set_variable = { SIA_economic_engine_personal_expense_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_personal_expense_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_personal_expense_factor = 40 }
+		multiply_variable = { SIA_economic_engine_personal_expense_factor = -0.625 }
+		divide_variable = { SIA_economic_engine_personal_expense_factor = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_personal_expense_factor = -40 }
+		multiply_variable = { SIA_economic_engine_personal_expense_factor = -0.625 }
+		divide_variable = { SIA_economic_engine_personal_expense_factor = 100 }
+	}
+	
+	#Personal Expense Factor -40 to 40
+	set_variable = { SIA_economic_engine_production_speed_buildings_factor = SIA_national_engine_level_var }
+	if = { 
+		limit = {
+			check_variable = { SIA_economic_engine_production_speed_buildings_factor > 40 }
+		}
+		subtract_from_variable = { SIA_economic_engine_production_speed_buildings_factor = 40 }
+		divide_variable = { SIA_economic_engine_production_speed_buildings_factor = 100 }
+	}
+	else = {
+		add_to_variable = { SIA_economic_engine_production_speed_buildings_factor = -40 }
+		divide_variable = { SIA_economic_engine_production_speed_buildings_factor = 100 }
+	}
 	force_update_dynamic_modifier = yes
 }

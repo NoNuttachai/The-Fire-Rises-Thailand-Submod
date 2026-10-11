@@ -10,6 +10,7 @@ SIA_specialist_upkeep_dynamic_modifier = {
 	expense_growth_factor = SIA_specialist_upkeep_expense_growth_factor_var
 }
 SIA_economic_engine_dynamic_modifier = {
+	icon = "GFX_ETH_chinese_investments"
 	enable = {
 		always = yes
 	}
