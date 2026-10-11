@@ -100,29 +100,75 @@ SIA_utn_party_mech = {
 			}
 		}
 	}
-	SIA_honor_the_generals_legacy = {
+	SIA_launch_media_advertisements = {
 		icon = generic_crisis
 		priority = 10
 		allowed = {
 			tag = SIA
 		}
 		available = {
-			has_campaign_slot = yes
+			
 		}
 		visible = {
-			#has_completed_focus = SIA_in_his_name
+			has_completed_focus = SIA_flood_the_messages
 		}
-		cost = 50
+		cost = 25
+		days_remove = 28
+		
+		remove_effect = {
+			set_temp_variable = { change_temp = 1 }
+			SIA_change_prayut_legacy = yes
+		}
+	}
+	SIA_show_our_success = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SIA_not_the_same_as_before
+		}
+		cost = 35
+		days_remove = 42
+		
+		remove_effect = {
+			add_political_power = 25
+			set_temp_variable = { change_temp = 2.5 }
+			SIA_change_prayut_legacy = yes
+		}
+	}
+	SIA_a_safer_thailand = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = SIA_defender_on_the_street
+		}
+		cost = 25
 		days_remove = 50
-		days_re_enable = 50
 		modifier = {
-			authoritarian_democrat_drift = 0.03
-			political_power_factor = 0.15
-			war_support_factor = 0.075
+			stability_factor = 0.05
+			political_power_factor = 0.1
+			experience_gain_army = 0.1
+		}
+		complete_effect = {
+			set_temp_variable = { increase = 1 }
+			SIA_decrease_youth_status = yes
 		}
 		remove_effect = {
-			add_political_power = 50
-			
+			set_temp_variable = { change_temp = 5 }
+			SIA_change_prayut_legacy = yes
+			set_temp_variable = { increase = 1 }
+			SIA_increase_youth_status = yes
 		}
 	}
 	SIA_enforce_party_unity = {
@@ -135,7 +181,7 @@ SIA_utn_party_mech = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			has_completed_focus = SIA_capital_of_yellow_shirts
+			has_completed_focus = SIA_by_his_order
 		}
 		cost = 50
 		days_remove = 50
@@ -145,6 +191,8 @@ SIA_utn_party_mech = {
 			political_power_gain = 0.15
 		}
 		remove_effect = {
+			set_temp_variable = { change_temp = 2.5 }
+			SIA_change_prayut_legacy = yes
 			add_political_power = 75
 			add_stability = -0.02
 			
@@ -160,7 +208,7 @@ SIA_utn_party_mech = {
 			has_campaign_slot = yes
 		}
 		visible = {
-			has_completed_focus = SIA_conservative_revolution
+			has_completed_focus = SIA_true_to_form
 		}
 		cost = 50
 		days_remove = 60
@@ -173,6 +221,8 @@ SIA_utn_party_mech = {
 			industrial_capacity_factory = 0.1
 		}
 		remove_effect = {
+			set_temp_variable = { change_temp = 3 }
+			SIA_change_prayut_legacy = yes
 			add_popularity = {
 				ideology = authoritarian_democrat
 				popularity = 0.01
@@ -182,6 +232,31 @@ SIA_utn_party_mech = {
 				value = 0.03
 			}
 			add_society_development = yes
+		}
+	}
+	SIA_honor_the_generals_legacy = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_in_his_name
+		}
+		cost = 50
+		days_remove = 50
+		days_re_enable = 50
+		modifier = {
+			authoritarian_democrat_drift = 0.03
+			political_power_factor = 0.15
+			war_support_factor = 0.075
+		}
+		remove_effect = {
+			add_political_power = 50
+			
 		}
 	}
 	SIA_attract_foreign_workers = {
@@ -224,7 +299,7 @@ SIA_utn_party_mech = {
 			
 		}
 		visible = {
-			has_completed_focus = SIA_frenemy
+			has_completed_focus = SIA_conservative_revolution_focus
 		}
 		cost = 100
 		days_remove = 75
@@ -250,7 +325,7 @@ SIA_utn_party_mech = {
 		
 		}
 		visible = {
-			has_completed_focus = SIA_frenemy
+			has_completed_focus = SIA_conservative_revolution_focus
 		}
 		cost = 75
 		days_remove = 50

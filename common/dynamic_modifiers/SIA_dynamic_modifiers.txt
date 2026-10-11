@@ -9,6 +9,43 @@ SIA_specialist_upkeep_dynamic_modifier = {
 	}
 	expense_growth_factor = SIA_specialist_upkeep_expense_growth_factor_var
 }
+SIA_economic_engine_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	stability_factor = SIA_economic_engine_stability_factor
+	poverty_development_monthly = SIA_economic_engine_poverty_development_monthly
+	society_development_monthly = SIA_economic_engine_society_development_monthly
+	industrial_development_monthly = SIA_economic_engine_industrial_development_monthly
+	consumer_goods_factor = SIA_economic_engine_consumer_goods_factor
+	industrial_capacity_factory = SIA_economic_engine_industrial_capacity_factory
+	production_factory_efficiency_gain_factor = SIA_economic_engine_production_factory_efficiency_gain_factor
+	production_factory_max_efficiency_factor = SIA_economic_engine_production_factory_max_efficiency_factor
+	income_growth_factor = SIA_economic_engine_income_growth_factor
+	personal_expense_factor = SIA_economic_engine_personal_expense_factor
+	production_speed_buildings_factor = SIA_economic_engine_production_speed_buildings_factor
+	inflation_monthly_factor = SIA_economic_engine_inflation_monthly_factor
+}
+SIA_monthly_environment_upkeep_dynamic_modifier = {
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		SIA = {
+			is_puppet = yes
+		}
+	}
+	business_value_factor = SIA_monthly_environment_business_value_factor
+	income_growth_factor = SIA_monthly_environment_income_growth_factor
+	expense_growth_factor = SIA_monthly_environment_expense_growth_factor
+	farming_development_monthly = SIA_monthly_environment_farming_development_monthly
+	society_development_monthly = SIA_monthly_environment_society_development_monthly
+}
 SIA_military_mech_dynamic_modifier = {
 	enable = {
 		always = yes
@@ -151,6 +188,7 @@ SIA_renewable_economy_drive_dynamic_modifier = { #UTN Econ spirit
 		}
 	}
 	monthly_population = SIA_renewable_economy_drive_monthly_population
+	factory_energy_consumption = SIA_renewable_economy_drive_factory_energy_consumption
 	production_speed_buildings_factor = SIA_renewable_economy_drive_production_speed_buildings_factor
 	production_speed_energy_farm_factor = SIA_renewable_economy_drive_production_speed_energy_farm_factor
 	consumer_goods_factor = SIA_renewable_economy_drive_consumer_goods_factor

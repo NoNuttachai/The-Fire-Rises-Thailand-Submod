@@ -56,10 +56,11 @@ on_actions = {
 				country_event = { id = thai_events.79 days = 552 } # JULY 6 2021 The Ming Dih Chemical Factory Explosion
 				country_event = { id = thai_events.80 days = 365 } # January 1 2021 Preparing For The Future
 				country_event = { id = thai_events.81 days = 2462 } # September 28 2026 Major Flooding across Thailand
-				country_event = { id = thai_events.82 days = 31 } # January 31 2020 PM2.5 Air Pollution in Bangkok
+				country_event = { id = thai_events.82 days = 30 } # January 31 2020 PM2.5 Air Pollution in Bangkok
 				country_event = { id = thai_events.84 days = 2131 random_days = 25 } # November 2025 Southern Thailand Flood Crisis
 				country_event = { id = thai_events.86 days = 58 random_days = 15 } # March 2020 Lopburi Monkey Gang War
-				country_event = { id = thai_events.100 days = 1705 random_days = 20 } # Septemb 2024 Lopburi Monkey Gang War
+				country_event = { id = thai_events.100 days = 1705 random_days = 20 } # Septemb 2024 Moo Deng
+				country_event = { id = thai_events.102 days = 30 random_days = 64 } # February-April 2020 A Gray Silver Lining
 				
 				country_event = { id = thai_cambodia_tension.13 days = 1974 } # 28 May 2025 Cambodia Start
 				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM
@@ -94,7 +95,8 @@ on_actions = {
 				limit = {
 					has_country_flag = SIA_environment_mechanic_on
 				}
-				SIA_monthly_tick_engine = yes
+				SIA_change_environment_monthly_upkeep = yes
+				SIA_change_environment_progress_monthly = yes
 			}
 		}
 	}
@@ -269,7 +271,6 @@ on_actions = {
 			ROOT = {
 				save_global_event_target_as = losing_country
 			}
-			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
 			if = {
 				limit = {
 					event_target:losing_country = {

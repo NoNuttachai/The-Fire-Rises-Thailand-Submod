@@ -1,0 +1,121 @@
+
+
+defined_text = {
+	name = SIA_UTN_PARTY_MECH_BANNER
+	text = { #Starting UTN party mech
+		trigger = {
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
+		}
+		localization_key = SIA_utn_banner_prayut
+	}
+	text = { #UTN Pirapan Vs Suchat
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			has_country_flag = SIA_utn_party_mech_dispute
+		}
+		localization_key = SIA_utn_banner_prayutvssuchart
+	}
+	text = { #Pirapan secured nomination
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			NOT = {
+				has_country_flag = SIA_2027_elections_finished
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			check_variable = { utn_candidate = 1 }
+		}
+		localization_key = SIA_utn_banner_pirapan
+	}
+	text = { #Suchat secured nomination
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			NOT = {
+				has_country_flag = SIA_2027_elections_finished
+				has_country_flag = SIA_utn_party_mech_dispute
+			}
+			check_variable = { utn_candidate = 2 }
+		}
+		localization_key = SIA_utn_banner_suchat
+	}
+	text = { #Pirapan wins 2027
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+			has_country_flag = SIA_2027_elections_finished
+		}
+		localization_key = SIA_utn_banner_pirapan2
+	}
+	text = { #Trinuch Compromise
+		trigger = {
+			has_idea = SIA_trinuch_thienthong_hog
+		}
+		localization_key = SIA_utn_banner_trinuch_compromise
+	}
+	text = { #Stalemate
+		trigger = {
+			has_idea = SIA_suchat_chomklin_hog
+			has_country_flag = SIA_cambodia_war_stalemate
+		}
+		localization_key = SIA_utn_banner_suchat_stalemate
+	}
+}
+
+defined_text = {
+	name = SIA_utn_tug_of_war_winning
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ > 64  }
+		}
+		localization_key = SIA_tug_of_war_status_pirapan
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ < 36 }
+		}
+		localization_key = SIA_tug_of_war_status_suchart
+	}
+	text = {
+		localization_key = SIA_tug_of_war_status_tie
+	}
+}
+defined_text = {
+	name = SIA_utn_tug_of_war_winning_tt
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ > 64  }
+		}
+		localization_key = SIA_tug_of_war_status_pirapan_tt
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_pirapan_influ < 36 }
+		}
+		localization_key = SIA_tug_of_war_status_suchart_tt
+	}
+	text = {
+		localization_key = SIA_tug_of_war_status_tie_tt
+	}
+}
+defined_text = {
+	name = SIA_utn_prayut_legacy_viewed
+	text = {
+		trigger = {
+			check_variable = { SIA_prayut_legacy_var > 89.9  }
+		}
+		localization_key = SIA_prayut_legacy_view_4
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_prayut_legacy_var > 59.9 }
+		}
+		localization_key = SIA_prayut_legacy_view_3
+	}
+	text = {
+		trigger = {
+			check_variable = { SIA_prayut_legacy_var > 29.9 }
+		}
+		localization_key = SIA_prayut_legacy_view_2
+	}
+	text = {
+		localization_key = SIA_prayut_legacy_view_1
+	}
+}

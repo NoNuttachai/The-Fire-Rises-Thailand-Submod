@@ -56,9 +56,21 @@ defined_text = {
 	}
 }
 defined_text = {
+	name = GrabEnvCurProgTT
+	text = {
+		localization_key = SIA_environment_current_progress_actual
+	}
+}
+defined_text = {
 	name = SIA_economy_help_tt_dyn
 	text = {
 		localization_key = SIA_economy_help_[?SIA_econ_tab]
+	}
+}
+defined_text = {
+	name = SIA_environment_active_plan
+	text = {
+		localization_key = SIA_yearly_plan_[?SIA_environment_yearly_plan]
 	}
 }
 defined_text = {

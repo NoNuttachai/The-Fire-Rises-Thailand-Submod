@@ -16,6 +16,7 @@ SIA_debug_prayut_terminal = {
 				days = 356 
 			}
 		}
+		
 	}
 	SIA_side_with_opposition = {
 		name = "(DEBUG) Side with Opposition"

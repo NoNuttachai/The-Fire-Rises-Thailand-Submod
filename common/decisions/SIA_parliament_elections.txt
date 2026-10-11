@@ -139,7 +139,7 @@ SIA_parliament_elections = {
 		days_remove = 6
 		complete_effect = {
 			set_temp_variable = { target = 11 }
-			set_temp_variable = { vote_change = 2 }
+			set_temp_variable = { vote_change = 3.5 }
 			SIA_elections_increase_votes_by_undecided = yes
 			set_country_flag = SIA_active_election_decision
 		}
@@ -317,7 +317,7 @@ SIA_parliament_elections = {
 		complete_effect = {
 			add_political_power = 85
 			set_temp_variable = { target = SIA_election_playing_as }
-			set_temp_variable = { vote_change = -3 }
+			set_temp_variable = { vote_change = -1.5 }
 			SIA_elections_increase_votes_by_undecided = yes
 			set_country_flag = SIA_active_election_decision
 		}
@@ -346,7 +346,7 @@ SIA_parliament_elections = {
 		}
 		remove_effect = {
 			set_temp_variable = { target = 11 }
-			set_temp_variable = { vote_change = 3 }
+			set_temp_variable = { vote_change = 5 }
 			SIA_elections_increase_votes_by_undecided = yes
 			clr_country_flag = SIA_active_election_decision
 		}

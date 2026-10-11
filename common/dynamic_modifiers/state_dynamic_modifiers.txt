@@ -61,7 +61,7 @@ SIA_southern_fire_state_modifier = {
 	local_building_slots_factor = -0.3
 }
 SIA_myanmar_refugees_state_modifier = {
-	icon = "GFX_idea_SIA_SouthernFire"
+	icon = "GFX_idea_SIA_Myanmar_Refugees"
 	enable = { 
 		SIA = {
 			controls_state = 1497
