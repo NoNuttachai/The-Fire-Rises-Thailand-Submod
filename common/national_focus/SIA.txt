@@ -52,9 +52,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SIA_three_fingers_texticon
 			custom_effect_tooltip = SIA_raise_our_three_fingers_tt
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 			country_event = thai_events.4
 			custom_effect_tooltip = generic_skip_one_line_tt
+
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = -0.05
@@ -64,8 +66,13 @@ focus_tree = {
 				SIA_increase_economic_engine = yes
 				remove_ideas = {
 					SIA_covid_idea
+					SIA_oil_crisis
+					SIA_oil_crisis_1
+					SIA_oil_crisis_2
+					SIA_oil_crisis_3
 				}
 				clr_country_flag = SIA_coronavirus_ongoing
+				clr_country_flag = SIA_oil_crisis_ongoing
 			}
 		}
 	}
