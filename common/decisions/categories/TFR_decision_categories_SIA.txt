@@ -80,8 +80,8 @@ SIA_oil_crisis_cat = {
 		original_tag = SIA
 	}
 	visible = {
-		original_tag = SIA
 		has_country_flag = SIA_oil_crisis_ongoing
+		NOT = { has_completed_focus = SIA_raise_our_three_fingers }
 	}
 	visible_when_empty = yes
 }

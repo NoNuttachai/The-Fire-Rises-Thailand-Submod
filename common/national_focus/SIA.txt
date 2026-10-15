@@ -66,13 +66,8 @@ focus_tree = {
 				SIA_increase_economic_engine = yes
 				remove_ideas = {
 					SIA_covid_idea
-					SIA_oil_crisis
-					SIA_oil_crisis_1
-					SIA_oil_crisis_2
-					SIA_oil_crisis_3
 				}
 				clr_country_flag = SIA_coronavirus_ongoing
-				clr_country_flag = SIA_oil_crisis_ongoing
 			}
 		}
 	}
@@ -373,6 +368,16 @@ focus_tree = {
 			add_popularity = {
 				ideology = social_democrat
 				popularity = 0.025
+			}
+			
+			clr_country_flag = SIA_oil_crisis_ongoing
+			hidden_effect = {
+				remove_ideas = {
+					SIA_oil_crisis
+					SIA_oil_crisis_1
+					SIA_oil_crisis_2
+					SIA_oil_crisis_3
+				}
 			}
 		}
 	}
