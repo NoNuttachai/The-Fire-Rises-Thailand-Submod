@@ -303,7 +303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_restore_confidence
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_Restore_Confidence
 		x = -1
 		y = 1
 		cost = 4
@@ -335,7 +335,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_lets_talk_business
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_LetsTalkBusiness
 		x = 1
 		y = 1
 		cost = 4
@@ -384,7 +384,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_exchanging_note
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_ExchangingNote
 		x = 1
 		y = 1
 		cost = 4
@@ -576,12 +576,6 @@ focus_tree = {
 		
 		completion_reward = {
 			add_war_support = 0.05
-			if = {
-				limit = {
-					has_idea = SIA_pushback_against_the_establishment_1
-				}
-				remove_ideas = SIA_pushback_against_the_establishment_1
-			}
 			increase_police = yes
 		}
 	}

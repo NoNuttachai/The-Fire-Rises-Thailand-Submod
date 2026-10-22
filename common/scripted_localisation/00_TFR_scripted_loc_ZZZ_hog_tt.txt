@@ -1062,12 +1062,30 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = SIA
+			has_idea = SIA_prayut_chan-o-cha_advisor
+			NOT = { has_completed_focus = SIA_prayut_triumphant }
+		}
+		localization_key = SIA_hog_prayut_chan
+	}
+	text = {
+		trigger = {
+			tag = SIA
 			OR = {
 				has_idea = SIA_prayut_chan-o-cha_advisor
 				has_idea = SIA_prayut_chan_o_cha_utn_hog
 			}
+			has_completed_focus = SIA_prayut_triumphant
+			NOT = { has_focus_tree = SIA_2023_utn_focus_tree }
 		}
-		localization_key = SIA_hog_prayut_chan
+		localization_key = SIA_hog_prayut_chan_post_protest
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_prayut_chan_o_cha_utn_hog
+			has_focus_tree = SIA_2023_utn_focus_tree
+		}
+		localization_key = SIA_hog_prayut_chan_2023
 	}
 	text = {
 		trigger = {
@@ -1124,5 +1142,12 @@ defined_text = {
 			has_idea = SIA_suchat_chomklin_hog
 		}
 		localization_key = SIA_suchat_chomklin_hog
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_trinuch_thienthong_hog
+		}
+		localization_key = SIA_trinuch_thienthong_hog
 	}
 }

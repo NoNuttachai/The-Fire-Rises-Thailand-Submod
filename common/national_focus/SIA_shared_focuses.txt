@@ -12,7 +12,7 @@
 # MILITARY
 shared_focus = {
 	id = SIA_presentation
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_investigate_military_performance
 	x = -5
 	y = 0
 	cost = 4
@@ -354,7 +354,7 @@ shared_focus = {
 #Land
 shared_focus = {
 	id = SIA_praetorian_guard
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_our_praetorian_guard
 	x = 0
 	y = 1
 	cost = 4
@@ -390,7 +390,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_improve_officer_training
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_improve_officer_training
 	x = -3
 	y = 1
 	cost = 4
@@ -425,7 +425,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_foreign_arms
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_arms_from_overseas
 	x = 0
 	y = 1
 	cost = 4
@@ -457,7 +457,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_with_human_face
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_army_with_a_human_face
 	x = 3
 	y = 1
 	cost = 4
@@ -523,7 +523,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_valiant_soldiers
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_valiant_soldiers
 	x = -1
 	y = 1
 	cost = 4
@@ -567,7 +567,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_armored_core
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_develop_our_armored_core
 	x = 1
 	y = 1
 	cost = 4
@@ -620,7 +620,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_showcase
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_showcase_our_history
 	x = 1
 	y = 1
 	cost = 4
@@ -651,7 +651,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_weapons_of_war
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_unleash_our_brightest_minds
 	x = 0
 	y = 2
 	cost = 4
@@ -723,7 +723,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_on_a_rescue
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_humanitarian_heros
 	x = 0
 	y = 2
 	cost = 4

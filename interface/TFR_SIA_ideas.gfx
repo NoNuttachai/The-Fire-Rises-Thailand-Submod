@@ -996,6 +996,21 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SIA/SIA_suchat_chomklin.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_hog_SIA_SIA_trinuch_thienthong"
+		texturefile = "gfx/leaders/SIA/SIA_trinuch_thienthong.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hog_SIA_SIA_prayut_2"
+		texturefile = "gfx/leaders/SIA/SIA_prayut_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hog_SIA_SIA_prayut_uniform"
+		texturefile = "gfx/leaders/SIA/SIA_prayut_uniform.png"
+		legacy_lazy_load = no
+	}
 	#for paths in bookmark
 	spriteType = {
 		name = "GFX_path_utn_icon"

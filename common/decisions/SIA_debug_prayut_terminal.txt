@@ -198,6 +198,14 @@ SIA_debug_prayut_terminal = {
 			add_ideas = SIA_prayut_chan-o-cha_advisor
 		}
 	}
+	SIA_PM_change_add_prayut_utn = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
+		complete_effect = {
+			add_ideas = SIA_prayut_chan_o_cha_utn_hog
+		}
+	}
 	SIA_PM_change_add_prawit = {
 		visible = {
 			has_country_flag = show_pm_list

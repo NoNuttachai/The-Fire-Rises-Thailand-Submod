@@ -2634,7 +2634,7 @@ ideas = {
 				SIA_fuel_value_temporary_modifier = 0.1
 			}
 		}
-		SIA_support_next_gens = {
+		SIA_support_next_gens_idea = {
 			allowed = {
 				original_tag = SIA
 			}

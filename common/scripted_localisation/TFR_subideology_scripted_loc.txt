@@ -2065,9 +2065,9 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = SIA
-			has_country_leader_ideology = hybrid_regime
+			has_country_leader_ideology = national_conservativism_auth
 		}
-		localization_key = hybrid_regime_SIA
+		localization_key = national_conservativism_auth_SIA
 	}
 }
 

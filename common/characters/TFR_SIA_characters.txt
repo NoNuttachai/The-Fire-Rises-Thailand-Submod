@@ -59,7 +59,7 @@ characters={
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
-			ideology = hybrid_regime
+			ideology = national_conservativism_auth
 			traits = {
 				SIA_Vajiralongkorn
 			}

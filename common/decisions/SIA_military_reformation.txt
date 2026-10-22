@@ -77,7 +77,7 @@ SIA_military_reformation = {
 			
 		}
 		visible = {
-			
+			is_debug = yes
 		}
 		
 		complete_effect = {

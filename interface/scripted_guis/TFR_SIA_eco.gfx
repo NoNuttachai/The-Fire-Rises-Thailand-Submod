@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_SIA_approval_map_outline"
+		texturefile = "gfx/interface/SIA/Economy/approval_outline.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_box_toggle"
+		texturefile = "gfx/interface/SIA/Economy/approval_box_toggle.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_box_outline"
+		texturefile = "gfx/interface/SIA/Economy/approval_box_outline.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_engine_map_outline"
 		texturefile = "gfx/interface/SIA/Economy/engine_map_outline.png"
 	}
@@ -93,6 +105,26 @@ spriteTypes = {
 		effectfile = "gfx/FX/progress.shader"
 		
 	}
+	progressbartype = {
+		name = "GFX_SIA_approval_bar_fill"
+		texturefile1 = "gfx/interface/SIA/Economy/approval_box_color.png"
+		texturefile2 = "gfx/interface/SIA/Economy/approval_box_color_red.png"
+		size = { x = 222 y = 35 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+		
+	}
+	progressbartype = {
+		name = "GFX_SIA_local_leader_strength_bar_fill"
+		texturefile1 = "gfx/interface/SIA/Economy/approval_local_color.png"
+		texturefile2 = "gfx/interface/SIA/Economy/approval_bangkok_color.png"
+		size = { x = 222 y = 35 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+		
+	}
 	spriteType = {
 		name = "GFX_SIA_box_outline"
 		texturefile = "gfx/interface/SIA/Economy/box_outline.png"
@@ -177,6 +209,46 @@ spriteTypes = {
 		steps = 100 
 		horizontal = no
 		effectfile = "gfx/FX/progress.shader"
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_bangkok"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_bangkok.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_central"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_central.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_east"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_east.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_north"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_north.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_northeast"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_northeast.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_pattani"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_pattani.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_south"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_south.png"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_colored_engine_map_west"
+		texturefile = "gfx/interface/SIA/Economy/colored_engine_map_west.png"
+		noOfFrames = 5
 	}
 	### State images
 	spriteType = {

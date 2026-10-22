@@ -774,7 +774,7 @@ focus_tree = {
 			SIA_change_prayut_legacy = yes
 			set_temp_variable = { debt_var_temp = -45 }
 			add_debt = yes
-			set_temp_variable = { society_development_var_temp = -0.075 }
+			add_stability = -0.05
 			add_society_development = yes
 			add_timed_idea = {
 				idea = SIA_cut_cut_cut
@@ -873,8 +873,10 @@ focus_tree = {
 		prerequisite = { focus = SIA_our_moral_obligations }
 		
 		completion_reward = {
+			SIA_increase_utn_pprp_relations = yes
 			set_temp_variable = { change_temp = 2.5 }
 			SIA_change_prayut_legacy = yes
+			SIA_utn_start_tug_of_war_initiative = yes
 			hidden_effect = {
 				5 = {
 					set_temp_variable = { change_temp = 0.35 }
@@ -900,11 +902,8 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = SIA_unlock_isan_decisions_tt
-			add_to_variable = { SIA_suchart_booster = 1 }
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = SIA_tug_of_war_suchart_booster
-			custom_effect_tooltip = generic_skip_one_line_tt
-			SIA_increase_utn_pprp_relations = yes
+			
+			
 		}
 	}
 	#Right side
@@ -978,7 +977,10 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = thai_prayut.14
-			custom_effect_tooltip = SIA_tug_of_war_pirapan_booster
+			set_temp_variable = { change_temp = 5 }
+			SIA_change_prayut_legacy = yes
+			set_temp_variable = { target = 1 }
+			SIA_utn_start_tug_of_war_initiative = yes
 			unlock_decision_tooltip = SIA_enforce_party_unity
 		}
 	}
@@ -1002,6 +1004,17 @@ focus_tree = {
 		completion_reward = {
 			country_event = thai_prayut.16
 			custom_effect_tooltip = SIA_tug_of_war_suchart_booster
+			hidden_effect = {
+				4 = {
+					set_temp_variable = { change_temp = 1 }
+					SIA_add_economic_level = yes
+					
+				}
+			}
+			effect_tooltip = {
+				set_temp_variable = { SIA_map_var = 4 }
+				SIA_add_economic_level = yes
+			}
 		}
 	}
 	focus = {
@@ -1053,6 +1066,8 @@ focus_tree = {
 		
 		completion_reward = {
 			add_war_support = 0.05
+			set_temp_variable = { debt_var_temp = 4.25 }
+			add_debt = yes
 			add_to_variable = { SIA_conservative_revolution_party_popularity_stability_factor_var = 0.025 }
 			add_to_variable = { SIA_conservative_revolution_war_support_weekly_var = 0.0015 }
 			add_to_variable = { SIA_conservative_revolution_conscription_factor_var = 0.05 }
@@ -1116,7 +1131,7 @@ focus_tree = {
 		
 		completion_reward = {
 			add_timed_idea = {
-				idea = SIA_support_next_gens
+				idea = SIA_support_next_gens_idea
 				days = 500
 			}
 			

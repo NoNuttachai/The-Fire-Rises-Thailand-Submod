@@ -3,6 +3,7 @@ spriteTypes = {
 	# 1. Unused
 	# 2. Initial Tree
 	# 3. Prayut 2021-2023
+	# 4. Shared
 	
 	
 	### 1. Unused ###
@@ -193,5 +194,59 @@ spriteTypes = {
 	SpriteType = {
         name = "GFX_goal_SIA_prayut_2021_SIA_stop_the_decline"
         texturefile = "gfx/interface/goals/SIA/prayut2021/SIA_stop_the_decline.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_Restore_Confidence"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/Restore_Confidence.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_ExchangingNote"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/ExchangingNote.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_LetsTalkBusiness"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/LetsTalkBusiness.png"
+    }
+	
+	### 4. Shared ###
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_arms_from_overseas"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_arms_from_overseas.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_army_with_a_human_face"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_army_with_a_human_face.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_develop_our_armored_core"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_develop_our_armored_core.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_humanitarian_heros"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_humanitarian_heros.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_improve_officer_training"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_improve_officer_training.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_investigate_military_performance"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_investigate_military_performance.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_our_praetorian_guard"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_our_praetorian_guard.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_showcase_our_history"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_showcase_our_history.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_unleash_our_brightest_minds"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_unleash_our_brightest_minds.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_valiant_soldiers"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_valiant_soldiers.png"
     }
 }

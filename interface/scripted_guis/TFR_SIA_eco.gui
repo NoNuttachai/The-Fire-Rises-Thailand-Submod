@@ -53,10 +53,10 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "SIA_engine_box_text"
-				position = { x = 225 y = 100 }
+				position = { x = 195 y = 100 }
 				font = "VCR02_14"
 				maxwidth = 460
-				text = "Engine"
+				text = "Economic Engine"
 				format = left
 			}
 			instantTextBoxType = {
@@ -64,7 +64,7 @@ guiTypes = {
 				position = { x = 345 y = 100 }
 				font = "VCR02_14"
 				maxwidth = 250
-				text = "Centralization"
+				text = "Area Approval"
 				format = left
 			}
 			iconType = {
@@ -128,11 +128,6 @@ guiTypes = {
 				text = SIA_environment_lastyear_progress
 				format = center
 			}
-		}
-		containerWindowType = {
-			name = "SIA_centralization_container"
-			position = { x = 0 y = 150 }
-			
 		}
 		containerWindowType = {
 			name = "SIA_engine_container"
@@ -223,12 +218,7 @@ guiTypes = {
 				spriteType = "GFX_SIA_engine_map_pattani"
 				pdx_tooltip = "SIA_Pattani_tt"
 			}
-			iconType = {
-				name = "SIA_engine_map_outline"
-				position = { x = 28 y = 10 }
-				spriteType = "GFX_SIA_engine_map_outline"
-				alwaystransparent = yes
-			}
+			
 			buttonType = {
 				name = "SIA_Eco_fuel_increase_specialists"
 				position = { x = 210 y = 235 }
@@ -293,6 +283,155 @@ guiTypes = {
 				maxwidth = 150
 				text = SIA_national_engine_value
 				format = center
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "SIA_approval_container"
+			position = { x = 0 y = 150 }
+			
+			iconType = {
+				name = "SIA_approval_tab_outline"
+				position = { x = 22 y = 10 }
+				spriteType = "GFX_SIA_approval_map_outline"
+				alwaystransparent = yes
+			}
+			buttonType = {
+				name = "SIA_approval_box_toggle_mode_map"
+				position = { x = 139 y = 239 }
+				spriteType = "GFX_SIA_approval_box_toggle"
+				pdx_tooltip = SIA_approval_mode_switch_tt
+			}
+			
+			iconType = {
+				name = "SIA_Eco_area_north_colored"
+				position = { x = 42 y = 13 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_north"
+				pdx_tooltip = "SIA_North_gui_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_central_colored"
+				position = { x = 66 y = 58 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_central"
+				pdx_tooltip = "SIA_Central_gui_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_bangkok_colored"
+				position = { x = 79 y = 116 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_bangkok"
+				pdx_tooltip = "SIA_BK_gui_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_east_colored"
+				position = { x = 94 y = 113 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_east"
+				pdx_tooltip = "SIA_East_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_northeast_colored"
+				position = { x = 95 y = 48 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_northeast"
+				pdx_tooltip = "SIA_Northeast_gui_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_west_colored"
+				position = { x = 54 y = 60 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_west"
+				pdx_tooltip = "SIA_West_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_south_colored"
+				position = { x = 51 y = 170 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_south"
+				pdx_tooltip = "SIA_South_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_Eco_area_pattani_colored"
+				position = { x = 96 y = 240 }
+				spriteType = "GFX_SIA_approval_colored_engine_map_pattani"
+				pdx_tooltip = "SIA_Pattani_tt"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_engine_map_outline"
+				position = { x = 28 y = 10 }
+				spriteType = "GFX_SIA_engine_map_outline"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "SIA_approval_area_selected"
+				position = { x = 185 y = 15 }
+				font = "VCR02_20"
+				maxwidth = 500
+				text = SIA_selected_state_approval
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "SIA_approval_area_text"
+				position = { x = 230 y = 50 }
+				font = "VCR02_16"
+				maxwidth = 200
+				text = SIA_approval_area_text
+				format = center
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_approval_box_outline"
+				position = { x = 225 y = 100 }
+				spriteType = "GFX_SIA_approval_box_outline"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_approval_box_fill"
+				position = { x = 226 y = 100 }
+				spriteType = "GFX_SIA_approval_bar_fill"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "SIA_local_leader_text"
+				position = { x = 230 y = 155 }
+				font = "VCR02_16"
+				maxwidth = 200
+				text = SIA_local_leader_strength_text
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "SIA_bangkok_progress_vs_prosperity_text"
+				position = { x = 215 y = 155 }
+				font = "VCR02_16"
+				maxwidth = 250
+				text = SIA_bangkok_progress_vs_prosperity_text
+				format = center
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_local_leader_strength_box_outline"
+				position = { x = 225 y = 200 }
+				spriteType = "GFX_SIA_approval_box_outline"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_local_leader_strength_box_fill"
+				position = { x = 226 y = 200 }
+				spriteType = "GFX_SIA_local_leader_strength_bar_fill"
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "SIA_approval_nationwide_text"
+				position = { x = 25 y = 290 }
+				font = "VCR02_16"
+				maxwidth = 500
+				text = SIA_approval_nationwide_text
+				format = left
 				alwaystransparent = yes
 			}
 		}

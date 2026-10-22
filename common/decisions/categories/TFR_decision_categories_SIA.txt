@@ -13,7 +13,7 @@ SIA_debug_prayut_terminal = {
 }
 SIA_parliament_category = {
 	icon = GFX_decision_cat_SIA_parliament
-	priority = 12
+	priority = 30
 	visible_when_empty = yes
 	scripted_gui = SIA_parliament_gui
 	allowed = {
@@ -22,6 +22,29 @@ SIA_parliament_category = {
 	visible = {
 		original_tag = SIA
 	}
+}
+SIA_Economy_category = {
+	icon = GFX_decision_cat_SIA_parliament
+	priority = 20
+	scripted_gui = SIA_Economy_gui
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_economy_mechanic_on
+	}
+	visible_when_empty = yes
+}
+SIA_military_reformation = {
+	icon = GFX_decision_cat_SIA_parliament
+	priority = 18
+	allowed = {
+		original_tag = SIA
+	}
+	visible = {
+		has_country_flag = SIA_active_military_mech
+	}
+	visible_when_empty = yes
 }
 SIA_bop_prayut = {
 	icon = GFX_decision_cat_SIA_parliament
@@ -124,29 +147,6 @@ SIA_saudi_civil_war = {
 				country_exists = ARR
 			}
 		}
-	}
-	visible_when_empty = yes
-}
-SIA_Economy_category = {
-	icon = GFX_decision_cat_SIA_parliament
-	priority = 15
-	scripted_gui = SIA_Economy_gui
-	allowed = {
-		original_tag = SIA
-	}
-	visible = {
-		has_country_flag = SIA_economy_mechanic_on
-	}
-	visible_when_empty = yes
-}
-SIA_military_reformation = {
-	icon = GFX_decision_cat_SIA_parliament
-	priority = 15
-	allowed = {
-		original_tag = SIA
-	}
-	visible = {
-		has_country_flag = SIA_active_military_mech
 	}
 	visible_when_empty = yes
 }

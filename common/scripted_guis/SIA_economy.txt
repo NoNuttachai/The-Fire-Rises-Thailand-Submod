@@ -44,7 +44,10 @@ scripted_gui = {
 				check_variable = { SIA_econ_tab = 2 }
 			}
 			SIA_engine_map_outline_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_state_image_visible = {
 				check_variable = { SIA_econ_tab = 2 }
@@ -56,29 +59,53 @@ scripted_gui = {
 				check_variable = { SIA_econ_tab = 2 }
 			}
 			SIA_Eco_area_north_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_central_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_bangkok_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_east_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_northeast_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_west_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_south_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
 			}
 			SIA_Eco_area_pattani_button_visible = {
-				check_variable = { SIA_econ_tab = 2 }
-			}
+				OR = {
+					check_variable = { SIA_econ_tab = 2 }
+					check_variable = { SIA_econ_tab = 3 }
+				}
+			}	
 			SIA_Eco_fuel_increase_specialists_visible = {
 				check_variable = { SIA_econ_tab = 2 }
 			}
@@ -124,7 +151,126 @@ scripted_gui = {
 					has_country_flag = SIA_activate_rest_of_engine
 				}
 			}
-			#### CENTRALIZATION TAB ####
+			#### APPROVAL TAB ####
+			SIA_Eco_area_bangkok_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 1 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_north_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 2 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_central_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 3 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_east_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 4 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_northeast_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 5 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_west_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 6 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_south_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 7 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_Eco_area_pattani_colored_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				OR = {
+					AND = {
+						check_variable = { SIA_approval_map_mode = 1 }
+						check_variable = { SIA_map_var = 8 }
+					}
+					check_variable = { SIA_approval_map_mode = 2 }
+				}
+			}
+			SIA_approval_tab_outline_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_approval_box_toggle_mode_map_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_approval_area_selected_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_approval_area_text_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_approval_box_outline_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_local_leader_text_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				NOT = { check_variable = { SIA_map_var = 1 } }
+			}
+			SIA_bangkok_progress_vs_prosperity_text_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+				check_variable = { SIA_map_var = 1 }
+			}
+			SIA_local_leader_strength_box_outline_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_approval_box_fill_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_local_leader_strength_box_fill_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_approval_nationwide_text_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			
+			
+			
+			
 			
 		}
 		effects = {
@@ -172,8 +318,53 @@ scripted_gui = {
 				add_to_variable = { SIA_specialists_var = 1 }
 				SIA_add_specialists_effect = yes
 			}
+			SIA_approval_box_toggle_mode_map_click = {
+				if = {
+					limit = {
+						check_variable = { SIA_approval_map_mode = 1 }
+					}
+					set_variable = { SIA_approval_map_mode = 2 }
+				
+				}
+				else = {
+					set_variable = { SIA_approval_map_mode = 1 }
+				}
+				
+			}
 		}
 		properties = {
+			SIA_Eco_area_bangkok_colored = {
+				frame = 1:approval_level
+			}
+			SIA_Eco_area_north_colored = {
+				frame = 2:approval_level
+			}
+			SIA_Eco_area_central_colored = {
+				frame = 3:approval_level
+			}
+			SIA_Eco_area_east_colored = {
+				frame = 4:approval_level
+			}
+			SIA_Eco_area_northeast_colored = {
+				frame = 5:approval_level
+			}
+			SIA_Eco_area_west_colored = {
+				frame = 6:approval_level
+			}
+			SIA_Eco_area_south_colored = {
+				frame = 7:approval_level
+			}
+			SIA_Eco_area_pattani_colored = {
+				frame = 8:approval_level
+			}
+			SIA_approval_box_fill = {
+				frame = SIA_map_var:SIA_state_approval
+			}
+			SIA_local_leader_strength_box_fill = {
+				frame = SIA_map_var:SIA_state_local_strength
+			}
+			
+			
 			SIA_environment_yearly_plan_icons = {
 				frame = SIA_environment_yearly_plan
 			}

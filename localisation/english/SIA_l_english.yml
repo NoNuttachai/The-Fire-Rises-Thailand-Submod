@@ -35,8 +35,8 @@
  SIA_rt_movement: "§RSWT/RT§!"
  SIA_rt_movement_long: "§RSocialist Workers Thailand / Restart Thailand Movement§!"
 
- hybrid_regime_SIA: "Stratocratic Conservatism"
- SIA_hybrid_regime_desc: "\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\n§YStratocratic Conservatism§! follows the idea that a strong figure from the military can ensure stability within the country and is essential to maintaining national unity and safeguarding tradition, placing strong emphasis on the nation, religion and monarchy.\n\nA stratocratic conservative government differs from a military junta or an outright dictatorship in that democratic institutions are retained to legitimize authority and maintain public participation, but they are still skewed to serve the government"
+ national_conservativism_auth_SIA: "National Conservatism"
+ SIA_national_conservativism_auth_desc: "\n\n\n\n£GFX_SIA_national_conservatism\n\n\n\n\n\n§YThai National Conservatism§! is very Thai and very Southeast Asian."
  
  ###National Focuses###
  SIA_future_forward_on_trial: "Future Forward on Trial"
@@ -725,7 +725,7 @@
  SIA_royal_navy_of_thailand_expansion_boost: "Massive Naval Expansion Funding"
  SIA_finish_the_work_fuel_growth: "Finishing The Work"
  SIA_streamlined_bureaucracy: "Streamlined Bureaucracy"
- SIA_support_next_gens: "Supporting The Next Generation"
+ SIA_support_next_gens_idea: "Supporting The Next Generation"
  SIA_cut_cut_cut: "Debt Cleanup Strategy"
  SIA_advancing_environmental_progress: "Advancing Environmental Progress"
  SIA_pollution_woes: "Pollution Woes"
@@ -1334,6 +1334,10 @@
  thai_prayut.34.d: ""
  thai_prayut.34.a: ""
  
+ thai_prayut.35.t: "What Comes After Victory"
+ thai_prayut.35.d: ""
+ thai_prayut.35.a: "The Infighting Continues"
+ 
  thai_cambodia_tension.1.t: "Rising Seriousness of the Recent Border Conflict"
  thai_cambodia_tension.1.d: "Our national sovereignty is under threat by Cambodia.\n\nWe have received reports that Cambodian drones (UAVs) and infantry opened fire approximately 200 meters east of the Thai-administered Prasat Ta Muen Thom temple. Cambodian forces subsequently launched BM-21 multiple rocket launchers toward Prasat Don Tuan near residential areas, while an attempted infantry advance near Ta Kwai Temple was repelled by Thai artillery counter-fire. \n\nCivilian areas have been severely impacted. A BM-21 rocket struck a PTT gas station and convenience store in Sisaket province, killing eight civilians including children and injuring thirteen others. Furthermore, Phanom Dong Rak Hospital in Surin was hit by rocket fire, damaging the grounds, injuring personnel, and forcing an emergency evacuation of patients to underground bunkers. Directing artillery strikes at hospitals is a direct violation of the Geneva Conventions.  A war crime.\n\nAs a result of ongoing bombardment, more than 100,000 residents across border provinces are being evacuated. \n\nOur troops shall retaliate and defend our territory."
  thai_cambodia_tension.1.a: "Mobilize against the Khmer warmongers!"
@@ -1504,6 +1508,7 @@
  SIA_speed_up_thing_1: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!"
  SIA_speed_up_thing_2: "Will speed up $WHAT$:\n£training_speed_texticon  §Y$THING1$§! by §H$NUMBER1$§!\n§GOR§!\n£training_speed_texticon  §Y$THING2$§! by §H$NUMBER2$§!\nDepending on which one is active."
  SIA_three_fingers_texticon: "£SIA_THREE_FINGERS_MOVEMENT \n\n"
+ SIA_game_over_tt: "§YUnfortunately you have lost, there is §Rno content§! beyond this and it is highly recommended to go back in time and actually §Gsurvive§! this time§!"
  
  SIA_forpol_unlocked_tt: "The §YForeign Policy§! Branch will be §Gunlocked§!"
  SIA_environmental_malus_tt: "§gDue to §Rexcessive regulations and measures§!, several groups has §Rlobbied and pushed back§! §Genvironmental policies§! and has §Yreduced§! §OMonthly Progress§! to §Y[?mult_temp|0%]§! of its original value§!"
@@ -1979,8 +1984,11 @@
  SIA_yearly_plan_deadline_desc: "If no plan is decided within two weeks, we will automatically pick a §YBalanced Approach§! for this §Yyear§!"
  SIA_yearly_plan_deadline_tt: "§LA §YBalanced Approach§! is chosen for this year§!"
  SIA_yearly_plan_growth: "§YYearly Plan§! - Prioritize Economic Growth"
+ SIA_yearly_plan_growth_2: "§YYearly Plan§! - Prioritize Economic Growth"
  SIA_yearly_plan_balanced: "§YYearly Plan§! - Balanced Approach"
+ SIA_yearly_plan_balanced_2: "§YYearly Plan§! - Balanced Approach"
  SIA_yearly_plan_promote_environmentalism: "§YYearly Plan§! - Focus on Environmentalism"
+ SIA_yearly_plan_promote_environmentalism_2: "§YYearly Plan§! - Focus on Environmentalism"
  SIA_vehicle_and_traffic_regulations: "§GEnvironment§! - Vehicle and Traffic Regulations"
  SIA_campaign_against_crop_residue_burning: "§GEnvironment§! - Campaign Against Crop Residue Burning"
  SIA_implement_environmental_policies: "§GEnvironment§! - Implement Environmental Policies"
@@ -2110,6 +2118,11 @@
  SIA_tug_of_war_status_suchart_tt: "If this continues, §PSuchart§! will §Gwin§! and he will be the §Ycandidate§! for the upcoming elections"
  SIA_tug_of_war_pirapan_booster: "When §YPrayut§! steps down, §BPirapan§! will gain a §Gbetter§! §Ystarting advantage§! in the §gTug Of War§!"
  SIA_tug_of_war_suchart_booster: "When §YPrayut§! steps down, §PSuchart§! will gain a §Gbetter§! §Ystarting advantage§! in the §gTug Of War§!"
+ SIA_tug_of_war_start_tt: "With the §YCambodian War§! now over and General Prayut §Rstepping down§!, an §Rinternal party conflict§! has started between §BPirapan§! and §PSuchart§!\n §g-The Tug of War Mechanic will activate in the £GFX_united_thai_nation §BUTN Party Machine§! as the two individuals fight for influence over the party.§!"
+ SIA_pirapan_boost_tt: "§BPirapan§! has taken the §Cinitiative§! §Y[?SIA_pirapan_booster]§! times, giving him an additional §Y[?boost_temp]%§! influence in the §Ytug of war§!"
+ SIA_suchart_boost_tt: "§PSuchart§! has taken the §Cinitiative§! §Y[?SIA_suchart_booster]§! times, giving him an additional §Y[?boost_temp]%§! influence in the §Ytug of war§!"
+ SIA_tug_of_war_legacy_booster_1: " §g-Additionally, with §YPrayut§! viewed with §CReverence§!, §BPirapan§! has gained an additional §Y15% influence§! at the start§!"
+ SIA_tug_of_war_legacy_booster_2: " §g-Additionally, with §YPrayut§! viewed with §GAdmiration§!, §BPirapan§! has gained an additional §Y15% influence§! at the start§!"
  SIA_tug_of_war_variable_breakdown: "§B[?SIA_pirapan_influ]§!-§P[?SIA_suchart_influ]§!"
  SIA_tug_of_war_pirapan_increase: "§BPirapan's§! §YInfluence§! will change by [?influ_change|-+]"
  SIA_tug_of_war_suchart_increase: "§PSuchart's§! §YInfluence§! will change by [?influ_change|-+]"
@@ -2447,6 +2460,7 @@
  
  SIA_engine_unlock_tt: "§gIt's time to look at our country and monitor its development, the §YEngine§! §CNational Spirit§! will now change §Ydynamically§! as §YEngine Level§! improves across the country§!"
  SIA_selected_state: "Selected Area: [SIA_selected_econ_area]"
+
  SIA_selected_state_fuel: "§GFuel§!: §Y[?SIA_map_var:SIA_fuel_value|2]/100%§!\nSpecialists In Area: [?SIA_map_var:SIA_specialists_in_state]\n\n§OMonthly Fuel Growth§!: §g[?SIA_map_var:SIA_fuel_value_monthly]§!"
  SIA_selected_state_fuel_tt_delayed: "§LMonthly Fuel Breakdown§!\n---------------------------\nBase Growth: §Y[?SIA_map_var:SIA_fuel_value_monthly_base]§!\nGain from Specialists: §Y[?SIA_map_var:SIA_fuel_value_specialists]§!\nTemporary Modifiers: §Y[?SIA.modifier@SIA_fuel_value_temporary_modifier]§!"
  SIA_selected_area_economic_level: "§YArea Economic Level§!"
@@ -2468,6 +2482,7 @@
  SIA_South_tt: "§OSouth§!"
  SIA_Pattani_tt: "§RPattani§!"
  
+ SIA_add_economic_level_tt: "§YEconomic Level§! will change by [?change_temp|-+0] in [SIA_selected_econ_area]"
  SIA_req_available_specialist_level: "§YSpecialist Level§! is at least §Y1§!"
  SIA_req_available_nationwide_specialist: "There must be at least §Y1§! §YSpecialist§! in reserve"
  SIA_req_available_nationwide_specialist_2: "There must be at least §Y2§! §YSpecialist§! in reserve"
@@ -2483,6 +2498,13 @@
  SIA_environment_report_tt_3: "§gThe §YReport§! is out, last year has been §OMiddling§!, reaching more than §Y4%§! progress but §Owasn't sufficient§! enough§!"
  SIA_environment_report_tt_4: "§gThe §YReport§! is out, last year has been a §tBad Year§!, reaching more than §Y2%§! progress and §tmissing§! several targets§!"
  SIA_environment_report_tt_5: "§gThe §YReport§! is out, last year has been a §RCatastrophic Failure§!, reaching below §Y2%§! progress§!"
+ 
+ SIA_selected_state_approval: "[SIA_selected_econ_area] - £GFX_united_thai_nation £GFX_phua_thai £GFX_bhumjaithai £GFX_orange_party_2 £GFX_democrat"
+ SIA_approval_area_text: "Area Approval of Government"
+ SIA_local_leader_strength_text: "Local Control vs Bangkok Control"
+ SIA_bangkok_progress_vs_prosperity_text: "Bangkok\nProgress vs Prosperity"
+ SIA_approval_nationwide_text: "Nationwide Approval Status: WIP"
+ SIA_approval_mode_switch_tt: "§YChange Map Mode§!\n-----------------------\nClick this button to §Cswitch§! between having the approval colors to §Yalways appear§! or to appear to the §Yareas you have selected§!"
 
  #decision tooltip
  SIA_stabilize_Baht_tt: "This Will §GRemove§! §G50§! Days From §RWorldwide Financial Crisis!§!"

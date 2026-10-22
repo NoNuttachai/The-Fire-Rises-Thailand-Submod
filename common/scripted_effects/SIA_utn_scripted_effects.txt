@@ -94,21 +94,72 @@ SIA_increase_utn_pprp_relations = {
 	}
 }
 ##POST PRAYUT
-
-SIA_utn_start_tug_of_war = { #Doing this later
+SIA_utn_start_tug_of_war_initiative = {
+	if = {
+		limit = {
+			check_variable = { target = 1 }
+		}
+		add_to_variable = { SIA_pirapan_booster = 1 }
+		custom_effect_tooltip = SIA_tug_of_war_pirapan_booster
+	}
+	else = {
+		add_to_variable = { SIA_suchart_booster = 1 }
+		custom_effect_tooltip = SIA_tug_of_war_suchart_booster
+	}
+}
+SIA_utn_start_tug_of_war = { 
 	set_variable = { SIA_pirapan_influ = 50 }
 	set_variable = { SIA_suchart_influ = 50 }
-	
+	custom_effect_tooltip = SIA_tug_of_war_start_tt
 	if = {
 		limit = {
 			check_variable = { SIA_pirapan_booster > 0 }
 		}
+		set_temp_variable = { boost_temp = 5 }
+		multiply_temp_variable = { boost_temp = SIA_pirapan_booster }
+		hidden_effect = {
+			set_temp_variable = { influ_change = boost_temp }
+			set_temp_variable = { target = 1 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+		custom_effect_tooltip = SIA_pirapan_boost_tt
+	}
+	if = {
+		limit = {
+			check_variable = { SIA_prayut_legacy_var > 89.9 }
+		}
+		hidden_effect = {
+			set_temp_variable = { influ_change = 15 }
+			set_temp_variable = { target = 1 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+		custom_effect_tooltip = SIA_tug_of_war_legacy_booster_1
+	}
+	else_if = {
+		limit = {
+			check_variable = { SIA_prayut_legacy_var > 59.9 }
+		}
+		hidden_effect = {
+			set_temp_variable = { influ_change = 7.5 }
+			set_temp_variable = { target = 1 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+		custom_effect_tooltip = SIA_tug_of_war_legacy_booster_2
 	}
 	
 	if = {
 		limit = {
 			check_variable = { SIA_suchart_booster > 0 }
 		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		set_temp_variable = { boost_temp = 5 }
+		multiply_temp_variable = { boost_temp = SIA_suchart_booster }
+		ahidden_effect = {
+			set_temp_variable = { influ_change = boost_temp }
+			set_temp_variable = { target = 2 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+		custom_effect_tooltip = SIA_suchart_boost_tt
 	}
 }
 SIA_utn_tug_of_war_change_influence = {

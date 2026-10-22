@@ -68,8 +68,15 @@ SIA_change_environment_progress_monthly = { ##Add monthly to current year var it
 	}
 }
 SIA_check_yearly_performance = {
+	#use this for standard in next year tick
+	set_variable = { SIA_environment_previous_previous_year_progress = SIA_environment_previous_year_progress }
+	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
+	
+	
 	set_temp_variable = { current_year_net_gain = SIA_environment_current_progress }
-	subtract_from_temp_variable = { current_year_net_gain = SIA_environment_previous_year_progress }
+	subtract_from_temp_variable = { current_year_net_gain = SIA_environment_previous_previous_year_progress }
+	
+	set_variable = { SIA_environment_previous_year_progress_net_change = current_year_net_gain }
 	
 	#giant list to see how well you did
 	if = { #excellent
@@ -184,10 +191,7 @@ SIA_check_yearly_performance = {
 		}
 		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
 	}
-	#use this for standard in next year tick
-	set_variable = { SIA_environment_previous_previous_year_progress = SIA_environment_previous_year_progress }
-	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
-	set_variable = { SIA_environment_previous_year_progress_net_change = current_year_net_gain }
+	
 	
 }
 
@@ -389,6 +393,16 @@ SIA_monthly_tick_engine = {
 	SIA_calculate_total_montly_fuel_growth = yes 
 	SIA_calculate_national_engine_level = yes
 }
+SIA_add_economic_level = {
+	add_to_variable = { SIA_economic_level = change_temp }
+	clamp_variable = {
+		var = SIA_economic_level
+		min = 0
+		max = 10
+	}
+	custom_effect_tooltip = SIA_add_economic_level_tt
+	SIA_calculate_national_engine_level = yes
+}
 SIA_calculate_national_engine_level = {
 	set_variable = { SIA_national_engine_level_var = 0 }
 	for_each_loop = { 
@@ -585,4 +599,117 @@ SIA_calculate_national_engine_level = {
 		divide_variable = { SIA_economic_engine_production_speed_buildings_factor = 100 }
 	}
 	force_update_dynamic_modifier = yes
+}
+
+### APPROVAL MECH ###
+SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-Minor Party 8-Divided
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+
+		var:v = {
+			if = {
+				limit = { #Bangkok PT -> MFP (2023) -> PP (2025)
+					check_variable = { v = 1 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 20 }
+				set_variable = { SIA_state_local_strength = 35 } #This a trick to use 1 variable only, it's actually Progress vs Prosperity
+			}
+			else_if = {
+				limit = { #North PT
+					check_variable = { v = 2 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 40 }
+				set_variable = { SIA_state_local_strength = 65 }
+			}
+			else_if = {
+				limit = { #Central PPRP
+					check_variable = { v = 3 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 62 }
+				set_variable = { SIA_state_local_strength = 55 }
+			}
+			else_if = {
+				limit = { #East Divided
+					check_variable = { v = 4 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 54 }
+				set_variable = { SIA_state_local_strength = 55 }
+			}
+			else_if = {
+				limit = { #Northeast PT
+					check_variable = { v = 5 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 40 }
+				set_variable = { SIA_state_local_strength = 65 }
+			}
+			else_if = {
+				limit = { #West 
+					check_variable = { v = 6 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 72 }
+				set_variable = { SIA_state_local_strength = 55 }
+			}
+			else_if = {
+				limit = { #South 
+					check_variable = { v = 7 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 57 }
+				set_variable = { SIA_state_local_strength = 65 }
+			}
+			else_if = {
+				limit = { #Pattani Minor
+					check_variable = { v = 8 } 
+				}
+				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_approval = 32 }
+				set_variable = { SIA_state_local_strength = 85 }
+			}
+			
+		}
+	}
+	SIA_update_area_color = yes
+}
+SIA_update_area_color = { 
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+
+		var:v = {
+			if = {
+				limit = {
+					check_variable = { SIA_state_approval > 79.9 }
+				}
+				set_variable = { approval_level = 5 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval > 59.9 }
+				}
+				set_variable = { approval_level = 4 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval > 39.9 }
+				}
+				set_variable = { approval_level = 3 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval > 19.9 }
+				}
+				set_variable = { approval_level = 2 }
+			}
+			else = {
+				set_variable = { approval_level = 1 }
+			}
+		}
+	}
 }
