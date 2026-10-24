@@ -68,16 +68,11 @@ SIA_change_environment_progress_monthly = { ##Add monthly to current year var it
 	}
 }
 SIA_check_yearly_performance = {
-	#use this for standard in next year tick
-	set_variable = { SIA_environment_previous_previous_year_progress = SIA_environment_previous_year_progress }
-	set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
-	
-	
 	set_temp_variable = { current_year_net_gain = SIA_environment_current_progress }
 	subtract_from_temp_variable = { current_year_net_gain = SIA_environment_previous_previous_year_progress }
 	
 	set_variable = { SIA_environment_previous_year_progress_net_change = current_year_net_gain }
-	
+
 	#giant list to see how well you did
 	if = { #excellent
 		limit = {

@@ -1628,6 +1628,7 @@ country_event = {
 	after = {
 		set_country_flag = SIA_anti_government_protests
 		add_ideas = SIA_active_protests_1
+		hidden_effect = { focus_unlock = yes }
 	}
 }
 country_event = { #Wanchalearm Abduction
@@ -3248,23 +3249,36 @@ country_event = {
     desc = thai_events.80.d
 	is_triggered_only = yes
 	picture = GFX_report_environment_conference
-	
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = { change_temp = 9 }
+			set_variable = { SIA_environment_previous_year_progress = 9 }
+			set_variable = { SIA_econ_tab = 1 }
+			SIA_change_environment_progress = yes
+			set_country_flag = SIA_economy_mechanic_on
+			set_country_flag = SIA_environment_mechanic_on
+			activate_mission = SIA_environment_yearly_report
+			activate_mission = SIA_yearly_plan_deadline
+			hidden_effect = { add_dynamic_modifier = { modifier = SIA_monthly_environment_upkeep_dynamic_modifier } }
+		}
+	}
     option = {
         name = thai_events.80.a
-		custom_effect_tooltip = thai_events_80_tt
-		unlock_decision_tooltip = SIA_yearly_plan_growth
-		unlock_decision_tooltip = SIA_yearly_plan_balanced
-		unlock_decision_tooltip = SIA_yearly_plan_promote_environmentalism
-		custom_effect_tooltip = generic_skip_one_line_tt
-		set_temp_variable = { change_temp = 9 }
-		set_variable = { SIA_environment_previous_year_progress = 9 }
-		SIA_change_environment_progress = yes
-		set_country_flag = SIA_economy_mechanic_on
-		set_country_flag = SIA_environment_mechanic_on
-		activate_mission = SIA_environment_yearly_report
-		activate_mission = SIA_yearly_plan_deadline
-		hidden_effect = { add_dynamic_modifier = { modifier = SIA_monthly_environment_upkeep_dynamic_modifier } }
-		
+		effect_tooltip = {
+			custom_effect_tooltip = thai_events_80_tt
+			unlock_decision_tooltip = SIA_yearly_plan_growth
+			unlock_decision_tooltip = SIA_yearly_plan_balanced
+			unlock_decision_tooltip = SIA_yearly_plan_promote_environmentalism
+			custom_effect_tooltip = generic_skip_one_line_tt
+			set_temp_variable = { change_temp = 9 }
+			set_variable = { SIA_environment_previous_year_progress = 9 }
+			SIA_change_environment_progress = yes
+			set_country_flag = SIA_economy_mechanic_on
+			set_country_flag = SIA_environment_mechanic_on
+			activate_mission = SIA_environment_yearly_report
+			activate_mission = SIA_yearly_plan_deadline
+			hidden_effect = { add_dynamic_modifier = { modifier = SIA_monthly_environment_upkeep_dynamic_modifier } }
+		}
 	}
 }
 country_event = {
@@ -3364,7 +3378,12 @@ country_event = {
 				SIA_yearly_plan_balanced_idea
 				SIA_yearly_plan_environmentalism_idea
 			}
+			set_variable = { SIA_environment_yearly_plan = 0 }
 			activate_mission = SIA_yearly_plan_deadline
+			
+			#use this for standard in next year tick
+			set_variable = { SIA_environment_previous_previous_year_progress = SIA_environment_previous_year_progress }
+			set_variable = { SIA_environment_previous_year_progress = SIA_environment_current_progress }
 		}
 		
 	}
@@ -3405,14 +3424,6 @@ country_event = {
 			}
 			custom_effect_tooltip = SIA_environmental_malus_tt
 		}
-		else = { #The Government gives you small aid to actually do the mechanic
-			add_political_power = 75
-			add_stability = -0.03
-			set_temp_variable = { income_var_temp = 15 }
-			add_income = yes
-		}
-		
-		set_variable = { SIA_environment_yearly_plan = 0 }
 		
 		SIA_change_environment_monthly_upkeep = yes
 	}
@@ -3470,7 +3481,7 @@ country_event = {
     title = thai_events.102.t
     desc = thai_events.102.d
 	is_triggered_only = yes
-	
+	picture = GFX_report_silver_lining
     option = {
         name = thai_events.102.a
 		add_days_mission_timeout = {

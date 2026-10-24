@@ -123,8 +123,8 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/SIA/initial/SIA_utilized_the_media_on_our_side.png"
     }
 	SpriteType = {
-        name = "GFX_goal_SIA_grant_oil_subsidies"
-        texturefile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
+        name = "GFX_goal_SIA_Thailand_Oil_Diplomacy"
+        texturefile = "gfx/interface/goals/SIA/initial/SIA_Thailand_Oil_Diplomacy.png"
     }
 	SpriteType = {
         name = "GFX_goal_SIA_khana_ratsadon_reborn"

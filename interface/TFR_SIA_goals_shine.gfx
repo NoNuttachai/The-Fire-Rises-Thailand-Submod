@@ -465,11 +465,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_SIA_grant_oil_subsidies_shine"
-		texturefile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
+		name = "GFX_goal_SIA_Thailand_Oil_Diplomacy_shine"
+		texturefile = "gfx/interface/goals/SIA/initial/SIA_Thailand_Oil_Diplomacy.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Thailand_Oil_Diplomacy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -482,7 +482,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_grant_oil_subsidies.png"
+			animationmaskfile = "gfx/interface/goals/SIA/initial/SIA_Thailand_Oil_Diplomacy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

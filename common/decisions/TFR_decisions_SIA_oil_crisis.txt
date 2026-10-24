@@ -425,9 +425,9 @@ SIA_oil_crisis_cat = {
 			}
 			add_days_mission_timeout = {
 				mission = SIA_oil_in_reserves_mission
-				days = 25
+				days = 45
 			}
-			add_to_variable = { SIA_total_oil_stockpiled_days = 25 }
+			add_to_variable = { SIA_total_oil_stockpiled_days = 45 }
 			add_opinion_modifier = {
 				target = USA
 				modifier = SIA_oil_imports

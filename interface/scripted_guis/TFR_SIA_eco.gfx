@@ -134,6 +134,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/SIA/Economy/environment_icon.png"
 	}
 	spriteType = {
+		name = "GFX_SIA_engine_icon"
+		texturefile = "gfx/interface/SIA/Economy/engine_icon.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_environment_map_outline"
 		texturefile = "gfx/interface/SIA/Economy/SIA_environment_map_outline.png"
 	}

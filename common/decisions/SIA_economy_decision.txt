@@ -17,13 +17,13 @@ SIA_Economy_category = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 364
+		days_mission_timeout = 365
 		timeout_effect = {
 			country_event = thai_events.85
 			hidden_effect = {
 				activate_mission = SIA_environment_yearly_report
 				activate_mission = SIA_yearly_plan_deadline
-				SIA_check_yearly_performance = yes
+				
 			}
 		}
 		complete_effect = {

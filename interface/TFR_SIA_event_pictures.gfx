@@ -520,6 +520,10 @@ spriteTypes = {
 		name = "GFX_report_upscale_emergency"
 		texturefile = "gfx/event_pictures/report_upscale_emergency.png"
 	}
+	spriteType = {
+		name = "GFX_report_silver_lining"
+		texturefile = "gfx/event_pictures/report_silver_lining.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

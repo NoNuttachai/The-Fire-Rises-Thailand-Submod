@@ -53,6 +53,10 @@ SIA_coronavirus_category = {
 		selectable_mission = no
 		days_mission_timeout = 400
 		timeout_effect = {
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.15
+			}
 			custom_effect_tooltip = SIA_securing_vaccine_supply_tt
 			hidden_effect = {
 				activate_mission = SIA_nationwide_vaccinations

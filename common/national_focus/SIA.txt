@@ -45,7 +45,7 @@ focus_tree = {
 			has_country_flag = SIA_raise_trigger
 		}
 		allow_branch = {
-			#always = no
+			NOT = { has_completed_focus = SIA_side_with_uncle_tuu }
 		}
 		available_if_capitulated = yes
 		
@@ -388,6 +388,12 @@ focus_tree = {
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 5
 		y = 1
+		offset = {
+			x = -5
+			trigger = {
+				has_completed_focus = SIA_side_with_uncle_tuu
+			}
+		}
 		cost = 5
 		prerequisite = { focus = SIA_future_forward_on_trial }
 		mutually_exclusive = { focus = SIA_raise_our_three_fingers }
@@ -610,7 +616,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_thailand_petrol_diplomacy
-		icon = GFX_goal_SIA_grant_oil_subsidies
+		icon = GFX_goal_SIA_Thailand_Oil_Diplomacy
 		x = 1
 		y = 1
 		cost = 5

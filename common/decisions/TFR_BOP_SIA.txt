@@ -9,7 +9,7 @@ SIA_bop_prayut = {
 		complete_effect = {
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.15
+				value = -0.055
 			}
 		}
 	}
@@ -299,7 +299,7 @@ SIA_bop_prayut = {
 			add_war_support = 0.025
 			set_temp_variable = {
 				var = society_development_var_temp
-				value = -0.05
+				value = -0.025
 			}
 			add_society_development = yes
 			add_days_mission_timeout = {
@@ -412,7 +412,7 @@ SIA_bop_prayut = {
 		timeout_effect = {
 			set_temp_variable = {
 				var = society_development_var_temp
-				value = -0.1
+				value = -0.05
 			}
 			add_society_development = yes
 			add_popularity = {
@@ -449,7 +449,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_2
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.1
+				value = -0.05
 			}
 			add_political_power = -25
 		}
@@ -477,7 +477,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_3
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.1
+				value = -0.05
 			}
 		}
 	}
@@ -505,7 +505,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_4
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.025
 			}
 		}
 	}
@@ -537,7 +537,7 @@ SIA_bop_prayut = {
 			}
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.025
 			}
 		}
 	}
@@ -564,7 +564,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_6
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.025
 			}
 		}
 	}
@@ -591,7 +591,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_7
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.025
 			}
 		}
 	}
@@ -618,7 +618,7 @@ SIA_bop_prayut = {
 			activate_mission = SIA_protestor_action_8
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.025
 			}
 		}
 	}
@@ -644,7 +644,7 @@ SIA_bop_prayut = {
 		timeout_effect = {
 			add_power_balance_value = {
 				id = SIA_power_balance
-				value = -0.05
+				value = -0.025
 			}
 		}
 	}
