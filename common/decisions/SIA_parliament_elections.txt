@@ -1,4 +1,45 @@
 SIA_parliament_elections = {
+	#DEBUG 
+	SIA_activate_prayut_2023 = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+			is_debug = yes
+		}
+		complete_effect = {
+			activate_mission = SIA_2023_elections
+			activate_mission = SIA_other_parties_campaigning
+			set_country_flag = SIA_ongoing_elections
+			set_country_flag = SIA_utn_active
+			country_event = thai_elections.2
+			country_event = thai_elections.3
+			activate_mission = SIA_campaign_cycle_moves
+		}
+	}
+	SIA_activate_election_2027 = {
+		icon = generic_crisis
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+			is_debug = yes
+		}
+		complete_effect = {
+			activate_mission = SIA_2027_elections
+			activate_mission = SIA_other_parties_campaigning
+			set_country_flag = SIA_ongoing_elections
+			set_country_flag = SIA_utn_active
+			country_event = thai_elections.2
+			country_event = thai_elections.7
+			activate_mission = SIA_campaign_cycle_moves
+		}
+	}
+	
+	#DECIDE ELECTION TIMERS
 	SIA_2023_elections = {
 		icon = generic_crisis
 		allowed = {
@@ -41,7 +82,7 @@ SIA_parliament_elections = {
 			
 		}
 	}
-	SIA_other_parties_campaigning = {
+	SIA_campaign_cycle_moves = {
 		icon = generic_crisis
 		allowed = {
 			tag = SIA
@@ -54,72 +95,455 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 9
+		days_mission_timeout = 11
 		fixed_random_seed = no
 		timeout_effect = {
-			if = {
-				limit = {
-					has_country_flag = SIA_2023_elections
-				}
-				SIA_roll_other_party_campaigning_2023 = yes
+			hidden_effect = {
+				SIA_campaign_tick_effect = yes
 			}
-			else_if = {
-				limit = {
-					has_country_flag = SIA_2027_elections
-				}
-				#SIA_roll_other_party_campaigning_2027 = yes
-			}
-			activate_mission = SIA_other_parties_campaigning
-			if = {
-				limit = {
-					has_country_flag = SIA_2023_elections
-					check_variable = { undecided_votes = 0 }
-				}
-				hidden_effect = {
-					SIA_roll_2nd_target_2023 = yes
-				}
-			}
+			clr_country_flag = SIA_active_campaign_sabotage
+			activate_mission = SIA_campaign_cycle_moves
 		}
 		complete_effect = {
 			
 		}
 	}
-	SIA_activate_prayut_2023 = {
+	SIA_pprp_campaigning = {
 		icon = generic_crisis
-		available = {
-			always = yes
+		allowed = {
+			tag = SIA
 		}
-		visible = {
-			always = yes
-			is_debug = yes
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_1
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { target = 1 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { 1st_target = 1 }
+				set_temp_variable = { 2nd_target = SIA_campaign_pprp_target }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
 		}
 		complete_effect = {
-			activate_mission = SIA_2023_elections
-			activate_mission = SIA_other_parties_campaigning
-			set_country_flag = SIA_ongoing_elections
-			set_country_flag = SIA_utn_active
-			country_event = thai_elections.2
-			country_event = thai_elections.3
+			clr_country_flag = SIA_sabotaged_1
+			if = {
+				limit = {
+					OR = {
+						check_variable = { SIA_election_playing_as = 2 }
+						check_variable = { SIA_election_playing_as = 11 }
+					}
+				}
+				custom_effect_tooltip = SIA_potential_coalition
+			}
 		}
 	}
-	SIA_activate_election_2027 = {
+	SIA_ptp_campaigning = {
 		icon = generic_crisis
-		available = {
-			always = yes
+		allowed = {
+			tag = SIA
 		}
-		visible = {
-			always = yes
-			is_debug = yes
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_2
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 3}
+				set_temp_variable = { target = 2 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 3}
+				set_temp_variable = { 1st_target = 2 }
+				set_temp_variable = { 2nd_target = SIA_campaign_ptp_target }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
 		}
 		complete_effect = {
-			activate_mission = SIA_2027_elections
-			activate_mission = SIA_other_parties_campaigning
-			set_country_flag = SIA_ongoing_elections
-			set_country_flag = SIA_utn_active
-			country_event = thai_elections.2
-			country_event = thai_elections.7
+			clr_country_flag = SIA_sabotaged_2
 		}
 	}
+	SIA_mfp_campaigning = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_3
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 3}
+				set_temp_variable = { target = 3 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 3}
+				set_temp_variable = { 1st_target = 3 }
+				set_temp_variable = { 2nd_target = SIA_campaign_mfp_target }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+		}
+		complete_effect = {
+			clr_country_flag = SIA_sabotaged_3
+		}
+	}
+	SIA_dp_campaigning = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_4
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { target = 4 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { 1st_target = 4 }
+				set_temp_variable = { 2nd_target = SIA_campaign_dp_target }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+		}
+		complete_effect = {
+			clr_country_flag = SIA_sabotaged_4
+			if = {
+				limit = {
+					check_variable = { SIA_election_playing_as = 2 }
+				}
+				custom_effect_tooltip = SIA_potential_coalition
+			}
+		}
+	}
+	SIA_bjt_campaigning = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_6
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { target = 6 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { 1st_target = 6 }
+				set_temp_variable = { 2nd_target = SIA_campaign_bjt_target }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+		}
+		complete_effect = {
+			clr_country_flag = SIA_sabotaged_6
+			if = {
+				limit = {
+					OR = {
+						check_variable = { SIA_election_playing_as = 2 }
+						check_variable = { SIA_election_playing_as = 11 }
+					}
+				}
+				custom_effect_tooltip = SIA_potential_coalition
+			}
+		}
+	}
+	SIA_utn_campaigning = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_11
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { target = 11 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { 1st_target = 11 }
+				set_temp_variable = { 2nd_target = SIA_campaign_utn_target }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+		}
+		complete_effect = {
+			clr_country_flag = SIA_sabotaged_11
+		}
+	}
+	SIA_minor_campaigning = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			OR = {
+				NOT = { has_country_flag = SIA_ongoing_elections }
+				has_country_flag = SIA_sabotaged_9
+			}
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 10
+		fixed_random_seed = no
+		timeout_effect = {
+			if = { #regular grab undecided
+				limit = {
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { target = 9 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #Steal voters
+				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { 1st_target = 9 }
+				set_temp_variable = { 2nd_target = SIA_campaign_min_target }
+				SIA_elections_targeted_vote_increase = yes
+			}
+		}
+		complete_effect = {
+			clr_country_flag = SIA_sabotaged_9
+			custom_effect_tooltip = SIA_potential_coalition_minor
+		}
+	}
+	
+	#SABOTAGE
+	SIA_sabotage_pprp_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_pprp_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_1
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+			if = {
+				limit = {
+					OR = {
+						check_variable = { SIA_election_playing_as = 2 }
+						check_variable = { SIA_election_playing_as = 11 }
+					}
+				}
+				custom_effect_tooltip = SIA_potential_coalition
+			}
+		}
+	}
+	SIA_sabotage_ptp_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_ptp_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_2
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+		}
+	}
+	SIA_sabotage_mfp_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_mfp_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_3
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+		}
+	}
+	SIA_sabotage_dp_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_dp_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_4
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+			if = {
+				limit = {
+					check_variable = { SIA_election_playing_as = 2 }
+				}
+				custom_effect_tooltip = SIA_potential_coalition
+			}
+		}
+	}
+	SIA_sabotage_bjt_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_bjt_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_6
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+			if = {
+				limit = {
+					OR = {
+						check_variable = { SIA_election_playing_as = 2 }
+						check_variable = { SIA_election_playing_as = 11 }
+					}
+				}
+				custom_effect_tooltip = SIA_potential_coalition
+			}
+		}
+	}
+	SIA_sabotage_minor_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_minor_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_9
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+			custom_effect_tooltip = SIA_potential_coalition_minor
+		}
+	}
+	SIA_sabotage_utn_campaign = {
+		icon = generic_crisis
+		available = {
+			
+		}
+		visible = {
+			has_active_mission = SIA_utn_campaigning
+			NOT = { has_country_flag = SIA_active_campaign_sabotage }
+		}
+		cost = 20
+		complete_effect = {
+			set_country_flag = SIA_sabotaged_11
+			set_country_flag = SIA_active_campaign_sabotage
+			custom_effect_tooltip = SIA_sabotage_campaign_action
+			
+		}
+	}
+	
+	
+	
+	
+	#UTN DECISIONS
 	SIA_campaign_for_the_utn = {
 		icon = generic_crisis
 		available = {
@@ -133,7 +557,7 @@ SIA_parliament_elections = {
 		}
 		visible = {
 			has_country_flag = SIA_ongoing_elections
-			has_completed_focus = SIA_riding_with_uncle_tuu
+			#has_completed_focus = SIA_riding_with_uncle_tuu
 		}
 		cost = 20
 		days_remove = 6

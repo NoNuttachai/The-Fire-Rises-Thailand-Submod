@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 20
+			add = 9999999999999
 			tag = SIA
 		}
 	}
@@ -29,16 +29,383 @@ focus_tree = {
 			}
 		}
 	}
-	# Left Side - Protests
+	# Left Side - Prayut/Gov
+	focus = {
+		id = SIA_side_with_uncle_tuu
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -2
+		y = 1
+		offset = {
+			x = 2
+			trigger = {
+				has_completed_focus = SIA_side_with_uncle_tuu
+			}
+		}
+		allow_branch = {
+			NOT = { has_completed_focus = SIA_raise_our_three_fingers }
+		}
+		cost = 5
+		prerequisite = { focus = SIA_future_forward_on_trial }
+		mutually_exclusive = { focus = SIA_raise_our_three_fingers }
+		relative_position_id = SIA_future_forward_on_trial
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			is_completed_by_event = yes
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			custom_effect_tooltip = SIA_side_with_uncle_tuu_tt
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.1
+			}
+			hidden_effect = {
+				focus_unlock = yes
+			}
+		}
+	}
+	
+	focus = {
+		id = SIA_information_operations
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_side_with_uncle_tuu }
+		relative_position_id = SIA_side_with_uncle_tuu
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 50
+			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
+			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
+			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
+			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
+		}
+	}
+	focus = {
+		id = SIA_utilized_the_media
+		icon = {
+			GFX_goal_SIA_utilized_the_media_on_our_side = {
+				has_completed_focus = SIA_side_with_uncle_tuu
+			}
+			GFX_goal_SIA_social_media_campaigning = {
+				has_completed_focus = SIA_raise_our_three_fingers
+			}
+			GFX_goal_SIA_maintain_peaceful_protests = {
+				NOT = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
+		dynamic = yes
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = SIA_side_with_uncle_tuu focus = SIA_raise_our_three_fingers }
+		relative_position_id = SIA_future_forward_on_trial
+		
+		offset = {
+			x = 2
+			trigger = {
+				has_completed_focus = SIA_side_with_uncle_tuu
+			}
+		}
+		offset = {
+			x = -2
+			trigger = {
+				has_completed_focus = SIA_raise_our_three_fingers
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+				}
+				add_days_mission_timeout = {
+					mission = SIA_the_protests_intensify
+					days = 10
+				}
+				unlock_decision_tooltip = SIA_found_top_news
+				add_power_balance_value = {
+					id = SIA_power_balance
+					value = 0.1
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+				# no effect for now 
+			}
+			else = {
+				effect_tooltip = {
+					custom_effect_tooltip = SIA_utilized_the_media_gov
+					custom_effect_tooltip = generic_skip_one_line_tt
+					add_days_mission_timeout = {
+						mission = SIA_the_protests_intensify
+						days = 10
+					}
+					unlock_decision_tooltip = SIA_found_top_news
+					add_power_balance_value = {
+						id = SIA_power_balance
+						value = 0.1
+					}
+					custom_effect_tooltip = generic_skip_one_line_tt
+					custom_effect_tooltip = SIA_utilized_the_media_pro
+					add_political_power = 99999999
+					add_stability = -100
+				}
+			}
+		}
+	}
+	focus = {
+		id = SIA_secured_support_from_conservatives
+		icon = GFX_goal_SIA_secure_conservative_support
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_information_operations }
+		prerequisite = { focus = SIA_organize_counter_protests }
+		prerequisite = { focus = SIA_utilized_the_media }
+		relative_position_id = SIA_information_operations
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 25
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.1
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.025
+			}
+			
+		}
+	}
+	focus = {
+		id = SIA_organize_counter_protests
+		icon = GFX_goal_SIA_organize_counter_protests
+		x = -2
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_side_with_uncle_tuu }
+		relative_position_id = SIA_side_with_uncle_tuu
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_war_support = 0.025
+			unlock_decision_tooltip = SIA_decision_organize_counter_protests
+			unlock_decision_tooltip = SIA_target_ringleaders
+			add_days_mission_timeout = {
+				mission = SIA_the_protests_intensify
+				days = 20
+			}
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
+		}
+	}
+	
+	focus = {
+		id = SIA_deploy_the_riot_police
+		icon = GFX_goal_SIA_deploy_the_riot_police
+		x = -1
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_secured_support_from_conservatives }
+		relative_position_id = SIA_secured_support_from_conservatives
+		
+		offset = {
+			x = 1
+			trigger = {
+				has_completed_focus = SIA_side_with_uncle_tuu
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.1
+			}
+			add_society_development = yes
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+			unlock_decision_tooltip = SIA_deploy_riot_police
+			unlock_decision_tooltip = SIA_perform_harsher_crackdowns
+			add_power_balance_value = {
+				id = SIA_power_balance
+				value = 0.05
+			}
+			
+		}
+	}
+	focus = {
+		id = SIA_smother_the_flames
+		icon = GFX_goal_SIA_Extinguish_the_Flames
+		x = -1
+		y = 1
+		cost = 7
+		prerequisite = { focus = SIA_deploy_the_riot_police }
+		mutually_exclusive = { focus = SIA_deploy_the_army }
+		relative_position_id = SIA_deploy_the_riot_police
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			OR = {
+				has_idea = SIA_active_protests_1
+				has_idea = SIA_active_protests_2
+			}
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			custom_effect_tooltip = SIA_smother_the_flames_tt
+			add_timed_idea = {
+				idea = SIA_dispersing_the_protests
+				days = 100
+			}
+			
+			
+		}
+	}
+	focus = {
+		id = SIA_deploy_the_army
+		icon = GFX_goal_SIA_Crush_The_Movement
+		x = 1
+		y = 1
+		cost = 7
+		prerequisite = { focus = SIA_deploy_the_riot_police }
+		mutually_exclusive = { focus = SIA_smother_the_flames }		
+		relative_position_id = SIA_deploy_the_riot_police
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			has_idea = SIA_active_protests_3
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			custom_effect_tooltip = SIA_deploy_the_army_tt
+			add_timed_idea = {
+				idea = SIA_striking_the_rioters
+				days = 75
+			}
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = -0.15
+			}
+			add_society_development = yes
+			set_temp_variable = {
+				var = academic_development_var_temp
+				value = -0.075
+			}
+			add_academic_development = yes
+		}
+	}
+	focus = {
+		id = SIA_quiet_before_down
+		icon = GFX_goal_SIA_quietbefore_dawn
+		x = 1
+		y = 1
+		cost = 7
+		prerequisite = { focus = SIA_smother_the_flames focus = SIA_deploy_the_army }
+		relative_position_id = SIA_smother_the_flames
+		
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_stability = 0.075
+			add_political_power = 50
+			set_temp_variable = {
+				var = income_var_temp
+				value = 60
+			}
+			add_income = yes
+			1495 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	# Right Side - Protests
 	focus = {
 		id = SIA_raise_our_three_fingers
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = -5 y = 1
+		x = 2 y = 1
 		cost = 5
 		prerequisite = { focus = SIA_future_forward_on_trial }
 		mutually_exclusive = { focus = SIA_side_with_uncle_tuu }
 		relative_position_id = SIA_future_forward_on_trial
-		
+		offset = {
+			x = -2
+			trigger = {
+				has_completed_focus = SIA_raise_our_three_fingers
+			}
+		}
 		ai_will_do = { factor = 10 }
 		available = {
 			#is_completed_by_event = yes
@@ -68,13 +435,14 @@ focus_tree = {
 					SIA_covid_idea
 				}
 				clr_country_flag = SIA_coronavirus_ongoing
+				focus_unlock = yes
 			}
 		}
 	}
 	focus = {
 		id = SIA_begin_student_activism
 		icon = GFX_goal_SIA_begin_student_activism
-		x = -2 y = 1
+		x = 0 y = 1
 		cost = 6
 		prerequisite = { focus = SIA_raise_our_three_fingers }
 		relative_position_id = SIA_raise_our_three_fingers
@@ -96,15 +464,32 @@ focus_tree = {
 			unlock_decision_tooltip = SIA_launch_rallies
 			unlock_decision_tooltip = SIA_organize_protests
 		}
+	}       
+	focus = {
+		id = SIA_ladyboys_against_dictatorship
+		icon = GFX_goal_SIA_ally_with_workers_union
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = SIA_raise_our_three_fingers }
+		relative_position_id = SIA_raise_our_three_fingers
+		
+		ai_will_do = { factor = 1 }
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
 	}
-                               
 	focus = {                         
 		id = SIA_a_leftist_united_front
 		icon = GFX_goal_SIA_a_leftist_united_front
 		x = 0 y = 1
 		cost = 6
-		prerequisite = { focus = SIA_social_media_activism }
-		relative_position_id = SIA_social_media_activism
+		prerequisite = { focus = SIA_utilized_the_media }
+		prerequisite = { focus = SIA_begin_student_activism }
+		prerequisite = { focus = SIA_ladyboys_against_dictatorship }
+		relative_position_id = SIA_begin_student_activism
 		
 		ai_will_do = {
 			factor = 10
@@ -126,190 +511,20 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_petrol_demonstrations
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 2
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_raise_our_three_fingers }
-		relative_position_id = SIA_raise_our_three_fingers
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			has_country_flag = SIA_oil_crisis_ongoing
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			if = {
-				limit = {
-					has_active_mission = SIA_oil_distribution_to_stations
-				}
-				add_days_mission_timeout = {
-					mission = SIA_oil_distribution_to_stations
-					days = -25
-				}
-			}
-			else_if = {
-				limit = {
-					has_active_mission = SIA_truckers_start_protesting
-				}
-				add_days_mission_timeout = {
-					mission = SIA_truckers_start_protesting
-					days = -10
-				}
-			}
-			
-			unlock_decision_tooltip = SIA_demonstrate_infront_of_the_ministry_of_energy
-			unlock_decision_tooltip = SIA_demonstrate_infront_of_the_ptt_headquarters
-		}
-	}
-	focus = {
-		id = SIA_workers_union_strikes
-		icon = GFX_goal_SIA_ally_with_workers_union
-		x = -1
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_petrol_demonstrations }
-		relative_position_id = SIA_petrol_demonstrations
-		
-		ai_will_do = { factor = 1 }
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			custom_effect_tooltip = {
-				localization_key = SIA_speed_up_thing_2
-				WHAT = TOPBAR_DECISIONVIEW
-				THING1 = SIA_oil_distribution_to_stations
-				THING2 = SIA_truckers_start_protesting
-				NUMBER1 = "20"
-				NUMBER2 = "10"
-			}
-
-			hidden_effect = {
-				if = {
-					limit = {
-						has_active_mission = SIA_oil_distribution_to_stations
-					}
-					add_days_mission_timeout = {
-						mission = SIA_oil_distribution_to_stations
-						days = -20
-					}
-				}
-				else_if = {
-					limit = {
-						has_active_mission = SIA_truckers_start_protesting
-					}
-					add_days_mission_timeout = {
-						mission = SIA_truckers_start_protesting
-						days = -10
-					}
-				}
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_tooltip = SIA_coordinate_with_workers_union
-		}
-	}
-
-	focus = {
-		id = SIA_khana_ratsadon_reborn
-		icon = GFX_goal_SIA_khana_ratsadon_reborn
-		x = 0
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_workers_union_strikes }
-		relative_position_id = SIA_workers_union_strikes
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 25
-			unlock_decision_tooltip = SIA_unify_the_movement
-		}
-	}
-	focus = {
-		id = SIA_social_media_activism
-		icon = GFX_goal_SIA_social_media_campaigning
+		id = SIA_fight_the_arrests
+		icon = GFX_goal_SIA_fight_the_arrests
 		x = 1
 		y = 1
 		cost = 6
-		prerequisite = { focus = SIA_begin_student_activism focus = SIA_petrol_demonstrations }
-		relative_position_id = SIA_begin_student_activism
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 50
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.05
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			unlock_decision_tooltip = SIA_secure_support_from_ned
-			unlock_decision_tooltip = SIA_bbc_coverage_of_the_protestors
-			unlock_decision_tooltip = SIA_amnesty_international_complaint
-		}
-	}
-	focus = {
-		id = SIA_long_march_through_the_institutions
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = -1
-		y = 1
-		cost = 6
 		prerequisite = { focus = SIA_a_leftist_united_front }
-		prerequisite = { focus = SIA_khana_ratsadon_reborn }
-		relative_position_id = SIA_khana_ratsadon_reborn
 		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_stability = -0.1
-			increase_academic = yes
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = -0.1
-			}
-			add_popularity = {
-				ideology = social_democrat
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = libertarian_socialist
-				popularity = 0.025
-			}
-			add_popularity = {
-				ideology = communist
-				popularity = 0.025
+		relative_position_id = SIA_a_leftist_united_front
+		offset = {
+			x = -1
+			trigger = {
+				has_completed_focus = SIA_raise_our_three_fingers
 			}
 		}
-	}
-	focus = {
-		id = SIA_fight_the_arrests
-		icon = GFX_goal_SIA_fight_the_arrests
-		x = 0
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_long_march_through_the_institutions }
-		
-		relative_position_id = SIA_long_march_through_the_institutions
-		
 		ai_will_do = {
 			factor = 10
 		}
@@ -325,7 +540,7 @@ focus_tree = {
 	focus = {
 		id = SIA_the_people_wrath
 		icon = GFX_goal_SIA_make_them_face_our_wrath
-		x = 2 y = 1
+		x = 1 y = 1
 		cost = 6
 		prerequisite = { focus = SIA_fight_the_arrests }
 		mutually_exclusive = { focus = SIA_denouced_the_extremists }
@@ -352,7 +567,7 @@ focus_tree = {
 	focus = {
 		id = SIA_denouced_the_extremists
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = -2 y = 1
+		x = -1 y = 1
 		cost = 6
 		prerequisite = { focus = SIA_fight_the_arrests }
 		mutually_exclusive = { focus = SIA_the_people_wrath }
@@ -381,49 +596,41 @@ focus_tree = {
 			}
 		}
 	}
-	
-	# Right Side - Prayut
 	focus = {
-		id = SIA_side_with_uncle_tuu
+		id = SIA_the_general_down
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
-		x = 5
-		y = 1
-		offset = {
-			x = -5
-			trigger = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-			}
-		}
-		cost = 5
-		prerequisite = { focus = SIA_future_forward_on_trial }
-		mutually_exclusive = { focus = SIA_raise_our_three_fingers }
-		relative_position_id = SIA_future_forward_on_trial
+		x = 1 y = 1
+		cost = 6
+		prerequisite = { focus = SIA_denouced_the_extremists focus = SIA_the_people_wrath }
+		relative_position_id = SIA_denouced_the_extremists
 		
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			is_completed_by_event = yes
-		}
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			custom_effect_tooltip = SIA_side_with_uncle_tuu_tt
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.1
-			}
+			
 		}
 	}
 	focus = {
 		id = SIA_establish_ccsa
 		icon = GFX_goal_SIA_CCSA
-		x = -2
+		x = -5
 		y = 1
 		cost = 5
-		prerequisite = { focus = SIA_side_with_uncle_tuu }
-		relative_position_id = SIA_side_with_uncle_tuu
+		prerequisite = { focus = SIA_future_forward_on_trial }
+		relative_position_id = SIA_future_forward_on_trial
 		
+		offset = {
+			x = 2
+			trigger = {
+				OR = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -440,7 +647,6 @@ focus_tree = {
 			activate_mission = SIA_securing_vaccine_supply
 			custom_effect_tooltip = SIA_establish_ccsa_tt
 			unlock_decision_tooltip = SIA_mask_distribution
-			unlock_decision_tooltip = SIA_enforce_lockdowns
 			unlock_decision_tooltip = SIA_tighten_border_control
 			unlock_decision_tooltip = SIA_expand_medical_services
 			unlock_decision_tooltip = SIA_conduct_nationwide_screenings
@@ -467,7 +673,6 @@ focus_tree = {
 			add_political_power = 100
 			add_stability = -0.15
 			add_command_power = 10
-			unlock_decision_tooltip = SIA_stricten_curfews
 			add_days_mission_timeout = {
 				mission = SIA_the_pandemic_worsens_mission
 				days = 40
@@ -481,10 +686,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_persecute_the_agitators
-		icon = GFX_goal_SIA_Court_System
+		id = SIA_covid_vaccine_drive
+		icon = GFX_goal_SIA_Vaccination
 		x = 1
-		y = 2
+		y = 1
 		cost = 5
 		prerequisite = { focus = SIA_declare_state_of_emergency }
 		relative_position_id = SIA_declare_state_of_emergency
@@ -492,69 +697,57 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		available = {
-			
-		}
+		
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_stability = -0.05
-			add_war_support = 0.025
+			add_stability = 0.05
 			set_temp_variable = {
-				var = society_development_var_temp
-				value = -0.05
+				var = debt_var_temp
+				value = 2.500
 			}
-			add_society_development = yes
-			unlock_decision_tooltip = SIA_target_ringleaders
-			add_days_mission_timeout = {
-				mission = SIA_the_protests_intensify
-				days = 15
+			add_debt = yes
+			if = {
+				limit = {
+					has_active_mission = SIA_nationwide_vaccinations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_nationwide_vaccinations
+					days = -25
+				}
 			}
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.05
+			else = {
+				add_days_mission_timeout = {
+					mission = SIA_securing_vaccine_supply
+					days = -30
+				}
 			}
 			
+			unlock_decision_tooltip = SIA_import_sinovac_vaccines
+			unlock_decision_tooltip = SIA_import_sputnik_vaccines
+			unlock_decision_tooltip = SIA_astrazeneca_and_siam_bioscience
+			unlock_decision_tooltip = SIA_expand_vaccination_centers
 		}
 	}
 	focus = {
-		id = SIA_information_operations
-		icon = GFX_goal_SIA_information_operations
-		x = 0
-		y = 2
-		cost = 5
-		prerequisite = { focus = SIA_side_with_uncle_tuu }
-		relative_position_id = SIA_side_with_uncle_tuu
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 50
-			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
-			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
-			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
-			unlock_decision_tooltip = SIA_botted_engagement_on_the_rco_facebook_page
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.05
-			}
-		}
-	}
-	focus = {
-		id = SIA_utilized_the_media
-		icon = GFX_goal_SIA_utilized_the_media_on_our_side
-		x = -1
+		id = SIA_phuket_sandbox
+		icon = GFX_goal_SIA_ReOpenTourism
+		x = -2
 		y = 1
 		cost = 5
-		prerequisite = { focus = SIA_information_operations }
-		relative_position_id = SIA_information_operations
+		prerequisite = { focus = SIA_covid_vaccine_drive }
+		mutually_exclusive = { focus = SIA_extend_lockdown_measures }
+		relative_position_id = SIA_covid_vaccine_drive
 		
+		offset = {
+			x = 1
+			trigger = {
+				OR = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -564,26 +757,89 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_days_mission_timeout = {
-				mission = SIA_the_protests_intensify
-				days = 10
+			set_temp_variable = {
+				var = income_var_temp
+				value = 35
 			}
-			unlock_decision_tooltip = SIA_found_top_news
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.1
+			add_income = yes
+			increase_immigration = yes
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = -30
+			}
+			if = {
+				limit = {
+					has_active_mission = SIA_nationwide_vaccinations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_nationwide_vaccinations
+					days = 30
+				}
+			}
+			else = {
+				add_days_mission_timeout = {
+					mission = SIA_securing_vaccine_supply
+					days = 25
+				}
 			}
 		}
 	}
+	focus = {
+		id = SIA_extend_lockdown_measures
+		icon = GFX_goal_SIA_Public_Gathering
+		x = 0
+		y = 1
+		cost = 5
+		prerequisite = { focus = SIA_covid_vaccine_drive }
+		mutually_exclusive = { focus = SIA_phuket_sandbox }
+		relative_position_id = SIA_covid_vaccine_drive
+		
+		offset = {
+			x = 1
+			trigger = {
+				OR = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			add_political_power = 25
+			add_days_mission_timeout = {
+				mission = SIA_the_pandemic_worsens_mission
+				days = 30
+			}
+			unlock_decision_tooltip = SIA_enforce_lockdowns
+			unlock_decision_tooltip = SIA_stricten_curfews
+		}
+	}
+	# RIGHT SIDE - Oil Criss
 	focus = {
 		id = SIA_deal_with_the_oil_crisis
 		icon = GFX_goal_SIA_Oil_Crisis
-		x = 2
+		x = 5
 		y = 1
 		cost = 5
-		prerequisite = { focus = SIA_side_with_uncle_tuu }
-		relative_position_id = SIA_side_with_uncle_tuu
+		prerequisite = { focus = SIA_future_forward_on_trial }
+		relative_position_id = SIA_future_forward_on_trial
 		
+		offset = {
+			x = -2
+			trigger = {
+				OR = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -641,39 +897,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_secured_support_from_conservatives
-		icon = GFX_goal_SIA_secure_conservative_support
-		x = 1
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_information_operations }
-		relative_position_id = SIA_information_operations
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_political_power = 25
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.1
-			}
-			add_popularity = {
-				ideology = conservative
-				popularity = 0.025
-			}
-			
-		}
-	}
-	focus = {
 		id = SIA_half_payment_policy
 		icon = GFX_goal_SIA_Subsidize_Government_Business
-		x = -1 y = 2
+		x = -1 y = 1
 		cost = 5
 		prerequisite = { focus = SIA_thailand_petrol_diplomacy }
 		relative_position_id = SIA_thailand_petrol_diplomacy
@@ -700,117 +926,25 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SIA_organize_counter_protests
-		icon = GFX_goal_SIA_organize_counter_protests
-		x = 1
-		y = 1
+		id = SIA_tab_into_energy
+		icon = GFX_goal_SIA_Subsidize_Government_Business
+		x = 0 y = 1
 		cost = 5
-		prerequisite = { focus = SIA_utilized_the_media }
-		prerequisite = { focus = SIA_secured_support_from_conservatives }
-		relative_position_id = SIA_utilized_the_media
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_war_support = 0.025
-			unlock_decision_tooltip = SIA_decision_organize_counter_protests
-			add_days_mission_timeout = {
-				mission = SIA_the_protests_intensify
-				days = 20
-			}
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.05
-			}
-		}
-	}
-	
-	focus = {
-		id = SIA_deploy_the_riot_police
-		icon = GFX_goal_SIA_deploy_the_riot_police
-		x = 0
-		y = 1
-		cost = 5
-		prerequisite = { focus = SIA_organize_counter_protests }
-		prerequisite = { focus = SIA_persecute_the_agitators }
 		prerequisite = { focus = SIA_half_payment_policy }
-		relative_position_id = SIA_organize_counter_protests
+		mutually_exclusive = { focus = SIA_secure_the_oil_industries }
+		relative_position_id = SIA_half_payment_policy
 		
+		offset = {
+			x = -1
+			trigger = {
+				OR = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			
-			add_political_power = -30
-			set_temp_variable = {
-				var = society_development_var_temp
-				value = -0.1
-			}
-			add_society_development = yes
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.05
-			}
-			unlock_decision_tooltip = SIA_deploy_riot_police
-			unlock_decision_tooltip = SIA_perform_harsher_crackdowns
-			add_power_balance_value = {
-				id = SIA_power_balance
-				value = 0.05
-			}
-			
-		}
-	}
-	focus = {
-		id = SIA_phuket_sandbox
-		icon = GFX_goal_SIA_ReOpenTourism
-		x = -2
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_deploy_the_riot_police }
-		relative_position_id = SIA_deploy_the_riot_police
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			set_temp_variable = {
-				var = income_var_temp
-				value = 25
-			}
-			add_income = yes
-			increase_immigration = yes
-		}
-	}
-	focus = {
-		id = SIA_covid_vaccine_drive
-		icon = GFX_goal_SIA_Vaccination
-		x = 2
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_deploy_the_riot_police }
-		relative_position_id = SIA_deploy_the_riot_police
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			has_active_mission = SIA_nationwide_vaccinations
 		}
 		available_if_capitulated = yes
 		
@@ -818,115 +952,112 @@ focus_tree = {
 			add_stability = 0.05
 			set_temp_variable = {
 				var = debt_var_temp
-				value = 2.500
+				value = 41.512
+			}
+			add_debt = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = energy_farm
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = power_plant
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SIA_secure_the_oil_industries
+		icon = GFX_goal_SIA_Foreign_Oil_Deal
+		x = 2 y = 1
+		cost = 5
+		prerequisite = { focus = SIA_half_payment_policy }
+		mutually_exclusive = { focus = SIA_tab_into_energy }
+		relative_position_id = SIA_half_payment_policy
+		
+		offset = {
+			x = -1
+			trigger = {
+				OR = {
+					has_completed_focus = SIA_side_with_uncle_tuu
+					has_completed_focus = SIA_raise_our_three_fingers
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 34.235
 			}
 			add_debt = yes
 			add_days_mission_timeout = {
-				mission = SIA_nationwide_vaccinations
-				days = -50
+				mission = SIA_oil_in_reserves_mission
+				days = 35
 			}
-			unlock_decision_tooltip = SIA_import_sinovac_vaccines
-			unlock_decision_tooltip = SIA_import_sputnik_vaccines
-			unlock_decision_tooltip = SIA_astrazeneca_and_siam_bioscience
-			unlock_decision_tooltip = SIA_expand_vaccination_centers
-		}
-	}
-	focus = {
-		id = SIA_smother_the_flames
-		icon = GFX_goal_SIA_Extinguish_the_Flames
-		x = -1
-		y = 2
-		cost = 7
-		prerequisite = { focus = SIA_deploy_the_riot_police }
-		mutually_exclusive = { focus = SIA_deploy_the_army }
-		relative_position_id = SIA_deploy_the_riot_police
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			OR = {
-				has_idea = SIA_active_protests_1
-				has_idea = SIA_active_protests_2
-			}
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			custom_effect_tooltip = SIA_smother_the_flames_tt
-			add_timed_idea = {
-				idea = SIA_dispersing_the_protests
-				days = 100
-			}
-			
-			
-		}
-	}
-	focus = {
-		id = SIA_deploy_the_army
-		icon = GFX_goal_SIA_Crush_The_Movement
-		x = 1
-		y = 2
-		cost = 7
-		prerequisite = { focus = SIA_deploy_the_riot_police }
-		mutually_exclusive = { focus = SIA_smother_the_flames }		
-		relative_position_id = SIA_deploy_the_riot_police
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			has_idea = SIA_active_protests_3
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			custom_effect_tooltip = SIA_deploy_the_army_tt
-			add_timed_idea = {
-				idea = SIA_striking_the_rioters
-				days = 75
-			}
-			set_temp_variable = {
-				var = society_development_var_temp
-				value = -0.15
-			}
-			add_society_development = yes
-			set_temp_variable = {
-				var = academic_development_var_temp
-				value = -0.075
-			}
-			add_academic_development = yes
-		}
-	}
-	focus = {
-		id = SIA_quiet_before_down
-		icon = GFX_goal_SIA_quietbefore_dawn
-		x = 1
-		y = 1
-		cost = 6
-		prerequisite = { focus = SIA_smother_the_flames focus = SIA_deploy_the_army }
-		relative_position_id = SIA_smother_the_flames
-		
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			
-		}
-		available_if_capitulated = yes
-		
-		completion_reward = {
-			add_stability = 0.075
-			add_political_power = 50
-			set_temp_variable = {
-				var = income_var_temp
-				value = 60
-			}
-			add_income = yes
-			1495 = {
+			add_to_variable = { SIA_total_oil_stockpiled_days = 35 }
+			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
-					type = office_park
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
 					level = 1
 					instant_build = yes
 				}

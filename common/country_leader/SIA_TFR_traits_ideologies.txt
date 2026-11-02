@@ -24,6 +24,9 @@ leader_traits = {
 	SIA_ide_mfp = {
 		random = no
 	}
+	SIA_ide_kt = {
+		random = no
+	}
 	SIA_ide_minor_party = {
 		random = no
 	}

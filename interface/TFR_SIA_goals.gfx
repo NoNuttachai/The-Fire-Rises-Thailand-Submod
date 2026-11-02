@@ -207,7 +207,10 @@ spriteTypes = {
         name = "GFX_goal_SIA_prayut_2021_SIA_LetsTalkBusiness"
         texturefile = "gfx/interface/goals/SIA/prayut2021/LetsTalkBusiness.png"
     }
-	
+	SpriteType = {
+        name = "GFX_goal_SIA_prayut_2021_SIA_30_30"
+        texturefile = "gfx/interface/goals/SIA/prayut2021/30_30.png"
+    }
 	### 4. Shared ###
 	SpriteType = {
         name = "GFX_goal_SIA_shared_tree_SIA_arms_from_overseas"

@@ -98,6 +98,12 @@ on_actions = {
 				SIA_change_environment_monthly_upkeep = yes
 				SIA_change_environment_progress_monthly = yes
 			}
+			if = {
+				limit = {
+					has_country_flag = SIA_economy_mechanic_on
+				}
+				SIA_monthly_tick_engine = yes
+			}
 		}
 	}
 	on_declare_war = {

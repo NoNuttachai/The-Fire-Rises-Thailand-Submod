@@ -432,7 +432,7 @@ SIA_forpol_category = {
 			}
 			custom_effect_tooltip = SIA_apply_for_eadi_membership_tt
 			hidden_effect = {
-				news_event = thai_newsevents.11
+				news_event = sino_jap_coldwar.16
 			}
 		}
 	}
@@ -466,7 +466,7 @@ SIA_forpol_category = {
 			}
 			custom_effect_tooltip = SIA_apply_for_pdto_membership_tt
 			hidden_effect = {
-				news_event = thai_newsevents.12
+				news_event = sino_jap_coldwar.4
 			}
 		}
 	}

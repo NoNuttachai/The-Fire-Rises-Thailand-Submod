@@ -603,11 +603,15 @@ SIA_Economy_category = {
 		days_remove = 60
 		complete_effect = {
 			remove_campaign_slot = yes
+			set_temp_variable = { change_temp = 0.25 }
+			SIA_change_environment_monthly = yes
 		}
 		remove_effect = {
 			add_campaign_slot = yes
 			set_temp_variable = { society_development_var_temp = 0.05 }
 			add_society_development = yes
+			set_temp_variable = { change_temp = -0.25 }
+			SIA_change_environment_monthly = yes
 		}
 	}
 	SIA_utn_enhance_vocational_training = {
@@ -640,6 +644,8 @@ SIA_Economy_category = {
 			add_campaign_slot = yes
 			set_temp_variable = { academic_development_var_temp = 0.05 }
 			add_academic_development = yes
+			set_temp_variable = { change_temp = 1 }
+			SIA_change_specialist_effectiveness = yes
 		}
 	}
 	SIA_utn_invest_on_ai_technology = {
@@ -670,6 +676,7 @@ SIA_Economy_category = {
 		}
 		custom_cost_text = dx_more_than_35B_and_50pp
 		days_remove = 125
+		fire_only_once = yes
 		complete_effect = {
 			remove_campaign_slot = yes
 		}
@@ -832,9 +839,12 @@ SIA_Economy_category = {
 		cost = 30
 		days_remove = 85
 		days_re_enable = 50
-		remove_effect = {
+		complete_effect = {
 			set_temp_variable = { change_temp = -2 }
 			SIA_change_specialist_amount = yes
+		}
+		remove_effect = {
+			
 			set_temp_variable = { change_temp = 2 }
 			SIA_change_specialist_effectiveness = yes
 		}
@@ -859,9 +869,12 @@ SIA_Economy_category = {
 		cost = 35
 		days_remove = 65
 		days_re_enable = 45
-		remove_effect = {
+		complete_effect = {
 			set_temp_variable = { change_temp = -1 }
 			SIA_change_specialist_amount = yes
+		}
+		remove_effect = {
+			
 			add_political_power = 75
 			set_temp_variable = { income_var_temp = 10 }
 			add_income = yes

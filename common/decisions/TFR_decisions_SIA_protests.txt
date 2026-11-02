@@ -312,7 +312,7 @@ SIA_protests_category = {
 			tag = SIA
 		}
 		visible = {
-			has_completed_focus = SIA_persecute_the_agitators
+			has_completed_focus = SIA_organize_counter_protests
 		}
 		days_remove = 5
 		days_re_enable = 30
