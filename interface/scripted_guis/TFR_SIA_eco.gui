@@ -11,6 +11,11 @@ guiTypes = {
 			spriteType = "GFX_SIA_background_environment"
 		}
 		iconType = {
+			name = "SIA_background_approval"
+			position = { x = 5 y = 150 }
+			spriteType = "GFX_SIA_background_approval"
+		}
+		iconType = {
 			name = "SIA_background_engine"
 			position = { x = 5 y = 150 }
 			spriteType = "GFX_SIA_background_engine"
@@ -125,6 +130,12 @@ guiTypes = {
 				maxwidth = 180
 				text = SIA_environment_lastyear_progress
 				format = center
+			}
+			iconType = {
+				name = "SIA_environment_map_overlay"
+				position = { x = 197 y = 26 }
+				spriteType = "GFX_SIA_environment_map_overlay"
+				alwaystransparent = yes
 			}
 		}
 		containerWindowType = {
@@ -391,7 +402,7 @@ guiTypes = {
 				name = "SIA_approval_box_fill"
 				position = { x = 226 y = 100 }
 				spriteType = "GFX_SIA_approval_bar_fill"
-				alwaystransparent = yes
+				pdx_tooltip = SIA_approval_box_fill_tt
 			}
 			instantTextBoxType = {
 				name = "SIA_local_leader_text"
@@ -422,6 +433,7 @@ guiTypes = {
 				position = { x = 226 y = 200 }
 				spriteType = "GFX_SIA_local_leader_strength_bar_fill"
 				alwaystransparent = yes
+				pdx_tooltip = SIA_local_leader_strength_box_fill_tt
 			}
 			instantTextBoxType = {
 				name = "SIA_approval_nationwide_text"
@@ -430,6 +442,24 @@ guiTypes = {
 				maxwidth = 500
 				text = SIA_approval_nationwide_text
 				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_approval_map_overlay"
+				position = { x = 23 y = 11 }
+				spriteType = "GFX_SIA_approval_map_overlay"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_box_1_overlay"
+				position = { x = 226 y = 101 }
+				spriteType = "GFX_SIA_approval_box_overlay"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "SIA_box_2_overlay"
+				position = { x = 226 y = 201 }
+				spriteType = "GFX_SIA_approval_box_overlay"
 				alwaystransparent = yes
 			}
 		}

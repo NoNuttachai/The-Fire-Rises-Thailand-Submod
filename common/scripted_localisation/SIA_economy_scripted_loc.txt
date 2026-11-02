@@ -164,3 +164,9 @@ defined_text = {
 		localization_key = "GFX_SIA_environment_neutral"
 	}
 }
+defined_text = {
+	name = GetAreaApprovalAlignment
+	text = {
+		localization_key = "area_party_alignment_[?SIA_map_var:SIA_state_alignment]"
+	}
+}

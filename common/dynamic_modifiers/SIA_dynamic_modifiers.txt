@@ -66,7 +66,7 @@ SIA_military_mech_dynamic_modifier = {
 	conscription_factor = SIA_military_mech_conscription_factor_var
 }
 SIA_royal_army_of_thailand_dynamic_modifier = {
-	icon = "GFX_ETH_chinese_investments"
+	icon = "GFX_idea_SIA_royal_army_of_thailand"
 	enable = {
 		always = yes
 	}

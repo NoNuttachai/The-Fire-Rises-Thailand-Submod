@@ -1027,7 +1027,7 @@ ideas = {
 			}
 		}
 		SIA_half_payment_policy_idea = {
-			picture = generic_covid
+			picture = SIA_half_policy
 			traits = {
 				ZZZ_blank_idea_trait
 			}
@@ -2869,6 +2869,23 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
+				hog_pragmatic_statesman
+			}
+		}
+		SIA_thamanat_prompow_hog = {
+			name = SIA_thamanat_prompow_char
+			picture = SIA_thamanat_prompow
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				has_idea = SIA_thamanat_prompow_hog
+			}
+			traits = {
+				SIA_ide_kt
 				hog_pragmatic_statesman
 			}
 		}

@@ -147,7 +147,7 @@ SIA_coronavirus_category = {
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
 			has_active_mission = SIA_the_pandemic_worsens_mission
-			has_completed_focus = SIA_establish_ccsa
+			has_completed_focus = SIA_extend_lockdown_measures
 		}
 		cancel_if_not_visible = yes
 
@@ -248,7 +248,7 @@ SIA_coronavirus_category = {
 		visible = {
 			has_country_flag = SIA_coronavirus_ongoing
 			has_active_mission = SIA_the_pandemic_worsens_mission
-			has_completed_focus = SIA_declare_state_of_emergency
+			has_completed_focus = SIA_extend_lockdown_measures
 		}
 		cancel_if_not_visible = yes
 
@@ -328,9 +328,20 @@ SIA_coronavirus_category = {
 			add_income = yes
 		}
 		remove_effect = {
-			add_days_mission_timeout = {
-				mission = SIA_nationwide_vaccinations
-				days = -50
+			if = {
+				limit = {
+					has_active_mission = SIA_nationwide_vaccinations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_nationwide_vaccinations
+					days = -25
+				}
+			}
+			else = {
+				add_days_mission_timeout = {
+					mission = SIA_securing_vaccine_supply
+					days = -50
+				}
 			}
 		}
 		ai_will_do = {
@@ -369,9 +380,20 @@ SIA_coronavirus_category = {
 			add_income = yes
 		}
 		remove_effect = {
-			add_days_mission_timeout = {
-				mission = SIA_nationwide_vaccinations
-				days = -30
+			if = {
+				limit = {
+					has_active_mission = SIA_nationwide_vaccinations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_nationwide_vaccinations
+					days = -15
+				}
+			}
+			else = {
+				add_days_mission_timeout = {
+					mission = SIA_securing_vaccine_supply
+					days = -30
+				}
 			}
 		}
 		ai_will_do = {
@@ -406,9 +428,20 @@ SIA_coronavirus_category = {
 			}
 		}
 		remove_effect = {
-			add_days_mission_timeout = {
-				mission = SIA_nationwide_vaccinations
-				days = -30
+			if = {
+				limit = {
+					has_active_mission = SIA_nationwide_vaccinations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_nationwide_vaccinations
+					days = -30
+				}
+			}
+			else = {
+				add_days_mission_timeout = {
+					mission = SIA_securing_vaccine_supply
+					days = -30
+				}
 			}
 			add_opinion_modifier = {
 				target = ENG
@@ -452,9 +485,20 @@ SIA_coronavirus_category = {
 			consumer_goods_factor = 0.35
 		}
 		remove_effect = {
-			add_days_mission_timeout = {
-				mission = SIA_nationwide_vaccinations
-				days = -25
+			if = {
+				limit = {
+					has_active_mission = SIA_nationwide_vaccinations
+				}
+				add_days_mission_timeout = {
+					mission = SIA_nationwide_vaccinations
+					days = -25
+				}
+			}
+			else = {
+				add_days_mission_timeout = {
+					mission = SIA_securing_vaccine_supply
+					days = -25
+				}
 			}
 		}
 		ai_will_do = {

@@ -1,5 +1,17 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_SIA_approval_map_overlay"
+		texturefile = "gfx/interface/SIA/Economy/approval_map_overlay.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_approval_box_overlay"
+		texturefile = "gfx/interface/SIA/Economy/approval_box_overlay.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_environment_map_overlay"
+		texturefile = "gfx/interface/SIA/Economy/environment_map_overlay.png"
+	}
+	spriteType = {
 		name = "GFX_SIA_approval_map_outline"
 		texturefile = "gfx/interface/SIA/Economy/approval_outline.png"
 	}
@@ -18,6 +30,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SIA_background_environment"
 		texturefile = "gfx/interface/SIA/Economy/background_environment.png"
+	}
+	spriteType = {
+		name = "GFX_SIA_background_approval"
+		texturefile = "gfx/interface/SIA/Economy/background_approval.png"
 	}
 	spriteType = {
 		name = "GFX_SIA_background_engine"

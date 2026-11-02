@@ -199,6 +199,9 @@ SIA_increase_protests = {
 			  damage = 3
 			}
 		}
+		hidden_effect = {
+			news_event = { id = thai_newsevents.16 hours = 6 }
+		}
 	}
 	else_if = {
 		limit = {

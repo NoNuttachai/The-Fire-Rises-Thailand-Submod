@@ -17,6 +17,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_the_constitution_of_thailand_cat"
+		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_the_constitution_of_thailand_cat.png"
+		legacy_lazy_load = no
+	}
+	# NATSPIRIT ICONS
+	spriteType = {
 		name = "GFX_idea_SIA_an_army_with_a_country"
 		textureFile = "gfx/interface/ideas/SIA/SIA_an_army_with_a_country.png"
 	}
@@ -25,9 +31,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/SIA_low_legitimacy.png"
 	}
 	spriteType = {
-		name = "GFX_SIA_the_constitution_of_thailand_cat"
-		textureFile = "gfx/interface/ideas/SIA/GFX_SIA_the_constitution_of_thailand_cat.png"
-		legacy_lazy_load = no
+		name = "GFX_idea_SIA_royal_army_of_thailand"
+		textureFile = "gfx/interface/ideas/SIA/royal_army_of_thailand.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_half_policy"
+		textureFile = "gfx/interface/ideas/SIA/half_policy.png"
 	}
 	#Misc Texticon Banners
 	spriteType = {
@@ -470,6 +479,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_orange_party_3" #People's Party
+		texturefile = "gfx/texticons/SIA_PP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_progressive_movement" #Piyabutr Organization
 		texturefile = "gfx/texticons/SIA_PM.png"
 		legacy_lazy_load = no
@@ -507,6 +521,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_united_thai_nation"
 		texturefile = "gfx/texticons/SIA_UTNP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_kla_tham"
+		texturefile = "gfx/texticons/SIA_KTP.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_new_opportunity"
+		texturefile = "gfx/texticons/SIA_OKM.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -591,7 +615,16 @@ spriteTypes = {
 		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_PCC_intro.png"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_SIA_intro_UTN" #United Thai Nation - Pirapan Salirathavibhaga
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_UTN_intro.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_intro_KT" #Kla Tham - Thamanat Prompow
+		texturefile = "gfx/texticons/SIA/intro_texticon/SIA_KT_intro.png"
+		legacy_lazy_load = no
+	}
 	# Party leader portraits — inline images for event/idea descriptions (£GFX_name in loc)
 	spriteType = {
 		name = "GFX_SIA_cat_PPRP_Uttama"
@@ -901,6 +934,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_trinuch.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_thamanat_prompow"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_thamanat_prompow.png"
+		legacy_lazy_load = no
+	}
 	# Laws
 	spriteType = {
 		name = "GFX_idea_SIA_lottery_conscription"
@@ -999,6 +1037,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hog_SIA_SIA_trinuch_thienthong"
 		texturefile = "gfx/leaders/SIA/SIA_trinuch_thienthong.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hog_SIA_SIA_thamanat_prompow"
+		texturefile = "gfx/leaders/SIA/SIA_thamanat_prompow.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {

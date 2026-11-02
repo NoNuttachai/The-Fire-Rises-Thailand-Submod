@@ -518,7 +518,7 @@ country_event = { #End of Cambodian Occupational Authority
     id = thai_cambodia_tension.21
     title = thai_cambodia_tension.21.t
     desc = thai_cambodia_tension.21.d
-	picture = GFX_report_cambodia_skirmish_lost
+	picture = GFX_report_thai_cambodia
 	is_triggered_only = yes
 	
     option = {
@@ -669,7 +669,7 @@ country_event = { #review the autopsy
     id = thai_prayut.6
     title = thai_prayut.6.t
     desc = thai_prayut.6.d
-	
+	picture = GFX_report_prayut_reading
 	is_triggered_only = yes
 	
     option = {
@@ -762,7 +762,7 @@ country_event = { #Prayut launches media campaign
 		
     }
 }
-country_event = { #The Opposition - Orange Party and PTP
+country_event = { #The Opposition - Orange Party and PTP NOT USED, GOING TO BE REPLACED
     id = thai_prayut.11
     title = thai_prayut.11.t
     desc = thai_prayut.11.d
@@ -916,7 +916,7 @@ country_event = { #Pirapan stalemates cambodia
 		set_temp_variable = { target = 1 }
 		set_temp_variable = { influ_change = -30 }
 		SIA_utn_tug_of_war_change_influence = yes
-		country_event = thai_prayut.23 
+		country_event = { id = thai_prayut.23 days = 15 }
     }
 }
 country_event = { #Suchart outinfluences and wins nomination
@@ -1143,6 +1143,19 @@ country_event = {
 	}
 	
 }
+country_event = { #UTN wins 2026/2027 Elections
+    id = thai_prayut.36
+    title = thai_prayut.36.t
+    desc = thai_prayut.36.d
+	picture = GFX_report_prayut_media_campaign
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_prayut.36.a
+		focus_unlock = yes
+		set_country_flag = SIA_utn_2027_victory
+    }
+}
 country_event = { #elections calculated
     id = thai_elections.1
     title = thai_elections.1.t
@@ -1196,9 +1209,6 @@ country_event = { # 2023 Elections start
 		custom_effect_tooltip = thai_elections_3_tt_b
     }
 	after = {
-		hidden_effect = {
-			country_event = { id = thai_elections.5 days = 30 }
-		}
 		effect_tooltip = {
 			activate_mission = SIA_2023_elections
 			activate_mission = SIA_other_parties_campaigning
@@ -1299,8 +1309,16 @@ country_event = { # Coalition Formed
 		else_if = {
 			limit = {
 				check_variable = { SIA_government_leader = 11 }
+				has_country_flag = SIA_2023_elections
 			}
 			country_event = thai_prayut.8
+		}
+		else_if = {
+			limit = {
+				check_variable = { SIA_government_leader = 11 }
+				has_country_flag = SIA_2027_elections
+			}
+			country_event = thai_prayut.36
 		}
 		clr_country_flag = SIA_government_coalition_formation_ongoing
 		hidden_effect = {
@@ -1309,12 +1327,11 @@ country_event = { # Coalition Formed
 				vacant_for
 				vacant_eco
 				vacant_sec
-				vacant_theorist
 			}
 		}
     }
 }
-country_event = { # PTP leadership choice
+country_event = { # PTP leadership choice # DEFUNCT
     id = thai_elections.5
     title = thai_elections.5.t
     desc = thai_elections.5.d
@@ -1327,8 +1344,8 @@ country_event = { # PTP leadership choice
     }
 	option = { #Shinawatra
         name = thai_elections.5.b 
-		set_variable = { ptp_candidate = 2 } 
-		custom_effect_tooltip = thai_elections_5_tt_b
+		
+		
     }
 }
 country_event = { # DP falls to chaos after lost in elections
@@ -1412,6 +1429,100 @@ country_event = { #Thamanat Prompow joins Kla Tham
         name = thai_elections.9.a
 		set_country_flag = SIA_klatham_active
 		custom_effect_tooltip = thai_elections_9_tt
+    }
+}
+
+
+### ELECTION CANDIDATE INTRODUCTION EVENTS
+country_event = { # 2023 MFP - Pita Limjaroenrat
+    id = thai_elections.10
+    title = thai_elections.10.t
+    desc = thai_elections.10.d
+    picture = GFX_report_mfp_pita
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.10.a
+		custom_effect_tooltip = thai_elections_10_tt
+		set_temp_variable = { target = 3 }
+		set_temp_variable = { vote_change = 4 }
+		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { # 2023 PTP - Paetongtarn Shinawatra
+    id = thai_elections.11
+    title = thai_elections.11.t
+    desc = thai_elections.11.d
+    picture = GFX_report_candidate_paetongtarn_introduction
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.11.a
+		custom_effect_tooltip = thai_elections_11_tt
+		set_variable = { ptp_candidate = 2 } 
+		set_temp_variable = { target = 2 }
+		set_temp_variable = { vote_change = 3 }
+		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { # 2023 BJT - Anutin
+    id = thai_elections.12
+    title = thai_elections.12.t
+    desc = thai_elections.12.d
+    picture = GFX_report_candidate_anutin_introduction
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.12.a
+		custom_effect_tooltip = thai_elections_12_tt
+		set_temp_variable = { target = 6 }
+		set_temp_variable = { vote_change = 2 }
+		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { # 2023 UTN - Prayut
+    id = thai_elections.13
+    title = thai_elections.13.t
+    desc = thai_elections.13.d
+    picture = GFX_report_candidate_prayut_introduction
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.13.a
+		custom_effect_tooltip = thai_elections_13_tt
+		set_temp_variable = { target = 11 }
+		set_temp_variable = { vote_change = 3 }
+		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { # 2023 PPRP - Prawit
+    id = thai_elections.14
+    title = thai_elections.14.t
+    desc = thai_elections.14.d
+    picture = GFX_report_candidate_prawit_introduction
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.14.a
+		custom_effect_tooltip = thai_elections_14_tt
+		set_temp_variable = { target = 1 }
+		set_temp_variable = { vote_change = 2 }
+		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { # 2023 DP - Jurin
+    id = thai_elections.15
+    title = thai_elections.15.t
+    desc = thai_elections.15.d
+    picture = GFX_report_candidate_jurin_introduction
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.15.a
+		custom_effect_tooltip = thai_elections_15_tt
+		set_temp_variable = { target = 4 }
+		set_temp_variable = { vote_change = 2 }
+		SIA_elections_increase_votes_by_undecided = yes
     }
 }
 country_event = { #Verdict on FFP
@@ -2187,7 +2298,7 @@ country_event = {
     id = thai_events.32 # Saudi Civil War Causes Pattani Ceasefire Collapse
     title = thai_events.32.t
     desc = thai_events.32.d
-	picture = GFX_report_thai_pattani_peacetalks_jan_2020
+	picture = GFX_report_pattani_fighting
 	fire_only_once = yes
 	
 	is_triggered_only = yes
@@ -2273,7 +2384,7 @@ country_event = {
 	}
 }
 country_event = {
-    id = thai_events.35 # Prayut steps down after 2nd Motion of No Confidence
+    id = thai_events.35 # Prayut saved after 2nd successful motion
     title = thai_events.35.t
     desc = thai_events.35.d
 	picture = GFX_report_its_prayut_over
@@ -2282,25 +2393,18 @@ country_event = {
 
     option = {
         name = thai_events.35.a
-		custom_effect_tooltip = SIA_game_over_tt
-		add_stability = -0.05
+		add_stability = -0.025
+		add_political_power = -50
 		add_power_balance_value = {
 			id = SIA_power_balance
-			value = -0.05
+			value = -0.1
 		}
-		remove_ideas = SIA_prayut_chan-o-cha_advisor
-		if = {
-			limit = {
-				has_idea = SIA_state_of_emergency
-			}
-			remove_ideas = SIA_state_of_emergency
+		add_days_mission_timeout = {
+			mission = SIA_the_protests_intensify
+			days = -15
 		}
-		add_ideas = SIA_prawit_wongsuwan_hog
-		remove_power_balance = {
-			id = SIA_power_balance
-		}
-		country_event = { id = thai_events.37 days = 15 }
-		news_event = thai_newsevents.3
+		set_temp_variable = { increase = 1 }
+		SIA_increase_youth_status = yes
 	}
 }
 country_event = {
@@ -2791,6 +2895,11 @@ country_event = {
 		}
 		set_country_flag = mfp_dismantled
 		custom_effect_tooltip = thai_events_55_tt
+		set_party_name = {
+            ideology = social_democrat
+            long_name = SIA_pp_long
+            name = SIA_pp
+        }
 	}
 }
 country_event = {
@@ -3176,7 +3285,7 @@ country_event = {
 	
     option = {
         name = thai_events.76.a
-		custom_effect_tooltip = thai_events_76_tt
+		#custom_effect_tooltip = thai_events_76_tt
 	}
 	
 }
@@ -3369,10 +3478,27 @@ country_event = {
     title = thai_events.85.t
     desc = thai_events.85.d
 	is_triggered_only = yes
-	
+	picture = GFX_report_stack_of_papers
 	immediate = {
 		hidden_effect = {
-			country_event = { id = thai_events.85 days = 365 }
+			if = {
+				limit = {
+					has_idea = SIA_yearly_plan_growth_idea
+				}
+				set_temp_variable = { change_temp = 0.5 }
+				SIA_change_environment_monthly = yes
+			}
+			else_if = {
+				limit = {
+					has_idea = SIA_yearly_plan_balanced_idea
+				}
+				set_temp_variable = { change_temp = -0.05 }
+				SIA_change_environment_monthly = yes
+			}
+			else = {
+				set_temp_variable = { change_temp = -0.5 }
+				SIA_change_environment_monthly = yes
+			}
 			remove_ideas = {
 				SIA_yearly_plan_growth_idea
 				SIA_yearly_plan_balanced_idea
@@ -3771,5 +3897,18 @@ news_event = { #Magnitude 7.9 Earthquake hits Myanmar and Thailand
 				}
 			}
 		}
+    }
+}
+news_event = { #Mass Riots in Bangkok, Thailand
+    id = thai_newsevents.16
+    title = thai_newsevents.16.t
+    desc = thai_newsevents.16.d
+    picture = GFX_global_event_mass_riots_thailand
+	is_triggered_only = yes
+	major = yes
+
+    option = {
+        name = thai_newsevents.16.a 
+        
     }
 }

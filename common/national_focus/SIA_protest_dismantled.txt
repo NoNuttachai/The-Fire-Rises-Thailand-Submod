@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 999999999
 			tag = SIA
 		}
 	}
@@ -29,7 +29,6 @@ focus_tree = {
 			}
 			hidden_effect = {
 				country_event = { id = thai_prayut.1 days = 355 } # Prawit caretaker
-				country_event = { id = thai_prayut.6 days = 30 }
 			}
 		}
 	}
@@ -952,7 +951,7 @@ focus_tree = {
 	}
 	focus = {
 		id = SIA_30_30_vision
-		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		icon = GFX_goal_SIA_prayut_2021_SIA_30_30
 		x = 0
 		y = 1
 		cost = 4

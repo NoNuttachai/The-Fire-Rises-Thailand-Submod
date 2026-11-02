@@ -7,7 +7,7 @@ SIA_change_environment_monthly = { #Directly change the monthly variable
 	add_to_variable = { SIA_environment_monthly_progress = change_temp }
 	clamp_variable = {
 		var = SIA_environment_monthly_progress
-		min = 0
+		min = -50
 		max = 100
 	}
 	custom_effect_tooltip = SIA_change_environment_monthly_tt
@@ -597,7 +597,7 @@ SIA_calculate_national_engine_level = {
 }
 
 ### APPROVAL MECH ###
-SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-Minor Party 8-Divided
+SIA_initiate_area_approvals = { # 0-Divided 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-UTN 8-Minor Party 
 	for_each_loop = { 
 		array = SIA_map_var 
 		value = v 
@@ -607,7 +607,7 @@ SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-
 				limit = { #Bangkok PT -> MFP (2023) -> PP (2025)
 					check_variable = { v = 1 } 
 				}
-				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_alignment = 2 }
 				set_variable = { SIA_state_approval = 20 }
 				set_variable = { SIA_state_local_strength = 35 } #This a trick to use 1 variable only, it's actually Progress vs Prosperity
 			}
@@ -615,7 +615,7 @@ SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-
 				limit = { #North PT
 					check_variable = { v = 2 } 
 				}
-				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_alignment = 2 }
 				set_variable = { SIA_state_approval = 40 }
 				set_variable = { SIA_state_local_strength = 65 }
 			}
@@ -631,7 +631,7 @@ SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-
 				limit = { #East Divided
 					check_variable = { v = 4 } 
 				}
-				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_alignment = 0 }
 				set_variable = { SIA_state_approval = 54 }
 				set_variable = { SIA_state_local_strength = 55 }
 			}
@@ -639,12 +639,12 @@ SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-
 				limit = { #Northeast PT
 					check_variable = { v = 5 } 
 				}
-				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_alignment = 2 }
 				set_variable = { SIA_state_approval = 40 }
 				set_variable = { SIA_state_local_strength = 65 }
 			}
 			else_if = {
-				limit = { #West 
+				limit = { #West PPRP -> Divided
 					check_variable = { v = 6 } 
 				}
 				set_variable = { SIA_state_alignment = 1 }
@@ -652,10 +652,10 @@ SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-
 				set_variable = { SIA_state_local_strength = 55 }
 			}
 			else_if = {
-				limit = { #South 
+				limit = { #South Democrats
 					check_variable = { v = 7 } 
 				}
-				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_alignment = 4 }
 				set_variable = { SIA_state_approval = 57 }
 				set_variable = { SIA_state_local_strength = 65 }
 			}
@@ -663,7 +663,7 @@ SIA_initiate_area_approvals = { # 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-
 				limit = { #Pattani Minor
 					check_variable = { v = 8 } 
 				}
-				set_variable = { SIA_state_alignment = 1 }
+				set_variable = { SIA_state_alignment = 8 }
 				set_variable = { SIA_state_approval = 32 }
 				set_variable = { SIA_state_local_strength = 85 }
 			}

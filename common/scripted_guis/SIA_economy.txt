@@ -31,6 +31,12 @@ scripted_gui = {
 			SIA_background_environment_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 			}
+			SIA_background_approval_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_environment_map_overlay_visible = {
+				check_variable = { SIA_econ_tab = 1 }
+			}
 			SIA_environment_yearly_plan_icons_visible = {
 				check_variable = { SIA_econ_tab = 1 }
 				check_variable = { SIA_environment_yearly_plan > 0 }
@@ -267,7 +273,15 @@ scripted_gui = {
 			SIA_approval_nationwide_text_visible = {
 				check_variable = { SIA_econ_tab = 3 }
 			}
-			
+			SIA_approval_map_overlay_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_box_1_overlay_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
+			SIA_box_2_overlay_visible = {
+				check_variable = { SIA_econ_tab = 3 }
+			}
 			
 			
 			
