@@ -247,7 +247,10 @@ SIA_parliament_category = {
 	SIA_promote_tourism = {
 		icon = generic_coronavirus
 		visible = { 
-			has_completed_focus = SIA_stimulate_the_tourism_spending 
+			OR = {
+				has_completed_focus = SIA_stimulate_the_tourism_spending 
+				has_completed_focus = SIA_third_prayut_cabinet 
+			}
 		}
 		cost = 50
 		ai_will_do = { factor = 1 }
@@ -265,7 +268,10 @@ SIA_parliament_category = {
 	SIA_introduce_SMILE = {
 		icon = generic_coronavirus
 		visible = { 
-			has_completed_focus = SIA_stimulate_the_tourism_spending 
+			OR = {
+				has_completed_focus = SIA_stimulate_the_tourism_spending 
+				has_completed_focus = SIA_third_prayut_cabinet 
+			}
 		}
 		cost = 50
 		ai_will_do = { factor = 1 }
@@ -283,7 +289,10 @@ SIA_parliament_category = {
 	SIA_extent_travel_subsidy = {
 		icon = generic_coronavirus
 		visible = { 
-			has_completed_focus = SIA_stimulate_the_tourism_spending 
+			OR = {
+				has_completed_focus = SIA_stimulate_the_tourism_spending 
+				has_completed_focus = SIA_third_prayut_cabinet 
+			}
 		}
 		cost = 40
 		ai_will_do = { factor = 1 }
@@ -314,7 +323,12 @@ SIA_parliament_category = {
 	}
 	SIA_increase_funding_to_renewables = {
 		icon = generic_coronavirus
-		visible = { has_completed_focus = SIA_30_30_vision }
+		visible = { 
+			OR = {
+				has_completed_focus = SIA_third_prayut_cabinet 
+				has_completed_focus = SIA_30_30_vision 
+			}
+		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes
@@ -344,7 +358,12 @@ SIA_parliament_category = {
 	}
 	SIA_fund_ev_industry = {
 		icon = generic_coronavirus
-		visible = { has_completed_focus = SIA_30_30_vision }
+		visible = { 
+			OR = {
+				has_completed_focus = SIA_third_prayut_cabinet 
+				has_completed_focus = SIA_30_30_vision 
+			}
+		}
 		cost = 50
 		ai_will_do = { factor = 1 }
 		fire_only_once = yes

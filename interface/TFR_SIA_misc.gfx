@@ -1,15 +1,79 @@
 spriteTypes = {
-	#Ideology
+	#Ideology Banner
 	spriteType = {
 		name = "GFX_SIA_national_conservatism"
 		texturefile = "gfx/texticons/banners/ideology/SIA_national_conservatism.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_SIA_thai_liberal_populism"
+		texturefile = "gfx/texticons/banners/ideology/thai_liberal_populism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_natcon_prayut"
+		texturefile = "gfx/texticons/banners/ideology/natcon_prayut.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_natcon_pirapan"
+		texturefile = "gfx/texticons/banners/ideology/natcon_pirapan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_natcon_suchart"
+		texturefile = "gfx/texticons/banners/ideology/natcon_suchart.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_kt_banner"
+		texturefile = "gfx/texticons/banners/ideology/kt_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_bjt_banner"
+		texturefile = "gfx/texticons/banners/ideology/bjt_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_mfp_banner"
+		texturefile = "gfx/texticons/banners/ideology/mfp_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_dpbanner"
+		texturefile = "gfx/texticons/banners/ideology/dpbanner.png"
+		legacy_lazy_load = no
+	}
+	# IDEOLOGIES ICON
+	spriteType = {
+		name = "GFX_ideology_SIA_progressivism"
+		texturefile = "gfx/interface/ideologies/SIA_progressivism.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_SIA_national_conservativism_auth"
 		texturefile = "gfx/interface/ideologies/national_conservativism_auth_SIA.dds"
-	}	
-	
+	}
+	spriteType = {
+		name = "GFX_ideology_national_conservativism_auth_utn_prayut"
+		texturefile = "gfx/interface/ideologies/national_conservatism_utn.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_national_conservativism_auth_utn_pirapan"
+		texturefile = "gfx/interface/ideologies/national_conservatism_utn.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_national_conservativism_auth_utn_suchart"
+		texturefile = "gfx/interface/ideologies/national_conservatism_utn.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_thai_liberal_populism"
+		texturefile = "gfx/interface/ideologies/SIA_liberal_populism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_right_populist_agrarianism"
+		texturefile = "gfx/interface/ideologies/right_populist_agrarianism.png"
+	}
 	#Decision Pictures
 	spriteType = {
         name = "GFX_decision_cat_SIA_oil_crisis_picture"

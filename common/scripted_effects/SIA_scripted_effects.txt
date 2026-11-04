@@ -1641,3 +1641,326 @@ PRC_gaw_start = {
 		}
 	}
 }
+
+# Thailand Ideology Changes Effects
+SIA_change_ideology_pprp = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_prayut
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_prayut
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = right_populist_agrarianism
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = right_populist_agrarianism
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_pirapan
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_pirapan
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_suchart
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_suchart
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = SIA_rama_x_char
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservativism_auth
+				expire = "1.1.1.1"
+			}
+		}
+	}
+}
+SIA_change_ideology_ptp = {
+
+}
+SIA_change_ideology_mfp = {
+
+}
+SIA_change_ideology_dp = {
+
+}
+SIA_change_ideology_bjt = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = right_centrist
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = right_centrist
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = SIA_rama_x_char
+			promote_leader = yes
+			country_leader = {
+				ideology = right_populism
+				expire = "1.1.1.1"
+			}
+		}
+	}
+}
+SIA_change_ideology_utn_prayut = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = right_populist_agrarianism
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = right_populist_agrarianism
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_pirapan
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_pirapan
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_suchart
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_suchart
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = SIA_rama_x_char
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservativism_auth_utn_prayut
+				expire = "1.1.1.1"
+			}
+		}
+	}
+}
+SIA_change_ideology_utn_pirapan = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_prayut
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_prayut
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = right_populist_agrarianism
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = right_populist_agrarianism
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_suchart
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_suchart
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = SIA_rama_x_char
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservativism_auth_utn_pirapan
+				expire = "1.1.1.1"
+			}
+		}
+	}
+}
+SIA_change_ideology_utn_suchart = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_prayut
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_prayut
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = right_populist_agrarianism
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = right_populist_agrarianism
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_pirapan
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_pirapan
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = SIA_rama_x_char
+			promote_leader = yes
+			country_leader = {
+				ideology = national_conservativism_auth_utn_suchart
+				expire = "1.1.1.1"
+			}
+		}
+	}
+}
+SIA_change_ideology_kt = {
+	hidden_effect = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+			election_frequency = 48
+		}
+		if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_prayut
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_prayut
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_suchart
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_suchart
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth_utn_pirapan
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth_utn_pirapan
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_leader_ideology = national_conservativism_auth
+			}
+			SIA_rama_x_char = {
+				remove_country_leader_role = {
+					ideology = national_conservativism_auth
+				}
+			}
+		}
+		add_country_leader_role = {
+			character = SIA_rama_x_char
+			promote_leader = yes
+			country_leader = {
+				ideology = right_populist_agrarianism
+				expire = "1.1.1.1"
+			}
+		}
+	}
+}

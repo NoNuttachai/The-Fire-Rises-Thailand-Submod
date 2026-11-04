@@ -2872,6 +2872,23 @@ ideas = {
 				hog_pragmatic_statesman
 			}
 		}
+		SIA_jurin_laksanawisit_hog = {
+			name = SIA_jurin_laksanawisit_char
+			picture = SIA_jurin
+			allowed = {
+				original_tag = SIA
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				has_idea = SIA_jurin_laksanawisit_hog
+			}
+			traits = {
+				SIA_ide_dp
+				hog_pragmatic_statesman
+			}
+		}
 		SIA_thamanat_prompow_hog = {
 			name = SIA_thamanat_prompow_char
 			picture = SIA_thamanat_prompow

@@ -38,7 +38,7 @@ characters={
 		}
 		country_leader = {
 			desc = SIA_rama_x_char_desc
-			ideology = centrist
+			ideology = thai_liberal_populism
 			traits = {
 				SIA_Vajiralongkorn
 			}

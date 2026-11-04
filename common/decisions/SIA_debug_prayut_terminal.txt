@@ -196,6 +196,7 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_prayut_chan-o-cha_advisor
+			SIA_change_ideology_pprp = yes
 		}
 	}
 	SIA_PM_change_add_prayut_utn = {
@@ -204,6 +205,7 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_prayut_chan_o_cha_utn_hog
+			SIA_change_ideology_utn_prayut = yes
 		}
 	}
 	SIA_PM_change_add_prawit = {
@@ -220,6 +222,13 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_sretta_thavisin_hog
+			hidden_effect = {
+				set_politics = {
+					ruling_party = social_liberal
+					elections_allowed = yes
+					election_frequency = 48
+				}
+			}
 		}
 	}
 	SIA_PM_change_add_paetongtarn = {
@@ -228,6 +237,18 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_paetongtarn_shinawatra_hog
+			hidden_effect = {
+				set_politics = {
+					ruling_party = social_liberal
+					elections_allowed = yes
+					election_frequency = 48
+				}
+				set_party_name = {
+					ideology = social_liberal
+					long_name = SIA_ptp_party_long
+					name = SIA_ptp_party
+				}
+			}
 		}
 	}
 	SIA_PM_change_add_pita = {
@@ -236,6 +257,18 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_pita_limjaroenrat_hog
+			hidden_effect = {
+				set_politics = {
+					ruling_party = social_democrat
+					elections_allowed = yes
+					election_frequency = 48
+				}
+				set_party_name = {
+					ideology = social_democrat
+					long_name = SIA_mfp_long
+					name = SIA_mfp
+				}
+			}
 		}
 	}
 	SIA_PM_change_add_anutin = {
@@ -244,6 +277,7 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_anutin_charnvirakul_hog
+			SIA_change_ideology_bjt = yes
 		}
 	}
 	SIA_PM_change_add_yodchanan = {
@@ -260,6 +294,8 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_pirapan_salirathavibhaga_hog
+			SIA_change_ideology_utn_pirapan = yes
+			
 		}
 	}
 	SIA_PM_change_add_suchart = {
@@ -268,6 +304,7 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_suchat_chomklin_hog
+			SIA_change_ideology_utn_suchart = yes
 		}
 	}
 	SIA_PM_change_add_trinuch = {
@@ -278,12 +315,51 @@ SIA_debug_prayut_terminal = {
 			add_ideas = SIA_trinuch_thienthong_hog
 		}
 	}
+	SIA_PM_change_add_jurin = {
+		visible = {
+			has_country_flag = show_pm_list
+		}
+		complete_effect = {
+			add_ideas = SIA_jurin_laksanawisit_hog
+			hidden_effect = {
+				set_politics = {
+					ruling_party = conservative
+					elections_allowed = yes
+					election_frequency = 48
+				}
+				if = {
+					limit = {
+						has_country_leader_ideology = right_populism
+					}
+					SIA_rama_x_char = {
+						remove_country_leader_role = {
+							ideology = right_populism
+						}
+					}
+				}
+				add_country_leader_role = {
+					character = SIA_rama_x_char
+					promote_leader = yes
+					country_leader = {
+						ideology = right_centrist
+						expire = "1.1.1.1"
+					}
+				}
+				set_party_name = {
+					ideology = conservative
+					long_name = SIA_dp_party_long
+					name = SIA_dp_party
+				}
+			}
+		}
+	}
 	SIA_PM_change_add_thamanat = {
 		visible = {
 			has_country_flag = show_pm_list
 		}
 		complete_effect = {
 			add_ideas = SIA_thamanat_prompow_hog
+			SIA_change_ideology_kt = yes
 		}
 	}
 }

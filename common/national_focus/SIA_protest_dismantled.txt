@@ -899,12 +899,26 @@ focus_tree = {
 		
 		completion_reward = {
 			if = {
-				limit = {
-					has_country_flag = SIA_ongoing_elections
+				limit = { #campaign regularly
+					check_variable = { undecided_votes > 0 }
 				}
 				set_temp_variable = { target = 11 }
 				set_temp_variable = { vote_change = 5 }
 				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #eat the souls of MFP or PTP
+				set_temp_variable = { 1st_target = 11 }
+				set_temp_variable = { vote_change = 5 }
+				if = {
+					limit = {
+						check_variable = { 2:party_votes > 3:party_votes }
+					}
+					set_temp_variable = { 2nd_target = 2 }
+				}
+				else = { #Orange
+					set_temp_variable = { 2nd_target = 3 }
+				}
+				SIA_elections_targeted_vote_increase = yes
 			}
 			add_political_power = 50
 			unlock_decision_tooltip = SIA_berate_our_opponents
@@ -945,8 +959,8 @@ focus_tree = {
 				}
 			}
 			unlock_decision_tooltip = SIA_promote_tourism
-                        unlock_decision_tooltip = SIA_introduce_SMILE
-                        unlock_decision_tooltip = SIA_extent_travel_subsidy
+			unlock_decision_tooltip = SIA_introduce_SMILE
+			unlock_decision_tooltip = SIA_extent_travel_subsidy
 		}
 	}
 	focus = {
@@ -991,12 +1005,26 @@ focus_tree = {
 			set_temp_variable = { debt_var_temp = 14.931 }
 			add_debt = yes
 			if = {
-				limit = {
-					has_country_flag = SIA_ongoing_elections
+				limit = { #campaign regularly
+					check_variable = { undecided_votes > 0 }
 				}
 				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 5 }
+				set_temp_variable = { vote_change = 3 }
 				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #eat the souls of MFP or PTP
+				set_temp_variable = { 1st_target = 11 }
+				set_temp_variable = { vote_change = 3 }
+				if = {
+					limit = {
+						check_variable = { 2:party_votes > 3:party_votes }
+					}
+					set_temp_variable = { 2nd_target = 2 }
+				}
+				else = { #Orange
+					set_temp_variable = { 2nd_target = 3 }
+				}
+				SIA_elections_targeted_vote_increase = yes
 			}
 			289 = {
 				add_building_construction = {
@@ -1032,12 +1060,26 @@ focus_tree = {
 		
 		completion_reward = {
 			if = {
-				limit = {
-					has_country_flag = SIA_ongoing_elections
+				limit = { #campaign regularly
+					check_variable = { undecided_votes > 0 }
 				}
 				set_temp_variable = { target = 11 }
-				set_temp_variable = { vote_change = 4 }
+				set_temp_variable = { vote_change = 3 }
 				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #eat the souls of MFP or PTP
+				set_temp_variable = { 1st_target = 11 }
+				set_temp_variable = { vote_change = 3 }
+				if = {
+					limit = {
+						check_variable = { 2:party_votes > 3:party_votes }
+					}
+					set_temp_variable = { 2nd_target = 2 }
+				}
+				else = { #Orange
+					set_temp_variable = { 2nd_target = 3 }
+				}
+				SIA_elections_targeted_vote_increase = yes
 			}
 			
 		}
