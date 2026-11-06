@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 9999999
+			add = 1
 			tag = SIA
 		}
 	}
@@ -1816,7 +1816,7 @@ focus_tree = {
 	### MIDDLE BRANCH PM UNIQUE TREE ###
 	#Pirapan
 	focus = { 
-		id = SIA_the_natural_heir
+		id = SIA_the_heir
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -1827,7 +1827,7 @@ focus_tree = {
 		available = {
 			
 		}
-		
+		prerequisite = { focus = SIA_once_again_the_utn }
 		relative_position_id = SIA_once_again_the_utn
 		allow_branch = { 
 			has_idea = SIA_pirapan_salirathavibhaga_hog
@@ -1837,10 +1837,105 @@ focus_tree = {
 			
 		}
 	}
-	
+	focus = { 
+		id = SIA_step_on_the_pedal
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_the_heir }
+		relative_position_id = SIA_the_heir
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_dining
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_step_on_the_pedal }
+		relative_position_id = SIA_step_on_the_pedal
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_institutionalize_the_utn
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_the_heir }
+		relative_position_id = SIA_the_heir
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_your_legacy
+		icon = GFX_goal_SIA_information_operations
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_institutionalize_the_utn }
+		relative_position_id = SIA_institutionalize_the_utn
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_on_the_frontline
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_dining }
+		prerequisite = { focus = SIA_your_legacy }
+		relative_position_id = SIA_dining
+		
+		completion_reward = {
+			
+		}
+	}
 	#Suchart
 	focus = { 
-		id = SIA_chonburi_kingpin
+		id = SIA_the_eastern_leader
 		icon = GFX_goal_SIA_information_operations
 		x = 0
 		y = 1
@@ -1851,11 +1946,345 @@ focus_tree = {
 		available = {
 			
 		}
-		
+		prerequisite = { focus = SIA_once_again_the_utn }
 		relative_position_id = SIA_once_again_the_utn
 		allow_branch = { 
 			has_idea = SIA_suchat_chomklin_hog
 		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_eastern_foundation
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_the_eastern_leader }
+		relative_position_id = SIA_the_eastern_leader
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_consolidation
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_eastern_foundation }
+		relative_position_id = SIA_eastern_foundation
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_pact_with_labor
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_the_eastern_leader }
+		relative_position_id = SIA_the_eastern_leader
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_on_calls_with_the_barons
+		icon = GFX_goal_SIA_information_operations
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_pact_with_labor }
+		relative_position_id = SIA_pact_with_labor
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_detente
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_consolidation }
+		prerequisite = { focus = SIA_on_calls_with_the_barons }
+		relative_position_id = SIA_dining
+		
+		completion_reward = {
+			
+		}
+	}
+	#Trinuch
+	focus = { 
+		id = SIA_return_to_form
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_once_again_the_utn }
+		relative_position_id = SIA_once_again_the_utn
+		allow_branch = { 
+			has_idea = SIA_trinuch_thienthong_hog
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_protect_our_workers
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_return_to_form }
+		relative_position_id = SIA_return_to_form
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_consulting_prawit
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_protect_our_workers }
+		relative_position_id = SIA_protect_our_workers
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_revitalizing_wartorn_areas
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_return_to_form }
+		relative_position_id = SIA_return_to_form
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_safeguard_our_youth
+		icon = GFX_goal_SIA_information_operations
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_revitalizing_wartorn_areas }
+		relative_position_id = SIA_revitalizing_wartorn_areas
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_finalize_the_merges
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_consulting_prawit }
+		prerequisite = { focus = SIA_safeguard_our_youth }
+		relative_position_id = SIA_consulting_prawit
+		
+		completion_reward = {
+			
+		}
+	}
+	#Akanat
+	focus = { 
+		id = SIA_the_young_conservative
+		icon = GFX_goal_SIA_information_operations
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_once_again_the_utn }
+		relative_position_id = SIA_once_again_the_utn
+		allow_branch = { 
+			has_idea = SIA_akanat_promphan_hog
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_eyes_on_our_domestic_industry
+		icon = GFX_goal_SIA_information_operations
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_the_young_conservative }
+		relative_position_id = SIA_the_young_conservative
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_no_gooder
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_eyes_on_our_domestic_industry }
+		relative_position_id = SIA_eyes_on_our_domestic_industry
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_backroom_agreements
+		icon = GFX_goal_SIA_information_operations
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_the_young_conservative }
+		relative_position_id = SIA_the_young_conservative
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_win_back_bangkok
+		icon = GFX_goal_SIA_information_operations
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_backroom_agreements }
+		relative_position_id = SIA_backroom_agreements
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = { 
+		id = SIA_red_lines
+		icon = GFX_goal_SIA_information_operations
+		x = 1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+		}
+		prerequisite = { focus = SIA_no_gooder }
+		prerequisite = { focus = SIA_win_back_bangkok }
+		relative_position_id = SIA_no_gooder
 		
 		completion_reward = {
 			

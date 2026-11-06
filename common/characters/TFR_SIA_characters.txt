@@ -635,7 +635,6 @@ characters={
 			maneuvering_skill=3
 			coordination_skill=2
 			traits={
-				seawolf
 			}
 		}
 	}

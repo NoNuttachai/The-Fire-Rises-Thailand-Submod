@@ -1157,4 +1157,11 @@ defined_text = {
 		}
 		localization_key = SIA_thamanat_prompow_hog
 	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_idea = SIA_jurin_laksanawisit_hog
+		}
+		localization_key = SIA_jurin_laksanawisit_hog
+	}
 }

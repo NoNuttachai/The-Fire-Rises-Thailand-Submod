@@ -1045,6 +1045,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_hog_SIA_SIA_jurin_lakasanawisit"
+		texturefile = "gfx/leaders/SIA/SIA_jurin_lakasanawisit.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_hog_SIA_SIA_prayut_2"
 		texturefile = "gfx/leaders/SIA/SIA_prayut_2.png"
 		legacy_lazy_load = no
