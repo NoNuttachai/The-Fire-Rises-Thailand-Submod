@@ -51,7 +51,7 @@ shared_focus = {
 #Air
 shared_focus = {
 	id = SIA_bangkoks_sky
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_bangkoks_sky
 	x = -7
 	y = 1
 	cost = 4
@@ -86,7 +86,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_silent_and_waiting
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_silent_and_waiting
 	x = -1
 	y = 1
 	cost = 4
@@ -486,7 +486,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_one_of_many
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_construct_military_academies
 	x = -1
 	y = 1
 	cost = 4
@@ -751,7 +751,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_guardian_of_asia
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_guardians_of_asia
 	x = 0
 	y = 1
 	cost = 4

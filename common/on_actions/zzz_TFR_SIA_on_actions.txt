@@ -69,8 +69,8 @@ on_actions = {
 				news_event = { id = thai_newsevents.15 days = 1913  } # March 28 2025 Magnitude 7.9 Earthquake hits Myanmar and Thailand
 				
 				
-				1495 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
-				1496 = { add_dynamic_modifier = { modifier = SIA_pattaya_state_modifier } }
+				1504 = { add_dynamic_modifier = { modifier = SIA_bangkok_metropolitan_administration_state_modifier } }
+				1505 = { add_dynamic_modifier = { modifier = SIA_pattaya_state_modifier } }
 				
 				
 				set_variable = { bangkok_mayor = 0 }

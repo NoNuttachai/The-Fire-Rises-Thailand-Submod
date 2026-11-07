@@ -247,13 +247,14 @@
  
  SIA_brothers_forever: "Brothers Forever"
  SIA_brothers_forever_desc: ""
+ SIA_brothers_forever_tt: "£GFX_palang_pracharath §BThe Palang Pracharath Party§! remains united as ever.\n\n\n\n\n£GFX_SIA_brothersforever\n\n\n\n\n\n                       §YEastern Tigers Duo§!"
  
  SIA_no_hard_feelings: "No Hard Feelings"
  SIA_no_hard_feelings_desc: ""
  
  SIA_once_were_brothers: "Once Were Brothers"
  SIA_once_were_brothers_desc: ""
- SIA_once_were_brothers_tt: "Don't take it too hard,\nIt's just §RPolitics§!.\n\n\n\n\n£GFX_SIA_prawit_and_prayut\n\n\n\n\n\n£GFX_united_thai_nation £GFX_palang_pracharath £GFX_phua_thai §YIt's time to decide the path forward§!"
+ SIA_once_were_brothers_tt: "Don't take it too hard,\nIt's just §RPolitics§!.\n\n\n\n\n£GFX_SIA_prawit_and_prayut\n\n\n\n\n\n£GFX_united_thai_nation £GFX_phua_thai §YIt's time to decide the path forward§!"
  
  SIA_riding_with_uncle_tuu: "Uncle Tuu's Wild Ride"
  SIA_riding_with_uncle_tuu_desc: ""
@@ -2531,7 +2532,7 @@
  SIA_national_specialists_add_specialist_tt: "§GAdd§! §Y1§! £GFX_ai_texticon §gSpecialist§! to this §YArea§!"
  SIA_national_specialists_remove_specialist_tt: "§RRemove§! £GFX_ai_texticon §Y1§! §gSpecialist§! from this §YArea§!"
  SIA_national_specialists_amount: "[?SIA_specialists_var]"
- SIA_national_specialists_tt: "The engineers, entrepreneurs, and experts of the business world. These specialists increase the §OMonthly Fuel Growth§! of an Area by §Y0.15§!\n\nWe can freely assign them to any area that we deem requires more attention for §Geconomic development§!\n---------------------\n£GFX_ai_texticon Specialists In Each Area:\n§GBangkok§!: [?SIA:1.SIA_specialists_in_state]\n§7North§!: [?SIA:2.SIA_specialists_in_state]\n§CCentral§!: [?SIA:3.SIA_specialists_in_state]\n§9East§!: [?SIA:4.SIA_specialists_in_state]\n§LNortheast§!: [?SIA:5.SIA_specialists_in_state]\n§pWest§!: [?SIA:6.SIA_specialists_in_state]\n§OSouth§!: [?SIA:7.SIA_specialists_in_state]\n§RPattani§!: [?SIA:8.SIA_specialists_in_state]\n\nAs policies are enacted, £GFX_ai_texticon §gSpecialists§! have the ability to §Glevel up§! and gain an additional §Y0.05§! boost with §Yeach level§!.\n\n§YCurrent £GFX_ai_texticon Specialist Level§!: [?SIA_specialist_effectiveness_level|-+0]\n\nMaintaining and funding these groups will be §Rexpensive§!. As we §Lrecruit more§!, the §Rheavier our expenses§! we'll accumulate\n\n£GFX_dx §YMonthly Expense Growth§!: [?SIA_specialist_upkeep_expense_growth_factor_var|+-2%]"
+ SIA_national_specialists_tt: "The engineers, entrepreneurs, and experts of the business world. These specialists increase the §OMonthly Fuel Growth§! of an Area by §Y0.15§!\n\nWe can freely assign them to any area that we deem requires more attention for §Geconomic development§!\n---------------------\n£GFX_ai_texticon Specialists In Each Area:\n§GBangkok§!: [?SIA:1.SIA_specialists_in_state]\n§7North§!: [?SIA:2.SIA_specialists_in_state]\n§CCentral§!: [?SIA:3.SIA_specialists_in_state]\n§9East§!: [?SIA:4.SIA_specialists_in_state]\n§LNortheast§!: [?SIA:5.SIA_specialists_in_state]\n§pWest§!: [?SIA:6.SIA_specialists_in_state]\n§OSouth§!: [?SIA:7.SIA_specialists_in_state]\n§RPattani§!: [?SIA:8.SIA_specialists_in_state]\n\nAs policies are enacted, £GFX_ai_texticon §gSpecialists§! have the ability to §Glevel up§! and gain an additional §Y0.05§! boost with §Yeach level§!.\n\n§YCurrent £GFX_ai_texticon Specialist Level§!: [?SIA_specialist_effectiveness_level|-+0]\n\nMaintaining and funding these groups will be §Rexpensive§!. As we §Lrecruit more§!, the §Rheavier our expenses§! will accumulate\n\n£GFX_dx §YMonthly Expense Growth§!: [?SIA_specialist_upkeep_expense_growth_factor_var|+-2%]"
  SIA_national_engine_text: "National Engine Level"
  SIA_national_engine_value: "§C[?SIA_national_engine_level_var]/80§!"
  SIA_national_engine_tt: "Representing the overall §GEconomic Health§! of the country. This measures the growth of the §7Thai§! §Geconomy§! and will affect the §YEconomic Engine§! §gNational Spirit§!\n\nThis is calculated by the §gtotal sum§! of all §YArea Economic Level§!\n---------------------\nEconomic Level of Each Area:\n§GBangkok§!: [?SIA:1.SIA_economic_level]\n§7North§!: [?SIA:2.SIA_economic_level]\n§CCentral§!: [?SIA:3.SIA_economic_level]\n§9East§!: [?SIA:4.SIA_economic_level]\n§LNortheast§!: [?SIA:5.SIA_economic_level]\n§pWest§!: [?SIA:6.SIA_economic_level]\n§OSouth§!: [?SIA:7.SIA_economic_level]\n§RPattani§!: [?SIA:8.SIA_economic_level]"

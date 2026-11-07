@@ -818,6 +818,7 @@ focus_tree = {
 		
 		completion_reward = {
 			effect_tooltip = {
+				custom_effect_tooltip = SIA_brothers_forever_tt
 				set_temp_variable = { undecided_votes = 10 }
 				set_temp_variable = { target = 1 }
 				set_temp_variable = { vote_change = 10 }

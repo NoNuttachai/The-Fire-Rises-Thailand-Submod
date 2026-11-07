@@ -252,4 +252,20 @@ spriteTypes = {
         name = "GFX_goal_SIA_shared_tree_SIA_valiant_soldiers"
         texturefile = "gfx/interface/goals/SIA/shared/SIA_valiant_soldiers.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_bangkoks_sky"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_bangkoks_sky.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_construct_military_academies"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_construct_military_academies.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_guardians_of_asia"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_guardians_of_asia.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_silent_and_waiting"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_silent_and_waiting.png"
+    }
 }
