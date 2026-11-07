@@ -25,8 +25,17 @@
  SIA_thai_people_are_aryans: "-"
  SIA_thai_people_are_aryans_from_the_depth_of_agatha: "-"
  
+ SIA_ptp_party: "PTP"
+ SIA_ptp_party_long: "£GFX_phua_thai Pheu Thai"
+ SIA_dp_party: "DP"
+ SIA_dp_party_long: "£GFX_democrat Democrat Party"
  
+ SIA_kt: "KT"
+ SIA_kt_long: "£GFX_kla_tham Kla Tham Party"
 
+ SIA_bjt: "BJT"
+ SIA_bjt_long: "£GFX_bhumjaithai Bhumjaithai"
+ 
  SIA_mfp: "MFP"
  SIA_mfp_long: "£GFX_orange_party_2 Move Forward Party"
  
@@ -39,8 +48,22 @@
  SIA_rt_movement: "§RSWT/RT§!"
  SIA_rt_movement_long: "§RSocialist Workers Thailand / Restart Thailand Movement§!"
 
+ thai_liberal_populism: "Liberal Populism"
+ thai_liberal_populism_desc: "£GFX_phua_thai §RPheu Thai§! - §YLiberal Populism§!\n\n\n\n\n£GFX_SIA_thai_liberal_populism\n\n\n\n\n\n§YLiberal Populism§! is the ideology of the §YPheu Thai Party§!, originating from §YThaksin Shinawatra’s§! political movement in the early 2000s. It combines populist social welfare policies with a market-oriented economy. It seeks to promote economic growth by incorporating socially populist policies, including expanding healthcare coverage and raising the minimum wage, alongside pro-business and economically liberal policies, such as corporate tax cuts aimed at boosting innovation, investment, and business growth. It also seeks to maintain working-class and rural support through a populist framework."
  national_conservativism_auth_SIA: "National Conservatism"
- SIA_national_conservativism_auth_desc: "\n\n\n\n£GFX_SIA_national_conservatism\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ SIA_right_centrist_desc: "£GFX_democrat §CDP§! - §YRight-Centrism§!\n\n\n\n\n£GFX_SIA_dpbanner\n\n\n\n\n\n§YRight-Centrism§!"
+ SIA_right_populism_desc: "£GFX_bhumjaithai §1BJT§! - §YRight-Wing Populism§!\n\n\n\n\n£GFX_SIA_bjt_banner\n\n\n\n\n\n§YRight-Wing Populism§! is an ideology that combines populist rhetoric with right-wing political ideas. Right-wing populists espouse nationalist and nativist sentiments. The §YBhumjaithai Party§! combines elements of conservatism, populism, and economic liberalism in its policy platform. Its approach to governance is characterized by welfare-oriented developmental policies while maintaining traditional conservative values, with the notable exception of its support for cannabis legalization."
+ SIA_progressivism_desc: "£GFX_orange_party_2 §OMFP§! - §YProgressivism§!\n\n\n\n\n£GFX_SIA_mfp_banner\n\n\n\n\n\n§YProgressivism§! is a center-left to left-wing political and social ideology that the §YMove Forward Party§! follows that advocates for social progress. It aims to promote continuous social reform, expand civil liberties, strengthen democracy, protect minority rights, and dismantle oppressive or repressive systems. It supports greater government intervention, higher taxes on corporations and individuals, and expanded public welfare programs. It favors a mixed economy through policies such as welfare capitalism, further workers rights, and strong trade unions."
+ national_conservativism_auth_utn_prayut: "National Conservatism"
+ national_conservativism_auth_utn_pirapan: "National Conservatism"
+ national_conservativism_auth_utn_suchart: "National Conservatism"
+ right_populist_agrarianism: "Right-Populist Agrarianism"
+ 
+ SIA_national_conservativism_auth_desc: "£GFX_palang_pracharath §BPPRP§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_national_conservatism\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ right_populist_agrarianism_desc: "£GFX_kla_tham §GKT§! - §YRight-Populist Agrarianism§!\n\n\n\n\n£GFX_SIA_kt_banner\n\n\n\n\n\n§YRight-Populist Agrarianism§! best describes the ideology of the §YKla Tham Party§!. Rather than adhering strictly to an abstract philosophical framework, the party operates with a pragmatic, regionalist, and conservative-populist orientation rooted in rural traditionalism. It seeks support from farmers by framing rural communities as the heart of the nation, blending traditional cultural and political values with targeted state interventions to protect local agriculture, support agricultural prices, and directly uplift rural livelihoods."
+ national_conservativism_auth_utn_prayut_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_prayut\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ national_conservativism_auth_utn_pirapan_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_pirapan\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ national_conservativism_auth_utn_suchart_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_suchart\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
  
  ###National Focuses###
  SIA_future_forward_on_trial: "Future Forward on Trial"
@@ -550,7 +573,9 @@
  SIA_pirapan_salirathavibhaga_char: "Pirapan Salirathavibhaga"
  SIA_suchat_chomklin_char: "Suchart Chomklin"
  SIA_trinuch_thienthong_char: "Trinuch Thienthong"
+ SIA_akanat_promphan_char: "Akanat Promphan"
  SIA_thamanat_prompow_char: "Thamanat Prompow"
+ SIA_jurin_laksanawisit_char: "Jurin Laksanawisit"
 
  SIA_adung_phan_iam_char: "Adung Phan-iam"
  SIA_choengchai_chomchoengpaet_char: "Choengchai Chomchoengpaet"
@@ -1755,7 +1780,7 @@
  
  
  SIA_sabotage_campaign_action: "§gWe will sabotage this party's campaign for this cycle, preventing them from garnering any votes§!\n\n§YNote§!: §gWe can only sabotage §C1§! party at a time in a cycle§!"
- SIA_potential_coalition: "\n-----------\n--Caution--\n§LIt seems this party is §Gwelcoming§! to the idea of a §Ccoalition§! with us.\n\nIt is best we sabotage them §Gas less as possible§! in the event we require their §Yseats§! to reach a §Ymajority§!§!"
+ SIA_potential_coalition: "--Caution--\n§LIt seems this party is §Gwelcoming§! to the idea of a §Ccoalition§! with us.\n\nIt is best we sabotage them §Gas less as possible§! in the event we require their §Yseats§! to reach a §Ymajority§!§!"
  SIA_potential_coalition_minor: "§LThough relatively small in the grand scheme of things, these independent parties are an important key to raise our numbers.\n\nIt is best we sabotage them §Gas less as possible§! in the event we require their §Yseats§! to reach a §Ymajority§!§!"
  
  
@@ -1850,7 +1875,7 @@
  SIA_found_top_news_desc: "Former staff and journalists of Nation TV, led by Sonthiyan Chuenruthainaitham, have founded the television news channel Top News. The group had previously departed Nation TV over objections to a management shift that planned to pivot the channel away from its staunchly pro-Prayut, royalist, and anti-protestor positioning. This change in management followed heavy criticism and an advertising boycott by protestors over the network's coverage of the demonstrations."
 
  SIA_utilize_pegasus_against_key_agitators: "Utilize Pegasus Spyware Against Key Agitators"
- SIA_utilize_pegasus_against_key_agitators_desc: "\n\n\n\n£GFX_SIA_Pegasus_Spyware_Banner\n\n\n\n\n\nPegasus is a military-grade spyware developed by the Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor "those who pose a threat" to "national security" with Thailand being one of them."
+ SIA_utilize_pegasus_against_key_agitators_desc: "\n\n\n\n£GFX_SIA_Pegasus_Spyware_Banner\n\n\n\n\n\nPegasus is a military-grade spyware developed by the @ISR Israeli cyber-arms company NSO Group and the Israeli Ministry of Defense. It is designed to be covertly and remotely installed on mobile phones running iOS and Android. Israel markets Pegasus as a product for "fighting crime and terrorism," (Nudge nudge, wink wink) It is used by governments agencies around the world to monitor "those who pose a threat" to "national security" with Thailand being one of them."
  
  SIA_cyber_warfare_with_the_three_hooves: "Cyber Warfare With The Three Hooves"
  SIA_cyber_warfare_with_the_three_hooves_desc: "Our agents will use sock puppet accounts on social media sites such as Twitter and Facebook to attack the opposition, revealing and disseminating negative information about the government opponents."

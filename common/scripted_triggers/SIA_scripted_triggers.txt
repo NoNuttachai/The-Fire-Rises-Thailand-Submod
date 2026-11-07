@@ -1,7 +1,7 @@
 SIA_selected_area = {
 	if = {
 		limit = { check_variable = { ROOT.SIA_map_var = 1 } }
-		state = 1495
+		state = 1504
 		
 	}
 	else_if = {
@@ -15,25 +15,25 @@ SIA_selected_area = {
 	else_if = {
 		limit = { check_variable = { ROOT.SIA_map_var = 4 } }
 		OR = {
-			state = 1496
-			state = 1500
+			state = 1505
 			state = 1509
-			state = 1501
+			state = 1518
+			state = 1510
 		}
 	}
 	else_if = {
 		limit = { check_variable = { ROOT.SIA_map_var = 5 } }
 		OR = {
 			state = 891
+			state = 1517
 			state = 1508
-			state = 1499
-			state = 1498
+			state = 1507
 		}
 	}
 	else_if = {
 		limit = { check_variable = { ROOT.SIA_map_var = 6 } }
 		OR = {
-			state = 1497
+			state = 1506
 			state = 892
 		}
 	}
@@ -43,7 +43,7 @@ SIA_selected_area = {
 	}
 	else_if = {
 		limit = { check_variable = { ROOT.SIA_map_var = 8 } }
-		state = 1494
+		state = 1503
 	}
 }
 SIA_utn_in_charge_prayut = {

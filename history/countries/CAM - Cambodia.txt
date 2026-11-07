@@ -1,4 +1,4 @@
-﻿	capital = 1506
+﻿	capital = 1515
 
 	oob = "CAM_2000"
 

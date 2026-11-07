@@ -501,6 +501,8 @@ ideologies = {
 					60
 				}
 			}
+			thai_liberal_populism = {
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_LIBERAL_1"
@@ -845,7 +847,15 @@ ideologies = {
 			}	
 			auth_populism = {
 			}
-			national_conservativism_auth = {
+			right_populist_agrarianism = { #Kla Tham
+			}
+			national_conservativism_auth = { #PPRP
+			}
+			national_conservativism_auth_utn_prayut = { #UTN - Prayut
+			}
+			national_conservativism_auth_utn_pirapan = { #UTN - Pirapan
+			}
+			national_conservativism_auth_utn_suchart = { #UTN - Suchart
 			}
 			military_democracy = {
 				can_be_randomly_selected = no

@@ -1066,6 +1066,12 @@ defined_text = {
 		}
 		localization_key = centrist_pluralism
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = thai_liberal_populism
+		}
+		localization_key = thai_liberal_populism
+	}
 }
 
 	#Market Liberal
@@ -1516,6 +1522,20 @@ defined_text = {
 			has_country_leader_ideology = fehlinger_doctrine
 		}
 		localization_key = fehlinger_doctrine
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_country_leader_ideology = right_centrist
+		}
+		localization_key = SIA_right_centrist
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_country_leader_ideology = right_populism
+		}
+		localization_key = SIA_right_populism
 	}
 }
 
@@ -2061,6 +2081,34 @@ defined_text = {
 			has_country_leader_ideology = state_liberalism
 		}
 		localization_key = state_liberalism
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_country_leader_ideology = right_populist_agrarianism
+		}
+		localization_key = right_populist_agrarianism
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_country_leader_ideology = national_conservativism_auth_utn_prayut
+		}
+		localization_key = national_conservativism_auth_utn_prayut
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_country_leader_ideology = national_conservativism_auth_utn_pirapan
+		}
+		localization_key = national_conservativism_auth_utn_pirapan
+	}
+	text = {
+		trigger = {
+			tag = SIA
+			has_country_leader_ideology = national_conservativism_auth_utn_suchart
+		}
+		localization_key = national_conservativism_auth_utn_suchart
 	}
 	text = {
 		trigger = {
