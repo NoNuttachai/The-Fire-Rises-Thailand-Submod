@@ -1,14 +1,14 @@
 ﻿air_wings = {
-	1495 = { 
+	1504 = { 
 		small_plane_airframe_1 =  {
 			owner = "SIA" 
-			amount = 47
+			amount = 53
 			version_name = "F-16A/B Fighting Falcon"
 		}
 		small_plane_airframe_0 =  {
 			owner = "SIA" 
 			amount = 11
-			version_name = "JAS-39 Gripens"
+			version_name = "JAS-39 Gripen"
 		}
 		small_plane_airframe_0 =  {
 			owner = "SIA" 
@@ -17,8 +17,13 @@
 		}
 		small_plane_airframe_0 =  {
 			owner = "SIA" 
-			amount = 18
+			amount = 19
 			version_name = "Alpha Jet A"
+		}
+		small_plane_airframe_0 =  {
+			owner = "SIA"
+			amount = 34
+			version_name = "L-39ZA/ART Albatros"
 		}
 		attack_helicopter_equipment_1 = {
 			owner = "SIA" 
