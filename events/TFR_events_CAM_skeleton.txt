@@ -10,3 +10,14 @@ country_event = { #Cambodia skeleton placeholder
         name = thai_cambodia.1.a 
     }
 }
+
+country_event = { #Cambodia skeleton placeholder
+    id = thai_cambodia.2
+    title = thai_cambodia.2.t
+    desc = thai_cambodia.2.d
+	picture = GFX_report_cambodia_skirmish_lost
+	is_triggered_only = yes
+    option = {
+        name = thai_cambodia.2.a 
+    }
+}
