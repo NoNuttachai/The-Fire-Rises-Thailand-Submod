@@ -378,10 +378,12 @@ guiTypes = {
 				name = "SIA_approval_area_selected"
 				position = { x = 185 y = 15 }
 				font = "VCR02_20"
-				maxwidth = 500
+				maxwidth = 300
+				maxheight = 24
 				text = SIA_selected_state_approval
 				format = left
-				alwaystransparent = yes
+				pdx_tooltip = SIA_approval_area_selected_tt
+				fixedsize = yes
 			}
 			instantTextBoxType = {
 				name = "SIA_approval_area_text"

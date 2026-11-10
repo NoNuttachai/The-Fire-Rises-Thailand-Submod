@@ -264,7 +264,7 @@ shared_focus = {
 		add_equipment_to_stockpile = {
 			type = small_plane_airframe_0
 			amount = 100
-			variant_name = "JAS-39 Gripen"
+			variant_name = "JAS-39 Gripens"
 		}
 	}
 }

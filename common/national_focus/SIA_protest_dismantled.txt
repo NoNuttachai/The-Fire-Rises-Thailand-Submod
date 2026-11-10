@@ -876,6 +876,173 @@ focus_tree = {
 	}
 	
 	#Right Side Focus
+	#PTP
+	focus = {
+		id = SIA_another_try_at_government
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 9
+		y = 1
+		cost = 4
+		relative_position_id = SIA_prayut_triumphant
+		prerequisite = { focus = SIA_prayut_triumphant }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+			
+			has_country_flag = SIA_prayut_split
+			has_completed_focus = SIA_once_were_brothers
+			has_country_flag = SIA_ongoing_elections
+		}
+		allow_branch = {
+			check_variable = { SIA_election_playing_as = 2 }
+			has_country_flag = SIA_prayut_split
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			if = {
+				limit = { #campaign regularly
+					check_variable = { undecided_votes > 0 }
+				}
+				set_temp_variable = { target = 2 }
+				set_temp_variable = { vote_change = 5 }
+				SIA_elections_increase_votes_by_undecided = yes
+			}
+			else = { #eat the souls of MFP or PTP
+				set_temp_variable = { 1st_target = 2 }
+				set_temp_variable = { vote_change = 5 }
+				if = {
+					limit = {
+						check_variable = { 3:party_votes > 11:party_votes }
+					}
+					set_temp_variable = { 2nd_target = 3 }
+				}
+				else = { #UTN
+					set_temp_variable = { 2nd_target = 11 }
+				}
+				SIA_elections_targeted_vote_increase = yes
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = SIA_promises_of_prosperity
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 4
+		relative_position_id = SIA_another_try_at_government
+		prerequisite = { focus = SIA_another_try_at_government }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_tease_our_megaprojects
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 2
+		relative_position_id = SIA_promises_of_prosperity
+		prerequisite = { focus = SIA_promises_of_prosperity }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_our_signature_policies
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 1
+		cost = 2
+		relative_position_id = SIA_promises_of_prosperity
+		prerequisite = { focus = SIA_promises_of_prosperity }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_keeping_our_base_in_check
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 2
+		y = 1
+		cost = 4
+		relative_position_id = SIA_another_try_at_government
+		prerequisite = { focus = SIA_another_try_at_government }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_invoke_the_holy_name
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = SIA_keeping_our_base_in_check
+		prerequisite = { focus = SIA_keeping_our_base_in_check }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_rally_for_a_landslide
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 4
+		relative_position_id = SIA_our_signature_policies
+		prerequisite = { focus = SIA_tease_our_megaprojects }
+		prerequisite = { focus = SIA_our_signature_policies }
+		prerequisite = { focus = SIA_invoke_the_holy_name }
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	#UTN
 	focus = {
 		id = SIA_riding_with_uncle_tuu
 		icon = GFX_goal_SIA_prayut_2021_SIA_riding_with
@@ -888,12 +1055,12 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			has_idea = SIA_prayut_chan_o_cha_utn_hog
 			has_country_flag = SIA_prayut_split
 			has_completed_focus = SIA_once_were_brothers
 			has_country_flag = SIA_ongoing_elections
 		}
 		allow_branch = {
+			NOT = { check_variable = { SIA_election_playing_as = 2 } }
 			has_country_flag = SIA_prayut_split
 		}
 		available_if_capitulated = yes

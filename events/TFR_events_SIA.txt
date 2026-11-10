@@ -1,5 +1,6 @@
 add_namespace = thai_events
 add_namespace = thai_prayut #separating events like this for now
+add_namespace = thai_ptp #separating events like this for now
 add_namespace = thai_cambodia_tension #separating events like this for now
 add_namespace = thai_shared_events #separating events like this for now
 add_namespace = thai_elections
@@ -968,21 +969,13 @@ country_event = {
         name = thai_prayut.26.a
 		if = {
 			limit = { #alliance
-				OR = {
-					has_completed_focus = SIA_farm_to_market
-
-					AND = {
-						NOT = { has_completed_focus = SIA_next_time }
-						has_completed_focus = SIA_old_friendship
-					}
-				}
+				check_variable = { SIA_utn_pprp_relations = 1 }
 			}
 			country_event = thai_prayut.28
 		}
 		else_if = { #merge
 			limit = {
-				has_completed_focus = SIA_old_friendship
-				has_completed_focus = SIA_next_time
+				check_variable = { SIA_utn_pprp_relations = 2 }
 			}
 			country_event = thai_prayut.29
 		}
@@ -1215,6 +1208,7 @@ country_event = { # 2023 Elections start
 			activate_mission = SIA_2023_elections
 			activate_mission = SIA_other_parties_campaigning
 		}
+		focus_unlock = yes
 		custom_effect_tooltip = generic_skip_one_line_tt
 		#Prayut Government Performance Check
 		if = {
@@ -1303,10 +1297,8 @@ country_event = { # Coalition Formed
 			limit = {
 				check_variable = { SIA_government_leader = 2 }
 			}
-			focus_unlock = yes
-			hidden_effect = {
-				load_focus_tree = SIA_2023_pheu_thai_focus_tree
-			}
+			country_event = thai_ptp.1
+			
 		}
 		else_if = {
 			limit = {
@@ -1525,6 +1517,39 @@ country_event = { # 2023 DP - Jurin
 		set_temp_variable = { target = 4 }
 		set_temp_variable = { vote_change = 2 }
 		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { #Pheu Thai Wins 2023
+    id = thai_ptp.1
+    title = thai_ptp.1.t
+    desc = thai_ptp.1.d
+	picture = GFX_report_thai_navy
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_ptp.1.a 
+		focus_unlock = yes
+		hidden_effect = {
+			load_focus_tree = SIA_2023_pheu_thai_focus_tree
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_political_power = 25
+		add_ideas = SIA_paetongtarn_shinawatra_hog
+    }
+}
+country_event = { #Thaksin Shinawatra reacts to PTP victory
+    id = thai_ptp.2
+    title = thai_ptp.2.t
+    desc = thai_ptp.2.d
+	picture = GFX_report_thaksin_shinawatra
+	is_triggered_only = yes
+	
+    option = {
+        name = thai_ptp.2.a 
+		
     }
 }
 country_event = { #Verdict on FFP

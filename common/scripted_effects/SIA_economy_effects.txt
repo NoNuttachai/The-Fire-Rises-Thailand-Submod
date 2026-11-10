@@ -672,6 +672,151 @@ SIA_initiate_area_approvals = { # 0-Divided 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-B
 	}
 	SIA_update_area_color = yes
 }
+SIA_update_area_approval_status = {
+	for_each_loop = { 
+		array = SIA_map_var 
+		value = v 
+
+		var:v = { #check array, grab alignment, check if party in coalition #1 - Your control 2-Coalitioned Party 3- Oppos 4-Divided
+			#PPRP
+			if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 1 }
+					check_variable = { SIA.party_1_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 1 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 1 }
+					check_variable = { SIA.party_1_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 1 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			#PTP
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 2 }
+					check_variable = { SIA.party_2_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 2 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 2 }
+					check_variable = { SIA.party_2_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 2 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			#Orange Party
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 3 }
+					check_variable = { SIA.party_3_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 3 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 3 }
+					check_variable = { SIA.party_3_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 3 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			#DP
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 4 }
+					check_variable = { SIA.party_4_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 4 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 4 }
+					check_variable = { SIA.party_4_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 4 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			#BJT
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 5 }
+					check_variable = { SIA.party_6_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 5 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 5 }
+					check_variable = { SIA.party_6_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 6 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			#Divided
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 0 }
+				}
+				set_variable = { SIA_state_approval_status = 4 }
+			}
+			#Minor
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 8 }
+				}
+				set_variable = { SIA_state_approval_status = 5 }
+			}
+			#UTN
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 7 }
+					check_variable = { SIA.party_11_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 11 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 7 }
+					check_variable = { SIA.party_11_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 11 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			#KT
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 8 }
+					check_variable = { SIA.party_12_alignment = 0 }
+					check_variable = { SIA.SIA_government_leader = 8 }
+				}
+				set_variable = { SIA_state_approval_status = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_alignment = 8 }
+					check_variable = { SIA.party_12_alignment = 0 }
+					NOT = { check_variable = { SIA.SIA_government_leader = 12 } }
+				}
+				set_variable = { SIA_state_approval_status = 2 }
+			}
+			else = {
+				set_variable = { SIA_state_approval_status = 3 }
+			}
+		}
+	}
+}
 SIA_update_area_color = { 
 	for_each_loop = { 
 		array = SIA_map_var 

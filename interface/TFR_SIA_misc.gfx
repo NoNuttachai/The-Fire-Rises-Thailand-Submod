@@ -51,8 +51,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/SIA_progressivism.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_SIA_right_populism"
+		texturefile = "gfx/interface/ideologies/SIA_right_wing_populism.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_SIA_classical_liberalism"
+		texturefile = "gfx/interface/ideologies/SIA_classical_liberalism.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_SIA_national_conservativism_auth"
-		texturefile = "gfx/interface/ideologies/national_conservativism_auth_SIA.dds"
+		texturefile = "gfx/interface/ideologies/national_conservativism_auth_SIA.png"
 	}
 	spriteType = {
 		name = "GFX_ideology_national_conservativism_auth_utn_prayut"

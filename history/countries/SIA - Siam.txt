@@ -396,6 +396,19 @@ if = {
 		icon = "GFX_basic_small_airframe_medium"		
 	}
 	create_equipment_variant = {
+		name = "L-39ZA/ART Albatros"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = hmg_defense_turret
+			special_type_slot_2 = empty
+		}
+		icon = "GFX_basic_small_airframe_medium"		
+	}
+	create_equipment_variant = {
 		name = "F-5E/F Tiger II"
 		type = small_plane_airframe_0
 		modules = {
