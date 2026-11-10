@@ -1,0 +1,12 @@
+add_namespace = thai_cambodia
+
+country_event = { #Cambodia skeleton placeholder
+    id = thai_cambodia.1
+    title = thai_cambodia.1.t
+    desc = thai_cambodia.1.d
+	picture = GFX_report_cambodia_skirmish_lost
+	is_triggered_only = yes
+    option = {
+        name = thai_cambodia.1.a 
+    }
+}
