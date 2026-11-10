@@ -383,7 +383,7 @@ if = {
 
 	}
 	create_equipment_variant = {
-		name = "JAS-39 Gripens"
+		name = "JAS-39 Gripen"
 		type = small_plane_airframe_0
 		modules = {
 			fixed_main_weapon_slot = heavy_mg_4x
