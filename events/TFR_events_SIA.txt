@@ -2159,8 +2159,13 @@ unit_leader_event = {
 	is_triggered_only = yes
 	
     option = {
-        custom_effect_tooltip = thai_events_24_texticon
 		name = thai_events.24.a
+        custom_effect_tooltip = thai_events_24_texticon
+		SIA_apirat_kongsompong_char = {
+			add_timed_unit_leader_trait = {
+			trait = disgruntled
+			days = 100
+		} }
 	}
 }
 country_event = {
@@ -3181,13 +3186,11 @@ country_event = {
 	
     option = {
         name = thai_events.70.a
-		set_temp_variable = { society_development_var_temp = -0.03 }
-		add_society_development = yes
 		add_stability = -0.01
 	}
 }
 country_event = {
-    id = thai_events.71 #A Flag Lowered - Rip asean
+    id = thai_events.71 #A Flag Lowered - RIP ASEAN
     title = thai_events.71.t
     desc = thai_events.71.d
 	is_triggered_only = yes
@@ -3377,6 +3380,7 @@ country_event = {
 			  damage = 1
 			}
 		}
+		add_manpower = -1
 	}
 }
 country_event = {
@@ -3445,7 +3449,6 @@ country_event = {
 			  damage = 1
 			}
 		}
-		add_manpower = -3
 		hidden_effect = {
 			country_event = { id = thai_events.83 days = 1 }
 		}
@@ -3487,6 +3490,9 @@ country_event = {
     option = {
         name = thai_events.84.a
 		army_experience = 20
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -50 }
 		724 = {
 			add_manpower = -276
 			damage_building = {
@@ -3623,19 +3629,10 @@ country_event = {
 	
     option = {
         name = thai_events.101.a
-		SIA = {
-		add_popularity = {
-			ideology = libertarian_socialist
-			popularity = 0.005
+		SIA = { add_popularity = { ideology = libertarian_socialist popularity = 0.005 } }
+		APA = { add_popularity = { ideology = libertarian_socialist popularity = 0.05 } }
+			}
 	}
-		APA = {
-		add_popularity = {
-			ideology = libertarian_socialist
-			popularity = 0.05
-	}
-}
-	}
-}
 country_event = { 
     id = thai_events.102 #A Gray Silver Lining
     title = thai_events.102.t
@@ -3652,23 +3649,28 @@ country_event = {
 	}
 }
 country_event = { 
-    id = thai_events.167 # Thai Arya Party
-    title = thai_events.167.t
-    desc = thai_events.167.d
+	id = thai_events.167 #Thai Arya Party
+	title = thai_events.167.t
+	desc = thai_events.167.d
+	fire_only_once = yes
 	is_triggered_only = yes
 	picture = GFX_report_thai_aryan_party
-    option = {
-        name = thai_events.67.a
+	option = {
+		name = thai_events.167.a
 	}
 }
 country_event = { 
-    id = thai_events.169 #ExThailand
-    title = thai_events.169.t
-    desc = thai_events.169.d
+	id = thai_events.169
+	title = thai_events.169.t
+	desc = thai_events.169.d
 	is_triggered_only = yes
-    option = {
-        name = thai_events.69.a
-		sound_effect = "naval_invasion_alert"
+	fire_only_once = yes
+	picture = GFX_report_event_generic_panic
+	option = {
+		name = thai_events.169.a
+		immediate = {
+			hidden_effect = {
+			sound_effect = "naval_invasion_alert" } }
 	}
 }
 news_event = { #Thai Protests
