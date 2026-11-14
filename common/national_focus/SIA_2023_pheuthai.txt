@@ -3,18 +3,17 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 1
 			tag = SIA
 		}
 	}
 	shared_focus = SIA_presentation
-	shared_focus = SIA_economy_opening
 	shared_focus = SIA_thailand_in_the_world_stage
 	hared_focus = SIA_marching_in_phnom_penh
 	shared_focus = SIA_neither_a_victory_nor_defeat
 	
 	focus = {
-		id = SIA_pheu_thai_victory
+		id = SIA_the_paetongtarn_cabinet
 		icon = GFX_goal_SIA_Another_Year_with_Prayut
 		x = 22
 		y = 0
@@ -22,6 +21,199 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_revival_of_the_peoples_populism
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_the_paetongtarn_cabinet
+		prerequisite = { focus = SIA_the_paetongtarn_cabinet }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_a_call_to_dubai
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_the_paetongtarn_cabinet
+		prerequisite = { focus = SIA_the_paetongtarn_cabinet }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_the_enemy_of_my_enemy_is_my_friend
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_the_paetongtarn_cabinet
+		prerequisite = { focus = SIA_the_paetongtarn_cabinet }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_duchess_of_the_east
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_a_call_to_dubai
+		prerequisite = { focus = SIA_revival_of_the_peoples_populism }
+		prerequisite = { focus = SIA_a_call_to_dubai }
+		prerequisite = { focus = SIA_the_enemy_of_my_enemy_is_my_friend }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_all_hours_are_happy_hours
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -1
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_duchess_of_the_east
+		prerequisite = { focus = SIA_duchess_of_the_east }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_into_the_new_space_age
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = -2
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_duchess_of_the_east
+		prerequisite = { focus = SIA_all_hours_are_happy_hours }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_minister_of_culture
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 2
+		y = 1
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_duchess_of_the_east
+		prerequisite = { focus = SIA_duchess_of_the_east }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_new_image_of_siam
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 1
+		y = 2
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_duchess_of_the_east
+		prerequisite = { focus = SIA_minister_of_culture }
+		prerequisite = { focus = SIA_all_hours_are_happy_hours }
+		available = {
+			
+		}
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = SIA_rejuvenation_of_the_shinawatra_dynasty
+		icon = GFX_goal_SIA_Another_Year_with_Prayut
+		x = 0
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = SIA_duchess_of_the_east
+		prerequisite = { focus = SIA_into_the_new_space_age }
+		prerequisite = { focus = SIA_new_image_of_siam }
 		available = {
 			
 		}

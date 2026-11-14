@@ -170,3 +170,9 @@ defined_text = {
 		localization_key = "area_party_alignment_[?SIA_map_var:SIA_state_alignment]"
 	}
 }
+defined_text = {
+	name = GetAreaApprovalStatus
+	text = {
+		localization_key = "area_approval_status_[?SIA_map_var:SIA_state_approval_status]"
+	}
+}

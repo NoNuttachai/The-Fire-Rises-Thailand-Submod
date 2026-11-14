@@ -32,7 +32,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_royal_army_of_thailand"
-		textureFile = "gfx/interface/ideas/SIA/royal_army_of_thailand.png"
+		textureFile = "gfx/interface/ideas/SIA/SIA_thailand_army_icon.png"
 	}
 	spriteType = {
 		name = "GFX_idea_SIA_half_policy"

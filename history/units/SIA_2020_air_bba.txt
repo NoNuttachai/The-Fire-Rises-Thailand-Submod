@@ -7,7 +7,7 @@
 		}
 		small_plane_airframe_0 =  {
 			owner = "SIA" 
-			amount = 11
+			amount = 18
 			version_name = "JAS-39 Gripen"
 		}
 		small_plane_airframe_0 =  {

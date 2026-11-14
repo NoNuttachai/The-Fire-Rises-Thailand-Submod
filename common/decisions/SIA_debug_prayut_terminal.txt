@@ -277,7 +277,14 @@ SIA_debug_prayut_terminal = {
 		}
 		complete_effect = {
 			add_ideas = SIA_anutin_charnvirakul_hog
-			SIA_change_ideology_bjt = yes
+			hidden_effect = {
+				SIA_change_ideology_bjt = yes
+				set_party_name = {
+					ideology = conservative
+					long_name = SIA_bjt_long
+					name = SIA_bjt
+				}
+			}
 		}
 	}
 	SIA_PM_change_add_yodchanan = {
@@ -331,30 +338,12 @@ SIA_debug_prayut_terminal = {
 			add_ideas = SIA_jurin_laksanawisit_hog
 			hidden_effect = {
 				set_politics = {
-					ruling_party = conservative
+					ruling_party = market_liberal
 					elections_allowed = yes
 					election_frequency = 48
 				}
-				if = {
-					limit = {
-						has_country_leader_ideology = right_populism
-					}
-					SIA_rama_x_char = {
-						remove_country_leader_role = {
-							ideology = right_populism
-						}
-					}
-				}
-				add_country_leader_role = {
-					character = SIA_rama_x_char
-					promote_leader = yes
-					country_leader = {
-						ideology = right_centrist
-						expire = "1.1.1.1"
-					}
-				}
 				set_party_name = {
-					ideology = conservative
+					ideology = market_liberal
 					long_name = SIA_dp_party_long
 					name = SIA_dp_party
 				}

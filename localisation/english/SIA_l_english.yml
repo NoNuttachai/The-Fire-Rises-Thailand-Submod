@@ -49,16 +49,16 @@
  SIA_rt_movement_long: "§RSocialist Workers Thailand / Restart Thailand Movement§!"
 
  thai_liberal_populism: "Liberal Populism"
- thai_liberal_populism_desc: "£GFX_phua_thai §RPheu Thai§! - §YLiberal Populism§!\n\n\n\n\n£GFX_SIA_thai_liberal_populism\n\n\n\n\n\n§YLiberal Populism§! is the ideology of the §YPheu Thai Party§!, originating from §YThaksin Shinawatra's§! political movement in the early 2000s. It combines populist social welfare policies with a market-oriented economy. It seeks to promote economic growth by incorporating socially populist policies, including expanding healthcare coverage and raising the minimum wage, alongside pro-business and economically liberal policies, such as corporate tax cuts aimed at boosting innovation, investment, and business growth. It also seeks to maintain working-class and rural support through a populist framework."
  national_conservativism_auth_SIA: "National Conservatism"
- SIA_right_centrist_desc: "£GFX_democrat §CDP§! - §YRight-Centrism§!\n\n\n\n\n£GFX_SIA_dpbanner\n\n\n\n\n\n§YRight-Centrism§!"
- SIA_right_populism_desc: "£GFX_bhumjaithai §1BJT§! - §YRight-Wing Populism§!\n\n\n\n\n£GFX_SIA_bjt_banner\n\n\n\n\n\n§YRight-Wing Populism§! is an ideology that combines populist rhetoric with right-wing political ideas. Right-wing populists espouse nationalist and nativist sentiments. The §YBhumjaithai Party§! combines elements of conservatism, populism, and economic liberalism in its policy platform. Its approach to governance is characterized by welfare-oriented developmental policies while maintaining traditional conservative values, with the notable exception of its support for cannabis legalization."
- SIA_progressivism_desc: "£GFX_orange_party_2 §OMFP§! - §YProgressivism§!\n\n\n\n\n£GFX_SIA_mfp_banner\n\n\n\n\n\n§YProgressivism§! is a center-left to left-wing political and social ideology that the §YMove Forward Party§! follows that advocates for social progress. It aims to promote continuous social reform, expand civil liberties, strengthen democracy, protect minority rights, and dismantle oppressive or repressive systems. It supports greater government intervention, higher taxes on corporations and individuals, and expanded public welfare programs. It favors a mixed economy through policies such as welfare capitalism, further workers rights, and strong trade unions."
  national_conservativism_auth_utn_prayut: "National Conservatism"
  national_conservativism_auth_utn_pirapan: "National Conservatism"
  national_conservativism_auth_utn_suchart: "National Conservatism"
  right_populist_agrarianism: "Right-Populist Agrarianism"
  
+ SIA_classical_liberalism_desc: "£GFX_democrat §CDP§! - §YClassical Liberalism§!\n\n\n\n\n£GFX_SIA_dpbanner\n\n\n\n\n\n§YClassical Liberalism§! is a political ideology that advocates civil liberties under the rule of law with an emphasis on economic freedom. It developed in the early 19th century, building on ideas from the previous century as a response to urbanization and the Industrial Revolution. Classical Libertarians closely follow Adam Smith, and the beliefs of utlitarianism, natural law, social contract and natural rights."
+ SIA_right_populism_desc: "£GFX_bhumjaithai §1BJT§! - §YRight-Wing Populism§!\n\n\n\n\n£GFX_SIA_bjt_banner\n\n\n\n\n\n§YRight-Wing Populism§! is an ideology that combines populist rhetoric with right-wing political ideas. Right-wing populists espouse nationalist and nativist sentiments. The §YBhumjaithai Party§! combines elements of conservatism, populism, and economic liberalism in its policy platform. Its approach to governance is characterized by welfare-oriented developmental policies while maintaining traditional conservative values, with the notable exception of its support for cannabis legalization."
+ SIA_progressivism_desc: "£GFX_orange_party_2 §OMFP§! - §YProgressivism§!\n\n\n\n\n£GFX_SIA_mfp_banner\n\n\n\n\n\n§YProgressivism§! is a center-left to left-wing political and social ideology that the §YMove Forward Party§! follows that advocates for social progress. It aims to promote continuous social reform, expand civil liberties, strengthen democracy, protect minority rights, and dismantle oppressive or repressive systems. It supports greater government intervention, higher taxes on corporations and individuals, and expanded public welfare programs. It favors a mixed economy through policies such as welfare capitalism, further workers rights, and strong trade unions."
+ thai_liberal_populism_desc: "£GFX_phua_thai §RPheu Thai§! - §YLiberal Populism§!\n\n\n\n\n£GFX_SIA_thai_liberal_populism\n\n\n\n\n\n§YLiberal Populism§! is the ideology of the §YPheu Thai Party§!, originating from §YThaksin Shinawatra’s§! political movement in the early 2000s. It combines populist social welfare policies with a market-oriented economy. It seeks to promote economic growth by incorporating socially populist policies, including expanding healthcare coverage and raising the minimum wage, alongside pro-business and economically liberal policies, such as corporate tax cuts aimed at boosting innovation, investment, and business growth. It also seeks to maintain working-class and rural support through a populist framework."
  SIA_national_conservativism_auth_desc: "£GFX_palang_pracharath §BPPRP§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_national_conservatism\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
  right_populist_agrarianism_desc: "£GFX_kla_tham §GKT§! - §YRight-Populist Agrarianism§!\n\n\n\n\n£GFX_SIA_kt_banner\n\n\n\n\n\n§YRight-Populist Agrarianism§! best describes the ideology of the §YKla Tham Party§!. Rather than adhering strictly to an abstract philosophical framework, the party operates with a pragmatic, regionalist, and conservative-populist orientation rooted in rural traditionalism. It seeks support from farmers by framing rural communities as the heart of the nation, blending traditional cultural and political values with targeted state interventions to protect local agriculture, support agricultural prices, and directly uplift rural livelihoods."
  national_conservativism_auth_utn_prayut_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_prayut\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
@@ -277,7 +277,26 @@
  SIA_taste_the_appetizer: "Taste the Appetizer"
  SIA_taste_the_appetizer_desc: ""
  
+ SIA_another_try_at_government: "Another Try at Government"
+ SIA_another_try_at_government_desc: ""
  
+ SIA_promises_of_prosperity: "Promise of Prosperity"
+ SIA_promises_of_prosperity_desc: ""
+ 
+ SIA_tease_our_megaprojects: "Tease Our Megaprojects"
+ SIA_tease_our_megaprojects_desc: ""
+ 
+ SIA_our_signature_policies: "Our Signature Policies"
+ SIA_our_signature_policies_desc: ""
+ 
+ SIA_keeping_our_base_in_check: "Keeping Our Base in Check"
+ SIA_keeping_our_base_in_check_desc: ""
+ 
+ SIA_invoke_the_holy_name: "Invoke the Holy Name"
+ SIA_invoke_the_holy_name_desc: ""
+ 
+ SIA_rally_for_a_landslide: "Rally for a Landslide"
+ SIA_rally_for_a_landslide_desc: ""
  
  #SHARED FOCUSES
  SIA_presentation: "Presentation"
@@ -422,7 +441,7 @@
  
  
  
- 
+ # PTP Tree
  
  
  
@@ -1173,10 +1192,10 @@
  thai_elections.3.t: "2023 Election Season"
  thai_elections.3.d: "Imagine voting"
  thai_elections.3.a: "£GFX_united_thai_nation §gUTN§!"
- thai_elections_3_tt_a: "Campaign for the £GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
+ thai_elections_3_tt_a: "Campaign for the £GFX_united_thai_nation §PUnited Thai Nation Party§!\n\n\n\n\n£GFX_UTN_victorious\n\n\n\n\n\nJoin the Big Tuu and continue the PrayutReich"
  
  thai_elections.3.b: "£GFX_phua_thai §RPheu Thai§!"
- thai_elections_3_tt_b: "§RUNFINISHED NO CONTENT§!\n\nCampaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_stratocratic_conservatism\n\n\n\n\n\nUhhhhh idk"
+ thai_elections_3_tt_b: "§RUNFINISHED NO CONTENT§!\n\nCampaign for the £GFX_phua_thai §RPheu Thai Party§!\n\n\n\n\n£GFX_ptp_path\n\n\n\n\n\nUhhhhh idk"
  thai_elections_3_tt_prayut_check_covid_0: "Due to §PPrayut§! having §RCovid§! at §GIsolated Cases§!"
  thai_elections_3_tt_prayut_check_covid_1: "Due to §PPrayut§! having §RCovid§! at §YMild§!"
  thai_elections_3_tt_prayut_check_covid_2: "Due to §PPrayut§! having §RCovid§! at §RModerate§!"
@@ -1391,6 +1410,14 @@
  thai_prayut.35.t: "What Comes After Victory"
  thai_prayut.35.d: ""
  thai_prayut.35.a: "The Infighting Continues"
+ 
+ thai_ptp.1.t: "Pheu Thai wins 2023 Elections"
+ thai_ptp.1.d: ""
+ thai_ptp.1.a: "Tong Tong Tarn"
+ 
+ thai_ptp.2.t: "A Man in Dubai"
+ thai_ptp.2.d: "Thaksin was watching the news when he saw his daughter GODDAMN PAETONGTARN SHINAWATRA WINNING IN THE ELECTIONS"
+ thai_ptp.2.a: "I'M GOING HOME TO THAILAND NOW!!!!!!!!!!"
  
  thai_cambodia_tension.1.t: "Rising Seriousness of the Recent Border Conflict"
  thai_cambodia_tension.1.d: "Our national sovereignty is under threat by Cambodia.\n\nWe have received reports that Cambodian drones (UAVs) and infantry opened fire approximately 200 meters east of the Thai-administered Prasat Ta Muen Thom temple. Cambodian forces subsequently launched BM-21 multiple rocket launchers toward Prasat Don Tuan near residential areas, while an attempted infantry advance near Ta Kwai Temple was repelled by Thai artillery counter-fire. \n\nCivilian areas have been severely impacted. A BM-21 rocket struck a PTT gas station and convenience store in Sisaket province, killing eight civilians including children and injuring thirteen others. Furthermore, Phanom Dong Rak Hospital in Surin was hit by rocket fire, damaging the grounds, injuring personnel, and forcing an emergency evacuation of patients to underground bunkers. Directing artillery strikes at hospitals is a direct violation of the Geneva Conventions.  A war crime.\n\nAs a result of ongoing bombardment, more than 100,000 residents across border provinces are being evacuated. \n\nOur troops shall retaliate and defend our territory."
@@ -1993,7 +2020,7 @@
  SIA_oil_crisis_cat_desc: "Our nation is facing the effects of the global oil crisis. Instability in Saudi Arabia have disrupted global energy markets, causing oil prices to surge worldwide.\n\nThe Ministry of Energy has stated that the government still possesses sufficient oil reserves to meet the nation's essential needs. However, these reserves are not unlimited, and supplies are dwindling as global disruptions threaten to cripple the economy. Immediate action is essential to prevent the situation from spiraling out of control.\n\n§YTotal Accumulated Days§!: §g[?SIA_total_oil_stockpiled_days]§!"
  SIA_oil_in_reserves_mission: "Oil in Reserves"
  SIA_oil_in_reserves_mission_desc: "Our oil reserves are running dangerously low. If the timer runs out, the crisis will worsen."
- SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y600 days§! of §YTotal Accumulated Days§! §Cor§! the §Ypolitical situation§! in the §Y@USA United States§! has §Rdeteriorated§! to the point where it is no longer able to enforce sanctions.\n"
+ SIA_oil_in_reserves_mission_tt: "For the §RCrisis§! to §Gfade§!, we must have at least §Y600 days§! of §YTotal Accumulated Days§! §Cin order to reassure the people§!.\n\n§OHowever§!, if the §Yelections§! in the §Y@USA United States§! has §Rhappened§!, we will strike a deal to end the Oil Crisis but it §Rwill not raise the approval of our people§! as it has been too late.\n"
  SIA_oil_distribution_to_stations: "Oil Distribution to Gas Stations"
  SIA_truckers_start_protesting: "Truckers Start Protesting"
  
@@ -2571,6 +2598,7 @@
  SIA_environment_report_tt_5: "§gThe §YReport§! is out, last year has been a §RCatastrophic Failure§!, reaching below §Y2%§! progress§!"
  
  SIA_selected_state_approval: "[SIA_selected_econ_area] - [GetAreaApprovalAlignment]"
+ SIA_approval_area_selected_tt: "§YThis Area is a [GetAreaApprovalAlignment] Controlled Area§!\n\n\n§L[GetAreaApprovalStatus]§!"
  area_party_alignment_0: "§RDIVIDED§!"
  area_party_alignment_1: "£GFX_palang_pracharath"
  area_party_alignment_2: "£GFX_phua_thai"
@@ -2581,6 +2609,12 @@
  area_party_alignment_6: "£GFX_kla_tham"
  area_party_alignment_7: "£GFX_united_thai_nation"
  area_party_alignment_8: "§gMINOR§!"
+ area_approval_status_0: "Undetermined"
+ area_approval_status_1: "Since this is controlled by §WUs§!, the Area's approval will decrease by §R0.20%§!"
+ area_approval_status_2: "Since this is controlled by a §Ccoalition member§!, the Area's approval will decrease by §R0.30%§!"
+ area_approval_status_3: "Since this is controlled by an §Ropposition member§!, the Area's approval will decrease by §R0.65%§!"
+ area_approval_status_4: "Since control is §gdivided§!, the Area's approval will decrease by §R0.45%§!"
+ area_approval_status_5: "Since this is controlled by a §gMinor Party§!, the Area's approval will decrease by §R0.35%§!"
  SIA_approval_box_fill_tt: "§GArea £GFX_FRA_Happy_with_Regime_texticon Approval§!: §Y[?SIA_map_var:SIA_state_approval]%/100%§!"
  SIA_local_leader_strength_box_fill_tt: ""
  SIA_approval_area_text: "Area Approval of Government"
