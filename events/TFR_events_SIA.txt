@@ -1998,7 +1998,13 @@ country_event = {
 		891 = {
 			add_manpower = -24
 		}
+		SIA_apirat_kongsompong_char = {
+			unit_leader_event = {
+				id = thai_events.24
+				days = 2
+			}
     }
+}
 }
 
 country_event = {
@@ -2119,28 +2125,19 @@ country_event = {
 		add_ideas = SIA_arkhom_termpittayapaisith_advisor
 	}
 }
-country_event = {
-    id = thai_events.24 # Three Demands fb post
+unit_leader_event = {
+    id = thai_events.24 # Apirat Press Conference
     title = thai_events.24.t
     desc = thai_events.24.d
-    picture = GFX_report_freeyouth_three_demands
+    picture = GFX_report_event_generic_mussolini
 	
 	is_triggered_only = yes
 	
     option = {
-        name = thai_events.24.a
-        add_popularity = {
-            ideology = communist
-            popularity = 0.01
-        }
-        add_popularity = {
-            ideology = totalitarian_socialist
-            popularity = 0.005
-        }
-        add_stability = -0.02
+        custom_effect_tooltip = thai_events_24_texticon
+		name = thai_events.24.a
 	}
 }
-
 country_event = {
     id = thai_events.25 # FreeYOUTH Commie Larp
     title = thai_events.25.t
@@ -3601,10 +3598,17 @@ country_event = {
 	
     option = {
         name = thai_events.101.a
+		SIA = {
 		add_popularity = {
 			ideology = libertarian_socialist
 			popularity = 0.005
-		}
+	}
+		APA = {
+		add_popularity = {
+			ideology = libertarian_socialist
+			popularity = 0.05
+	}
+}
 	}
 }
 country_event = { 
@@ -3620,6 +3624,26 @@ country_event = {
 			days = 20
 		}
 		add_stability = 0.05
+	}
+}
+country_event = { 
+    id = thai_events.167 # Thai Arya Party
+    title = thai_events.167.t
+    desc = thai_events.167.d
+	is_triggered_only = yes
+	picture = GFX_report_thai_aryan_party
+    option = {
+        name = thai_events.67.a
+	}
+}
+country_event = { 
+    id = thai_events.169 #ExThailand
+    title = thai_events.169.t
+    desc = thai_events.169.d
+	is_triggered_only = yes
+    option = {
+        name = thai_events.69.a
+		sound_effect = "naval_invasion_alert"
 	}
 }
 news_event = { #Thai Protests
