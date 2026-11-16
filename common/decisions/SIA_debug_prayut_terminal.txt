@@ -310,7 +310,7 @@ SIA_debug_prayut_terminal = {
 			has_country_flag = show_pm_list
 		}
 		complete_effect = {
-			add_ideas = SIA_suchat_chomklin_hog
+			add_ideas = SIA_suchart_chomklin_hog
 			SIA_change_ideology_utn_suchart = yes
 		}
 	}

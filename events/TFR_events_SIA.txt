@@ -932,7 +932,7 @@ country_event = { #Suchart outinfluences and wins nomination
         name = thai_prayut.23.a
 		set_variable = { utn_candidate = 2 }
 		custom_effect_tooltip = thai_prayut_23_tt
-		add_ideas = SIA_suchat_chomklin_hog
+		add_ideas = SIA_suchart_chomklin_hog
     }
 }
 country_event = {

@@ -1040,8 +1040,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_hog_SIA_SIA_suchat_chomklin"
-		texturefile = "gfx/leaders/SIA/SIA_suchat_chomklin.png"
+		name = "GFX_hog_SIA_SIA_suchart_chomklin"
+		texturefile = "gfx/leaders/SIA/SIA_suchart_chomklin.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {

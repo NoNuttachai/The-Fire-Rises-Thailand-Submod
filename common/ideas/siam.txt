@@ -2838,8 +2838,8 @@ ideas = {
 				eco_oil_baron
 			}
 		}
-		SIA_suchat_chomklin_hog = {
-			name = SIA_suchat_chomklin_char
+		SIA_suchart_chomklin_hog = {
+			name = SIA_suchart_chomklin_char
 			picture = SIA_suchart
 			allowed = {
 				original_tag = SIA
@@ -2848,7 +2848,7 @@ ideas = {
 				head_minister_trigger = yes
 			}
 			visible = {
-				has_idea = SIA_suchat_chomklin_hog
+				has_idea = SIA_suchart_chomklin_hog
 			}
 			traits = {
 				SIA_ide_utn

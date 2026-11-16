@@ -8,7 +8,7 @@ defined_text = {
 		}
 		localization_key = SIA_utn_banner_prayut
 	}
-	text = { #UTN Pirapan Vs Suchat
+	text = { #UTN Pirapan Vs Suchart
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			has_country_flag = SIA_utn_party_mech_dispute
@@ -26,7 +26,7 @@ defined_text = {
 		}
 		localization_key = SIA_utn_banner_pirapan
 	}
-	text = { #Suchat secured nomination
+	text = { #Suchart secured nomination
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			NOT = {
@@ -35,7 +35,7 @@ defined_text = {
 			}
 			check_variable = { utn_candidate = 2 }
 		}
-		localization_key = SIA_utn_banner_suchat
+		localization_key = SIA_utn_banner_suchart
 	}
 	text = { #Pirapan wins 2027
 		trigger = {
@@ -52,10 +52,10 @@ defined_text = {
 	}
 	text = { #Stalemate
 		trigger = {
-			has_idea = SIA_suchat_chomklin_hog
+			has_idea = SIA_suchart_chomklin_hog
 			has_country_flag = SIA_cambodia_war_stalemate
 		}
-		localization_key = SIA_utn_banner_suchat_stalemate
+		localization_key = SIA_utn_banner_suchart_stalemate
 	}
 }
 

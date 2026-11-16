@@ -1949,7 +1949,7 @@ focus_tree = {
 		prerequisite = { focus = SIA_once_again_the_utn }
 		relative_position_id = SIA_once_again_the_utn
 		allow_branch = { 
-			has_idea = SIA_suchat_chomklin_hog
+			has_idea = SIA_suchart_chomklin_hog
 		}
 		
 		completion_reward = {

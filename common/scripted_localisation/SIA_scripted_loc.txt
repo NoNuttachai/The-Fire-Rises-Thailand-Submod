@@ -276,9 +276,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_idea = SIA_suchat_chomklin_hog
+			has_idea = SIA_suchart_chomklin_hog
 		}
-		localization_key = SIA_suchat_chomklin_char
+		localization_key = SIA_suchart_chomklin_char
 	}
 	text = {
 		trigger = {

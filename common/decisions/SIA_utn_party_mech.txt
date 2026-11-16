@@ -82,7 +82,7 @@ SIA_utn_party_mech = {
 		}
 		complete_effect = {
 			hidden_effect = {
-				add_ideas = SIA_suchat_chomklin_hog
+				add_ideas = SIA_suchart_chomklin_hog
 				clr_country_flag = SIA_utn_party_mech_dispute
 				clr_country_flag = SIA_utn_won_2027
 				clr_country_flag = SIA_cambodia_war_stalemate
@@ -95,7 +95,7 @@ SIA_utn_party_mech = {
 		}
 		complete_effect = {
 			hidden_effect = {
-				add_ideas = SIA_suchat_chomklin_hog
+				add_ideas = SIA_suchart_chomklin_hog
 				set_country_flag = SIA_cambodia_war_stalemate
 			}
 		}
