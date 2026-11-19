@@ -3161,20 +3161,14 @@ country_event = {
 	}
 }
 country_event = {
-    id = thai_events.69 #Free YOUTH's post march
+    id = thai_events.69 #August 16 2021 - Popcat Craze
     title = thai_events.69.t
     desc = thai_events.69.d
 	is_triggered_only = yes
-	picture = GFX_report_freeyouth_three_demands
-	immediate = {
-		hidden_effect = {
-			country_event = { id = thai_events.68 days = 2 }
-		}
-	}
+	picture = GFX_report_popcat_animated
     option = {
         name = thai_events.69.a
-		
-		
+		add_war_support = 0.10
 	}
 }
 country_event = {
@@ -3657,6 +3651,23 @@ country_event = {
 	picture = GFX_report_thai_aryan_party
 	option = {
 		name = thai_events.167.a
+		custom_effect_tooltip = thai_events_167_texticon
+		add_popularity = {
+			ideology = communist
+			popularity = 0.005
+		}
+		add_popularity = {
+			ideology = libertarian_socialist
+			popularity = 0.005
+		}
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.005
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.005
+		}
 	}
 }
 country_event = { 

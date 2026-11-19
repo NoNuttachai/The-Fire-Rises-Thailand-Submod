@@ -70,6 +70,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_thai_arya_party_logo"
+		texturefile = "gfx/texticons/banners/thai_arya_party_logo.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_SIA_PPRP1_banner"
 		texturefile = "gfx/texticons/banners/SIA_PPRP1_banner.png"
 		legacy_lazy_load = no
