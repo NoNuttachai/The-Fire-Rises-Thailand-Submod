@@ -65,4 +65,36 @@ characters = {
 			ideology = reformist_socialism
 		}
 	}
+	SIA_Cherdkiat_Atthakor = {
+		name = SIA_Cherdkiat_Atthakor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/SIA_Cherdkiat_Atthakor.png"
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { always = no } 
+		}
+	}
+	SIA_Tull_Traisorat = {
+		name = SIA_Tull_Traisorat
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/SIA_Tull_Traisorat.png"
+			} 
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { always = no } 
+		}
+	}
 }

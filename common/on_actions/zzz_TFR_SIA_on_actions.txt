@@ -63,6 +63,11 @@ on_actions = {
 				country_event = { id = thai_events.102 days = 30 random_days = 64 } # February-April 2020 A Gray Silver Lining #thai_events.167 Thai Aryan Party
 				country_event = { id = thai_events.102 days = 1827 random_days = 730 } # 1 JAN 2025 - 1 JAN 2627 Thai Aryan Party
 				
+				#Cambodia Skeleton
+				SIA_Cherdkiat_Atthakor = {
+			         unit_leader_event = { id = Thai_Cambodia_Report.1 days = 1707 } #Ambassador to Cambodia rotated out
+			    }
+				
 				country_event = { id = thai_cambodia_tension.13 days = 1974 } # 28 May 2025 Cambodia Start
 				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM
 				country_event = { id = thai_elections.9 days = 1814 } # 19 December 2024 #Thamanat Prompow joins Kla Tham
@@ -253,8 +258,8 @@ on_actions = {
 							nationalist = 100
 						}
 						create_country_leader = {
-							name = SIA_chaichan_changmongkol_char
-							picture = "gfx/leaders/SIA/SIA_chaichan_changmongkol.png"
+							name = SIA_Boonsin_Padklang 
+							picture = "gfx/leaders/Occupied_CAM/SIA_Boonsin_Padklang.png"
 							ideology = military_junta
 							traits = {
 							}
