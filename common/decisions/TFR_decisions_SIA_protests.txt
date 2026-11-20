@@ -416,6 +416,9 @@ SIA_protests_category = {
 				days = 50
 			}
 			country_event = { id = thai_events.45 hours = 6 }
+			effect_tooltip = {
+				SIA_decrease_protests = yes
+			}
 		}
 		ai_will_do = {
 			base = 10

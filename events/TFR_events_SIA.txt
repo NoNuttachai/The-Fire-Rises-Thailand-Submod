@@ -48,7 +48,6 @@ country_event = { #Start of border tensions
 				}
 			}
 			news_event = thai_newsevents.13
-			news_event = { id = news.421 days = 15 }
 			country_event = { id = thai_events.71 days = 18 }
 		}
 	}
@@ -281,6 +280,13 @@ country_event = { #War stalemate
         name = thai_cambodia_tension.8.a 
 		set_country_flag = SIA_cambodia_war_stalemate
 		focus_unlock = yes
+		if = {
+			limit = {
+				check_variable = { SIA_government_leader = 11 }
+			}
+			country_event = { id = thai_prayut.22 days = 6 }
+		}
+		country_event = { id = thai_elections.16 days = 12 }
     }
 }
 country_event = { #Tales of the Forest
@@ -855,7 +861,7 @@ country_event = { #Standing Alongside the general
 		
     }
 }
-country_event = { #UTN-PPRP Yapping part 2 - DEFUNCT
+country_event = { #DEFUNCT
     id = thai_prayut.18
     title = thai_prayut.18.t
     desc = thai_prayut.18.d
@@ -866,7 +872,7 @@ country_event = { #UTN-PPRP Yapping part 2 - DEFUNCT
 		
     }
 }
-country_event = { #UTN-PPRP Yapping part 3 - DEFUNCT
+country_event = { #DEFUNCT
     id = thai_prayut.19
     title = thai_prayut.19.t
     desc = thai_prayut.19.d
@@ -917,12 +923,12 @@ country_event = { #Pirapan stalemates cambodia
         name = thai_prayut.22.a
 		custom_effect_tooltip = thai_prayut_22_tt
 		set_temp_variable = { target = 1 }
-		set_temp_variable = { influ_change = -30 }
+		set_temp_variable = { influ_change = -50 }
 		SIA_utn_tug_of_war_change_influence = yes
 		country_event = { id = thai_prayut.23 days = 15 }
     }
 }
-country_event = { #Suchart outinfluences and wins nomination
+country_event = { #Suchart damage control
     id = thai_prayut.23
     title = thai_prayut.23.t
     desc = thai_prayut.23.d
@@ -1149,6 +1155,35 @@ country_event = { #UTN wins 2026/2027 Elections
         name = thai_prayut.36.a
 		focus_unlock = yes
 		set_country_flag = SIA_utn_2027_victory
+    }
+}
+country_event = { #Akanat becomes important
+    id = thai_prayut.37
+    title = thai_prayut.37.t
+    desc = thai_prayut.37.d
+	is_triggered_only = yes
+	picture = GFX_report_pirapan_akanat
+	
+    option = {
+        name = thai_prayut.37.a
+		set_variable = { utn_candidate = 2 }
+		custom_effect_tooltip = thai_prayut_23_tt
+		add_ideas = SIA_suchart_chomklin_hog
+    }
+}
+country_event = { #Choose either Suchart or Akanat
+    id = thai_prayut.38
+    title = thai_prayut.38.t
+    desc = thai_prayut.38.d
+	is_triggered_only = yes
+
+    option = { #Suchart
+        name = thai_prayut.38.a
+		custom_effect_tooltip = thai_prayut_38_a_tt
+    }
+	option = { #Akanat
+        name = thai_prayut.38.b
+		custom_effect_tooltip = thai_prayut_38_b_tt
     }
 }
 country_event = { #elections calculated
@@ -1517,6 +1552,18 @@ country_event = { # 2023 DP - Jurin
 		set_temp_variable = { target = 4 }
 		set_temp_variable = { vote_change = 2 }
 		SIA_elections_increase_votes_by_undecided = yes
+    }
+}
+country_event = { # Snap elections called in 2026 after stalemating Cambodia
+    id = thai_elections.16
+    title = thai_elections.16.t
+    desc = thai_elections.16.d
+    picture = GFX_report_parliament_dissolved
+	is_triggered_only = yes
+	
+    option = { 
+        name = thai_elections.16.a
+		
     }
 }
 country_event = { #Pheu Thai Wins 2023
@@ -2028,8 +2075,8 @@ country_event = {
 				id = thai_events.24
 				days = 2
 			}
+		}
     }
-}
 }
 
 country_event = {
@@ -2159,15 +2206,17 @@ unit_leader_event = {
 	is_triggered_only = yes
 	
     option = {
-		name = thai_events.24.a
-        custom_effect_tooltip = thai_events_24_texticon
+        name = thai_events.24.a
 		SIA_apirat_kongsompong_char = {
 			add_timed_unit_leader_trait = {
-			trait = disgruntled
-			days = 100
-		} }
+				trait = disgruntled
+				days = 100
+			}
+		}
+		custom_effect_tooltip = thai_events_24_texticon
 	}
 }
+
 country_event = {
     id = thai_events.25 # FreeYOUTH Commie Larp
     title = thai_events.25.t
@@ -2320,7 +2369,7 @@ country_event = {
 	
     option = {
         name = thai_events.31.a
-		1494 = {
+		1503 = {
 			add_core_of = SIA
 		}
 		add_stability = 0.03
@@ -2435,6 +2484,7 @@ country_event = {
 			mission = SIA_the_protests_intensify
 			days = -15
 		}
+		set_country_flag = SIA_prayut_desperate
 		set_temp_variable = { increase = 1 }
 		SIA_increase_youth_status = yes
 	}
@@ -3168,7 +3218,7 @@ country_event = {
 	picture = GFX_report_popcat_animated
     option = {
         name = thai_events.69.a
-		add_war_support = 0.10
+		add_war_support = 0.01
 	}
 }
 country_event = {
@@ -3180,11 +3230,13 @@ country_event = {
 	
     option = {
         name = thai_events.70.a
+		set_temp_variable = { society_development_var_temp = -0.03 }
+		add_society_development = yes
 		add_stability = -0.01
 	}
 }
 country_event = {
-    id = thai_events.71 #A Flag Lowered - RIP ASEAN
+    id = thai_events.71 #A Flag Lowered - Rip asean
     title = thai_events.71.t
     desc = thai_events.71.d
 	is_triggered_only = yes
@@ -3192,6 +3244,13 @@ country_event = {
 	
     option = {
         name = thai_events.71.a
+		custom_effect_tooltip = thai_events_71_tt
+		every_country = {
+			limit = {
+				has_idea = ASEAN_member
+			}
+			remove_ideas = ASEAN_member
+		}
 		
 	}
 }
@@ -3368,13 +3427,12 @@ country_event = {
     option = {
         name = thai_events.79.a
 		add_stability = -0.05
-		1495 = {
+		1504 = {
 			damage_building = {
 			  type = industrial_complex
 			  damage = 1
 			}
 		}
-		add_manpower = -1
 	}
 }
 country_event = {
@@ -3443,6 +3501,7 @@ country_event = {
 			  damage = 1
 			}
 		}
+		add_manpower = -1
 		hidden_effect = {
 			country_event = { id = thai_events.83 days = 1 }
 		}
@@ -3486,7 +3545,8 @@ country_event = {
 		army_experience = 20
 		add_equipment_to_stockpile = {
 			type = support_equipment
-			amount = -50 }
+			amount = -50 
+		}
 		724 = {
 			add_manpower = -276
 			damage_building = {
@@ -3625,8 +3685,8 @@ country_event = {
         name = thai_events.101.a
 		SIA = { add_popularity = { ideology = libertarian_socialist popularity = 0.005 } }
 		APA = { add_popularity = { ideology = libertarian_socialist popularity = 0.05 } }
-			}
 	}
+}
 country_event = { 
     id = thai_events.102 #A Gray Silver Lining
     title = thai_events.102.t
@@ -3643,14 +3703,13 @@ country_event = {
 	}
 }
 country_event = { 
-	id = thai_events.167 #Thai Arya Party
-	title = thai_events.167.t
-	desc = thai_events.167.d
-	fire_only_once = yes
+    id = thai_events.167 # Thai Arya Party
+    title = thai_events.167.t
+    desc = thai_events.167.d
 	is_triggered_only = yes
 	picture = GFX_report_thai_aryan_party
-	option = {
-		name = thai_events.167.a
+    option = {
+        name = thai_events.167.a
 		custom_effect_tooltip = thai_events_167_texticon
 		add_popularity = {
 			ideology = communist
@@ -3671,17 +3730,18 @@ country_event = {
 	}
 }
 country_event = { 
-	id = thai_events.169
-	title = thai_events.169.t
-	desc = thai_events.169.d
+    id = thai_events.169 #ExThailand
+    title = thai_events.169.t
+    desc = thai_events.169.d
 	is_triggered_only = yes
-	fire_only_once = yes
-	picture = GFX_report_event_generic_panic
+    picture = GFX_report_event_generic_panic
 	option = {
 		name = thai_events.169.a
 		immediate = {
 			hidden_effect = {
-			sound_effect = "naval_invasion_alert" } }
+				sound_effect = "naval_invasion_alert" 
+			}
+		}
 	}
 }
 news_event = { #Thai Protests

@@ -268,4 +268,20 @@ spriteTypes = {
         name = "GFX_goal_SIA_shared_tree_SIA_silent_and_waiting"
         texturefile = "gfx/interface/goals/SIA/shared/SIA_silent_and_waiting.png"
     }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_made_in_thailands"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_made_in_thailands.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_state_of_the_art"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_state_of_the_art.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_thinking_smart"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_thinking_smart.png"
+    }
+	SpriteType = {
+        name = "GFX_goal_SIA_shared_tree_SIA_thailands_navy"
+        texturefile = "gfx/interface/goals/SIA/shared/SIA_thailands_navy.png"
+    }
 }

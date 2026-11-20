@@ -26,72 +26,24 @@ SIA_power_balance = {
 			}
 			add_ideas = SIA_lack_of_the_political_legitimacy
 			custom_effect_tooltip = SIA_motion_of_no_confidence_voted
+			
 			if = {
 				limit = {
-					has_completed_focus = SIA_raise_our_three_fingers
 					NOT = {
 						has_country_flag = SIA_3rd_motion_of_confidence_active
 					}
 				}
-				effect_tooltip = {
-					random_list = {
-						50 = {
-							country_event = thai_events.33
-						}
-						50 = {
-							country_event = thai_events.35
-						}
-					}
-				}
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 			}
-			else_if = {
-				limit = {
-					has_completed_focus = SIA_raise_our_three_fingers
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-				effect_tooltip = {
-					random_list = {
-						50 = {
-							country_event = thai_events.34
-						}
-						50 = {
-							country_event = thai_events.36
-						}
+			else = {
+				if = {
+					limit = {
+						has_country_flag = SIA_prayut_desperate
 					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = SIA_side_with_uncle_tuu
-					NOT = {
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-				}
-				effect_tooltip = {
-					random_list = {
-						50 = {
-							country_event = thai_events.33
-						}
-						50 = {
-							country_event = thai_events.35
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = SIA_side_with_uncle_tuu
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-				effect_tooltip = {
-					random_list = {
-						50 = {
-							country_event = thai_events.34
-						}
-						50 = {
-							country_event = thai_events.36
-						}
-					}
+				else = {
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 				}
 			}
 		}
@@ -128,70 +80,21 @@ SIA_power_balance = {
 				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
 						NOT = {
 							has_country_flag = SIA_3rd_motion_of_confidence_active
 						}
 					}
-					effect_tooltip = {
-						random_list = {
-							10 = {
-								country_event = thai_events.33
-							}
-							90 = {
-								country_event = thai_events.35
-							}
-						}
-					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							10 = {
-								country_event = thai_events.34
-							}
-							90 = {
-								country_event = thai_events.36
-							}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = SIA_prayut_desperate
 						}
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						NOT = {
-							has_country_flag = SIA_3rd_motion_of_confidence_active
-						}
-					}
-					effect_tooltip = {
-						random_list = {
-							10 = {
-								country_event = thai_events.33
-							}
-							90 = {
-								country_event = thai_events.35
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							10 = {
-								country_event = thai_events.34
-							}
-							90 = {
-								country_event = thai_events.36
-							}
-						}
+					else = {
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 					}
 				}
 				
@@ -224,70 +127,21 @@ SIA_power_balance = {
 				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
 						NOT = {
 							has_country_flag = SIA_3rd_motion_of_confidence_active
 						}
 					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.33
-							}
-							100 = {
-								country_event = thai_events.35
-							}
-						}
-					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.34
-							}
-							100 = {
-								country_event = thai_events.36
-							}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = SIA_prayut_desperate
 						}
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						NOT = {
-							has_country_flag = SIA_3rd_motion_of_confidence_active
-						}
-					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.33
-							}
-							100 = {
-								country_event = thai_events.35
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.34
-							}
-							100 = {
-								country_event = thai_events.36
-							}
-						}
+					else = {
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 					}
 				}
 
@@ -320,70 +174,21 @@ SIA_power_balance = {
 				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
 						NOT = {
 							has_country_flag = SIA_3rd_motion_of_confidence_active
 						}
 					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.33
-							}
-							100 = {
-								country_event = thai_events.35
-							}
-						}
-					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.34
-							}
-							100 = {
-								country_event = thai_events.36
-							}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = SIA_prayut_desperate
 						}
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						NOT = {
-							has_country_flag = SIA_3rd_motion_of_confidence_active
-						}
-					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.33
-							}
-							100 = {
-								country_event = thai_events.35
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							0 = {
-								country_event = thai_events.34
-							}
-							100 = {
-								country_event = thai_events.36
-							}
-						}
+					else = {
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 					}
 				}
 
@@ -422,70 +227,21 @@ SIA_power_balance = {
 				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
 						NOT = {
 							has_country_flag = SIA_3rd_motion_of_confidence_active
 						}
 					}
-					effect_tooltip = {
-						random_list = {
-							90 = {
-								country_event = thai_events.33
-							}
-							10 = {
-								country_event = thai_events.35
-							}
-						}
-					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							90 = {
-								country_event = thai_events.34
-							}
-							10 = {
-								country_event = thai_events.36
-							}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = SIA_prayut_desperate
 						}
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						NOT = {
-							has_country_flag = SIA_3rd_motion_of_confidence_active
-						}
-					}
-					effect_tooltip = {
-						random_list = {
-							90 = {
-								country_event = thai_events.33
-							}
-							10 = {
-								country_event = thai_events.35
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							90 = {
-								country_event = thai_events.34
-							}
-							10 = {
-								country_event = thai_events.36
-							}
-						}
+					else = {
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 					}
 				}
 
@@ -518,70 +274,21 @@ SIA_power_balance = {
 				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
 						NOT = {
 							has_country_flag = SIA_3rd_motion_of_confidence_active
 						}
 					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.33
-							}
-							0 = {
-								country_event = thai_events.35
-							}
-						}
-					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.34
-							}
-							0 = {
-								country_event = thai_events.36
-							}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = SIA_prayut_desperate
 						}
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						NOT = {
-							has_country_flag = SIA_3rd_motion_of_confidence_active
-						}
-					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.33
-							}
-							0 = {
-								country_event = thai_events.35
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.34
-							}
-							0 = {
-								country_event = thai_events.36
-							}
-						}
+					else = {
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 					}
 				}
 
@@ -617,70 +324,21 @@ SIA_power_balance = {
 				custom_effect_tooltip = SIA_motion_of_no_confidence_voted
 				if = {
 					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
 						NOT = {
 							has_country_flag = SIA_3rd_motion_of_confidence_active
 						}
 					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.33
-							}
-							0 = {
-								country_event = thai_events.35
-							}
-						}
-					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
 				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_raise_our_three_fingers
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.34
-							}
-							0 = {
-								country_event = thai_events.36
-							}
+				else = {
+					if = {
+						limit = {
+							has_country_flag = SIA_prayut_desperate
 						}
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
 					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						NOT = {
-							has_country_flag = SIA_3rd_motion_of_confidence_active
-						}
-					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.33
-							}
-							0 = {
-								country_event = thai_events.35
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_completed_focus = SIA_side_with_uncle_tuu
-						has_country_flag = SIA_3rd_motion_of_confidence_active
-					}
-					effect_tooltip = {
-						random_list = {
-							100 = {
-								country_event = thai_events.34
-							}
-							0 = {
-								country_event = thai_events.36
-							}
-						}
+					else = {
+						custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
 					}
 				}
 

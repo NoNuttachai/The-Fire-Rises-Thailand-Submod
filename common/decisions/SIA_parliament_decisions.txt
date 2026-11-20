@@ -42,7 +42,25 @@ SIA_parliament_category = {
 		selectable_mission = no
 		days_mission_timeout = 175
 		timeout_effect = {
-			custom_effect_tooltip = thai_events_28_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+				}
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
+			}
+			else = {
+				if = {
+					limit = {
+						has_country_flag = SIA_prayut_desperate
+					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
+				}
+				else = {
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
+				}
+			}
 			hidden_effect = {
 				country_event = { id = thai_events.29 days = 60 }
 			}
@@ -70,7 +88,25 @@ SIA_parliament_category = {
 		selectable_mission = no
 		days_mission_timeout = 135
 		timeout_effect = {
-			custom_effect_tooltip = thai_events_29_tt
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SIA_3rd_motion_of_confidence_active
+					}
+				}
+				custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirement1
+			}
+			else = {
+				if = {
+					limit = {
+						has_country_flag = SIA_prayut_desperate
+					}
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementbad
+				}
+				else = {
+					custom_effect_tooltip = SIA_motion_of_no_confidence_voted_requirementgood
+				}
+			}
 			SIA_check_motion_of_no_confidence = yes
 		}
 		complete_effect = {

@@ -114,14 +114,14 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
-		1495 = {
+		1504 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 2
 				instant_build = yes
 			}
 		}
-		1496 = {
+		1505 = {
 			add_building_construction = {
 				type = anti_air_building
 				level = 2
@@ -141,7 +141,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_state_of_the_art
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_state_of_the_art
 	x = 1
 	y = 1
 	cost = 4
@@ -179,7 +179,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_made_in_thailand
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_made_in_thailands
 	x = 0
 	y = 1
 	cost = 4
@@ -270,7 +270,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = SIA_thinking_smart
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_thinking_smart
 	x = -1
 	y = 1
 	cost = 4
@@ -790,7 +790,7 @@ shared_focus = {
 #Navy
 shared_focus = {
 	id = SIA_the_royal_thai_navy
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	icon = GFX_goal_SIA_shared_tree_SIA_thailands_navy
 	x = 7
 	y = 1
 	cost = 4

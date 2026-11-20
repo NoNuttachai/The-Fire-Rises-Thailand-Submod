@@ -100,6 +100,54 @@ SIA_utn_party_mech = {
 			}
 		}
 	}
+	SIA_suchart_gathers_influence = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_country_flag = SIA_tug_of_war_fail_check
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 28
+		timeout_effect = {
+			activate_mission = SIA_suchart_gathers_influence
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { influ_change = 2.5 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_pirapan_gathers_influence = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_country_flag = SIA_tug_of_war_fail_check
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 28
+		timeout_effect = {
+			activate_mission = SIA_pirapan_gathers_influence
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { influ_change = 2.5 }
+			SIA_utn_tug_of_war_change_influence = yes
+		}
+		complete_effect = {
+			
+		}
+	}
 	SIA_launch_media_advertisements = {
 		icon = generic_crisis
 		priority = 10

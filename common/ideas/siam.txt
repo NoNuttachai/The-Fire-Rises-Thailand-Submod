@@ -2834,7 +2834,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
-				hog_pragmatic_statesman
+				hog_backroom_backstabber
 				eco_oil_baron
 			}
 		}
@@ -2852,7 +2852,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_utn
-				hog_controversial_politican
+				hog_political_protege
 			}
 		}
 		SIA_trinuch_thienthong_hog = {
@@ -2874,7 +2874,7 @@ ideas = {
 		}
 		SIA_akanat_promphan_hog = {
 			name = SIA_akanat_promphan_char
-			picture = SIA_trinuch
+			picture = SIA_akanat
 			allowed = {
 				original_tag = SIA
 			}
@@ -2903,7 +2903,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_dp
-				hog_pragmatic_statesman
+				hog_distinguished_gentleman
 			}
 		}
 		SIA_thamanat_prompow_hog = {
@@ -2920,7 +2920,7 @@ ideas = {
 			}
 			traits = {
 				SIA_ide_kt
-				hog_pragmatic_statesman
+				hog_controversial_politican
 			}
 		}
 	}

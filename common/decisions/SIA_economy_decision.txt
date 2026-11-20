@@ -272,6 +272,151 @@ SIA_Economy_category = {
 			SIA_change_fuel_monthly_temporary_modifier_amount = yes
 		}
 	}
+	SIA_economic_iniative_decisions = {
+		icon = GFX_decision_SIA_decision_head
+		available = {
+			always = no
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 1 }
+		}
+	}
+	SIA_expand_r_and_d_facilities = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_economic_iniative_points_var > 0 }
+				tooltip = atleast_than_1_eip_tt
+			}
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 1 }
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_economic_iniative_points_var > 0 }
+		}
+		custom_cost_text = atleast_than_1_eip
+		days_remove = 300
+		fire_only_once = yes
+
+		complete_effect = {
+			set_temp_variable = { change_temp = -1 }
+			SIA_change_eip = yes
+		}
+		remove_effect = {
+			add_research_slot = 1
+			set_temp_variable = { academic_development_var_temp = 0.25 }
+			add_academic_development = yes
+		}
+	}
+	SIA_massively_expand_domestic_industry = {
+		icon = generic_crisis 
+		
+		allowed = {
+			tag = SIA
+		}
+		
+	    available = {
+			custom_trigger_tooltip = {
+				check_variable = { SIA_economic_iniative_points_var > 3 }
+				tooltip = atleast_than_4_eip_tt
+			}
+		}
+		visible = {
+			check_variable = { SIA_econ_tab = 1 }
+		}
+		custom_cost_trigger = {
+			check_variable = { SIA_economic_iniative_points_var > 3 }
+		}
+		custom_cost_text = atleast_than_4_eip
+		days_remove = 60
+		days_re_enable = 50
+
+		complete_effect = {
+			set_temp_variable = { change_temp = -4 }
+			SIA_change_eip = yes
+		}
+		remove_effect = {
+			1504 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			1505 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 	SIA_pro_environment_decisions = {
 		icon = GFX_decision_SIA_decision_head
 		available = {

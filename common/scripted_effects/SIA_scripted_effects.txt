@@ -245,396 +245,58 @@ SIA_decrease_protests = {
 	}
 }
 SIA_check_motion_of_no_confidence = {
-	if = {
+	if = { #2nd motion effect
 		limit = {
-			OR = {
-				is_power_balance_in_range = {
-					id = SIA_power_balance
-					range = SIA_popular_winwin_medium_control_range
-				}
-				is_power_balance_in_range = {
-					id = SIA_power_balance
-					range = SIA_popular_winwin_high_control_range
-				}
+			NOT = {
+				has_country_flag = SIA_3rd_motion_of_confidence_active
 			}
+			
 		}
 		if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
+			limit = { #exceeded bop requirement
+				power_balance_value = {
+					id = SIA_power_balance
+					value > 0.199
 				}
 			}
-			
-			random_list = {
-				100 = {
-					country_event = thai_events.33
-				}
-				0 = {
-					country_event = thai_events.35
-				}
-			}
-			
+			country_event = thai_events.33
 		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				100 = {
-					country_event = thai_events.34
-				}
-				0 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-			
-			random_list = {
-				100 = {
-					country_event = thai_events.33
-				}
-				0 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				100 = {
-					country_event = thai_events.34
-				}
-				0 = {
-					country_event = thai_events.36
-				}
-			}
-			
+		else = { #Lacked BOP points
+			country_event = thai_events.35
 		}
 	}
-	else_if = {
-		limit = {
-			OR = {
-				is_power_balance_in_range = {
-					id = SIA_power_balance
-					range = SIA_loss_high_control_range
-				}
-				is_power_balance_in_range = {
-					id = SIA_power_balance
-					range = SIA_loss_medium_control_range
-				}
-			}
-		}
+	else = { #3rd motion effect
 		if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
+			limit = { #Had to whip votes for 2nd motion
+				has_country_flag = SIA_prayut_desperate
 			}
-			
-			random_list = {
-				0 = {
-					country_event = thai_events.33
+			if = { #exceeded bop requirement
+				limit = {
+					power_balance_value = {
+						id = SIA_power_balance
+						value > 0.499
+					}
 				}
-				100 = {
-					country_event = thai_events.35
-				}
+				country_event = thai_events.34
 			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				0 = {
-					country_event = thai_events.34
-				}
-				100 = {
-					country_event = thai_events.36
-				}
+			else = {
+				country_event = thai_events.36
 			}
 			
 		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
+		else = { #survived easily in 2nd motion
+			if = { #exceeded bop requirement
+				limit = {
+					power_balance_value = {
+						id = SIA_power_balance
+						value > 0.299
+					}
 				}
+				country_event = thai_events.34
 			}
-			
-			random_list = {
-				0 = {
-					country_event = thai_events.33
-				}
-				100 = {
-					country_event = thai_events.35
-				}
+			else = {
+				country_event = thai_events.36
 			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				0 = {
-					country_event = thai_events.34
-				}
-				100 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-	}
-	else_if = {
-		limit = {
-			is_power_balance_in_range = {
-				id = SIA_power_balance
-				range = SIA_loss_low_control_range
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-		
-			random_list = {
-				10 = {
-					country_event = thai_events.33
-				}
-				90 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				10 = {
-					country_event = thai_events.34
-				}
-				90 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-			
-			random_list = {
-				10 = {
-					country_event = thai_events.33
-				}
-				90 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				10 = {
-					country_event = thai_events.34
-				}
-				90 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-	}
-	else_if = {
-		limit = {
-			is_power_balance_in_range = {
-				id = SIA_power_balance
-				range = SIA_popular_winwin_low_control_range
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-			
-			random_list = {
-				90 = {
-					country_event = thai_events.33
-				}
-				10 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				90 = {
-					country_event = thai_events.34
-				}
-				10 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-			
-			random_list = {
-				90 = {
-					country_event = thai_events.33
-				}
-				10 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				90 = {
-					country_event = thai_events.34
-				}
-				10 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-	}
-	else_if = {
-		limit = {
-			is_power_balance_in_range = {
-				id = SIA_power_balance
-				range = SIA_balance_range
-			}
-		}
-		if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-			
-			random_list = {
-				50 = {
-					country_event = thai_events.33
-				}
-				50 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_raise_our_three_fingers
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				50 = {
-					country_event = thai_events.34
-				}
-				50 = {
-					country_event = thai_events.36
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				NOT = {
-					has_country_flag = SIA_3rd_motion_of_confidence_active
-				}
-			}
-			
-			random_list = {
-				50 = {
-					country_event = thai_events.33
-				}
-				50 = {
-					country_event = thai_events.35
-				}
-			}
-			
-		}
-		else_if = {
-			limit = {
-				has_completed_focus = SIA_side_with_uncle_tuu
-				has_country_flag = SIA_3rd_motion_of_confidence_active
-			}
-			
-			random_list = {
-				50 = {
-					country_event = thai_events.34
-				}
-				50 = {
-					country_event = thai_events.36
-				}
-			}
-			
 		}
 	}
 }

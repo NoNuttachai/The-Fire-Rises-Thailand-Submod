@@ -33,6 +33,13 @@ SIA_debug_prayut_terminal = {
 			load_focus_tree = SIA_2023_utn_focus_tree
 		}
 	}
+	SIA_load_2027_utn_tree = {
+		complete_effect = {
+			load_focus_tree = SIA_2023_utn_focus_tree
+			set_country_flag = SIA_utn_2027_victory
+			focus_unlock = yes
+		}
+	}
 	SIA_load_cambodia_victory_utn_tree = {
 		complete_effect = {
 			add_ideas = SIA_pirapan_salirathavibhaga_hog

@@ -58,7 +58,7 @@
  SIA_classical_liberalism_desc: "£GFX_democrat §CDP§! - §YClassical Liberalism§!\n\n\n\n\n£GFX_SIA_dpbanner\n\n\n\n\n\n§YClassical Liberalism§! is a political ideology that advocates civil liberties under the rule of law with an emphasis on economic freedom. It developed in the early 19th century, building on ideas from the previous century as a response to urbanization and the Industrial Revolution. Classical Libertarians closely follow Adam Smith, and the beliefs of utlitarianism, natural law, social contract and natural rights."
  SIA_right_populism_desc: "£GFX_bhumjaithai §1BJT§! - §YRight-Wing Populism§!\n\n\n\n\n£GFX_SIA_bjt_banner\n\n\n\n\n\n§YRight-Wing Populism§! is an ideology that combines populist rhetoric with right-wing political ideas. Right-wing populists espouse nationalist and nativist sentiments. The §YBhumjaithai Party§! combines elements of conservatism, populism, and economic liberalism in its policy platform. Its approach to governance is characterized by welfare-oriented developmental policies while maintaining traditional conservative values, with the notable exception of its support for cannabis legalization."
  SIA_progressivism_desc: "£GFX_orange_party_2 §OMFP§! - §YProgressivism§!\n\n\n\n\n£GFX_SIA_mfp_banner\n\n\n\n\n\n§YProgressivism§! is a center-left to left-wing political and social ideology that the §YMove Forward Party§! follows that advocates for social progress. It aims to promote continuous social reform, expand civil liberties, strengthen democracy, protect minority rights, and dismantle oppressive or repressive systems. It supports greater government intervention, higher taxes on corporations and individuals, and expanded public welfare programs. It favors a mixed economy through policies such as welfare capitalism, further workers rights, and strong trade unions."
- thai_liberal_populism_desc: "£GFX_phua_thai §RPheu Thai§! - §YLiberal Populism§!\n\n\n\n\n£GFX_SIA_thai_liberal_populism\n\n\n\n\n\n§YLiberal Populism§! is the ideology of the §YPheu Thai Party§!, originating from §YThaksin Shinawatra’s§! political movement in the early 2000s. It combines populist social welfare policies with a market-oriented economy. It seeks to promote economic growth by incorporating socially populist policies, including expanding healthcare coverage and raising the minimum wage, alongside pro-business and economically liberal policies, such as corporate tax cuts aimed at boosting innovation, investment, and business growth. It also seeks to maintain working-class and rural support through a populist framework."
+ thai_liberal_populism_desc: "£GFX_phua_thai §RPheu Thai§! - §YLiberal Populism§!\n\n\n\n\n£GFX_SIA_thai_liberal_populism\n\n\n\n\n\n§YLiberal Populism§! is the ideology of the §YPheu Thai Party§!, originating from §YThaksin Shinawatra's§! political movement in the early 2000s. It combines populist social welfare policies with a market-oriented economy. It seeks to promote economic growth by incorporating socially populist policies, including expanding healthcare coverage and raising the minimum wage, alongside pro-business and economically liberal policies, such as corporate tax cuts aimed at boosting innovation, investment, and business growth. It also seeks to maintain working-class and rural support through a populist framework."
  SIA_national_conservativism_auth_desc: "£GFX_palang_pracharath §BPPRP§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_national_conservatism\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
  right_populist_agrarianism_desc: "£GFX_kla_tham §GKT§! - §YRight-Populist Agrarianism§!\n\n\n\n\n£GFX_SIA_kt_banner\n\n\n\n\n\n§YRight-Populist Agrarianism§! best describes the ideology of the §YKla Tham Party§!. Rather than adhering strictly to an abstract philosophical framework, the party operates with a pragmatic, regionalist, and conservative-populist orientation rooted in rural traditionalism. It seeks support from farmers by framing rural communities as the heart of the nation, blending traditional cultural and political values with targeted state interventions to protect local agriculture, support agricultural prices, and directly uplift rural livelihoods."
  national_conservativism_auth_utn_prayut_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_prayut\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
@@ -490,7 +490,6 @@
  SIA_valiant_warriors: "Valiant Warriors"
  SIA_reform_education: "Reform Education"
  SIA_support_next_gens: "Support Next Gens"
- SIA_elder_pensions: "Elder Pensions"
  SIA_strengthen_the_police: "Strengthen The Police"
  SIA_retain_current_structure: "Retain Current Structure"
  SIA_greater_local_participation: "Greater Local Participation"
@@ -518,7 +517,7 @@
  SIA_patriots_in_control_desc: ""
  SIA_patriots_in_control_tt: ""
  
- SIA_under_siege: "Under Siege"
+ SIA_under_siege: "Derring Do"
  SIA_under_siege_desc: ""
  SIA_under_siege_available: "§RThe country is not engulfed in a crisis§!"
  SIA_under_siege_tt: "§YPirapan is unable to govern until the crisis has been resolved§!\n\n\n\n\n£GFX_SIA_cambodia_war2\n\n\n\n\n\n§RDon't you have better things to do Prime Minister?§!"
@@ -537,6 +536,59 @@
  SIA_hold_the_conservative_fort: "Hold The Conservative Fort"
  SIA_the_party_gathers: "The Party Gathers"
  SIA_the_party_gathers_tt: "§LThe one who is dominant in the §YTug Of War§! will become the leader of the £GFX_united_thai_nation §PUTN§!§!"
+ 
+ SIA_once_again_the_utn: "[SIA_once_again_the_utn_dynamic_title]"
+ SIA_once_again_the_utn_pirapan: "Pirapan's Cabinet"
+ SIA_once_again_the_utn_suchart: "Suchart's Cabinet"
+ SIA_once_again_the_utn_trinuch: "Trinuch's Cabinet"
+ SIA_once_again_the_utn_akanat: "Akanat's Cabinet"
+ 
+ SIA_sovereignty: "Sovereignty"
+ SIA_buckle_up: "Buckle Up"
+ SIA_big_beautiful_wall: "Big Beautiful Wall"
+ SIA_escalating_warfare: "Escalating Warfare"
+ SIA_beyond_lottery: "Beyond Lottery"
+ SIA_something_support: "PLACEHOLDER Support"
+ SIA_lucrative_deals: "Lucrative Deals"
+ SIA_at_home: "At Home"
+ SIA_in_the_battlefield: "In the Battlefield"
+ SIA_modernize_old_equipment: "Modernize Old Equipment"
+ SIA_call_japan_industries: "Call Japan Industries"
+ SIA_set_north: "Set North"
+ SIA_learn_from_the_self_defense_force: "Learn From the Self Defense Force"
+ SIA_unfinished_business: "Unfinished Business"
+ 
+ SIA_midas_touch: "Midas Touch"
+ SIA_capping_oil: "Capping Oil"
+ SIA_solar_light: "Solar Light"
+ SIA_reform_the_credit_bureau: "Reform the Credit Bureau"
+ SIA_peoples_wellbeing: "People's Wellbeing"
+ SIA_care_for_vulnerable: "Care For the Vulnerable"
+ SIA_khon_la_khrueng_na: "Khon La Khrueng Na"
+ SIA_reach_for_the_prize: "Reach For the Prize"
+ SIA_kaem_ling: "Kaem Ling"
+ SIA_how_may_i_help_you: "How May I Help You?"
+ SIA_elder_pensions: "Elder Pensions"
+ SIA_abolish_reserves: "Abolish Reserves"
+ SIA_handle_yourself_will_you: "Handle Yourself, Will You?"
+ SIA_resurgence_beyond_bangkok: "Resurgence Beyond Bangkok"
+ SIA_water: "Water"
+ 
+ #Pirapan
+ SIA_the_heir: "The Heir"
+ SIA_step_on_the_pedal: "Step On the Pedal"
+ SIA_dining: "Dining"
+ SIA_institutionalize_the_utn: "Institutionalize the UTN"
+ SIA_your_legacy: "Your Legacy"
+ SIA_on_the_frontline: "On the Frontline"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 
  SIA_reassure_the_nation_tt: "§gThe Court will make their final decision about Prayut's case§!"
  
@@ -807,7 +859,7 @@
  thai_events.10.t: "COVID-19 case involving an Egyptian soldier in Rayong"
  thai_events.10.d: "Reports emerged that Egyptian military personnel who entered Thailand had tested positive for COVID-19 and failed to comply with prevention measures. An Egyptian soldier, along with 30 others, including the aircraft crew, travelled from Egypt on a military diplomatic mission to China, with stops in Pakistan and the United Arab Emirates before arriving at U-Tapao Airport in Rayong. The group stayed at a hotel in Rayong and later visited a nearby shopping mall. The soldier was subsequently confirmed to have tested positive for COVID-19.\n\nThe incident prompted authorities to deploy an investigation team to Rayong Province to trace the soldier's movements. It also sparked public criticism of the Prayut Chan-o-cha government, especially on social media, for allowing potentially infected foreign visitors to enter the country without adequate screening.\n\nCriticism was also directed at the Egyptian government after video footage emerged showing Egyptian military personnel refusing to comply with COVID-19 testing by Thai authorities. Although the Ambassador of the Arab Republic of Egypt to Thailand expressed regret for the incident and pledged that such an event would not recur, the Facebook page of the Egyptian Embassy in Bangkok was heavily brigaded with negative comments from angry Thai citizens."
  thai_events.10.a: "Do all Egyptian soldiers act this cocky?"
- thai_events_10_texticon: ".\n\n\n\n\n£GFX_egyptian_soldier_video\n\n\n\n\n\n"
+ thai_events_10_texticon: "§Y§!\n\n\n\n\n£GFX_egyptian_soldier_video\n\n\n\n\n\n"
 
  thai_events.11.t: "Palang Pracharat Fallout and Cabinet Reshuffle"
  thai_events.11.d: "Main characters of the Palang Pracharat Party most notably the 'Four Coaches,' which included Party Leader and Minister of Finance Uttama Savanayana, Party General Secretary and Minister of Energy Sontirat Sontijirawong, Deputy Party Leader and Minister of Higher Education Suvit Maesincee, and Party Executive Committee Member Kobsak Pootrakool all announced at a press conference at Centara Grand at Central Plaza Ladprao, Bangkok, their intention to resign from the Palang Pracharat Party.\n\nMany media speculations pointed out that since the formal formation of the government in 2019, the party was faced with a series of scandals and criticism regarding the party's handling of their own background checks for MPs, and also the consolidation of the military faction within the Palang Pracharat Party. This turned out to be true as the party members met and elected General Prawit Wongsuwan as their own party leader.\n\nIn the meantime, the 'Four Coaches' group all announced their resignation from the cabinet. The Prime Minister announced the replacements, which included many people from other factions within the Palang Pracharat Party."
@@ -817,7 +869,7 @@
  thai_events.12.t: "The Constitutional Court drops "Illuminati Case" against FFP"
  thai_events.12.d: "The Constitutional Court delivered its ruling in the so-called "Illuminati Case," dismissing allegations that the Future Forward Party sought to undermine Thailand's democratic system with the monarchy as head of state, citing insufficient evidence of wrongdoing by the party or its executive committee.\n\nThe petition was filed directly with the Constitutional Court on May 15, 2019, by Nattaporn Toprayoon, a former advisor to the Chief Ombudsman. One allegation made by the petitioner was that the party's symbol when flipped resembled a triangle which is associated with the Illuminati, a secret society founded in 1776 that promoted Enlightenment ideals of republicanism and secularism in Bavaria. The group was later banned by the Kingdom of Bavaria, and although it became the subject of conspiracy theories about its secret global influence and efforts to establish a "New World Order," historians generally agree that it ceased to exist after its suppression in the late eighteenth century.\n\nAt the Future Forward Party headquarters, supporters cheered after the verdict was delivered. Future Forward secretary-general Piyabutr Saengkanokkul and party leader Thanathorn Juangroongruangkit later held a press conference, thanking supporters and insisting the case should never have been filed.\n\nHowever, the party still faces another imminent case before the Constitutional Court, which alleges it violated laws governing political parties by accepting loans from its leader, auto-parts billionaire Thanathorn."
  thai_events.12.a: "Illuminati NOT Confirmed"
- thai_events_12_texticon: ".\n\n\n\n\n£GFX_mlg_illuminati_case\n\n\n\n\n\n."
+ thai_events_12_texticon: "§Y§!\n\n\n\n\n£GFX_mlg_illuminati_case\n\n\n\n\n\n"
  
  thai_events.13.t: "Demonstrations Infront of the Ministry of Energy"
  thai_events.13.d: "Protesters consisting of workers' unions led by the Thai Labour Solidarity Committee, the State Enterprises Workers' Relations Confederation, and various political groups, including the prominent group FreeYOUTH and the minor Thai Social Democratic Party, totaling more than 100 people, held a demonstration in front of the Ministry of Energy building. Many carried banners and paper-mache props of oil barrels and fuel pumps bearing slogans such as: "Oil is expensive because of hoarding by capitalists," "Return PTT to state ownership!" and "Stop! wicked capitalists, corrupt politicians, high oil prices, exploitation of the people. "\n\nThe group also submitted an open letter to Prayut Chan-o-cha, demanding the resignation of the government and the removal of the Minister of Energy, while calling for fuel price controls, refinery reform, and an end to alleged fuel hoarding. The protesters argued that the government had failed to address the fuel shortage crisis, which has affected daily life and driven up the prices of goods and electricity."
@@ -830,7 +882,7 @@
  thai_events.15.t: "Harry Potter Mob"
  thai_events.15.d: "Around 200 anti-government protesters gathered at the Democracy Monument near the McDonald's Ratchadamnoen branch for a Harry Potter-themed rally titled "Cast Spells to Expel You-Know-Who." Organized by the Mahanakorn for Democracy group and students from Kasetsart University, demonstrators dressed as wizards and characters from the Harry Potter franchise.\n\nAs the event began, the first speaker, dressed as a wizard, recount the story of Harry Potter, comparing Thai government officials to villains from the books and likening the fight for democracy to that of Harry Potter and his friends. He then concluded by asking the crowd to cast the spell "Expecto Patronum!" with their wands toward a straw effigy of Voldemort with a gilded portrait.\n\nActivist Arnon Nampa then took the stage wearing a black gown and a burgundy-and-gold scarf, the colors of Gryffindor, to deliver a speech questioning the role of the monarchy in Thai society. After the speech concluded to rounds of applause, demonstrators were instructed to point their wands at the constitution atop the Democracy Monument, which was likened to the Goblet of Fire, while chanting spells. Before the event ended, the host announced, "A large rally will be held soon," and the gathering concluded at 8:34 PM"
  thai_events.15.a: "Prayut is literally Lord Voldemort!"
- thai_events_15_texticon: ".\n\n\n\n\n£GFX_harry_potter_mob\n\n\n\n\n\n."
+ thai_events_15_texticon: "§Y§!\n\n\n\n\n£GFX_harry_potter_mob\n\n\n\n\n\n§Y§!"
  
  thai_events.16.t: "Demonstrations in Front of the PTT Headquarters"
  thai_events.16.d: "Protesters, consisting of young activists and older laborers affiliated with various workers unions, demonstrated in front of the PTT headquarters. They carried placards with slogans such as, "Oil is expensive because they are corrupt," "Stop supporting gas thieves," "No to PTT privatization!," and "Stop exploitation by capitalists!"\n\nThe demonstrators then gave speeches calling for PTT to be fully state-owned in order to control oil prices and prevent profiteering by private interests. They also demanded an end to alleged hoarding by capitalists and called for the resignation of Prime Minister Prayut Chan-o-cha."
@@ -879,9 +931,9 @@
  thai_events.23.a: "Unfortunate news..."
  
  thai_events.24.t: "The Army Chief Shed a Tear"
- thai_events.24.d: "As news of the brutal mass shooting by a rogue soldier shocked Thailand and the world, many aimed their criticism at the Royal Thai Army. In response, Army Chief General Apirat Kongsompong held a two-hour press conference on the tragedy.\n\nHe broke into tears, his voice trembling as he recounted the events amid a barrage of flashing cameras and clicking shutters from the press.\n\n"The moment he shot his commander, he was a murderer, not a soldier" Gen Apirat stated he then praised every police officer for their "hard work and sacrifice". "As Army chief, I would like to apologise again for the incident," he said. "Criticism has been levelled against the Army, which is a security institution. However, I would like everyone to stop insulting the Army or its officers. There are many good soldiers who sacrifice their lives working in risky areas or helping people during disasters. I don't want them to lose morale. Nobody wants such an incident to happen. If you want to insult someone, insult me, Apirat Kongsompong, as their commander,"\n\nApirat added that the Army has vowed to look into the land-purchasing issue, which was the presumed motive for the rampage. He also stated that he would not resign in response to critics demands that he be held accountable and quit his post, citing that it was a personal crime committed by an individual soldier. "
+ thai_events.24.d: "As news of the brutal mass shooting by a rogue soldier shocked Thailand and the world, many aimed their criticism at the Royal Thai Army. In response, Army Chief General Apirat Kongsompong held a two-hour press conference on the tragedy.\n\nHe broke into tears, his voice trembling as he recounted the events amid a barrage of flashing cameras and clicking shutters from the press.\n\n"The moment he shot his commander, he was a murderer, not a soldier" Gen Apirat stated he then praised every police officer for their "hard work and sacrifice". "As Army chief, I would like to apologise again for the incident," he said. "Criticism has been levelled against the Army, which is a security institution. However, I would like everyone to stop insulting the Army or its officers. There are many good soldiers who sacrifice their lives working in risky areas or helping people during disasters. I don't want them to lose morale. Nobody wants such an incident to happen. If you want to insult someone, insult me, Apirat Kongsompong, as their commander,"\n\nApirat added that the Army has vowed to look into the land-purchasing issue, which was the presumed motive for the rampage. He also stated that he would not resign in response to critics demands that he be held accountable and quit his post, citing that it was a personal crime committed by an individual soldier."
  thai_events.24.a: "A nation in mourning..."
- thai_events_24_texticon: ".\n\n\n\n\n£GFX_apirat_crying\n\n\n\n\n\n."
+ thai_events_24_texticon: "§Y§!\n\n\n\n£GFX_apirat_crying\n\n\n\n\n\n§LBecause the perpetrator was an active-duty soldier who easily looted heavy weapons, ammunition, and an army vehicle from his base before starting the rampage, public scrutiny fell heavily on the Royal Thai Army and the government.\n\n#ReformTheMilitary trended widely on Twitter as citizens questioned military culture, hazing, the abuse of low-ranking soldiers and conscripts, and the unchecked power of army commanders. Criticism was also leveled at the government of Prime Minister Prayut Chan-o-cha.§!"
  
  thai_events.25.t: "£GFX_facebook_logo  Free YOUTH's post"
  thai_events.25.d: "£GFX_free_youth_header \n\nAnnouncing the launch of RT MOVEMENT - The One-Point Movement Team\n.\nThis is a new movement that will be unlike anything before. Awakening the class consciousness of oppressed proletarians. Whether you are a student, office worker, maid, security guard, plainclothes worker, farmer, or civil servant, "we are all oppressed proletarians"."\n.\nThis RT MOVEMENT:\n Has no leaders\n Has no stage\n Has no security guards\n Has no portable toilets\n Has no negotiations\n Has no bargaining!\n.\nJoin us in RESTART THAILAND to create a society where "the masses are equal." Please stay tuned with outlets that we will use to make this happen soon."
@@ -1096,13 +1148,14 @@
  thai_events.71.t: "A Flag Lowered"
  thai_events.71.d: "The air inside the ASEAN Secretariat Building in Jakarta felt heavier than the humid rain pouring down outside. For over half a century, the blue emblem of ten bound rice stalks symbolized Southeast Asian unity. However, as the United States plunged into civil war, the regional order collapsed. At an emergency summit, ideological divisions shattered the remaining bloc, pitting pro-Beijing against pro-Tokyo countries. The scramble between China and Japan for political domination in Southeast Asia had slowly chipped away at that unity. Now, with ASEAN members at war, Cambodia and Thailand had withdrawn their representatives, leaving remaining delegates sitting in silence, awaiting the final decision.\n\n"In accordance with the consensus of the remaining member states," Lim read, his voice trembling slightly, "and recognizing the irreversible breakdown of regional security, the Association of Southeast Asian Nations is hereby declared dissolved."\n\nOutside, the downpour raged as the men slowly lowered the ASEAN banner for the final time. As the blue flag touched the wet asphalt, the men carefully folded it, marking the end of an institution that had endured for more than half a century."
  thai_events.71.a: "ASEAN is now the past..."
+ thai_events_71_tt: "§Y§!\n\n\n\n£GFX_asean\n\n\n\n\n\n                             §R1967-2025§!"
  
  thai_events.72.t: "Famous Lookmaxxer drowns in Samut Prakan"
  thai_events.72.d: "In Samut Prakan, police responded to reports of a foreign man behaving erratically at a luxury residential property in Bang Phli District. When officers arrived, the man became increasingly agitated and paranoid before fleeing toward a nearby lake and entering the water. He continued swimming farther into the lake until he appeared exhausted and disappeared beneath the surface.\n\nRescue divers were deployed and searched the lake for approximately 30 minutes before recovering his body. He was subsequently identified as 32-year-old Connor Murphy, a looksmaxxing YouTuber with over 2.3 million subscribers. Initially known worldwide for his fitness videos and absurd stunts, he was later viewed by many as a lolcow after he began using drugs, acting bizarrely, claiming to be God, and attempting to start a cult.\n\nUpon searching his vehicle, police reportedly found two unused syringes along with unidentified white pills inside a waist bag. Furthermore, police discovered that his rented luxury residence had been left in a severely deteriorated condition, with paint smeared everywhere. Murphy had previously spoken openly about his history of drug use and experiences with mind-altering substances, including ayahuasca and DMT."
  thai_events.72.a: "Don't do drugs, kids, especially ayahuasca."
  
  thai_events.73.t: "Crisis at the Western Border"
- thai_events.73.d: "With Myanmar descending into civil war following the country's military coup, thousands of Myanmar civilians along border areas near Mae Sot and Mae Hong Son continue to flee the fighting. In response, the Royal Thai Army has reinforced border checkpoints and established temporary reception areas where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe government emphasizes the need to keep diplomatic channels open between Thailand and the Myanmar junta to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. The Move Forward Party condemns this diplomatic stance under the Prayut administration, which prioritizes maintaining ties over publicly condemning the junta. Opponents of the government draw parallels between General Min Aung Hlaing's seizure of power and that of former Prime Minister Prayut Chan-o-cha, himself a military general who seized power in Thailand's 2014 coup. "
+ thai_events.73.d: "With Myanmar descending into civil war following the country's military coup, thousands of Myanmar civilians along border areas near Mae Sot and Mae Hong Son continue to flee the fighting. In response, the Royal Thai Army has reinforced border checkpoints and established temporary reception areas where arrivals are screened for COVID-19 while authorities manage the growing influx of displaced people.\n\nThe government emphasizes the need to keep diplomatic channels open between Thailand and the Myanmar junta to safeguard critical Thai investments, most notably natural gas imports from Myanmar's offshore fields. The Move Forward Party condemns this diplomatic stance under the Prayut administration, which prioritizes maintaining ties over publicly condemning the junta. Opponents of the government draw parallels between General Min Aung Hlaing's seizure of power and that of former Prime Minister Prayut Chan-o-cha, himself a military general who seized power in Thailand's 2014 coup."
  thai_events.73.a: "Looks like this is our problem now..."
  
  thai_events.74.t: "U.S. Congress Resolution in Support of The Three Fingers Movement"
@@ -1172,7 +1225,7 @@
  thai_events.102.t: "A Gray Silver Lining"
  thai_events.102.d: "The COVID-19 pandemic contributed to a reduction in air pollution as travel, industrial production, and economic activity declined. However, this improvement did not eliminate the underlying causes of Thailand's PM2.5 problem. As a silver lining, prior exposure to hazardous air quality meant that the Thai public was already accustomed to routine mask-wearing, a practice that provided a familiar form of protection during the pandemic and may have helped reduce the spread of the virus."
  thai_events.102.a: "No Mask, No Entry"
-
+ 
  thai_events.167.t: "Thai Arya Party"
  thai_events.167.d: "Recently, the Thai Arya Party (also known as the Thai Aryan or Thai Arya Movement) has attracted some attention on the internet. It is an unregistered political party that uses imagery from Donald Trump's MAGA movement and adopts the slogan "Make Thailand Great Again." On its website and Facebook page, the party's administrators have expressed admiration for Field Marshal Plaek Phibunsongkhram in various posts\n\nThe party is particularly opposed to Chinese economic influence, which it views as an attempt by China to gain control over Thailand through economic expansion and the activities of Chinese grey-market businesses.\n\nIts website has sold MAGA-style red hats bearing the slogan "Make Thailand Great Again" for 390 baht. Despite its apparent right-wing political orientation, the movement has displayed some ideological contradictions. In one Facebook post, it quoted Chit Phumisak and praised him for his anti-Chinese stance, despite him being a Maoist communist. Furthermore, many members of its Discord server and Facebook page identify as left-wing or far-left. Overall, the movement appears to lack a coherent political orientation.\n\nIt seems this so called "political party" is less of a political party and more of an online space on Discord server and Facebook group page for Thai teenagers to larp about politics."
  thai_events.167.a: "Phibun Impressed"
@@ -1180,7 +1233,7 @@
 
  thai_events.169.a: "gunther.fehlinger.jahn on Instragram"
  thai_events.169.d: "THAILAND: WHY ARE YOU STABBING YOUR FRIENDS IN THE BACK? Thailand has long benefited from friendship with the free world: trade, tourism, investment, technology, security cooperation and global openness. That is why I ask Bangkok so directly: why move toward BRICS and give political prestige to Putin's Russia, Xi's China and authoritarian bloc politics? Thailand does not need BRICS to trade with China, India or anyone else. Thailand can trade with the whole world without turning its strategic direction against its friends and partners in ASEAN, Europe, America, Japan and Korea. Your future lies in prosperity, sovereignty, innovation, jobs and a stronger international position built on openness and balance—not on helping Moscow pretend that Putin's war and authoritarian geopolitics are normal. My message is clear: Break BRICS. Choose ASEAN. Choose prosperity. Choose the free world. Trade with everyone, but align with democracies. Build Thailand's future with ASEAN, Europe, America, Japan and Korea. Friends choose freedom, not BRICS. Günther Fehlinger-Jahn Chairman, Austrian Committee for NATO Enlargement @GunterFehlinger | fehlinger.net #Thailand #BreakBRICS #BRICS #ASEAN #Europe USA Japan Korea FreeWorld Putin Russia Trade Tourism Investment Democracy Prosperity Bangkok IndoPacific"
-
+ 
  thai_elections.1.t: "Results are out"
  thai_elections.1.d: "Logi Sucks"
  thai_elections.1.a: "new gov"
@@ -1241,8 +1294,8 @@
  thai_elections_10_tt: "§OPita Limjaroenrat§! will be the §YPrime Minister§! candidate for the £GFX_orange_party_2 §OMove Forward Party§! in this §Ygeneral elections§!"
  
  thai_elections.11.t: "Paetongtarn Shinawatra Gathers with Crowd"
- thai_elections.11.d: ""
- thai_elections.11.a: "Perhaps another Shinawatra in power?"
+ thai_elections.11.d: "The sea of red in front of Paetongtarn Shinawatra resembles the great rallies of her father 2 decades ago for the populist movement of Thai politics has revived. Since the embarrassing performance in 2019, the Pheu Thai Party has regrouped and is ready for round 2 against Prayut's military autocracy. \n\nWith the election approaching, Pheu Thai is determined to achieve nothing less than a landslide victory. Pheu Thai must never again be confined to compromise and Pheu Thai alone will bring Thailand back to the prosperity of Thaksin's days.\n\nThe faces of all Thai society, from street stall sellers, farmers, office workers and businessmen can be seen in the crowd, energized by the exclamations of Ung-ing who pledges the holy grails of the 10,000 baht digital wallet scheme, doubling the minimum wage and great infrastructure projects.\n\nFar from Thailand, in the UAE, Thaksin Shinawatra watched all of this unfold from his Dubai penthouse television screen, longing for home."
+ thai_elections.11.a: "Father thinks, Child does."
  thai_elections_11_tt: "§YPaetongtarn Shinawatra§! - §RNOT PLAYABLE FOR NOW§!\n\n\n\n\n\n\n\n£GFX_hog_SIA_paetongtarn_shinawatra\n\n\n\n\n\n\n\n\nwill be the §YPrime Minister§! candidate for the £GFX_phua_thai §RPheu Thai Party§! in this §Ygeneral elections§!"
  
  thai_elections.12.t: "Bhumjaithai Goes with Anutin"
@@ -1264,6 +1317,10 @@
  thai_elections.15.d: "this guys will be last"
  thai_elections.15.a: "Who????"
  thai_elections_15_tt: "§CJurin Laksanawisit§! will be the §YPrime Minister§! candidate for the £GFX_democrat §CDemocrat Party§! in this §Ygeneral elections§!"
+ 
+ thai_elections.16.t: "Snap Elections Called"
+ thai_elections.16.d: "After the chaos in Cambodia, we have deemed we need an immediate election in March 2026"
+ thai_elections.16.a: "Okay"
  
  thai_prayut.1.t: "Constitutional Court Temporarily Suspended Prayut"
  thai_prayut.1.d: "The Constitutional Court judges convened for their weekly meeting to deliberate on the facts presented in the petition. The meeting followed a submission from the Speaker of the House of Representatives requesting a ruling on whether Prime Minister Prayut Chan-o-cha's ministerial status should be terminated. The petition, initiated by opposition lawmakers, challenged Prayut's eligibility to remain prime minister under Section 158 of the Constitution, which limits an individual to a total of eight years in office as prime minister. Prayut first assumed the position of prime minister in August 2014 following a military coup.\n\nThe decision was announced via a press release from the Office of the Constitutional Court this afternoon. No press conference was held, despite the Office's earlier notification to the media that a briefing would take place following the conclusion of the judges' meeting.\n\nFor the duration of his suspension as prime minister, Deputy Prime Minister Prawit Wongsuwan will serve as Thailand's acting prime minister."
@@ -1359,7 +1416,7 @@
  thai_prayut.23.t: "Suchart's Damage Control"
  thai_prayut.23.d: ""
  thai_prayut.23.a: "The UTN is in a freefall, will he save it?"
- thai_prayut_23_tt: "§g§BSuchart§! has taken over as damage control and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §BUTN§! §YCandidate§!§!§!"
+ thai_prayut_23_tt: "§g§BSuchart§! has taken over as damage control and has secured the £GFX_united_thai_nation §Bparty's§! support for now...§!"
  
  thai_prayut.24.t: "Formation of Pirapan's Cabinet"
  thai_prayut.24.d: ""
@@ -1411,6 +1468,17 @@
  thai_prayut.35.t: "What Comes After Victory"
  thai_prayut.35.d: ""
  thai_prayut.35.a: "The Infighting Continues"
+ 
+ thai_prayut.37.t: "Pirapan Endorses Akanat"
+ thai_prayut.37.d: "Despite Pirapan getting the L, he supports Akanat"
+ thai_prayut.37.a: "Actual party infighting!"
+ 
+ thai_prayut.38.t: "Party disupte idk"
+ thai_prayut.38.d: "New leadership fighting and it's Akanat vs Suchart this time, choose who to play as I guess"
+ thai_prayut.38.a: "Suchart's the one!"
+ thai_prayut_38_a_tt: "§Y§!\n\n\n\n\n\n\n£GFX_hog_SIA_SIA_suchart_chomklin \n\n\n\n\n\n\n\n§PSuchart Chomklin§! will be the §YPrime Minister§! candidate for the £GFX_united_thai_nation §PUnited Thai Nation Party§! in this §Ysnap election§!"
+ thai_prayut.38.b: "Akanat for the win"
+ thai_prayut_38_b_tt: "§Y§!\n\n\n\n\n\n\n£GFX_hog_SIA_SIA_akanat_promphan \n\n\n\n\n\n\n\n§PAkanat Promphan§! will be the §YPrime Minister§! candidate for the £GFX_united_thai_nation §PUnited Thai Nation Party§! in this §Ysnap election§!"
  
  thai_ptp.1.t: "Pheu Thai wins 2023 Elections"
  thai_ptp.1.d: ""
@@ -1615,6 +1683,9 @@
  SIA_loss_side: "Opposition Side"
  SIA_balance_range: "Medium Approval"
  SIA_motion_of_no_confidence_voted: "\n§YWhen the day of voting arrives for the Motion of No Confidence,§!"
+ SIA_motion_of_no_confidence_voted_requirement1: "§O---2nd Motion of No Confidence---§!\n§CWe must have at least §Y20% Approval§! to survive§!\n §L-Of course, we have enough power to whip out enough votes if we fail to reach that amount, but doing so will leave us vulnerable to a §R3rd challenge§! and will require us §Y50% approval§!§!"
+ SIA_motion_of_no_confidence_voted_requirementgood: "§O---3rd Motion of No Confidence---§!\n§CWe must have at least §Y30% Approval§! to survive§!"
+ SIA_motion_of_no_confidence_voted_requirementbad: "§O---3rd Motion of No Confidence---§!\n§C§RSince we had to pull some strings in the 2nd vote§!, We must have at least §Y50% Approval§! to survive§!"
  SIA_loss_low_control_range: "Low Approval"
  SIA_loss_medium_control_range: "Very Low Approval"
  SIA_loss_high_control_range: "Overwhelmingly Low Approval"
@@ -2110,7 +2181,7 @@
  SIA_yearly_plan_promote_environmentalism: "§YYearly Plan§! - Focus on Environmentalism"
  SIA_yearly_plan_promote_environmentalism_2: "§YYearly Plan§! - Focus on Environmentalism"
  SIA_vehicle_and_traffic_regulations: "§GEnvironment§! - Vehicle and Traffic Regulations"
- SIA_campaign_against_crop_residue_burning: "§GEnvironment§! - Campaign Against Crop Residue Burning"
+ SIA_campaign_against_crop_residue_burning: "§GEnvironment§! - Implement Crop Residue Burning Ban"
  SIA_implement_environmental_policies: "§GEnvironment§! - Implement Environmental Policies"
  SIA_enforce_industry_regulations: "§GEnvironment§! - Enforce Industry Regulations"
  SIA_expand_government_conservation_zones: "§GEnvironment§! - Expand Government Conservation Zones"
@@ -2122,6 +2193,20 @@
  SIA_pro_environment_decisions: "                          §YENVIRONMENT§! §YDECISIONS§!             "
  SIA_anti_environment_decisions: "                          §YGROWTH§! §YDECISIONS§!             "
  SIA_specialist_decisions: "                          §YSPECIALIST§! §YDECISIONS§!             "
+ SIA_economic_iniative_decisions: "                          §YECONOMIC INIATIVE POINTS§!             "
+ SIA_economic_iniative_decisions_desc: "If an §CEnvironment Report§! is §Gsatisfactory§! enough, we are given an £GFX_GER_green_economy_points_texticon §YEconomic Initiative Point (EIP)§! to spend on §Cpermanent modifiers§! to boost our nation. These ranges from industry, economy, and growth effects to expanding our research capabilities.\n\nCurrent £GFX_GER_green_economy_points_texticon §YEIP§!: §Y[?SIA_economic_iniative_points_var]§!"
+ 
+ SIA_change_eip_tt: "£GFX_GER_green_economy_points_texticon §YEIP§! will change by [?change_temp|-+0]"
+ atleast_than_1_eip_tt: "We have at least §L4§! £GFX_GER_green_economy_points_texticon §YEIP§!"
+ atleast_than_4_eip_tt: "We have at least §L4§! £GFX_GER_green_economy_points_texticon §YEIP§!"
+ 
+ atleast_than_1_eip: "£GFX_GER_green_economy_points_texticon  §H1§!"
+ atleast_than_1_eip_blocked: "£GFX_GER_green_economy_points_texticon  §R1§!"
+ 
+ atleast_than_4_eip: "£GFX_GER_green_economy_points_texticon  §H4§!"
+ atleast_than_4_eip_blocked: "£GFX_GER_green_economy_points_texticon  §R4§!"
+ 
+ 
  SIA_train_specialists: "§gSpecialist§! - Train Specialists"
  SIA_tighten_standards: "§gSpecialist§! - Tighten Standards"
  SIA_cut_agencies: "§gSpecialist§! - Cut Agencies"
@@ -2185,6 +2270,9 @@
  SIA_utn_banner_suchart_stalemate: "£GFX_SIA_utn_party_mech_suchart2\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchart Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchart§! will now lead the way and guide the £GFX_united_thai_nation §BUTN§! forward and will not repeat the same mistakes as his predecessor"
  SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §PPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
  SIA_honor_the_generals_legacy: "Honor The General's Legacy"
+ SIA_suchart_gathers_influence: "Suchart Gathers Influence"
+ SIA_pirapan_gathers_influence: "Pirapan Gathers Influence"
+ SIA_tug_of_war_fail_check: "The £GFX_united_thai_nation §PParty§! has convened"
  SIA_launch_media_advertisements: "Launch Media Advertisements"
  SIA_show_our_success: "Show Our Success"
  SIA_a_safer_thailand: "A Safer Thailand"
@@ -2619,7 +2707,7 @@
  area_approval_status_4: "Since control is §gdivided§!, the Area's approval will decrease by §R0.45%§!"
  area_approval_status_5: "Since this is controlled by a §gMinor Party§!, the Area's approval will decrease by §R0.35%§!"
  SIA_approval_box_fill_tt: "§GArea £GFX_FRA_Happy_with_Regime_texticon Approval§!: §Y[?SIA_map_var:SIA_state_approval]%/100%§!"
- SIA_local_leader_strength_box_fill_tt: ""
+ SIA_local_leader_strength_box_fill_tt: "Area Trend:\n§Y[?SIA_map_var:SIA_state_local_strength|2]%§!:§G[?SIA_map_var:SIA_area_2nd_var_3rd_mech|2]%§!"
  SIA_approval_area_text: "Area Approval of Government"
  SIA_local_leader_strength_text: "Local Control vs Bangkok Control"
  SIA_bangkok_progress_vs_prosperity_text: "Bangkok\nProgress vs Prosperity"

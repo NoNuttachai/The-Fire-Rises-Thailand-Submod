@@ -3,6 +3,11 @@ SIA_change_environment_progress = { #Directly change the variable
 	custom_effect_tooltip = SIA_change_environment_progress_tt
 	
 }
+SIA_change_eip = { #Directly change the variable
+	add_to_variable = { SIA_economic_iniative_points_var = change_temp }
+	custom_effect_tooltip = SIA_change_eip_tt
+	
+}
 SIA_change_environment_monthly = { #Directly change the monthly variable
 	add_to_variable = { SIA_environment_monthly_progress = change_temp }
 	clamp_variable = {
@@ -99,6 +104,8 @@ SIA_check_yearly_performance = {
 			}
 		}
 		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
+		set_temp_variable = { change_temp = 2 }
+		SIA_change_eip = yes
 	}
 	else_if = { #good
 		limit = {
@@ -123,6 +130,8 @@ SIA_check_yearly_performance = {
 			}
 		}
 		custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
+		set_temp_variable = { change_temp = 1 }
+		SIA_change_eip = yes
 	}
 	else_if = { #okay
 		limit = {
@@ -672,7 +681,7 @@ SIA_initiate_area_approvals = { # 0-Divided 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-B
 	}
 	SIA_update_area_color = yes
 }
-SIA_update_area_approval_status = {
+SIA_update_area_approval_status = { #also updates the local strength stuff
 	for_each_loop = { 
 		array = SIA_map_var 
 		value = v 
@@ -814,6 +823,9 @@ SIA_update_area_approval_status = {
 			else = {
 				set_variable = { SIA_state_approval_status = 3 }
 			}
+			set_temp_variable = { 2ndvar = 100 }
+			subtract_from_temp_variable = { 2ndvar = v:SIA_state_local_strength }
+			set_variable = { v:SIA_area_2nd_var_3rd_mech = 2ndvar }
 		}
 	}
 }

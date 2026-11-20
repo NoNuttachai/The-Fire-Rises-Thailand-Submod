@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1000
+			add = 1
 			tag = SIA
 		}
 	}
@@ -87,7 +87,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 50
+			add_political_power = 75
 			unlock_decision_tooltip = SIA_utilize_pegasus_against_key_agitators
 			unlock_decision_tooltip = SIA_cyber_warfare_with_the_three_hooves
 			unlock_decision_tooltip = SIA_jay_juk_khlong_sam
@@ -203,7 +203,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
-			add_political_power = 25
+			add_political_power = 50
 			add_power_balance_value = {
 				id = SIA_power_balance
 				value = 0.1
@@ -849,6 +849,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		
 		completion_reward = {
+			add_political_power = 100
 			if = {
 				limit = {
 					NOT = {

@@ -434,7 +434,6 @@ guiTypes = {
 				name = "SIA_local_leader_strength_box_fill"
 				position = { x = 226 y = 200 }
 				spriteType = "GFX_SIA_local_leader_strength_bar_fill"
-				alwaystransparent = yes
 				pdx_tooltip = SIA_local_leader_strength_box_fill_tt
 			}
 			instantTextBoxType = {

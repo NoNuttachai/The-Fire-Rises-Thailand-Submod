@@ -70,6 +70,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_asean"
+		texturefile = "gfx/texticons/banners/asean.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_thai_arya_party_logo"
 		texturefile = "gfx/texticons/banners/thai_arya_party_logo.png"
 		legacy_lazy_load = no
@@ -205,12 +210,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_SIA_utn_party_mech_suchat"
+		name = "GFX_SIA_utn_party_mech_suchart"
 		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_suchat.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_SIA_utn_party_mech_suchat2"
+		name = "GFX_SIA_utn_party_mech_suchart2"
 		texturefile = "gfx/texticons/banners/SIA_utn_party_mech_suchat2.png"
 		legacy_lazy_load = no
 	}
@@ -830,6 +835,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_idea_SIA_akanat"
+		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_akanat.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_idea_SIA_korn"
 		textureFile = "gfx/interface/ideas/SIA/advisors/SIA_korn.png"
 		legacy_lazy_load = no
@@ -1062,6 +1072,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_hog_SIA_SIA_jurin_lakasanawisit"
 		texturefile = "gfx/leaders/SIA/SIA_jurin_lakasanawisit.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_hog_SIA_SIA_akanat_promphan"
+		texturefile = "gfx/leaders/SIA/SIA_akanat_promphan.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {

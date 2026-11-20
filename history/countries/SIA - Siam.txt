@@ -346,7 +346,7 @@ set_party_name = {
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = 2019.3.24
-	election_frequency = 50
+	election_frequency = 52
 	elections_allowed = yes
 }
 
@@ -373,11 +373,8 @@ if = {
 			fixed_main_weapon_slot = heavy_mg_4x
 			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
 			fixed_auxiliary_weapon_slot_2 = light_mg_4x
-			fixed_auxiliary_weapon_slot_3 = empty
-			engine_type_slot = engine_2_2x
+			engine_type_slot = engine_2_1x
 			special_type_slot_1 = hmg_defense_turret
-			special_type_slot_2 = empty
-			special_type_slot_3 = empty
 		}
 		icon = "GFX_CAS3_medium"
 

@@ -136,7 +136,7 @@ defined_text = {
     text= {
 		trigger = {
 			CAM = {
-				controls_state = 1495
+				controls_state = 1504
 		    }
 		}
 		localization_key = Bangkok_CAM 
@@ -151,7 +151,7 @@ defined_text = {
 	text= {
 		trigger = {
 			SIA = {
-				controls_state = 1506
+				controls_state = 1515
 			}                    
 		}
 		localization_key =  PhnomPenh_SIA
@@ -285,5 +285,35 @@ defined_text = {
 			has_idea = SIA_trinuch_thienthong_hog
 		}
 		localization_key = SIA_trinuch_thienthong_char
+	}
+}
+defined_text = {
+	name = SIA_once_again_the_utn_dynamic_title
+	text = {
+		trigger = {
+			has_idea = SIA_pirapan_salirathavibhaga_hog
+		}
+		localization_key = SIA_once_again_the_utn_pirapan
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_suchart_chomklin_hog
+		}
+		localization_key = SIA_once_again_the_utn_suchart
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_trinuch_thienthong_hog
+		}
+		localization_key = SIA_once_again_the_utn_trinuch
+	}
+	text = {
+		trigger = {
+			has_idea = SIA_akanat_promphan_hog
+		}
+		localization_key = SIA_once_again_the_utn_akanat
+	}
+	text = {
+		localization_key = "X Cabinet"
 	}
 }

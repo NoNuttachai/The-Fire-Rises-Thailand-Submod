@@ -98,7 +98,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_hamtaro_protests"
-			texturefile = "gfx/event_pictures/report_hamtaro_protests.png"
+		texturefile = "gfx/event_pictures/report_hamtaro_protests.png"
 	}
 	spriteType = {
 		name = "GFX_report_harry_potter_mob"
@@ -568,6 +568,10 @@ spriteTypes = {
 		name = "GFX_report_thaksin_shinawatra"
 		texturefile = "gfx/event_pictures/report_thaksin_shinawatra.png"
 	}
+	spriteType = {
+		name = "GFX_report_pirapan_akanat"
+		texturefile = "gfx/event_pictures/report_pirapan_akanat.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"
@@ -625,16 +629,13 @@ spriteTypes = {
 		name = "GFX_global_event_mass_riots_thailand"
 		texturefile = "gfx/event_pictures/newsevent_mass_riots_thailand.png"
 	}
-	spriteTypes = {
-    frameAnimatedSpriteType = {
-        name = "GFX_report_popcat_animated"
+	#Misc
+	frameAnimatedSpriteType = {
+		name = "GFX_report_popcat_animated"
         texturefile = "gfx/event_pictures/report_popcat_animated.dds"
-        noOfFrames = 2
-        animation_rate_fps = 5
-        looping = yes
-        play_on_show = yes
-        pause_on_loop = 0.0
-        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
-    }
-}
+		noOfFrames = 2
+		animation_rate_fps = 5
+		looping = yes
+		play_on_show = yes  
+	}
 }
