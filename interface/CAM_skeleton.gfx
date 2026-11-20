@@ -1,0 +1,67 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_CAM_Chea_Mony"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Chea_Mony.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Heng_Pov"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Heng_Pov.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Ke_Kim_Yan"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Ke_Kim_Yan.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Pao_Vorn"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Pao_Vorn.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Rong_Chhun"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Rong_Chhun.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Sam_Serey"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Sam_Serey.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Sar_Kheng"
+		texturefile = "gfx/leaders/Occupied_CAM/CAM_Sar_Kheng.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_Cherdkiat_Atthakor"
+		texturefile = "gfx/leaders/Occupied_CAM/SIA_Cherdkiat_Atthakor.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_SIA_Tull_Traisorat"
+		texturefile = "gfx/leaders/Occupied_CAM/SIA_Tull_Traisorat.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Pol_Saroeun"
+		texturefile = "gfx/leaders/CAM/generals/Pol Saroeun.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Tea_Banh"
+		texturefile = "gfx/leaders/CAM/generals/Tea Banh.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Tea_Seiha"
+		texturefile = "gfx/leaders/CAM/generals/Tea Seiha.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_CAM_Von_Pisen"
+		texturefile = "gfx/leaders/CAM/generals/Vong Pisen.png"
+		legacy_lazy_load = no
+	}
+}

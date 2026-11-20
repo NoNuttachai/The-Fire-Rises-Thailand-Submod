@@ -1,0 +1,68 @@
+characters = {
+	CAM_Heng_Pov = {
+		name = CAM_Heng_Pov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/CAM_Heng_Pov.png"
+			} 
+		}
+		country_leader = {
+			ideology = mafia_state
+		}
+	}
+	CAM_Ke_Kim_Yan = {
+		name = CAM_Ke_Kim_Yan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/CAM_Ke_Kim_Yan.png"
+			} 
+		}
+		country_leader = {
+			ideology = autocrat
+		}
+	}
+	CAM_Pao_Vorn = {
+		name = CAM_Pao_Vorn
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/CAM_Pao_Vorn.png"
+			} 
+		}
+		country_leader = {
+			ideology = labour_syndicalism
+		}
+	}
+	CAM_Rong_Chhun = {
+		name = CAM_Rong_Chhun
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/CAM_Rong_Chhun.png"
+			} 
+		}
+		country_leader = {
+			ideology = left_nationalism
+		}
+	}
+	CAM_Sam_Serey = {
+		name = CAM_Sam_Serey
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/CAM_Sam_Serey.png"
+			} 
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	CAM_Chea_Mony = {
+		name = CAM_Chea_Mony
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Occupied_CAM/CAM_Chea_Mony.png"
+			} 
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+	}
+}
