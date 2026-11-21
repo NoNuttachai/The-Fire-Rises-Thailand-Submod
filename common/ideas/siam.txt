@@ -2656,6 +2656,18 @@ ideas = {
 				stability_factor = -0.075
 			}
 		}
+		SIA_digitalized_government = {
+			allowed = {
+				original_tag = SIA
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.125
+				expense_growth_factor = 0.15
+				production_factory_max_efficiency_factor = 0.075
+				academic_development_monthly = 0.01
+			}
+		}
 		SIA_advancing_environmental_progress = {
 			allowed = {
 				original_tag = SIA

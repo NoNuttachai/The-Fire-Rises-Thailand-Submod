@@ -11,7 +11,6 @@ SIA_parliament_elections = {
 		}
 		complete_effect = {
 			activate_mission = SIA_2023_elections
-			activate_mission = SIA_other_parties_campaigning
 			set_country_flag = SIA_ongoing_elections
 			set_country_flag = SIA_utn_active
 			country_event = thai_elections.2
@@ -30,7 +29,6 @@ SIA_parliament_elections = {
 		}
 		complete_effect = {
 			activate_mission = SIA_2027_elections
-			activate_mission = SIA_other_parties_campaigning
 			set_country_flag = SIA_ongoing_elections
 			set_country_flag = SIA_utn_active
 			country_event = thai_elections.2

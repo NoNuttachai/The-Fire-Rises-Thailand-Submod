@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 999
 			tag = SIA
 		}
 	}
@@ -680,6 +680,11 @@ focus_tree = {
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
+			has_idea = higher_academic
+			OR = {
+				has_tech = petascale_computing
+				has_tech = early_quantum_computing
+			}
 		}
 		
 		relative_position_id = SIA_promote_ai
@@ -687,31 +692,60 @@ focus_tree = {
 		prerequisite = { focus = SIA_streamline_bureaucracy }
 		
 		completion_reward = {
-			set_temp_variable = { change_temp = 3.5 }
+			add_ideas = SIA_digitalized_government
+			set_temp_variable = { change_temp = 2.5 }
+			for_each_loop = { 
+				array = SIA_map_var 
+				value = v 
+				
+				var:v = {
+					
+					SIA_change_fuel_monthly_base_amount = yes
+				}
+			}
+			custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
+			set_temp_variable = { change_temp = 15 }
 			SIA_change_prayut_legacy = yes
-			set_temp_variable = { change_temp = 1 }
+			set_temp_variable = { change_temp = 3 }
 			SIA_change_specialist_effectiveness = yes
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 1504
+						state = 1505
+					}
+					is_core_of = SIA
+				}
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = infrastructure
+					type = office_park
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
+			every_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							state = 1504
+							state = 1505
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = infrastructure
+					type = office_park
 					level = 1
 					instant_build = yes
 				}
-			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

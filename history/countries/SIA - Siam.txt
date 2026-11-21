@@ -348,7 +348,7 @@ set_party_name = {
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = 2019.3.24
-	election_frequency = 52
+	election_frequency = 50
 	elections_allowed = yes
 }
 

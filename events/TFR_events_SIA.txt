@@ -1223,7 +1223,7 @@ country_event = { # 2023 Elections start
 	immediate = {
 		hidden_effect = {
 			activate_mission = SIA_2023_elections
-			activate_mission = SIA_other_parties_campaigning
+			activate_mission = SIA_campaign_cycle_moves
 			SIA_setup_elections_2023 = yes
 			set_country_flag = SIA_ongoing_elections
 		}
@@ -1241,7 +1241,7 @@ country_event = { # 2023 Elections start
 	after = {
 		effect_tooltip = {
 			activate_mission = SIA_2023_elections
-			activate_mission = SIA_other_parties_campaigning
+			activate_mission = SIA_campaign_cycle_moves
 		}
 		focus_unlock = yes
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -1397,7 +1397,7 @@ country_event = { # 2027 Elections start
 	immediate = {
 		hidden_effect = {
 			activate_mission = SIA_2027_elections
-			activate_mission = SIA_other_parties_campaigning
+			activate_mission = SIA_campaign_cycle_moves
 			SIA_setup_elections_2027 = yes
 			set_country_flag = SIA_ongoing_elections
 		}
@@ -1429,7 +1429,7 @@ country_event = { # 2027 Elections start
 		custom_effect_tooltip = generic_skip_one_line_tt
 		effect_tooltip = {
 			activate_mission = SIA_2027_elections
-			activate_mission = SIA_other_parties_campaigning
+			activate_mission = SIA_campaign_cycle_moves
 		}
 		
 	}
@@ -2845,7 +2845,7 @@ country_event = {
 	picture = GFX_report_bangkok_sinkhole
     option = {
         name = thai_events.49.a
-		1493 = {
+		1504 = {
 			damage_building = {
 			  type = infrastructure
 			  damage = 1
@@ -3187,7 +3187,7 @@ country_event = {
     option = {
         name = thai_events.67.a
 		add_stability = -0.05
-		1495 = {
+		1504 = {
 			add_manpower = -96
 		}
 	}
@@ -3388,13 +3388,13 @@ country_event = {
 			  damage = 1
 			}
 		}
-        1495 = {
+        1504 = {
 			damage_building = {
 			  type = infrastructure
 			  damage = 1
 			}
 		}
-		1496 = {
+		1505 = {
 			damage_building = {
 			  type = infrastructure
 			  damage = 1
@@ -3489,13 +3489,13 @@ country_event = {
 			  damage = 1
 			}
 		}
-        1495 = {
+        1504 = {
 			damage_building = {
 			  type = infrastructure
 			  damage = 1
 			}
 		}
-		1496 = {
+		1505 = {
 			damage_building = {
 			  type = infrastructure
 			  damage = 1
