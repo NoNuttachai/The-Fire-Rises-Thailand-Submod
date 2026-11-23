@@ -1034,12 +1034,6 @@ country_event = {
 			set_variable = { party_1_alignment = 2 }
 			SIA_setup_parliament_layout = yes
 		}
-		if = {
-			limit = {
-				has_completed_focus = SIA_farm_to_market
-			}
-			add_political_power = 100
-		}
 	}
 }
 country_event = {
@@ -3848,13 +3842,14 @@ country_event = {
     desc = thai_events.169.d
 	is_triggered_only = yes
     picture = GFX_report_event_generic_panic
+	immediate = {
+		hidden_effect = {
+			sound_effect = "naval_invasion_alert" 
+		}
+	}
 	option = {
 		name = thai_events.169.a
-		immediate = {
-			hidden_effect = {
-				sound_effect = "naval_invasion_alert" 
-			}
-		}
+		
 	}
 }
 news_event = { #Thai Protests

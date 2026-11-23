@@ -1480,59 +1480,6 @@ shared_focus = {
 		
 	}
 }
-shared_focus = {
-	id = SIA_off_continent_diplomacy
-	icon = GFX_goal_SIA_Another_Year_with_Prayut
-	x = -1
-	y = 1
-	cost = 3
-	ai_will_do = {
-		factor = 10
-	}
-	available = {
-		
-	}
-	available_if_capitulated = yes
-	relative_position_id = SIA_talks_with_the_russians
-	prerequisite = { focus = SIA_talks_with_the_russians focus = SIA_deals_with_the_europeans }
-	completion_reward = {
-		unlock_decision_tooltip = SIA_negotiate_with_argentina
-		unlock_decision_tooltip = SIA_negotiate_with_brazil
-		unlock_decision_tooltip = SIA_negotiate_with_iran
-		unlock_decision_tooltip = SIA_african_ventures
-		custom_effect_tooltip = generic_skip_one_line_tt
-		if = {
-			limit = {
-				country_exists = ISR
-			}
-			custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt
-			unlock_decision_tooltip = SIA_negotiate_with_israel
-		}
-		else = {
-			custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt_locked
-		}
-		
-		
-		if = {
-			limit = {
-				OR = {
-					country_exists = SAU
-					country_exists = ROC
-					country_exists = ARR
-				}
-				NOT = {
-					has_global_flag = saudi_civil_war_flag
-				}
-			}
-			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt
-			unlock_decision_tooltip = SIA_negotiate_with_saudi_arabia
-		}
-		else = {
-			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt_locked
-		}
-	}
-}
-
 #Asian House of Cards
 shared_focus = {
 	id = SIA_asian_house_of_cards

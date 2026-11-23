@@ -96,6 +96,16 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_SIA = {
+		effect  ={
+			if = {
+				limit = {
+					has_country_flag = SIA_ongoing_elections
+				}
+				party_pos = yes
+			}
+		}
+	}
 	on_monthly_SIA = {
 		effect = {
 			if = {

@@ -987,7 +987,7 @@ SIA_Economy_category = {
 			SIA_change_specialist_amount = yes
 		}
 	}
-	SIA_tighten_standards = {
+	SIA_tighten_specialist_standards = {
 		icon = generic_crisis 
 		
 		allowed = {
