@@ -100,6 +100,16 @@ SIA_utn_party_mech = {
 			}
 		}
 	}
+	SIA_load_2026_2027 = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = SIA_utn_2027_victory
+			}
+		}
+	}
 	SIA_suchart_gathers_influence = {
 		icon = generic_crisis
 		allowed = {

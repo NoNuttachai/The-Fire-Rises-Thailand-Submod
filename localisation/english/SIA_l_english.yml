@@ -333,14 +333,23 @@
  SIA_on_watch: "On Watch"
  SIA_nation_religion_monarchy: "Nation, Religion, and Monarchy"
  SIA_thailand_in_the_world_stage: "Thailand In The World Stage"
- SIA_ventures_in_europe: "Ventures In Europe"
- SIA_deals_with_the_europeans: "Deals With The Europeans"
- SIA_talks_with_the_russians: "Talks With The Russians"
- SIA_off_continent_diplomacy: "Off-Continent Diplomacy"
- SIA_off_continent_diplomacy_israel_tt: "§gSince Israel exists, we are able to conduct deals with them§!"
- SIA_off_continent_diplomacy_israel_tt_locked: "§gWe could had conduct trade deals with Israel... But it seems that has been §Rlong gone§!§!"
- SIA_off_continent_diplomacy_saudi_tt: "\n§gSince Saudi Arabia currently has a §Gfriendly regime§!, we are able to do deals with them§!"
- SIA_off_continent_diplomacy_saudi_tt_locked: "\n§gThere is an opportunity to conduct a §Cbusiness deal§! in §YArabia§! if the victor of the §YArabian Civil War§! is @SAU @ROC @ARR §Oapproachable§!, it will be even more §Ceffective§! if it's someone we had §Gsupported§! during the civil war§!"
+ 
+ SIA_expanding_our_options: "Expanding Our Options"
+ SIA_uncle_sams_disaster: "Uncle Sam's Disaster"
+ SIA_ventures_in_south_america: "Ventures in South America"
+ SIA_europe_in_flames: "Europe in Flames"
+ SIA_african_adventure: "African Adventure"
+ SIA_a_commitment_to_global_security: "A Commitment to Global Security"
+ SIA_middle_eastern_troubles: "Middle Eastern Troubles"
+ SIA_generic_me: "PLACEHOLDER MIDDLE EAST"
+ SIA_lesson_from_our_actions: "Lessons From Our Actions"
+ 
+ 
+ 
+ SIA_off_continent_diplomacy_israel_tt: "£GFX_trigger_yes @ISR §WIsrael§! §YExists§!"
+ SIA_off_continent_diplomacy_israel_tt_locked: "£GFX_trigger_no @ISR §WIsrael§! §YExists§!"
+ SIA_off_continent_diplomacy_saudi_tt: "\n£GFX_trigger_yes §gEither @SAU @ROC @ARR §Gexists§! and the §YSaudi Civil War§! has §Gended§!.§! §CAdditional effects if the victor of the civil war is the one we sided with§!"
+ SIA_off_continent_diplomacy_saudi_tt_locked: "\n£GFX_trigger_no §gEither @SAU @ROC @ARR §Gexists§! and the §YSaudi Civil War§! has §GEnded§!.§! §CAdditional effects if the victor of the civil war is the one we sided with§!"
  SIA_asian_house_of_cards: "House Of Cards"
  
  SIA_riding_the_shoulders_of_the_chinese_dragon: "Riding The Shoulders Of The Chinese Dragon"
@@ -559,6 +568,8 @@
  SIA_unfinished_business: "Unfinished Business"
  
  SIA_midas_touch: "Midas Touch"
+ SIA_midas_touch_tt: "§gWe will be given §Y3 years§! to fulfill this project.§!"
+ 
  SIA_capping_oil: "Capping Oil"
  SIA_solar_light: "Solar Light"
  SIA_reform_the_credit_bureau: "Reform the Credit Bureau"
@@ -683,6 +694,7 @@
  SIA_oil_crisis_desc: "\n\n\n\n\n£GFX_SIA_oil_crisis\n\n\n\n\n\n"
  SIA_lottery_conscription: "Lottery Conscription"
  SIA_lottery_conscription_desc: ""…what makes Thailand's system of conscription interesting is the fact that it operates based on a lottery system with each recruitment center every April having a set quota of bodies that it must enlist in the service dictating how big the lottery is set to be…\n\n…you are to draw your card and face the large crowd of other lads and their mortified mothers, if the card you draw is black, lucky you!, you get to waddle home and continue on with your life unmolested, §Rif your card is red however….§!"\n- Count Dankula (Mark Meechan)"
+ SIA_incentivized_conscription: "Incentivized Conscription"
  SIA_low_income_only_welfare: "Low-Income Only Welfare"
  SIA_low_income_only_welfare_desc: ""Today, nobody wants to be called poor. I don't look at them that way either, But We have to expand their income with many projects that can't make them out of the poverty but will make them happy." - Prayut Chan-O-Cha"
  
@@ -1227,6 +1239,14 @@
  thai_events.102.d: "The COVID-19 pandemic contributed to a reduction in air pollution as travel, industrial production, and economic activity declined. However, this improvement did not eliminate the underlying causes of Thailand's PM2.5 problem. As a silver lining, prior exposure to hazardous air quality meant that the Thai public was already accustomed to routine mask-wearing, a practice that provided a familiar form of protection during the pandemic and may have helped reduce the spread of the virus."
  thai_events.102.a: "No Mask, No Entry"
  
+ thai_events.103.t: "Commander-in-Chief Apirat Retires"
+ thai_events.103.d: "Something"
+ thai_events.103.a: "Other Thing"
+ 
+ thai_events.104.t: "Commander-in-Chief Narongphan Retires"
+ thai_events.104.d: "Something"
+ thai_events.104.a: "Other Thing"
+ 
  thai_events.167.t: "Thai Arya Party"
  thai_events.167.d: "Recently, the Thai Arya Party (also known as the Thai Aryan or Thai Arya Movement) has attracted some attention on the internet. It is an unregistered political party that uses imagery from Donald Trump's MAGA movement and adopts the slogan "Make Thailand Great Again." On its website and Facebook page, the party's administrators have expressed admiration for Field Marshal Plaek Phibunsongkhram in various posts\n\nThe party is particularly opposed to Chinese economic influence, which it views as an attempt by China to gain control over Thailand through economic expansion and the activities of Chinese grey-market businesses.\n\nIts website has sold MAGA-style red hats bearing the slogan "Make Thailand Great Again" for 390 baht. Despite its apparent right-wing political orientation, the movement has displayed some ideological contradictions. In one Facebook post, it quoted Chit Phumisak and praised him for his anti-Chinese stance, despite him being a Maoist communist. Furthermore, many members of its Discord server and Facebook page identify as left-wing or far-left. Overall, the movement appears to lack a coherent political orientation.\n\nIt seems this so called "political party" is less of a political party and more of an online space on Discord server and Facebook group page for Thai teenagers to larp about politics."
  thai_events.167.a: "Phibun Impressed"
@@ -1480,6 +1500,11 @@
  thai_prayut_38_a_tt: "§Y§!\n\n\n\n\n\n\n£GFX_hog_SIA_SIA_suchart_chomklin \n\n\n\n\n\n\n\n§PSuchart Chomklin§! will be the §YPrime Minister§! candidate for the £GFX_united_thai_nation §PUnited Thai Nation Party§! in this §Ysnap election§!"
  thai_prayut.38.b: "Akanat for the win"
  thai_prayut_38_b_tt: "§Y§!\n\n\n\n\n\n\n£GFX_hog_SIA_SIA_akanat_promphan \n\n\n\n\n\n\n\n§PAkanat Promphan§! will be the §YPrime Minister§! candidate for the £GFX_united_thai_nation §PUnited Thai Nation Party§! in this §Ysnap election§!"
+ 
+ thai_prayut.39.t: "The Dragon or The Rising Sun"
+ thai_prayut.39.d: "who"
+ thai_prayut.39.a: "Japan land"
+ thai_prayut.39.a: "We speaking Chinese"
  
  thai_ptp.1.t: "Pheu Thai wins 2023 Elections"
  thai_ptp.1.d: ""
@@ -2213,6 +2238,7 @@
  SIA_cut_agencies: "§gSpecialist§! - Cut Agencies"
  SIA_relax_the_quota: "§gSpecialist§! - Relax the Quota"
  
+ SIA_utn_metropolis_project: "£GFX_united_thai_nation §PUTN§!: Metropolis Project"
  SIA_utn_promote_green_energy: "£GFX_united_thai_nation §PUTN§!: Promote Green Energy"
  SIA_utn_enhance_vocational_training: "£GFX_united_thai_nation §PUTN§!: Enhance Vocational Training"
  SIA_utn_invest_on_ai_technology: "£GFX_united_thai_nation §PUTN§!: Invest On AI Technology"
@@ -2271,7 +2297,7 @@
  SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §BPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
  
  #2027
- SIA_utn_banner_2027: "£GFX_SIA_party_mech_2027\n\n\n\n\n\n\n\nThe United Thai Nation Party is the blah blah blah.\n\nDespite the departure of their renowned figure, Prayut Chan-o-cha, they have managed to blah blah.\n\nThe Party consists of several factions inside it and the party must remain in consensus or risk infighting among themselves.\n\n§PUTN§! §YParty Cohesion§!: 0/100"
+ SIA_utn_banner_2027: "£GFX_SIA_party_mech_2027\n\n\n\n\n\n\n\nThe United Thai Nation Party is the blah blah blah.\n\nDespite the departure of their renowned figure, Prayut Chan-o-cha, they have managed to blah blah.\n\nThe Party consists of several factions inside it and the party must remain in consensus or risk infighting among themselves.\n\n£GFX_united_thai_nation §PUTN§! §YParty Cohesion§!: [?SIA_utn_cohesion_var|2]"
  
  
  SIA_honor_the_generals_legacy: "Honor The General's Legacy"
@@ -2318,6 +2344,16 @@
  SIA_tug_of_war_variable_breakdown: "§B[?SIA_pirapan_influ]§!-§P[?SIA_suchart_influ]§!"
  SIA_tug_of_war_pirapan_increase: "§BPirapan's§! §YInfluence§! will change by [?influ_change|-+]"
  SIA_tug_of_war_suchart_increase: "§PSuchart's§! §YInfluence§! will change by [?influ_change|-+]"
+ 
+ SIA_once_again_the_utn_tt: "§LThe brief §Rpower struggle§! in the party has exposed the party's disagreements among each other.\n\n§YThe Party Mechanic§! will transform to monitor the £GFX_united_thai_nation §PUTN's§! §YParty Cohesion§! and must be well maintained in order to avoid §Rpenalties§!.§!"
+ SIA_change_utn_cohesion_tt: "£GFX_united_thai_nation §YParty Cohesion§! will change by [?change_temp|-+2]"
+ SIA_party_cohesion_check_tt: "§YThis policy has some pushback among our party§!"
+ SIA_party_cohesion_check_bad: "§OWarning§!: §gCurrent §YCohesion§! is §Rbelow 50%§!, this will lead to inefficient implementation and will §Rcost§! us the following§!:\n§L§"
+ SIA_party_cohesion_check_good: "§g£GFX_united_thai_nation §PThe Party§! is currently in §Cagreement§!, avoiding us from any maluses§!\n§g§"
+ SIA_utn_cohesion_prayut_legacy_tt: "   -£GFX_united_thai_nation §LPrayut's Legacy§! is viewed with [SIA_utn_prayut_legacy_viewed], giving us the following effect:"
+ SIA_cohesion_color_break_tt: "§!-------------------------------------------"
+ SIA_utn_side_japan: "§gHas chosen @JAP §WJapan§! as the contract partner§!"
+ SIA_utn_side_china: "§gHas chosen @PRC §RChina§! as the contract partner§!"
  
  SIA_forpol_category: "Friends And Foes"
  SIA_forpol_int_text: "§WCountry Interaction§!"

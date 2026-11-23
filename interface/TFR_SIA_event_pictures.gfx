@@ -572,6 +572,14 @@ spriteTypes = {
 		name = "GFX_report_pirapan_akanat"
 		texturefile = "gfx/event_pictures/report_pirapan_akanat.png"
 	}
+	spriteType = {
+		name = "GFX_report_apirat_retire"
+		texturefile = "gfx/event_pictures/report_apirat_retire.png"
+	}
+	spriteType = {
+		name = "GFX_report_narongphan_retires"
+		texturefile = "gfx/event_pictures/report_narongpan_retires.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

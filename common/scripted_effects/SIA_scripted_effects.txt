@@ -767,19 +767,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_INS_var > global.JAP_influence_INS_var }
 			}
 			PRC = { add_to_faction = INS }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_INS_var < global.JAP_influence_INS_var }
 			}
 			JAP = { add_to_faction = INS }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_INS_var = global.JAP_influence_INS_var }
 			}
 			random_list = {
 				50 = {
@@ -799,19 +799,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_LAO_var > global.JAP_influence_LAO_var }
 			}
 			PRC = { add_to_faction = LAO }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_LAO_var < global.JAP_influence_LAO_var }
 			}
 			JAP = { add_to_faction = LAO }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_LAO_var = global.JAP_influence_LAO_var }
 			}
 			random_list = {
 				50 = {
@@ -831,19 +831,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.JAP_influence_MAL_var > global.JAP_influence_MAL_var }
 			}
 			PRC = { add_to_faction = MAL }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.JAP_influence_MAL_var < global.JAP_influence_MAL_var }
 			}
 			JAP = { add_to_faction = MAL }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.JAP_influence_MAL_var = global.JAP_influence_MAL_var }
 			}
 			random_list = {
 				50 = {
@@ -863,19 +863,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_BRM_var > global.JAP_influence_BRM_var }
 			}
 			PRC = { add_to_faction = BRM }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_BRM_var < global.JAP_influence_BRM_var }
 			}
 			JAP = { add_to_faction = BRM }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_BRM_var = global.JAP_influence_BRM_var }
 			}
 			random_list = {
 				50 = {
@@ -895,19 +895,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_PHI_var > global.JAP_influence_PHI_var }
 			}
 			PRC = { add_to_faction = PHI }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_PHI_var < global.JAP_influence_PHI_var }
 			}
 			JAP = { add_to_faction = PHI }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_PHI_var = global.JAP_influence_PHI_var }
 			}
 			random_list = {
 				50 = {
@@ -927,19 +927,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_SIG_var > global.JAP_influence_SIG_var }
 			}
 			PRC = { add_to_faction = SIG }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_SIG_var < global.JAP_influence_SIG_var }
 			}
 			JAP = { add_to_faction = SIG }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_SIG_var = global.JAP_influence_SIG_var }
 			}
 			random_list = {
 				50 = {
@@ -959,19 +959,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_SIA_var > global.JAP_influence_SIA_var }
 			}
 			PRC = { add_to_faction = SIA }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_SIA_var < global.JAP_influence_SIA_var }
 			}
 			JAP = { add_to_faction = SIA }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_SIA_var = global.JAP_influence_SIA_var }
 			}
 			random_list = {
 				50 = {
@@ -991,19 +991,19 @@ PRC_gaw_start = {
 		}
 		if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var > global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_VIN_var > global.JAP_influence_VIN_var }
 			}
 			PRC = { add_to_faction = VIN }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var < global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_VIN_var < global.JAP_influence_VIN_var }
 			}
 			JAP = { add_to_faction = VIN }
 		}
 		else_if = {
 			limit = {
-				check_variable = { global.PRC_influence_CAM_var = global.JAP_influence_CAM_var }
+				check_variable = { global.PRC_influence_VIN_var = global.JAP_influence_VIN_var }
 			}
 			random_list = {
 				50 = {

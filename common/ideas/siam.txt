@@ -320,6 +320,47 @@ ideas = {
 				max_planning_factor = 0.075
 			}
 		}
+		SIA_royal_army_of_thailand_at_home = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				battalion_upkeep_factor = 0.075
+				army_attack_factor = 0.025
+				army_morale_factor = 0.05
+				military_development_monthly = 0.005
+			}
+		}
+		SIA_royal_army_of_thailand_in_the_battlefield = {
+			name = SIA_royal_army_of_thailand_dynamic_modifier
+			picture = SIA_an_army_with_a_country
+			traits = {
+			    ZZZ_blank_idea_trait
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			allowed = {
+				original_tag = SIA
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				battalion_upkeep_factor = 0.05
+				army_org_factor = 0.075
+			}
+		}
 		SIA_royal_airforce_of_thailand_dummy = {
 			name = SIA_royal_airforce_of_thailand_dynamic_modifier
 			picture = SIA_an_army_with_a_country
@@ -3483,7 +3524,7 @@ ideas = {
 			}
 			allowed_to_remove = { always = no }
 			modifier = {
-				conscription = 0.0057
+				conscription = 0.0085
 				training_time_factor = 0.01
 				industrial_capacity_factory = -0.01
 			}
@@ -3491,7 +3532,31 @@ ideas = {
 				base = 1
 			}
 			cancel_if_invalid = no
-		}		
+		}
+		SIA_incentivized_conscription = {
+			cost = 100
+			removal_cost = -1
+			picture = SIA_lottery_conscription
+			level = 5
+			allowed = {
+				tag = SIA
+			}
+			visible = {
+				has_idea = SIA_incentivized_conscription
+			}
+			allowed_to_remove = { always = no }
+			modifier = {
+				conscription = 0.0125
+				army_org_factor = 0.05
+				income_growth_factor = -0.075
+				battalion_upkeep_factor = 0.15
+				military_development_monthly = 0.002
+			}
+			ai_will_do = {
+				base = 1
+			}
+			cancel_if_invalid = no
+		}
 	}
 	welfare_laws = {
 		SIA_low_income_only_welfare = {

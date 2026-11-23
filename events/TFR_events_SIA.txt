@@ -1186,6 +1186,31 @@ country_event = { #Choose either Suchart or Akanat
 		custom_effect_tooltip = thai_prayut_38_b_tt
     }
 }
+country_event = { #Lucrative Deals triggered
+    id = thai_prayut.39
+    title = thai_prayut.39.t
+    desc = thai_prayut.39.d
+	is_triggered_only = yes
+
+    option = { #Japan
+        name = thai_prayut.39.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = PRC
+			}
+		}
+		set_country_flag = SIA_utn_side_japan
+    }
+	option = { #China
+        name = thai_prayut.38.b
+		trigger = {
+			NOT = {
+				is_in_faction_with = JAP
+			}
+		}
+		set_country_flag = SIA_utn_side_china
+    }
+}
 country_event = { #elections calculated
     id = thai_elections.1
     title = thai_elections.1.t
@@ -2404,15 +2429,49 @@ country_event = {
 	picture = GFX_report_prayut_mogged_opposition_2
 	
 	is_triggered_only = yes
-
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { #Thailand is player AND USA is AI
+					USA = {
+						is_ai = yes
+					}
+					SIA = {
+						is_ai = no
+					}
+				}
+				random_list = {
+					1 = { #keep as is/toss up to AI should be like june 2021
+					
+					}
+					2 = {
+						USA = {
+							add_days_mission_timeout = { #Delay by 6 months
+								mission = USA_civil_war_mission
+								days = 180
+							}
+						}
+					}
+					2 = {
+						USA = {
+							add_days_mission_timeout = { #Delay by 8 monts
+								mission = USA_civil_war_mission
+								days = 240
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	option = {
-        name = thai_events.40.a
+        name = thai_events.33.a
 		trigger = {
 			has_completed_focus = SIA_raise_our_three_fingers
 		}
 	}
 	option = {
-        name = thai_events.40.b
+        name = thai_events.33.b
 		trigger = {
 			has_completed_focus = SIA_side_with_uncle_tuu
 		}
@@ -3700,6 +3759,60 @@ country_event = {
 			days = 20
 		}
 		add_stability = 0.05
+	}
+}
+country_event = { 
+    id = thai_events.103 #September 30, 2020 - General Apirat Retires
+    title = thai_events.103.t
+    desc = thai_events.103.d
+	is_triggered_only = yes
+	picture = GFX_report_apirat_retire
+    option = {
+        name = thai_events.103.a
+		hidden_effect = {
+			remove_ideas = SIA_apirat_kongsompong_army_chief
+		}
+		retire_character = SIA_apirat_kongsompong_char
+		add_ideas = SIA_narongpan_jitkaewthae_army_chief
+		SIA_narongpan_jitkaewthae_char = {
+			add_skill_level = 2
+			add_attack = 2
+			add_defense = 1
+			add_planning = 2
+			add_logistics = 2
+			promote_leader = yes
+			add_timed_unit_leader_trait = {
+				trait = recently_promoted
+				days = 60
+			}
+		}
+	}
+}
+country_event = { 
+    id = thai_events.104 #September 30, 2023 - General Narongpan Retires
+    title = thai_events.104.t
+    desc = thai_events.104.d
+	is_triggered_only = yes
+	picture = GFX_report_narongphan_retires
+    option = {
+        name = thai_events.104.a
+		#hidden_effect = {
+		#	remove_ideas = SIA_narongpan_jitkaewthae_army_chief
+		#}
+		#retire_character = SIA_narongpan_jitkaewthae_char
+		#add_ideas = SIA_charoenchai_hinthao_army_chief
+		#SIA_charoenchai_hinthao_char = {
+		#	add_skill_level = 2
+		#	add_attack = 2
+		#	add_defense = 1
+		#	add_planning = 2
+		#	add_logistics = 2
+		#	promote_leader = yes
+		#	add_timed_unit_leader_trait = {
+		#		trait = recently_promoted
+		#		days = 60
+		#	}
+		#}
 	}
 }
 country_event = { 
