@@ -42,6 +42,26 @@ spriteTypes = {
 		name = "GFX_idea_SIA_Myanmar_Refugees"
 		textureFile = "gfx/interface/ideas/SIA/Myanmar_Refugees.png"
 	}
+	spriteType = {
+		name = "GFX_idea_SIA_Sam_Phraya"
+		textureFile = "gfx/interface/ideas/SIA/SIA_Sam_Phraya.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_oilcrisis"
+		textureFile = "gfx/interface/ideas/SIA/SIA_oilcrisis.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_quelling_the_agitators"
+		textureFile = "gfx/interface/ideas/SIA/SIA_quelling_the_agitators.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_thai_japanese_cooperation"
+		textureFile = "gfx/interface/ideas/SIA/SIA_thai_japanese_cooperation.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SIA_SMILE_strategy"
+		textureFile = "gfx/interface/ideas/SIA/SIA_SMILE_strategy.png"
+	}
 	# Advisors
 	spriteType = {
 		name = "GFX_idea_SIA_anupong_paochinda"

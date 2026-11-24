@@ -810,7 +810,7 @@ ideas = {
 			}
 		}
 		SIA_oil_crisis = {
-			picture = JAP_oil_crisis
+			picture = SIA_oilcrisis
 			traits = {
 			    ZZZ_blank_idea_trait
 			}
@@ -835,7 +835,7 @@ ideas = {
 		}
 		SIA_oil_crisis_1 = {
 			name = SIA_oil_crisis
-			picture = JAP_oil_crisis
+			picture = SIA_oilcrisis
 			traits = {
 			    ZZZ_blank_idea_trait
 			}
@@ -859,7 +859,7 @@ ideas = {
 		}
 		SIA_oil_crisis_2 = {
 			name = SIA_oil_crisis
-			picture = JAP_oil_crisis
+			picture = SIA_oilcrisis
 			traits = {
 			    ZZZ_blank_idea_trait
 			}
@@ -883,7 +883,7 @@ ideas = {
 		}
 		SIA_oil_crisis_3 = {
 			name = SIA_oil_crisis
-			picture = JAP_oil_crisis
+			picture = SIA_oilcrisis
 			traits = {
 			    ZZZ_blank_idea_trait
 			}
@@ -1513,7 +1513,7 @@ ideas = {
 			}
 		}
 		SIA_japanese_cooperation = {
-			picture = "GFX_ETH_chinese_investments" 
+			picture = SIA_thai_japanese_cooperation
 		    traits = {
 		        ZZZ_blank_idea_trait
 		    }
@@ -1620,7 +1620,7 @@ ideas = {
 			}
 		}
 		SIA_SMILE_Strategy = {
-			picture = "GFX_ETH_chinese_investments" 
+			picture = SIA_SMILE_strategy
 		    traits = {
 		        ZZZ_blank_idea_trait
 		    }
@@ -1676,7 +1676,7 @@ ideas = {
 			}
 		}
 		SIA_quelling_agitators = {
-			picture = "GFX_ETH_chinese_investments" 
+			picture = SIA_quelling_the_agitators
 		    traits = {
 		        ZZZ_blank_idea_trait
 		    }
@@ -2235,7 +2235,7 @@ ideas = {
 			}
 		}
 		SIA_sam_phraya = {
-			picture = generic_parliament_idea
+			picture = SIA_Sam_Phraya
 		    traits = {
 		        ZZZ_blank_idea_trait
 		    }
@@ -2479,7 +2479,7 @@ ideas = {
 			}
 		}
 		SIA_dispersing_the_protests = {
-			picture = generic_parliament_idea
+			picture = SIA_quelling_the_agitators
 		    traits = {
 		        ZZZ_blank_idea_trait
 		    }
@@ -2510,7 +2510,7 @@ ideas = {
 			}
 		}
 		SIA_striking_the_rioters = {
-			picture = generic_parliament_idea
+			picture = SIA_quelling_the_agitators
 		    traits = {
 		        ZZZ_blank_idea_trait
 		    }
