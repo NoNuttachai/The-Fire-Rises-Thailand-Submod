@@ -27,7 +27,7 @@ SIA_setup_elections_2023 = { #Protests dismantled - Prayut present scenario
 		set_variable = { party_votes = 12 }
 	}
 	3 = {
-		set_variable = { party_votes = 8 }
+		set_variable = { party_votes = 18 }
 	}
 	4 = {
 		set_variable = { party_votes = 4 }
@@ -430,7 +430,14 @@ SIA_campaign_tick_effect = {
 		}
 		
 		
-		2 = { #Minors and who???
+		1 = { #Minors and who???
+			modifier = { 
+				factor = 0
+				OR = {
+					check_variable = { 1:party_votes > 2:party_votes }
+					check_variable = { 6:party_votes > 3:party_votes }
+				}
+			}
 			activate_mission = SIA_minor_campaigning
 			activate_mission = SIA_dp_campaigning
 			activate_mission = SIA_bjt_campaigning
@@ -444,13 +451,13 @@ SIA_campaign_tick_effect = {
 					limit = {
 						check_variable = { SIA_election_playing_as = 2 }
 					}
-					check_variable = { 11:party_votes > 22 }
+					check_variable = { 11:party_votes > 27 }
 				}
 				else = {
-					check_variable = { 2:party_votes > 22 }
+					check_variable = { 2:party_votes > 27 }
 				}
 				
-				check_variable = { 3:party_votes > 22 }
+				check_variable = { 3:party_votes > 27 }
 			}
 			if = {
 				limit = {
@@ -476,15 +483,15 @@ SIA_campaign_tick_effect = {
 				check_variable = { 11:party_votes > 15 }
 			}
 			modifier = { #Lower chances if BJT has high votes
-				factor = 0.25
+				factor = 0.1
 				check_variable = { 6:party_votes > 9 }
 			}
 			modifier = { #Lower chances if PPRP has high votes
-				factor = 0.25
+				factor = 0.1
 				check_variable = { 1:party_votes > 7 }
 			}
 			modifier = { #Increase chances if sided with UTN and has low votes
-				factor = 2
+				factor = 1
 				check_variable = { SIA_election_playing_as = 11 }
 				check_variable = { 11:party_votes < 20 }
 			}
@@ -566,6 +573,13 @@ SIA_campaign_targetted_roll = {
 				set_variable = { SIA_campaign_ptp_target = 11 }
 			}
 			1 = {
+				modifier = { #Increased chances if UTN has high votes
+					factor = 2
+					check_variable = { 11:party_votes > 22 }
+				}
+				set_variable = { SIA_campaign_ptp_target = 11 }
+			}
+			1 = {
 				modifier = { #Increased chances if MFP has high votes
 					factor = 2
 					check_variable = { 3:party_votes > 18 }
@@ -579,6 +593,13 @@ SIA_campaign_targetted_roll = {
 					factor = 0
 					check_variable = { 11:party_votes < 15 }
 					check_variable = { SIA_election_playing_as = 11 }#Player friendly mod btw
+				}
+				set_variable = { SIA_campaign_mfp_target = 11 }
+			}
+			1 = {
+				modifier = { #Increased chances if UTN has high votes
+					factor = 2
+					check_variable = { 11:party_votes > 22 }
 				}
 				set_variable = { SIA_campaign_mfp_target = 11 }
 			}
@@ -2191,34 +2212,107 @@ clean_everything = {
 }
 party_pos = {
 	set_temp_variable = { minceiling = -15 }
+	set_temp_variable = { max = 153 }
 	
-	set_temp_variable = { var1 = minceiling }
-	add_to_temp_variable = { var1 = 1:party_votes }
+	set_temp_variable = { var1 = max }
+	set_temp_variable = { var1div = 1:party_votes }
+	divide_temp_variable = { var1div = 100 }
+	multiply_temp_variable = { var1 = var1div }
 	set_variable = { assigned_var_1 = var1 }
 	
-	set_temp_variable = { var2 = minceiling }
-	add_to_temp_variable = { var2 = 2:party_votes }
+	set_temp_variable = { var2 = max }
+	set_temp_variable = { var2div = 2:party_votes }
+	divide_temp_variable = { var2div = 100 }
+	multiply_temp_variable = { var2 = var2div }
 	set_variable = { assigned_var_2 = var2 }
 	
-	set_temp_variable = { var3 = minceiling }
-	add_to_temp_variable = { var3 = 3:party_votes }
+	set_temp_variable = { var3 = max }
+	set_temp_variable = { var3div = 3:party_votes }
+	divide_temp_variable = { var3div = 100 }
+	multiply_temp_variable = { var3 = var3div }
 	set_variable = { assigned_var_3 = var3 }
 	
-	set_temp_variable = { var4 = minceiling }
-	add_to_temp_variable = { var4 = 4:party_votes }
+	set_temp_variable = { var4 = max }
+	set_temp_variable = { var4div = 4:party_votes }
+	divide_temp_variable = { var4div = 100 }
+	multiply_temp_variable = { var4 = var4div }
 	set_variable = { assigned_var_4 = var4 }
 	
-	set_temp_variable = { var6 = minceiling }
-	add_to_temp_variable = { var6 = 6:party_votes }
+	set_temp_variable = { var6 = max }
+	set_temp_variable = { var6div = 6:party_votes }
+	divide_temp_variable = { var6div = 100 }
+	multiply_temp_variable = { var6 = var6div }
 	set_variable = { assigned_var_6 = var6 }
 	
-	set_temp_variable = { var9 = minceiling }
-	add_to_temp_variable = { var9 = 9:party_votes }
+	set_temp_variable = { var9 = max }
+	set_temp_variable = { var9div = 9:party_votes }
+	divide_temp_variable = { var9div = 100 }
+	multiply_temp_variable = { var9 = var9div }
 	set_variable = { assigned_var_9 = var9 }
 	
-	set_temp_variable = { var11 = minceiling }
-	add_to_temp_variable = { var11 = 11:party_votes }
+	set_temp_variable = { var11 = max }
+	set_temp_variable = { var11div = 11:party_votes }
+	divide_temp_variable = { var11div = 100 }
+	multiply_temp_variable = { var11 = var11div }
 	set_variable = { assigned_var_11 = var11 }
+	
+	
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_1 = 0
+			}
+		}
+		set_variable = { assigned_var_1 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_2 = 0
+			}
+		}
+		set_variable = { assigned_var_2 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_3 = 0
+			}
+		}
+		set_variable = { assigned_var_3 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_4 = 0
+			}
+		}
+		set_variable = { assigned_var_4 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_6 = 0
+			}
+		}
+		set_variable = { assigned_var_6 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_9 = 0
+			}
+		}
+		set_variable = { assigned_var_9 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_11 = 0
+			}
+		}
+		set_variable = { assigned_var_11 = minceiling }
+	}
 	update_line_position = yes
 }
 
@@ -2247,7 +2341,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = pprp_y_position
 		min = -15
-		max = 100
+		max = 153
 	}
 	if = {
 		limit = { #Remove 1st if it overexceed
@@ -2283,7 +2377,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = ptp_y_position
 		
-		max = 100
+		max = 153
 	}
 	if = {
 		limit = { #Remove 1st if it overexceed
@@ -2320,7 +2414,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = orange_y_position
 		
-		max = 100
+		max = 153
 	}
 	if = {
 		limit = { #Remove 1st if it overexceed
@@ -2357,7 +2451,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = dp_y_position
 		
-		max = 100
+		max = 153
 	}
 	if = {
 		limit = { #Remove 1st if it overexceed
@@ -2394,7 +2488,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = bjt_y_position
 		
-		max = 100
+		max = 153
 	}
 	if = {
 		limit = { #Remove 1st if it overexceed
@@ -2431,7 +2525,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = minor_y_position
 		
-		max = 100
+		max = 153
 	}
 	if = {
 		limit = { #Remove 1st if it overexceed
@@ -2466,7 +2560,7 @@ update_line_position = {
 	clamp_variable = { 
 		var = utn_y_position
 		
-		max = 100
+		max = 153
 	}
 	
 	if = {

@@ -716,6 +716,8 @@ SIA_Economy_category = {
 		complete_effect = {
 			set_country_flag = SIA_activate_rest_of_engine
 			SIA_initiate_area_vars = yes
+			SIA_initiate_area_approvals = yes
+			set_country_flag = SIA_approval_mech_on
 			add_dynamic_modifier = {
 				modifier = SIA_specialist_upkeep_dynamic_modifier
 			}

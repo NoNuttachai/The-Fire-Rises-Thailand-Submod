@@ -96,16 +96,6 @@ on_actions = {
 			}
 		}
 	}
-	on_weekly_SIA = {
-		effect  ={
-			if = {
-				limit = {
-					has_country_flag = SIA_ongoing_elections
-				}
-				party_pos = yes
-			}
-		}
-	}
 	on_monthly_SIA = {
 		effect = {
 			if = {
@@ -120,6 +110,12 @@ on_actions = {
 					has_country_flag = SIA_economy_mechanic_on
 				}
 				SIA_monthly_tick_engine = yes
+			}
+			if = {
+				limit = {
+					has_country_flag = SIA_approval_mech_on
+				}
+				SIA_update_approval_monthly = yes
 			}
 		}
 	}

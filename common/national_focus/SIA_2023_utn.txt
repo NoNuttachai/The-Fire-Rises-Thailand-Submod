@@ -814,7 +814,6 @@ focus_tree = {
 			set_temp_variable = { debt_var_temp = -45 }
 			add_debt = yes
 			add_stability = -0.05
-			add_society_development = yes
 			add_timed_idea = {
 				idea = SIA_cut_cut_cut
 				days = 350

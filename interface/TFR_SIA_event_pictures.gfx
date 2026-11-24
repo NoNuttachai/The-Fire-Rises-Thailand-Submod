@@ -580,6 +580,10 @@ spriteTypes = {
 		name = "GFX_report_narongphan_retires"
 		texturefile = "gfx/event_pictures/report_narongpan_retires.png"
 	}
+	spriteType = {
+		name = "GFX_report_prayut_water_gun"
+		texturefile = "gfx/event_pictures/report_prayut_water_gun.png"
+	}
 	#World News
 	spriteType = {
 		name = "GFX_global_event_2020_thai_protests"

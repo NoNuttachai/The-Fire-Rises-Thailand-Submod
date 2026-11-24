@@ -1205,6 +1205,40 @@ country_event = { #Lucrative Deals triggered
 		set_country_flag = SIA_utn_side_china
     }
 }
+country_event = { #Songkran 2023 - Prayut Edition
+    id = thai_prayut.40
+    title = thai_prayut.40.t
+    desc = thai_prayut.40.d
+	is_triggered_only = yes
+	picture = GFX_report_prayut_water_gun
+	immediate = {
+		hidden_effect = {
+			country_event = { id = thai_events.56 days = 365 }
+		}
+	}
+    option = { 
+        name = thai_prayut.40.a
+		set_temp_variable = {
+			var = income_var_temp
+			value = 1
+		}
+		add_income = yes
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { vote_change = 0.5 }
+			set_temp_variable = { target = 11 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 0.5 }
+			set_temp_variable = { 1st_target = 11 }
+			set_temp_variable = { 2nd_target = 3 }
+			SIA_elections_targeted_vote_increase = yes
+		}
+    }
+}
 country_event = { #elections calculated
     id = thai_elections.1
     title = thai_elections.1.t
@@ -1492,9 +1526,24 @@ country_event = { # 2023 MFP - Pita Limjaroenrat
     option = { 
         name = thai_elections.10.a
 		custom_effect_tooltip = thai_elections_10_tt
-		set_temp_variable = { target = 3 }
-		set_temp_variable = { vote_change = 4 }
-		SIA_elections_increase_votes_by_undecided = yes
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { target = 3 }
+			set_temp_variable = { vote_change = 9 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 5 }
+			set_temp_variable = { 1st_target = 3 }
+			set_temp_variable = { 2nd_target = 2 }
+			SIA_elections_targeted_vote_increase = yes
+			set_temp_variable = { vote_change = 4 }
+			set_temp_variable = { 1st_target = 3 }
+			set_temp_variable = { 2nd_target = 11 }
+			SIA_elections_targeted_vote_increase = yes
+		}
     }
 }
 country_event = { # 2023 PTP - Paetongtarn Shinawatra
@@ -1508,9 +1557,21 @@ country_event = { # 2023 PTP - Paetongtarn Shinawatra
         name = thai_elections.11.a
 		custom_effect_tooltip = thai_elections_11_tt
 		set_variable = { ptp_candidate = 2 } 
-		set_temp_variable = { target = 2 }
-		set_temp_variable = { vote_change = 3 }
-		SIA_elections_increase_votes_by_undecided = yes
+		
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { target = 2 }
+			set_temp_variable = { vote_change = 3 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 3 }
+			set_temp_variable = { 1st_target = 2 }
+			set_temp_variable = { 2nd_target = 11 }
+			SIA_elections_targeted_vote_increase = yes
+		}
     }
 }
 country_event = { # 2023 BJT - Anutin
@@ -1523,9 +1584,21 @@ country_event = { # 2023 BJT - Anutin
     option = { 
         name = thai_elections.12.a
 		custom_effect_tooltip = thai_elections_12_tt
-		set_temp_variable = { target = 6 }
-		set_temp_variable = { vote_change = 2 }
-		SIA_elections_increase_votes_by_undecided = yes
+		
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { target = 6 }
+			set_temp_variable = { vote_change = 1 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 1 }
+			set_temp_variable = { 1st_target = 6 }
+			set_temp_variable = { 2nd_target = 2 }
+			SIA_elections_targeted_vote_increase = yes
+		}
     }
 }
 country_event = { # 2023 UTN - Prayut
@@ -1538,9 +1611,20 @@ country_event = { # 2023 UTN - Prayut
     option = { 
         name = thai_elections.13.a
 		custom_effect_tooltip = thai_elections_13_tt
-		set_temp_variable = { target = 11 }
-		set_temp_variable = { vote_change = 3 }
-		SIA_elections_increase_votes_by_undecided = yes
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { target = 11 }
+			set_temp_variable = { vote_change = 2 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 2 }
+			set_temp_variable = { 1st_target = 11 }
+			set_temp_variable = { 2nd_target = 3 }
+			SIA_elections_targeted_vote_increase = yes
+		}
     }
 }
 country_event = { # 2023 PPRP - Prawit
@@ -1553,9 +1637,20 @@ country_event = { # 2023 PPRP - Prawit
     option = { 
         name = thai_elections.14.a
 		custom_effect_tooltip = thai_elections_14_tt
-		set_temp_variable = { target = 1 }
-		set_temp_variable = { vote_change = 2 }
-		SIA_elections_increase_votes_by_undecided = yes
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { target = 1 }
+			set_temp_variable = { vote_change = 1 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 1 }
+			set_temp_variable = { 1st_target = 1 }
+			set_temp_variable = { 2nd_target = 3 }
+			SIA_elections_targeted_vote_increase = yes
+		}
     }
 }
 country_event = { # 2023 DP - Jurin
@@ -1568,9 +1663,21 @@ country_event = { # 2023 DP - Jurin
     option = { 
         name = thai_elections.15.a
 		custom_effect_tooltip = thai_elections_15_tt
-		set_temp_variable = { target = 4 }
-		set_temp_variable = { vote_change = 2 }
-		SIA_elections_increase_votes_by_undecided = yes
+
+		if = { #regular grab undecided
+			limit = {
+				check_variable = { undecided_votes > 0 }
+			}
+			set_temp_variable = { target = 4 }
+			set_temp_variable = { vote_change = 1 }
+			SIA_elections_increase_votes_by_undecided = yes
+		}
+		else = { #Steal voters
+			set_temp_variable = { vote_change = 1 }
+			set_temp_variable = { 1st_target = 4 }
+			set_temp_variable = { 2nd_target = 2 }
+			SIA_elections_targeted_vote_increase = yes
+		}
     }
 }
 country_event = { # Snap elections called in 2026 after stalemating Cambodia
@@ -3046,7 +3153,27 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			country_event = { id = thai_events.56 days = 365 }
+			if = {
+				limit = {
+					check_variable = { #to have the prayut songkran event
+						SIA_songkran_post_covid = 0
+					}
+					OR = {
+						has_idea = SIA_prayut_chan-o-cha_advisor
+						has_idea = SIA_prayut_chan_o_cha_utn_hog
+					}   
+				}
+				country_event = { id = thai_prayut.40 days = 365 } #Songkran 2023 - Prayut Edition
+				set_variable = { SIA_songkran_post_covid = 1 } #Tells to go to generic
+			}
+			else_if = { #Generic
+				limit = {
+					check_variable = { #
+						SIA_songkran_post_covid = 1
+					}
+				}
+				country_event = { id = thai_events.56 days = 365 }
+			}
 		}
 	}
     option = {
@@ -3064,7 +3191,9 @@ country_event = {
     desc = thai_events.57.d
 	is_triggered_only = yes
 	picture = GFX_report_monarch_birthday
-	
+	trigger = {
+		NOT = { check_variable = { SIA_government_leader = 3 } }
+	}
 	immediate = {
 		hidden_effect = {
 			country_event = { id = thai_events.57 days = 365 }
@@ -3081,7 +3210,9 @@ country_event = {
     desc = thai_events.58.d
 	is_triggered_only = yes
 	picture = GFX_report_constitution_day
-	
+	trigger = {
+		check_variable = { SIA_government_leader = 3 }
+	}
 	immediate = {
 		hidden_effect = {
 			country_event = { id = thai_events.58 days = 365 }
