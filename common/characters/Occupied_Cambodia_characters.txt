@@ -7,7 +7,7 @@ characters = {
 			} 
 		}
 		country_leader = {
-			ideology = mafia_state
+			ideology = corporatocracy
 		}
 	}
 	CAM_Ke_Kim_Yan = {
