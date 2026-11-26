@@ -5,6 +5,7 @@ defined_text = {
 	text = { #Starting UTN party mech
 		trigger = {
 			has_idea = SIA_prayut_chan_o_cha_utn_hog
+			NOT = { has_country_flag = SIA_utn_2027_victory }
 		}
 		localization_key = SIA_utn_banner_prayut
 	}
@@ -12,6 +13,7 @@ defined_text = {
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			has_country_flag = SIA_utn_party_mech_dispute
+			NOT = { has_country_flag = SIA_utn_2027_victory }
 		}
 		localization_key = SIA_utn_banner_prayutvssuchart
 	}
@@ -19,7 +21,7 @@ defined_text = {
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			NOT = {
-				has_country_flag = SIA_2027_elections_finished
+				has_country_flag = SIA_utn_2027_victory
 				has_country_flag = SIA_utn_party_mech_dispute
 			}
 			check_variable = { utn_candidate = 1 }
@@ -30,23 +32,17 @@ defined_text = {
 		trigger = {
 			has_idea = SIA_pirapan_salirathavibhaga_hog
 			NOT = {
-				has_country_flag = SIA_2027_elections_finished
+				has_country_flag = SIA_utn_2027_victory
 				has_country_flag = SIA_utn_party_mech_dispute
 			}
 			check_variable = { utn_candidate = 2 }
 		}
 		localization_key = SIA_utn_banner_suchart
 	}
-	text = { #Pirapan wins 2027
-		trigger = {
-			has_idea = SIA_pirapan_salirathavibhaga_hog
-			has_country_flag = SIA_2027_elections_finished
-		}
-		localization_key = SIA_utn_banner_pirapan2
-	}
 	text = { #Trinuch Compromise
 		trigger = {
 			has_idea = SIA_trinuch_thienthong_hog
+			NOT = { has_country_flag = SIA_utn_2027_victory }
 		}
 		localization_key = SIA_utn_banner_trinuch_compromise
 	}
@@ -54,8 +50,18 @@ defined_text = {
 		trigger = {
 			has_idea = SIA_suchart_chomklin_hog
 			has_country_flag = SIA_cambodia_war_stalemate
+			NOT = { has_country_flag = SIA_utn_2027_victory }
 		}
 		localization_key = SIA_utn_banner_suchart_stalemate
+	}
+}
+defined_text = {
+	name = SIA_UTN_PARTY_MECH_BANNER2027
+	text = { 
+		trigger = {
+			has_country_flag = SIA_utn_2027_victory
+		}
+		localization_key = SIA_utn_banner_2027
 	}
 }
 

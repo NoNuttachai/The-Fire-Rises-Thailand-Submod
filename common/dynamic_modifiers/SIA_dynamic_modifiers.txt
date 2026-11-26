@@ -119,7 +119,7 @@ SIA_royal_airforce_of_thailand_dynamic_modifier = {
 	static_anti_air_hit_chance_factor = SIA_royal_airforce_of_thailand_static_anti_air_hit_chance_factor_var
 }
 SIA_royal_navy_of_thailand_dynamic_modifier = {
-	icon = "GFX_ETH_chinese_investments"
+	icon = "GFX_idea_SIA_royal_navy_of_thailand"
 	enable = {
 		always = yes
 	}

@@ -11,7 +11,6 @@ SIA_parliament_elections = {
 		}
 		complete_effect = {
 			activate_mission = SIA_2023_elections
-			activate_mission = SIA_other_parties_campaigning
 			set_country_flag = SIA_ongoing_elections
 			set_country_flag = SIA_utn_active
 			country_event = thai_elections.2
@@ -30,7 +29,6 @@ SIA_parliament_elections = {
 		}
 		complete_effect = {
 			activate_mission = SIA_2027_elections
-			activate_mission = SIA_other_parties_campaigning
 			set_country_flag = SIA_ongoing_elections
 			set_country_flag = SIA_utn_active
 			country_event = thai_elections.2
@@ -95,7 +93,7 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 11
+		days_mission_timeout = 6
 		fixed_random_seed = no
 		timeout_effect = {
 			hidden_effect = {
@@ -103,6 +101,7 @@ SIA_parliament_elections = {
 			}
 			clr_country_flag = SIA_active_campaign_sabotage
 			activate_mission = SIA_campaign_cycle_moves
+			party_pos = yes
 		}
 		complete_effect = {
 			
@@ -124,19 +123,19 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided
 				limit = {
 					check_variable = { undecided_votes > 0 }
 				}
-				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { vote_change = 1}
 				set_temp_variable = { target = 1 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
 			else = { #Steal voters
-				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { vote_change = 1}
 				set_temp_variable = { 1st_target = 1 }
 				set_temp_variable = { 2nd_target = SIA_campaign_pprp_target }
 				SIA_elections_targeted_vote_increase = yes
@@ -171,19 +170,19 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided
 				limit = {
 					check_variable = { undecided_votes > 0 }
 				}
-				set_temp_variable = { vote_change = 3}
+				set_temp_variable = { vote_change = 2.5}
 				set_temp_variable = { target = 2 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
 			else = { #Steal voters
-				set_temp_variable = { vote_change = 3}
+				set_temp_variable = { vote_change = 2.5}
 				set_temp_variable = { 1st_target = 2 }
 				set_temp_variable = { 2nd_target = SIA_campaign_ptp_target }
 				SIA_elections_targeted_vote_increase = yes
@@ -209,7 +208,7 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided
@@ -247,7 +246,7 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided
@@ -291,19 +290,19 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided
 				limit = {
 					check_variable = { undecided_votes > 0 }
 				}
-				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { vote_change = 1}
 				set_temp_variable = { target = 6 }
 				SIA_elections_increase_votes_by_undecided = yes
 			}
 			else = { #Steal voters
-				set_temp_variable = { vote_change = 2}
+				set_temp_variable = { vote_change = 1}
 				set_temp_variable = { 1st_target = 6 }
 				set_temp_variable = { 2nd_target = SIA_campaign_bjt_target }
 				SIA_elections_targeted_vote_increase = yes
@@ -338,7 +337,7 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided
@@ -376,7 +375,7 @@ SIA_parliament_elections = {
 		}
 		is_good = no
 		selectable_mission = no
-		days_mission_timeout = 10
+		days_mission_timeout = 5
 		fixed_random_seed = no
 		timeout_effect = {
 			if = { #regular grab undecided

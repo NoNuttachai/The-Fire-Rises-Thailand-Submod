@@ -557,6 +557,7 @@ shared_focus = {
 		add_to_variable = { SIA_royal_army_of_thailand_army_morale_factor_var = 0.075 }
 		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.05 }
 		add_to_variable = { SIA_royal_army_of_thailand_army_attack_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_special_forces_cap_var = 0.25 }
 		effect_tooltip = {
 			swap_ideas = {
 				remove_idea = SIA_royal_army_of_thailand_dummy
@@ -602,6 +603,11 @@ shared_focus = {
 			bonus = 1
 			uses = 2
 			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = cat_mechanized_equipment
 		}
 		army_experience = 20
 		add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = -0.1 }
@@ -1199,7 +1205,7 @@ shared_focus = {
 shared_focus = {
 	id = SIA_thailand_in_the_world_stage
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
-	x = 44
+	x = 52
 	y = 0
 	cost = 3
 	ai_will_do = {
@@ -1220,9 +1226,9 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_ventures_in_europe
+	id = SIA_expanding_our_options
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
-	x = -5
+	x = -10
 	y = 1
 	cost = 2
 	ai_will_do = {
@@ -1257,7 +1263,46 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = SIA_deals_with_the_europeans
+	id = SIA_uncle_sams_disaster
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -4
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_expanding_our_options
+	prerequisite = { focus = SIA_expanding_our_options }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_ventures_in_south_america
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_uncle_sams_disaster
+	prerequisite = { focus = SIA_uncle_sams_disaster }
+	completion_reward = {
+		unlock_decision_tooltip = SIA_negotiate_with_argentina
+		unlock_decision_tooltip = SIA_negotiate_with_brazil
+	}
+}
+shared_focus = {
+	id = SIA_europe_in_flames
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = -2
 	y = 1
@@ -1269,66 +1314,14 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_ventures_in_europe
-	mutually_exclusive = { focus = SIA_talks_with_the_russians }
-	prerequisite = { focus = SIA_ventures_in_europe }
+	relative_position_id = SIA_expanding_our_options
+	prerequisite = { focus = SIA_expanding_our_options }
 	completion_reward = {
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = office_park
-				level = 1
-				instant_build = yes
-			}
-		}
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = office_park
-				level = 1
-				instant_build = yes
-			}
-		}
-		add_timed_idea = {
-			idea = SIA_thai_european_business_partnership
-			days = 350
-		}
-		every_country = {
-			limit = {
-				OR = {
-					tag = GER
-					tag = FRA
-					tag = ENG
-					tag = ITA
-					tag = SPR
-					tag = POL
-				}
-			}
-			add_timed_idea = {
-				idea = SIA_thai_european_business_partnership_others
-				days = 350
-			}
-			add_opinion_modifier = {
-				target = SIA
-				modifier = SIA_trade_negotiations
-			}
-		}
-		add_opinion_modifier = {
-			target = GER
-			modifier = SIA_trade_negotiations
-		}
-		add_opinion_modifier = {
-			target = FRA
-			modifier = SIA_trade_negotiations
-		}
-		add_opinion_modifier = {
-			target = ENG
-			modifier = SIA_trade_negotiations
-		}
+		
 	}
 }
 shared_focus = {
-	id = SIA_talks_with_the_russians
+	id = SIA_african_adventure
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
 	x = 0
 	y = 1
@@ -1340,52 +1333,18 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_ventures_in_europe
-	mutually_exclusive = { focus = SIA_deals_with_the_europeans }
-	prerequisite = { focus = SIA_ventures_in_europe }
+	relative_position_id = SIA_expanding_our_options
+	prerequisite = { focus = SIA_expanding_our_options }
 	completion_reward = {
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = synthetic_refinery
-				level = 2
-				instant_build = yes
-			}
-		}
-		random_owned_state = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = synthetic_refinery
-				level = 1
-				instant_build = yes
-			}
-		}
-		add_timed_idea = {
-			idea = SIA_thai_russian_economic_agreement
-			days = 350
-		}
-		SOV = {
-			add_timed_idea = {
-				idea = SIA_thai_russian_economic_agreement_others
-				days = 350
-			}
-			add_opinion_modifier = {
-				target = SIA
-				modifier = SIA_trade_negotiations
-			}
-		}
-		add_opinion_modifier = {
-			target = SOV
-			modifier = SIA_trade_negotiations
-		}
+		unlock_decision_tooltip = SIA_african_ventures
 	}
 }
 shared_focus = {
-	id = SIA_off_continent_diplomacy
+	id = SIA_a_commitment_to_global_security
 	icon = GFX_goal_SIA_Another_Year_with_Prayut
-	x = -1
+	x = 2
 	y = 1
-	cost = 3
+	cost = 4
 	ai_will_do = {
 		factor = 10
 	}
@@ -1393,46 +1352,140 @@ shared_focus = {
 		
 	}
 	available_if_capitulated = yes
-	relative_position_id = SIA_talks_with_the_russians
-	prerequisite = { focus = SIA_talks_with_the_russians focus = SIA_deals_with_the_europeans }
+	relative_position_id = SIA_expanding_our_options
+	prerequisite = { focus = SIA_expanding_our_options }
 	completion_reward = {
-		unlock_decision_tooltip = SIA_negotiate_with_argentina
-		unlock_decision_tooltip = SIA_negotiate_with_brazil
-		unlock_decision_tooltip = SIA_negotiate_with_iran
-		unlock_decision_tooltip = SIA_african_ventures
-		custom_effect_tooltip = generic_skip_one_line_tt
-		if = {
-			limit = {
-				country_exists = ISR
-			}
-			custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt
-			unlock_decision_tooltip = SIA_negotiate_with_israel
-		}
-		else = {
-			custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt_locked
-		}
 		
-		
-		if = {
-			limit = {
-				OR = {
-					country_exists = SAU
-					country_exists = ROC
-					country_exists = ARR
-				}
-				NOT = {
-					has_global_flag = saudi_civil_war_flag
-				}
-			}
-			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt
-			unlock_decision_tooltip = SIA_negotiate_with_saudi_arabia
-		}
-		else = {
-			custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt_locked
-		}
 	}
 }
-
+shared_focus = {
+	id = SIA_middle_eastern_troubles
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 4
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_expanding_our_options
+	prerequisite = { focus = SIA_expanding_our_options }
+	completion_reward = {
+		effect_tooltip = { #FOR TRANSPARENCY
+			if = {
+				limit = {
+					country_exists = ISR
+				}
+				custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt
+				
+			}
+			else = {
+				custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt_locked
+			}
+			unlock_decision_tooltip = SIA_negotiate_with_israel
+			if = {
+				limit = {
+					OR = {
+						country_exists = SAU
+						country_exists = ROC
+						country_exists = ARR
+					}
+					NOT = {
+						has_global_flag = saudi_civil_war_flag
+					}
+				}
+				custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt
+			}
+			else = {
+				custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt_locked
+			}
+			unlock_decision_tooltip = SIA_negotiate_with_saudi_arabia
+			unlock_decision_tooltip = SIA_negotiate_with_iran
+		}
+	
+	
+		
+		hidden_effect = {	#ACTUAL EFFECT APPLICATION
+			if = {
+				limit = {
+					country_exists = ISR
+				}
+				custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt
+				unlock_decision_tooltip = SIA_negotiate_with_israel
+			}
+			else = {
+				custom_effect_tooltip = SIA_off_continent_diplomacy_israel_tt_locked
+			}
+			if = {
+				limit = {
+					OR = {
+						country_exists = SAU
+						country_exists = ROC
+						country_exists = ARR
+					}
+					NOT = {
+						has_global_flag = saudi_civil_war_flag
+					}
+				}
+				custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt
+				unlock_decision_tooltip = SIA_negotiate_with_saudi_arabia
+			}
+			else = {
+				custom_effect_tooltip = SIA_off_continent_diplomacy_saudi_tt_locked
+			}
+			unlock_decision_tooltip = SIA_negotiate_with_iran
+		}
+		
+	}
+}
+shared_focus = {
+	id = SIA_generic_me
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = -1
+	y = 1
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_middle_eastern_troubles
+	prerequisite = { focus = SIA_middle_eastern_troubles }
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = SIA_lesson_from_our_actions
+	icon = GFX_goal_SIA_Another_Year_with_Prayut
+	x = 0
+	y = 2
+	cost = 4
+	ai_will_do = {
+		factor = 10
+	}
+	available = {
+		
+	}
+	available_if_capitulated = yes
+	relative_position_id = SIA_african_adventure
+	prerequisite = { 
+		focus = SIA_uncle_sams_disaster 
+		focus = SIA_europe_in_flames 
+		focus = SIA_african_adventure 
+		focus = SIA_a_commitment_to_global_security 
+		focus = SIA_middle_eastern_troubles 
+		
+	}
+	completion_reward = {
+		
+	}
+}
 #Asian House of Cards
 shared_focus = {
 	id = SIA_asian_house_of_cards

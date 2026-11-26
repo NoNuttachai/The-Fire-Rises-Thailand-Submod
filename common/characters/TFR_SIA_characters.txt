@@ -222,21 +222,6 @@ characters={
 				small = GFX_SIA_prawit_wongsuwan
 			}
 		}
-		advisor={
-			slot = theorist_minister
-			idea_token = SIA_prawit_wongsuwan_advisor
-			desc = SIA_prawit_wongsuwan_advisor_desc
-			cost = 0
-			allowed  = {
-				original_tag = SIA
-			}
-			available = {
-				always = yes
-			}
-			traits  = {
-				#GER_plenipotentiary_of_the_four_year_plan 
-			}
-		}		
 	}
 
 	SIA_apirat_kongsompong_char = {

@@ -61,9 +61,9 @@
  thai_liberal_populism_desc: "£GFX_phua_thai §RPheu Thai§! - §YLiberal Populism§!\n\n\n\n\n£GFX_SIA_thai_liberal_populism\n\n\n\n\n\n§YLiberal Populism§! is the ideology of the §YPheu Thai Party§!, originating from §YThaksin Shinawatra's§! political movement in the early 2000s. It combines populist social welfare policies with a market-oriented economy. It seeks to promote economic growth by incorporating socially populist policies, including expanding healthcare coverage and raising the minimum wage, alongside pro-business and economically liberal policies, such as corporate tax cuts aimed at boosting innovation, investment, and business growth. It also seeks to maintain working-class and rural support through a populist framework."
  SIA_national_conservativism_auth_desc: "£GFX_palang_pracharath §BPPRP§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_national_conservatism\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
  right_populist_agrarianism_desc: "£GFX_kla_tham §GKT§! - §YRight-Populist Agrarianism§!\n\n\n\n\n£GFX_SIA_kt_banner\n\n\n\n\n\n§YRight-Populist Agrarianism§! best describes the ideology of the §YKla Tham Party§!. Rather than adhering strictly to an abstract philosophical framework, the party operates with a pragmatic, regionalist, and conservative-populist orientation rooted in rural traditionalism. It seeks support from farmers by framing rural communities as the heart of the nation, blending traditional cultural and political values with targeted state interventions to protect local agriculture, support agricultural prices, and directly uplift rural livelihoods."
- national_conservativism_auth_utn_prayut_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_prayut\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
- national_conservativism_auth_utn_pirapan_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_pirapan\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
- national_conservativism_auth_utn_suchart_desc: "£GFX_united_thai_nation §BUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_suchart\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ national_conservativism_auth_utn_prayut_desc: "£GFX_united_thai_nation §PUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_prayut\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ national_conservativism_auth_utn_pirapan_desc: "£GFX_united_thai_nation §PUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_pirapan\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
+ national_conservativism_auth_utn_suchart_desc: "£GFX_united_thai_nation §PUTN§! - §YNational Conservatism§!\n\n\n\n\n£GFX_SIA_natcon_suchart\n\n\n\n\n\n§YNational Conservatism§! in Thailand is a right-wing ideology deeply rooted in the defense of Thailand's core institutions: the monarchy, the Theravada Buddhist faith, and the nation itself. It prioritizes nationalism and political stability while also maintaining a strong military force, viewing these principles as essential to safeguarding traditional values and preserving social order."
  
  ###National Focuses###
  SIA_future_forward_on_trial: "Future Forward on Trial"
@@ -333,14 +333,23 @@
  SIA_on_watch: "On Watch"
  SIA_nation_religion_monarchy: "Nation, Religion, and Monarchy"
  SIA_thailand_in_the_world_stage: "Thailand In The World Stage"
- SIA_ventures_in_europe: "Ventures In Europe"
- SIA_deals_with_the_europeans: "Deals With The Europeans"
- SIA_talks_with_the_russians: "Talks With The Russians"
- SIA_off_continent_diplomacy: "Off-Continent Diplomacy"
- SIA_off_continent_diplomacy_israel_tt: "§gSince Israel exists, we are able to conduct deals with them§!"
- SIA_off_continent_diplomacy_israel_tt_locked: "§gWe could had conduct trade deals with Israel... But it seems that has been §Rlong gone§!§!"
- SIA_off_continent_diplomacy_saudi_tt: "\n§gSince Saudi Arabia currently has a §Gfriendly regime§!, we are able to do deals with them§!"
- SIA_off_continent_diplomacy_saudi_tt_locked: "\n§gThere is an opportunity to conduct a §Cbusiness deal§! in §YArabia§! if the victor of the §YArabian Civil War§! is @SAU @ROC @ARR §Oapproachable§!, it will be even more §Ceffective§! if it's someone we had §Gsupported§! during the civil war§!"
+ 
+ SIA_expanding_our_options: "Expanding Our Options"
+ SIA_uncle_sams_disaster: "Uncle Sam's Disaster"
+ SIA_ventures_in_south_america: "Ventures in South America"
+ SIA_europe_in_flames: "Europe in Flames"
+ SIA_african_adventure: "African Adventure"
+ SIA_a_commitment_to_global_security: "A Commitment to Global Security"
+ SIA_middle_eastern_troubles: "Middle Eastern Troubles"
+ SIA_generic_me: "PLACEHOLDER MIDDLE EAST"
+ SIA_lesson_from_our_actions: "Lessons From Our Actions"
+ 
+ 
+ 
+ SIA_off_continent_diplomacy_israel_tt: "£GFX_trigger_yes @ISR §WIsrael§! §YExists§!"
+ SIA_off_continent_diplomacy_israel_tt_locked: "£GFX_trigger_no @ISR §WIsrael§! §YExists§!"
+ SIA_off_continent_diplomacy_saudi_tt: "\n£GFX_trigger_yes §gEither @SAU @ROC @ARR §Gexists§! and the §YSaudi Civil War§! has §Gended§!.§! §CAdditional effects if the victor of the civil war is the one we sided with§!"
+ SIA_off_continent_diplomacy_saudi_tt_locked: "\n£GFX_trigger_no §gEither @SAU @ROC @ARR §Gexists§! and the §YSaudi Civil War§! has §GEnded§!.§! §CAdditional effects if the victor of the civil war is the one we sided with§!"
  SIA_asian_house_of_cards: "House Of Cards"
  
  SIA_riding_the_shoulders_of_the_chinese_dragon: "Riding The Shoulders Of The Chinese Dragon"
@@ -556,9 +565,12 @@
  SIA_call_japan_industries: "Call Japan Industries"
  SIA_set_north: "Set North"
  SIA_learn_from_the_self_defense_force: "Learn From the Self Defense Force"
+ SIA_learn_from_the_self_defense_force_tt: "§CReadiness Falters§! and §CPerception Decreases§! in the §YMilitary Reformation§! mechanic will have its change be §Gcut in half§!, resulting into a §Y-2.50%§! §Odecay§!"
  SIA_unfinished_business: "Unfinished Business"
  
  SIA_midas_touch: "Midas Touch"
+ SIA_midas_touch_tt: "§gWe will be given §Y3 years§! to fulfill this project.§!"
+ 
  SIA_capping_oil: "Capping Oil"
  SIA_solar_light: "Solar Light"
  SIA_reform_the_credit_bureau: "Reform the Credit Bureau"
@@ -683,6 +695,7 @@
  SIA_oil_crisis_desc: "\n\n\n\n\n£GFX_SIA_oil_crisis\n\n\n\n\n\n"
  SIA_lottery_conscription: "Lottery Conscription"
  SIA_lottery_conscription_desc: ""…what makes Thailand's system of conscription interesting is the fact that it operates based on a lottery system with each recruitment center every April having a set quota of bodies that it must enlist in the service dictating how big the lottery is set to be…\n\n…you are to draw your card and face the large crowd of other lads and their mortified mothers, if the card you draw is black, lucky you!, you get to waddle home and continue on with your life unmolested, §Rif your card is red however….§!"\n- Count Dankula (Mark Meechan)"
+ SIA_incentivized_conscription: "Incentivized Conscription"
  SIA_low_income_only_welfare: "Low-Income Only Welfare"
  SIA_low_income_only_welfare_desc: ""Today, nobody wants to be called poor. I don't look at them that way either, But We have to expand their income with many projects that can't make them out of the poverty but will make them happy." - Prayut Chan-O-Cha"
  
@@ -782,6 +795,7 @@
  SIA_dispersing_the_protests: "Dispersing The Protests"
  SIA_striking_the_rioters: "Striking The Rioters"
  SIA_tokyo_bangkok_sino_containment_strategy: "Tokyo-Bangkok Chinese Containment Strategy"
+ SIA_lessons_from_the_jsdf: "Lessons From The Japanese Self Defense Force"
  SIA_pdto_scientific_cooperative: ""PDTO Scientific Cooperative"
  SIA_eadi_industry_stimulus: "EADI Industry Stimulus"
  SIA_sino_thai_military_training: "Joint Sino-Thai Training"
@@ -814,6 +828,7 @@
  SIA_streamlined_bureaucracy: "Streamlined Bureaucracy"
  SIA_support_next_gens_idea: "Supporting The Next Generation"
  SIA_cut_cut_cut: "Debt Cleanup Strategy"
+ SIA_digitalized_government: "Digitalized Government"
  SIA_advancing_environmental_progress: "Advancing Environmental Progress"
  SIA_pollution_woes: "Pollution Woes"
  ###Event###
@@ -1230,6 +1245,18 @@
  thai_events.102.d: "The COVID-19 pandemic contributed to a reduction in air pollution as travel, industrial production, and economic activity declined. However, this improvement did not eliminate the underlying causes of Thailand's PM2.5 problem. As a silver lining, prior exposure to hazardous air quality meant that the Thai public was already accustomed to routine mask-wearing, a practice that provided a familiar form of protection during the pandemic and may have helped reduce the spread of the virus."
  thai_events.102.a: "No Mask, No Entry"
  
+ thai_events.103.t: "Commander-in-Chief Apirat Retires"
+ thai_events.103.d: "Something"
+ thai_events.103.a: "Other Thing"
+ 
+ thai_events.104.t: "Commander-in-Chief Narongphan Retires"
+ thai_events.104.d: "Something"
+ thai_events.104.a: "Other Thing"
+ 
+ thai_events.105.t: "Thamanat Cleared by the Constitutional Court"
+ thai_events.105.d: "The Constitutional Court has delivered a ruling allowing Thamanat Prompow to retain his parliamentary seat and his position as Deputy Minister of Agriculture and Cooperatives.Following a petition filed by more than 50 opposition lawmakers, led by Move Forward Party leader Pita Limjaroenrat, challenging Thamanat's eligibility under the constitution, which prohibits anyone convicted of serious drug offenses from holding parliamentary or cabinet office.\n\nThe legal challenge stemmed from a 2019 investigative report by The Sydney Morning Herald, which brought Australian court records back into the international spotlight. Those records detailed a 1993 arrest in Sydney, Australia, where Thamanat then using the alias Manat Bophlom was implicated in a heroin trafficking case. He was arrested by Australian police and sentenced to four years in a New South Wales prison before being deported in 1997.\n\nThe Court reasoned that a judgment issued by an Australian court did not constitute a judgment by a Thai court, and that enforcing a foreign court's ruling or order within Thailand would conflict with the principles of judicial sovereignty. Consequently, Thamanat retained his status as a Member of Parliament and government minister."
+ thai_events.105.a: "And he sang as he shoved that heroin in his tucker bag..."
+ 
  thai_events.167.t: "Thai Arya Party"
  thai_events.167.d: "Recently, the Thai Arya Party (also known as the Thai Aryan or Thai Arya Movement) has attracted some attention on the internet. It is an unregistered political party that uses imagery from Donald Trump's MAGA movement and adopts the slogan "Make Thailand Great Again." On its website and Facebook page, the party's administrators have expressed admiration for Field Marshal Plaek Phibunsongkhram in various posts\n\nThe party is particularly opposed to Chinese economic influence, which it views as an attempt by China to gain control over Thailand through economic expansion and the activities of Chinese grey-market businesses.\n\nIts website has sold MAGA-style red hats bearing the slogan "Make Thailand Great Again" for 390 baht. Despite its apparent right-wing political orientation, the movement has displayed some ideological contradictions. In one Facebook post, it quoted Chit Phumisak and praised him for his anti-Chinese stance, despite him being a Maoist communist. Furthermore, many members of its Discord server and Facebook page identify as left-wing or far-left. Overall, the movement appears to lack a coherent political orientation.\n\nIt seems this so called "political party" is less of a political party and more of an online space on Discord server and Facebook group page for Thai teenagers to larp about politics."
  thai_events.167.a: "Phibun Impressed"
@@ -1410,7 +1437,7 @@
  thai_prayut.21.t: "The Heir's Ascension"
  thai_prayut.21.d: ""
  thai_prayut.21.a: ""
- thai_prayut_21_tt: "§g§BPirapan§! has defeated his §Rchallenger§! and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §BUTN§! §YCandidate§!§!"
+ thai_prayut_21_tt: "§g§BPirapan§! has defeated his §Rchallenger§! and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §PUTN§! §YCandidate§!§!"
  
  thai_prayut.22.t: "Flied Too High"
  thai_prayut.22.d: "Pirapan always asked himself what he will do once he wins the war against Cambodia, what he didn't thought of was what he will do when he loses.\n\nSo when the news came that the Thai military went home wounded and nothing was won, his head started to ache.\n\nIt started as a minor complaint from his accomplices, then it was all on the news, then it was the entire party wanting to ditch him. The ship is sinking and he, as the captain, will be brought along with it. Across the building, he saw Suchart, smiling as this is his greatest opportunity yet, a divine intervention to lead the UTN.\n\nPirapan knows his time is over, and the so called heir of Prayut is long gone."
@@ -1454,7 +1481,7 @@
  thai_prayut.31.t: "Suchart Wins Nomination"
  thai_prayut.31.d: ""
  thai_prayut.31.a: ""
- thai_prayut_31_tt: "§g§BSuchart§! has triumphed against the so called §Rheir§! and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §BUTN§! §YCandidate§!§!§!"
+ thai_prayut_31_tt: "§g§BSuchart§! has triumphed against the so called §Rheir§! and has secured the £GFX_united_thai_nation §Bparty's§! support.\n\nHe will run in the next §Ygeneral elections§! as the £GFX_united_thai_nation §PUTN§! §YCandidate§!§!§!"
  
  thai_prayut.32.t: "The PPRP Kingmaker"
  thai_prayut.32.d: ""
@@ -1483,6 +1510,15 @@
  thai_prayut_38_a_tt: "§Y§!\n\n\n\n\n\n\n£GFX_hog_SIA_SIA_suchart_chomklin \n\n\n\n\n\n\n\n§PSuchart Chomklin§! will be the §YPrime Minister§! candidate for the £GFX_united_thai_nation §PUnited Thai Nation Party§! in this §Ysnap election§!"
  thai_prayut.38.b: "Akanat for the win"
  thai_prayut_38_b_tt: "§Y§!\n\n\n\n\n\n\n£GFX_hog_SIA_SIA_akanat_promphan \n\n\n\n\n\n\n\n§PAkanat Promphan§! will be the §YPrime Minister§! candidate for the £GFX_united_thai_nation §PUnited Thai Nation Party§! in this §Ysnap election§!"
+ 
+ thai_prayut.39.t: "The Dragon or The Rising Sun"
+ thai_prayut.39.d: "who"
+ thai_prayut.39.a: "Japan land"
+ thai_prayut.39.b: "We speaking Chinese"
+ 
+ thai_prayut.40.t: "Songkran 2023 - Prayut Joins Water Gun Fight"
+ thai_prayut.40.d: "After years of fear surrounding COVID-19, people across Thailand were finally able to enjoy the festivities without restrictions, as millions of locals and international tourists flooded streets nationwide to celebrate the traditional Thai New Year.\n\nAmong the celebrations, Prime Minister Prayut Chan-o-cha stepped into the heart of Bangkok's Songkran festivities. Trading his usual formal attire for a colorful floral Songkran shirt, the prime minister made an unannounced visit to Khao San Road on April 14. After briefly inspecting security arrangements, Prayut was quickly targeted by water guns. Despite security personnel urging the crowd not to aim at his face, many nevertheless sprayed him directly. Undeterred, Prayut armed himself with a large water gun and fired back, getting soaked alongside startled tourists and locals, some of whom questioned whether he was the real prime minister or merely a lookalike."
+ thai_prayut.40.a: "Looks like he's having fun"
  
  thai_ptp.1.t: "Pheu Thai wins 2023 Elections"
  thai_ptp.1.d: ""
@@ -1703,13 +1739,19 @@
  
  SIA_parliament_total_seats_header: "§Y--- Parliamentary Breakdown ---§!"
  SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
- SIA_parliament_speaker_desc: "§YThe Speaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\n§YCurrent Speaker§!: Chuan Leekpai\n\n§YSpeaker Political Party§!: £GFX_democrat §CDemocrat Party§!"
-
+ SIA_parliament_speaker_desc: "§YThe Speaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\n§YCurrent Speaker§!: [SIA_speaker_active_name]\n\n§YSpeaker Political Party§!: [SIA_speaker_active_party]"
+ 
+ SIA_parliament_speaker_name_2.1: "Pichet Chuamuangpan"
+ SIA_parliament_speaker_name_4.1: "Chuan Leekpai"
+ 
+ SIA_parliament_speaker_party_ptp: "£GFX_phua_thai §RPheu Thai Party§!"
+ SIA_parliament_speaker_party_dp: "£GFX_democrat §CDemocrat Party§!"
+ 
+ 
+ 
+ 
  SIA_parliament_gov_support_loc: "Total §PGovernment§! support: §P[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
  SIA_parliament_opp_support_loc: "Total §ROpposition§! support: §R[?SIA_opp_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
-
- SIA_parliament_speaker_name_loc: "Current Speaker: §YChuan Leekpai§!"
- SIA_parliament_speaker_party_loc: "Speaker Political Party: £GFX_democrat §YDemocrat Party§!"
 
  # Party full name lines (for single-column layout)
  SIA_parliament_pprp_full: "£GFX_palang_pracharath §BPalang Pracharath Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pprp_seats_var|0]§! Seats"
@@ -2185,12 +2227,12 @@
  SIA_yearly_plan_promote_environmentalism: "§YYearly Plan§! - Focus on Environmentalism"
  SIA_yearly_plan_promote_environmentalism_2: "§YYearly Plan§! - Focus on Environmentalism"
  SIA_vehicle_and_traffic_regulations: "§GEnvironment§! - Vehicle and Traffic Regulations"
- SIA_campaign_against_crop_residue_burning: "§GEnvironment§! - Implement Crop Residue Burning Ban"
+ SIA_campaign_against_crop_residue_burning: "§GEnvironment§! - Crop Residue Burning Ban"
  SIA_implement_environmental_policies: "§GEnvironment§! - Implement Environmental Policies"
  SIA_enforce_industry_regulations: "§GEnvironment§! - Enforce Industry Regulations"
- SIA_expand_government_conservation_zones: "§GEnvironment§! - Expand Government Conservation Zones"
+ SIA_expand_government_conservation_zones: "§GEnvironment§! - Expand Conservation Zones"
  SIA_commit_to_reforestation_program: "§GEnvironment§! - Commit to Reforestation Program"
- SIA_innovate_efficient_conservation_methods: "§GEnvironment§! - Innovate Efficient Conservation Methods"
+ SIA_innovate_efficient_conservation_methods: "§GEnvironment§! - Innovate Conservation Methods"
  SIA_promote_corporate_expansion: "§RGrowth§! - Promote Corporate Expansion"
  SIA_rollback_regulations: "§RGrowth§! - Rollback Regulations"
  SIA_sell_land_to_businesses: "§RGrowth§! - Sell Land to Businesses"
@@ -2216,12 +2258,13 @@
  SIA_cut_agencies: "§gSpecialist§! - Cut Agencies"
  SIA_relax_the_quota: "§gSpecialist§! - Relax the Quota"
  
- SIA_utn_promote_green_energy: "£GFX_united_thai_nation §BUTN§!: Promote Green Energy"
- SIA_utn_enhance_vocational_training: "£GFX_united_thai_nation §BUTN§!: Enhance Vocational Training"
- SIA_utn_invest_on_ai_technology: "£GFX_united_thai_nation §BUTN§!: Invest On AI Technology"
- SIA_utn_encourage_tourism: "£GFX_united_thai_nation §BUTN§!: Encourage Tourism"
- SIA_utn_subsidize_agriculture: "£GFX_united_thai_nation §BUTN§!: Subsidize Agriculture"
- SIA_utn_establish_recreational_centers: "£GFX_united_thai_nation §BUTN§!: Establish Recreational Centers"
+ SIA_utn_metropolis_project: "£GFX_united_thai_nation §PUTN§!: Metropolis Project"
+ SIA_utn_promote_green_energy: "£GFX_united_thai_nation §PUTN§!: Promote Green Energy"
+ SIA_utn_enhance_vocational_training: "£GFX_united_thai_nation §PUTN§!: Enhance Vocational Training"
+ SIA_utn_invest_on_ai_technology: "£GFX_united_thai_nation §PUTN§!: Invest On AI Technology"
+ SIA_utn_encourage_tourism: "£GFX_united_thai_nation §PUTN§!: Encourage Tourism"
+ SIA_utn_subsidize_agriculture: "£GFX_united_thai_nation §PUTN§!: Subsidize Agriculture"
+ SIA_utn_establish_recreational_centers: "£GFX_united_thai_nation §PUTN§!: Establish Recreational Centers"
  
  SIA_economy_area_focused_decisions: "                          §YAREA FOCUSED§! §YDECISIONS§!             "
  SIA_area_increase_state_investment: "§YArea§! - Increase State Investment"
@@ -2230,7 +2273,7 @@
  SIA_generic_Phuket_Medicare_Program: "§YPhuket§!: Medicare Program"
  SIA_generic_subsidize_area_infrastructure: "§YGENERIC§!: Subsidize Area Infrastructure"
  SIA_generic_increase_resource_extraction: "§YGENERIC§!: Increase Extraction Rates"
- SIA_utn_incentivize_foreign_investment: "£GFX_united_thai_nation §BUTN§!: Incentivize Foreign Investment"
+ SIA_utn_incentivize_foreign_investment: "£GFX_united_thai_nation §PUTN§!: Incentivize Foreign Investment"
  
  SIA_unlock_generic_fueling_the_engine_decision: "§gUnlocks above §Ygeneric decision§! for the §YFueling the Engine§! mechanic§!"
  SIA_unlock_isan_decisions_tt: "Decision will unlock in the §nEastern Thailand§! Area in the §YFueling the Engine§! mechanic"
@@ -2265,18 +2308,28 @@
  SIA_public_perception_decisions: "                         §YPUBLIC PERCEPTION DECISIONS§!             "
  
  SIA_utn_party_mech: "£GFX_united_thai_nation UTN Party Machine"
- SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER]\n\n" #------------------------------------------\n§YFaction Influences§!\n\n§gHardliners§!\n§YInfluence§! Effect\n\n§BConservatives§!\n§YInfluence§! Effect\n   Stability: 0120414993\n  £GFX_palang_pracharath §PPPRP§!:\n   Pol power gain: 140141\n\n§OLoyalists§!\n§YInfluence§! Effect
- SIA_utn_banner_prayut: "\n\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §BUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nFor it to be achieved however, Prayut needs to prove that change will come if they just give him some time. His legacy will be cemented if his plans are successful, with Pirapan benefitting and the party remaining united even after his time.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
- SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §BUTN§! as the party remains divided on who to support for the future.\n\nOn the left side is §YPirapan Salirathavibhaga§!, the natural successor of Prayut with experience as Deputy PM to his belt. With his Technocratic vision, he aims to continue and expand the renewable program initiated by Prayut.\n\nOn the other side is §YSuchart Chomklin§!, the strongman of Chonburi and a dealmaker who has solidified his control over the eastern provinces of Thailand. He is known to be good at handling internal party affairs and able to whip the party into shape.\n\nWith a §Gvictory§! over @CAM §PCambodia§! to his name, will §YPirapan§! stop his §Ochallenger§! or will his party §Rthrow him down under§! for the next general elections?\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
- SIA_utn_banner_pirapan: "£GFX_SIA_utn_party_mech_pirapan\n\n\n\n\n\n\n\nFresh from §YGeneral Prayut's§! stepping down as §YPrime Minister§! in 2025, the £GFX_united_thai_nation §BUTN§! has followed the will of §YPrayut§! and has chosen §BPirapan Salirathavibhaga§! as the next Prime Minister.\n\nNow, §BPirapan§! must §Gearn the trust§! and §Gsupport§! from within the party if he ever wants to win the §Ynext elections§!"
- SIA_utn_banner_pirapan2: "£GFX_SIA_party_mech_pirapan2\n\n\n\n\n\n\n\nAfter winning the §Y2027 Elections§!, §BPirapan§! has managed to rally the £GFX_united_thai_nation §BUTN§! behind him as the designated successor."
- SIA_utn_banner_suchart: "£GFX_SIA_utn_party_mech_suchart\n\n\n\n\n\n\n\nIt wasn't §RPirapan§! who came out on top but instead it was §BSuchart Chomklin§!. After dealing with internal opposition, Suchart now leads the £GFX_united_thai_nation §BUTN§! as the §Y2027 Elections§! draws near."
- SIA_utn_banner_suchart_stalemate: "£GFX_SIA_utn_party_mech_suchart2\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchart Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchart§! will now lead the way and guide the £GFX_united_thai_nation §BUTN§! forward and will not repeat the same mistakes as his predecessor"
- SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §PPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
+ SIA_utn_party_mech_desc: "\n\n\n\n\n[SIA_UTN_PARTY_MECH_BANNER][SIA_UTN_PARTY_MECH_BANNER2027]\n\n" #------------------------------------------\n§YFaction Influences§!\n\n§gHardliners§!\n§YInfluence§! Effect\n\n§BConservatives§!\n§YInfluence§! Effect\n   Stability: 0120414993\n  £GFX_palang_pracharath §BPPRP§!:\n   Pol power gain: 140141\n\n§OLoyalists§!\n§YInfluence§! Effect
+ SIA_utn_banner_prayut: "\n\n\n\n\n\n\n\n\nWith its victory in the §Y2023 Elections§!, the £GFX_united_thai_nation §PUTN§! has ascended into becoming the leader in deciding the future of Thailand. §YRiding on the coattails of General Prayut Chan-O-Cha's popularity§!, the party aims to establish itself as a §Gformidable§! party in the political space of thailand.\n\nFor it to be achieved however, Prayut needs to prove that change will come if they just give him some time. His legacy will be cemented if his plans are successful, with Pirapan benefitting and the party remaining united even after his time.\n\nFor now, the party remains §Gunited§! in following §BPrayut's§! lead and will unconditionally support any of his §Yagenda§!."
+ SIA_utn_banner_prayutvssuchart: "£GFX_SIA_utn_party_mech_pirapanvssuchart\n\n\n\n\n\n\n\nWith Prayut's term over, the worse has come for the £GFX_united_thai_nation §PUTN§! as the party remains divided on who to support for the future.\n\nOn the left side is §YPirapan Salirathavibhaga§!, the natural successor of Prayut with experience as Deputy PM to his belt. With his Technocratic vision, he aims to continue and expand the renewable program initiated by Prayut.\n\nOn the other side is §YSuchart Chomklin§!, the strongman of Chonburi and a dealmaker who has solidified his control over the eastern provinces of Thailand. He is known to be good at handling internal party affairs and able to whip the party into shape.\n\nWith a §Gvictory§! over @CAM §PCambodia§! to his name, will §YPirapan§! stop his §Ochallenger§! or will his party §Rthrow him down under§! for the next general elections?\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+ SIA_utn_banner_pirapan: "£GFX_SIA_utn_party_mech_pirapan\n\n\n\n\n\n\n\nFresh from §YGeneral Prayut's§! stepping down as §YPrime Minister§! in 2025, the £GFX_united_thai_nation §PUTN§! has followed the will of §YPrayut§! and has chosen §BPirapan Salirathavibhaga§! as the next Prime Minister.\n\nNow, §BPirapan§! must §Gearn the trust§! and §Gsupport§! from within the party if he ever wants to win the §Ynext elections§!"
+ SIA_utn_banner_suchart: "£GFX_SIA_utn_party_mech_suchart\n\n\n\n\n\n\n\nIt wasn't §RPirapan§! who came out on top but instead it was §BSuchart Chomklin§!. After dealing with internal opposition, Suchart now leads the £GFX_united_thai_nation §PUTN§! as the §Y2027 Elections§! draws near."
+ SIA_utn_banner_suchart_stalemate: "£GFX_SIA_utn_party_mech_suchart2\n\n\n\n\n\n\n\nIn times of crisis, there is always a §Gsaviour§!\n\n§BSuchart Chomklin§! is that saviour after §BPirapan's§! fall from grace after his §Rhumiliating performance in Cambodia§!\n\n§BSuchart§! will now lead the way and guide the £GFX_united_thai_nation §PUTN§! forward and will not repeat the same mistakes as his predecessor"
+ SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §BPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
+ 
+ #2027
+ SIA_utn_banner_2027: "£GFX_SIA_party_mech_2027\n\n\n\n\n\n\n\nThe United Thai Nation Party is the blah blah blah.\n\nDespite the departure of their renowned figure, Prayut Chan-o-cha, they have managed to blah blah.\n\nThe Party consists of several factions inside it and the party must remain in consensus or risk infighting among themselves.\n\n\n\n\n\n\n\n\n"
+ SIA_utn_cohesion_text: "£GFX_united_thai_nation §PUTN§! §YParty Cohesion§!: [?SIA_utn_cohesion_var|2]"
+ 
  SIA_honor_the_generals_legacy: "Honor The General's Legacy"
  SIA_suchart_gathers_influence: "Suchart Gathers Influence"
  SIA_pirapan_gathers_influence: "Pirapan Gathers Influence"
  SIA_tug_of_war_fail_check: "The £GFX_united_thai_nation §PParty§! has convened"
+ SIA_the_mps_changes_their_tune: "§RThe MPs Change Their Tune§!"
+ SIA_deals_with_prominent_members: "Deals With Prominent Members"
+ SIA_whip_the_party_into_shape: "Whip the Party Into Shape"
+ SIA_placate_discontent_members: "Placate Discontent Members"
+ SIA_utn_bolster_the_production_lines: "£GFX_united_thai_nation §PUTN§!: Bolster the Production Lines"
+ SIA_utn_patriotic_thai_program: "£GFX_united_thai_nation §PUTN§!: Patriotic Thai Program"
  SIA_launch_media_advertisements: "Launch Media Advertisements"
  SIA_show_our_success: "Show Our Success"
  SIA_a_safer_thailand: "A Safer Thailand"
@@ -2309,7 +2362,7 @@
  SIA_tug_of_war_status_suchart_tt: "If this continues, §PSuchart§! will §Gwin§! and he will be the §Ycandidate§! for the upcoming elections"
  SIA_tug_of_war_pirapan_booster: "When §YPrayut§! steps down, §BPirapan§! will gain a §Gbetter§! §Ystarting advantage§! in the §gTug Of War§!"
  SIA_tug_of_war_suchart_booster: "When §YPrayut§! steps down, §PSuchart§! will gain a §Gbetter§! §Ystarting advantage§! in the §gTug Of War§!"
- SIA_tug_of_war_start_tt: "With the §YCambodian War§! now over and General Prayut §Rstepping down§!, an §Rinternal party conflict§! has started between §BPirapan§! and §PSuchart§!\n §g-The Tug of War Mechanic will activate in the £GFX_united_thai_nation §BUTN Party Machine§! as the two individuals fight for influence over the party.§!"
+ SIA_tug_of_war_start_tt: "With the §YCambodian War§! now over and General Prayut §Rstepping down§!, an §Rinternal party conflict§! has started between §BPirapan§! and §PSuchart§!\n §g-The Tug of War Mechanic will activate in the £GFX_united_thai_nation §PUTN Party Machine§! as the two individuals fight for influence over the party.§!"
  SIA_pirapan_boost_tt: "§BPirapan§! has taken the §Cinitiative§! §Y[?SIA_pirapan_booster]§! times, giving him an additional §Y[?boost_temp]%§! influence in the §Ytug of war§!"
  SIA_suchart_boost_tt: "§PSuchart§! has taken the §Cinitiative§! §Y[?SIA_suchart_booster]§! times, giving him an additional §Y[?boost_temp]%§! influence in the §Ytug of war§!"
  SIA_tug_of_war_legacy_booster_1: " §g-Additionally, with §YPrayut§! viewed with §CReverence§!, §BPirapan§! has gained an additional §Y15% influence§! at the start§!"
@@ -2317,6 +2370,16 @@
  SIA_tug_of_war_variable_breakdown: "§B[?SIA_pirapan_influ]§!-§P[?SIA_suchart_influ]§!"
  SIA_tug_of_war_pirapan_increase: "§BPirapan's§! §YInfluence§! will change by [?influ_change|-+]"
  SIA_tug_of_war_suchart_increase: "§PSuchart's§! §YInfluence§! will change by [?influ_change|-+]"
+ 
+ SIA_once_again_the_utn_tt: "§LThe brief §Rpower struggle§! in the party has exposed the party's disagreements among each other.\n\n§YThe Party Mechanic§! will transform to monitor the £GFX_united_thai_nation §PUTN's§! §YParty Cohesion§! and must be well maintained in order to avoid §Rpenalties§!.§!"
+ SIA_change_utn_cohesion_tt: "£GFX_united_thai_nation §YParty Cohesion§! will change by [?change_temp|-+2]"
+ SIA_party_cohesion_check_tt: "§YThis policy has some pushback among our party§!"
+ SIA_party_cohesion_check_bad: "§OWarning§!: §gCurrent §YCohesion§! is §Rbelow 50%§!, this will lead to inefficient implementation and will §Rcost§! us the following§!:\n§L§"
+ SIA_party_cohesion_check_good: "§g£GFX_united_thai_nation §PThe Party§! is currently in §Cagreement§!, avoiding us from any maluses§!\n§g§"
+ SIA_utn_cohesion_prayut_legacy_tt: "   -£GFX_united_thai_nation §LPrayut's Legacy§! is viewed with [SIA_utn_prayut_legacy_viewed], giving us the following effect:"
+ SIA_cohesion_color_break_tt: "§!-------------------------------------------"
+ SIA_utn_side_japan: "§gHas chosen @JAP §WJapan§! as the contract partner§!"
+ SIA_utn_side_china: "§gHas chosen @PRC §RChina§! as the contract partner§!"
  
  SIA_forpol_category: "Friends And Foes"
  SIA_forpol_int_text: "§WCountry Interaction§!"
@@ -2581,8 +2644,8 @@
  SIA_deputy_minister: "Deputy Minister"
  #SIA
 
- SIA_ide_pprp: "£GFX_palang_pracharath §PPPRP§!"
- SIA_ide_utn: "£GFX_united_thai_nation §BUTN§!"
+ SIA_ide_pprp: "£GFX_palang_pracharath §BPPRP§!"
+ SIA_ide_utn: "£GFX_united_thai_nation §PUTN§!"
  SIA_ide_independent: "£GFX_FRA_centrist_texticon §LIndependent§!"
  SIA_ide_neoliberal: "£GFX_chartpattana §BNeo§!§Rliberal§!"
  SIA_ide_ptp: "£GFX_phua_thai §RPTP§!"
@@ -2744,3 +2807,5 @@
  CAM_thai_occupied_2: "RTARF Administration of Cambodia"
  CAM_thai_occupied_2_DEF: "Royal Thai Armed Forces Administration of Cambodia"
  CAM_thai_occupied_2_ADJ: "Cambodian"
+ 
+ line_graph_data_label:0 "[?x_axis_array^segment_idx]"

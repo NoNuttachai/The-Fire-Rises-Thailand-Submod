@@ -27,7 +27,7 @@ SIA_setup_elections_2023 = { #Protests dismantled - Prayut present scenario
 		set_variable = { party_votes = 12 }
 	}
 	3 = {
-		set_variable = { party_votes = 8 }
+		set_variable = { party_votes = 18 }
 	}
 	4 = {
 		set_variable = { party_votes = 4 }
@@ -430,7 +430,14 @@ SIA_campaign_tick_effect = {
 		}
 		
 		
-		2 = { #Minors and who???
+		1 = { #Minors and who???
+			modifier = { 
+				factor = 0
+				OR = {
+					check_variable = { 1:party_votes > 2:party_votes }
+					check_variable = { 6:party_votes > 3:party_votes }
+				}
+			}
 			activate_mission = SIA_minor_campaigning
 			activate_mission = SIA_dp_campaigning
 			activate_mission = SIA_bjt_campaigning
@@ -444,13 +451,13 @@ SIA_campaign_tick_effect = {
 					limit = {
 						check_variable = { SIA_election_playing_as = 2 }
 					}
-					check_variable = { 11:party_votes > 22 }
+					check_variable = { 11:party_votes > 27 }
 				}
 				else = {
-					check_variable = { 2:party_votes > 22 }
+					check_variable = { 2:party_votes > 27 }
 				}
 				
-				check_variable = { 3:party_votes > 22 }
+				check_variable = { 3:party_votes > 27 }
 			}
 			if = {
 				limit = {
@@ -476,15 +483,15 @@ SIA_campaign_tick_effect = {
 				check_variable = { 11:party_votes > 15 }
 			}
 			modifier = { #Lower chances if BJT has high votes
-				factor = 0.25
+				factor = 0.1
 				check_variable = { 6:party_votes > 9 }
 			}
 			modifier = { #Lower chances if PPRP has high votes
-				factor = 0.25
+				factor = 0.1
 				check_variable = { 1:party_votes > 7 }
 			}
 			modifier = { #Increase chances if sided with UTN and has low votes
-				factor = 2
+				factor = 1
 				check_variable = { SIA_election_playing_as = 11 }
 				check_variable = { 11:party_votes < 20 }
 			}
@@ -566,6 +573,13 @@ SIA_campaign_targetted_roll = {
 				set_variable = { SIA_campaign_ptp_target = 11 }
 			}
 			1 = {
+				modifier = { #Increased chances if UTN has high votes
+					factor = 2
+					check_variable = { 11:party_votes > 22 }
+				}
+				set_variable = { SIA_campaign_ptp_target = 11 }
+			}
+			1 = {
 				modifier = { #Increased chances if MFP has high votes
 					factor = 2
 					check_variable = { 3:party_votes > 18 }
@@ -579,6 +593,13 @@ SIA_campaign_targetted_roll = {
 					factor = 0
 					check_variable = { 11:party_votes < 15 }
 					check_variable = { SIA_election_playing_as = 11 }#Player friendly mod btw
+				}
+				set_variable = { SIA_campaign_mfp_target = 11 }
+			}
+			1 = {
+				modifier = { #Increased chances if UTN has high votes
+					factor = 2
+					check_variable = { 11:party_votes > 22 }
 				}
 				set_variable = { SIA_campaign_mfp_target = 11 }
 			}
@@ -891,42 +912,42 @@ SIA_campaign_targetted_roll = {
 SIA_elections_update_undecided = {
 	clamp_variable = {
 		var = 1:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 2:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 3:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 4:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 6:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 9:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 11:party_votes
-		min = 0
+		
 		max = 100
 	}
 	clamp_variable = {
 		var = 12:party_votes
-		min = 0
+		
 		max = 100
 	}
 	set_variable = { SIA.undecided_votes = 100 }
@@ -2085,4 +2106,507 @@ SIA_reset_party_votes = {
 	
 	clr_country_flag = SIA_2023_elections
 	clr_country_flag = SIA_2027_elections
+}
+
+
+
+
+
+
+
+
+
+
+
+randomize_position = {
+	# Random new y position, 10-90
+	set_variable_to_random = {
+		var = random_num1
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_1 = 500 }
+
+	set_variable_to_random = {
+		var = random_num2
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_2 = random_num2 }
+	
+	set_variable_to_random = {
+		var = random_num3
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_3 = random_num3 }
+	
+	set_variable_to_random = {
+		var = random_num4
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_4 = random_num4 }
+	
+	set_variable_to_random = {
+		var = random_num6
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_6 = random_num6 }
+	
+	set_variable_to_random = {
+		var = random_num9
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_9 = random_num9 }
+	
+	set_variable_to_random = {
+		var = random_num11
+		max = 100
+		
+		integer = yes
+	}
+	set_variable = { assigned_var_11 = random_num11 }
+	update_line_position = yes
+}
+
+
+clean_everything = {
+	clear_array = x_axis_array
+	clear_array = pprp_graph_offsets
+	clear_array = pprp_graph_slopes
+	clear_array = pprp_numbers
+	
+	clear_array = ptp_graph_offsets
+	clear_array = ptp_graph_slopes
+	clear_array = ptp_numbers
+	
+	clear_array = orange_graph_offsets
+	clear_array = orange_graph_slopes
+	clear_array = orange_numbers
+	
+	clear_array = dp_graph_offsets
+	clear_array = dp_graph_slopes
+	clear_array = dp_numbers
+	
+	clear_array = bjt_graph_offsets
+	clear_array = bjt_graph_slopes
+	clear_array = bjt_numbers
+	
+	clear_array = minor_graph_offsets
+	clear_array = minor_graph_slopes
+	clear_array = minor_numbers
+	
+	clear_array = utn_graph_offsets
+	clear_array = utn_graph_slopes
+	clear_array = utn_numbers
+	set_variable = { cycle_count = 0 }
+}
+party_pos = {
+	set_temp_variable = { minceiling = -15 }
+	set_temp_variable = { max = 153 }
+	
+	set_temp_variable = { var1 = max }
+	set_temp_variable = { var1div = 1:party_votes }
+	divide_temp_variable = { var1div = 100 }
+	multiply_temp_variable = { var1 = var1div }
+	set_variable = { assigned_var_1 = var1 }
+	
+	set_temp_variable = { var2 = max }
+	set_temp_variable = { var2div = 2:party_votes }
+	divide_temp_variable = { var2div = 100 }
+	multiply_temp_variable = { var2 = var2div }
+	set_variable = { assigned_var_2 = var2 }
+	
+	set_temp_variable = { var3 = max }
+	set_temp_variable = { var3div = 3:party_votes }
+	divide_temp_variable = { var3div = 100 }
+	multiply_temp_variable = { var3 = var3div }
+	set_variable = { assigned_var_3 = var3 }
+	
+	set_temp_variable = { var4 = max }
+	set_temp_variable = { var4div = 4:party_votes }
+	divide_temp_variable = { var4div = 100 }
+	multiply_temp_variable = { var4 = var4div }
+	set_variable = { assigned_var_4 = var4 }
+	
+	set_temp_variable = { var6 = max }
+	set_temp_variable = { var6div = 6:party_votes }
+	divide_temp_variable = { var6div = 100 }
+	multiply_temp_variable = { var6 = var6div }
+	set_variable = { assigned_var_6 = var6 }
+	
+	set_temp_variable = { var9 = max }
+	set_temp_variable = { var9div = 9:party_votes }
+	divide_temp_variable = { var9div = 100 }
+	multiply_temp_variable = { var9 = var9div }
+	set_variable = { assigned_var_9 = var9 }
+	
+	set_temp_variable = { var11 = max }
+	set_temp_variable = { var11div = 11:party_votes }
+	divide_temp_variable = { var11div = 100 }
+	multiply_temp_variable = { var11 = var11div }
+	set_variable = { assigned_var_11 = var11 }
+	
+	
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_1 = 0
+			}
+		}
+		set_variable = { assigned_var_1 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_2 = 0
+			}
+		}
+		set_variable = { assigned_var_2 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_3 = 0
+			}
+		}
+		set_variable = { assigned_var_3 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_4 = 0
+			}
+		}
+		set_variable = { assigned_var_4 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_6 = 0
+			}
+		}
+		set_variable = { assigned_var_6 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_9 = 0
+			}
+		}
+		set_variable = { assigned_var_9 = minceiling }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				assigned_var_11 = 0
+			}
+		}
+		set_variable = { assigned_var_11 = minceiling }
+	}
+	update_line_position = yes
+}
+
+
+
+
+
+update_line_position = {
+	#keeps track of x-axis
+	add_to_variable = { cycle_count = 1 }
+	add_to_array = { x_axis_array = cycle_count }
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = x_axis_array index = 0 }
+	}
+	
+	#### PPRP LINE ###
+	# keep track of last pos 
+	set_variable = { pprp_last_y_position = pprp_y_position } #pprp
+	
+	
+	set_variable = { pprp_y_position = assigned_var_1 } #Test adjust
+	
+	clamp_variable = { 
+		var = pprp_y_position
+		min = -15
+		max = 153
+	}
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = pprp_graph_offsets index = 0 }
+		remove_from_array = { array = pprp_graph_slopes index = 0 }
+		remove_from_array = { array = pprp_numbers index = 0 }
+	}
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = pprp_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { pprp_graph_offsets = offset }
+	
+	set_temp_variable = { diff = pprp_y_position }
+	subtract_from_temp_variable = { diff = pprp_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { pprp_graph_slopes = diff }
+	add_to_array = { pprp_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { pprp_line_icon_y = pprp_y_position }
+	multiply_variable = { pprp_line_icon_y = -1 }
+	add_to_variable = { pprp_line_icon_y = 153 }
+	#### PTP LINE ###
+	# keep track of last pos 
+	set_variable = { ptp_last_y_position = ptp_y_position } #PTP
+	
+	
+	set_variable = { ptp_y_position = assigned_var_2 } #Test adjust
+	
+	clamp_variable = { 
+		var = ptp_y_position
+		
+		max = 153
+	}
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = ptp_graph_offsets index = 0 }
+		remove_from_array = { array = ptp_graph_slopes index = 0 }
+		remove_from_array = { array = ptp_numbers index = 0 }
+	}
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = ptp_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { ptp_graph_offsets = offset }
+	
+	set_temp_variable = { diff = ptp_y_position }
+	subtract_from_temp_variable = { diff = ptp_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { ptp_graph_slopes = diff }
+	add_to_array = { ptp_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { ptp_line_icon_y = ptp_y_position }
+	multiply_variable = { ptp_line_icon_y = -1 }
+	add_to_variable = { ptp_line_icon_y = 153 }
+	
+	#### Orange Party LINE ###
+	# keep track of last pos 
+	set_variable = { orange_last_y_position = orange_y_position } #orange
+	
+	
+	set_variable = { orange_y_position = assigned_var_3 } #Test adjust
+	
+	clamp_variable = { 
+		var = orange_y_position
+		
+		max = 153
+	}
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = orange_graph_offsets index = 0 }
+		remove_from_array = { array = orange_graph_slopes index = 0 }
+		remove_from_array = { array = orange_numbers index = 0 }
+	}
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = orange_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { orange_graph_offsets = offset }
+	
+	set_temp_variable = { diff = orange_y_position }
+	subtract_from_temp_variable = { diff = orange_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { orange_graph_slopes = diff }
+	add_to_array = { orange_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { orange_line_icon_y = orange_y_position }
+	multiply_variable = { orange_line_icon_y = -1 }
+	add_to_variable = { orange_line_icon_y = 153 }
+	
+	#### DP LINE ###
+	# keep track of last pos 
+	set_variable = { dp_last_y_position = dp_y_position } #dp
+	
+	
+	set_variable = { dp_y_position = assigned_var_4 } #Test adjust
+	
+	clamp_variable = { 
+		var = dp_y_position
+		
+		max = 153
+	}
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = dp_graph_offsets index = 0 }
+		remove_from_array = { array = dp_graph_slopes index = 0 }
+		remove_from_array = { array = dp_numbers index = 0 }
+	}
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = dp_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { dp_graph_offsets = offset }
+	
+	set_temp_variable = { diff = dp_y_position }
+	subtract_from_temp_variable = { diff = dp_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { dp_graph_slopes = diff }
+	add_to_array = { dp_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { dp_line_icon_y = dp_y_position }
+	multiply_variable = { dp_line_icon_y = -1 }
+	add_to_variable = { dp_line_icon_y = 153 }
+	
+	#### BJT LINE ###
+	# keep track of last pos 
+	set_variable = { bjt_last_y_position = bjt_y_position } #bjt
+	
+	
+	set_variable = { bjt_y_position = assigned_var_6 } #Test adjust
+	
+	clamp_variable = { 
+		var = bjt_y_position
+		
+		max = 153
+	}
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = bjt_graph_offsets index = 0 }
+		remove_from_array = { array = bjt_graph_slopes index = 0 }
+		remove_from_array = { array = bjt_numbers index = 0 }
+	}
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = bjt_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { bjt_graph_offsets = offset }
+	
+	set_temp_variable = { diff = bjt_y_position }
+	subtract_from_temp_variable = { diff = bjt_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { bjt_graph_slopes = diff }
+	add_to_array = { bjt_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { bjt_line_icon_y = bjt_y_position }
+	multiply_variable = { bjt_line_icon_y = -1 }
+	add_to_variable = { bjt_line_icon_y = 153 }
+	
+	#### Minor LINE ###
+	# keep track of last pos 
+	set_variable = { minor_last_y_position = minor_y_position } #minor
+	
+	
+	set_variable = { minor_y_position = assigned_var_9 } #Test adjust
+	
+	clamp_variable = { 
+		var = minor_y_position
+		
+		max = 153
+	}
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = minor_graph_offsets index = 0 }
+		remove_from_array = { array = minor_graph_slopes index = 0 }
+		remove_from_array = { array = minor_numbers index = 0 }
+	}
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = minor_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { minor_graph_offsets = offset }
+	
+	set_temp_variable = { diff = minor_y_position }
+	subtract_from_temp_variable = { diff = minor_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { minor_graph_slopes = diff }
+	add_to_array = { minor_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { minor_line_icon_y = minor_y_position }
+	multiply_variable = { minor_line_icon_y = -1 }
+	add_to_variable = { minor_line_icon_y = 153 }
+	
+	
+	#### UTN LINE ###
+	# keep track of last pos 
+	set_variable = { utn_last_y_position = utn_y_position } #Var 1
+	set_variable = { utn_y_position = assigned_var_11 } #Test adjust
+	clamp_variable = { 
+		var = utn_y_position
+		
+		max = 153
+	}
+	
+	if = {
+		limit = { #Remove 1st if it overexceed
+			check_variable = { cycle_count > 44 }
+		}
+		remove_from_array = { array = utn_graph_offsets index = 0 }
+		remove_from_array = { array = utn_graph_slopes index = 0 }
+		remove_from_array = { array = utn_numbers index = 0 }
+	}
+	
+	# The y position offset is the inverse of the y position
+	set_temp_variable = { offset = utn_last_y_position }
+	multiply_temp_variable = { offset = -1 }
+	add_to_array = { utn_graph_offsets = offset }
+	
+	# The 'slope' here is simply the difference between the current y value and the last one, divided by 2 plus 50
+	# These last two changes are needed for the shader
+	set_temp_variable = { diff = utn_y_position }
+	subtract_from_temp_variable = { diff = utn_last_y_position }
+	divide_temp_variable = { diff = 2 }
+	add_to_temp_variable = { diff = 50 }
+	add_to_array = { utn_graph_slopes = diff }
+	add_to_array = { utn_numbers = cycle_count }
+	
+	#Y Position For the Party Icon
+	set_variable = { utn_line_icon_y = utn_y_position }
+	multiply_variable = { utn_line_icon_y = -1 }
+	add_to_variable = { utn_line_icon_y = 153 }
+	
+	
+	# SHARED - For Party Icon location
+	set_variable = { icons_x_axis = 10 }
+	if = {
+		limit = {
+			check_variable = { cycle_count > 44 }
+		}
+		set_variable = { icons_x_axis = 430 }
+	}
+	else = {
+		set_temp_variable = { test_x_temp = 10 }
+		multiply_temp_variable = { test_x_temp = cycle_count }
+		add_to_variable = { icons_x_axis = test_x_temp }
+	}
+
+	add_to_variable = { dirtonmyface = 1 }
+	
+
 }

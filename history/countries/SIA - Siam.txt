@@ -74,6 +74,8 @@ recruit_character = SIA_boonsin_padklang_char
 recruit_character = SIA_anupong_paochinda_char
 recruit_character = SIA_Kittinant_Chinsamran_char
 recruit_character = SIA_Preecha_Chan_o_cha_char
+recruit_character = SIA_Cherdkiat_Atthakor
+recruit_character = SIA_Tull_Traisorat
 
 add_ideas = {
 	SIA_gdp_fix_new
@@ -89,8 +91,8 @@ add_ideas = {
 	SIA_anupong_paochinda_advisor
 	SIA_anukul_jaimongkol_advisor
 	SIA_prawit_wongsuwan_advisor
+	
 }
-
 
 set_technology = {
 	## Infantry ##
@@ -346,7 +348,7 @@ set_party_name = {
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = 2019.3.24
-	election_frequency = 52
+	election_frequency = 50
 	elections_allowed = yes
 }
 

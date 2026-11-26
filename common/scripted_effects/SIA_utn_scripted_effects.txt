@@ -154,7 +154,7 @@ SIA_utn_start_tug_of_war = {
 		custom_effect_tooltip = generic_skip_one_line_tt
 		set_temp_variable = { boost_temp = 5 }
 		multiply_temp_variable = { boost_temp = SIA_suchart_booster }
-		ahidden_effect = {
+		hidden_effect = {
 			set_temp_variable = { influ_change = boost_temp }
 			set_temp_variable = { target = 2 }
 			SIA_utn_tug_of_war_change_influence = yes
@@ -181,5 +181,28 @@ SIA_utn_tug_of_war_change_influence = {
 		custom_effect_tooltip = SIA_tug_of_war_suchart_increase
 		multiply_temp_variable = { influ_change = -1 }
 		add_to_variable = { SIA_pirapan_influ = influ_change }
+	}
+}
+SIA_change_party_cohesion = {
+	add_to_variable = { SIA_utn_cohesion_var = change_temp }
+	custom_effect_tooltip = SIA_change_utn_cohesion_tt
+	clamp_variable = {
+		var = SIA_utn_cohesion_var
+		min = 0
+		max = 100
+	}
+}
+SIA_party_cohesion_check = {
+	custom_effect_tooltip = SIA_party_cohesion_check_tt
+	if = {
+		limit = {
+			check_variable = { SIA_utn_cohesion_var < 50 }
+		}
+		set_temp_variable = { SIA_temp_cohesion = 1 }
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = SIA_party_cohesion_check_bad
+	}
+	else = {
+		custom_effect_tooltip = SIA_party_cohesion_check_good
 	}
 }

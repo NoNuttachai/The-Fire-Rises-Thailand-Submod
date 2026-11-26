@@ -53,10 +53,24 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_SIA_speaker_portrait"
-		textureFile = "gfx/interface/SIA/parliament/sia_speaker_portrait.dds"
+		textureFile = "gfx/interface/SIA/parliament/sia_speaker_portrait.png"
 		legacy_lazy_load = no
 	}
-
+	# SPEAKERS OF THE HOUSE
+	# numbers are referencing id for each party, uses scripted loc and var to dynamic change
+	
+	#PTP Speakers
+	spriteType = {
+		name = "GFX_SIA_speaker_2.1" #Pichet Chuamuangpan
+		textureFile = "gfx/interface/SIA/parliament/speaker_portraits/ptp_pichet.png"
+		legacy_lazy_load = no
+	}
+	#DP Speakers
+	spriteType = {
+		name = "GFX_SIA_speaker_4.1" #Chuan Leekpai
+		textureFile = "gfx/interface/SIA/parliament/speaker_portraits/dp_chuan.png"
+		legacy_lazy_load = no
+	}
 	# =============================================
 	# SEAT BAR — 3-color horizontal segments
 	# Each is a 1px-wide colored block; scaled by

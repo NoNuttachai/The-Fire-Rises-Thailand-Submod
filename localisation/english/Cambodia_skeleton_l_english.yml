@@ -7,3 +7,86 @@
  thai_cambodia.2.t: "Placeholder text"
  thai_cambodia.2.d: "Placeholder text"
  thai_cambodia.2.a: "Placeholder text"
+ CAM_Heng_Pov: "Heng Pov"
+ CAM_Ke_Kim_Yan: "Ke Kim Yan"
+ CAM_Pao_Vorn: "Pao Vorn"
+ CAM_Rong_Chhun: "Rong Chhun"
+ CAM_Sam_Serey: "Sam Serey"
+ CAM_Chea_Mony: "Chea Mony"
+ SIA_Boonsin_Padklang: "Boonsin Padklang"
+ SIA_Cherdkiat_Atthakor: "Cherdkiat Atthakor"
+ SIA_Tull_Traisorat: "Tull Traisorat"
+ CAM_Sar_Kheng: "Sar Kheng"
+ CAM_Kem_Sokkha: "Kem Sokkha"
+ Thai_Cambodia_Report.1.t: "Diplomat Rotation"
+ Thai_Cambodia_Report.1.d: "Excerpt from Royal Thai Embassy in Phnom Penh:\n\nMr. Cherdkiat Atthakor, Ambassador of Thailand to Cambodia, paid a farewell visit to Samdech Akka Moha Sena Padei Techo HUN SEN, Acting Head of State and President of the Cambodian Senate. The visit marked the occasion of the Ambassador's end of his mission in Cambodia.\n\nDuring the meeting, both sides emphasised on strong and close relations between Thailand and Cambodia in all areas, which has now been elevated to a strategic partnership. The discussion covered various issues of mutual interests and benefits such as bilateral trade, investment, cultural linkage, tourism promotion, partnership for development and cooperation in regional frameworks i.e. ACMECS and ASEAN" 
+ Thai_Cambodia_Report.1.a: "Acknowledged"
+ SIA_Ambassador_Replacement: "§g§BCherdkiat Atthakor§! will be replaced by §BTull Traisorat§!§!"
+ Thai_Cambodia_Report.2.t: "New Ambassador"
+ Thai_Cambodia_Report.2.d: "Excerpt from Royal Thai Embassy in Phnom Penh:\n\nMr. Tull Traisorat presented the Letter of Credence to Samdech Akka Moha Sena Padei Techo Hun Sen, Acting Head of State of Cambodia, accrediting him as the Ambassador Extraordinary and Plenipotentiary of the Kingdom of Thailand to the Kingdom of Cambodia.\n\nThe Ceremony took place at the Senate House. Samdech Akka Moha Sena Padei Techo Hun Sen commended the close cooperation at all levels between Thailand and Cambodia while Ambassador Traisorat is honoured to assume his post during the special year of the 75th anniversary of the diplomatic relations between Thailand and Cambodia.\n\nHe reaffirmed his commitment to further enhance Thai-Cambodian relations in all dimensions and all sectors - government, private sector, and people-to-people." 
+ Thai_Cambodia_Report.2.a: "Acknowledged"
+ 
+ #cosmetic
+ CAM_republic: "Republic of Cambodia"
+ CAM_republic_DEF: "Republic of Cambodia"
+ CAM_republic_ADJ: "Cambodian"
+ 
+ CAM_knlf: "Khmer National Liberation Front"
+ CAM_knlf_DEF: "Khmer National Liberation Front"
+ CAM_knlf_ADJ: "Kampuchean"
+ 
+ CAM_state_kampuchea: "State of Kampuchea"
+ CAM_state_kampuchea_DEF: "State of Kampuchea"
+ CAM_state_kampuchea_ADJ: "Kampuchean"
+ 
+ CAM_council_republic: "Kampuchea Council Republic"
+ CAM_council_republic_DEF: "People’s Council Republic of Kampuchea"
+ CAM_council_republic_ADJ: "Kampuchean"
+ 
+ CAM_clf: "Labor Front"
+ CAM_clf_DEF: "Cambodian Labor Front"
+ CAM_clf_ADJ: "Cambodian"
+ 
+ CAM_usk: "United States of Kampuchea"
+ CAM_usk_DEF: "United States of Kampuchea"
+ CAM_usk_ADJ: "Kampuchean"
+ 
+ CAM_pdrk: "Democratic Kampuchea"
+ CAM_pdrk_DEF: "People’s Democratic Republic of Kampuchea"
+ CAM_pdrk_ADJ: "Kampuchean"
+ 
+ #Party
+ CAM_CLP: "Cambodian Labor Party"
+ CAM_CLP_short: "CLP"
+ 
+ CAM_KLP: "Khmer Labor Party"
+ CAM_KLP_short: "KLP"
+ 
+ CAM_NPP: "Nation Power Party"
+ CAM_NPP_short: "NPP"
+ 
+ CAM_KNLF: "Khmer National Liberation Front"
+ CAM_KNLF_short: "KNLF"
+ 
+ CAM_KNUF: "Khmer National Unity Front"
+ CAM_KNUF_short: "KNUF"
+ 
+ CAM_KCU: "Khmer Confederation of Unions"
+ CAM_KCU_short: "KCU"
+ 
+ CAM_R_CLP: "Candlelight Party"
+ CAM_R_CLP_short: "CLP"
+ 
+ CAM_HRP: "Human Rights Party"
+ CAM_HRP_short: "HRP"
+ 
+ CAM_Junta_RCA: "Royal Cambodian Army"
+ CAM_Junta_RCA_short: "RCA"
+ 
+ CAM_Junta_RCSDF: "Royal Cambodian Self Defense Force"
+ CAM_Junta_RCSDF_short: "RCSDF"
+ 
+ CAM_2AA: "2nd Army Area (RTA)"
+ CAM_2AA_short: "2AA"
+ 
+ 

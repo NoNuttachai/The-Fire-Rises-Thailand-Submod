@@ -33,6 +33,14 @@
 	recruit_character = CAM_tea_vinh_char
 	recruit_character = CAM_tea_sokha_char
 	recruit_character = CAM_ouk_seiha_char
+	
+	#skeleton for Cambodia
+	recruit_character = CAM_Heng_Pov
+	recruit_character = CAM_Ke_Kim_Yan
+    recruit_character = CAM_Pao_Vorn
+    recruit_character = CAM_Rong_Chhun
+    recruit_character = CAM_Sam_Serey
+    recruit_character = CAM_Chea_Mony
 
 	set_technology = {
 		## Infantry ##

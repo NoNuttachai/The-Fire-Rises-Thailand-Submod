@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "SIA_parliament_election_gui_window"
 		position = { x = 0 y = 0 }
-		size = { width = 470 height = 280 }
+		size = { width = 470 height = 500 }
 		
 		
 		instantTextBoxType = {
@@ -104,6 +104,240 @@ guiTypes = {
 				pdx_tooltip = SIA_election_status
 			}
 			
+		}
+		containerWindowType = {
+			name = "SIA_projection_box"
+			position = { x = -212 y = -15 }
+			#size = { width = 350 height= 250 }
+			orientation = center
+			origo = center
+			clipping = no
+			background = {
+				name = "background"		
+				quadTextureSprite = "GFX_SIA_projection_box"
+			}
+
+			# Container which will hold each of our line segments
+			gridboxtype = {
+				name = "line_segments_pprp"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 200 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "line_segments_ptp"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 200 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "line_segments_orange"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 200 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "line_segments_dp"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 500 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "line_segments_bjt"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 500 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "line_segments_minor"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 500 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "line_segments_utn"
+				position = { x = 10 y = 66 }
+				size = { width = 0 height = 500 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 70
+				add_horizontal = yes
+			}
+			gridboxtype = {
+				name = "x_axis_list"
+				position = { x = 20 y = 77 }
+				size = { width = 0 height = 500 }
+				slotsize = { width = 10 height = 200 }
+				max_slots_horizontal = 44
+				add_horizontal = yes
+			}
+			iconType = {
+				name = "pprp_icon"
+				spriteType = "GFX_palang_pracharath"
+				position = { x = 100 y = 0 }
+			}
+			iconType = {
+				name = "ptp_icon"
+				spriteType = "GFX_phua_thai"
+				position = { x = 100 y = 0 }
+			}
+			iconType = {
+				name = "orange_icon"
+				spriteType = "GFX_orange_party_2"
+				position = { x = 100 y = 0 }
+			}
+			iconType = {
+				name = "dp_icon"
+				spriteType = "GFX_democrat"
+				position = { x = 100 y = 0 }
+			}
+			iconType = {
+				name = "bjt_icon"
+				spriteType = "GFX_bhumjaithai"
+				position = { x = 100 y = 0 }
+			}
+			iconType = {
+				name = "minor_icon"
+				spriteType = "GFX_FRA_centrist_texticon"
+				position = { x = 100 y = 0 }
+			}
+			iconType = {
+				name = "utn_icon"
+				spriteType = "GFX_united_thai_nation"
+				position = { x = 100 y = 0 }
+			}
+			# y-axis labels, very optional
+			instantTextboxType = {
+				name = "250center"
+				position = { x= -15 y = 85}
+				font = "VCR02_14"
+				text = ""
+				maxWidth = 100
+				format = center
+			}
+		}
+	}
+	
+	
+	# Line segment container, very important
+	containerWindowType = {
+		name = "projected_pprp"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_pprp"
+			spriteType = "GFX_Line_Segment_PPRP"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "projected_ptp"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_ptp"
+			spriteType = "GFX_Line_Segment_PTP"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "projected_orange"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_orange"
+			spriteType = "GFX_Line_Segment_ORANGE"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "projected_dp"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_dp"
+			spriteType = "GFX_Line_Segment_DP"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "projected_bjt"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_bjt"
+			spriteType = "GFX_Line_Segment_BJT"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "projected_minor"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_minor"
+			spriteType = "GFX_Line_Segment_MINOR"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	containerWindowType = {
+		name = "projected_utn"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Line segment progress bar, using our custom asset with custom shader
+		iconType = {
+			name = "segment_utn"
+			spriteType = "GFX_Line_Segment_UTN"
+			position = { x = 0 y = 0 }
+			frame = 57
+		}
+	}
+	
+	
+	
+	containerWindowType = {
+		name = "x_axis_label"
+		size = { width = 10 height = 200 }
+		position = { x = 0 y = 0 }
+
+		# Optional, x-axis label which corresponds to the value of this segment
+		instantTextboxType = {
+			name = "label"
+			position = { x = -15 y = 112}
+			font = "VCR02_12"
+			text = "line_graph_data_label"
+			maxWidth = 40
+			format = center
 		}
 	}
 }

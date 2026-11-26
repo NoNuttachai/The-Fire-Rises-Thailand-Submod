@@ -91,4 +91,19 @@ spriteTypes = {
 		horizontal = yes
 		effectfile = "gfx/FX/progress.shader"
 	}
+	
+	#UTN Cohesion
+	spriteType = {
+		name = "GFX_SIA_utn_cohesion_bar_outline"
+		texturefile = "gfx/interface/SIA/utn_cohesion/bar_outline.png"
+	}
+	progressbartype = {
+		name = "GFX_SIA_utn_cohesion_bar"
+		texturefile1 = "gfx/interface/SIA/utn_cohesion/bar_fill.png"
+		texturefile2 = "gfx/interface/SIA/pirapanvssuchart/blank.png"
+		size = { x = 438 y = 56 }
+		steps = 100 
+		horizontal = yes
+		effectfile = "gfx/FX/progress.shader"
+	}
 }

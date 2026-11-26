@@ -67,6 +67,120 @@ spriteTypes = {
 		name = "GFX_SIA_parliament_elections_projected_winner_12"
 		textureFile = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_12.png"
 	}
+	spriteType = {
+		name = "GFX_SIA_projection_box"
+		textureFile = "gfx/interface/SIA/parliament_elections/projection_box.png"
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_PPRP"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/pprp_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_Line_Segment_PTP"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/ptp_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_Line_Segment_ORANGE"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/orange_party_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_Line_Segment_DP"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/dp_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_BJT"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/bjt_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_MINOR"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/minor_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_UTN"
+		textureFile1 = "gfx/interface/SIA/parliament_elections/utn_graph_fill.png"
+		textureFile2 = "gfx/interface/SIA/parliament_elections/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	progressbartype = {
 		name = "GFX_SIA_parliament_elections_bar_1"
 		texturefile1 = "gfx/interface/SIA/parliament_elections/SIA_parliament_elections_bar_pprp.png"

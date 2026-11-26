@@ -101,6 +101,18 @@ scripted_gui = {
 				has_idea = SIA_pirapan_salirathavibhaga_hog
 				has_country_flag = SIA_utn_party_mech_dispute
 			}
+			
+			#UTN Cohesion
+			SIA_utn_cohesion_outline = {
+				has_country_flag = SIA_utn_2027_victory
+			}
+			SIA_utn_cohesion_fill = {
+				has_country_flag = SIA_utn_2027_victory
+			}
+			SIA_utn_cohesion_text = {
+				has_country_flag = SIA_utn_2027_victory
+			}
+			
 		}
 
 		effects = {
@@ -121,6 +133,9 @@ scripted_gui = {
 			}
 			SIA_UTN_logo_5th_layer = {
 				frame = SIA_prayut_legacy_frame_5
+			}
+			SIA_utn_cohesion_fill = {
+				frame = SIA_utn_cohesion_var
 			}
 			# PIRAPAN VS SUCHART
 			SIA_pirapan_bar = {

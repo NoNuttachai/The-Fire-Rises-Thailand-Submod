@@ -10,7 +10,56 @@ scripted_gui = {
 		visible = {
 			original_tag = SIA
 		}
-		
+		dynamic_lists = {
+			line_segments_pprp = {
+				array = pprp_graph_offsets
+				change_scope = no
+				entry_container = projected_pprp
+				index = segment_idx
+			}
+			line_segments_ptp = {
+				array = ptp_graph_offsets
+				change_scope = no
+				entry_container = projected_ptp
+				index = segment_idx
+			}
+			line_segments_orange = {
+				array = orange_graph_offsets
+				change_scope = no
+				entry_container = projected_orange
+				index = segment_idx
+			}
+			line_segments_dp = {
+				array = dp_graph_offsets
+				change_scope = no
+				entry_container = projected_dp
+				index = segment_idx
+			}
+			line_segments_bjt = {
+				array = bjt_graph_offsets
+				change_scope = no
+				entry_container = projected_bjt
+				index = segment_idx
+			}
+			line_segments_minor = {
+				array = minor_graph_offsets
+				change_scope = no
+				entry_container = projected_minor
+				index = segment_idx
+			}
+			line_segments_utn = {
+				array = utn_graph_offsets
+				change_scope = no
+				entry_container = projected_utn
+				index = segment_idx
+			}
+			x_axis_list = {
+				array = x_axis_array
+				change_scope = no
+				entry_container = x_axis_label
+				index = segment_idx
+			}
+		}
 		triggers = {
 			SIA_parliament_bar_1_visible = {
 				check_variable = { 1:party_votes > 0 }
@@ -35,6 +84,12 @@ scripted_gui = {
 			}
 			SIA_parliament_bar_12_visible = {
 				check_variable = { 12:party_votes > 0 }
+			}
+			
+			label_visible = {
+				set_temp_variable = { si = segment_idx }
+				modulo_temp_variable = { si = 2 }
+				check_variable = { si = 0 }
 			}
 		}
 
@@ -77,6 +132,99 @@ scripted_gui = {
 			}
 			SIA_elections_3_winner = {
 				image = "[SIA_elections_3rd_rank]"
+			}
+			
+			segment_pprp = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = pprp_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = pprp_graph_slopes^segment_idx
+			}
+			segment_ptp = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = ptp_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = ptp_graph_slopes^segment_idx
+			}
+			segment_orange = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = orange_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = orange_graph_slopes^segment_idx
+			}
+			segment_dp = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = dp_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = dp_graph_slopes^segment_idx
+			}
+			segment_bjt = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = bjt_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = bjt_graph_slopes^segment_idx
+			}
+			segment_minor = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = minor_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = minor_graph_slopes^segment_idx
+			}
+			segment_utn = {
+				# Sets they position of the line segment to the graph offset
+				# Equal to -y1
+				y = utn_graph_offsets^segment_idx
+
+				# Tells the shader how steep to draw the line
+				# Must be equal to (y2 - y1) / 2 + 50
+				frame = utn_graph_slopes^segment_idx
+			}
+			
+			pprp_icon = {
+				y = pprp_line_icon_y
+				x = icons_x_axis
+			}
+			ptp_icon = {
+				y = ptp_line_icon_y
+				x = icons_x_axis
+			}
+			orange_icon = {
+				y = orange_line_icon_y
+				x = icons_x_axis
+			}
+			dp_icon = {
+				y = dp_line_icon_y
+				x = icons_x_axis
+			}
+			bjt_icon = {
+				y = bjt_line_icon_y
+				x = icons_x_axis
+			}
+			minor_icon = {
+				y = minor_line_icon_y
+				x = icons_x_axis
+			}
+			utn_icon = {
+				y = utn_line_icon_y
+				x = icons_x_axis
 			}
 		}
 	}

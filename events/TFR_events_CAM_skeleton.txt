@@ -1,4 +1,5 @@
 add_namespace = thai_cambodia
+add_namespace = Thai_Cambodia_Report
 
 country_event = { #Cambodia skeleton placeholder
     id = thai_cambodia.1
@@ -20,4 +21,35 @@ country_event = { #Cambodia skeleton placeholder
     option = {
         name = thai_cambodia.2.a 
     }
+}
+
+unit_leader_event = { # Ambassador Reports on Cambodia
+	id = Thai_Cambodia_Report.1
+	title = Thai_Cambodia_Report.1.t
+	desc = Thai_Cambodia_Report.1.d
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+		     SIA_Tull_Traisorat = {
+			         unit_leader_event = { id = Thai_Cambodia_Report.2 days = 189 } 
+			 }
+		}
+	}
+
+	option = {
+		name = Thai_Cambodia_Report.1.a
+		custom_effect_tooltip = SIA_Ambassador_Replacement
+	}
+}
+
+unit_leader_event = { # New Ambassador
+	id = Thai_Cambodia_Report.2
+	title = Thai_Cambodia_Report.2.t
+	desc = Thai_Cambodia_Report.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = Thai_Cambodia_Report.2.a
+	}
 }

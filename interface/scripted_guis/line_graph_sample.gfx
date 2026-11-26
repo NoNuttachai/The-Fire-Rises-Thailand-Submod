@@ -1,0 +1,93 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Line_Graph_Background"
+		textureFile = "/gfx/interface/line_graph/line_graph_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Line_Graph_Chart"
+		textureFile = "/gfx/interface/line_graph/line_graph_chart.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_PPRP"
+		textureFile1 = "/gfx/interface/line_graph/pprp_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_Line_Segment_PTP"
+		textureFile1 = "/gfx/interface/line_graph/ptp_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_Line_Segment_ORANGE"
+		textureFile1 = "/gfx/interface/line_graph/orange_party_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	
+	progressbartype = {
+		name = "GFX_Line_Segment_DP"
+		textureFile1 = "/gfx/interface/line_graph/dp_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_BJT"
+		textureFile1 = "/gfx/interface/line_graph/bjt_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_MINOR"
+		textureFile1 = "/gfx/interface/line_graph/minor_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_UTN"
+		textureFile1 = "/gfx/interface/line_graph/utn_graph_fill.png"
+		textureFile2 = "/gfx/interface/line_graph/graph_line_empty.dds"
+		size = {
+			x = 10
+			y = 200
+		}
+		effectFile = "gfx/FX/line_graph.lua"
+		horizontal = yes
+	}
+}

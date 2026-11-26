@@ -606,6 +606,55 @@ SIA_calculate_national_engine_level = {
 }
 
 ### APPROVAL MECH ###
+SIA_update_approval_monthly = {
+	for_each_loop = {  #apply area own decay then go allocate after #1 - Your control 2-Coalitioned Party 3- Oppos 4-Divided 5-Minor
+		array = SIA_map_var 
+		value = v 
+
+		var:v = { #check status then apply decay
+			if = {
+				limit = {
+					check_variable = { SIA_state_approval_status = 1 }
+					
+				}
+				set_temp_variable = { decay = 0.2 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval_status = 2 }
+					
+				}
+				set_temp_variable = { decay = 0.3 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval_status = 3 }
+					
+				}
+				set_temp_variable = { decay = 0.65 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval_status = 4 }
+					
+				}
+				set_temp_variable = { decay = 0.45 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { SIA_state_approval_status = 5 }
+					
+				}
+				set_temp_variable = { decay = 0.35 }
+			}
+			
+			subtract_from_variable = { v:SIA_state_approval = decay }
+		}
+	}
+	SIA_update_area_approval_status = yes
+    SIA_update_area_color = yes
+    SIA_update_stats = yes
+}
 SIA_initiate_area_approvals = { # 0-Divided 1- PPRP 2-PTP 3-OrangeParty 4-DP 5-BJT 6-KT 7-UTN 8-Minor Party 
 	for_each_loop = { 
 		array = SIA_map_var 
@@ -686,7 +735,7 @@ SIA_update_area_approval_status = { #also updates the local strength stuff
 		array = SIA_map_var 
 		value = v 
 
-		var:v = { #check array, grab alignment, check if party in coalition #1 - Your control 2-Coalitioned Party 3- Oppos 4-Divided
+		var:v = { #check array, grab alignment, check if party in coalition #1 - Your control 2-Coalitioned Party 3- Oppos 4-Divided 5-Minor
 			#PPRP
 			if = {
 				limit = {
@@ -864,4 +913,9 @@ SIA_update_area_color = {
 			}
 		}
 	}
+}
+SIA_update_stats = {
+	#Nationwide approval modifier
+
+	#State wide - apply effects to that array depending on the Area trend
 }

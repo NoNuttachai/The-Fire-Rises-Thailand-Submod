@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 1
+			add = 999
 			tag = SIA
 		}
 	}
@@ -680,6 +680,11 @@ focus_tree = {
 		}
 		available = {
 			SIA_utn_in_charge_prayut = yes
+			has_idea = higher_academic
+			OR = {
+				has_tech = petascale_computing
+				has_tech = early_quantum_computing
+			}
 		}
 		
 		relative_position_id = SIA_promote_ai
@@ -687,31 +692,60 @@ focus_tree = {
 		prerequisite = { focus = SIA_streamline_bureaucracy }
 		
 		completion_reward = {
-			set_temp_variable = { change_temp = 3.5 }
+			add_ideas = SIA_digitalized_government
+			set_temp_variable = { change_temp = 2.5 }
+			for_each_loop = { 
+				array = SIA_map_var 
+				value = v 
+				
+				var:v = {
+					
+					SIA_change_fuel_monthly_base_amount = yes
+				}
+			}
+			custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
+			set_temp_variable = { change_temp = 15 }
 			SIA_change_prayut_legacy = yes
-			set_temp_variable = { change_temp = 1 }
+			set_temp_variable = { change_temp = 3 }
 			SIA_change_specialist_effectiveness = yes
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 1504
+						state = 1505
+					}
+					is_core_of = SIA
+				}
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-					type = infrastructure
+					type = office_park
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
 			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
+			every_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							state = 1504
+							state = 1505
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = infrastructure
+					type = office_park
 					level = 1
 					instant_build = yes
 				}
-			}
-			random_owned_state = {
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -780,7 +814,6 @@ focus_tree = {
 			set_temp_variable = { debt_var_temp = -45 }
 			add_debt = yes
 			add_stability = -0.05
-			add_society_development = yes
 			add_timed_idea = {
 				idea = SIA_cut_cut_cut
 				days = 350
@@ -1762,6 +1795,42 @@ focus_tree = {
 				idea = SIA_cabinet_forming
 				days = 60
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = SIA_once_again_the_utn_tt
+			custom_effect_tooltip = SIA_utn_cohesion_prayut_legacy_tt
+			if = {
+				limit = {
+					check_variable = {
+						SIA_prayut_legacy_var > 89.9
+					}
+				}
+				set_temp_variable = { change_temp = 30 }
+				SIA_change_party_cohesion = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						SIA_prayut_legacy_var > 59.9
+					}
+				}
+				set_temp_variable = { change_temp = 20 }
+				SIA_change_party_cohesion = yes
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						SIA_prayut_legacy_var > 29.9
+					}
+				}
+				set_temp_variable = { change_temp = 10 }
+				SIA_change_party_cohesion = yes
+			}
+			else = {
+				set_temp_variable = { change_temp = 2.5 }
+				SIA_change_party_cohesion = yes
+			}
+			
+			
 			
 		}
 	}
@@ -1782,7 +1851,12 @@ focus_tree = {
 		relative_position_id = SIA_once_again_the_utn
 		
 		completion_reward = {
-			
+			set_temp_variable = { change_temp = 10 }
+			SIA_change_party_cohesion = yes
+			add_war_support = 0.075
+			army_experience = 15
+			air_experience = 15
+			navy_experience = 10
 		}
 	}
 	focus = { 
@@ -1860,6 +1934,40 @@ focus_tree = {
 		relative_position_id = SIA_sovereignty
 		
 		completion_reward = {
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				add_political_power = -75
+				add_stability = -0.02
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = -0.02
+				}
+				add_war_support = -0.03
+				set_temp_variable = { SIA_public_perception_var_temp = -0.05 }
+				SIA_mil_mech_public_perception_change = yes
+				set_temp_variable = { SIA_combat_readiness_var_temp = -0.03 }
+				SIA_mil_mech_combat_readiness_change = yes
+			}
+			else = {
+				
+			}
+			
+			
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
+			
+			swap_ideas = {
+				remove_idea = SIA_lottery_conscription
+				add_idea = SIA_incentivized_conscription
+			}
+			set_temp_variable = { change_temp = -7.5 }
+			SIA_change_party_cohesion = yes
+			set_temp_variable = { SIA_public_perception_var_temp = 0.05 }
+			SIA_mil_mech_public_perception_change = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.025 }
+			SIA_mil_mech_combat_readiness_change = yes
 			
 		}
 	}
@@ -1885,7 +1993,7 @@ focus_tree = {
 	focus = { 
 		id = SIA_lucrative_deals
 		icon = GFX_goal_SIA_information_operations
-		x = 4
+		x = 3
 		y = 1
 		cost = 3
 		ai_will_do = {
@@ -1898,7 +2006,9 @@ focus_tree = {
 		relative_position_id = SIA_sovereignty
 		
 		completion_reward = {
-			
+			country_event = thai_prayut.39
+			set_temp_variable = { SIA_military_resource_var_temp = 1 }
+			SIA_mil_mech_resource_change = yes
 		}
 	}
 	focus = { 
@@ -1917,7 +2027,42 @@ focus_tree = {
 		relative_position_id = SIA_beyond_lottery
 		
 		completion_reward = {
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				add_political_power = -30
+				add_war_support = -0.03
+				set_temp_variable = { SIA_public_perception_var_temp = -0.015 }
+				SIA_mil_mech_public_perception_change = yes
+				set_temp_variable = { SIA_combat_readiness_var_temp = -0.025 }
+				SIA_mil_mech_combat_readiness_change = yes
+			}
+			else = {
+				
+			}
 			
+			
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
+			set_temp_variable = { change_temp = -5 }
+			SIA_change_party_cohesion = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.03 }
+			SIA_mil_mech_combat_readiness_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = 0.1 }
+			SIA_mil_mech_public_perception_change = yes
+			add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.075 }
+			add_to_variable = { SIA_royal_army_of_thailand_army_attack_factor_var = 0.025 }
+			add_to_variable = { SIA_royal_army_of_thailand_army_morale_factor_var = 0.05 }
+			add_to_variable = { SIA_royal_army_of_thailand_military_development_monthly = 0.005 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_royal_army_of_thailand_dummy
+					add_idea = SIA_royal_army_of_thailand_at_home
+				}
+			}
+			set_temp_variable = { military_development_var_temp = 0.05 }
+			add_military_development = yes
 		}
 	}
 	focus = { 
@@ -1936,7 +2081,23 @@ focus_tree = {
 		relative_position_id = SIA_at_home
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_utn_patriotic_thai_program
+			set_temp_variable = { debt_var_temp = 4.25 }
+			add_debt = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
+			SIA_mil_mech_combat_readiness_change = yes
+			set_temp_variable = { SIA_public_perception_var_temp = -0.075 }
+			SIA_mil_mech_public_perception_change = yes
+			add_manpower = 45000
+			add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = 0.1 }
+			add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.05 }
+			add_to_variable = { SIA_royal_army_of_thailand_army_org_factor_var = 0.075 }
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SIA_royal_army_of_thailand_dummy
+					add_idea = SIA_royal_army_of_thailand_in_the_battlefield
+				}
+			}
 		}
 	}
 	focus = { 
@@ -1951,11 +2112,32 @@ focus_tree = {
 		available = {
 			
 		}
-		prerequisite = { focus = SIA_beyond_lottery }
+		prerequisite = { focus = SIA_beyond_lottery focus = SIA_lucrative_deals }
 		relative_position_id = SIA_beyond_lottery
 		
 		completion_reward = {
-			
+			unlock_decision_tooltip = SIA_utn_bolster_the_production_lines
+			set_temp_variable = { debt_var_temp = 35.42 }
+			add_debt = yes
+			set_temp_variable = { SIA_military_resource_var_temp = 2 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
+			SIA_mil_mech_combat_readiness_change = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_4
+				amount = 1500
+				producer = SIA
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = support_tech
+			}
 		}
 	}
 	focus = { 
@@ -1968,14 +2150,63 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			has_country_flag = SIA_utn_side_japan
 		}
-		prerequisite = { focus = SIA_beyond_lottery }
+		prerequisite = { focus = SIA_lucrative_deals }
 		mutually_exclusive = { focus = SIA_set_north }
 		relative_position_id = SIA_beyond_lottery
 		
 		completion_reward = {
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
+			set_temp_variable = { change_temp = -3 }
+			SIA_change_party_cohesion = yes
+			set_temp_variable = { SIA_military_resource_var_temp = 1 }
+			SIA_mil_mech_resource_change = yes
 			
+			set_temp_variable = {
+				var = global.JAP_influence_SIA_var_temp
+				value = 0.15
+			}
+			JAP_add_SIA_influence = yes
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			724 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { 
@@ -1988,14 +2219,69 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			has_country_flag = SIA_utn_side_china
 		}
-		prerequisite = { focus = SIA_beyond_lottery }
+		prerequisite = { focus = SIA_lucrative_deals }
 		mutually_exclusive = { focus = SIA_call_japan_industries }
 		relative_position_id = SIA_beyond_lottery
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
+			set_temp_variable = { change_temp = -3 }
+			SIA_change_party_cohesion = yes
+			set_temp_variable = { SIA_military_resource_var_temp = 1 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = {
+				var = global.PRC_influence_SIA_var_temp
+				value = 0.15
+			}
+			PRC_add_SIA_influence = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { 
@@ -2008,14 +2294,20 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			is_in_faction_with = JAP
 		}
 		prerequisite = { focus = SIA_modernize_old_equipment }
 		prerequisite = { focus = SIA_call_japan_industries }
 		relative_position_id = SIA_modernize_old_equipment
 		
 		completion_reward = {
-			
+			army_experience = 25
+			set_temp_variable = { SIA_military_resource_var_temp = 3 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.25 }
+			SIA_mil_mech_combat_readiness_change = yes
+			custom_effect_tooltip = SIA_learn_from_the_self_defense_force_tt
+			add_ideas = SIA_lessons_from_the_jsdf
 		}
 	}
 	focus = { 
@@ -2028,7 +2320,7 @@ focus_tree = {
 			factor = 10
 		}
 		available = {
-			
+			is_in_faction_with = PRC
 		}
 		prerequisite = { focus = SIA_set_north }
 		relative_position_id = SIA_set_north
@@ -2054,7 +2346,8 @@ focus_tree = {
 		relative_position_id = SIA_once_again_the_utn
 		
 		completion_reward = {
-			
+			activate_mission = SIA_utn_metropolis_project
+			custom_effect_tooltip = SIA_midas_touch_tt
 		}
 	}
 	focus = { 
@@ -2074,7 +2367,17 @@ focus_tree = {
 		relative_position_id = SIA_midas_touch
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2094,7 +2397,17 @@ focus_tree = {
 		relative_position_id = SIA_midas_touch
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2114,7 +2427,17 @@ focus_tree = {
 		relative_position_id = SIA_midas_touch
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2134,7 +2457,17 @@ focus_tree = {
 		relative_position_id = SIA_midas_touch
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2178,7 +2511,17 @@ focus_tree = {
 		relative_position_id = SIA_solar_light
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2203,7 +2546,17 @@ focus_tree = {
 		relative_position_id = SIA_solar_light
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2228,7 +2581,17 @@ focus_tree = {
 		relative_position_id = SIA_peoples_wellbeing
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2248,7 +2611,17 @@ focus_tree = {
 		relative_position_id = SIA_peoples_wellbeing
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = {
@@ -2338,7 +2711,17 @@ focus_tree = {
 		relative_position_id = SIA_reach_for_the_prize
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	focus = { 
@@ -2358,7 +2741,17 @@ focus_tree = {
 		relative_position_id = SIA_kaem_ling
 		
 		completion_reward = {
-			
+			SIA_party_cohesion_check = yes
+			if = {
+				limit = {
+					check_variable = { SIA_temp_cohesion = 1 }
+				}
+				
+			}
+			else = {
+				
+			}
+			custom_effect_tooltip = SIA_cohesion_color_break_tt
 		}
 	}
 	### MIDDLE BRANCH PM UNIQUE TREE ###

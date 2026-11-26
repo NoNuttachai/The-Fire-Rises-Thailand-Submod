@@ -716,6 +716,8 @@ SIA_Economy_category = {
 		complete_effect = {
 			set_country_flag = SIA_activate_rest_of_engine
 			SIA_initiate_area_vars = yes
+			SIA_initiate_area_approvals = yes
+			set_country_flag = SIA_approval_mech_on
 			add_dynamic_modifier = {
 				modifier = SIA_specialist_upkeep_dynamic_modifier
 			}
@@ -723,7 +725,63 @@ SIA_Economy_category = {
 	}
 	
 	#ENGINE MECHANIC#
-	
+	SIA_utn_metropolis_project = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			all_core_state = {
+				limit = {
+					is_core_of = SIA
+				}
+				infrastructure > 3
+				office_park > 2
+			}
+			SIA = {
+				has_built = {
+					type = industrial_complex
+					value > 8
+				}
+			}
+		}
+		visible = {
+			
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 1095 #3years
+		timeout_effect = {
+			add_political_power = -300
+			add_stability = -0.075
+			set_temp_variable = { industrial_development_var_temp = -0.3 }
+			add_industrial_development = yes
+			set_temp_variable = { change_temp = -35 }
+			SIA_change_party_cohesion = yes
+		}
+		complete_effect = {
+			add_political_power = 75
+			set_temp_variable = { change_temp = 10 }
+			SIA_change_party_cohesion = yes
+			set_temp_variable = { industrial_development_var_temp = 0.2 }
+			add_industrial_development = yes
+			set_temp_variable = { change_temp = 1.5 }
+			for_each_loop = { 
+				array = SIA_map_var 
+				value = v 
+				
+				var:v = {
+					
+					SIA_change_fuel_monthly_base_amount = yes
+				}
+			}
+			custom_effect_tooltip = SIA_change_fuel_monthly_base_amount_all_areas_tt
+		}
+	}
 	SIA_utn_promote_green_energy = {
 		icon = generic_crisis
 		
@@ -964,7 +1022,7 @@ SIA_Economy_category = {
 			SIA_change_specialist_amount = yes
 		}
 	}
-	SIA_tighten_standards = {
+	SIA_tighten_specialist_standards = {
 		icon = generic_crisis 
 		
 		allowed = {
