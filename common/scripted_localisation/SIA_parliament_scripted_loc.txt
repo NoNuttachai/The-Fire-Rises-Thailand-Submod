@@ -1,5 +1,38 @@
-
-
+# SPEAKER OF THE HOUSE #
+defined_text = {
+	name = SIA_speaker_active
+	text = {
+		localization_key = "GFX_SIA_speaker_[?SIA_house_speaker_var]"
+	}
+}
+defined_text = {
+	name = SIA_speaker_active_name
+	text = {
+		localization_key = "SIA_parliament_speaker_name_[?SIA_house_speaker_var]"
+	}
+}
+defined_text = {
+	name = SIA_speaker_active_party
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { SIA_house_speaker_var = 2.1 }
+			}
+		}
+		localization_key = "SIA_parliament_speaker_party_ptp"
+	}                       
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { SIA_house_speaker_var = 4.1 }
+			}
+		}
+		localization_key = "SIA_parliament_speaker_party_dp"
+	}
+	text = {
+		localization_key = "SIA_parliament_speaker_party_dp"
+	}
+}
 ### PARTY DESC ###
 
 defined_text = {

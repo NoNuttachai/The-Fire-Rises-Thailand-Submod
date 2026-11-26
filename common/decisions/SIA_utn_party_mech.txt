@@ -158,6 +158,137 @@ SIA_utn_party_mech = {
 			
 		}
 	}
+	SIA_the_mps_changes_their_tune = {
+		icon = generic_crisis
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_country_flag = SIA_utn_party_in_check
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 28
+		timeout_effect = {
+			set_temp_variable = { change_temp = -2.50 }
+			SIA_change_party_cohesion = yes
+			activate_mission = SIA_the_mps_changes_their_tune
+		}
+		complete_effect = {
+			
+		}
+	}
+	SIA_deals_with_prominent_members = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = SIA_utn_2027_victory
+		}
+		cost = 50
+		days_remove = 28
+		
+		complete_effect = {
+			set_temp_variable = { change_temp = 2.50 }
+			SIA_change_party_cohesion = yes
+		}
+	}
+	SIA_whip_the_party_into_shape = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = SIA_utn_2027_victory
+		}
+		cost = 50
+		days_remove = 28
+		
+		complete_effect = {
+			set_temp_variable = { change_temp = 2.50 }
+			SIA_change_party_cohesion = yes
+		}
+	}
+	SIA_placate_discontent_members = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = SIA_utn_2027_victory
+		}
+		cost = 50
+		days_remove = 28
+		
+		complete_effect = {
+			set_temp_variable = { change_temp = 2.50 }
+			SIA_change_party_cohesion = yes
+		}
+	}
+	SIA_utn_bolster_the_production_lines = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_modernize_old_equipment
+		}
+		modifier = {
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.15
+			production_factory_efficiency_gain_factor = 0.1 
+		}
+		cost = 50
+		days_remove = 28
+		
+		remove_effect = {
+			
+		}
+	}
+	SIA_utn_patriotic_thai_program = {
+		icon = generic_crisis
+		priority = 10
+		allowed = {
+			tag = SIA
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		visible = {
+			has_completed_focus = SIA_in_the_battlefield
+		}
+		modifier = {
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.15
+			production_factory_efficiency_gain_factor = 0.1 
+		}
+		cost = 50
+		days_remove = 28
+		
+		remove_effect = {
+			
+		}
+	}
 	SIA_launch_media_advertisements = {
 		icon = generic_crisis
 		priority = 10

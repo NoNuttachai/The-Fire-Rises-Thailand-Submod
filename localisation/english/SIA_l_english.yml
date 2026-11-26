@@ -565,6 +565,7 @@
  SIA_call_japan_industries: "Call Japan Industries"
  SIA_set_north: "Set North"
  SIA_learn_from_the_self_defense_force: "Learn From the Self Defense Force"
+ SIA_learn_from_the_self_defense_force_tt: "§CReadiness Falters§! and §CPerception Decreases§! in the §YMilitary Reformation§! mechanic will have its change be §Gcut in half§!, resulting into a §Y-2.50%§! §Odecay§!"
  SIA_unfinished_business: "Unfinished Business"
  
  SIA_midas_touch: "Midas Touch"
@@ -794,6 +795,7 @@
  SIA_dispersing_the_protests: "Dispersing The Protests"
  SIA_striking_the_rioters: "Striking The Rioters"
  SIA_tokyo_bangkok_sino_containment_strategy: "Tokyo-Bangkok Chinese Containment Strategy"
+ SIA_lessons_from_the_jsdf: "Lessons From The Japanese Self Defense Force"
  SIA_pdto_scientific_cooperative: ""PDTO Scientific Cooperative"
  SIA_eadi_industry_stimulus: "EADI Industry Stimulus"
  SIA_sino_thai_military_training: "Joint Sino-Thai Training"
@@ -1247,6 +1249,10 @@
  thai_events.104.d: "Something"
  thai_events.104.a: "Other Thing"
  
+ thai_events.105.t: "Thamanat Cleared by the Constitutional Court"
+ thai_events.105.d: "The Constitutional Court has delivered a ruling allowing Thamanat Prompow to retain his parliamentary seat and his position as Deputy Minister of Agriculture and Cooperatives.Following a petition filed by more than 50 opposition lawmakers, led by Move Forward Party leader Pita Limjaroenrat, challenging Thamanat's eligibility under the constitution, which prohibits anyone convicted of serious drug offenses from holding parliamentary or cabinet office.\n\nThe legal challenge stemmed from a 2019 investigative report by The Sydney Morning Herald, which brought Australian court records back into the international spotlight. Those records detailed a 1993 arrest in Sydney, Australia, where Thamanat then using the alias Manat Bophlom was implicated in a heroin trafficking case. He was arrested by Australian police and sentenced to four years in a New South Wales prison before being deported in 1997.\n\nThe Court reasoned that a judgment issued by an Australian court did not constitute a judgment by a Thai court, and that enforcing a foreign court's ruling or order within Thailand would conflict with the principles of judicial sovereignty. Consequently, Thamanat retained his status as a Member of Parliament and government minister."
+ thai_events.105.a: "And he sang as he shoved that heroin in his tucker bag..."
+ 
  thai_events.167.t: "Thai Arya Party"
  thai_events.167.d: "Recently, the Thai Arya Party (also known as the Thai Aryan or Thai Arya Movement) has attracted some attention on the internet. It is an unregistered political party that uses imagery from Donald Trump's MAGA movement and adopts the slogan "Make Thailand Great Again." On its website and Facebook page, the party's administrators have expressed admiration for Field Marshal Plaek Phibunsongkhram in various posts\n\nThe party is particularly opposed to Chinese economic influence, which it views as an attempt by China to gain control over Thailand through economic expansion and the activities of Chinese grey-market businesses.\n\nIts website has sold MAGA-style red hats bearing the slogan "Make Thailand Great Again" for 390 baht. Despite its apparent right-wing political orientation, the movement has displayed some ideological contradictions. In one Facebook post, it quoted Chit Phumisak and praised him for his anti-Chinese stance, despite him being a Maoist communist. Furthermore, many members of its Discord server and Facebook page identify as left-wing or far-left. Overall, the movement appears to lack a coherent political orientation.\n\nIt seems this so called "political party" is less of a political party and more of an online space on Discord server and Facebook group page for Thai teenagers to larp about politics."
  thai_events.167.a: "Phibun Impressed"
@@ -1504,9 +1510,9 @@
  thai_prayut.39.t: "The Dragon or The Rising Sun"
  thai_prayut.39.d: "who"
  thai_prayut.39.a: "Japan land"
- thai_prayut.39.a: "We speaking Chinese"
+ thai_prayut.39.b: "We speaking Chinese"
  
- thai_prayut.40.t: "Songkran 2023 - Prayut joins Water Gun fight"
+ thai_prayut.40.t: "Songkran 2023 - Prayut Joins Water Gun Fight"
  thai_prayut.40.d: "After years of fear surrounding COVID-19, people across Thailand were finally able to enjoy the festivities without restrictions, as millions of locals and international tourists flooded streets nationwide to celebrate the traditional Thai New Year.\n\nAmong the celebrations, Prime Minister Prayut Chan-o-cha stepped into the heart of Bangkok's Songkran festivities. Trading his usual formal attire for a colorful floral Songkran shirt, the prime minister made an unannounced visit to Khao San Road on April 14. After briefly inspecting security arrangements, Prayut was quickly targeted by water guns. Despite security personnel urging the crowd not to aim at his face, many nevertheless sprayed him directly. Undeterred, Prayut armed himself with a large water gun and fired back, getting soaked alongside startled tourists and locals, some of whom questioned whether he was the real prime minister or merely a lookalike."
  thai_prayut.40.a: "Looks like he's having fun"
  
@@ -1729,13 +1735,19 @@
  
  SIA_parliament_total_seats_header: "§Y--- Parliamentary Breakdown ---§!"
  SIA_parliament_speaker_header: "§YSpeaker of the House of Representatives§!"
- SIA_parliament_speaker_desc: "§YThe Speaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\n§YCurrent Speaker§!: Chuan Leekpai\n\n§YSpeaker Political Party§!: £GFX_democrat §CDemocrat Party§!"
-
+ SIA_parliament_speaker_desc: "§YThe Speaker of the House of Representatives§! presides over meetings, maintains order during debates, ensures parliamentary rules are followed, and represents in official duties. The Speaker must act impartially and plays a key role in guiding the legislative process.\n\n§YCurrent Speaker§!: [SIA_speaker_active_name]\n\n§YSpeaker Political Party§!: [SIA_speaker_active_party]"
+ 
+ SIA_parliament_speaker_name_2.1: "Pichet Chuamuangpan"
+ SIA_parliament_speaker_name_4.1: "Chuan Leekpai"
+ 
+ SIA_parliament_speaker_party_ptp: "£GFX_phua_thai §RPheu Thai Party§!"
+ SIA_parliament_speaker_party_dp: "£GFX_democrat §CDemocrat Party§!"
+ 
+ 
+ 
+ 
  SIA_parliament_gov_support_loc: "Total §PGovernment§! support: §P[?SIA_gov_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
  SIA_parliament_opp_support_loc: "Total §ROpposition§! support: §R[?SIA_opp_seats_var|0]§!/[?SIA_total_seats_var|0] Seats"
-
- SIA_parliament_speaker_name_loc: "Current Speaker: §YChuan Leekpai§!"
- SIA_parliament_speaker_party_loc: "Speaker Political Party: £GFX_democrat §YDemocrat Party§!"
 
  # Party full name lines (for single-column layout)
  SIA_parliament_pprp_full: "£GFX_palang_pracharath §BPalang Pracharath Party§! [SIA_check_coalition_leader] \n§Y[?SIA_pprp_seats_var|0]§! Seats"
@@ -2301,13 +2313,19 @@
  SIA_utn_banner_trinuch_compromise: "£GFX_SIA_utn_party_mech_trinuchcompromise\n\n\n\n\n\n\n\n§YTrinuch Thienthong§!? From the £GFX_palang_pracharath §BPPRP§!?\n\nWith a §Rdeadlock§! in the convention and §YSuchart Chomklin§! threatening a walkout, Pirapan had no other choice but to §Ocompromise§! and handed the keys to the PPRP.\n\nWith an uneasy peace settling in the UTN, she will have to lead the party to victory for the §Y2027 General Elections§!"
  
  #2027
- SIA_utn_banner_2027: "£GFX_SIA_party_mech_2027\n\n\n\n\n\n\n\nThe United Thai Nation Party is the blah blah blah.\n\nDespite the departure of their renowned figure, Prayut Chan-o-cha, they have managed to blah blah.\n\nThe Party consists of several factions inside it and the party must remain in consensus or risk infighting among themselves.\n\n£GFX_united_thai_nation §PUTN§! §YParty Cohesion§!: [?SIA_utn_cohesion_var|2]"
- 
+ SIA_utn_banner_2027: "£GFX_SIA_party_mech_2027\n\n\n\n\n\n\n\nThe United Thai Nation Party is the blah blah blah.\n\nDespite the departure of their renowned figure, Prayut Chan-o-cha, they have managed to blah blah.\n\nThe Party consists of several factions inside it and the party must remain in consensus or risk infighting among themselves.\n\n\n\n\n\n\n\n\n"
+ SIA_utn_cohesion_text: "£GFX_united_thai_nation §PUTN§! §YParty Cohesion§!: [?SIA_utn_cohesion_var|2]"
  
  SIA_honor_the_generals_legacy: "Honor The General's Legacy"
  SIA_suchart_gathers_influence: "Suchart Gathers Influence"
  SIA_pirapan_gathers_influence: "Pirapan Gathers Influence"
  SIA_tug_of_war_fail_check: "The £GFX_united_thai_nation §PParty§! has convened"
+ SIA_the_mps_changes_their_tune: "§RThe MPs Change Their Tune§!"
+ SIA_deals_with_prominent_members: "Deals With Prominent Members"
+ SIA_whip_the_party_into_shape: "Whip the Party Into Shape"
+ SIA_placate_discontent_members: "Placate Discontent Members"
+ SIA_utn_bolster_the_production_lines: "£GFX_united_thai_nation §PUTN§!: Bolster the Production Lines"
+ SIA_utn_patriotic_thai_program: "£GFX_united_thai_nation §PUTN§!: Patriotic Thai Program"
  SIA_launch_media_advertisements: "Launch Media Advertisements"
  SIA_show_our_success: "Show Our Success"
  SIA_a_safer_thailand: "A Safer Thailand"

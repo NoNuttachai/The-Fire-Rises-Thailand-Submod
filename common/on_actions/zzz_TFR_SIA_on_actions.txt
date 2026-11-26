@@ -1,5 +1,4 @@
 on_actions = {
-	# Initialize SIA parliament seat array on game start
 	on_startup = {
 		effect = {
 			SIA = {
@@ -62,11 +61,15 @@ on_actions = {
 				country_event = { id = thai_events.100 days = 1705 random_days = 20 } # Septemb 2024 Moo Deng
 				country_event = { id = thai_events.102 days = 30 random_days = 64 } # February-April 2020 A Gray Silver Lining #thai_events.167 Thai Aryan Party
 				country_event = { id = thai_events.102 days = 1827 random_days = 730 } # 1 JAN 2025 - 1 JAN 2627 Thai Aryan Party
+				country_event = { id = thai_events.103 days = 273 } # September 30 2020 General Apirat Retires
+				country_event = { id = thai_events.104 days = 1734 } # September 30 2023 General Narongpan Retires
+				country_event = { id = thai_events.105 days = 490 } # May 5, 2021 - Thamanat Cleared by the Constitutional Court
 				
 				#Cambodia Skeleton
 				SIA_Cherdkiat_Atthakor = {
-			         unit_leader_event = { id = Thai_Cambodia_Report.1 days = 1707 } #Ambassador to Cambodia rotated out
+			        unit_leader_event = { id = Thai_Cambodia_Report.1 days = 1707 } #Ambassador to Cambodia rotated out
 			    }
+				set_variable = { SIA_house_speaker_var = 4.1 } #Chuan Leekpai as starting Speaker of the House
 				
 				country_event = { id = thai_cambodia_tension.13 days = 1974 } # 28 May 2025 Cambodia Start
 				country_event = { id = thai_prayut.9 days = 1923 } # 7 April 2025 #Prayut Steps down from PM

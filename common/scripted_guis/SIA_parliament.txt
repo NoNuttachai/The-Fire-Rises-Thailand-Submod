@@ -114,6 +114,9 @@ scripted_gui = {
 			}
 		}
 		properties = {
+			speaker_portrait = {
+				image = "[SIA_speaker_active]"
+			}
 			parliament_donut_gov = {
 				frame = SIA_gov_seats_frame
 			}

@@ -1196,7 +1196,7 @@ country_event = { #Lucrative Deals triggered
 		set_country_flag = SIA_utn_side_japan
     }
 	option = { #China
-        name = thai_prayut.38.b
+        name = thai_prayut.39.b
 		trigger = {
 			NOT = {
 				is_in_faction_with = JAP
@@ -3938,6 +3938,17 @@ country_event = {
 		#		days = 60
 		#	}
 		#}
+	}
+}
+country_event = { 
+    id = thai_events.105 #May 5, 2021 - Thamanat Cleared by the Constitutional Court
+    title = thai_events.105.t
+    desc = thai_events.105.d
+	is_triggered_only = yes
+	picture = GFX_report_heroin
+    option = {
+        name = thai_events.105.a
+		
 	}
 }
 country_event = { 

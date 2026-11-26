@@ -557,6 +557,7 @@ shared_focus = {
 		add_to_variable = { SIA_royal_army_of_thailand_army_morale_factor_var = 0.075 }
 		add_to_variable = { SIA_royal_army_of_thailand_battalion_upkeep_factor_var = 0.05 }
 		add_to_variable = { SIA_royal_army_of_thailand_army_attack_factor_var = 0.05 }
+		add_to_variable = { SIA_royal_army_of_thailand_special_forces_cap_var = 0.25 }
 		effect_tooltip = {
 			swap_ideas = {
 				remove_idea = SIA_royal_army_of_thailand_dummy
@@ -602,6 +603,11 @@ shared_focus = {
 			bonus = 1
 			uses = 2
 			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			category = cat_mechanized_equipment
 		}
 		army_experience = 20
 		add_to_variable = { SIA_royal_army_of_thailand_conscription_factor_var = -0.1 }

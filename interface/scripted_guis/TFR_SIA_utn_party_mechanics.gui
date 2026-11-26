@@ -158,5 +158,29 @@ guiTypes = {
 				
 			}
 		}
+		
+		containerWindowType = {
+			name = "SIA_utn_cohesion_container"
+			clipping = no
+				
+			iconType = {
+				name = "SIA_utn_cohesion_outline"
+				position = { x = 26 y = -90 }
+				spriteType = "GFX_SIA_utn_cohesion_bar_outline"
+			}
+			iconType = {
+				name = "SIA_utn_cohesion_fill"
+				position = { x = 27 y = -90 }
+				spriteType = "GFX_SIA_utn_cohesion_bar"
+			}
+			instantTextBoxType = {
+				name = "SIA_utn_cohesion_text"
+				position = { x = -15 y = -125 }
+				font = "VCR02_16"
+				maxwidth = 500
+				text = SIA_utn_cohesion_text
+				format = center
+			}
+		}
 	}
 }

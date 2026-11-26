@@ -2045,6 +2045,8 @@ focus_tree = {
 			
 			
 			custom_effect_tooltip = SIA_cohesion_color_break_tt
+			set_temp_variable = { change_temp = -5 }
+			SIA_change_party_cohesion = yes
 			set_temp_variable = { SIA_combat_readiness_var_temp = 0.03 }
 			SIA_mil_mech_combat_readiness_change = yes
 			set_temp_variable = { SIA_public_perception_var_temp = 0.1 }
@@ -2079,6 +2081,7 @@ focus_tree = {
 		relative_position_id = SIA_at_home
 		
 		completion_reward = {
+			unlock_decision_tooltip = SIA_utn_patriotic_thai_program
 			set_temp_variable = { debt_var_temp = 4.25 }
 			add_debt = yes
 			set_temp_variable = { SIA_combat_readiness_var_temp = 0.05 }
@@ -2113,12 +2116,28 @@ focus_tree = {
 		relative_position_id = SIA_beyond_lottery
 		
 		completion_reward = {
+			unlock_decision_tooltip = SIA_utn_bolster_the_production_lines
 			set_temp_variable = { debt_var_temp = 35.42 }
 			add_debt = yes
 			set_temp_variable = { SIA_military_resource_var_temp = 2 }
 			SIA_mil_mech_resource_change = yes
 			set_temp_variable = { SIA_combat_readiness_var_temp = 0.1 }
 			SIA_mil_mech_combat_readiness_change = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_4
+				amount = 1500
+				producer = SIA
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = support_tech
+			}
 		}
 	}
 	focus = { 
@@ -2149,7 +2168,8 @@ focus_tree = {
 				
 			}
 			custom_effect_tooltip = SIA_cohesion_color_break_tt
-			
+			set_temp_variable = { change_temp = -3 }
+			SIA_change_party_cohesion = yes
 			set_temp_variable = { SIA_military_resource_var_temp = 1 }
 			SIA_mil_mech_resource_change = yes
 			
@@ -2158,6 +2178,35 @@ focus_tree = {
 				value = 0.15
 			}
 			JAP_add_SIA_influence = yes
+			random_owned_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			724 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { 
@@ -2188,6 +2237,8 @@ focus_tree = {
 				
 			}
 			custom_effect_tooltip = SIA_cohesion_color_break_tt
+			set_temp_variable = { change_temp = -3 }
+			SIA_change_party_cohesion = yes
 			set_temp_variable = { SIA_military_resource_var_temp = 1 }
 			SIA_mil_mech_resource_change = yes
 			set_temp_variable = {
@@ -2195,6 +2246,42 @@ focus_tree = {
 				value = 0.15
 			}
 			PRC_add_SIA_influence = yes
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = { 
@@ -2214,7 +2301,13 @@ focus_tree = {
 		relative_position_id = SIA_modernize_old_equipment
 		
 		completion_reward = {
-			
+			army_experience = 25
+			set_temp_variable = { SIA_military_resource_var_temp = 3 }
+			SIA_mil_mech_resource_change = yes
+			set_temp_variable = { SIA_combat_readiness_var_temp = 0.25 }
+			SIA_mil_mech_combat_readiness_change = yes
+			custom_effect_tooltip = SIA_learn_from_the_self_defense_force_tt
+			add_ideas = SIA_lessons_from_the_jsdf
 		}
 	}
 	focus = { 
