@@ -521,6 +521,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_planet_of_the_apes.png"
 	}
 	spriteType = {
+		name = "GFX_report_bangchak_oil_refinery_explosion"
+		texturefile = "gfx/event_pictures/report_bangchak_oil_refinery_explosion.png"
+	}
+	spriteType = {
 		name = "GFX_report_upscale_emergency"
 		texturefile = "gfx/event_pictures/report_upscale_emergency.png"
 	}

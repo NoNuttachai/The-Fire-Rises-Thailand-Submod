@@ -3654,6 +3654,23 @@ country_event = {
 	}
 }
 country_event = { 
+    id = thai_events.87 #Bangchak Oil Refinery Explosion
+    title = thai_events.87.t
+    desc = thai_events.87.d
+	is_triggered_only = yes
+	picture = GFX_report_bangchak_oil_refinery_explosion
+	
+    option = {
+        name = thai_events.87.a
+		1493 = {
+			damage_building = {
+			  type = synthetic_refinery
+			  damage = 1
+			}
+		}
+	}
+}
+country_event = { 
     id = thai_events.100 #Moo Deng
     title = thai_events.100.t
     desc = thai_events.100.d
